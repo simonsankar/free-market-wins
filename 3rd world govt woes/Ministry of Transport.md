@@ -1,0 +1,2 @@
+- monopoly on roads
+- has access to a pitch lake, yet roads are in bad conditions

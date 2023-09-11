@@ -1,0 +1,3 @@
+- monopoly on power generation
+- bans solar panels in an equatorial country with 90+% sunny weather
+- reliant on only oil/gas

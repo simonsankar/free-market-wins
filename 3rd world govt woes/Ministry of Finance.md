@@ -1,0 +1,3 @@
+- online purchase tax
+- fiat currency
+- customs and duties on things we dont produce
