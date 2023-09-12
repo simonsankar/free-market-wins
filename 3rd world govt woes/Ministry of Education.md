@@ -5,3 +5,4 @@ where do we even begin?
 - overinflated cost of production (crazy money for trivial solutions)
 - horrendous corporate structure (contract workers/public servants)
 - overall low time preference garbage
+- ![[govt-bureaucracy.jpg]]

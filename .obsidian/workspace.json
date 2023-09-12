@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markets.md",
+                "file": "3rd world govt woes/Ministry of Education.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markets.md",
+                "file": "3rd world govt woes/Ministry of Education.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Markets.md",
+                "file": "3rd world govt woes/Ministry of Education.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Markets.md"
+                "file": "3rd world govt woes/Ministry of Education.md"
               }
             }
           },
@@ -156,6 +156,8 @@
   },
   "active": "d8767a596e994f0f",
   "lastOpenFiles": [
+    "govt-bureaucracy.jpg",
+    "Markets.md",
     "economic calculation problem.md",
     "Anarcho-Capitalism.md",
     "price system.md",
@@ -167,7 +169,6 @@
     "3rd world govt woes/Ministry of Transport.md",
     "3rd world govt woes",
     "Skin in the game.md",
-    "Markets.md",
     "Law of Non-Contradiction.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Central planning.md",
