@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3rd world govt woes/On-the-job training Office.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3rd world govt woes/On-the-job training Office.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3rd world govt woes/On-the-job training Office.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3rd world govt woes/On-the-job training Office.md"
+                "file": "3rd world govt woes/MOE-boy Contradictions.md"
               }
             }
           },
@@ -152,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,12 +166,13 @@
   },
   "active": "eb4d23e1a507a61c",
   "lastOpenFiles": [
+    "Law of Non-Contradiction.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "3rd world govt woes/On-the-job training Office.md",
     "3rd world govt woes/Ministry of Transport.md",
     "3rd world govt woes/Ministry of Finance.md",
     "3rd world govt woes/Ministry of Energy.md",
     "3rd world govt woes/Ministry of Education.md",
-    "3rd world govt woes/On-the-job training Office.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
     "Anarcho-Capitalism.md",
     "non-aggression principle.md",
     "non-aggression ethic.md",
@@ -182,7 +183,6 @@
     "Tragedy of the commons.md",
     "3rd world govt woes",
     "Skin in the game.md",
-    "Law of Non-Contradiction.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Central planning.md",
     "Central planners.md",
