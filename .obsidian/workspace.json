@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "non-aggression principle.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "405e1526fc1952eb",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "non-aggression principle.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "non-aggression principle.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "non-aggression principle.md"
+                "file": "3rd world govt woes/MOE-boy Contradictions.md"
               }
             }
           },
@@ -135,6 +136,16 @@
             "state": {
               "type": "git-view",
               "state": {}
+            }
+          },
+          {
+            "id": "b4e47e9b23896bc5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -154,11 +165,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce605b6bdf53a169",
+  "active": "eb4d23e1a507a61c",
   "lastOpenFiles": [
-    "non-aggression ethic.md",
-    "non-aggression principle.md",
     "Anarcho-Capitalism.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "non-aggression principle.md",
+    "non-aggression ethic.md",
     "3rd world govt woes/Ministry of Education.md",
     "govt-bureaucracy.jpg",
     "Markets.md",
