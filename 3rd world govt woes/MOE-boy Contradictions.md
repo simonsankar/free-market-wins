@@ -1,3 +1,5 @@
+[[Law of Non-Contradiction]] states that contradictions are `false` therefore all of these are wrong
+
 - Advocates for the govt stealing peoples money to pay for goods/services/protection
 	- Believes it is necessary to fund healthcare _(but muh cancer patients)_, but refuses to diverge funds from crappy ministries _(arts and culture)_ back to the citizens or towards the healthcare ministry _(so much for fighting cancer)_
 		- This implies that their are some fields/sectors/interests that need not be essential for wider society, but for a select minority who engage in it
