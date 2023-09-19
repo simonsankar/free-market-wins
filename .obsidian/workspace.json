@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/On-the-job training Office.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "405e1526fc1952eb",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/On-the-job training Office.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/On-the-job training Office.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md"
+                "file": "3rd world govt woes/On-the-job training Office.md"
               }
             }
           },
@@ -167,8 +166,8 @@
   },
   "active": "eb4d23e1a507a61c",
   "lastOpenFiles": [
-    "Anarcho-Capitalism.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
+    "Anarcho-Capitalism.md",
     "non-aggression principle.md",
     "non-aggression ethic.md",
     "3rd world govt woes/Ministry of Education.md",
