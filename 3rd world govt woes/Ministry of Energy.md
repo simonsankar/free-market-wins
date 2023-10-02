@@ -1,3 +1,3 @@
 - monopoly on power generation
-- bans solar panels in an equatorial country with 90+% sunny weather
+- bans solar panels in an equatorial caribbean country with 80+% sunny weather
 - reliant on only oil/gas
