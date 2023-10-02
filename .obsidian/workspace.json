@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "non-aggression principle.md",
+                "file": "Socialism is impossible.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Socialism is impossible.md",
+                "file": "economic calculation problem.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "450bbded36b1bbc3",
+  "active": "2f9999103e380049",
   "lastOpenFiles": [
-    "non-aggression principle.md",
+    "economic calculation problem.md",
     "Socialism is impossible.md",
+    "non-aggression principle.md",
     "Tragedy of the commons.md",
     "Anarcho-Capitalism.md",
-    "economic calculation problem.md",
     "Central planners.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Markets.md",
