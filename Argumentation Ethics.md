@@ -12,3 +12,6 @@ This is universal for any conflict or dispute, it is impossible to find truth wi
 
 ```
 4. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction.
+
+This presupposition of non-aggression in argumentation logically extends to the right to self-ownership. 
+i.e. arguing (a conflict free action), with someone (an interlocutor), acknowledges both yours and his self-ownership since you are mutually engaging in argumentation.
