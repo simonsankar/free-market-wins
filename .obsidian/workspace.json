@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "non-aggression principle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "non-aggression principle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "non-aggression principle.md"
               }
             }
           },
@@ -177,10 +176,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b588f32ab4b49e49",
+  "active": "e595be4befb5a3b1",
   "lastOpenFiles": [
-    "non-aggression principle.md",
     "Argumentation Ethics.md",
+    "non-aggression principle.md",
     "3rd world govt woes/CEPEP vs Robbie.md",
     "Law of Non-Contradiction.md",
     "Socialism is impossible.md",

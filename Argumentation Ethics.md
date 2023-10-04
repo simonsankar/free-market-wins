@@ -1,3 +1,4 @@
+
 1. All claims/propositions during an argument are to be justified/denied, i.e. find its truth value (true or false)
 2. Doing the opposite of argumentation is violence (aggression), which does not resolve any truth value from any dispute.
 ```
@@ -14,4 +15,4 @@ This is universal for any conflict or dispute, it is impossible to find truth wi
 4. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction.
 
 This presupposition of non-aggression in argumentation logically extends to the right to self-ownership. 
-i.e. arguing (a conflict free action), with someone (an interlocutor), acknowledges both yours and his self-ownership since you are mutually engaging in argumentation.
+i.e. choosing to argue (a conflict free action), with an interlocutor (a person in talks with), acknowledges that he is the sole owner of himself his as you are necessarily respecting that boundary in your engagement with him through peaceful means. (argumentation is conflict free).
