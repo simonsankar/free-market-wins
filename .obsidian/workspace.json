@@ -4,34 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f31429206a041965",
+        "id": "48f39a6577745b18",
         "type": "tabs",
         "children": [
           {
-            "id": "2f9999103e380049",
+            "id": "e595be4befb5a3b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3rd world govt woes/CEPEP vs Robbie.md",
+                "file": "non-aggression principle.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "450bbded36b1bbc3",
+            "id": "b588f32ab4b49e49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "economic calculation problem.md",
+                "file": "non-aggression principle.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3rd world govt woes/CEPEP vs Robbie.md",
+                "file": "non-aggression principle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3rd world govt woes/CEPEP vs Robbie.md",
+                "file": "non-aggression principle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3rd world govt woes/CEPEP vs Robbie.md"
+                "file": "non-aggression principle.md"
               }
             }
           },
@@ -176,16 +177,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f9999103e380049",
+  "active": "b588f32ab4b49e49",
   "lastOpenFiles": [
-    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Argumentation Ethics.md",
+    "non-aggression principle.md",
+    "2023-10-03.md",
+    "Socialism is impossible.md",
+    "economic calculation problem.md",
     "3rd world govt woes/CEPEP vs Robbie.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
     "3rd world govt woes/Ministry of Energy.md",
     "3rd world govt woes/Ministry of Education.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
-    "Socialism is impossible.md",
-    "economic calculation problem.md",
-    "non-aggression principle.md",
     "Tragedy of the commons.md",
     "Anarcho-Capitalism.md",
     "Central planners.md",

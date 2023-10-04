@@ -1,1 +1,14 @@
-The **non-aggression principle** (also called the **non-aggression axiom**, or the **anti-coercion** or **zero aggression principle** or **non-initiation of force**) is an ethical stance which asserts that "[aggression](https://wiki.mises.org/wiki/Aggression "Aggression")" is inherently illegitimate. "Aggression" is defined as the "initiation" of physical force against persons or property, the threat of such, or [fraud](https://wiki.mises.org/wiki/Fraud "Fraud") upon persons or their property. In contrast to [pacifism](https://wiki.mises.org/wiki/Pacifism "Pacifism"), the non-aggression principle does not preclude [violent](https://wiki.mises.org/wiki/Violence "Violence") [self-defense](https://wiki.mises.org/wiki/Self-defense "Self-defense"). The principle is a [deontological](https://wiki.mises.org/mediawiki/index.php?title=Deontological&action=edit&redlink=1 "Deontological (page does not exist)") (or rule-based) ethical stance.
+In a world with scarce means and resources with infinite wants, conflicts occur. 
+(This is also true for the garden of Eden since despite having infinite resources, one cannot be in the same space and time as another so conflicts still occur)
+```
+Crusoe and Friday on and island
+Crusoe is spear fishing with a stick
+Friday wants the stick to stoke his fire
+CONFLICT arises
+```
+
+With respect to **all** conflicts, aggression is inherently illegitimate and arguing against it is contradictory.
+
+This is because argumentation presupposes non-aggression and the attempt to argue otherwise is therefore a performative contradiction. 
+
+i.e. _Arguing_ that argumentation does not presuppose non-aggression precisely proves that arguing must in fact presuppose non-aggression because you are arguing which is not an aggressive action
