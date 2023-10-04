@@ -12,4 +12,4 @@ With respect to **all** conflicts, aggression is inherently illegitimate and arg
 
 This is because argumentation presupposes non-aggression and the attempt to argue otherwise is therefore a performative contradiction. 
 
-i.e. _Arguing_ that argumentation does not presuppose non-aggression precisely proves that arguing must in fact presuppose non-aggression because you are arguing which is not an aggressive action
+i.e. _Arguing_ that argumentation does not presuppose non-aggression precisely proves that arguing must in fact presuppose non-aggression because you are arguing which is not an aggressive action.
