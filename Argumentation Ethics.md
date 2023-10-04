@@ -11,7 +11,8 @@ It is only after through argumentation presumably through police/courts that it 
 This is universal for any conflict or dispute, it is impossible to find truth with aggression.
 
 ```
-4. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction.
+3. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction.
 
+#### Self-ownership (Basis for Capitalism)
 This presupposition of non-aggression in argumentation logically extends to the right to self-ownership. 
 i.e. choosing to argue (a conflict free action), with an interlocutor (a person in talks with), acknowledges that he is the sole owner of himself his as you are necessarily respecting that boundary in your engagement with him through peaceful means. (argumentation is conflict free).
