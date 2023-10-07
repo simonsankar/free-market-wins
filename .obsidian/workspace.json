@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Tragedy of the commons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0393d32e5ddea47f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wage labour is morally sound.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Wage labour is morally sound.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Wage labour is morally sound.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "Wage labour is morally sound.md"
               }
             }
           },
@@ -176,11 +189,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e595be4befb5a3b1",
+  "active": "0393d32e5ddea47f",
   "lastOpenFiles": [
-    "non-aggression principle.md",
-    "Argumentation Ethics.md",
     "3rd world govt woes/CEPEP vs Robbie.md",
+    "Wage labour is morally sound.md",
+    "Tragedy of the commons.md",
+    "Argumentation Ethics.md",
+    "non-aggression principle.md",
     "Law of Non-Contradiction.md",
     "Socialism is impossible.md",
     "2023-10-03.md",
@@ -189,7 +204,6 @@
     "3rd world govt woes/Ministry of Energy.md",
     "3rd world govt woes/Ministry of Education.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
-    "Tragedy of the commons.md",
     "Anarcho-Capitalism.md",
     "Central planners.md",
     "Knowledge Problem (Information Throughput Problem).md",
