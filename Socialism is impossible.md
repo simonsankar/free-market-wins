@@ -4,4 +4,4 @@
 4. Without price signals, the socialist state cannot calculate the cost of production of the goods it produces. (Cannot compare which materials that have alternative uses is best suited for producing the good)
 5. Without the ability to calculate the cost of production, profits and losses cannot be determined (profits/losses indicate degree of efficiency/inefficiency respectively), therefore they cannot know the most valuable uses of scare resources (economizing), meaning it is strictly impossible
 
-Concisely, socialism is impossible because they cannot overcome the [[economic calculation problem]].
+Concisely, socialism is impossible because it cannot overcome the [[economic calculation problem]].
