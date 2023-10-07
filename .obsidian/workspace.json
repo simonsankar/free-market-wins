@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private property.md",
+                "file": "Socialism is impossible.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wage labour is righteous.md",
+                "file": "Socialism is impossible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wage labour is righteous.md",
+                "file": "Socialism is impossible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wage labour is righteous.md"
+                "file": "Socialism is impossible.md"
               }
             }
           },
@@ -189,12 +189,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b588f32ab4b49e49",
+  "active": "0393d32e5ddea47f",
   "lastOpenFiles": [
-    "Argumentation Ethics.md",
-    "Tragedy of the commons.md",
     "private property.md",
     "Wage labour is righteous.md",
+    "Argumentation Ethics.md",
+    "Tragedy of the commons.md",
     "The Non-aggression Principle.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "3rd world govt woes/On-the-job training Office.md",
