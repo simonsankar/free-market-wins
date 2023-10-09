@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Wage labour is righteous.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5371b8a1693b005",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Myth of Limited Government.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Myth of Limited Government.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Myth of Limited Government.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "The Myth of Limited Government.md"
               }
             }
           },
@@ -189,15 +201,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0393d32e5ddea47f",
+  "active": "b5371b8a1693b005",
   "lastOpenFiles": [
+    "Wage labour is righteous.md",
+    "The Myth of Limited Government.md",
+    "Argumentation Ethics.md",
     "The Non-aggression Principle.md",
     "Skin in the game.md",
     "3rd world govt woes/Ministry of Transport.md",
     "3rd world govt woes/Ministry of Finance.md",
     "3rd world govt woes/Ministry of Education.md",
     "3rd world govt woes/Ministry of Energy.md",
-    "Wage labour is righteous.md",
     "Tragedy of the commons.md",
     "private property.md",
     "Socialism is impossible.md",
@@ -209,7 +223,6 @@
     "3rd world govt woes/On-the-job training Office.md",
     "Anarcho-Capitalism.md",
     "3rd world govt woes/CEPEP vs Robbie.md",
-    "Argumentation Ethics.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "Law of Non-Contradiction.md",
     "2023-10-03.md",
