@@ -11,10 +11,11 @@
             "id": "9d86785215caa6a1",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "Mixed Law.md",
-                "staged": false
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -161,6 +166,7 @@
   },
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
+    "README.md",
     "The Logical Justification of the NAP.md",
     "Law of Non-Contradiction.md",
     "Central planning.md",
@@ -186,7 +192,6 @@
     "Knowledge Problem (Information Throughput Problem).md",
     "Tragedy of the commons.md",
     "Markets.md",
-    "private property.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "3rd world govt woes"
   ]
