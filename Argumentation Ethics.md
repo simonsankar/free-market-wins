@@ -11,7 +11,10 @@ It is only after through argumentation, presumably through police/courts that it
 This is universal for any conflict or dispute, it is impossible to find truth with aggression.
 
 ```
-3. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction.
+3. Argumentation therefore presupposes non-aggression, and any attempt to argue the opposite claim, uses the presupposition of non-aggression to do so which is a performative contradiction. Since if you owned the person why would you need to convince him at all?.
+```
+NB - successfully convincing someone it is okay to aggress does not refute anything as the contradiction exists whether you accept it or not. i.e. 2+2=4 regardless if you convince someone 2+2=3. This is because consciousness does not equal reality ([[Primacy of Consciousness]]) but rather reality precedes consciousness ([[Primacy of Existence]])
+```
 
 #### Self-ownership (Basis for Capitalism)
 This presupposition of non-aggression in argumentation logically extends to the right to self-ownership. 
