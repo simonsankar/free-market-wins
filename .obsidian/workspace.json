@@ -11,11 +11,10 @@
             "id": "9d86785215caa6a1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
-                "mode": "source",
-                "source": false
+                "file": "Mixed Law.md",
+                "staged": false
               }
             }
           }
@@ -85,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "The Logical Justification of the NAP.md"
-              }
+              "state": {}
             }
           },
           {
@@ -166,32 +161,32 @@
   },
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
-    "The Non-aggression Principle.md",
     "The Logical Justification of the NAP.md",
-    "Argumentation Ethics.md",
+    "Law of Non-Contradiction.md",
+    "Central planning.md",
+    "Anarcho-Capitalism.md",
+    "Socialism is impossible.md",
     "Mixed Law.md",
+    "The Law of the Jungle.md",
+    "readme.md",
+    "Central planners.md",
+    "The Non-aggression Principle.md",
+    "Argumentation Ethics.md",
     "Primacy of Existence.md",
     "Primacy of Consciousness.md",
-    "The Law of the Jungle.md",
     "Taxation.md",
     "Wage labour is righteous.md",
     "Ethics.md",
     "Conflicts.md",
     "Aggression.md",
     "The Myth of Limited Government.md",
-    "Anarcho-Capitalism.md",
     "Axiomatic flow.md",
-    "Central planning.md",
     "3rd world govt woes/On-the-job training Office.md",
-    "Central planners.md",
     "economic calculation problem.md",
-    "Socialism is impossible.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Tragedy of the commons.md",
     "Markets.md",
     "private property.md",
-    "price system.md",
-    "Skin in the game.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "3rd world govt woes"
   ]
