@@ -1,7 +1,7 @@
 # free-market-wins
 `Aggression as defined as initiation of conflict`
 
-#### This repo entails the following:
+#### This vault entails the following:
 1. A complete dismantlement of **any** pro-aggression law ethic _(democracy/Marxism/consequentialism/etc)_\
    _the logical justification of the NAP_ 🌟
 2. Showing that even if we take these failed ethics seriously they **all** objectively fail economically\
