@@ -1,3 +1,4 @@
+Easy answer: Aggression is false
 The false idea marxists have is that workers do not get paid their _'fair share'_ under capitalism because profits go to the capitalist.
 
 This is a straight up entitlement claim on someone else's property with no basis.
