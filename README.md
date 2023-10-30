@@ -13,12 +13,11 @@
 
 #### The coaching staff
 - [Ludwig von Mises](https://en.wikipedia.org/wiki/Ludwig_von_Mises)
-- [Friedrich Hayek](https://en.wikipedia.org/wiki/Friedrich_Hayek)
-- [Ayn Rand](https://en.wikipedia.org/wiki/Ayn_Rand)
 - [Murray N. Rothbard](https://en.wikipedia.org/wiki/Murray_Rothbard)
 - [Hans-Hermann Hoppe](https://en.wikipedia.org/wiki/Hans-Hermann_Hoppe)
 - [Thomas Sowell](https://en.wikipedia.org/wiki/Thomas_Sowell)
 - [Stephan Kinsella](https://en.wikipedia.org/wiki/Stephan_Kinsella)
 - [Walter Block](https://en.wikipedia.org/wiki/Walter_Block)
 - [Saifedean Ammous](https://saifedean.com/)
+-  [Ayn Rand](https://en.wikipedia.org/wiki/Ayn_Rand)
 - [LiquidZulu](https://www.youtube.com/@LiquidZulu)
