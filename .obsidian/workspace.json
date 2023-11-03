@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Central planners.md",
+                "file": "The Logical Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Central planners.md",
+                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Central planners.md",
+                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Central planners.md"
+                "file": "The Logical Justification of the NAP.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -166,19 +166,21 @@
   },
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
+    "Argumentation Ethics.md",
+    "The Logical Justification of the NAP.md",
+    "Central planning.md",
+    "Knowledge Problem (Information Throughput Problem).md",
+    "Tragedy of the commons.md",
+    "Central planners.md",
     "README.md",
     "Axiomatic flow.md",
-    "The Logical Justification of the NAP.md",
     "Law of Non-Contradiction.md",
-    "Central planning.md",
     "Anarcho-Capitalism.md",
     "Socialism is impossible.md",
     "Mixed Law.md",
     "The Law of the Jungle.md",
     "readme.md",
-    "Central planners.md",
     "The Non-aggression Principle.md",
-    "Argumentation Ethics.md",
     "Primacy of Existence.md",
     "Primacy of Consciousness.md",
     "Taxation.md",
@@ -189,8 +191,6 @@
     "The Myth of Limited Government.md",
     "3rd world govt woes/On-the-job training Office.md",
     "economic calculation problem.md",
-    "Knowledge Problem (Information Throughput Problem).md",
-    "Tragedy of the commons.md",
     "Markets.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "3rd world govt woes"
