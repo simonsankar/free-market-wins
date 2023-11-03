@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Argumentation Ethics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Argumentation Ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Argumentation Ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Logical Justification of the NAP.md"
+                "file": "Argumentation Ethics.md"
               }
             }
           },
@@ -166,8 +166,9 @@
   },
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
-    "Argumentation Ethics.md",
     "The Logical Justification of the NAP.md",
+    "The Law of the Jungle.md",
+    "Argumentation Ethics.md",
     "Central planning.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Tragedy of the commons.md",
@@ -178,7 +179,6 @@
     "Anarcho-Capitalism.md",
     "Socialism is impossible.md",
     "Mixed Law.md",
-    "The Law of the Jungle.md",
     "readme.md",
     "The Non-aggression Principle.md",
     "Primacy of Existence.md",
