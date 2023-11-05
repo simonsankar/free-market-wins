@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
-                "mode": "preview",
+                "file": "The Non-aggression Principle.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Non-aggression Principle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Non-aggression Principle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "The Non-aggression Principle.md"
               }
             }
           },
@@ -167,6 +167,7 @@
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
     "The Logical Justification of the NAP.md",
+    "Anarcho-Capitalism.md",
     "Argumentation Ethics.md",
     "README.md",
     "The Law of the Jungle.md",
@@ -176,7 +177,6 @@
     "Central planners.md",
     "Axiomatic flow.md",
     "Law of Non-Contradiction.md",
-    "Anarcho-Capitalism.md",
     "Socialism is impossible.md",
     "Mixed Law.md",
     "readme.md",
