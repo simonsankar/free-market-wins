@@ -2,7 +2,7 @@ In a world with scarce means and resources with infinite wants, conflicts occur.
 (This is also true for the garden of Eden since despite having infinite resources, one cannot be in the same space and time as another so conflicts still occur)
 ```
 eg.
-Crusoe and Friday on and island
+Crusoe and Friday on an island
 Crusoe is spear fishing with a stick
 Friday wants the stick to stoke his fire
 CONFLICT arises
