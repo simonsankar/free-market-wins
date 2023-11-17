@@ -24,5 +24,5 @@ i.e. _Can you logically justify aggression towards someone?_
   
 ### Other notes
 The argument from argument gives us "truth values" — we ought not aggress, this is not derived from some apodictically true axiom, it is not analytically true, but rather dialectically true which is another objective foundation for truth. 
-In the same way parallel lines are 2 lines that never meet is not analytically true — we did not go out into nature and measure all the line possibilities to see prove it, but rather its definition holds true by its logical construction of what makes them parallel.
+In the same way parallel lines are 2 lines that never meet is not analytically true — we did not go out into nature and measure all the line possibilities to see prove it, but rather its definition holds true by its logical construction of what makes these lines parallel.
 So in closing, any ethic that allows for even a smidge of aggression is contradictory and thus false.
