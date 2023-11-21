@@ -15,9 +15,9 @@
 	   eg. 
 		   - T&TEC makes it illegal to install solar panels in an equatorial country
 		   - WASA makes it illegal to use rivers/streams or collect rainfall
-	- import customs/duties
+	- import customs/duties on products we don't/can't produce obviously restricting access to goods + bolstering existing businesses strangle hold on these goods
 	- Against big businesses price gouging yet is okay with preferential laws/regulations that favour businesses that import goods vs the average person importing goods
 	  i.e., it is only those with wealth via business that can import goods at decent rates that are then sold on for big profit margins and the individual who has no need to import goods in bulk, has to choose between a price gouged import or a highly taxed import which leads to a monopolising of goods through existing or new businesses
 - Believes Capitalism leads to slavery - Slavery is evil yes, but taxes are not?
-	- Slavery is not impossible by any system, humans can be evil, capitalism may contain bad actors but those actors are bounded by economic reality so even if cases of so called slavery were to come about, it is isolated within those companies, socialism however is institutionalising a path to slavery as it directly seeks to abolishes private property (taxes). Wage labour is not slavery in the slightest, you get paid what the market deems fit and what you accept. No one owes you a $1,000,000 salary.
+	- Slavery is not impossible through any system, evil exists. Capitalism may contain bad actors but those actors are bounded by economic reality so even if cases of so called slavery were to come about, it is isolated within those companies, socialism however is institutionalising a path to slavery as it directly seeks to abolishes private property (taxes). Wage labour is not slavery in the slightest, you get paid what the market deems fit and it's your choice to accept it or not. No one owes you a $1,000,000 salary for washing dishes.
 	- The _'shmuck'_ Robert Breedlove has coined the phrase _"A slave is someone with an effective tax rate of 100%"_. This is self explanatory since the slave's entire labour goes towards his master. If we contrast it with today's world where we believe in the west that slavery is _over_, we find that not to be the case, we are all a percentage of a slave be it 10/20/25/30% of a slave
