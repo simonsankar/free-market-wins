@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Socialism is evil.md",
-                "mode": "source",
+                "file": "Anarcho-Capitalism deters state formation.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Socialism is evil.md",
+                "file": "Anarcho-Capitalism deters state formation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Socialism is evil.md",
+                "file": "Anarcho-Capitalism deters state formation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Socialism is evil.md"
+                "file": "Anarcho-Capitalism deters state formation.md"
               }
             }
           },
@@ -166,8 +166,11 @@
   },
   "active": "9d86785215caa6a1",
   "lastOpenFiles": [
-    "Socialism.md",
+    "Anarcho-Capitalism.md",
+    "Aggression.md",
+    "README.md",
     "Socialism is evil.md",
+    "Socialism.md",
     "Socialism is impossible.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "Argumentation Ethics.md",
@@ -184,12 +187,9 @@
     "Primacy of Consciousness.md",
     "Primacy of Existence.md",
     "price system.md",
-    "README.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Ethics.md",
-    "Aggression.md",
     "The Non-aggression Principle.md",
-    "Anarcho-Capitalism.md",
     "The Law of the Jungle.md",
     "Central planning.md",
     "Tragedy of the commons.md",
