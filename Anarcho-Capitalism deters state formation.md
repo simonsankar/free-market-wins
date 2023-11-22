@@ -6,5 +6,7 @@ The more serious consideration we see that in order for a central aggressive ent
 This alone shows how far-fetched this idea is, since buying up all your competition has an actual cost. Once 'bought', these other entities has money to defend themselves while the hopeful aggressor lost this money. 
 This is a stark difference to modern states who already possess the monopoly on violence within their own borders and can legislate by fiat whatever they like.
 A real business has no such ability and is left to foot its own bills for its own shenanigans.
-Thus making the formation of this would be aggressor counter productive to its own cause as its attempt to strengthen its position necessitates that it strengthens others
+Thus making the formation of this would be aggressor counter productive to its own cause as its attempt to strengthen its position necessitates that it strengthens others.
+
+Though theoretically possible, the realistic odds are far too low to be considered a real _threat_ or serious critique of [[Anarcho-Capitalism]] since a state **is** the status quo we live in.
 
