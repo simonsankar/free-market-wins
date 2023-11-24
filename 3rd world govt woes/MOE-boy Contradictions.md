@@ -30,7 +30,7 @@
    Aggression: The **initiation** of conflict — self-defense is **not** aggression, that is a justified response towards aggression
    Conflict: Contradictory actions
 ```
-eg. Desert island, Robert finds a stick and fashions it into a spear to go spear-fishing, Murray wants to use it to stoke his fire — conflict arises, both Robert and Murray cannot do spear-fish + stoke fire at the same time with the stick.
+eg. Desert island, Robert finds a stick and fashions it into a spear to go spear-fishing, Murray wants to use it to stoke his fire — conflict arises, both Robert and Murray cannot spear-fish + stoke fire at the same time with the stick.
 ```   
 2. Two ways we can solve conflicts over scarce resources
    a) Using aggression — (steal/murder/harm/coercion etc)
