@@ -2,15 +2,14 @@ Hans-Hermann Hoppe's argument from argument
 i.e. _Can you logically justify aggression towards someone?_
 1. argumentation is and must be a _conflict-free_ interaction used to derive truth values - arguing otherwise results in an obvious contradiction _([[Law of Non-Contradiction]])_
 2. the opposite of argumentation would be aggression (conflict initiation) is [[The Law of the Jungle]] which succumbs to the the fallacy of the [[Primacy of Consciousness]]
-3. arguing for aggression in particular, presupposes the norm of _non-aggression_ as argumentation is a _conflict-free_ interaction meaning this argument is a performative contradiction _([[Law of Non-Contradiction]])_
+3. arguing for aggression in particular, presupposes the norm of _non-aggression_ as argumentation is a _conflict-free_ interaction meaning this argument is a performative contradiction _([[Law of Non-Contradiction]])_ 
    This is akin to saying, _"I ought not speak"_ or _"People are always indifferent to things"_ or _"We ought not argue"_ — the very act of proposing these propositions, presupposes the very **opposite** of the claim being made therefore contradicting oneself and thus being false. 
    i.e. _"I ought not speak (using speech)"_ = `FALSE` = _"I ought aggress (by non-aggression)"_ 
-1. furthermore from argumentation we get property-rights, as to deny this in argumentation would be to presuppose one's _self-ownership_ as well as the interlocutor's _(why else would you need to engage with him if you owned him? clearly you do not and cannot)_ 
-   This means any argument against property rights is as though it is not presupposed all while presupposing it. It is precisely through argumentation we know that property-rights exists.
+4. furthermore from argumentation we get [[Property Rights]], as to deny this in argumentation would be to presuppose one's _self-ownership_ as well as the interlocutor's _(why else would you need to engage with him if you owned him? clearly you do not and cannot)_ 
+   This means any argument against [[Property Rights]] is as though it is not presupposed all while presupposing it. It is precisely through argumentation we know that [[Property Rights]] exists.
 
 ### Aggression's contradiction as a method of truth-seeking
-   To elaborate further, an argument in favour of aggression is an argument in which the attempt is to show that why we may aggress against others to _divvy up scarce resources_. 
-   Walking through this argument, we can see the contradiction more clearly as it is essentially saying the following:
+   To elaborate further, though we need not, an argument in favour of aggression is effectively an argument which attempts to show that why we may aggress against others to _redistribute scarce resources_. 
    1. I think we should aggress towards people in particular situations to figure out who gets what
    2. I recognize that using aggression towards you **cannot** convince you that aggression is a valid means of divvying up resources
        i.e. hitting you/robbing you/threatening you cannot prove anything to you, meaning as a method of deriving truth values it is `FALSE`
