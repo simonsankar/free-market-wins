@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "405e1526fc1952eb",
@@ -166,10 +167,10 @@
   },
   "active": "9ef2a63d21efeb37",
   "lastOpenFiles": [
-    "Argumentation Ethics.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
     "Mixed Law.md",
     "The Logical Justification of the NAP.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Argumentation Ethics.md",
     "Aggression.md",
     "Socialism is evil.md",
     "Socialism.md",
