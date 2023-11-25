@@ -56,6 +56,7 @@ eg. Desert island, Robert finds a stick and fashions it into a spear to go spear
    So if you hold logic to be true, any ethic that allows even the tiniest form of aggression is FALSE
    QED Bitch. 🖕 
 
+Discord version:
 # MOE-boy Contradictions
 - Advocates for the govt stealing peoples money to pay for goods/services/protection
  - Believes it is necessary to fund healthcare _(but muh cancer patients :thermometer_face:)_, but refuses to diverge funds from crappy ministries _(arts and culture)_ back to the citizens or towards the healthcare ministry _(so much for fighting cancer :disappointed:)_ :clown:
@@ -84,9 +85,6 @@ eg. Desert island, Robert finds a stick and fashions it into a spear to go spear
       Wage labour is not slavery in the slightest, it is a completely **consensual** agreement by worker - employer. You get paid what the market deems fit and it's your choice to accept it or not — neither of which are afforded to a real slave. 
       Socialism however has slavery aspects built in as it is the institutionalised redistribution of private property through **coercion** — you cannot opt out. The productive class (private sector) is forced to pay a percentage to the unproductive class (public sector) — straight up percentage-based slavery baked into slavery. :clown:
  - The _'shmuck'_ Robert Breedlove has coined the phrase _"A slave is someone with an effective tax rate of 100%"_. This is self explanatory since the slave's entire labour goes towards his master. If we contrast it with today's democracies where we believe in the west that slavery is _over_, we find that not to be the case, we are all a percentage of a slave be it 10/20/25/30% of a slave as we are held by gunpoint and thrown in a cage if we refuse to fund the state. Show me a free-market business that behaves like that? :clown:
-
-
-
 
 # Here's the tldr as to why your concoction of socialism is false and Anarcho-capitalism is true (Aggression vs Non-aggression)
 1.  Semantics so everyone's on the same page, _(I know its hard for you, but grant me a smidge of intellectual honesty will ya :pleading_face:)_
