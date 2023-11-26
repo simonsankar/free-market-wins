@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "405e1526fc1952eb",
@@ -167,9 +166,13 @@
   },
   "active": "9ef2a63d21efeb37",
   "lastOpenFiles": [
+    "3rd world govt woes/CEPEP vs Robbie.md",
+    "3rd world govt woes/Ministry of Education.md",
+    "3rd world govt woes/Ministry of Finance.md",
+    "3rd world govt woes/Ministry of Energy.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
     "Mixed Law.md",
     "The Logical Justification of the NAP.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
     "Argumentation Ethics.md",
     "Aggression.md",
     "Socialism is evil.md",
@@ -178,9 +181,6 @@
     "Anarcho-Capitalism.md",
     "README.md",
     "Socialism is impossible.md",
-    "3rd world govt woes/Ministry of Education.md",
-    "3rd world govt woes/Ministry of Energy.md",
-    "3rd world govt woes/Ministry of Finance.md",
     "3rd world govt woes/Ministry of Transport.md",
     "3rd world govt woes/On-the-job training Office.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
@@ -193,7 +193,6 @@
     "Knowledge Problem (Information Throughput Problem).md",
     "Ethics.md",
     "The Non-aggression Principle.md",
-    "The Law of the Jungle.md",
     "3rd world govt woes"
   ]
 }

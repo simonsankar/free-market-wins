@@ -116,3 +116,18 @@ eg. Desert island, Robert finds a stick and fashions it into a spear to go spear
    
    So if you hold logic to be true, any ethic that allows even the tiniest form of aggression is FALSE
    QED Bitch. :middle_finger:
+
+"Just because you feel like the government is stealing money does not make it true." - evasion of logic
+This is what happens when you can't bite the bullet   
+You hold back statements and truths in a blatantly euphemistic way
+Who on earth would use "feeling like they are being stolen from" as a basis for whether or not something is theft?
+
+The burden of proof is on you to answer why its true that it's not theft
+
+You have some options
+1. Dispute the law of excluded middle
+2. Admit that it is theft, and that it's wrong
+or my favourite
+3. Admit that it is theft and that some theft is necessary (the same as saying some rape is necessary as they are both aggression)
+
+This entire thing was to show your overall position to be a contradiction. I don't care to convince you, remain in denial just as the mayans praying to Chac for rain. Those here on this server who adhere to logic can see for themselves.
