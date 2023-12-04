@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fd2e43b587acfa4a",
+        "id": "3e631cffe69e69ce",
         "type": "tabs",
         "children": [
           {
-            "id": "9ef2a63d21efeb37",
+            "id": "5b3751ea3e9edf7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,18 +164,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ef2a63d21efeb37",
+  "active": "5b3751ea3e9edf7b",
   "lastOpenFiles": [
+    "Screenshot 2023-11-27 at 1.23.06 PM.png",
+    "Argumentation Ethics.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Socialism is evil.md",
+    "Axiom of Action.md",
     "3rd world govt woes/CEPEP vs Robbie.md",
     "3rd world govt woes/Ministry of Education.md",
     "3rd world govt woes/Ministry of Finance.md",
     "3rd world govt woes/Ministry of Energy.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
     "Mixed Law.md",
     "The Logical Justification of the NAP.md",
-    "Argumentation Ethics.md",
     "Aggression.md",
-    "Socialism is evil.md",
     "Socialism.md",
     "Anarcho-Capitalism deters state formation.md",
     "Anarcho-Capitalism.md",
@@ -186,13 +188,11 @@
     "3rd world govt woes/govt-bureaucracy.jpg",
     "The Myth of Limited Government.md",
     "Wage labour is righteous.md",
-    "Axiom of Action.md",
     "Primacy of Consciousness.md",
     "Primacy of Existence.md",
     "price system.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Ethics.md",
-    "The Non-aggression Principle.md",
     "3rd world govt woes"
   ]
 }
