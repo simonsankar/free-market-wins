@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Mixed Law.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Mixed Law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Mixed Law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Logical Justification of the NAP.md"
+                "file": "Mixed Law.md"
               }
             }
           },
@@ -168,6 +168,8 @@
   },
   "active": "5b3751ea3e9edf7b",
   "lastOpenFiles": [
+    "The Logical Justification of the NAP.md",
+    "The Law of the Jungle.md",
     "Mixed Law.md",
     "Socialism is impossible.md",
     "Socialism is evil.md",
@@ -187,7 +189,6 @@
     "Argumentation Ethics.md",
     "Axiom of Action.md",
     "3rd world govt woes/Ministry of Finance.md",
-    "The Logical Justification of the NAP.md",
     "Anarcho-Capitalism deters state formation.md",
     "README.md",
     "3rd world govt woes/Ministry of Transport.md",
@@ -195,7 +196,6 @@
     "The Myth of Limited Government.md",
     "Wage labour is righteous.md",
     "price system.md",
-    "Knowledge Problem (Information Throughput Problem).md",
     "3rd world govt woes"
   ]
 }
