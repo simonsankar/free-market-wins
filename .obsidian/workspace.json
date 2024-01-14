@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "The Logical Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md"
+                "file": "The Logical Justification of the NAP.md"
               }
             }
           },
@@ -143,7 +143,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -166,33 +168,34 @@
   },
   "active": "5b3751ea3e9edf7b",
   "lastOpenFiles": [
+    "Mixed Law.md",
+    "Socialism is impossible.md",
+    "Socialism is evil.md",
+    "Socialism.md",
+    "Skin in the game.md",
+    "private property.md",
+    "Primacy of Existence.md",
+    "Primacy of Consciousness.md",
+    "Anarcho-Capitalism.md",
+    "3rd world govt woes/Ministry of Energy.md",
+    "3rd world govt woes/Ministry of Education.md",
+    "3rd world govt woes/govt-bureaucracy.jpg",
+    "3rd world govt woes/CEPEP vs Robbie.md",
+    "Aggression.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Argumentation Ethics.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
-    "Socialism is evil.md",
     "Axiom of Action.md",
-    "3rd world govt woes/CEPEP vs Robbie.md",
-    "3rd world govt woes/Ministry of Education.md",
     "3rd world govt woes/Ministry of Finance.md",
-    "3rd world govt woes/Ministry of Energy.md",
-    "Mixed Law.md",
     "The Logical Justification of the NAP.md",
-    "Aggression.md",
-    "Socialism.md",
     "Anarcho-Capitalism deters state formation.md",
-    "Anarcho-Capitalism.md",
     "README.md",
-    "Socialism is impossible.md",
     "3rd world govt woes/Ministry of Transport.md",
     "3rd world govt woes/On-the-job training Office.md",
-    "3rd world govt woes/govt-bureaucracy.jpg",
     "The Myth of Limited Government.md",
     "Wage labour is righteous.md",
-    "Primacy of Consciousness.md",
-    "Primacy of Existence.md",
     "price system.md",
     "Knowledge Problem (Information Throughput Problem).md",
-    "Ethics.md",
     "3rd world govt woes"
   ]
 }
