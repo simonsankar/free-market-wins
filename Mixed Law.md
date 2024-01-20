@@ -22,7 +22,7 @@ We see there are 2 categories that mixed-law ideologies fall under
 
 Whim-based laws falls under the same reasoning as [[The Law of the Jungle]] so it automatically fails.
 
-Class-based laws in any form is the ethic that posits one rule for class A and _another_ for A^C
+Class-based laws in any form is the ethic that posits one rule for class A and _another_ for A^c
 If one _agrees_ to the metaphysical equality of man, i.e. all men are equal in value, then such an ethic cannot be derived from the nature of man. 
 If it were so, it would be a universal principle and not exclude a single subset of humanity. 
 Therefore, this ethic must rely on arbitrary distinctions that form a class of humans and sub-humans based (whims), which means it falls back into the [[Primacy of Consciousness]] and  thus fails.

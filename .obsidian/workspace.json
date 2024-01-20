@@ -11,11 +11,10 @@
             "id": "5b3751ea3e9edf7b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
                 "file": "Mixed Law.md",
-                "mode": "source",
-                "source": false
+                "staged": false
               }
             }
           }
@@ -85,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mixed Law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mixed Law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +121,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Mixed Law.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,12 +163,13 @@
   },
   "active": "5b3751ea3e9edf7b",
   "lastOpenFiles": [
-    "The Logical Justification of the NAP.md",
     "The Law of the Jungle.md",
-    "Mixed Law.md",
-    "Socialism is impossible.md",
     "Socialism is evil.md",
     "Socialism.md",
+    "economic calculation problem.md",
+    "Mixed Law.md",
+    "The Logical Justification of the NAP.md",
+    "Socialism is impossible.md",
     "Skin in the game.md",
     "private property.md",
     "Primacy of Existence.md",
@@ -195,7 +191,6 @@
     "3rd world govt woes/On-the-job training Office.md",
     "The Myth of Limited Government.md",
     "Wage labour is righteous.md",
-    "price system.md",
     "3rd world govt woes"
   ]
 }
