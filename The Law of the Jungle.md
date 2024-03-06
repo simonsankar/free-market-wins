@@ -1,4 +1,6 @@
-- [x] dg-publish
+---
+dg-publish: true
+---
 i.e. resolving [[Conflicts]] by _might makes right_
 - A is stolen from the mightier B
 - the even mightier C wants to then steal from B

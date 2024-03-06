@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 The action axiom can be stated as follows: 
 “Human beings engage in purposive behaviour—i.e., they choose which scarce means are to be more fruitfully (or economically, or rationally) employed in order to satisfy their most preferred ends. This behaviour — stemming from human free will — is what we call _action_. As long as means are scarce and wants are not fully satisfied, human beings will keep on intentionally (or purposefully) acting.”
 

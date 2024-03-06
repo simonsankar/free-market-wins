@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 This is the consensual exchange of goods/services between parties. It uses the [[price system]] to ascribe a subjective number value that represents the cost to attain those goods/services.
 This price being subjective, mellows out according to what market participants are willing to pay for said goods/services at a particular time which is how we arrive at the [[market price]].
 

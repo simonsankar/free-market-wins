@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 This is the interference of the market process that forcefully takes resources being used in one instance and diverts it to another.
 This therefore is against the [[Markets]]'s allocation of said resources, meaning it is a **misallocation** 
 of resources since goods/services are arbitrarily taxed/subsidised to try and engineer some political outcome

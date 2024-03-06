@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Hans-Hermann Hoppe's argument from argument
 i.e. _Can you logically justify aggression towards someone?_
 1. argumentation is and must be a _conflict-free_ interaction used to derive truth values - arguing otherwise results in an obvious contradiction _([[Law of Non-Contradiction]])_
