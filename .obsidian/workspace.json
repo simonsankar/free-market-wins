@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3e631cffe69e69ce",
+        "id": "21bc06fbd92c4aec",
         "type": "tabs",
         "children": [
           {
-            "id": "5b3751ea3e9edf7b",
+            "id": "d8df7aae2bb8d9d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anarcho-Capitalism.md",
+                "file": "Axiom of Action.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2f37a3ee8cb55e82",
+            "id": "e0f7c2c8916d32df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mixed Law.md",
+                "file": "The Logical Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mixed Law.md",
+                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mixed Law.md",
+                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mixed Law.md"
+                "file": "The Logical Justification of the NAP.md"
               }
             }
           },
@@ -179,19 +179,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f37a3ee8cb55e82",
+  "active": "e0f7c2c8916d32df",
   "lastOpenFiles": [
+    "Argumentation Ethics.md",
+    "The Logical Justification of the NAP (Full).md",
+    "Axiom of Action.md",
+    "Knowledge Problem (Information Throughput Problem).md",
+    "private property.md",
+    "Mixed Law.md",
     "The Logical Justification of the NAP.md",
     "The Law of the Jungle.md",
-    "Democracy is garbage.md",
+    "Central planning.md",
+    "Central planners.md",
+    "The Logical Justification of the NAP.pdf",
+    "The Logical Justification of the NAP.epub",
     "Anarcho-Capitalism.md",
+    "Democracy is garbage.md",
     "Socialism is evil.md",
     "Socialism.md",
     "economic calculation problem.md",
-    "Mixed Law.md",
     "Socialism is impossible.md",
     "Skin in the game.md",
-    "private property.md",
     "Primacy of Existence.md",
     "Primacy of Consciousness.md",
     "3rd world govt woes/Ministry of Energy.md",
@@ -201,14 +209,8 @@
     "Aggression.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
-    "Argumentation Ethics.md",
-    "Axiom of Action.md",
     "3rd world govt woes/Ministry of Finance.md",
     "Anarcho-Capitalism deters state formation.md",
-    "README.md",
-    "3rd world govt woes/Ministry of Transport.md",
-    "3rd world govt woes/On-the-job training Office.md",
-    "The Myth of Limited Government.md",
     "3rd world govt woes"
   ]
 }
