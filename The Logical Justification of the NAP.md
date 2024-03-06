@@ -1,5 +1,5 @@
 - [x] dg-home
-- [x] dg-publish
+- [ ] dg-publish
 The standard value for man **is** life
 	- _man must act_  -> [[Axiom of Action]] (in order to live)
 	- or not act (also an action, results in death)
