@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 This is an inversion of the [[Primacy of Existence]]. 
 That existence that conforms to your consciousness, rather than the other way around.
 

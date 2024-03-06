@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 1. [[Socialism]] abolishes [[private property]] in [[capital goods]] and natural resources
 2. The socialist state is sole owner of the material factors of production so no trade/exchange can occur (One cannot trade with oneself)
 3. Without trade there can be no market prices, i.e. they cannot derive which factors are expensive to cheap relative to their scarcity (No way of knowing if material A is wanted more than material B, etc etc)

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 The human brain can process around `40 - 50 bits/s`
 If we have 100 humans, this would equal a processing throughput between `4000 - 5000 bits/s`.
 

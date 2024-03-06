@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 The primacy of existence (of reality) is the axiom that existence exists.
 This existence is independent of consciousness, things are what they are, they possess an identity. `A is A`
 This implies that logic exists.

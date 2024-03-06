@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Conflicts are contradictory actions.
 
 ```

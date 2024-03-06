@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 In a world with scarce means and resources with infinite wants, conflicts occur. 
 (This is also true for the garden of Eden since despite having infinite resources, one cannot be in the same space and time as another so conflicts still occur)
 ```
