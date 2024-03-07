@@ -6,7 +6,7 @@
   "prHistory": [],
   "baseTheme": "light",
   "theme": "{\"name\":\"Minimal\",\"author\":\"kepano\",\"repo\":\"kepano/obsidian-minimal\",\"screenshot\":\"dark-simple.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kepano/obsidian-minimal/HEAD/theme.css\"}",
-  "faviconPath": "/favicon.ico",
+  "faviconPath": "icon.png",
   "useFullResolutionImages": true,
   "noteSettingsIsInitialized": true,
   "siteName": "Free Market Wins",
