@@ -9,7 +9,7 @@ By ignoring the inherent price signals for the current state of resources which 
 
 Subsidising X by increasing taxes on Y just means you are arbitrarily making X _seem_ affordable by making Y more expensive.
 
-3 main problems faced by central planning
+Main problems faced by central planning
 - [[Knowledge Problem (Information Throughput Problem)]]
 - [[Economic Calculation Problem]]
 - [[Tragedy of the commons]]
