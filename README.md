@@ -1,3 +1,7 @@
+---
+dg-publish: true
+dg-home: true
+---
 # free-market-wins
 `Aggression as defined as initiation of conflict`
 
