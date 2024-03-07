@@ -4,7 +4,7 @@
   "githubUserName": "simonsankar",
   "gardenBaseUrl": "",
   "prHistory": [],
-  "baseTheme": "light",
+  "baseTheme": "dark",
   "theme": "{\"name\":\"Atom\",\"author\":\"kognise\",\"repo\":\"kognise/obsidian-atom\",\"screenshot\":\"screenshot-hybrid.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kognise/obsidian-atom/HEAD/theme.css\"}",
   "faviconPath": "",
   "useFullResolutionImages": true,
@@ -31,13 +31,13 @@
   "defaultNoteSettings": {
     "dgHomeLink": true,
     "dgPassFrontmatter": false,
-    "dgShowBacklinks": false,
-    "dgShowLocalGraph": false,
-    "dgShowInlineTitle": false,
-    "dgShowFileTree": false,
-    "dgEnableSearch": false,
-    "dgShowToc": false,
-    "dgLinkPreview": false,
+    "dgShowBacklinks": true,
+    "dgShowLocalGraph": true,
+    "dgShowInlineTitle": true,
+    "dgShowFileTree": true,
+    "dgEnableSearch": true,
+    "dgShowToc": true,
+    "dgLinkPreview": true,
     "dgShowTags": false
   }
 }
