@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ba1fccf9f6a4b7e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Argumentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Law.md",
+                "file": "Argumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Law.md",
+                "file": "Argumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Law.md"
+                "file": "Argumentation.md"
               }
             }
           },
@@ -180,10 +192,11 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "e7b329caf11cedca",
+  "active": "ba1fccf9f6a4b7e4",
   "lastOpenFiles": [
-    "The Myth of Limited Government.md",
     "Law.md",
+    "Argumentation.md",
+    "The Myth of Limited Government.md",
     "Central planning.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
@@ -211,7 +224,6 @@
     "Law of Non-Contradiction.md",
     "Knowledge Problem (Information Throughput Problem).md",
     "Ethics.md",
-    "economic calculation problem.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
