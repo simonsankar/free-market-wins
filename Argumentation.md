@@ -1,4 +1,7 @@
-Basically, argumentation is an interaction wherein two or more parties present premises in support of two or more contradictory conclusions. The goal of each party is to find the correct answer, and both parties are trying to discover the truth of the matter. Argumentation is specifically the method of solving disputes over truth claims through a peaceful means. In other words, one is trying to convince their interlocutor through the force of their argument rather than through the force of violence.
+---
+dg-publish: true
+---
+Argumentation is an interaction wherein two or more parties present premises in support of two or more contradictory conclusions. The goal of each party is to find the correct answer, and both parties are trying to discover the truth of the matter. Argumentation is specifically the method of solving disputes over truth claims through a peaceful means. In other words, one is trying to convince their interlocutor through the force of their argument rather than through the force of violence.
 
 Argumentation is not simply about trying to convince others that you're correct while paying no mind to the truth. **You have to actually seek the truth** cooperatively. In that way, it is a cooperative activity where, no matter who is correct, both parties win because they are trying to achieve a synthesis of ideas that leads to the truth. No matter who is proven wrong, the goal is to arrive at the truth.
 
