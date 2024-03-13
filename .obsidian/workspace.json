@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test folder/My note.md",
+                "file": "Argumentation Ethics.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test folder/My note.md",
+                "file": "Argumentation Ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test folder/My note.md",
+                "file": "Argumentation Ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test folder/My note.md"
+                "file": "Argumentation Ethics.md"
               }
             }
           },
@@ -206,8 +206,8 @@
   },
   "active": "ba1fccf9f6a4b7e4",
   "lastOpenFiles": [
-    "Argumentation Ethics.md",
     "Test folder/My note.md",
+    "Argumentation Ethics.md",
     "Test folder",
     "Argumentation.md",
     "Law.md",
