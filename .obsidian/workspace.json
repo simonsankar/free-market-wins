@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Test folder/My note.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Test folder/My note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Test folder/My note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "Test folder/My note.md"
               }
             }
           },
@@ -206,8 +206,10 @@
   },
   "active": "ba1fccf9f6a4b7e4",
   "lastOpenFiles": [
-    "Argumentation.md",
     "Argumentation Ethics.md",
+    "Test folder/My note.md",
+    "Test folder",
+    "Argumentation.md",
     "Law.md",
     "The Myth of Limited Government.md",
     "Central planning.md",
@@ -235,7 +237,6 @@
     "Mixed Law.md",
     "Markets.md",
     "Law of Non-Contradiction.md",
-    "Knowledge Problem (Information Throughput Problem).md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
