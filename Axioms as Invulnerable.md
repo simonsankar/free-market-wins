@@ -27,5 +27,7 @@ A: "It is still impossible for you to disagree since no one possesses the abilit
 B: "No we are conscious beings that can form ideas as you and I are doing now else it would be impossible if we weren't"
 - [x] Consciousness
 
+In the act of voicing his objection, therefore, the objector has conceded the case. In any act of challenging or denying the three axioms, man reaffirms them, no matter what the particular content of his challenge. The axioms are invulnerable.
+
 
 
