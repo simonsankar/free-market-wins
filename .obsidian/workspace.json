@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "f875f256ffa49b28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Axioms as Undeniable Propositions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e265743ba84d6bbd",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Axioms as Undeniable Propositions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Axioms as Undeniable Propositions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "Axioms as Undeniable Propositions.md"
               }
             }
           },
@@ -204,10 +216,11 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ba1fccf9f6a4b7e4",
+  "active": "f875f256ffa49b28",
   "lastOpenFiles": [
-    "Test folder/My note.md",
     "Argumentation Ethics.md",
+    "Axioms as Undeniable Propositions.md",
+    "Test folder/My note.md",
     "Test folder",
     "Argumentation.md",
     "Law.md",
@@ -236,7 +249,6 @@
     "price system.md",
     "Mixed Law.md",
     "Markets.md",
-    "Law of Non-Contradiction.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
