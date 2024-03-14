@@ -3,7 +3,9 @@
   "githubToken": "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",
   "githubUserName": "simonsankar",
   "gardenBaseUrl": "",
-  "prHistory": [],
+  "prHistory": [
+    "https://github.com/simonsankar/free-market-wins-site/pull/10"
+  ],
   "baseTheme": "light",
   "theme": "{\"name\":\"Minimal\",\"author\":\"kepano\",\"repo\":\"kepano/obsidian-minimal\",\"screenshot\":\"dark-simple.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kepano/obsidian-minimal/HEAD/theme.css\"}",
   "faviconPath": "icon.png",
