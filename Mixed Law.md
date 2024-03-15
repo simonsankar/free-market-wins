@@ -32,7 +32,8 @@ Therefore, this ethic must rely on arbitrary distinctions that form a class of h
 
 If one _disagrees_ to the metaphysical equality of man, i.e. all men are **not** equal and they do not possess a certain ethic(s), then this would imply there are different logics that apply to different groups.
 ```
-eg. Racism  : pro-green logic vs anti-green logic
+eg. 
+	Racism  : pro-green logic vs anti-green logic
 	Marxism : proletariat logic vs bourgeosie logic
 	Monarchy: royalty logic vs peasant logic
 ```
