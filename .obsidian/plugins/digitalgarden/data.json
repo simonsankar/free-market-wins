@@ -7,7 +7,7 @@
     "https://github.com/simonsankar/free-market-wins-site/pull/10"
   ],
   "baseTheme": "light",
-  "theme": "{\"name\":\"Minimal\",\"author\":\"kepano\",\"repo\":\"kepano/obsidian-minimal\",\"screenshot\":\"dark-simple.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kepano/obsidian-minimal/HEAD/theme.css\"}",
+  "theme": "{\"name\":\"Golden Topaz\",\"author\":\"Mouth on Cloud\",\"repo\":\"shaggyfeng/obsidian-Golden-Topaz-theme\",\"screenshot\":\"screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/shaggyfeng/obsidian-Golden-Topaz-theme/HEAD/theme.css\"}",
   "faviconPath": "icon.png",
   "useFullResolutionImages": true,
   "noteSettingsIsInitialized": true,
