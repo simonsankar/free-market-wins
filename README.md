@@ -21,7 +21,6 @@ dg-home: true
 - [Hans-Hermann Hoppe](https://en.wikipedia.org/wiki/Hans-Hermann_Hoppe)
 - [Thomas Sowell](https://en.wikipedia.org/wiki/Thomas_Sowell)
 - [Stephan Kinsella](https://en.wikipedia.org/wiki/Stephan_Kinsella)
-- [Walter Block](https://en.wikipedia.org/wiki/Walter_Block)
 - [Saifedean Ammous](https://saifedean.com/)
 -  [Ayn Rand](https://en.wikipedia.org/wiki/Ayn_Rand)
 - [LiquidZulu](https://www.youtube.com/@LiquidZulu)
