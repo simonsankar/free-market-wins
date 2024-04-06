@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Law of Non-Contradiction.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Law of Non-Contradiction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Law of Non-Contradiction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Law of Non-Contradiction.md"
               }
             }
           },
@@ -218,6 +218,7 @@
   },
   "active": "f875f256ffa49b28",
   "lastOpenFiles": [
+    "README.md",
     "Anarcho-Capitalism deters state formation.md",
     "Mixed Law.md",
     "The Logical Justification of the NAP.md",
@@ -233,7 +234,6 @@
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Axiom of Action.md",
     "icon.png",
-    "README.md",
     "favicon-16x16.png",
     "favicon.ico",
     "Wage labour is righteous.md",
