@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "c7f449f2f7160d18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mixed Law.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e265743ba84d6bbd",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Mixed Law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "Mixed Law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Logical Justification of the NAP.md"
+                "file": "Mixed Law.md"
               }
             }
           },
@@ -216,15 +228,15 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "f875f256ffa49b28",
+  "active": "c7f449f2f7160d18",
   "lastOpenFiles": [
+    "The Logical Justification of the NAP.md",
     "Argumentation Ethics.md",
     "Argumentation.md",
     "Law of Non-Contradiction.md",
     "README.md",
     "Anarcho-Capitalism deters state formation.md",
     "Mixed Law.md",
-    "The Logical Justification of the NAP.md",
     "The Myth of Limited Government.md",
     "Axioms as Invulnerable.md",
     "Test folder/My note.md",
