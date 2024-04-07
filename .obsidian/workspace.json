@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Utilitarianism.md",
+                "file": "The Error of Utilitarianism.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Utilitarianism.md",
+                "file": "The Error of Utilitarianism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Utilitarianism.md",
+                "file": "The Error of Utilitarianism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Utilitarianism.md"
+                "file": "The Error of Utilitarianism.md"
               }
             }
           },
@@ -254,8 +254,8 @@
   },
   "active": "81907589c2b910c9",
   "lastOpenFiles": [
-    "The Error of Utilitarianism.md",
     "Utilitarianism.md",
+    "The Error of Utilitarianism.md",
     "Mixed Law.md",
     "The Logical Justification of the NAP.md",
     "Markets.md",
