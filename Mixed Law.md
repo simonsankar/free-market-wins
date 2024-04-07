@@ -3,7 +3,7 @@ dg-publish: true
 ---
 i.e. resolving [[Conflicts]] by _permitting aggression in arbitrary situations_
 General types:
-1. **consequentialism/utilitarianism** - he whose victory would yield the best outcome is he who should win the conflict at hand _(classed-based)_
+1. **consequentialism/[[utilitarianism]]** - he whose victory would yield the best outcome is he who should win the conflict at hand _(classed-based)_
 2. **racism** - he who is fighting for the interests of the preferred race is he who should win the conflict at hand _(classed-based)_
 3. **Marxism** - he who is fighting for the interests of the proletariat is he who should win the conflict at hand _(classed-based)_
 4. **monarchism** - he who is deemed to be the proper victor by the monarch is he who should win the conflict at hand _(classed-based)_
