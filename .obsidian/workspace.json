@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mixed Law.md",
+                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mixed Law.md",
+                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mixed Law.md"
+                "file": "The Logical Justification of the NAP.md"
               }
             }
           },
@@ -228,15 +228,17 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "c7f449f2f7160d18",
+  "active": "f875f256ffa49b28",
   "lastOpenFiles": [
+    "Mixed Law.md",
+    "Markets.md",
+    "Taxation (theft).md",
     "The Logical Justification of the NAP.md",
     "Argumentation Ethics.md",
     "Argumentation.md",
     "Law of Non-Contradiction.md",
     "README.md",
     "Anarcho-Capitalism deters state formation.md",
-    "Mixed Law.md",
     "The Myth of Limited Government.md",
     "Axioms as Invulnerable.md",
     "Test folder/My note.md",
@@ -253,14 +255,12 @@
     "Tragedy of the commons.md",
     "The Non-aggression Principle.md",
     "The Law of the Jungle.md",
-    "Taxation (theft).md",
     "Socialism is impossible.md",
     "Socialism is evil.md",
     "Socialism.md",
     "Skin in the game.md",
     "private property.md",
     "Primacy of Existence.md",
-    "Primacy of Consciousness.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
