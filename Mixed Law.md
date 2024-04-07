@@ -33,4 +33,4 @@ eg.
 
 This is polylogism, which requires different groups to have different logic systems.
 However, this rests upon the assumption that the laws of logic are subjective, rather than objective. That rather logic is not imposed on man first before he can validate his beliefs, but that man himself projects out these rules onto the universe.
-Here again is the fallacy of the [[Primacy of Consciousness]], where the polylogist does not observe reality and make derivations therefrom, but rather retreat into their own minds.
+Here again is the fallacy of the [[Primacy of Consciousness]], where the polylogist does not observe reality and make derivations therefrom, but rather retreat into their own mind.
