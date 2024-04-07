@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 [[Utilitarianism]] aims to maximize the usefulness for the greatest majority using some utility function. This has a fatal flaw in that it is trying to synthesize human preferences as some objective scale that can be used to compare different actions against it to see which has more utility.
 
 To understand why this is a flaw we must look at the core data types:
