@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Logical Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Logical Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "The Logical Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
+                "file": "The Logical Justification of the NAP.md"
               }
             }
           },
@@ -218,8 +218,8 @@
   },
   "active": "f875f256ffa49b28",
   "lastOpenFiles": [
-    "Argumentation.md",
     "Argumentation Ethics.md",
+    "Argumentation.md",
     "Law of Non-Contradiction.md",
     "README.md",
     "Anarcho-Capitalism deters state formation.md",
