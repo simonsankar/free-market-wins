@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "81907589c2b910c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Error of Utilitarianism.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "65711cf84731a236",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Utilitarianism.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c7f449f2f7160d18",
             "type": "leaf",
             "state": {
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "The Error of Utilitarianism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "The Error of Utilitarianism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Logical Justification of the NAP.md"
+                "file": "The Error of Utilitarianism.md"
               }
             }
           },
@@ -228,12 +252,14 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "f875f256ffa49b28",
+  "active": "81907589c2b910c9",
   "lastOpenFiles": [
+    "Utilitarianism.md",
+    "The Error of Utilitarianism.md",
+    "The Logical Justification of the NAP.md",
     "Mixed Law.md",
     "Markets.md",
     "Taxation (theft).md",
-    "The Logical Justification of the NAP.md",
     "Argumentation Ethics.md",
     "Argumentation.md",
     "Law of Non-Contradiction.md",
@@ -259,8 +285,6 @@
     "Socialism is evil.md",
     "Socialism.md",
     "Skin in the game.md",
-    "private property.md",
-    "Primacy of Existence.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
