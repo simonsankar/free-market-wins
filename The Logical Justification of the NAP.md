@@ -21,7 +21,7 @@ We also notice that both 1 & 2 at their core is an attempt to justify some form 
 Through, [[Argumentation Ethics]] we know that justifying aggression in argumentation is contradictory meaning all law that permits a single form of aggression is resoundingly false.
 
 Let A be [[Aggression]] which we know is `false`
-Therefore ~A is Non-[[Aggression]] is `true`
+Therefore ~A is Non-[[Aggression]] which is`true`
 
 
 
