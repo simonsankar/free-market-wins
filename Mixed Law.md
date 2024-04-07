@@ -3,14 +3,14 @@ dg-publish: true
 ---
 i.e. resolving [[Conflicts]] by _permitting aggression in arbitrary situations_
 General types:
-1. consequentialism/utilitarianism - he whose victory would yield the best outcome is he who should win the conflict at hand _(classed-based)_
-2. racism - he who is fighting for the interests of the preferred race is he who should win the conflict at hand _(classed-based)_
-3. Marxism - he who is fighting for the interests of the proletariat is he who should win the conflict at hand _(classed-based)_
-4. monarchism - he who is deemed to be the proper victor by the monarch is he who should win the conflict at hand _(classed-based)_
-5. democratism - he who is deemed to be the proper victor by majority opinion is he who should win the conflict at hand _(classed-based)_
-6.  primitivism - he who is fighting for apocalypse - the break-down in the capital structure, is he who should win the conflict at hand _(whim-based)_
-7. Rawlsianism - he who is deemed to be the proper victor by a party situated behind a veil of ignorance is he who should win the conflict at hand _(whim-based)_
-8. imperialism - he who is deemed to be an ally by the military leadership of the preferred country is he who should win the conflict at hand _(whim-based)_
+1. **consequentialism/utilitarianism** - he whose victory would yield the best outcome is he who should win the conflict at hand _(classed-based)_
+2. **racism** - he who is fighting for the interests of the preferred race is he who should win the conflict at hand _(classed-based)_
+3. **Marxism** - he who is fighting for the interests of the proletariat is he who should win the conflict at hand _(classed-based)_
+4. **monarchism** - he who is deemed to be the proper victor by the monarch is he who should win the conflict at hand _(classed-based)_
+5. **democratism** - he who is deemed to be the proper victor by majority opinion is he who should win the conflict at hand _(classed-based)_
+6.  **primitivism** - he who is fighting for apocalypse - the break-down in the capital structure, is he who should win the conflict at hand _(whim-based)_
+7. **Rawlsianism** - he who is deemed to be the proper victor by a party situated behind a veil of ignorance is he who should win the conflict at hand _(whim-based)_
+8. **imperialism** - he who is deemed to be an ally by the military leadership of the preferred country is he who should win the conflict at hand _(whim-based)_
 
 We see there are 2 categories that mixed-law ideologies fall under
 - Class-based - _he who is part of the preferred class X wins the conflict_
@@ -19,7 +19,7 @@ We see there are 2 categories that mixed-law ideologies fall under
 Whim-based laws falls under the same reasoning as [[The Law of the Jungle]] so it automatically fails.
 
 Class-based laws in any form is the ethic that posits one rule for class A and _another_ for A<sup>c</sup>
-If one _agrees_ to the metaphysical equality of man, i.e. all men are equal in value, then such an ethic cannot be derived from the nature of man. 
+If one _agrees_ to the metaphysical equality of man, i.e. all men **are** equal in value, then such an ethic cannot be derived from the nature of man. 
 If it were so, it would be a universal principle and not exclude a single subset of humanity. 
 Therefore, this ethic must rely on arbitrary distinctions that form a class of humans and sub-humans based (whims), which means it falls back into the [[Primacy of Consciousness]] and  thus fails.
 
