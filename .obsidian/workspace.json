@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Logical Justification of the NAP.md",
+                "file": "The Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Error of Utilitarianism.md",
+                "file": "Argumentation Ethics.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Error of Utilitarianism.md",
+                "file": "Argumentation Ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Error of Utilitarianism.md",
+                "file": "Argumentation Ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Error of Utilitarianism.md"
+                "file": "Argumentation Ethics.md"
               }
             }
           },
@@ -254,10 +254,10 @@
   },
   "active": "81907589c2b910c9",
   "lastOpenFiles": [
-    "Utilitarianism.md",
+    "The Justification of the NAP.md",
     "The Error of Utilitarianism.md",
+    "Utilitarianism.md",
     "Mixed Law.md",
-    "The Logical Justification of the NAP.md",
     "Markets.md",
     "Taxation (theft).md",
     "Argumentation Ethics.md",
