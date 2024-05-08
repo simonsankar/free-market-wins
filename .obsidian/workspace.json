@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Keynesian Economics.md",
+                "file": "Money.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Keynesian Economics.md",
+                "file": "Money.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Keynesian Economics.md",
+                "file": "Money.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Keynesian Economics.md"
+                "file": "Money.md"
               }
             }
           },
@@ -169,11 +169,12 @@
   },
   "active": "85d59a13fdfff5ed",
   "lastOpenFiles": [
-    "Austrian Economics.md",
-    "Keynesian Economics.md",
-    "The Error of Utilitarianism.md",
     "State.md",
+    "Keynesian Economics.md",
     "Fiat money.md",
+    "Ethics.md",
+    "Austrian Economics.md",
+    "The Error of Utilitarianism.md",
     "Money.md",
     "Argumentation Ethics.md",
     "The Justification of the NAP.md",
@@ -199,7 +200,6 @@
     "favicon.ico",
     "Wage labour is righteous.md",
     "Tragedy of the commons.md",
-    "The Non-aggression Principle.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",

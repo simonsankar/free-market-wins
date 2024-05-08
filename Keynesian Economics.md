@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 This is comparable to actual cancer — not being hyperbolic here.
 
 ### Rough Idea
