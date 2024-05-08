@@ -8,115 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d8df7aae2bb8d9d9",
+            "id": "85d59a13fdfff5ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Myth of Limited Government.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e7b329caf11cedca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Law.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba1fccf9f6a4b7e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Argumentation Ethics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f875f256ffa49b28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Justification of the NAP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "81907589c2b910c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Argumentation Ethics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d04d98185cbdaa7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Austrian Economics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "65711cf84731a236",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Utilitarianism.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7f449f2f7160d18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mixed Law.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e265743ba84d6bbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Argumentation.md",
+                "file": "Keynesian Economics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Keynesian Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Keynesian Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Austrian Economics.md"
+                "file": "Keynesian Economics.md"
               }
             }
           },
@@ -264,12 +167,16 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "1d04d98185cbdaa7",
+  "active": "85d59a13fdfff5ed",
   "lastOpenFiles": [
-    "Argumentation Ethics.md",
     "Austrian Economics.md",
-    "The Justification of the NAP.md",
+    "Keynesian Economics.md",
     "The Error of Utilitarianism.md",
+    "State.md",
+    "Fiat money.md",
+    "Money.md",
+    "Argumentation Ethics.md",
+    "The Justification of the NAP.md",
     "Utilitarianism.md",
     "Mixed Law.md",
     "Markets.md",
@@ -293,10 +200,6 @@
     "Wage labour is righteous.md",
     "Tragedy of the commons.md",
     "The Non-aggression Principle.md",
-    "The Law of the Jungle.md",
-    "Socialism is impossible.md",
-    "Socialism is evil.md",
-    "Socialism.md",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
     "3rd world govt woes/govt-bureaucracy.jpg",
