@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Money.md",
+                "file": "Austrian Economics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Money.md",
+                "file": "Austrian Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Money.md",
+                "file": "Austrian Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Money.md"
+                "file": "Austrian Economics.md"
               }
             }
           },
@@ -169,18 +169,18 @@
   },
   "active": "85d59a13fdfff5ed",
   "lastOpenFiles": [
-    "State.md",
+    "Ethics.md",
+    "Markets.md",
     "Keynesian Economics.md",
     "Fiat money.md",
-    "Ethics.md",
     "Austrian Economics.md",
-    "The Error of Utilitarianism.md",
     "Money.md",
+    "State.md",
+    "The Error of Utilitarianism.md",
     "Argumentation Ethics.md",
     "The Justification of the NAP.md",
     "Utilitarianism.md",
     "Mixed Law.md",
-    "Markets.md",
     "Taxation (theft).md",
     "Argumentation.md",
     "Law of Non-Contradiction.md",
