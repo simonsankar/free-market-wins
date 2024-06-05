@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "81cbf40a692e4849",
+        "id": "a931d72f33d751b9",
         "type": "tabs",
         "children": [
           {
-            "id": "c770eb2b67af0f74",
+            "id": "e50b349a451d4c3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primacy of Existence.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Primacy of Existence.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Primacy of Existence.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Primacy of Existence.md"
+                "file": "3rd world govt woes/MOE-boy Contradictions.md"
               }
             }
           },
@@ -167,8 +167,10 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "c770eb2b67af0f74",
+  "active": "e50b349a451d4c3a",
   "lastOpenFiles": [
+    "axioms.md",
+    "Primacy of Existence.md",
     "Axioms as Invulnerable.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
@@ -195,7 +197,6 @@
     "Test folder",
     "Law.md",
     "Central planning.md",
-    "Axiom of Action.md",
     "icon.png",
     "favicon-16x16.png",
     "favicon.ico",
