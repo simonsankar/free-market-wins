@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "21bc06fbd92c4aec",
+        "id": "81cbf40a692e4849",
         "type": "tabs",
         "children": [
           {
-            "id": "85d59a13fdfff5ed",
+            "id": "c770eb2b67af0f74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Anarcho-Capitalism.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Anarcho-Capitalism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Anarcho-Capitalism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Austrian Economics.md"
+                "file": "Anarcho-Capitalism.md"
               }
             }
           },
@@ -167,13 +167,14 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "85d59a13fdfff5ed",
+  "active": "c770eb2b67af0f74",
   "lastOpenFiles": [
+    "Austrian Economics.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Fiat money.md",
+    "Keynesian Economics.md",
     "Ethics.md",
     "Markets.md",
-    "Keynesian Economics.md",
-    "Fiat money.md",
-    "Austrian Economics.md",
     "Money.md",
     "State.md",
     "The Error of Utilitarianism.md",
@@ -192,7 +193,6 @@
     "Test folder",
     "Law.md",
     "Central planning.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Axiom of Action.md",
     "icon.png",
