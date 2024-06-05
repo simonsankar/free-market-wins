@@ -56,8 +56,8 @@ eg. Desert island, Robert finds a stick and fashions it into a spear to go spear
    So if you hold logic to be true, any ethic that allows even the tiniest form of aggression is FALSE
    QED Bitch. 🖕 
 
-#### The Clowns response (Last thoughts on evasion of the argument)
-![[Screenshot 2023-11-27 at 1.23.06 PM.png]]
+#### The Clown's response (Last thoughts on evasion of the argument)
+![[Screenshot 2023-11-27 at 1.23.06 PM.png]]
 
 Instead of addressing the main point of aggression (the underlying mechanism for the policies he supports — taxation/extortion by govt), he hand-waves it by saying they are imaginary points with no evidence.
 
