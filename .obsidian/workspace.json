@@ -8,29 +8,61 @@
         "type": "tabs",
         "children": [
           {
-            "id": "567aa7f855c4cefa",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png"
-              }
-            }
-          },
-          {
             "id": "a9cd4eb1b9ab4b88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Central Planning.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
-            }
+            },
+            "group": "f599d1f6f530f288"
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "b2627696d2932dd2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e71e4a728c9be8b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Central Planning.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            },
+            "group": "f599d1f6f530f288"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Central Planning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Austrian Economics.md",
+                "file": "Central Planning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Austrian Economics.md"
+                "file": "Central Planning.md"
               }
             }
           },
@@ -180,17 +212,20 @@
   },
   "active": "a9cd4eb1b9ab4b88",
   "lastOpenFiles": [
+    "Inverse incentive structure.md",
+    "Central Planning.md",
+    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
+    "Knowledge Problem (Information Throughput Problem).md",
+    "Austrian Economics.md",
     "Argumentation Ethics.md",
     "Argumentation.md",
     "Anarcho-Capitalism deters state formation.md",
     "Anarcho-Capitalism.md",
     "Aggression.md",
-    "Inverse incentive structure.md",
     "Keynesian Economics.md",
     "icon.png",
     "Fiat money.md",
     "3rd world govt woes/Central planning apologists.md",
-    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "3rd world govt woes/On-the-job training Office.md",
     "3rd world govt woes/MOE-boy Contradictions.md",
     "3rd world govt woes/Ministry of Transport.md",
@@ -201,14 +236,10 @@
     "3rd world govt woes/CEPEP vs Robbie.md",
     "Central planners.md",
     "Tragedy of the commons.md",
-    "Central planning.md",
     "axioms.md",
     "Primacy of Existence.md",
     "Axioms as Invulnerable.md",
-    "Austrian Economics.md",
     "Ethics.md",
-    "Markets.md",
-    "Money.md",
     "Test folder",
     "favicon-16x16.png",
     "favicon.ico",
