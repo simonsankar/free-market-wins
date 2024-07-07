@@ -4,22 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "a931d72f33d751b9",
+        "id": "5c65dea9c1523215",
         "type": "tabs",
         "children": [
           {
-            "id": "e50b349a451d4c3a",
+            "id": "567aa7f855c4cefa",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png"
+              }
+            }
+          },
+          {
+            "id": "a9cd4eb1b9ab4b88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/Central planning apologists.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/Central planning apologists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md",
+                "file": "3rd world govt woes/Central planning apologists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3rd world govt woes/MOE-boy Contradictions.md"
+                "file": "3rd world govt woes/Central planning apologists.md"
               }
             }
           },
@@ -167,13 +178,25 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "e50b349a451d4c3a",
+  "active": "ce605b6bdf53a169",
   "lastOpenFiles": [
+    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
+    "3rd world govt woes/Central planning apologists.md",
+    "3rd world govt woes/On-the-job training Office.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "3rd world govt woes/Ministry of Transport.md",
+    "3rd world govt woes/Ministry of Finance.md",
+    "3rd world govt woes/Ministry of Energy.md",
+    "3rd world govt woes/Ministry of Education.md",
+    "3rd world govt woes/govt-bureaucracy.jpg",
+    "3rd world govt woes/CEPEP vs Robbie.md",
+    "Central planners.md",
+    "Tragedy of the commons.md",
+    "Central planning.md",
+    "Inverse incentive structure.md",
     "axioms.md",
     "Primacy of Existence.md",
     "Axioms as Invulnerable.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
-    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Anarcho-Capitalism.md",
     "Austrian Economics.md",
     "Fiat money.md",
@@ -184,25 +207,12 @@
     "State.md",
     "The Error of Utilitarianism.md",
     "Argumentation Ethics.md",
-    "The Justification of the NAP.md",
-    "Utilitarianism.md",
-    "Mixed Law.md",
-    "Taxation (theft).md",
-    "Argumentation.md",
-    "Law of Non-Contradiction.md",
-    "README.md",
-    "Anarcho-Capitalism deters state formation.md",
-    "The Myth of Limited Government.md",
-    "Test folder/My note.md",
     "Test folder",
-    "Law.md",
-    "Central planning.md",
     "icon.png",
     "favicon-16x16.png",
     "favicon.ico",
     "The Logical Justification of the NAP.pdf",
     "The Logical Justification of the NAP.epub",
-    "3rd world govt woes/govt-bureaucracy.jpg",
     "Screenshot 2023-11-27 at 1.23.06 PM.png",
     "3rd world govt woes"
   ]
