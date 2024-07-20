@@ -6,7 +6,7 @@ This therefore is against the [[Markets]]'s allocation of said resources, meanin
 
 By ignoring the inherent price signals for the current state of resources which reflect the reality of these resources, they are engaging in a distortion of these prices signals meaning the mapping of money to good and services are mismatched or scrambled.
 
-Subsidising X by increasing taxes on Y just meaåns you are arbitrarily making X _seem_ affordable by making Y more expensive.
+Subsidising X by increasing taxes on Y just means you are arbitrarily making X _seem_ affordable by making Y more expensive.
 
 Main problems faced by central planning
 - [[Knowledge Problem (Information Throughput Problem)]]
