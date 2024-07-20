@@ -13,56 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Central Planning.md",
+                "file": "Ethics.md",
                 "mode": "source",
                 "source": true
               }
-            },
-            "group": "f599d1f6f530f288"
-          }
-        ]
-      },
-      {
-        "id": "b2627696d2932dd2",
-        "type": "tabs",
-        "children": [
+            }
+          },
           {
-            "id": "0e71e4a728c9be8b",
+            "id": "f68d666a00d12ad5",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "markdown",
               "state": {
-                "file": "Central Planning.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
+                "file": "Inverse incentive structure.md",
+                "mode": "source",
+                "source": false
               }
-            },
-            "group": "f599d1f6f530f288"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Central Planning.md",
+                "file": "Inverse incentive structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Central Planning.md",
+                "file": "Inverse incentive structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Central Planning.md"
+                "file": "Inverse incentive structure.md"
               }
             }
           },
@@ -210,9 +180,11 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "a9cd4eb1b9ab4b88",
+  "active": "f68d666a00d12ad5",
   "lastOpenFiles": [
     "Inverse incentive structure.md",
+    "private property.md",
+    "Markets.md",
     "Central Planning.md",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Knowledge Problem (Information Throughput Problem).md",
@@ -239,7 +211,6 @@
     "axioms.md",
     "Primacy of Existence.md",
     "Axioms as Invulnerable.md",
-    "Ethics.md",
     "Test folder",
     "favicon-16x16.png",
     "favicon.ico",
