@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 As the mechanism of [[Central Planning]] is to steal from the productive class to fund initiatives for the unproductive class, this warps the incentives for each class.
 Instead of the unproductive class seeking to become members of the productive class, i.e. to become producers and not consumers, they seek to pursue more benefits from the productive class by way of state apparatus since it is easier than actually putting in work. "We want more free stuff from those rich guys".
 
