@@ -2,7 +2,7 @@
 dg-publish: true
 dg-home: true
 ---
-# free-market-wins
+# [Free Market Wins](https://free-market-wins.vercel.app/)
 `Aggression as defined as initiation of conflict`
 
 #### This vault entails the following:

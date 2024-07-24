@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Central Planning.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Central Planning.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Central Planning.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Central Planning.md"
+                "file": "README.md"
               }
             }
           },
@@ -182,10 +182,10 @@
   },
   "active": "f68d666a00d12ad5",
   "lastOpenFiles": [
+    "Central Planning.md",
     "Inverse incentive structure.md",
     "private property.md",
     "Markets.md",
-    "Central Planning.md",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Knowledge Problem (Information Throughput Problem).md",
     "Austrian Economics.md",
