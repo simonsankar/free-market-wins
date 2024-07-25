@@ -3,10 +3,9 @@ dg-publish: true
 dg-home: true
 ---
 # [Free Market Wins](https://free-market-wins.vercel.app/)
-`Aggression as defined as initiation of conflict`
 
 #### This vault entails the following:
-1. A complete dismantlement of **any** pro-aggression law ethic _(democratism/Marxism/consequentialism/etc)_\
+1. A complete dismantlement of **any** pro-[[aggression]] law ethic _(democratism/Marxism/consequentialism/etc)_\
    _the logical justification of the NAP_ 🌟
 2. Showing that even if we take these failed ethics seriously they **all** objectively fail economically\
    _* laughs in ECP (economic calculation problem) *_ 🤣
