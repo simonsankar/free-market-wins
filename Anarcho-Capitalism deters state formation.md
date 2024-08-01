@@ -7,7 +7,7 @@ There's no one world government, the default is anarchy. There has never been a 
 Under a more serious consideration, we see that in order for a central aggressive entity to emerge under [[Anarcho-Capitalism]], they would need to have everyone else in their pockets first.
 However, this is not an easy task since their is no money-printer, single army to control and other centralized organisations in which the would-be aggressor can utilize/infiltrate and take over. This would have to be done through actual deals with an actual cost.
 
-This alone shows how far-fetched this idea is, since buying up all your competition has an actual cost. Once 'bought', these other entities now has the money/resources necessary to defend themselves while the hopeful aggressor has lost this money in these transactions.
+This alone shows how far-fetched this idea is, since buying up all your competition has an actual cost. Once 'bought', these other entities now have the money/resources necessary to defend themselves while the hopeful aggressor has lost this money in these transactions.
 
 This is a stark difference to modern states who _already_ possess the monopoly on violence within their own borders and can legislate by fiat whatever they like.
 A real business has no such ability and is left to foot its own bills for its own shenanigans.

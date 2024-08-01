@@ -1,13 +1,13 @@
 {
   "githubRepo": "free-market-wins-site",
-  "githubToken": "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",
+  "githubToken": "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",
   "githubUserName": "simonsankar",
   "gardenBaseUrl": "",
   "prHistory": [
     "https://github.com/simonsankar/free-market-wins-site/pull/10"
   ],
   "baseTheme": "light",
-  "theme": "{\"name\":\"Golden Topaz\",\"author\":\"Mouth on Cloud\",\"repo\":\"shaggyfeng/obsidian-Golden-Topaz-theme\",\"screenshot\":\"screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/shaggyfeng/obsidian-Golden-Topaz-theme/HEAD/theme.css\"}",
+  "theme": "{\"name\":\"Minimal\",\"author\":\"kepano\",\"repo\":\"kepano/obsidian-minimal\",\"screenshot\":\"dark-simple.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kepano/obsidian-minimal/HEAD/theme.css\"}",
   "faviconPath": "icon.png",
   "useFullResolutionImages": true,
   "noteSettingsIsInitialized": true,
