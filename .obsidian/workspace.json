@@ -8,31 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a9cd4eb1b9ab4b88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ethics.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "f68d666a00d12ad5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anarcho-Capitalism deters state formation.md",
+                "file": "Private Property.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1b4e55d69f3cf69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homesteading (First-comer Ethic).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Anarcho-Capitalism deters state formation.md",
+                "file": "Private Property.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Anarcho-Capitalism deters state formation.md",
+                "file": "Private Property.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Anarcho-Capitalism deters state formation.md"
+                "file": "Private Property.md"
               }
             }
           },
@@ -182,34 +181,35 @@
   },
   "active": "f68d666a00d12ad5",
   "lastOpenFiles": [
-    "3rd world govt woes/govt-bureaucracy.jpg",
-    "3rd world govt woes/MOE-boy Contradictions.md",
-    "3rd world govt woes/Ministry of Education.md",
-    "3rd world govt woes/CEPEP vs Robbie.md",
-    "3rd world govt woes/Ministry of Energy.md",
-    "3rd world govt woes/Ministry of Finance.md",
-    "3rd world govt woes/Ministry of Transport.md",
-    "3rd world govt woes/Central planning apologists.md",
-    "README.md",
-    "Central Planning.md",
-    "Inverse incentive structure.md",
-    "private property.md",
+    "Homesteading (First-comer Ethic).md",
+    "Private Property.md",
+    "Primacy of Existence.md",
+    "Primacy of Consciousness.md",
+    "price system.md",
+    "Money.md",
+    "Mixed Law.md",
     "Markets.md",
-    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
+    "Law of Non-Contradiction.md",
     "Knowledge Problem (Information Throughput Problem).md",
-    "Austrian Economics.md",
-    "Argumentation Ethics.md",
-    "Argumentation.md",
-    "Anarcho-Capitalism deters state formation.md",
-    "Anarcho-Capitalism.md",
-    "Aggression.md",
     "Keynesian Economics.md",
+    "Inverse incentive structure.md",
     "icon.png",
     "Fiat money.md",
-    "3rd world govt woes/On-the-job training Office.md",
-    "Central planners.md",
-    "Tragedy of the commons.md",
-    "axioms.md",
+    "economic calculation problem.md",
+    "Democracy is garbage.md",
+    "Conflicts.md",
+    "Austrian Economics.md",
+    "Axioms as Invulnerable.md",
+    "Anarcho-Capitalism.md",
+    "Aggression.md",
+    "Law.md",
+    "Axiom of Action.md",
+    "Ethics.md",
+    "3rd world govt woes/Ministry of Transport.md",
+    "3rd world govt woes/Ministry of Finance.md",
+    "3rd world govt woes/Ministry of Energy.md",
+    "3rd world govt woes/govt-bureaucracy.jpg",
+    "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Test folder",
     "favicon-16x16.png",
     "favicon.ico",
