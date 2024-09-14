@@ -1,13 +1,13 @@
 {
   "githubRepo": "free-market-wins-site",
-  "githubToken": "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",
+  "githubToken": "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",
   "githubUserName": "simonsankar",
   "gardenBaseUrl": "",
   "prHistory": [
     "https://github.com/simonsankar/free-market-wins-site/pull/10"
   ],
-  "baseTheme": "light",
-  "theme": "{\"name\":\"Minimal\",\"author\":\"kepano\",\"repo\":\"kepano/obsidian-minimal\",\"screenshot\":\"dark-simple.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/kepano/obsidian-minimal/HEAD/theme.css\"}",
+  "baseTheme": "dark",
+  "theme": "{\"name\":\"LYT Mode\",\"author\":\"nickmilo\",\"repo\":\"nickmilo/LYT-Mode\",\"screenshot\":\"lyt-mode-graphic-1.jpg\",\"modes\":[\"dark\"],\"cssUrl\":\"https://raw.githubusercontent.com/nickmilo/LYT-Mode/HEAD/theme.css\"}",
   "faviconPath": "icon.png",
   "useFullResolutionImages": true,
   "noteSettingsIsInitialized": true,

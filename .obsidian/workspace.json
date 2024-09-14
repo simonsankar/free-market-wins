@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private Property.md",
+                "file": "The Justification of the NAP.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private Property.md",
+                "file": "The Justification of the NAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private Property.md",
+                "file": "The Justification of the NAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private Property.md"
+                "file": "The Justification of the NAP.md"
               }
             }
           },
@@ -181,8 +181,8 @@
   },
   "active": "f68d666a00d12ad5",
   "lastOpenFiles": [
-    "Homesteading (First-comer Ethic).md",
     "Private Property.md",
+    "Homesteading (First-comer Ethic).md",
     "Primacy of Existence.md",
     "Primacy of Consciousness.md",
     "price system.md",

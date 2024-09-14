@@ -1,10 +1,10 @@
 ---
 dg-publish: true
 ---
-The standard value for man **is** life
+The standard value for man **necessitates** life
 	- _man must act_  -> [[Axiom of Action]] (in order to live)
-	- or not act (also an action, results in death)
-Therefore if he does not want to die, his actions must necessarily be towards this standard of life.
+	- or not act (also an action, results in death, cannot value death — obvious contradiction)
+Therefore if he does not want to die, his actions _must_ necessarily be towards this standard of life.
 
 Man's time however is scarce, i.e. he has a limit on how long he lives, therefore everything else becomes scarce since he do not have the enough time to do everything regardless if resources are _infinite_.
 
