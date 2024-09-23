@@ -1,0 +1,1 @@
+- they say its good because 'everyone is chipping in' for these govt goods/services making it cheaper
