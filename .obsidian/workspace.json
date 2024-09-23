@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Justification of the NAP.md",
+                "file": "Taxation (theft).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e19fd81808ff0cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Justification of the NAP.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Justification of the NAP.md",
+                "file": "3rd world govt woes/MOE-boy Contradictions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Justification of the NAP.md"
+                "file": "3rd world govt woes/MOE-boy Contradictions.md"
               }
             }
           },
@@ -179,8 +192,13 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "f68d666a00d12ad5",
+  "active": "3e19fd81808ff0cc",
   "lastOpenFiles": [
+    "The Absurdity of Taxation.md",
+    "Taxation (theft).md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Democracy is garbage.md",
+    "The Justification of the NAP.md",
     "Private Property.md",
     "Homesteading (First-comer Ethic).md",
     "Primacy of Existence.md",
@@ -196,7 +214,6 @@
     "icon.png",
     "Fiat money.md",
     "economic calculation problem.md",
-    "Democracy is garbage.md",
     "Conflicts.md",
     "Austrian Economics.md",
     "Axioms as Invulnerable.md",
@@ -204,10 +221,6 @@
     "Aggression.md",
     "Law.md",
     "Axiom of Action.md",
-    "Ethics.md",
-    "3rd world govt woes/Ministry of Transport.md",
-    "3rd world govt woes/Ministry of Finance.md",
-    "3rd world govt woes/Ministry of Energy.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "Test folder",
