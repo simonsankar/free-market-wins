@@ -1,0 +1,2 @@
+Being the first to appropriate un-owned resources as this leads to no conflicts.
+Any other alternative, like a late-comer ethic or some utilitarian-based ethic results in conflicts and these should be avoided.
