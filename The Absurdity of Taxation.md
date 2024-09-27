@@ -26,7 +26,7 @@ False, if I am taxed $100 but will receive more than $100 in value from these go
 		 `400/1200 x 100 = 33.33%` , more than 6% of purchasing power lost
 		 If Jim had `$100` in his bank prior to the addition of new monetary units, he now has effectively `$100 x (100-6)/100 = ~$94` i.e. robbed $6, now that might seem like a negligible amount of money to lose if the promise is that you get _"Free {insert service of the day}"_, but as explored above, rich people bear the brunt of the costs.
 		 So Larry had `$250` prior to the print, now has effectively `$250 x (100x6)/100 = $235` i.e. robbed `$25` over 4x the amount Jim lost.
-		So how are taxes benefitting people when it be default makes the poorer off the bat?
+		So how are taxes benefitting people when it be default makes them poorer off the bat?
 		Oh right its only for the idea that majority will benefit at the expense of a few (rich people). This then begs a very important question, how will this work if we had _little to no_ 'rich people'?
 
 ### Parasitism of Taxation

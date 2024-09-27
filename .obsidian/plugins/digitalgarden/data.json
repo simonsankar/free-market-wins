@@ -1,9 +1,11 @@
 {
   "githubRepo": "free-market-wins-site",
-  "githubToken": "",
+  "githubToken": "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",
   "githubUserName": "simonsankar",
   "gardenBaseUrl": "",
-  "prHistory": ["https://github.com/simonsankar/free-market-wins-site/pull/10"],
+  "prHistory": [
+    "https://github.com/simonsankar/free-market-wins-site/pull/10"
+  ],
   "baseTheme": "dark",
   "theme": "{\"name\":\"LYT Mode\",\"author\":\"nickmilo\",\"repo\":\"nickmilo/LYT-Mode\",\"screenshot\":\"lyt-mode-graphic-1.jpg\",\"modes\":[\"dark\"],\"cssUrl\":\"https://raw.githubusercontent.com/nickmilo/LYT-Mode/HEAD/theme.css\"}",
   "faviconPath": "icon.png",
