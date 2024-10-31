@@ -4,43 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "5c65dea9c1523215",
+        "id": "9695e670943b9683",
         "type": "tabs",
         "children": [
           {
-            "id": "f68d666a00d12ad5",
+            "id": "3a14ac8987eb7676",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Taxation (theft).md",
+                "file": "Taxation.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Taxation"
             }
           },
           {
-            "id": "3e19fd81808ff0cc",
+            "id": "f9b3cd28237af6c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Taxation.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a1b4e55d69f3cf69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homesteading (First-comer Ethic).md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Taxation"
             }
           }
         ],
@@ -64,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -79,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -87,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -110,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Taxation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Taxation"
             }
           },
           {
@@ -127,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argumentation Ethics.md",
+                "file": "Taxation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Taxation"
             }
           },
           {
@@ -141,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -150,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argumentation Ethics.md"
-              }
+                "file": "Taxation.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Taxation"
             }
           },
           {
@@ -159,7 +165,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -171,7 +179,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -192,11 +202,21 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "3e19fd81808ff0cc",
+  "active": "f9b3cd28237af6c7",
   "lastOpenFiles": [
+    "Money Printing.md",
+    "Taxation.md",
+    "3rd world govt woes/Monopoly on imports.md",
+    "Utilitarianism.md",
+    "The Myth of Limited Government.md",
+    "zingers/Income Redistribution Fallacy.md",
+    "2024-10-13.md",
+    "zingers",
+    "Argumentation Ethics.md",
+    "3rd world govt woes/MOE-boy Contradictions.md",
+    "Central planners.md",
     "Axioms as Invulnerable.md",
     "axioms.md",
-    "Argumentation Ethics.md",
     "The Absurdity of Taxation.md",
     "Homesteading (First-comer Ethic).md",
     "3rd world govt woes/CEPEP vs Robbie.md",
@@ -205,8 +225,6 @@
     "3rd world govt woes/On-the-job training Office.md",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "3rd world govt woes/Central planning apologists.md",
-    "3rd world govt woes/MOE-boy Contradictions.md",
-    "Taxation (theft).md",
     "Democracy is garbage.md",
     "The Justification of the NAP.md",
     "Private Property.md",
@@ -214,14 +232,7 @@
     "Primacy of Consciousness.md",
     "price system.md",
     "Money.md",
-    "Mixed Law.md",
-    "Markets.md",
-    "Law of Non-Contradiction.md",
-    "Knowledge Problem (Information Throughput Problem).md",
-    "Keynesian Economics.md",
-    "Inverse incentive structure.md",
     "icon.png",
-    "Fiat money.md",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "Test folder",
     "favicon-16x16.png",

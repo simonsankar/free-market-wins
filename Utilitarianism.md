@@ -6,5 +6,6 @@ Utilitarianism is **a theory of morality that advocates actions that foster hap
 It's aim is to maximize the 'utility' when deciding what actions to take given a conflict.
 
 This fails on two grounds
+- Fundamentally, attempts to convert ordinal data (people's) to cardinal (ratio level data) — [[The Error of Utilitarianism]]
 - It permits aggression — [[Mixed Law]]
-- It attempts to convert ordinal data to cardinal (ratio level data) — [[The Error of Utilitarianism]]
+- 
