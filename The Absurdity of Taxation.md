@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-[[Taxation (theft)]] as we know, breaks [[The Non-aggression Principle]] and is strictly a misallocation of resources, but for brevity, we can look at how this mechanism (institutionalized extortion) _is meant/supposed to work_ and validate whether it is a coherent idea or complete nonsense.
+[[Taxation]] as we know, breaks [[The Non-aggression Principle]] and is strictly a misallocation of resources, but for brevity, we can look at how this mechanism (institutionalized extortion) _is meant/supposed to work_ and validate whether it is a coherent idea or complete nonsense.
 
 What is taxation meant to do? What do central planning advocates say?
 - provide justice (law and order)
