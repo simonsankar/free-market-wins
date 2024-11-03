@@ -1,0 +1,1 @@
+We are all born on earth so why do we need to pay to be alive.
