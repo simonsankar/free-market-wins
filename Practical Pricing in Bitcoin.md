@@ -23,6 +23,7 @@ Under a [[Bitcoin]] standard, how would prices look since it is a fixed-limit cu
 | bit           | μBTC     | 0.000001           | $0.10          |
 | satoshi       | sat      | 0.00000001         | $0.001         |
 | millisatoshi  | msat     | 0.00000000001      | $0.000001      |
+
 In our case, we would have the opposite problem in that labelling prices in BTC will be cumbersome and would need to find smaller units to express smaller values. This style of pricing would be difficult to adopt at first since _we already think in dollars_, but over time just like Argentinians have adapted to long price labels, we too would adapt to using smaller bitcoin units.
 An interest effect of this is that each range could map onto a particular subset of goods quite nicely. Let's take the case that 1 BTC is currently valued at $100k USD
 
