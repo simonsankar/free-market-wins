@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practical Pricing in Bitcoin.md",
+                "file": "Bitcoin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Practical Pricing in Bitcoin"
+              "title": "Bitcoin"
             }
           }
         ],
@@ -274,15 +274,16 @@
   },
   "active": "6fc35c8f04f05c06",
   "lastOpenFiles": [
-    "Bitcoin.md",
     "Practical Pricing in Bitcoin.md",
+    "Money.md",
+    "Money Printing.md",
+    "Bitcoin.md",
     "zingers/No such thing as a free lunch.md",
     "Modern Slavery.md",
     "zingers/Climate Change Remedies.md",
     "zingers/Income Redistribution Fallacy.md",
     "zingers/Democracy != Freedom.md",
     "Taxation.md",
-    "Money Printing.md",
     "3rd world govt woes/Monopoly on imports.md",
     "Utilitarianism.md",
     "The Myth of Limited Government.md",
@@ -301,7 +302,6 @@
     "3rd world govt woes/On-the-job training Office.md",
     "3rd world govt woes/Screenshot 2023-11-27 at 1.23.06 PM.png",
     "3rd world govt woes/Central planning apologists.md",
-    "Democracy is garbage.md",
     "icon.png",
     "3rd world govt woes/govt-bureaucracy.jpg",
     "Test folder",
