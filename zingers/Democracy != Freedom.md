@@ -1,0 +1,1 @@
+Democracy isn't freedom. It is your favoured choice of oppression.
