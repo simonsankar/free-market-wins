@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ### Pricing under Fiat
 Under [[Fiat money]], we live under the assumption that prices _should_ rise. When the money supply is relatively low, prices for basic goods tended to be within the range of small numeric values, (some cents, a dollar, some dollars etc). But as [[Money Printing]] ensues, the purchasing power of these units become weaker and thus more is required to obtain the same good.
 Different countries experience different rates of currency inflation and this is reflected in how they show their prices. 

@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Privatizing profits
 - Those closest to the money printer profit exclusively by extracting purchasing power from savers. Saving from these savers were all profits gained from voluntary cooperation. 
 

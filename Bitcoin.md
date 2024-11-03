@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Fix the money, fix the world.
 
 TLDR: 
