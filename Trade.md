@@ -1,0 +1,1 @@
+Take stuff you own and exchange it for other stuff from other people
