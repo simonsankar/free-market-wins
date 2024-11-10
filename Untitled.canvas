@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"4a2a20b2290a7be9","x":-1020,"y":-640,"width":377,"height":50,"type":"file","file":"Axioms as Invulnerable.md"},
-		{"id":"2a2626149b9abbe4","x":-1020,"y":-539,"width":377,"height":50,"type":"file","file":"Axiom of Action.md"}
-	],
-	"edges":[
-		{"id":"e42b19750acaf430","fromNode":"4a2a20b2290a7be9","fromSide":"bottom","toNode":"2a2626149b9abbe4","toSide":"top"}
-	]
-}
