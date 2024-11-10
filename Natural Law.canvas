@@ -1,0 +1,14 @@
+---
+dg-publish: true
+---
+{
+	"nodes":[
+		{"id":"4a2a20b2290a7be9","type":"file","file":"Axioms as Invulnerable.md","x":-1760,"y":-1170,"width":377,"height":420},
+		{"id":"2a2626149b9abbe4","type":"file","file":"Axiom of Action.md","x":-1320,"y":-1200,"width":377,"height":480},
+		{"id":"18a06533f0fc3e49","x":-880,"y":-1160,"width":400,"height":400,"type":"file","file":"Time.md"}
+	],
+	"edges":[
+		{"id":"e42b19750acaf430","fromNode":"4a2a20b2290a7be9","fromSide":"right","toNode":"2a2626149b9abbe4","toSide":"left"},
+		{"id":"9ddd40d9d46c955f","fromNode":"2a2626149b9abbe4","fromSide":"right","toNode":"18a06533f0fc3e49","toSide":"left"}
+	]
+}
