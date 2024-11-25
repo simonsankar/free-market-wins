@@ -2,7 +2,7 @@
 dg-publish: true
 ---
 ### Pricing under Fiat
-Under [[Fiat money]], we live under the assumption that prices _should_ rise. When the money supply is relatively low, prices for basic goods tended to be within the range of small numeric values, (some cents, a dollar, some dollars etc). But as [[Money Printing]] ensues, the purchasing power of these units become weaker and thus more is required to obtain the same good.
+Under [[Fiat money]], we live under the assumption that prices _should_ rise. When the money supply is relatively low, prices for basic goods tended to be within the range of small numeric values, (some cents, a dollar, some dollars etc). But as [[Money Printing (bad)]] ensues, the purchasing power of these units become weaker and thus more is required to obtain the same good.
 Different countries experience different rates of currency inflation and this is reflected in how they show their prices. 
 For example in Argentina under their current pesos system, 1 peso is practically worthless. The more common unit that is exchangeable for goods is 1000 pesos, so prices for bread/milk etc may look like 4000.00 ARS or 2700.00 ARS and for bigger purchases like a car/house may be noted in full such as 160.000.000.00 ARS (one hundred and sixty thousand pesos) or shortened with the equivalent of USD such as ~ $150,000. 
 But this seems difficult to engage with, the extra 0s are practically worthless and add clutter so why not simplify the currency with a more useful abstraction, maybe instead of circulating notes in the hundreds or thousands they divide by 1000 and make 1000 pesos the equivalent to a new note, 1 peso-max or something of that ilk. Well, this is actually the story of the current Argentinian pesos, a long story of chopping of zeros. 
