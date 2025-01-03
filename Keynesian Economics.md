@@ -4,7 +4,7 @@ dg-publish: true
 This is comparable to actual cancer — not being hyperbolic here.
 
 ### Rough Idea
-The details of Keynesian economics is hairy as the intention is to obscure how it all 'works'. It is the combination of [[Fiat money]], and a [[State]] that enacts interventionism into a market economy with the guise that it 'helps' disenfranchised people in that economy or 'regulate' the economy to achieve the state's utilitarian goals such as social welfare, state funded programs, politically aligned sectors/industries etc.
+The details of Keynesian economics is hairy as the intention is to obscure how it all 'works'. It is the combination of [[Fiat Currency]], and a [[State]] that enacts interventionism into a market economy with the guise that it 'helps' disenfranchised people in that economy or 'regulate' the economy to achieve the state's utilitarian goals such as social welfare, state funded programs, politically aligned sectors/industries etc.
 This is done by inflating the money supply (money they do not have), and spending it on those utilitarian goals which essentially means that debt is good and savings is bad, and as a result of this framing we end up in a debt-based economy but how does that work exactly or rather _how is it intended to work_?
 
 ### No intervention economy
