@@ -1,0 +1,38 @@
+```
+Ok, this is going to keep dragging, and I don’t want to keep blowing up the other guys' phones lol, so this is my last response.
+
+It is clear we are on completely opposite sides of the spectrum, which is weird because I consider myself to be quite reasonable and open to other opinions. Throughout this entire discussion, you have yet to disprove the main point I was trying to make about Elon being a liar and a walking conflict of interest (that’s how this latest convo started). Instead, you’ve pivoted the conversation or simply said he’s a billionaire, so you trust him - crazy stuff. The facts are simply not on your side, and maybe someday you will understand that.
+
+Our current form of government did not just pop into existence. Humans have historically tried every kind and variation we can think of (including the type you are suggesting), and this is where we are. Is it perfect? Hell no. Will it ever be? Probably not. Why? Because humans are imperfect beings, and greed and the lack of empathy for our fellow man will always come back to bite us - you are a case in point unfortunately.
+
+To your points:
+
+1. I placed “free” in quotes for a reason… I came from a poor family. I CANNOT imagine where I would be if I lived in a country where only “the haves” got by. So, on the contrary, I do not feel “entitled” to the wealth of others; I am actually humble and grateful that now I am in a position to pay taxes that I KNOW are helping someone else in need. Not saying this to brag, but I do pretty damn well for myself. The taxes I pay now are MORE than my salary when I started working, so TRUST me when I say I feel it, and I REALLY wish government was more efficient. I think your perspective is selfish and short-sighted, and you are only saying it because you are young, you do ok for yourself, and you can afford what you need. God forbid something happened to you and you could no longer provide for yourself, then what? I hope you are not expecting some government to assist you when your savings run out…
+
+2. ⁠I’m not sure what kind of society we would have if taxes were optional. God help the least fortunate among us if it was.
+
+3. ⁠My payback point was simply about the fact that the government assisted you and your family and millions of others, but now you don’t want to participate. So, if you have so much contempt for the system, you are free to leave, but only after you’ve paid back what was spent on you. Since you’re a capitalist, I would hate to think you would leave that debt unpaid, even though there was no formal contract other than your country's LAWS that ENSURED you had access to education and healthcare…
+
+
+4. ⁠I don’t even get your slavery point. If helping your fellow citizen through taxes is slavery to you, you may need to brush up on your history. No one is forcing you to go and physically build a house or feed someone or cut grass by the road; all they require is a portion of your income, and then you can go live your life.
+
+
+5. ⁠You’re going to Argentina? Of course, I wish you all the best. But surely you’re not going to use your Trinidadian passport to go there, right? Because that would be akin to slavery, right? The airlines require it for you travel, and I would hate to think you would knowingly participate in slavery. Also, won’t you be paying the government taxes associated with air travel? And when you get there, I hope you declare yourself a sovereign citizen. Surely won’t apply for a government ID or driver’s license or use the subsidised public transport system… I really hope you get my point. 
+
+Anyways, all the best.
+```
+Elon point: you are working of a false assumption that these programs ought to be there and I do not, which i why i elaborated my position and got down the the crux of the argument i.e. should we **force** people to pay for stuff for other people
+
+1. coming from a poor background isnt an argument as to why people should be forced to pay for you — you agreed with the farmer/poor passerby example so idk why you think this emotional argument is valid here
+2. Youd have idk.. the history of mordern civilization, immigrants moved with no wealth and built wealth, there were no govt handouts at the beginning of the US/Argentina and many other countries, people came, worked the land and became wealthier (the us fought a war over 2% tax lol) the welfare state is only a new cancerous idea, people existed fine before it else we wont be here
+3. I debunked your payback point and you ignored all of it it seems, how can I have debt if you cannot point to an agreement where they spent $X on me, that either myself or my parents consented to? Can youtube/chatgpt/vscode suddenly bill you for using their services — no cuz there's no contractual agreement and rightfully so. Im sure youd throw a fit if they decided to so keep the same energy here
+4. I made it plain and simple for you to understand the slavery point, a colonial slave had an effective tax rate of 100% (all revenue he generated went to his master). Since taxes are also by gun-point, whatever the rate (10,15,25%), that you are forced to pay makes you that percentage of a slave. It matters not how it is spent thereafter. If you were hungry and a robber stole your wallet and bought you a hotdog does it magically not qualify as theft? Ofc not.
+5. Nice try equating my forced use of monopolistic systems with "benefiting" from taxes—I comply under threat of jail. A state ID isn’t inherently necessary for travel; governments impose this. EU/MERCOSUR travel, for example, doesn’t require a passport. I’ve spent 8 months in LATAM, 6 in Argentina, never used public transport because it's terrible. Assuming I would secretly rely on government services is lazy—I only use them when forced (e.g., driver’s permit, residency). When there's a state monopoly with no alternative (the state preventing competition), I have no choice but to use it if the need arises. Otherwise, I always prefer the superior free-market option
+   
+  I expected more logic from a compsci-oriented person, not emotional arguments. You agree people aren’t owed anything, yet still argue they’re indebted based on circumstance. I know we see things differently, which is why I wanted you to address my last point—we might find common ground. I support your choice to have social safety nets, as I value freedom and optionality. But why then achieve it by ignoring others' consent? You had the opportunity to say you agree we should have a voluntary split where you contribute to this system and I dont, and to leave my apparent 'woes' of not 'benefitting' from that safety-net system to me. That way I get what I want and you get what you want. I will own my downfall if needs be, it isnt any of you concern nor a point in your favour as to why I must be compelled to contribute to your system. 
+  But I know why no one cedes this conclusion because you cant get social safey nets if there's no one to leech off of.
+  
+  I'll leave with this powerful quote about people being parasites
+"..even with all the power to prevent social consequences, and even if that guy would never have traded with you anyway. 
+A man who sustains himself by means of aggression is destroying the root of his own sustenance. He is made wholly dependent on the virtues of others while acting to destroy those virtues. He has defaulted on his own existence, counting on the choices of others to keep him alive. He is forced to deal on their terms to keep them afloat. With all the power to control others, the power to control his own life has disappeared."
+  
