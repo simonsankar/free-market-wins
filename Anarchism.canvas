@@ -6,9 +6,7 @@
 		{"id":"f9dc0afa6f418cc2","type":"file","file":"Mixed Law.md","x":120,"y":-239,"width":400,"height":394},
 		{"id":"7d3b34f8ca632220","type":"file","file":"Jungle Law.md","x":120,"y":-619,"width":400,"height":290},
 		{"id":"35f3661ac2f3c6ec","type":"file","file":"Parasitism.md","x":-500,"y":-619,"width":475,"height":399},
-		{"id":"df85625d98cd7cda","type":"file","file":"Conflicts.md","x":-1375,"y":-569,"width":400,"height":299},
-		{"id":"93178e483f476e52","type":"file","file":"Scarcity.md","x":-1375,"y":-920,"width":400,"height":221},
-		{"id":"18a06533f0fc3e49","type":"file","file":"Time.md","x":-1375,"y":-1360,"width":400,"height":350},
+		{"id":"df85625d98cd7cda","type":"file","file":"Conflicts.md","x":-1397,"y":-569,"width":444,"height":299},
 		{"id":"ba05acebab996b51","type":"text","text":"Whim-based ethic","x":705,"y":-504,"width":250,"height":60},
 		{"id":"8eba43c9449d3586","type":"text","text":"Class-based ethic","x":705,"y":-389,"width":250,"height":60},
 		{"id":"df600f86540d70e2","type":"file","file":"Polylogism.md","x":1120,"y":-413,"width":400,"height":493},
@@ -18,8 +16,7 @@
 		{"id":"283e1913c4b0bb8a","type":"file","file":"Coincidence of wants.md","x":-1375,"y":598,"width":400,"height":248},
 		{"id":"0677db3f2f182297","type":"file","file":"Trade.md","x":-2326,"y":653,"width":400,"height":138},
 		{"id":"b2d84a564fdff2ae","type":"file","file":"Production.md","x":-2326,"y":353,"width":400,"height":200},
-		{"id":"4a2a20b2290a7be9","type":"file","file":"Axioms as Invulnerable.md","x":-797,"y":-1849,"width":377,"height":390},
-		{"id":"2a2626149b9abbe4","type":"file","file":"Axiom of Action.md","x":-1364,"y":-1834,"width":377,"height":360},
+		{"id":"2a2626149b9abbe4","type":"file","file":"Axiom of Action.md","x":-1397,"y":-1834,"width":444,"height":334},
 		{"id":"97913cf87176ee35","type":"file","file":"Primacy of Consciousness.md","x":1720,"y":-644,"width":720,"height":340},
 		{"id":"331fce73ffd67675","type":"file","file":"Argumentation Ethics.md","x":-2897,"y":-619,"width":400,"height":400},
 		{"id":"88b3951aefdf6c72","type":"file","file":"Self-ownership.md","x":-2897,"y":-151,"width":400,"height":306},
@@ -35,8 +32,11 @@
 		{"id":"3457b3e22b2eb952","type":"file","file":"Bitcoin.md","x":-2326,"y":1284,"width":400,"height":400},
 		{"id":"917ed8681b794755","type":"text","text":"Gold","x":-1820,"y":1284,"width":250,"height":60},
 		{"id":"1ade909a2b9bfeab","type":"text","text":"FALSE","x":1955,"y":-196,"width":250,"height":60,"color":"1"},
+		{"id":"c65f4ff4d8105c1e","type":"file","file":"Socialism is impossible.md","x":120,"y":400,"width":490,"height":240},
 		{"id":"a23519607cef3a55","type":"file","file":"Life the standard for man.md","x":-1397,"y":-2120,"width":444,"height":160,"color":"5"},
-		{"id":"c65f4ff4d8105c1e","type":"file","file":"Socialism is impossible.md","x":120,"y":400,"width":490,"height":240}
+		{"id":"18a06533f0fc3e49","type":"file","file":"Time.md","x":-1397,"y":-1380,"width":444,"height":350},
+		{"id":"93178e483f476e52","type":"file","file":"Scarcity.md","x":-1397,"y":-940,"width":444,"height":221},
+		{"id":"4a2a20b2290a7be9","type":"file","file":"Axioms as Invulnerable.md","x":-800,"y":-1834,"width":560,"height":334}
 	],
 	"edges":[
 		{"id":"9ddd40d9d46c955f","fromNode":"2a2626149b9abbe4","fromSide":"bottom","toNode":"18a06533f0fc3e49","toSide":"top"},
