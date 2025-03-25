@@ -8,7 +8,7 @@ On top of that, they try to get around cutting the grass as much a possible and 
 This leads to a barely used field though the number of kids in the area is relatively the same if not more than circa 2000-2012
 ```
 
-In previous years, Robbie, a neighbour, held a kids football camp on Saturday mornings and would mow the lawn himself on the Friday if it was uncut. Sometimes he'd pay maybe 100-200 to one of the teens living nearby to cut the grass.
+In previous years, Robbie, a neighbour, held a kids football camp on Saturday mornings and would mow the lawn himself on the Friday if it was uncut. Sometimes he'd pay maybe 100-200 to one of the teens living nearby to cut the grass. 
 
 Morons usually say if it weren't for taxes, we wouldn't be able to crowdfund enough to make things cheaper and more available. Here is a case where in spite of wasted tax money, the free market is able to get it done more efficiently, i.e. Robbie invests money for a lawn mower + fuel + labour and still makes a profit with his camp.
 
