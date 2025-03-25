@@ -50,3 +50,34 @@ A man who sustains himself by means of aggression is destroying the root of his 
 4. This is such a bad outlook, to down tools and say it will always be like that. Imagine if the first abolitionists gave up like this — based on how you view govt being THE say-so youd side with keeping slavery legal cuz you havent shown explicitly why they differ, you just say govt says so by fiat/or people trading in society etc, and there's benefits you like — all of which would be present in those times as well making them pro-slavery arguments if we thought like that.
    I do accept there will be a need for governance and Im glad you agree it can be funded *another way* — i.e. the same way any private business is funded by voluntary trade. Id imagine the moral outrage youd have if Apple showed up with guns and demanded payments from its iphone users to "better the product" — yet if the govt does citing the same rationale it its magically okay
 5. First based take so far, YES, I am moving to a better slave plantation with 0 help from anyone who runs the current plantation — its actually a pain to leave since this gracious govt cant do basic things in a timely manner vs my bank (private org) for example, gee I wonder why?. If all this hoop jumping I have to do constitutes as "not slavery" then the fact that slaves could runaway like the moors in Haiti meant that they had a "choice" according to you right? So all the other slaves in the other islands werent actually slaves cuz they chose not to runaway — see how absurd this sounds?
+
+
+```Sorry for the late reply. I took some time to weigh the pros and cons of what we arrived at last week.
+
+So I 100% agree that there are times our government funds things that don’t make sense or seem excessive. Solar panels are a good initiative, and there has been a push to get more electric vehicles on the road. That said, when I see a minister driving around in the latest, most luxurious electric cars money can buy on our small island, I get annoyed knowing that that money could have been better spent.
+
+So regarding the opting out a bit, it sounded good to me initially, but then the more I thought about it, the less sense it made. I always consider, “If this is such a good idea, why has no country implemented anything similar?” So now you pay no taxes directly, and you have to pay private companies to handle everything, and I mean EVERYTHING. For example, if your house was on fire and you called the fire truck, you would be expecting a bill at the end right? Lol, but now this private company will have to pay taxes, so even though you are not directly paying taxes, a portion of your money still finds its way into the government's pockets.
+
+Finally, If you had to pay for everything, I could argue that at the end of it, you may end up paying more to private companies than just paying taxes - so it wouldn’t make sense from a purely financial perspective and even then, as I’ve pointed out earlier, a portion still makes it back to govt. The benefit, as you’ve pointed out, is for you to have more say where your money goes, like the stuff you mentioned (football academies, etc).
+
+I would have suggested a means to specify what our tax money goes to, but that may end up underfunding programs that people may not fully understand
+```
+
+“If this is such a good idea, why has no country implemented anything similar?”
+You had the gist of the answer in those ministers driving around in luxury cars lol, why would any politician want to give citizen more options when it means they stand to lose? + politicians "sell dreams", what is more enticing to the masses "work hard and get your just rewards" or "we will take care of you"
+
+What do you mean by the fire brigade needing to pay taxes? Like if some of their employees are subscribers of govt programs then sure but thats not "your money" that is making it to the govt that's those individuals — all you did is pay them to put the fire out. If the head of the business is utilizing govt stuff, well whatever 'taxes' they need to pay for it is just a part of their overhead and its on them. If for example they use fire hydrants and need to pay for the water then cool they pay that 'tax', if they have their own water tanks then they dont.
+
+"If you had to pay for everything, you might end up paying more" 
+So 2 cases here
+1. Guy who can afford all his services regardless if its more expensive than paying taxes
+   I think this is simply a "let him be", his financial health is his own doing right? Why would we want to parent him and tell him how to spend his money?
+2. Guy who pays taxes for his services because its 'cheaper'
+   Why is it cheaper? Is it cuz everyone opting in does not redeem the services at the same time so its a sorta pay-it-forward arrangement (kinda like how insurance works)?
+   I assume not everyone is paying a flat rate too right? So sure its 'cheaper' for the low income individuals, but then it wont be the same value prop for higher earners?
+So is your point in favour of not-opting out so that one group subsidizes these services for another group? Ofc everyone stands to benefit but the benefit ratio reduces the more you put in compared to a private org where it increases.
+
+"Underfunding programs that people may not understand"
+Shouldn’t you first make the case to people and help them understand why something needs funding and how it can benefit them? If they disagree/still don’t understand, it’s not your duty to parent them on their choices cuz then if we go down that path are we wanting to police what people eat/drink/drugs to take or not take etc etc etc all in the name "for your own good" and who gets to decide that for someone else seeing that they cant opt out?
+That said, in the case where they stand to lose out if they dont fund some program — that's purely on them. Imagine living near a coastline where a company wants to reinforce the shoreline. If you choose not to fund it and your house gets wrecked, that’s your responsibility. What wouldn’t be fair is forcing someone who lives in the mountains to pay for coastline reinforcement when they’ve got their own erosion issues to deal with and vice versa.
+
