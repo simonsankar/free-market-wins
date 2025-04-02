@@ -23,7 +23,7 @@ Well 100 people planning for no one would be pretty insane but ultimately fruitl
 All 3 cases mathematically shows that [[Central Planning]] can never out perform individuals freely trading and making their own decisions for themselves.
 
 
-It is not theoretically impossible  for [[Central planners]] to make truly informed decisions on behalf of the rest of the population, i.e. we may be able to read people's minds within <1ms with some technology into the future, but this is strictly science fiction. To play devil's advocate, let us grant that they cant read people's minds and figure out __what__ they want. [[Central planners]] will still face the question of __how__ to provide what their population wants which is a question that is impossible for them to solve since they face the [[economic calculation problem]].
+It is not theoretically impossible  for [[Central planners]] to make truly informed decisions on behalf of the rest of the population, i.e. we may be able to read people's minds within <1ms with some technology into the future, but this is strictly science fiction. To play devil's advocate, let us grant that they cant read people's minds and figure out __what__ they want. [[Central planners]] will still face the question of __how__ to provide what their population wants which is a question that is impossible for them to solve since they face the [[Economic Calculation Problem]].
 
 As it stands now they cannot make truly informed decisions on behalf of the rest of the population since the data they are considering is always lacking the full picture.
 
