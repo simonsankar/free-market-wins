@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-There are three fundamental [[axioms]] in metaphysics
+There are three fundamental [[axioms]] in metaphysics
 - [[Existence]]
 - [[Identity]]
 - [[Consciousness]]
@@ -28,6 +28,3 @@ B: "No we are conscious beings that can form ideas as you and I are doing now el
 - [x] Consciousness
 
 In the act of voicing his objection, therefore, the objector has conceded the case. In any act of challenging or denying the three axioms, man reaffirms them, no matter what the particular content of his challenge. The axioms are invulnerable.
-
-
-
