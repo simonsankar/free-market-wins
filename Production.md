@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Take stuff you owned and further develop it into something new.
 
 Chopped down wood -> Refined it into planks
