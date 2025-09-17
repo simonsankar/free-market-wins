@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-There are three fundamental [[axioms]] in metaphysics
+There are three fundamental [[Axioms]] in metaphysics
 - [[Existence]]
 - [[Identity]]
 - [[Consciousness]]

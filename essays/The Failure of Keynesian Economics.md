@@ -1,35 +1,79 @@
----
-dg-publish: true
----
-This is comparable to actual cancer — not being hyperbolic here.
+# The Failure of Keynesian Economics
 
-### Rough Idea
-The details of Keynesian economics is hairy as the intention is to obscure how it all 'works'. It is the combination of [[Fiat Currency]], and a [[State]] that enacts interventionism into a market economy with the guise that it 'helps' disenfranchised people in that economy or 'regulate' the economy to achieve the state's utilitarian goals such as social welfare, state funded programs, politically aligned sectors/industries etc.
-This is done by inflating the money supply (money they do not have), and spending it on those utilitarian goals which essentially means that debt is good and savings is bad, and as a result of this framing we end up in a debt-based economy but how does that work exactly or rather _how is it intended to work_?
+Keynesian economics is comparable to actual cancer — not being hyperbolic here.
 
-### No intervention economy
-Let us look at a small economy without any interventionism with respect to the money supply with a fixed number of people and dollars 
-— $100 (non divisible beyond $1 for simplicity) and a group of 10 people
-It is very simple to imagine things will be priced no more $100 but in a more realistic sense, maybe no more than $10,$15,$20 and this is easy to rationalize as prices are going to normalize to some market rate depending on the good/service, meaning in the same way an iPhone does not cost $30k for one since no one is willing to pay that for it, so too will follow any good/service in this tiny example economy.
-This preamble sets up a deflationary economy in which over time things get cheaper and the value in your savings will rise as new goods are introduced which are competing for these limited amount of dollars. This is in stark contrast to what we know today where prices are assumed to go up, but why? What is the reason for this and does it make sense?
+## What Is Keynesian Economics?
 
-### Cancer economy
-Let us introduce interventionism and see what actually happens as a result of inflating the money supply
-— The state introduces an additional $50 to the economy
-They intend to spend it on some infrastructure they want but in this economy everything priced in relation to $100 cap, meaning everyone is working under the correct assumption that each individual will not pay over a certain amount for a good/service because ultimately there is only 100 units and that averages out to be 10 a person (though some may have more than others), so if the state now has this extra $50 that the market is not calibrated for, these goods/services will be relatively cheap on the initial purchase or use of these new units.
+Keynesian economics is the idea that government should "stimulate" the economy by spending money it doesn't have. The theory claims this helps create jobs and economic growth. In practice, it's a sophisticated system for stealing from savers to fund government spending.
 
-Following from this, the receiving party with these new dollars will go out and spend it and find it also relatively cheap but not as much as the market will adjust based on this new knowledge that there are more units until the new units have been dispersed fully. Over time as the new units are in circulation it results in all prices rising relative to that additional $50. The key distinction however is that the ones closest to the new units got way more benefit as prices did not adjust in time compared to those furthest away from the new units who now have to pay more for something that was not their doing.
+The system combines [[Fiat Currency]] (money not backed by gold) with massive government intervention. Politicians claim this helps the poor and "regulates" the economy, but it's really just a way to spend other people's money on their pet projects.
 
-But how does the $50 have value to begin with? Well this is from the value stored in people's savings. Effectively, when new money enters and the prices have not adjusted, the value in this $50 is pretending to be $50 stored within the original $100, after it is entered the total supply becomes $150 and the original holders of $100 will now find that each unit is now worth less obviously because its scarcity has worsened while the total number of goods/services have not.
+## How Money Should Work: The Natural Economy
 
-Technology is deflationary, we see in the private sector that products and services get cheaper and better over time (basic market functions), and this is what the Keynesian hopes will offset this cancerous intervention as well as enable it to continue. After injecting new money and worsening the quality of the money, they hope that it forces people to find more cost effective ways to produce things as now their savings have been devalued and they need to offset this loss in value that is imposed on them, this is personified by the fact that wages have not risen since the 1970 (off the gold standard), yet productivity has increased 3.5x.
-This is precisely what is meant by 'stir economic growth', behind that statement is the truth that the state wants to consume before it produces and expects the population to foot the bill.
-We can apply this thinking to a desert island and see how it fails spectacularly
-- By oneself: Impossible, results in death
-- With others: Forcing others to produce for his consumption (Slavery)
+Imagine a simple economy with 10 people and exactly $100 total. That's it - no more money can be created.
 
-So we see this model necessitates the theft of savers in perpetuity but what would this mean as as the end goal? Simply put your money will slowly but surely tend towards 0. This is the case for many countries who deal with hyperinflation, it is the only result from Keynesian economics.
-Debt on debt on debt as savers lose savings on savings on savings.
+In this economy:
+- Everything would be priced reasonably (maybe $5-20 max for most items)
+- Over time, as people got better at making things, prices would fall
+- Your savings would buy more stuff each year
+- Innovation would make goods cheaper and better
+
+This is **deflation** - and it's natural and good. Think about computers: they get faster and cheaper every year. That's what should happen to everything in a healthy economy.
+
+## How Keynesian Economics Destroys This
+
+Now let's see what happens when government "stimulates" our economy.
+
+### Step 1: Government Creates $50 Out of Thin Air
+
+The government decides it needs to build a bridge. But instead of asking taxpayers for money (which would be unpopular), it simply creates $50 from nothing and spends it.
+
+### Step 2: The First Theft Occurs
+
+When government spends this new $50, prices haven't adjusted yet. So government gets $50 worth of goods and services at the old prices. But where did this value come from? 
+
+It came from everyone else's savings. The economy still only has the same amount of stuff, but now there's $150 instead of $100. Everyone's dollars just became worth less.
+
+### Step 3: The Ripple Effect
+
+The bridge builders now have $50 to spend. They go shopping and find prices are still low (markets take time to adjust). So they get a good deal too.
+
+But as this new money spreads through the economy, prices start rising. The people furthest from the government's initial spending get screwed the hardest - they have to pay higher prices but never got any of the new money.
+
+### Step 4: Your Savings Get Destroyed
+
+What used to cost $10 now costs $15. Your $10 in savings now buys less stuff. You've been robbed, but no one broke into your house. The government did it by printing money.
+
+## The Big Lie: "Economic Growth"
+
+Keynesians claim this creates "economic growth." But what really happened?
+
+1. Government consumed resources without producing anything
+2. Early recipients of new money got rich at everyone else's expense  
+3. Savers lost purchasing power
+4. The economy has the same amount of real wealth, just distributed differently
+
+This isn't growth - it's theft with extra steps.
+
+## The Desert Island Test
+
+Imagine you're on a desert island. Can you stimulate the economy by creating more seashells (your currency) from thin air? Of course not. You still have the same amount of coconuts and fish.
+
+If you're alone, this strategy kills you. If you're with others, you're essentially forcing them to work for your benefit while you contribute nothing. That's slavery.
+
+## The Inevitable End Game
+
+This system requires constant theft from savers. Every year, your money must lose value to keep the scheme going. Where does this lead?
+
+Your money slowly but surely approaches zero value. Look at countries with hyperinflation - this is Keynesian economics taken to its logical conclusion.
+
+Meanwhile, wages haven't risen since 1970 (when we abandoned the gold standard), but productivity has increased 3.5x. Workers are producing more but earning less. Where did that wealth go? To the government and those closest to the money printer.
+
+## The Solution
+
+The solution is simple: [[Sound Money]] backed by something real, like gold or [[Bitcoin]]. No more money printing. No more theft through inflation. Let the [[Markets]] work naturally, with prices falling over time as innovation makes us more productive.
+
+Keynesian economics isn't helping the economy - it's a cancer slowly destroying the wealth of everyone who works and saves.
 
 
 
