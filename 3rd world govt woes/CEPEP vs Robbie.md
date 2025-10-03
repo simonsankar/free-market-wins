@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 CEPEP is tasked with general maintenance of the streets/parks etc
 They do a horrendous job of this with infrequent cutting of grass in the fields
 

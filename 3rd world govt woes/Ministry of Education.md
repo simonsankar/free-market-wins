@@ -1,3 +1,6 @@
+---
+dg-publish: false
+---
 where do we even begin?
 - 35k/month on cloud infrastructure with ~0 users
 - ~0 users since their solutions were to poorly understood problems (no incentives to understand)

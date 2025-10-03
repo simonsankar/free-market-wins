@@ -1,1 +1,4 @@
+---
+dg-publish: true
+---
 Income cannot be _redistributed_ since income was never _distributed_ in the first place.

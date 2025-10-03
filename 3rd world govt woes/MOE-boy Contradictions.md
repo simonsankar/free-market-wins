@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Law of Non-Contradiction states that contradictions are `false` therefore all of these are wrong — 🤡
 
 - Advocates for the govt stealing peoples money to pay for goods/services/protection
