@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
 - monopoly on roads
 - has access to a pitch lake, yet roads are in bad conditions
 - simplistic east-west/north-south routes that leads to traffic
+- runs an airline LOL

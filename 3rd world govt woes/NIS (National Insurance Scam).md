@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 National Insurance systems are often fundamentally misaligned with the needs of workers. Let me restate the key absurdities:
 
 The National Insurance scheme operates as a forced financial transaction where:

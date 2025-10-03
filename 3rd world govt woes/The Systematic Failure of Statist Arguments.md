@@ -1,5 +1,6 @@
-# The Systematic Failure of Statist Arguments
-
+---
+dg-publish: true
+---
 ## Executive Summary
 
 This document analyzes how pro-government arguments systematically fail at every logical step. The statist position ultimately reduces to: **"Violence against peaceful people is justified because I like the outcomes."**

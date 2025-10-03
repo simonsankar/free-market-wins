@@ -1,5 +1,6 @@
-# Addressing the Common Defenses of Government Force
-
+---
+dg-publish: true
+---
 ## Introduction
 
 This document examines the logical progression of arguments commonly made to defend government authority and taxation. Each position is analyzed to show where the reasoning encounters difficulties, with the goal of finding a consistent ethical framework we can both accept.
