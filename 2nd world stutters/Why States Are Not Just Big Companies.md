@@ -1,13 +1,14 @@
 ---
 dg-publish: true
 ---
+
 ## The Fatal Conflation and the Economic Inevitability of State Collapse
 
 ## The False Equivalence
 
-There's a particularly pernicious argument making rounds: that states are simply large companies that "got away with it," that the difference between Amazon's terms of service and taxation is merely one of degree, not kind. That if the US government collapsed tomorrow, Amazon would simply become the new state because "might makes right" and the biggest company inevitably morphs into a territorial monopoly on violence.
+A common claim is that states are simply large companies that "got away with it" - that the difference between Amazon's terms of service and taxation is merely one of degree, not kind. The argument follows that if the US government collapsed, Amazon (or some large corporation) would simply become the new state, because the biggest company inevitably morphs into a territorial monopoly on violence.
 
-This is dangerously wrong. It conflates voluntary exchange with systemic coercion, and worse, treats state formation as an inevitable economic outcome rather than what it actually is: a parasitic abandonment of economic law.
+This conflates voluntary exchange with systemic coercion, and treats state formation as an inevitable economic outcome rather than what it actually is: a parasitic abandonment of economic law.
 
 ## How States Actually Form: Conquest, Not Contract
 
