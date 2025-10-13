@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-# Axioms
 
 **Axioms** are self-evident truths that don't need proof. They're the foundation from which all logical arguments must be built. You can't argue against an axiom without using it in your argument - making your position self-refuting.
 

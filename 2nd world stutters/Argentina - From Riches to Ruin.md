@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-# Argentina: From Riches to Ruin
 
 ## The Decline from 10th Wealthiest Nation to Economic Collapse
 

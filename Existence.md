@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-# Existence (The First Axiom)
 
 **"Existence exists—and the act of grasping that statement implies two corollary axioms: that something exists which one perceives and that one exists possessing consciousness, consciousness being the faculty of perceiving that which exists."**
 

@@ -39,6 +39,7 @@ When editing or creating content:
 - Keep individual files focused on specific concepts or arguments
 - Follow the existing tone and style (direct, argumentative, occasionally humorous)
 - Ensure arguments are grounded in Austrian economic principles or natural rights theory
+- **IMPORTANT**: Do NOT include the file name as a title (# heading) inside the markdown file. Obsidian automatically displays the file name as the title, so adding it again creates duplicate titles. Start files with content or a subtitle (##), not a duplicate # title
 
 ## File Organization
 

@@ -1,5 +1,3 @@
-# There Are No Stopping Points: Human Action and Political Change
-
 ## The Utopian Critique
 
 Critics often dismiss [[Anarcho-Capitalism]] as "utopian" - claiming that a stateless society will never exist, and therefore anarcho-capitalists are chasing impossible dreams.

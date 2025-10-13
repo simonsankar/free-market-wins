@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-# Fractional Reserve Banking: The Legal Ponzi Scheme
 
 ## The Basic Scam
 
@@ -58,7 +57,7 @@ With a 10% reserve requirement:
 - Bank profits from interest on $9 they never had
 - If loans default, bank still owns collateral bought with fake money
 
-**The Perfect Crime**: Create money ’ Loan it at interest ’ Seize real assets when loans default ’ All "legal"
+**The Perfect Crime**: Create money ï¿½ Loan it at interest ï¿½ Seize real assets when loans default ï¿½ All "legal"
 
 ## Historical Con Game
 

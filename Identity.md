@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-# Identity (The Second Axiom)
 
 **"To exist is to be something, to possess identity. A thing is itself; or, in the traditional formula, A is A."**
 
