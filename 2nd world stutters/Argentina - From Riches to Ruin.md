@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 ## The Decline from 10th Wealthiest Nation to Economic Collapse
 
 In 1913, Argentina was the **10th wealthiest nation per capita in the world**—richer than France or Germany.

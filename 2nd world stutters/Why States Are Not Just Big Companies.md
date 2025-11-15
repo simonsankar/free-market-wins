@@ -2,7 +2,7 @@
 dg-publish: true
 ---
 
-## The Fatal Conflation and the Economic Inevitability of State Collapse
+##The Fatal Conflation and the Economic Inevitability of State Collapse
 
 ## The False Equivalence
 

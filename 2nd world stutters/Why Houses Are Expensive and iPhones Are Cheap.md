@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 ## Inflation Isn't Just Prices Rising—It's Prices Not Falling
 
 When people talk about inflation, they think: "Prices go up."
