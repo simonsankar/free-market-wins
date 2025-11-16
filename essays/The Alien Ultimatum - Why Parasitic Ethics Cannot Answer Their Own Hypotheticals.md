@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## The Asymmetry: What Each Framework Actually Tests
 
 Ancaps get asked: **"Aliens will destroy Earth unless you steal a penny. Will you violate the NAP?"**
