@@ -89,4 +89,4 @@ They won't have an answer. Because parasitic ethics **cannot answer their own hy
 
 ---
 
-**Related:** [[Argumentation Ethics]], [[Non-Aggression Principle]], [[Economic Calculation Problem]], [[Democracy]]
+**Related:** [[Argumentation Ethics]], [[The Non-Aggression Principle]], [[Economic Calculation Problem]], [[Democracy]]
