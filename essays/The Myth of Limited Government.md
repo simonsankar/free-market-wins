@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## The Fundamental Contradiction
 
 The concept of "limited government" contains an inherent logical contradiction. It asks us to believe that an institution which holds the ultimate power to use force - the power to override all other claims to authority - will somehow voluntarily restrain itself. This is like expecting a monopolist to voluntarily charge competitive prices or asking a dictator to respect term limits.

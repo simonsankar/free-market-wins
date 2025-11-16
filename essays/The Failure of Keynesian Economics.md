@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 Keynesian economics is comparable to actual cancer — not being hyperbolic here.
 
 ## What Is Keynesian Economics?
