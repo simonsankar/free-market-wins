@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 ---
-
 [[Money]] backed by nothing but government force and the requirement that citizens accept it as payment.
 
 ## What Is Fiat Currency?
