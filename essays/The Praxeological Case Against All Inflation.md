@@ -901,6 +901,556 @@ This is what we observe with technology. Computing power gets cheaper every year
 
 The reason necessities (housing, healthcare, education) get more expensive while luxuries (electronics, entertainment) get cheaper is that the former are heavily regulated and subsidized (inflation + intervention) while the latter face actual market competition.
 
+## The Fiat Illusion: "Number Go Up" = Progress?
+
+Under the fiat debt-based system, we're conditioned to believe:
+- Prices should rise forever
+- Wages should rise forever
+- If numbers don't go up, we're getting poorer
+- Growth = nominal increases
+
+This is backwards. **Real progress means prices FALL while living standards RISE.**
+
+### The Calculator Proof
+
+```
+THE CALCULATOR'S JOURNEY
+─────────────────────────────────────────────────────────────────
+
+1970s: Scientific calculator = $400 (a week's wages)
+       → Society was "rich" by fiat logic
+
+1990s: Scientific calculator = $20
+       → Did society get poorer? No.
+
+2010s: Calculator app = $0.99
+       → Did society get poorer? No.
+
+2020s: Calculator app = FREE
+       → Society "poorest" by fiat logic?
+
+REALITY: Society got RICHER.
+         The same function costs NOTHING.
+         Resources freed for other uses.
+         Everyone has access, not just the wealthy.
+```
+
+By fiat logic, we should see calculator prices rise forever. Instead, they fell to zero. Did this impoverish calculator manufacturers? No — they moved on to produce other things. Did it impoverish society? Absolutely not — it enriched everyone.
+
+**This is what ALL prices should do under sound money.** Productivity gains should be passed to consumers as lower prices, not captured by money printers as inflation.
+
+### Why Technology Gets Cheaper But Necessities Don't
+
+```
+WHAT GETS CHEAPER              WHAT GETS MORE EXPENSIVE
+─────────────────────────────────────────────────────────────────
+
+Computers                      Housing
+Phones                         Healthcare
+TVs                            Education
+Calculators                    Childcare
+Entertainment                  Food
+Software                       Energy
+Appliances                     Insurance
+
+WHAT'S THE DIFFERENCE?
+
+Cheaper things:                Expensive things:
+- Mostly free market           - Heavy govt intervention
+- Global competition           - Local monopolies/cartels
+- Minimal regulation           - Massive regulation
+- No govt subsidies            - Subsidized demand
+- Far from central bank        - Close to central bank
+- Innovation rewarded          - Compliance rewarded
+```
+
+The sectors closest to government — healthcare, education, housing — show the worst price inflation. The sectors furthest from government — technology, consumer electronics — show consistent deflation.
+
+This isn't coincidence. **Proximity to the money printer determines whether productivity gains go to consumers or get captured by the connected.**
+
+### The Housing Catastrophe
+
+The clearest proof that fiat has failed is housing:
+
+```
+HOUSING: THEN VS NOW
+─────────────────────────────────────────────────────────────────
+
+1970 (Before full fiat):
+- Median home: $23,000
+- Median income: $9,870
+- Home/Income ratio: 2.3x
+- Single income supported family
+- 15-year mortgages common
+- Mortgage paid off by 40
+
+2024 (Full fiat):
+- Median home: $420,000
+- Median income: $74,580
+- Home/Income ratio: 5.6x
+- Dual income required
+- 30-year mortgages standard
+- Mortgage paid off at 60+
+
+QUESTION: Is this progress?
+```
+
+How can someone work harder than their parents, be more productive than their parents, have more technology than their parents — yet struggle to afford what their parents bought easily?
+
+**This is not progress. This is theft across generations.**
+
+### The Productivity-Wage Gap
+
+```
+THE GREAT DIVERGENCE (1971-Present)
+─────────────────────────────────────────────────────────────────
+
+         Productivity    Real Wages
+         (Output/Hour)   (Purchasing Power)
+─────────────────────────────────────────────────────────────────
+1971:    100             100        (Indexed baseline)
+1980:    115             98
+1990:    140             95
+2000:    175             100
+2010:    210             98
+2020:    250             102
+
+Productivity up 150%
+Real wages flat
+
+WHERE DID THE GAINS GO?
+→ To those closest to the money printer
+→ [[Cantillon Effect]] in action
+→ Workers produce more, keep the same
+→ Asset owners capture the difference
+```
+
+Before 1971 (Nixon Shock), productivity gains translated to wage gains. After 1971, the link broke. Workers became dramatically more productive, but their purchasing power stagnated.
+
+The difference was captured through inflation by those nearest the money printer.
+
+### The Historical Proof: 1870-1913
+
+The inflation advocate claims deflation is catastrophic. History says otherwise:
+
+```
+THE GREAT DEFLATION (1870-1913)
+─────────────────────────────────────────────────────────────────
+
+Monetary system: Gold standard
+Price trend: FALLING (mild deflation)
+Economic result: GREATEST GROWTH IN HISTORY
+
+What happened:
+- Prices fell ~1-2% per year
+- Wages rose in REAL terms
+- Living standards exploded
+- Innovation flourished
+- Middle class emerged
+- No central bank (until 1913)
+
+Specific examples:
+- Rail transport cost: DOWN 90%
+- Steel price: DOWN 80%
+- Lighting cost: DOWN 95%
+- Food prices: DOWN 50%
+
+Did people stop buying because prices fell?
+NO. They bought MORE because they could AFFORD more.
+
+Did businesses fail because prices fell?
+NO. Costs fell too. Margins maintained.
+Efficient producers thrived.
+```
+
+The period of greatest American economic growth occurred during consistent deflation. The claim that "we need inflation for growth" is historically illiterate.
+
+### What Stocks Used to Be
+
+The fiat system has perverted even the stock market:
+
+```
+STOCKS: THEN VS NOW
+─────────────────────────────────────────────────────────────────
+
+Pre-Fiat Era (Before 1971):
+
+Purpose of stocks: Ownership stake in productive enterprise
+Primary return: DIVIDENDS (share of profits)
+Average yield: 4-6%
+Price appreciation: Secondary, slow
+Investor mindset: "I own part of this business"
+Holding period: Years to decades
+Volatility: Low
+
+Full Fiat Era (1971-Present):
+
+Purpose of stocks: Inflation hedge / speculation vehicle
+Primary return: CAPITAL GAINS (price increase)
+Average yield: 1-2%
+Price appreciation: Primary, volatile
+Investor mindset: "Number go up, I sell"
+Holding period: Days to months
+Volatility: Extreme
+
+WHAT CHANGED?
+
+Under sound money:
+- Save in money (it holds value)
+- Invest in stocks for income (dividends)
+- Stocks priced on earnings/dividends
+
+Under fiat:
+- Can't save in money (it loses value)
+- MUST invest just to preserve wealth
+- Stocks become savings vehicle
+- Prices driven by money fleeing inflation
+- Speculation replaces investment
+- "Investing" becomes gambling
+```
+
+People don't invest in stocks because it's a great opportunity — they invest because holding cash guarantees loss. This forces everyone into speculation, inflating asset bubbles and creating volatility.
+
+### Houses as Investment Vehicles
+
+The same perversion happened to housing:
+
+```
+HOUSING PURPOSE: THEN VS NOW
+─────────────────────────────────────────────────────────────────
+
+Original purpose: CONSUMER GOOD
+- Place to live
+- Shelter for family
+- Depreciating asset (requires maintenance)
+- Bought when needed, sold when not
+
+Fiat purpose: INVESTMENT VEHICLE
+- Inflation hedge
+- "Building equity"
+- "Your biggest investment"
+- Speculative asset
+- Bought as early as possible
+- Never sold if avoidable
+
+THE PERVERSE CYCLE:
+
+1. Fiat money loses value
+2. People flee to "hard assets" (houses)
+3. Demand for houses as investment rises
+4. House prices rise
+5. Houses become "good investment"
+6. More people buy houses as investment
+7. Prices rise further
+8. Houses unaffordable for actual living
+9. GOTO 1
+
+This is a SELF-FULFILLING PROPHECY created by fiat.
+Houses aren't naturally an investment.
+They're shelter that requires constant maintenance.
+Only inflation makes them "appreciate."
+```
+
+Rich people aren't buying houses because they're greedy — they're buying because it's rational under fiat. Hold cash? Lose 5% per year. Buy houses? At least maintain purchasing power.
+
+The result: housing transforms from consumer good to investment vehicle, pricing out those who just want somewhere to live.
+
+### The Generational Theft
+
+```
+GENERATIONAL COMPARISON
+─────────────────────────────────────────────────────────────────
+
+1960s FAMILY:
+- Single income (father works)
+- Mother stays home with children
+- Own home (15-year mortgage)
+- Own car (paid cash)
+- Annual vacation
+- Retire at 60 with pension
+- Leave inheritance to children
+
+2020s FAMILY:
+- Dual income (both parents work)
+- Children in daycare ($$$)
+- Rent or 30-year mortgage
+- Car loans
+- "Staycations"
+- Retire at 67... maybe
+- Leave debt to children
+
+MORE PRODUCTIVE:     Yes (2.5x)
+MORE EDUCATED:       Yes
+MORE HOURS WORKED:   Yes (2 incomes vs 1)
+BETTER OFF:          NO
+
+This is not progress. This is regression.
+Fiat has stolen the productivity gains
+of three generations.
+```
+
+The inflation advocate must explain: If inflation is good, why does each generation work harder for less? Why do two incomes struggle where one succeeded? Why do 30-year mortgages replace 15-year mortgages?
+
+**Fiat doesn't create growth. It creates the illusion of growth while extracting real wealth.**
+
+## Bitcoin: The Sound Money Solution
+
+The inflation advocate might concede that fiat is problematic but argue: "Bitcoin mining is also inflation! New coins are created!"
+
+This fundamentally misunderstands both Bitcoin and what makes inflation harmful.
+
+### Mining Is Not Inflation
+
+```
+FIAT "CREATION"                  BITCOIN MINING
+─────────────────────────────────────────────────────────────────
+
+How created:                     How created:
+- Keystroke on computer          - Expenditure of real energy
+- Costs nothing                  - Costs electricity, hardware
+- No work required               - Proof of Work required
+
+Who decides amount:              Who decides amount:
+- Central bankers                - The code (consensus rules)
+- Can change anytime             - Cannot change without consensus
+- Political process              - Mathematical process
+
+Who knows the rules:             Who knows the rules:
+- Insiders                       - Everyone (open source)
+- Rules change without notice    - Rules known from day one
+- No consent required            - Consent via participation
+
+Supply schedule:                 Supply schedule:
+- Unlimited                      - 21 million maximum
+- Determined by politics         - Determined by code
+- Unpredictable                  - Perfectly predictable
+
+CRITICAL DIFFERENCE:
+Fiat: Someone TAKES purchasing power from you
+Bitcoin: Known emission schedule, priced in from start
+```
+
+### Bitcoin Is Backed by Energy
+
+Gold became money because acquiring it requires real work — prospecting, mining, refining. This work is the "backing."
+
+Bitcoin works the same way:
+
+```
+GOLD BACKING                     BITCOIN BACKING
+─────────────────────────────────────────────────────────────────
+
+Must find deposits               Must solve cryptographic puzzle
+Must extract ore                 Must expend electricity
+Must refine metal                Must run specialized hardware
+Energy + Labor = Gold            Energy + Hardware = Bitcoin
+
+Both are PROOF OF WORK.
+Neither can be created from nothing.
+Both represent stored energy.
+```
+
+When someone "mines" a Bitcoin, they haven't created value from nothing — they've transformed energy into a monetary unit. The energy expenditure IS the backing.
+
+Fiat has no such backing. A keystroke creates a trillion dollars. No energy expended, no work performed, no value created.
+
+### Consensus Rules Everything
+
+The key difference between Bitcoin's emission and fiat inflation:
+
+```
+FIAT RULE CHANGES                BITCOIN RULE CHANGES
+─────────────────────────────────────────────────────────────────
+
+Who decides:                     Who decides:
+- Central bank committee         - Network consensus
+- 12 people in a room            - Millions of participants
+- Behind closed doors            - Open, transparent process
+
+How changes happen:              How changes happen:
+- Announcement after decision    - Proposal, debate, testing
+- Implemented immediately        - Only if consensus reached
+- No opt-out                     - Can refuse (fork or leave)
+
+Your consent:                    Your consent:
+- Not required                   - Required (you run the code)
+- Not asked                      - You choose which rules
+- No exit possible               - Can exit anytime
+
+Historical changes:              Historical changes:
+- Constant (every Fed meeting)   - Minimal (by design)
+- Always toward more printing    - Resistant to any change
+- "Emergency" justifies all      - Security > features
+```
+
+Every Bitcoin participant knows:
+- Total supply: 21 million, forever
+- Emission schedule: Halving every ~4 years
+- Current block reward: Known precisely
+- Future block reward: Known precisely
+
+No surprises. No emergency meetings. No "temporary" measures that become permanent. No one can change the rules without convincing the entire network.
+
+### The Halving Schedule
+
+Bitcoin's emission follows a predictable, declining schedule:
+
+```
+BITCOIN EMISSION SCHEDULE
+─────────────────────────────────────────────────────────────────
+
+2009-2012:  50 BTC per block     (10.5M total)
+2012-2016:  25 BTC per block     (15.75M total)
+2016-2020:  12.5 BTC per block   (18.375M total)
+2020-2024:  6.25 BTC per block   (19.6875M total)
+2024-2028:  3.125 BTC per block  (~20.34M total)
+...
+~2140:      0 BTC per block      (21M total, forever)
+
+Key properties:
+- Asymptotically approaches 21M
+- Never exceeds 21M
+- Rate of emission DECREASES over time
+- Opposite of fiat (which accelerates)
+- Everyone knew this from day one
+```
+
+This isn't inflation — it's a known, transparent, declining emission that approaches zero. There are no surprises, no "quantitative easing," no emergency rate cuts.
+
+### Division ≠ Duplication
+
+The advocate might say: "But what about when you need more units? Won't you have to create more Bitcoin?"
+
+No. Bitcoin is divisible to 8 decimal places (satoshis), and further division is possible through protocol upgrade if ever needed.
+
+```
+DIVISION VS DUPLICATION
+─────────────────────────────────────────────────────────────────
+
+1 BTC = 100,000,000 satoshis
+
+This is like saying:
+1 dollar = 100 cents
+
+Does dividing a dollar into cents CREATE money?
+No. It represents smaller units of the same value.
+
+Does dividing Bitcoin into satoshis CREATE money?
+No. It represents smaller units of the same value.
+
+TOTAL SUPPLY IS UNCHANGED.
+Only the unit of account changes.
+
+If needed:
+- Protocol can enable millisatoshis
+- Or microsatoshis
+- Or any division required
+- WITHOUT creating new supply
+- WITHOUT diluting existing holders
+```
+
+As we explained earlier: going from 1 coin to 10 coins at the START is just establishing divisions. Going from 10 coins to 15 coins AFTER prices form is theft.
+
+Bitcoin can always subdivide. It can never duplicate.
+
+### Why the Market Chose Bitcoin
+
+Bitcoin wasn't imposed by any government. It emerged from voluntary adoption:
+
+```
+BITCOIN'S VOLUNTARY ADOPTION
+─────────────────────────────────────────────────────────────────
+
+No legal tender laws forcing acceptance
+No government backing
+No military enforcement
+No taxation requiring its use
+No monopoly on issuance
+
+Yet:
+- $1+ trillion market cap
+- Millions of users worldwide
+- Adopted by nations (El Salvador)
+- Held by corporations (MicroStrategy, Tesla)
+- 15+ years of continuous operation
+- Never hacked, never debased
+
+WHY?
+
+Because it solves real problems:
+- Store of value across time
+- Transfer value across space
+- No permission needed
+- No counterparty risk
+- No debasement risk
+- Verifiable scarcity
+```
+
+People chose Bitcoin because it offers something fiat cannot: certainty. Certainty about supply, about rules, about ownership.
+
+### Bitcoin Optimizes for the Right Things
+
+```
+WHAT BITCOIN OPTIMIZES FOR
+─────────────────────────────────────────────────────────────────
+
+SECURITY:     Most secure network in human history
+              $700B+ securing the network
+              Never successfully attacked
+
+SCARCITY:     21 million, forever
+              Mathematically guaranteed
+              No exceptions, no emergencies
+
+DECENTRALIZATION: No single point of control
+                  No CEO, no board, no government
+                  Thousands of nodes worldwide
+
+WHAT BITCOIN DOES NOT OPTIMIZE FOR:
+
+Speed:        ~10 minute blocks (by design)
+              Security > speed
+
+Throughput:   ~7 transactions/second base layer
+              Layers can add speed (Lightning)
+              Security > throughput
+
+Flexibility:  Hard to change (by design)
+              Stability > features
+              Predictability > adaptability
+```
+
+The advocate might criticize Bitcoin for being "slow" or "inflexible." These are features, not bugs. Bitcoin prioritizes the properties that make money sound: scarcity, security, predictability.
+
+Speed can be added in layers. Scarcity cannot be added after the fact.
+
+### The Verdict on Bitcoin
+
+```
+BITCOIN VS FIAT: FINAL COMPARISON
+─────────────────────────────────────────────────────────────────
+
+                    FIAT                BITCOIN
+─────────────────────────────────────────────────────────────────
+Supply:             Unlimited           21 million
+Creation:           Keystroke           Energy expenditure
+Rules:              Change constantly   Fixed in code
+Consent:            Not required        Required (run code)
+Transparency:       Opaque              Open source
+Predictability:     None                Perfect
+Backing:            Government force    Proof of work
+Seizability:        Easy                Very difficult
+Censorship:         Easy                Very difficult
+Inflation:          Guaranteed          Impossible (post-2140)
+Trust required:     In institutions     In mathematics
+Historical record:  100% failure rate   15 years, no failure
+─────────────────────────────────────────────────────────────────
+```
+
+Bitcoin isn't perfect. But it solves the fundamental problem of money: **it cannot be arbitrarily debased by any authority.**
+
+That alone makes it superior to every fiat currency in existence.
+
 ## The Verdict
 
 Inflation is:
@@ -920,4 +1470,4 @@ Inflation isn't a tool for growth. It's a mechanism for theft dressed up in econ
 
 ---
 
-*See also: [[Austrian Economics]], [[The Economic Calculation Problem]], [[Fiat Currency]], [[The Failure of Keynesian Economics]], [[Taxation]], [[Cantillon Effect]]*
+*See also: [[Austrian Economics]], [[Economic Calculation Problem]], [[Fiat Currency]], [[The Failure of Keynesian Economics]], [[Taxation]], [[Cantillon Effect]]*
