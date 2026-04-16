@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 ## The Stated Problem
 
 The National Insurance Scheme of Trinidad and Tobago has just raised contribution rates — and immediately followed that up by announcing it will also raise the retirement age, from 60 to 65, beginning 2028. The scheme is structurally underfunded and the "fix" is to take more from workers while giving them less in return.
