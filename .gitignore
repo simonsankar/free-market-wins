@@ -4,3 +4,6 @@
 
 # Ignore Smart Environment folder
 .smart-env
+
+site/node_modules/
+site/public/

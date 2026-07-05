@@ -1,4 +1,5 @@
 ---
+date: 2024-11-11
 dg-publish: true
 ---
 The standard value for man **necessitates** life
