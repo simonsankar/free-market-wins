@@ -125,5 +125,5 @@ Everything democracy isn't.
 - [[Economic Calculation Problem]] - Why voting can't allocate resources rationally
 - [[Anarcho-Capitalism]] - The voluntary alternative
 - [[Taxation]] - How democracy funds itself
-- [[essays/Democracy is garbage]] - Extended critique
+- [[essays/philosophy/Democracy is garbage]] - Extended critique
 - [[zingers/Democracy != Freedom]] - Short refutation
