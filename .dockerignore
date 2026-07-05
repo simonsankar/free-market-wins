@@ -1,0 +1,10 @@
+.git/
+.obsidian/
+.smart-env/
+.claude/
+.claudian/
+site/node_modules/
+site/.quartz/
+site/public/
+site/.quartz-cache/
+*.zip
