@@ -2,8 +2,7 @@
 title: Moe Boy — Portrait of a Self-Defeating Statist
 date: 2026-07-05
 ---
-
-Every now and then, the universe produces a specimen so perfectly contradictory that they function less as a person and more as a walking proof-by-example. Moe Boy — a Trinidadian, Canadian-educated, government-employed, government-hating, government-defending software developer — is one such specimen.
+Every now and then, the universe produces a specimen so perfectly contradictory that they function less as a person and more as a walking proof-by-example. Moe Boy — a Trinidadian, Canadian-educated, government-employed, government-hating, government-defending ICT tech support professional — is one such specimen.
 
 He spent months documenting the institutional rot of the Ministry of Education with the enthusiasm of a man who desperately wants someone to understand what he's been through. He celebrated his own resignation. He chose his next job by salary — explicitly, out loud, on the record — between two private sector companies. Then, apparently having learned absolutely nothing from his own life, he sat down in a Discord server and told everyone that central planning works, taxation is fine, government monopolies are necessary, and capitalism leads to slavery.
 
@@ -35,7 +34,9 @@ Let's take a slow, careful look at this response, because it's genuinely instruc
 
 **"Instead of finding another Ministry to work at."** This is the question he never answered. If central planning is good and government ministries are where essential services should live, why didn't he transfer? Why did the man who believes in the government go directly to Fujitsu? Why, when ranking his options by salary, was no Ministry on the shortlist?
 
-Because he knew. He'd seen it from the inside. He voted with his feet and his career, and then turned around and voted with his words for the thing his feet had already rejected.
+And here's the detail that makes it even better: he didn't leave after year one. He renewed for a **second year**. He saw the dysfunction up close, experienced it personally, complained about it loudly — and then signed on for another round. He couldn't exercise independent judgment. He waited for institutional direction, followed the path laid out for him, collected his cheque, and renewed. Then, eventually, the guardrails ran out and he was forced to make a market decision. He made the right one. Then he went online and explained why it was wrong for everyone else.
+
+Because he knew. He'd seen it from the inside. He voted with his feet and his career — twice, once to renew and once to finally leave — and then turned around and voted with his words for the thing his feet had already rejected.
 
 _Revealed preference_ is one of the foundational concepts of Austrian economics: what people actually choose tells you more about their values than what they say. Moe Boy chose the private sector. He chose the higher salary. He chose profit-and-loss accountability over ministry dysfunction. His life is the rebuttal to his argument. 🎯
 
@@ -160,7 +161,9 @@ Socialism, the system Moe Boy defended, requires coercion by definition. The red
 
 So the system Moe Boy defended — socialism and government control — has coercion baked in. The system he called slavery — capitalism and wage labour — is the one he used to advance his own career, choose his own employer, and maximise his own compensation. His life is a lived rebuttal of his own ideology. 🖕
 
-The productive irony: he personally exercised free-market freedom to escape the government system, then used that freedom to argue that everyone else should be kept in the system he escaped. He achieved his individual liberation through the market and then advocated against the market for everyone else. This is not hypocrisy in the casual sense — it's a philosophical position that rests entirely on the assumption that the rules shouldn't apply to him. Rules for thee, not for me. 🧐
+One more wrinkle that makes the irony complete: what did he actually escape to? Fujitsu ICT — a company whose primary client base is government-adjacent. Government-owned banks. State-linked enterprises. The government itself. Fujitsu resells turnkey Oracle solutions back to the same institutions Moe Boy claims to believe in, and he provides tech support for those deployments. He didn't exit the government orbit — he became a vendor to it. He moved from direct government employment to government supply chain. The work is the same in character: predictable, non-creative, bureaucracy-adjacent. And he's not a software developer. He's in tech support — managing deployments of packaged solutions for the institutions he spent years arguing were essential and well-run.
+
+The productive irony: he personally exercised free-market freedom to escape the government system, then used that freedom to argue that everyone else should be kept in the system he escaped — while remaining tethered to that system himself via his employer's clientele. He achieved his individual liberation through the market and then advocated against the market for everyone else. This is not hypocrisy in the casual sense — it's a philosophical position that rests entirely on the assumption that the rules shouldn't apply to him. Rules for thee, not for me. 🧐
 
 ---
 
@@ -186,7 +189,37 @@ This is the quality of ethical reasoning deployed in defence of central planning
 
 ---
 
-## VIII. QED — Every Position He Holds Is Logically False
+## VIII. The Academic Achievement Trap: Witnessed in Real Time
+
+This section is structural, not personal. The critique isn't about one man — it's about what the system produces, and Moe Boy is a clean, close-up example of a pattern described in full in [[The Academic Achievement Trap - Trinidad Scholarship Edition]].
+
+The pattern: academically capable person plays the institutional game correctly, earns the credentials, gets the degree. The school system promises this pays off. Then — typically through some combination of government scholarship bonds, bureaucratic inertia, and the absence of independent judgment — the person ends up squandering their prime career-building years in government dysfunction, exits late with degraded human capital, and lands somewhere adjacent to where they started. The market laps them. They end up working for companies that serve the same government they should have left years earlier.
+
+This is what happened. Step by step.
+
+He was academically capable. He got the degree, likely abroad, which puts him in a cohort that Trinidad's education system sorts to the top. On paper, at the start, the trajectory looks promising. Then the guardrails ran out — and the problem revealed itself.
+
+Thomas Sowell's _Intellectuals and Society_ identifies the exact failure mode: a person who demonstrates competence in one narrow domain (academic performance, technical tasks) assumes that competence generalises to all other domains — economics, politics, philosophy, social organisation. It doesn't. The academic achievement track selects for institutional compliance, not independent judgment. You learn to follow instructions well. You learn to pass tests designed by gatekeepers. You develop depth in a narrow specialty. And then you assume — wrongly, confidently, and loudly — that this expertise extends to understanding how societies should be organised.
+
+It doesn't. It never did. Noam Chomsky is a world-class linguist and an economic illiterate who has defended some of the most empirically discredited positions in modern political thought. The mechanism is identical: genuine narrow expertise, unwarranted expansion into domains where the track record is zero. 🎓
+
+The [[The Academic Achievement Trap - Trinidad Scholarship Edition]] also identifies the guardrails dependency problem: academic training teaches you to succeed by following step-by-step institutional instructions. _"Take these courses. Get this GPA. Complete this degree. Join this ministry."_ At every stage, the next move is prescribed. The skill being developed is not independent judgment — it's compliance with external direction. Then the guardrails end, and the person is suddenly required to do something the entire system failed to train them for: make an independent judgment call with no prescribed answer.
+
+He renewed for a second government year. That's the guardrails dependency problem made visible. Someone with independent judgment would have done the cost-benefit calculation after year one, recognised the human capital decay in real time, and exited immediately. Instead: another year of institutional direction, another year of waiting for the prescribed next step to appear.
+
+When he finally left, he went to Fujitsu. Not to a company competing in the open market producing novel software — to a company reselling Oracle solutions to government clients. One step removed from the Ministry. The trajectory that looked like an escape was more of a lateral shuffle, staying close to the familiar institutional orbit rather than stepping into the genuinely competitive market where skills compound and the gap between performers widens fast.
+
+The result, years later: tech support. Not software architecture. Not engineering leadership. Not a startup. Tech support for turnkey deployments — a role that demands institutional compliance and technical competence within a predefined system, but not independent creativity or market-facing skill-building. Exactly what the academic track prepared him for. Exactly not what he needed to do to keep pace with the market.
+
+And here is where it closes: he is ideologically captured. The leftist economic framework he defends is the exact framework that the institutions he passed through — Canadian universities, the T&T government education system — consistently instill. The school shapes the politics, and the politics rationalise the life choices, and the life choices confirm the politics. The loop is closed and self-reinforcing.
+
+He defended the system because the system is all he knows. He can't see the trap because he's inside it — and critically, because the academic track he succeeded in never trained him to think about systems at the level of incentive structures, second-order consequences, or Austrian economics. It trained him to follow instructions and argue confidently. He does both. The instructions were wrong. The arguments are false. And the life trajectory reflects it — not as punishment, but as the predictable outcome of the choices the system steered him toward.
+
+_The market doesn't grade on a curve, and it doesn't care what your transcript says._ 📉
+
+---
+
+## IX. QED — Every Position He Holds Is Logically False
 
 We've covered the specific contradictions. Now let's close with the structural proof — the one he called "imaginary points with no evidence," which is itself evidence that he has no counter-argument.
 
