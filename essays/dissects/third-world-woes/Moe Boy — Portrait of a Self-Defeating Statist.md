@@ -189,7 +189,49 @@ This is the quality of ethical reasoning deployed in defence of central planning
 
 ---
 
-## VIII. The Academic Achievement Trap: Witnessed in Real Time
+## VIII. The Sound Money Skeptic Who Trusts Central Bank Counterfeiters
+
+Let's talk about the one position he held where the universe didn't just prove him wrong in principle — it proved him wrong on a deadline, in public, with timestamps.
+
+Moe Boy dislikes Bitcoin. He is in favour of central banks. 🤡
+
+Let's be precise about what these two positions actually mean, because they're not symmetrical preferences. Bitcoin is a **decentralised monetary system with a hard cap of 21 million coins**, enforced by cryptographic code, with no central issuer, no printable supply, and no government authority able to alter it. The cap is not a policy — it's mathematics. No government, no bank, no meeting of officials can override it. This is by design.
+
+Central banks are the **government monopoly on currency issuance**. They hold their position by legal tender laws — laws that compel you to accept their money in settlement of debts under threat of legal sanction. They can expand the money supply at will, which devalues every unit already held by every person who saved in that currency, without their knowledge or consent. This is not a feature — it's the mechanism. The Central Bank of Trinidad and Tobago has presided over a currency that has lost significant value against the USD for decades. The US Federal Reserve has devalued the dollar by over 96% since 1913. The Bank of England has done similar. These are not accidents. They are the structurally guaranteed, predictable output of a system with no hard constraint on money creation — exactly as Mises predicted in 1912, forty years before Bretton Woods collapsed. 📉
+
+He said this was fine. He said Bitcoin was the problem.
+
+He also attempted to use Bitcoin against ancaps: _"What your BTC worth again? Oh right. Your net worth is in FIAT."_ The implication: if you hold fiat currency, you implicitly validate fiat currency, therefore Bitcoin advocacy is hypocrisy.
+
+This is the **Consent Fiction Test** applied to money, and it fails immediately. Using government currency does not constitute endorsement of government currency when government currency is the only legal option. Legal tender laws mandate that you accept it. The government prosecutes competing currencies. Being forced to use the monopolist's product under threat of law is not the same as choosing it freely. It is precisely the same fallacy as "you use government roads so you consent to taxation" — a consent fiction, not a genuine endorsement.
+
+The Austrian response to his taunt is simple: Hayek called for the denationalisation of money in 1976. He wrote an entire book about it. The market demand for sound money was always there. Bitcoin is what happened the moment the technology existed to satisfy it — a spontaneous market solution to the problem of government money monopoly. The ancap isn't a hypocrite for using fiat while advocating Bitcoin. He's a prisoner arguing for the abolition of prisons. 🔓
+
+**But here's where it gets genuinely historic.**
+
+Moe Boy made a specific, concrete, falsifiable prediction about Bitcoin. He claimed it would be dead, useless, or its 21 million coin supply cap would be broken — **by 2026, with August 2026 as his window**.
+
+It is July 2026. 📅
+
+Bitcoin's supply cap is 21 million. It has not been changed. It cannot be changed without network consensus that is structurally, mathematically, and economically impossible to achieve — because any miner, node, or user who disagreed would simply continue running the original protocol, and the fork would be worthless. This isn't a governance decision. It's an enforcement mechanism with no off switch. Satoshi understood this. Moe Boy did not.
+
+Bitcoin is not dead. It is not useless. The network has processed transactions continuously, the protocol has operated as designed, and the cap remains intact. Every one of his specific predictions failed.
+
+This is not a small error. Making confident predictions about protocol rules you don't understand is a specific form of intellectual overreach — the same overreach identified in Section IX, the Sowell "intellectuals" problem: expertise assumed to generalise where it doesn't. He has no cryptographic knowledge, no monetary theory grounding, no familiarity with the Austrian case for sound money. He picked a position, attached a deadline to it, and the deadline passed.
+
+The [[Economic Calculation Problem]] predicts that central planning of money — just like central planning of goods — cannot work over time. It produces systematic distortions: boom-bust cycles, malinvestment, inflation, and the gradual destruction of purchasing power for those who hold savings in the inflated currency. This is not a critique of bad monetary policy — it's a critique of the entire concept of a central monetary authority. The ECP doesn't exempt central banks. It applies to them with particular force, because money is the unit of calculation for the entire economy. Corrupt the money and you corrupt every economic signal simultaneously. 🏚️
+
+Bitcoin fixes this. Not because "number go up" — but because the supply is fixed, the rules are transparent, the enforcement is mathematical, and no political authority can print more of it the night before an election or to finance a war. It is the most Austrian monetary instrument ever created.
+
+He argued against it while defending the institution designed to steal purchasing power from every saver who holds its currency.
+
+That position is wrong in theory, wrong in practice, wrong on deadline, and demonstrably reversed by the actual 2026 record.
+
+_The 21M cap stands. The prediction is dead. Ironic who was right about dead things. 🪦_
+
+---
+
+## IX. The Academic Achievement Trap: Witnessed in Real Time
 
 This section is structural, not personal. The critique isn't about one man — it's about what the system produces, and Moe Boy is a clean, close-up example of a pattern described in full in [[The Academic Achievement Trap - Trinidad Scholarship Edition]].
 
@@ -219,7 +261,7 @@ _The market doesn't grade on a curve, and it doesn't care what your transcript s
 
 ---
 
-## IX. QED — Every Position He Holds Is Logically False
+## X. QED — Every Position He Holds Is Logically False
 
 We've covered the specific contradictions. Now let's close with the structural proof — the one he called "imaginary points with no evidence," which is itself evidence that he has no counter-argument.
 
@@ -261,6 +303,10 @@ So here's the portrait, complete:
 A man who documented government dysfunction from the inside. Who quit for the private sector. Who chose his employer by salary. Who said — on record — "at the end of the day it's about money." Who then defended central planning, taxation, government monopolies, mandatory redistribution, import duties, and the illegality of collecting rainwater in a tropical country.
 
 A man who claimed capitalism is slavery while exercising the freedom capitalism gives him to maximise his own compensation.
+
+A man who argued that redlining was a racist policy that was bad — then immediately argued we need affirmative action, which is also a race-based discriminatory policy. Never addressed the contradiction.
+
+A man who correctly argued for consent in a rape discussion — that non-consent is the defining feature of the wrong — then turned around and could not see that taxation is structurally identical: extracted without consent, under threat of imprisonment. He understood the principle when it was convenient. He abandoned it when it was inconvenient. That's not ethics — it's selective outrage with a side of cognitive dissonance.
 
 A man who demanded evidence for logical axioms, moved goalposts when evidence was provided, dismissed sources as biased without engaging their content, and refused to answer A=A.
 
