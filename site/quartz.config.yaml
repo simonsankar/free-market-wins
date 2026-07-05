@@ -22,7 +22,7 @@ configuration:
     - Untitled.md
     - Untitled.base
     - "*.zip"
-    - "essays/dissects/trinidad/Ministry of Education.md"
+    - "essays/dissects/third-world-woes/Ministry of Education.md"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
