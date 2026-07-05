@@ -21,7 +21,6 @@ configuration:
     - README.md
     - Untitled.md
     - Untitled.base
-    - Anarchism.canvas
     - "*.zip"
     - "essays/dissects/trinidad/Ministry of Education.md"
   theme:
@@ -128,7 +127,7 @@ plugins:
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/canvas-page
-    enabled: false
+    enabled: true
   - source: github:quartz-community/content-page
     enabled: true
   - source: github:quartz-community/folder-page
