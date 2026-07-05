@@ -1,0 +1,23 @@
+{
+  "id": "conv-1783205691554-b84u4kns3",
+  "providerId": "claude",
+  "title": "Review anarcho-capitalist contract law",
+  "titleGenerationStatus": "success",
+  "createdAt": 1783205691554,
+  "updatedAt": 1783265610960,
+  "lastResponseAt": 1783265610960,
+  "sessionId": "21c2c92f-754d-4b7d-83b6-70077dc67169",
+  "providerState": {
+    "providerSessionId": "21c2c92f-754d-4b7d-83b6-70077dc67169"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 923,
+    "cacheReadInputTokens": 54133,
+    "contextWindow": 200000,
+    "contextTokens": 55057,
+    "percentage": 28,
+    "contextWindowIsAuthoritative": true
+  }
+}
