@@ -27,30 +27,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Bitter
+      header: Space Grotesk
       body: Source Serif 4
       code: JetBrains Mono
     colors:
       lightMode:
-        light: "#faf8f1"
-        lightgray: "#e8e4d9"
-        gray: "#b8b0a0"
-        darkgray: "#3d3530"
-        dark: "#1a1209"
-        secondary: "#7c4a1e"
-        tertiary: "#c47a2a"
-        highlight: "rgba(196, 122, 42, 0.12)"
-        textHighlight: "#f5d47f88"
+        light: "#f7f6f2"
+        lightgray: "#e5e1d6"
+        gray: "#96907f"
+        darkgray: "#26241f"
+        dark: "#0f0e0c"
+        secondary: "#b5790a"
+        tertiary: "#d9660a"
+        highlight: "rgba(181, 121, 10, 0.10)"
+        textHighlight: "#f2a90055"
       darkMode:
-        light: "#141008"
-        lightgray: "#2a2218"
-        gray: "#5a5040"
-        darkgray: "#ccc0a8"
-        dark: "#f0e8d0"
-        secondary: "#e8a83a"
-        tertiary: "#c47a2a"
-        highlight: "rgba(232, 168, 58, 0.12)"
-        textHighlight: "#c47a2a88"
+        light: "#0a0a0c"
+        lightgray: "#1c1c22"
+        gray: "#6f6f7a"
+        darkgray: "#d4d2ca"
+        dark: "#f5f4ef"
+        secondary: "#f2a900"
+        tertiary: "#ff7a1a"
+        highlight: "rgba(242, 169, 0, 0.08)"
+        textHighlight: "#f2a90055"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true

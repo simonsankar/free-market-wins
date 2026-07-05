@@ -1,11 +1,244 @@
 @use "./variables.scss" as *;
 
-// ── Typography ───────────────────────────────────────────────────────────────
+// ── Ambient background ───────────────────────────────────────────────────────
+// A flat fill reads flat. Layer in a faint blueprint-grid + a soft ambient
+// glow behind the masthead, both pinned to the viewport so they read as a
+// backdrop rather than something printed on the page.
+
+body {
+  background-image:
+    radial-gradient(
+      ellipse 70% 45% at 50% -8%,
+      color-mix(in srgb, var(--secondary) 9%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(var(--lightgray) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    26px 26px;
+  background-position:
+    center top,
+    0 0;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, fixed;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+// ── Sharpen the framework defaults ───────────────────────────────────────────
+// "Cyber-Agora": geometric edges instead of soft rounded corners everywhere.
+
+img,
+pre,
+code,
+.text-highlight,
+a.internal,
+.external-embed.youtube,
+iframe.pdf,
+audio,
+video {
+  border-radius: 2px;
+}
+
+// ── Scrollbar ────────────────────────────────────────────────────────────────
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightgray) var(--light);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray);
+  border: 2px solid var(--light);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+// ── Wordmark (left sidebar) ──────────────────────────────────────────────────
+
+h2.page-title {
+  margin: 0;
+
+  a {
+    font-family: var(--headerFont);
+    font-weight: $boldWeight;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 1.35rem;
+    color: var(--dark);
+    background-color: transparent;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+
+  &::after {
+    content: "Sound Money · Free Markets · Zero Masters";
+    display: block;
+    font-family: var(--codeFont);
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 0.4rem;
+  }
+
+  @media all and ($mobile) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// ── Page / article titles ────────────────────────────────────────────────────
+
+.article-title {
+  font-weight: $boldWeight;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  position: relative;
+  padding-bottom: 0.9rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3rem;
+    height: 3px;
+    background: var(--secondary);
+  }
+}
+
+.content-meta {
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+
+.breadcrumb-container {
+  font-family: var(--codeFont);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+
+// ── Article headings ─────────────────────────────────────────────────────────
 
 article h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-family: var(--codeFont);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  &::before {
+    content: "//";
+    color: var(--secondary);
+    font-weight: $boldWeight;
+  }
+}
+
+// ── Section dividers ──────────────────────────────────────────────────────────
+
+hr {
+  border: none;
+  height: 1px;
+  width: 60%;
+  margin: 3rem auto;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--lightgray) 20%,
+    var(--lightgray) 80%,
+    transparent
+  );
+
+  &::after {
+    content: "◆";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light);
+    color: var(--secondary);
+    padding: 0 0.75rem;
+    font-size: 0.65rem;
+  }
+}
+
+// ── Blockquotes as pull-quotes ────────────────────────────────────────────────
+
+blockquote {
   border-left: 3px solid var(--secondary);
-  padding-left: 0.75rem;
-  margin-left: -0.75rem;
+  background: var(--highlight);
+  padding: 1rem 1.25rem;
+  border-radius: 0 2px 2px 0;
+
+  p:first-of-type {
+    &::before {
+      content: "“";
+      color: var(--secondary);
+      font-family: var(--headerFont);
+      font-size: 1.5em;
+      line-height: 0;
+      margin-right: 0.15em;
+      vertical-align: -0.3em;
+      display: inline-block;
+    }
+  }
+}
+
+// ── Tag pills ────────────────────────────────────────────────────────────────
+
+a.tag-link {
+  background: var(--highlight);
+  border-radius: 2px;
+  padding: 0.15rem 0.5rem;
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--secondary);
+  border: 1px solid var(--lightgray);
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--secondary) 55%, transparent);
+  }
 }
 
 // ── Recent Notes (essay list in sidebar) ────────────────────────────────────
@@ -18,14 +251,21 @@ article h2 {
 
     li.recent-li {
       border: 1px solid var(--lightgray);
-      border-radius: 6px;
+      border-left: 3px solid var(--lightgray);
+      border-radius: 0 2px 2px 0;
+      background: color-mix(in srgb, var(--lightgray) 25%, transparent);
       padding: 0.65rem 0.75rem;
       margin-bottom: 0.4rem;
-      transition: border-color 0.15s ease, background 0.15s ease;
+      transition:
+        border-color 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
 
       &:hover {
         border-color: var(--secondary);
-        background: var(--highlight);
+        border-left-color: var(--secondary);
+        transform: translateX(2px);
+        box-shadow: 0 4px 20px -8px color-mix(in srgb, var(--secondary) 60%, transparent);
       }
 
       .section-li .desc {
@@ -43,27 +283,110 @@ article h2 {
   }
 }
 
-// ── Tag pills ────────────────────────────────────────────────────────────────
+// ── Folder / tag list pages ──────────────────────────────────────────────────
 
-a.tag-link {
-  background: var(--highlight);
-  border-radius: 3px;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.8rem;
-  color: var(--secondary);
+li.section-li {
   border: 1px solid var(--lightgray);
-  text-decoration: none;
+  border-radius: 2px;
+  padding: 0.85rem 1rem;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 
   &:hover {
-    background: var(--secondary);
-    color: var(--light);
     border-color: var(--secondary);
+    box-shadow: 0 4px 20px -8px color-mix(in srgb, var(--secondary) 60%, transparent);
   }
+}
+
+.popover li.section-li {
+  border: none;
+  padding: 0;
+  box-shadow: none;
 }
 
 // ── Graph container ──────────────────────────────────────────────────────────
 
 #graph-container {
   border: 1px solid var(--lightgray);
-  border-radius: 6px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--lightgray) 15%, transparent);
+}
+
+// ── Homepage hero ─────────────────────────────────────────────────────────────
+
+body[data-slug="index"] {
+  .article-title {
+    font-size: 2.1rem;
+
+    &::before {
+      content: "An arsenal for the stateless society";
+      display: block;
+      font-family: var(--codeFont);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  // The three-pillar argument, rendered as numbered manifesto lines
+  article > ol {
+    list-style: none;
+    counter-reset: pillar;
+    padding: 0;
+    margin: 1.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    li {
+      counter-increment: pillar;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0.75rem;
+      align-items: baseline;
+
+      &::before {
+        content: counter(pillar, decimal-leading-zero);
+        font-family: var(--codeFont);
+        font-size: 1.4rem;
+        font-weight: $boldWeight;
+        color: var(--secondary);
+        line-height: 1;
+      }
+    }
+  }
+
+  // "Browse by Section" becomes a card grid
+  article > ul:last-of-type {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+
+    li {
+      border: 1px solid var(--lightgray);
+      background: var(--highlight);
+      border-radius: 2px;
+      padding: 1.1rem 1.25rem;
+      transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+      strong > a {
+        background-color: transparent;
+      }
+
+      &:hover {
+        border-color: var(--secondary);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--secondary) 55%, transparent);
+      }
+    }
+  }
 }
