@@ -1,15 +1,13 @@
 ---
+title: The Systematic Failure of Statist Arguments
 date: 2025-10-02
-dg-publish: true
 ---
+
 ## Executive Summary
 
 This document analyzes how pro-government arguments systematically fail at every logical step. The statist position ultimately reduces to: **"Violence against peaceful people is justified because I like the outcomes."**
 
 The pattern revealed: when cornered logically, statists retreat through predictable stages - legal positivism → consent fiction → false necessity → utilitarian appeals → personal attacks → finally admitting voluntary solutions work (then reversing when they realize this undermines their worldview).
-
----
-
 ## The Five Categories of Statist Arguments
 
 ### Category 1: LEGITIMACY ARGUMENTS

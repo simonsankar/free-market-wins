@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Fiat Currency
+date: 2024-05-08
 ---
+
 [[Money]] backed by nothing but government force and the requirement that citizens accept it as payment.
 
 ## What Is Fiat Currency?

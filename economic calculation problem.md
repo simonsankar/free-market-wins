@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Economic Calculation Problem
+date: 2024-01-01
 ---
+
 To **economize** something means to use it efficiently, reducing waste and maximizing value. It’s about cutting unnecessary costs, saving resources, or making something last longer.
 
 Without price signals to determine which is the better use of scarce resources, central planners are unable to economize properly since they cannot assess the performance and efficiency of their proposed solutions.

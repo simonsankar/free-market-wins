@@ -1,7 +1,8 @@
 ---
+title: Ministry of Finance
 date: 2025-10-02
-dg-publish: true
 ---
+
 - online purchase tax
 - fiat currency
 - customs and duties on things we dont produce

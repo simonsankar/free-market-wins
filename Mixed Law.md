@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Mixed Law
+date: 2023-10-28
 ---
+
 i.e. resolving [[Conflicts]] by _permitting aggression in arbitrary situations_
 General types:
 1. **consequentialism/[[utilitarianism]]** - he whose victory would yield the best outcome is he who should win the conflict at hand _(classed-based)_

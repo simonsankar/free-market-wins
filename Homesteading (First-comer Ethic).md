@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Homesteading (First-comer Ethic)
+date: 2024-06-05
 ---
+
 
 Homesteading is the only rational way to assign [[Property]] rights without creating conflict. The first person to mix their labor with unowned resources becomes the rightful owner. This is the **only** property ethic that can exist without generating endless disputes.
 

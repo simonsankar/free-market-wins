@@ -1,7 +1,8 @@
 ---
+title: The Praxeological Case Against All Inflation
 date: 2026-01-17
-dg-publish: true
 ---
+
 The claim that inflation can be beneficial — if only we find the "optimal rate" — is one of the most pervasive economic fallacies of our time. This essay demonstrates, through praxeological reasoning, why inflation is *always* harmful, regardless of the rate, and why no central planner can ever determine an "optimal" amount of monetary debasement.
 
 ## The Two Pie Charts: Money and Goods
@@ -1496,9 +1497,6 @@ It's a theater of legitimacy for organized extraction.
 Every government bond ever issued — whether bought by real savers, foreign governments, or the central bank — represents a claim on future extraction. The mechanism varies (taxation, inflation, asset liquidation) but the result is identical: wealth transferred from those who produce to those who consume without producing.
 
 **There is no ethical government bond. There is no "honest" government borrowing. Every path leads to theft.**
-
----
-
 ## The Debt Delusion: A Rejection of Reality
 
 The fiat system's absurdity runs even deeper than mere theft. At its foundation lies a rejection of reality itself — a retreat into fantasy where wishing makes it so.

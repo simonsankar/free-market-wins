@@ -1,7 +1,7 @@
 ---
-dg-publish: true
-dg-home: true
+title: README
 ---
+
 # [Free Market Wins](https://free-market-wins.vercel.app/)
 
 #### This vault entails the following:

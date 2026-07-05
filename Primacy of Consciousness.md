@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Primacy of Consciousness
+date: 2023-10-28
 ---
+
 This is an inversion of the [[Primscacy of Existence]]. 
 That existence that conforms to your consciousness, rather than the other way around.
 

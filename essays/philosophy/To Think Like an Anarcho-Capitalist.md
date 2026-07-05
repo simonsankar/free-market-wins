@@ -1,7 +1,8 @@
 ---
+title: To Think Like an Anarcho-Capitalist
 date: 2025-11-15
-dg-publish: true
 ---
+
 ## What Anarcho-Capitalism Is
 
 Anarcho-capitalism synthesizes two fundamental observations: (1) The state is a moral evil that uses aggression to achieve its ends, and any organization that doesn't use aggression wouldn't qualify as a state. (2) A free market economy is the natural conclusion of extending the non-aggression principle into economics, and it is the most value-productive economic arrangement possible.

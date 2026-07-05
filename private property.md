@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Private Property
+date: 2024-01-01
 ---
 We live in a world of [[Scarcity|scarce resources]]. There is not enough of everything for everyone to have as much as they want. This is not a failure of economics or politics — it is an ineradicable fact of reality.
 
@@ -57,6 +58,5 @@ Every measure of prosperity across countries and time periods correlates with th
 
 The [[Tragedy of the Commons]] is what happens without them: resources held in common are overused, degraded, and destroyed, because no individual has an incentive to preserve what anyone can take.
 
----
 
 *See also: [[Self-ownership]], [[Homesteading (First-comer Ethic)]], [[Production]], [[Trade]], [[Scarcity]], [[Argumentation Ethics]], [[Tragedy of the commons]]*

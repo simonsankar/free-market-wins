@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Axioms as Invulnerable
+date: 2024-03-14
 ---
+
 There are three fundamental [[Axioms]] in metaphysics
 - [[Existence]]
 - [[Identity]]

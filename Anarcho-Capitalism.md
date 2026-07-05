@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Anarcho-Capitalism
+date: 2023-09-11
 ---
+
 Anarcho-capitalists synthesise these two observations:
 
 1. The state is a moral evil, as it uses aggression to achieve its ends. Any organization which does not do this would not qualify as a state.

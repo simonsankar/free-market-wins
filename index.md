@@ -1,5 +1,6 @@
 ---
 title: Free Market Wins
+unlisted: true
 ---
 
 ## The Reigning, Defending, Undefeated Champion: The Free Market

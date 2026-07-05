@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Production
+date: 2024-11-10
 ---
 Production is the transformation of owned inputs into outputs of greater value. You take what you own — your labour, raw materials, tools, time — and rearrange them into something more useful.
 
@@ -68,6 +69,5 @@ The incentive to produce is entirely dependent on the expectation that the produ
 
 Every intervention that reduces a producer's return on their effort reduces the economy's total output. This is not a political opinion. It is the straightforward application of [[Human action|human action]] — people respond to incentives.
 
----
 
 *See also: [[Private Property]], [[Self-ownership]], [[Trade]], [[Markets]], [[Homesteading (First-comer Ethic)]], [[Scarcity]]*

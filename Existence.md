@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Existence
+date: 2025-09-14
 ---
+
 
 **"Existence exists—and the act of grasping that statement implies two corollary axioms: that something exists which one perceives and that one exists possessing consciousness, consciousness being the faculty of perceiving that which exists."**
 

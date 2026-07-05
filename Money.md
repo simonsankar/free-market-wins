@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Money
+date: 2024-05-08
 ---
 Money is the most marketable (saleable) commodity — whatever good, across a given population, it is easiest to exchange for *anything else*.
 
@@ -74,6 +75,5 @@ Governments can suppress honest money through legal tender laws — forcing you 
 
 When the state's fiat collapses (as all fiat eventually does), the market reverts to whatever is most saleable, durable, and honest. This has happened hundreds of times in history. The state never learns; the market always adapts.
 
----
 
 *See also: [[Coincidence of wants]], [[Gold]], [[Sound Money]], [[Fiat Currency]], [[Bitcoin]], [[Fractional Reserve Banking]]*

@@ -1,7 +1,8 @@
 ---
+title: Argentina - From Riches to Ruin
 date: 2025-11-15
-dg-publish: true
 ---
+
 ## The Decline from 10th Wealthiest Nation to Economic Collapse
 
 In 1913, Argentina was the **10th wealthiest nation per capita in the world**—richer than France or Germany.
@@ -184,9 +185,6 @@ Market-oriented economies consistently succeed: Hong Kong, Singapore, South Kore
 Argentina's economic problems are not the result of capitalism—market economics hasn't existed in Argentina since Perón. The current situation is the predictable result of 80 years of state-managed resource allocation operating against economic constraints.
 
 Economic recovery requires reversing the policy framework: allowing market pricing, protecting property rights, constraining money supply, and removing barriers to productive activity.
-
----
-
 ## Key Points
 
 1. **Argentina ranked 10th wealthiest in 1913** through free markets and sound money

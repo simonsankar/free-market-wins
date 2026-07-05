@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Identity
+date: 2025-09-14
 ---
+
 
 **"To exist is to be something, to possess identity. A thing is itself; or, in the traditional formula, A is A."**
 

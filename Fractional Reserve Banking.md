@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Fractional Reserve Banking
+date: 2024-06-05
 ---
+
 
 ## The Basic Scam
 

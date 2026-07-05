@@ -1,3 +1,8 @@
+---
+title: Polylogism
+date: 2024-11-15
+---
+
 ```
 Polylogism is the doctrine that there is not one correct logic, one correct method of reasoning necessarily binding on all men, but that there are many logics, each valid for some men and invalid for the others. The polylogist divides men into groups, and holds that each group has by nature (or creates for itself by choice) its own distinctive method of inference based on its own distinctive logical laws, so that the inferences that are entirely logical for one group are entirely illogical for the others
 ```

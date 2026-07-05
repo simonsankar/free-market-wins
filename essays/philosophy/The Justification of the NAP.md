@@ -1,7 +1,8 @@
 ---
+title: The Justification of the NAP
 date: 2024-11-11
-dg-publish: true
 ---
+
 The standard value for man **necessitates** life
 	- _man must act_  -> [[Axiom of Action]] (in order to live)
 	- or not act (also an action, results in death, cannot value death — obvious contradiction)

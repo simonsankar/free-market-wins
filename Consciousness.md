@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Consciousness
+date: 2025-09-14
 ---
+
 
 **"Consciousness is the faculty of awareness—the faculty of perceiving that which exists."**
 

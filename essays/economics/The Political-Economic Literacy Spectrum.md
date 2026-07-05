@@ -1,7 +1,8 @@
 ---
+title: The Political-Economic Literacy Spectrum
 date: 2025-10-18
-dg-publish: true
 ---
+
 ## Overview: Understanding the Spectrum
 
 This spectrum maps political and economic positions based on adherence to [[The Non-aggression Principle]] and economic literacy. It is **not** the traditional left-right spectrum, which Rothbard correctly identified as obsolete and misleading.
@@ -48,9 +49,6 @@ Income imperfectly correlates with position on this spectrum in relatively free 
 - **Low earners** split between those trying to build (economically literate but low capital) and parasites (economically illiterate seeking redistribution)
 
 The correlation isn't perfect, but it's reliable enough to be diagnostic.
-
----
-
 ## THE SPECTRUM: 12 Levels
 
 ---

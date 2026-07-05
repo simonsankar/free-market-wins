@@ -1,7 +1,8 @@
 ---
+title: The False Equivalence of Usage - Ancaps, Public Services, and the Consent Principle
 date: 2025-09-24
-dg-publish: true
 ---
+
 "You use public roads, therefore you can't be an anarcho-capitalist!" 
 
 This tired gotcha reveals more about the speaker than the target. Society attacks ancaps as hypocrites for using government services while giving anti-capitalists a free pass for enthusiastically engaging with markets they claim to despise.

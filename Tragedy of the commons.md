@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Tragedy of the commons
+date: 2023-09-11
 ---
+
 The tragedy of the commons, when applied to centrally planned public goods, reveals a paradoxical outcome: systems designed to overcome resource allocation problems often create new versions of the same problem.
 
 When public goods are centrally planned and universally accessible, they frequently suffer from:

@@ -1,13 +1,11 @@
 ---
+title: NIS — The Government Ponzi Scheme That Was Always Going to Fail
 date: 2026-04-16
-dg-publish: true
 ---
+
 ## The Stated Problem
 
 The National Insurance Scheme of Trinidad and Tobago has just raised contribution rates — and immediately followed that up by announcing it will also raise the retirement age, from 60 to 65, beginning 2028. The scheme is structurally underfunded and the "fix" is to take more from workers while giving them less in return.
-
----
-
 ## The Shallow Take
 
 The government's framing: demographics are shifting, people are living longer, birth rates are dropping, so we need to adjust the parameters. The Reddit commenters' framing: "late stage capitalism for the win." The technically-correct-but-still-wrong commenter's framing: it's a sustainability issue, every country is doing it, nothing to see here.

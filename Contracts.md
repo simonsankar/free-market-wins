@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Contracts
+date: 2026-07-05
 ---
 A contract is a voluntary agreement between individual private property owners that transfers, exchanges, or creates obligations over their respective property.
 
@@ -79,6 +80,5 @@ When contracts are freely negotiated between property owners, prices emerge. Eac
 
 Interfering with contracts (price controls, minimum wages, rent controls) doesn't remove prices — it corrupts them, feeding false information into the calculation system and producing shortages, surpluses, and misallocated resources.
 
----
 
 *See also: [[Private Property]], [[Self-ownership]], [[Trade]], [[Markets]], [[Homesteading (First-comer Ethic)]]*

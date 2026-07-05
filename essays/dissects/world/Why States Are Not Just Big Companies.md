@@ -1,6 +1,6 @@
 ---
+title: Why States Are Not Just Big Companies
 date: 2025-11-15
-dg-publish: true
 ---
 
 ##The Fatal Conflation and the Economic Inevitability of State Collapse
@@ -221,9 +221,6 @@ So here's your intellectual criticism: States are not inevitable evolutions of s
 And when this state collapses - whether through currency crisis, debt implosion, or some other manifestation of calculation failure - what emerges next isn't determined by "the biggest company becomes the state." It's determined by which ideas people accept: the economic means or the political means, voluntary exchange or coercion, freedom or slavery.
 
 The fight isn't futile. The fight is economics itself.
-
----
-
 ## Related Concepts
 
 - [[Economic Calculation Problem]]

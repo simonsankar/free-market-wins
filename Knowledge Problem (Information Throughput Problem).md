@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Knowledge Problem (Information Throughput Problem)
+date: 2023-09-11
 ---
+
 The human brain can process around `40 - 50 bits/s`
 If we have 100 humans, this would equal a processing throughput between `4000 - 5000 bits/s`.
 

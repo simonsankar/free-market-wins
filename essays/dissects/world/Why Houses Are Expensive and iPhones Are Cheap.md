@@ -1,7 +1,8 @@
 ---
+title: Why Houses Are Expensive and iPhones Are Cheap
 date: 2025-11-15
-dg-publish: true
 ---
+
 ## Inflation Isn't Just Prices Rising—It's Prices Not Falling
 
 When people talk about inflation, they think: "Prices go up."
@@ -351,9 +352,6 @@ The scam is convincing people it's normal for housing to consume 30% of income a
 That's not capitalism. That's monetary distortion.
 
 Bitcoin fixes this.
-
----
-
 ## Key Insights
 
 1. **Inflation = prices not falling when they should**

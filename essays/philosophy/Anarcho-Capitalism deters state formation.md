@@ -1,7 +1,8 @@
 ---
+title: Anarcho-Capitalism deters state formation
 date: 2025-11-16
-dg-publish: true
 ---
+
 Look at the world.
 There's no one world government, the default is anarchy. There has never been a single entity that was in control of the entire world let alone be able to sustain it.
 

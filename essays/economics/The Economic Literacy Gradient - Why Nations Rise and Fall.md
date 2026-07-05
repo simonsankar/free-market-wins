@@ -1,7 +1,8 @@
 ---
+title: The Economic Literacy Gradient - Why Nations Rise and Fall
 date: 2025-10-17
-dg-publish: true
 ---
+
 ## The Crisis No One Talks About
 
 The vast majority of people are functionally economically illiterate. Not from an academic credential standpoint - plenty of PhD economists are parasitic morons - but from a baseline understanding of how the world actually works.
