@@ -1,4 +1,5 @@
 ---
+date: 2026-01-17
 dg-publish: true
 ---
 The claim that inflation can be beneficial — if only we find the "optimal rate" — is one of the most pervasive economic fallacies of our time. This essay demonstrates, through praxeological reasoning, why inflation is *always* harmful, regardless of the rate, and why no central planner can ever determine an "optimal" amount of monetary debasement.

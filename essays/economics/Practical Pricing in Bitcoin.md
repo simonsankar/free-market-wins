@@ -1,4 +1,5 @@
 ---
+date: 2024-12-27
 dg-publish: true
 ---
 ### Pricing under Fiat

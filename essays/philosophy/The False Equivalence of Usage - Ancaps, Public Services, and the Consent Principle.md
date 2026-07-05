@@ -1,4 +1,5 @@
 ---
+date: 2025-09-24
 dg-publish: true
 ---
 "You use public roads, therefore you can't be an anarcho-capitalist!" 

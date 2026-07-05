@@ -1,4 +1,5 @@
 ---
+date: 2025-11-16
 dg-publish: true
 ---
 ## The Fundamental Contradiction

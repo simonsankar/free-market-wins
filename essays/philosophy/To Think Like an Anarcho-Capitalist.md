@@ -1,4 +1,5 @@
 ---
+date: 2025-11-15
 dg-publish: true
 ---
 ## What Anarcho-Capitalism Is

@@ -1,4 +1,5 @@
 ---
+date: 2025-11-16
 dg-publish: true
 ---
 Keynesian economics is comparable to actual cancer — not being hyperbolic here.

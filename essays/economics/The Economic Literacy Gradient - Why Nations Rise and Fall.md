@@ -1,4 +1,5 @@
 ---
+date: 2025-10-17
 dg-publish: true
 ---
 ## The Crisis No One Talks About

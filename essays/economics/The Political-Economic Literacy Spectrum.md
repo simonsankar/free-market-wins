@@ -1,4 +1,5 @@
 ---
+date: 2025-10-18
 dg-publish: true
 ---
 ## Overview: Understanding the Spectrum

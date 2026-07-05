@@ -1,0 +1,69 @@
+@use "./variables.scss" as *;
+
+// ── Typography ───────────────────────────────────────────────────────────────
+
+article h2 {
+  border-left: 3px solid var(--secondary);
+  padding-left: 0.75rem;
+  margin-left: -0.75rem;
+}
+
+// ── Recent Notes (essay list in sidebar) ────────────────────────────────────
+
+.recent-notes {
+  ul.recent-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li.recent-li {
+      border: 1px solid var(--lightgray);
+      border-radius: 6px;
+      padding: 0.65rem 0.75rem;
+      margin-bottom: 0.4rem;
+      transition: border-color 0.15s ease, background 0.15s ease;
+
+      &:hover {
+        border-color: var(--secondary);
+        background: var(--highlight);
+      }
+
+      .section-li .desc {
+        color: var(--gray);
+        font-size: 0.85rem;
+        margin-top: 0.2rem;
+      }
+
+      .section-li .meta {
+        color: var(--gray);
+        font-size: 0.75rem;
+        margin-top: 0.15rem;
+      }
+    }
+  }
+}
+
+// ── Tag pills ────────────────────────────────────────────────────────────────
+
+a.tag-link {
+  background: var(--highlight);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  color: var(--secondary);
+  border: 1px solid var(--lightgray);
+  text-decoration: none;
+
+  &:hover {
+    background: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+  }
+}
+
+// ── Graph container ──────────────────────────────────────────────────────────
+
+#graph-container {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+}
