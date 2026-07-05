@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Taxation
+date: 2023-10-09
 ---
+
 Taxation (theft), is the involuntary reallocation of capital
 Since it is involuntary, it is by definition, an inferior use of this capital as the previous owner (taxee), had to be coerced against into giving it up.** Otherwise he would've voluntarily traded it for a better good**. 
 

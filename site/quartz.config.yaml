@@ -252,9 +252,13 @@ plugins:
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
-    enabled: false
+    enabled: true
     options:
       includeAll: false
+      includedProperties: []
+      hidePropertiesView: true
+      delimiters: "---"
+      language: yaml
     order: 5
   - source: github:quartz-community/unlisted-pages
     enabled: true

@@ -1,6 +1,6 @@
 ---
+title: MOE-cunt
 date: 2026-03-02
-dg-publish: true
 ---
 
 1. ### free market winner![](https://cdn.discordapp.com/clan-badges/795981131316985866/7dff089fbee252a67e72a08ae58a0376.png?size=16) _—_ 1/2/24, 10:57 PM

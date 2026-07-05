@@ -1,7 +1,8 @@
 ---
+title: The Academic Achievement Trap - Trinidad Scholarship Edition
 date: 2025-10-02
-dg-publish: true
 ---
+
 ## The Great Academic Sorting: Winners and Losers at Every Stage
 
 Society runs an academic sorting mechanism from day one, creating "winners" and "losers" at each level. The disruptive kindergarten kid who can't sit still? **Loser** - squandered formative years, didn't develop proper academic habits. The high school jock who's academically weak? **Loser** - wasted time on sports instead of building intellectual capital. The university student who picks social sciences over STEM? **Loser** - chose low-value credentials over marketable skills.

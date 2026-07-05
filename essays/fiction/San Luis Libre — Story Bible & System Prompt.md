@@ -1,3 +1,7 @@
+---
+title: San Luis Libre — Story Bible & System Prompt
+---
+
 ## System Prompt — Paste into a New Claude Project
 
 ```

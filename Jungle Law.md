@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Jungle Law
+date: 2023-10-28
 ---
+
 i.e. resolving [[Conflicts]] by _might makes right_
 - A is stolen from the mightier B
 - the even mightier C wants to then steal from B

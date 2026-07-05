@@ -1,7 +1,8 @@
 ---
+title: On-the-job training Office
 date: 2025-10-02
-dg-publish: true
 ---
+
 They have 0 competency in dealing with people who want on the job training
 - cant schedule interviews properly
 - unresponsive branch

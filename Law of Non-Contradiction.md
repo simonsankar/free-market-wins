@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Law of Non-Contradiction
+date: 2023-09-11
 ---
+
 `¬(p ∧ ¬p)`
 In plain terms, if `P` is `true`, `P` _cannot_ also be `false` meaning it is a contradiction.
 

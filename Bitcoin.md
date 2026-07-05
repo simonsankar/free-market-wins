@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Bitcoin
+date: 2024-11-03
 ---
 Fix the money, fix the world.
 
@@ -87,6 +88,5 @@ Whether Bitcoin specifically becomes the global monetary standard or merely forc
 
 Sound money is a prerequisite for honest economic calculation, protection of savers, and constraint on government power. Bitcoin is the best candidate for sound money the world has ever seen.
 
----
 
 *See also: [[Sound Money]], [[Gold]], [[Fiat Currency]], [[Fractional Reserve Banking]], [[Money]], [[Austrian Economics]]*

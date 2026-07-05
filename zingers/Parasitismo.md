@@ -1,5 +1,7 @@
 ---
-dg-publish: true
+title: Parasitismo
+date: 2025-03-05
 ---
+
 Even with all the power to prevent social consequences, and even if that guy would never have traded with you anyway. 
 A man who sustains himself by means of aggression is destroying the root of his own sustenance. He is made wholly dependent on the virtues of others while acting to destroy those virtues. He has defaulted on his own existence, counting on the choices of others to keep him alive. He is forced to deal on their terms to keep them afloat. With all the power to control others, the power to control his own life has disappeared.

@@ -1,7 +1,8 @@
 ---
+title: It's Not Culture, It's the State
 date: 2026-04-08
-dg-publish: true
 ---
+
 ## Why Trinidad Can't Go Digital — And It Has Nothing To Do With Trust
 
 **The Stated Problem**

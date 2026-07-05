@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Trade
+date: 2024-11-10
 ---
 The voluntary exchange of goods or services between owners of private property.
 
@@ -66,6 +67,5 @@ Corrupt the trades (through price controls, subsidies, legal tender laws) and yo
 
 **Not contingent on "fairness"** — trade doesn't require equality. It requires mutual benefit. A billionaire trading with a poor man is still positive sum. Attempts to impose "fair trade" requirements — minimum wages, price controls — destroy trades that would have benefitted both parties.
 
----
 
 *See also: [[Markets]], [[Private Property]], [[Subjective Value Theory]], [[price system]], [[Coincidence of wants]], [[Contracts]]*

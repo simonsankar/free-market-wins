@@ -1,7 +1,8 @@
 ---
+title: Absurdity in paying it forward
 date: 2025-09-06
-dg-publish: true
 ---
+
 The "paying it forward" justification for progressive [[taxation]] is built on a tower of faulty assumptions that collapses under scrutiny. This supposedly moral framework for wealth redistribution reveals itself to be nothing more than rationalized theft when examined systematically.
 
 ## The Basic Fallacy

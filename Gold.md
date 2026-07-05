@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Gold
+date: 2026-07-05
 ---
 Gold was not chosen as money by any government, king, committee, or philosopher. It was chosen by millions of individuals across thousands of years of voluntary exchange — independently, across cultures that had no contact with each other.
 
@@ -70,6 +71,5 @@ Gold did not become money because alchemists proclaimed it special, or kings dec
 
 That is the market process. That is [[Austrian Economics]] in action. The best money wins not through edict but through demonstrated superiority in voluntary exchange.
 
----
 
 *See also: [[Money]], [[Sound Money]], [[Fiat Currency]], [[Bitcoin]], [[Scarcity]]*

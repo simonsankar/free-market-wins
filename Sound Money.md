@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Sound Money
+date: 2026-01-02
 ---
 Money that emerges naturally through market processes and cannot be arbitrarily created or debased by any central authority.
 
@@ -160,6 +161,5 @@ Every fiat currency in history has eventually collapsed through debasement. Soun
 
 The choice isn't whether to return to sound money, but when — and whether it happens through gradual adoption of Bitcoin or catastrophic fiat collapse forcing the issue.
 
----
 
 *See also: [[Bitcoin]], [[Fiat Currency]], [[Inflation]], [[Austrian Economics]], [[Fractional Reserve Banking]]*

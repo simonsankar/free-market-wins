@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Subjective Value Theory
+date: 2025-09-17
 ---
 Value exists only in relation to conscious beings who can value. Objects don't possess intrinsic value - a diamond in the ground has no value until a conscious entity recognizes its utility for human purposes.
 
@@ -118,6 +119,5 @@ What Austrians call "subjective" is actually **objective** - it recognizes that:
 
 The "subjectivity" lies not in arbitrary whims, but in the objective fact that individuals have different knowledge, circumstances, and legitimate preferences within the framework of human nature.
 
----
 
 *This integration draws from [[Argumentation Ethics]], [[The Non-aggression Principle]], and the [[Economic Calculation Problem]] to show how value theory supports both Austrian economics and Objectivist ethics.*

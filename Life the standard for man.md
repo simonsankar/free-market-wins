@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Life the standard for man
+date: 2024-11-10
 ---
+
 
 All men prefer life than not. To prefer anything else necessitates preferring life.
 Man cannot prefer death as it is a contradiction.

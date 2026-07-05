@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Coincidence of wants
+date: 2024-12-02
 ---
 The problem that makes pure barter break down at scale. For two parties to trade directly, two conditions must be met *simultaneously*:
 
@@ -59,6 +60,5 @@ Hyperinflationary economies throughout history have demonstrated this repeatedly
 
 Sound money is not a preference. It is a prerequisite for civilisation beyond subsistence.
 
----
 
 *See also: [[Money]], [[Trade]], [[Sound Money]], [[Fiat Currency]], [[price system]]*

@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Conflicts
+date: 2023-10-28
 ---
 Conflicts are contradictory actions — two wills directed at the same scarce resource, for incompatible purposes, at the same time.
 
@@ -41,6 +42,5 @@ The [[The Non-aggression Principle|Non-Aggression Principle]] doesn't eliminate 
 
 Conflict → Property Rule → NAP → [[Argumentation Ethics|Argumentation Ethics]] closes the loop: you cannot coherently argue against this framework without presupposing the very property rights you're disputing.
 
----
 
 *See also: [[Scarcity]], [[Private Property]], [[The Non-aggression Principle]], [[Homesteading (First-comer Ethic)]], [[Jungle Law]]*

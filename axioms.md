@@ -1,6 +1,8 @@
 ---
-dg-publish: true
+title: Axioms
+date: 2024-01-01
 ---
+
 
 **Axioms** are self-evident truths that don't need proof. They're the foundation from which all logical arguments must be built. You can't argue against an axiom without using it in your argument - making your position self-refuting.
 

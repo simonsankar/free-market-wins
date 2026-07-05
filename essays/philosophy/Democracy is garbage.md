@@ -1,7 +1,8 @@
 ---
+title: Democracy is garbage
 date: 2025-11-16
-dg-publish: true
 ---
+
 _The freedom to rule your own life is far more important than being able to cast a vote to decide how we shall force everyone to live theirs._
 
 ## Democracy: Mob Rule with Better PR

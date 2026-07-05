@@ -1,5 +1,6 @@
 ---
-dg-publish: true
+title: Cantillon Effect
+date: 2026-01-02
 ---
 The uneven distribution of newly created money through an economy, systematically benefiting those who receive it first at the expense of those who receive it last.
 
@@ -223,6 +224,5 @@ The Cantillon Effect isn't a bug in the monetary system — it's the feature. In
 
 Every time a central bank "stimulates" the economy, someone is getting free purchasing power at your expense. The question is only: are you near the printer, or far from it?
 
----
 
 *See also: [[Inflation]], [[Fiat Currency]], [[Sound Money]], [[Austrian Economics]], [[Fractional Reserve Banking]], [[The Praxeological Case Against All Inflation]]*

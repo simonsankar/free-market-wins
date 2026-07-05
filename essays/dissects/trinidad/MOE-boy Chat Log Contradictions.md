@@ -1,12 +1,9 @@
 ---
+title: MOE-boy Chat Log Contradictions
 date: 2026-03-02
-dg-publish: true
 ---
 
 Comprehensive breakdown of every argument in the Discord exchange with cyberNorp (MOE-boy), showing his contradictions, evasions, and losses in chronological order.
-
----
-
 ## ARGUMENT 1: Teachers' Back Pay and Taxation
 
 **Topic:** Government taxing teachers' back pay

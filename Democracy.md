@@ -1,3 +1,8 @@
+---
+title: Democracy
+date: 2025-11-16
+---
+
 ## What It Is
 
 Democracy: A system where collective decisions are made by majority vote, typically through elected representatives.

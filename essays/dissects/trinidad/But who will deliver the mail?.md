@@ -1,7 +1,8 @@
 ---
+title: But who will deliver the mail?
 date: 2025-10-02
-dg-publish: true
 ---
+
 You heard of _"muh roads"_, here's _"muh mail"_ 
 
 A relative's income tax refund took 22 days to travel from Port of Spain to Piarco - a distance that could be driven in under 45 minutes. This is not simply incompetence but appears strategically beneficial for the government.

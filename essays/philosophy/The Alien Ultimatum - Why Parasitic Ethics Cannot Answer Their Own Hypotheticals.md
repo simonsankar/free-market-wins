@@ -1,7 +1,8 @@
 ---
+title: The Alien Ultimatum - Why Parasitic Ethics Cannot Answer Their Own Hypotheticals
 date: 2025-11-16
-dg-publish: true
 ---
+
 ## The Asymmetry: What Each Framework Actually Tests
 
 Ancaps get asked: **"Aliens will destroy Earth unless you steal a penny. Will you violate the NAP?"**
@@ -90,7 +91,4 @@ So next time someone asks if you'd steal a penny to save Earth, flip it:
 **"You already steal billions and sacrifice millions. What's YOUR objective limit? Or do you just do whatever feels right?"**
 
 They won't have an answer. Because parasitic ethics **cannot answer their own hypotheticals.**
-
----
-
 **Related:** [[Argumentation Ethics]], [[The Non-Aggression Principle]], [[Economic Calculation Problem]], [[Democracy]]
