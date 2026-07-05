@@ -1,5 +1,5 @@
-FROM node:22-alpine AS builder
-RUN apk add --no-cache git
+FROM node:22 AS builder
+RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
