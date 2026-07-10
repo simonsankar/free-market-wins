@@ -331,62 +331,162 @@ body[data-slug="index"] {
     }
   }
 
-  // The three-pillar argument, rendered as numbered manifesto lines
-  article > ol {
-    list-style: none;
-    counter-reset: pillar;
-    padding: 0;
-    margin: 1.75rem 0;
+  article > p {
+    font-size: 1.05rem;
+    color: var(--gray);
+    max-width: 60rem;
+  }
+}
+
+// ── Homepage: reclaim the right sidebar gutter ───────────────────────────────
+// explorer/graph/recent-notes/backlinks/table-of-contents/tag-list are all
+// conditioned off on the homepage (condition: not-index), so the right
+// sidebar is empty there — collapse its track. The left sidebar (page-title
+// wordmark + search/darkmode toolbar) stays, so its grid area is kept.
+
+body[data-slug="index"] #quartz-body {
+  grid-template-columns: $sidePanelWidth auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "grid-sidebar-left grid-header"
+    "grid-sidebar-left grid-center"
+    "grid-sidebar-left grid-footer";
+
+  @media all and ($tablet) {
+    grid-template-columns: $sidePanelWidth auto;
+  }
+}
+
+// ── Homepage: full-viewport hero ─────────────────────────────────────────────
+// The condensed intro + essay cards together should read as one hero moment
+// that fills the first screen, not a text block with a card list beneath it.
+
+body[data-slug="index"] .center {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  .page-footer {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+  }
+}
 
-    li {
-      counter-increment: pillar;
-      display: grid;
-      grid-template-columns: 2.5rem 1fr;
-      gap: 0.75rem;
-      align-items: baseline;
+// ── Homepage: essay cards ─────────────────────────────────────────────────────
 
-      &::before {
-        content: counter(pillar, decimal-leading-zero);
-        font-family: var(--codeFont);
-        font-size: 1.4rem;
-        font-weight: $boldWeight;
-        color: var(--secondary);
-        line-height: 1;
-      }
+.essay-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+  align-content: center;
+  width: 100%;
+
+  .essay-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--lightgray);
+    border-top: 4px solid var(--lightgray);
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--lightgray) 15%, transparent);
+    padding: 2rem 2rem 1.75rem;
+    text-decoration: none;
+    color: var(--darkgray);
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      border-top-color: var(--secondary);
+      border-color: var(--secondary);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px -12px color-mix(in srgb, var(--secondary) 55%, transparent);
+    }
+
+    .essay-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--codeFont);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+      margin-bottom: 0.9rem;
+    }
+
+    .essay-card-badge {
+      color: var(--secondary);
+      font-weight: $boldWeight;
+    }
+
+    h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.4rem;
+      line-height: 1.25;
+      font-family: var(--headerFont);
+    }
+
+    .essay-card-dek {
+      margin: 0;
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ── Homepage: older essays, as a plain list ──────────────────────────────────
+
+.essay-list-older {
+  margin-top: 2.5rem;
+
+  h4 {
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    margin: 0 0 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--lightgray);
+    font-size: 0.9rem;
+
+    a {
+      flex: 1;
+      min-width: 0;
     }
   }
 
-  // "Browse by Section" becomes a card grid
-  article > ul:last-of-type {
-    list-style: none;
-    padding: 0;
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
+  .essay-list-badge {
+    font-family: var(--codeFont);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--secondary);
+    white-space: nowrap;
+  }
 
-    li {
-      border: 1px solid var(--lightgray);
-      background: var(--highlight);
-      border-radius: 2px;
-      padding: 1.1rem 1.25rem;
-      transition:
-        border-color 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-      strong > a {
-        background-color: transparent;
-      }
-
-      &:hover {
-        border-color: var(--secondary);
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--secondary) 55%, transparent);
-      }
-    }
+  time {
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    color: var(--gray);
+    white-space: nowrap;
   }
 }
