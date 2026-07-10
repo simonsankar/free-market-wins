@@ -1,0 +1,33 @@
+{
+  "name": "essay-cards",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js"
+  },
+  "scripts": {
+    "build": "esbuild index.ts --bundle --format=esm --platform=node --target=es2022 --jsx=automatic --jsx-import-source=preact --external:preact --external:preact/jsx-runtime --external:preact/hooks --external:preact/compat --external:vfile --external:unified --external:@jackyzha0/quartz --outfile=dist/index.js && esbuild components/index.tsx --bundle --format=esm --platform=node --target=es2022 --jsx=automatic --jsx-import-source=preact --external:preact --external:preact/jsx-runtime --external:preact/hooks --external:preact/compat --external:vfile --external:unified --external:@jackyzha0/quartz --outfile=dist/components/index.js"
+  },
+  "quartz": {
+    "name": "essay-cards",
+    "displayName": "Essay Cards",
+    "description": "Homepage hero grid of the most recent essays",
+    "version": "1.0.0",
+    "category": "component",
+    "defaultOptions": {
+      "limit": 9
+    },
+    "components": {
+      "EssayCards": {
+        "name": "EssayCards",
+        "displayName": "Essay Cards",
+        "description": "Magazine-style grid of recent essays for the homepage",
+        "version": "1.0.0",
+        "defaultPosition": "afterBody",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

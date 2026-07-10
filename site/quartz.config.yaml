@@ -22,7 +22,7 @@ configuration:
     - Untitled.md
     - Untitled.base
     - "*.zip"
-    - "essays/dissects/third-world-woes/Ministry of Education.md"
+    - essays/dissects/third-world-woes/Ministry of Education.md
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -39,7 +39,7 @@ configuration:
         dark: "#0f0e0c"
         secondary: "#b5790a"
         tertiary: "#d9660a"
-        highlight: "rgba(181, 121, 10, 0.10)"
+        highlight: rgba(181, 121, 10, 0.10)
         textHighlight: "#f2a90055"
       darkMode:
         light: "#0a0a0c"
@@ -49,7 +49,7 @@ configuration:
         dark: "#f5f4ef"
         secondary: "#f2a900"
         tertiary: "#ff7a1a"
-        highlight: "rgba(242, 169, 0, 0.08)"
+        highlight: rgba(242, 169, 0, 0.08)
         textHighlight: "#f2a90055"
 plugins:
   - source: github:quartz-community/created-modified-date
@@ -84,6 +84,7 @@ plugins:
     layout:
       position: right
       priority: 30
+      condition: not-index
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -139,6 +140,7 @@ plugins:
     layout:
       position: left
       priority: 50
+      condition: not-index
   - source: github:quartz-community/graph
     enabled: true
     options:
@@ -167,6 +169,7 @@ plugins:
     layout:
       position: right
       priority: 10
+      condition: not-index
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -180,6 +183,7 @@ plugins:
     layout:
       position: right
       priority: 50
+      condition: not-index
   - source: github:quartz-community/article-title
     enabled: true
     layout:
@@ -195,6 +199,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 30
+      condition: not-index
   - source: github:quartz-community/page-title
     enabled: true
     layout:
@@ -238,6 +243,14 @@ plugins:
     layout:
       position: right
       priority: 5
+      condition: not-index
+  - source: ./quartz/plugins/local/essay-cards
+    enabled: true
+    options:
+      limit: 9
+    layout:
+      position: afterBody
+      priority: 10
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
@@ -256,7 +269,7 @@ plugins:
       includeAll: false
       includedProperties: []
       hidePropertiesView: true
-      delimiters: "---"
+      delimiters: ---
       language: yaml
     order: 5
   - source: github:quartz-community/unlisted-pages
