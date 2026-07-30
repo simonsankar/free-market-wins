@@ -1,0 +1,159 @@
+---
+// Custom search UI over Pagefind's raw JS API (not the prebuilt pagefind-ui
+// widget — that ships its own hardcoded styling that fights the site's
+// theme). /pagefind/pagefind.js only exists after `pagefind --site dist`
+// has run (see package.json's build script) — nothing to search in `astro dev`.
+---
+
+<div>
+  <button
+    id="search-toggle"
+    class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-3 py-1 font-code text-[0.8rem] tracking-wide text-darkgray uppercase hover:border-secondary hover:text-secondary"
+    aria-label="Open search"
+    type="button">Search</button
+  >
+  <div id="search-modal" class="fixed inset-0 z-[100]" hidden>
+    <div id="search-modal-backdrop" class="absolute inset-0 bg-black/28 backdrop-blur-[10px]"></div>
+    <div
+      id="search-modal-panel"
+      class="relative mx-auto mt-[8vh] flex max-h-[78vh] w-[min(46rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-md border border-lightgray bg-light normal-case shadow-[0_24px_60px_-12px_rgba(0,0,0,0.35)] max-[640px]:mt-[3vh] max-[640px]:max-h-[88vh]"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Search"
+    >
+      <div class="flex items-center gap-3 border-b border-lightgray px-5 py-[1.1rem]">
+        <svg class="h-[1.1rem] w-[1.1rem] shrink-0 text-gray" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5" />
+          <path d="M18 18L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <input
+          id="search-input"
+          class="min-w-0 flex-1 border-none bg-transparent font-body text-[1.05rem] text-darkgray outline-none placeholder:text-gray"
+          type="text"
+          placeholder="Search essays, definitions, zingers…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button
+          id="search-close"
+          class="shrink-0 cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-[0.2rem] font-code text-[0.7rem] text-gray hover:border-secondary hover:text-secondary"
+          aria-label="Close search"
+          type="button">Esc</button
+        >
+      </div>
+      <div id="search-results" class="overflow-y-auto px-5 pt-2 pb-5"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById("search-toggle")
+  const modal = document.getElementById("search-modal")
+  const backdrop = document.getElementById("search-modal-backdrop")
+  const closeBtn = document.getElementById("search-close")
+  const input = document.getElementById("search-input")
+  const resultsEl = document.getElementById("search-results")
+
+  const LABEL_CLASSES = "font-code text-[0.72rem] uppercase tracking-wide text-gray mb-4"
+  const RESULT_TITLE_CLASSES =
+    "flex items-center gap-2.5 no-underline text-darkgray font-header font-bold text-[1.05rem] hover:text-secondary"
+  const EXCERPT_CLASSES = "mt-2 font-body text-[0.88rem] leading-[1.55] text-gray [&_mark]:rounded-[2px] [&_mark]:bg-text-highlight [&_mark]:px-[0.15em] [&_mark]:text-darkgray"
+
+  let pagefind = null
+  let loading = null
+
+  async function ensurePagefind() {
+    if (pagefind) return pagefind
+    if (!loading) {
+      loading = import(/* @vite-ignore */ "/pagefind/pagefind.js")
+        .then(async (mod) => {
+          await mod.init()
+          pagefind = mod
+          return mod
+        })
+        .catch(() => null)
+    }
+    return loading
+  }
+
+  function collectionLabel(url) {
+    if (url.startsWith("/essays/")) return "Essay"
+    if (url.startsWith("/definitions/")) return "Definition"
+    if (url.startsWith("/zingers/")) return "Zinger"
+    return null
+  }
+
+  function renderResult(data) {
+    const label = collectionLabel(data.url)
+    const subs = (data.sub_results || [])
+      .filter((s) => s.title !== data.meta?.title && s.excerpt !== data.excerpt)
+      .slice(0, 2)
+    const subHtml = subs.length
+      ? `<div class="mt-3 grid gap-2.5 border-l-2 border-lightgray pl-4">${subs
+          .map(
+            (s) => `
+              <div>
+                <a class="block no-underline font-code text-[0.74rem] uppercase tracking-wide text-secondary hover:text-tertiary" href="${s.url}">${s.title}</a>
+                <p class="${EXCERPT_CLASSES} text-[0.84rem]">${s.excerpt}</p>
+              </div>`,
+          )
+          .join("")}</div>`
+      : ""
+
+    return `
+      <div class="border-b border-lightgray py-[1.1rem] last:border-none">
+        <a class="${RESULT_TITLE_CLASSES}" href="${data.url}">
+          ${label ? `<span class="pill shrink-0">${label}</span>` : ""}
+          <span>${data.meta?.title ?? data.url}</span>
+        </a>
+        <p class="${EXCERPT_CLASSES}">${data.excerpt}</p>
+        ${subHtml}
+      </div>`
+  }
+
+  async function runSearch(term) {
+    if (!term) {
+      resultsEl.innerHTML = ""
+      return
+    }
+    const mod = await ensurePagefind()
+    if (!mod) {
+      resultsEl.innerHTML = `<p class="${LABEL_CLASSES}">Search index not available in dev mode — run a full build to test search.</p>`
+      return
+    }
+    resultsEl.innerHTML = `<p class="${LABEL_CLASSES}">Searching…</p>`
+    const search = await mod.debouncedSearch(term)
+    if (!search) return // superseded by a newer keystroke
+    if (search.results.length === 0) {
+      resultsEl.innerHTML = `<p class="${LABEL_CLASSES}">No results for "${term}".</p>`
+      return
+    }
+    const top = await Promise.all(search.results.slice(0, 8).map((r) => r.data()))
+    resultsEl.innerHTML =
+      `<p class="${LABEL_CLASSES}">${search.results.length} result${search.results.length === 1 ? "" : "s"}</p>` +
+      top.map(renderResult).join("")
+  }
+
+  function openSearch() {
+    modal.hidden = false
+    ensurePagefind()
+    input.focus()
+  }
+
+  function closeSearch() {
+    modal.hidden = true
+  }
+
+  toggle?.addEventListener("click", openSearch)
+  closeBtn?.addEventListener("click", closeSearch)
+  backdrop?.addEventListener("click", closeSearch)
+  input?.addEventListener("input", (e) => runSearch(e.target.value.trim()))
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeSearch()
+    if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      e.preventDefault()
+      openSearch()
+    }
+  })
+</script>

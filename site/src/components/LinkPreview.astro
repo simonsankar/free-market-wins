@@ -1,0 +1,73 @@
+---
+---
+
+<div
+  id="link-preview"
+  class="fixed z-[200] w-[min(24rem,calc(100vw-24px))] rounded-[2px] border border-lightgray bg-light p-[1.1rem] shadow-[0_16px_40px_-12px_rgba(0,0,0,0.45)]"
+  hidden
+>
+  <p class="link-preview-title mb-1.5 font-header text-base font-bold text-darkgray"></p>
+  <p class="link-preview-excerpt m-0 text-[0.85rem] leading-normal text-gray"></p>
+</div>
+
+<script>
+  const popover = document.getElementById("link-preview")
+  const titleEl = popover.querySelector(".link-preview-title")
+  const excerptEl = popover.querySelector(".link-preview-excerpt")
+
+  let showTimer = null
+  let hideTimer = null
+  let activeLink = null
+
+  function position(link) {
+    const rect = link.getBoundingClientRect()
+    const popRect = popover.getBoundingClientRect()
+    let left = rect.left
+    let top = rect.bottom + 8
+    if (left + popRect.width > window.innerWidth - 12) {
+      left = window.innerWidth - popRect.width - 12
+    }
+    if (top + popRect.height > window.innerHeight - 12) {
+      top = rect.top - popRect.height - 8
+    }
+    popover.style.left = `${Math.max(12, left)}px`
+    popover.style.top = `${Math.max(12, top)}px`
+  }
+
+  function show(link) {
+    activeLink = link
+    titleEl.textContent = link.dataset.previewTitle
+    excerptEl.textContent = link.dataset.previewExcerpt || ""
+    popover.hidden = false
+    position(link)
+  }
+
+  function hide() {
+    popover.hidden = true
+    activeLink = null
+  }
+
+  document.addEventListener("mouseover", (ev) => {
+    const link = ev.target.closest?.("a.internal[data-preview-title]")
+    if (!link) return
+    clearTimeout(hideTimer)
+    clearTimeout(showTimer)
+    showTimer = setTimeout(() => show(link), 200)
+  })
+
+  document.addEventListener("mouseout", (ev) => {
+    const link = ev.target.closest?.("a.internal[data-preview-title]")
+    if (!link) return
+    clearTimeout(showTimer)
+    hideTimer = setTimeout(hide, 150)
+  })
+
+  popover.addEventListener("mouseenter", () => clearTimeout(hideTimer))
+  popover.addEventListener("mouseleave", () => {
+    hideTimer = setTimeout(hide, 100)
+  })
+
+  window.addEventListener("scroll", () => {
+    if (activeLink) position(activeLink)
+  })
+</script>
