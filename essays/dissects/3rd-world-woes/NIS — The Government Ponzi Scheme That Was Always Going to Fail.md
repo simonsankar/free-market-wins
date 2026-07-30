@@ -38,6 +38,41 @@ The [[Economic Calculation Problem]] is on full display. Without price signals, 
 
 They are guessing. They guessed 60 was the right retirement age. Now they're guessing 65. They guessed the old contribution rate was sufficient. Now they're guessing a higher one will be. These are not actuarial determinations arrived at through competitive market pressure — they are political decisions made by people who bear zero personal cost if they're wrong. Every miscalculation gets corrected on the backs of workers, not the administrators.
 
+<svg viewBox="0 0 820 470" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="nis-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+<marker id="nis-arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+</defs>
+<g transform="translate(40,50)">
+<text x="0" y="-20" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Ponzi Cycle</text>
+<rect x="0" y="0" width="210" height="54" rx="10" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="105" y="32" font-size="13" fill="#7a9ec2" text-anchor="middle" font-weight="600">Workers pay contributions</text>
+<rect x="530" y="0" width="210" height="54" rx="10" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="635" y="32" font-size="13" fill="#7a9ec2" text-anchor="middle" font-weight="600">Retirees paid out</text>
+<rect x="530" y="150" width="210" height="54" rx="10" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="635" y="182" font-size="13" fill="#e05a4f" text-anchor="middle" font-weight="600">Shortfall</text>
+<rect x="0" y="290" width="170" height="54" rx="10" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="85" y="313" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">Rates</text>
+<text x="85" y="329" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">raised</text>
+<rect x="190" y="290" width="170" height="54" rx="10" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="275" y="313" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">Retirement age</text>
+<text x="275" y="329" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">raised</text>
+<rect x="380" y="290" width="170" height="54" rx="10" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="465" y="313" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">Benefits</text>
+<text x="465" y="329" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">cut</text>
+<line x1="210" y1="27" x2="524" y2="27" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#nis-arrow)"/>
+<line x1="635" y1="54" x2="635" y2="144" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#nis-arrow)"/>
+<path d="M530,190 C400,240 250,240 175,284" fill="none" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#nis-arrow-red)"/>
+<path d="M600,204 C560,250 490,265 460,284" fill="none" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#nis-arrow-red)"/>
+<path d="M660,204 C660,240 655,265 640,284" fill="none" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#nis-arrow-red)"/>
+<path d="M85,290 C60,220 40,120 90,60" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#nis-arrow)"/>
+<path d="M275,290 C220,220 160,140 130,68" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#nis-arrow)"/>
+<path d="M465,290 C380,220 240,150 170,72" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#nis-arrow)"/>
+<text x="270" y="250" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">same three levers, pulled again next cycle</text>
+<text x="380" y="410" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Whichever lever they pull, the loop closes back on the worker — and reopens shortfall next cycle.</text>
+</g>
+</svg>
+
 ### 3. Knowledge Problem — They Never Had the Information to Set This Up Correctly
 
 The government that designed NIS in 1971 did not and could not know:
@@ -49,6 +84,26 @@ The government that designed NIS in 1971 did not and could not know:
 The [[Knowledge Problem (Information Throughput Problem)]] guarantees this. 10 elected officials or 100 bureaucrats cannot aggregate and act on the dispersed, individual, time-sensitive information that millions of people hold about their own lives, their own risk tolerances, their own retirement plans. Markets surface this through prices. NIS suppresses it through mandate.
 
 The inevitable result: they set the parameters wrong at the start, realized it decades later, and are now correcting it — at your expense, not theirs.
+
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(50,50)">
+<text x="0" y="-22" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Workers per Retiree — a Shrinking Ratio (illustrative)</text>
+<line x1="0" y1="220" x2="600" y2="220" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="30" y="20" width="90" height="200" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="75" y="10" font-size="13" fill="#7a9ec2" text-anchor="middle" font-weight="600">10:1</text>
+<text x="75" y="242" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">1980</text>
+<rect x="180" y="80" width="90" height="140" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="225" y="70" font-size="13" fill="#7a9ec2" text-anchor="middle" font-weight="600">7:1</text>
+<text x="225" y="242" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2000</text>
+<rect x="330" y="140" width="90" height="80" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="375" y="130" font-size="13" fill="#7a9ec2" text-anchor="middle" font-weight="600">4:1</text>
+<text x="375" y="242" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2026</text>
+<rect x="480" y="180" width="90" height="40" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="525" y="170" font-size="13" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">2:1</text>
+<text x="525" y="242" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2050 (proj.)</text>
+<text x="300" y="272" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Fewer workers behind every retiree means the same three levers get pulled harder, sooner.</text>
+</g>
+</svg>
 
 ### 4. Incentive Inversion — Failure Is Rewarded, Not Punished
 

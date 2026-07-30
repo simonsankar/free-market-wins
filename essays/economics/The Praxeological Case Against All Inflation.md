@@ -11,16 +11,28 @@ To understand inflation, we must first understand what money actually *is*. Mone
 
 Visualize two pie charts:
 
-```
-    MONEY SUPPLY                    GOODS & SERVICES
-    ┌───────────┐                   ┌───────────┐
-    │           │                   │  Chickens │
-    │   100%    │      maps to      ├───────────┤
-    │  (whole)  │  ═══════════════► │   Fish    │
-    │           │                   ├───────────┤
-    └───────────┘                   │  Baskets  │
-                                    └───────────┘
-```
+<svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="pie-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+<g transform="translate(60,75)">
+<text x="270" y="-45" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The Two Pie Charts: Money and Goods</text>
+<text x="90" y="0" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">MONEY SUPPLY</text>
+<circle cx="90" cy="90" r="75" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="90" y="85" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">100%</text>
+<text x="90" y="101" font-size="11.5" fill="#fff" text-anchor="middle">(whole)</text>
+<line x1="175" y1="90" x2="385" y2="90" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#pie-arrow)"/>
+<text x="280" y="77" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">maps to</text>
+<text x="470" y="0" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">GOODS &amp; SERVICES</text>
+<path d="M470,90 L545,90 A75,75 0 0,1 432.5,154.95 Z" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<path d="M470,90 L432.5,154.95 A75,75 0 0,1 432.5,25.05 Z" fill="#7a9ec2" fill-opacity="0.55"/>
+<path d="M470,90 L432.5,25.05 A75,75 0 0,1 545,90 Z" fill="var(--gray, #9a9a9a)" fill-opacity="0.55"/>
+<text x="487" y="122" font-size="11" fill="#fff" text-anchor="middle">Chickens</text>
+<text x="440" y="93" font-size="11" fill="#fff" text-anchor="middle">Fish</text>
+<text x="487" y="64" font-size="11" fill="#fff" text-anchor="middle">Baskets</text>
+<text x="270" y="205" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Money is not wealth — it is a claim on wealth, mapped onto whatever exists to buy.</text>
+</g>
+</svg>
 
 The money pie — regardless of how many units it's divided into — always represents *the whole*. The goods/services pie represents everything available for purchase. Prices are simply the mapping between these two pies.
 
@@ -31,33 +43,36 @@ Suppose our island economy has 30 chickens available for trade.
 Now consider two scenarios:
 
 **Scenario A: 10 Coins Total**
-```
-MONEY (10 coins = 100%)           GOODS (30 chickens)
-┌──────────────────┐              ┌──────────────────┐
-│ ┌──┬──┬──┬──┬──┐ │              │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│ │1 │2 │3 │4 │5 │ │      ═►      │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│ ├──┼──┼──┼──┼──┤ │              │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│ │6 │7 │8 │9 │10│ │              │                  │
-│ └──┴──┴──┴──┴──┘ │              └──────────────────┘
-└──────────────────┘
 
-Price: 1 coin = 3 chickens
-All 10 coins buy all 30 chickens.
-```
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Scenario A: 10 Coins Total</text>
+<rect x="0" y="0" width="220" height="70" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="110" y="30" font-size="13" font-weight="600" fill="#7a9ec2" text-anchor="middle">10 coins</text>
+<text x="110" y="50" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">= 100% of money</text>
+<line x1="240" y1="35" x2="330" y2="35" stroke="var(--gray, #9a9a9a)" stroke-width="1.6"/>
+<rect x="350" y="0" width="220" height="70" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="460" y="30" font-size="13" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">30 chickens</text>
+<text x="460" y="50" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">= 100% of goods</text>
+<text x="285" y="105" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Price: 1 coin = 3 chickens — all 10 coins buy all 30 chickens.</text>
+</g>
+</svg>
 
 **Scenario B: 30 Coins Total**
-```
-MONEY (30 coins = 100%)           GOODS (30 chickens)
-┌──────────────────┐              ┌──────────────────┐
-│                  │              │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│    30 coins      │      ═►      │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│    in total      │              │ 🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔 │
-│                  │              │                  │
-└──────────────────┘              └──────────────────┘
 
-Price: 1 coin = 1 chicken
-All 30 coins buy all 30 chickens.
-```
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Scenario B: 30 Coins Total</text>
+<rect x="0" y="0" width="220" height="70" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="110" y="30" font-size="13" font-weight="600" fill="#7a9ec2" text-anchor="middle">30 coins</text>
+<text x="110" y="50" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">= 100% of money</text>
+<line x1="240" y1="35" x2="330" y2="35" stroke="var(--gray, #9a9a9a)" stroke-width="1.6"/>
+<rect x="350" y="0" width="220" height="70" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="460" y="30" font-size="13" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">30 chickens</text>
+<text x="460" y="50" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">= 100% of goods</text>
+<text x="285" y="105" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Price: 1 coin = 1 chicken — all 30 coins buy all 30 chickens.</text>
+</g>
+</svg>
 
 **The economies are identical.** The 30-coin scenario is simply the 10-coin scenario with finer divisions. The *ratios* remain the same. The purchasing power of "all the money" equals "all the goods" in both cases.
 
@@ -84,39 +99,35 @@ Inflation doesn't occur when you establish your initial money supply. **Inflatio
 
 Let's see what happens when the chief creates 5 counterfeit coins after the economy has been running on 10:
 
-### Before Inflation
-```
-MONEY SUPPLY (10 coins)           GOODS (30 chickens)
-┌─────────────────────┐           ┌─────────────────────┐
-│ ┌──┬──┬──┬──┬──┐    │           │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ │1 │2 │3 │4 │5 │    │           │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ ├──┼──┼──┼──┼──┤    │    ═►     │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ │6 │7 │8 │9 │10│    │           │                     │
-│ └──┴──┴──┴──┴──┘    │           │                     │
-└─────────────────────┘           └─────────────────────┘
+### Before and after the counterfeiting
 
-Each coin = 10% of total purchasing power
-1 coin = 3 chickens
-10 coins = 30 chickens (everything)
-```
-
-### The Moment of Counterfeiting
-```
-MONEY SUPPLY (now 15 coins)       GOODS (still 30 chickens)
-┌─────────────────────────┐       ┌─────────────────────┐
-│ ┌──┬──┬──┬──┬──┐        │       │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ │1 │2 │3 │4 │5 │        │       │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ ├──┼──┼──┼──┼──┤        │  ═►   │  🐔🐔🐔🐔🐔🐔🐔🐔🐔🐔  │
-│ │6 │7 │8 │9 │10│        │       │                     │
-│ ├──┼──┼──┼──┼──┤        │       │  (UNCHANGED!)       │
-│ │⚠ │⚠ │⚠ │⚠ │⚠ │ NEW!   │       │                     │
-│ └──┴──┴──┴──┴──┘        │       │                     │
-└─────────────────────────┘       └─────────────────────┘
-                ▲
-                │
-    The money pie EXPANDED
-    but goods pie DID NOT
-```
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(50,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Before Inflation</text>
+<circle cx="80" cy="90" r="75" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="80" y="85" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">10 coins</text>
+<text x="80" y="101" font-size="11" fill="#fff" text-anchor="middle">100%</text>
+<text x="80" y="185" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">MONEY SUPPLY</text>
+<circle cx="290" cy="90" r="75" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="290" y="85" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">30 chickens</text>
+<text x="290" y="101" font-size="11" fill="#fff" text-anchor="middle">100%</text>
+<text x="290" y="185" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">GOODS</text>
+<text x="185" y="230" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Each coin = 10% of purchasing power = 3 chickens.</text>
+</g>
+<g transform="translate(490,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Moment of Counterfeiting</text>
+<path d="M80,90 L80,-2 A92,92 0 1,1 0.33,136 Z" fill="#7a9ec2" fill-opacity="0.75"/>
+<path d="M80,90 L0.33,136 A92,92 0 0,1 80,-2 Z" fill="#e05a4f" fill-opacity="0.75"/>
+<text x="120" y="113" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">10 original</text>
+<text x="40" y="67" font-size="10.5" fill="#fff" text-anchor="middle">+5 new</text>
+<text x="80" y="195" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">MONEY SUPPLY — 15 total (supply up 50%)</text>
+<circle cx="290" cy="90" r="75" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="290" y="85" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">30 chickens</text>
+<text x="290" y="101" font-size="11" fill="#fff" text-anchor="middle">unchanged</text>
+<text x="290" y="185" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">GOODS</text>
+<text x="185" y="230" font-size="13" fill="#e05a4f" text-anchor="middle" font-weight="600">The money pie expanded. The goods pie did not.</text>
+</g>
+</svg>
 
 The critical insight: **The goods pie didn't grow.** There are still only 30 chickens. But now there are 15 claims instead of 10.
 
@@ -124,17 +135,22 @@ The critical insight: **The goods pie didn't grow.** There are still only 30 chi
 
 Here's where the theft occurs. When the chief walks into the market with his 5 new coins, **prices haven't adjusted yet.** The merchants still think there are only 10 coins in existence. They price accordingly.
 
-```
-WHAT THE MARKET THINKS           REALITY
-┌─────────────────────┐          ┌─────────────────────────┐
-│ Total coins: 10     │          │ Total coins: 15         │
-│                     │          │                         │
-│ Chief's 5 coins =   │          │ Chief's 5 coins =       │
-│ 50% of money supply │          │ 33% of money supply     │
-│                     │          │                         │
-│ 1 coin = 3 chickens │          │ 1 coin = 2 chickens     │
-└─────────────────────┘          └─────────────────────────┘
-```
+<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">What the Market Thinks vs. Reality</text>
+<rect x="0" y="0" width="250" height="120" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.6"/>
+<text x="125" y="25" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">WHAT THE MARKET THINKS</text>
+<text x="125" y="50" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Total coins: 10</text>
+<text x="125" y="72" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Chief's 5 coins = 50%</text>
+<text x="125" y="96" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">1 coin = 3 chickens</text>
+<rect x="330" y="0" width="270" height="120" rx="6" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="465" y="25" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">REALITY</text>
+<text x="465" y="50" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Total coins: 15</text>
+<text x="465" y="72" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Chief's 5 coins = 33%</text>
+<text x="465" y="96" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">1 coin = 2 chickens</text>
+<text x="300" y="155" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The chief spends at the price the market hasn't caught up to yet.</text>
+</g>
+</svg>
 
 The chief's 5 coins are **cosplaying** as half the money supply when they're actually only a third. This is pure fraud. The coins have no backing — no prior production, no saved value, no deferred consumption. They're claiming purchasing power they never earned.
 
@@ -144,25 +160,22 @@ If the chief tried this with 5 rocks instead of 5 coins, no one would accept the
 
 ### The Theft Illustrated
 
-```
-BEFORE: 10 coins in economy, 30 chickens
-        Price: 1 coin = 3 chickens
-
-        Villagers collectively hold 10 coins
-        Villagers can buy all 30 chickens
-
-AFTER INFLATION SPREADS: 15 coins in economy, 30 chickens
-        Price: 1 coin = 2 chickens
-
-        Original villagers still hold 10 coins
-        Now they can only buy 20 chickens
-
-        Chief holds 5 coins
-        Chief can buy 10 chickens
-
-THEFT: Villagers lost 10 chickens worth of purchasing power
-       Chief gained 10 chickens worth for FREE
-```
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Theft Illustrated (in chickens of purchasing power)</text>
+<text x="80" y="0" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">BEFORE</text>
+<rect x="20" y="10" width="120" height="30" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="80" y="30" font-size="11.5" fill="#fff" text-anchor="middle">Villagers: 30</text>
+<text x="480" y="0" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">AFTER INFLATION SPREADS</text>
+<rect x="380" y="10" width="80" height="30" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="420" y="30" font-size="11" fill="#fff" text-anchor="middle">Villagers: 20</text>
+<rect x="465" y="10" width="40" height="30" fill="#e05a4f" fill-opacity="0.8"/>
+<text x="485" y="30" font-size="10.5" fill="#fff" text-anchor="middle">Chief: 10</text>
+<line x1="200" y1="25" x2="330" y2="25" stroke="var(--gray, #9a9a9a)" stroke-width="1.6"/>
+<text x="265" y="15" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">inflation</text>
+<text x="290" y="95" font-size="13" fill="#e05a4f" font-weight="600" text-anchor="middle">Villagers lost 10 chickens of purchasing power. The chief gained 10 chickens — for free.</text>
+</g>
+</svg>
 
 The math is simple: The villagers went from owning 100% of purchasing power (30 chickens) to owning 67% (20 chickens). The chief went from 0% to 33% (10 chickens). Those 10 chickens were *stolen*.
 
@@ -176,27 +189,7 @@ Instantly:
 - Price adjusts from 1 coin = 3 chickens to 1 coin = 2 chickens
 - Every holder's purchasing power adjusts proportionally
 
-```
-TRANSPARENT INFLATION
-┌────────────────────────────────────────────────────────┐
-│                                                        │
-│  Before: 10 coins total, 1 coin = 3 chickens           │
-│  After:  15 coins total, 1 coin = 2 chickens           │
-│                                                        │
-│  Original villagers' 10 coins:                         │
-│  Before: Could buy 30 chickens (100%)                  │
-│  After:  Can buy 20 chickens (67%)                     │
-│                                                        │
-│  But wait — if prices adjusted INSTANTLY,              │
-│  the chief couldn't buy at old prices!                 │
-│                                                        │
-│  His 5 new coins would only ever buy 10 chickens,      │
-│  not 15. He couldn't exploit the price lag.            │
-│                                                        │
-│  The EXTRA theft requires DECEPTION.                   │
-│                                                        │
-└────────────────────────────────────────────────────────┘
-```
+> **Transparent inflation.** Before: 10 coins total, 1 coin = 3 chickens. After: 15 coins total, 1 coin = 2 chickens. The original villagers' 10 coins go from buying 30 chickens (100%) to buying 20 (67%) — that dilution happens either way. But if prices adjusted *instantly*, the chief's 5 new coins would only ever buy 10 chickens, not 15 — he couldn't exploit the price lag. **The extra theft requires deception.**
 
 If inflation were announced in advance and prices adjusted immediately, **the new money would still dilute existing holders**, but the counterfeiter couldn't exploit the lag. He'd get exactly 10 chickens (his fair 33% share), not 15 chickens (50% at old prices).
 
@@ -208,33 +201,36 @@ This proves inflation isn't some economic lubricant or growth mechanism. **It's 
 
 Let's trace exactly how the theft unfolds over time:
 
-```
-TIME →
-─────────────────────────────────────────────────────────────────►
-
-T0: Chief has 5 new coins. Market price: 1 coin = 3 chickens
-    Chief buys 15 chickens for 5 coins (at old prices!)
-    Chief now has HALF the chickens for nothing.
-
-T1: Farmer now has 5 "extra" coins. Goes to buy fish.
-    Fisherman notices more coins floating around...
-    Raises price. Farmer's coins worth less than when he got them.
-
-T2: Money spreads. Everyone adjusts to 15 coins in circulation.
-    New price: 1 coin = 2 chickens.
-    The 10 coins original villagers held?
-    Now only buy 20 chickens instead of 30.
-
-RESULT:
-┌─────────────────────────────────────────────────────────┐
-│ Chief:           Got 15 chickens for nothing           │
-│ Farmer:          Got 5 coins, but they buy less        │
-│ Original holders: Lost 33% purchasing power            │
-│                                                        │
-│ Total chickens produced: UNCHANGED (still 30)          │
-│ Wealth was REDISTRIBUTED, not created.                 │
-└─────────────────────────────────────────────────────────┘
-```
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="cantillon-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Cantillon Effect Illustrated</text>
+<line x1="0" y1="30" x2="780" y2="30" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#cantillon-arrow)"/>
+<text x="780" y="20" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="end">time</text>
+<circle cx="30" cy="30" r="7" fill="#e05a4f"/>
+<text x="30" y="58" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">T0</text>
+<text x="30" y="78" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Chief buys 15</text>
+<text x="30" y="93" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">chickens at OLD</text>
+<text x="30" y="108" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">prices — free</text>
+<circle cx="390" cy="30" r="7" fill="var(--secondary, #e0932f)"/>
+<text x="390" y="58" font-size="12" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">T1</text>
+<text x="390" y="78" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Farmer spends new</text>
+<text x="390" y="93" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">coins — fisherman</text>
+<text x="390" y="108" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">raises price</text>
+<circle cx="750" cy="30" r="7" fill="#7a9ec2"/>
+<text x="750" y="58" font-size="12" font-weight="600" fill="#7a9ec2" text-anchor="middle">T2</text>
+<text x="750" y="78" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Whole market</text>
+<text x="750" y="93" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">re-prices: 1 coin</text>
+<text x="750" y="108" font-size="11.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">= 2 chickens</text>
+<rect x="0" y="150" width="780" height="115" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.08" stroke="var(--gray, #9a9a9a)" stroke-width="1.2"/>
+<text x="20" y="178" font-size="12.5" fill="var(--darkgray, #9a9a9a)">Chief: got 15 chickens for nothing</text>
+<text x="20" y="200" font-size="12.5" fill="var(--darkgray, #9a9a9a)">Farmer: got 5 coins, but they buy less than expected</text>
+<text x="20" y="222" font-size="12.5" fill="var(--darkgray, #9a9a9a)">Original holders: lost 33% of purchasing power</text>
+<text x="20" y="248" font-size="12.5" font-weight="600" fill="#e05a4f">Total chickens produced: unchanged. Wealth was redistributed, not created.</text>
+</g>
+</svg>
 
 The [[Cantillon Effect]] isn't a side effect of inflation — it's the entire mechanism. Inflation is a wealth transfer from those furthest from the money printer to those closest to it.
 
@@ -242,46 +238,26 @@ The [[Cantillon Effect]] isn't a side effect of inflation — it's the entire me
 
 Let's flip the script. Instead of money being debased, imagine *goods* being stolen directly:
 
-```
-THE FARMER'S SITUATION
-─────────────────────────────────────────────────────────────────
-
-Year 1: Farmer raises 10 chickens
-        Thieves steal 1 chicken (10%)
-        Farmer sells 9, saves coins for better coop
-
-Year 2: Farmer raises 10 chickens (couldn't afford coop upgrade)
-        Thieves steal 1 chicken
-        Farmer sells 9
-
-Year 3: Bad season — only raises 8 chickens
-        Thieves still steal 1 (now 12.5%!)
-        Farmer sells 7
-        Can't afford feed for next year...
-
-OUTCOME: Production STAGNATES then DECLINES.
-         Society has FEWER chickens over time.
-```
+<svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Crop Theft Analogy</text>
+<line x1="0" y1="220" x2="580" y2="220" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="60" y="120" width="90" height="100" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="105" y="110" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Year 1: 10</text>
+<rect x="255" y="120" width="90" height="100" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="300" y="110" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Year 2: 10</text>
+<rect x="450" y="140" width="90" height="80" fill="#e05a4f" fill-opacity="0.75"/>
+<text x="495" y="130" font-size="12" fill="#e05a4f" text-anchor="middle">Year 3: 8</text>
+<text x="105" y="242" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">thieves take 1 (10%)</text>
+<text x="300" y="242" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">thieves take 1 (10%)</text>
+<text x="495" y="242" font-size="11" fill="#e05a4f" text-anchor="middle">thieves take 1 (12.5%)</text>
+<text x="290" y="280" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Production stagnates, then declines — society ends up with fewer chickens.</text>
+</g>
+</svg>
 
 Now the inflation apologist says: "But the thieves give those chickens away! It goes back into the economy!"
 
-```
-"BUT THE THIEVES REDISTRIBUTE!"
-─────────────────────────────────────────────────────────────────
-
-Thieves' 1 chicken → given to "the poor"
-Farmer's situation → unchanged (still robbed)
-
-Next year:
-- Farmer can't invest in better equipment
-- Farmer can't save for bad harvests
-- Farmer might quit farming entirely
-
-The thieves are ATTACKING THE SOURCE of their own sustenance.
-
-Society doesn't get MORE chickens because thieves redistributed.
-Society gets FEWER chickens because producers are punished.
-```
+> **"But the thieves redistribute!"** The stolen chicken goes to "the poor" — but the farmer's situation is unchanged; he's still robbed. Next year he can't invest in better equipment, can't save for a bad harvest, and might quit farming entirely. The thieves are attacking the source of their own sustenance. Society doesn't get *more* chickens because thieves redistributed — it gets *fewer*, because the producer was punished.
 
 This is obvious when we discuss goods. Everyone understands that stealing from farmers reduces farming. **But inflation IS theft from producers.** It extracts real value from those who create goods and services and transfers it to those who create nothing.
 
@@ -304,28 +280,7 @@ Even if the thief uses stolen goods "productively," they've still:
 
 The inflation advocate's position contains a fatal contradiction:
 
-```
-THE INFLATION ADVOCATE'S HIDDEN PREMISE
-─────────────────────────────────────────────────────────────────
-
-Claim: "Inflation helps the economy grow"
-
-This presupposes:
-1. There IS an economy (people producing goods/services)
-2. People ARE producing (working, saving, investing)
-3. Production IS possible (property rights exist)
-
-But inflation UNDERMINES all of these:
-1. It extracts from the economy
-2. It punishes producing/saving
-3. It violates property rights
-
-The advocate borrows concepts (economy, growth, production)
-that only exist in a non-inflationary framework,
-then uses them to justify inflation.
-
-This is the STOLEN CONCEPT FALLACY.
-```
+**The inflation advocate's hidden premise.** The claim "inflation helps the economy grow" presupposes three things: that there *is* an economy (people producing goods and services), that people *are* producing (working, saving, investing), and that production *is* possible (property rights exist). But inflation undermines all three — it extracts from the economy, punishes producing and saving, and violates property rights. The advocate borrows concepts (economy, growth, production) that only exist in a non-inflationary framework, then uses them to justify inflation. **This is the stolen concept fallacy.**
 
 You cannot tell us how to "progress society" when your mechanism *attacks* the very thing that creates progress. It's like a tapeworm claiming credit for its host's health while draining its blood.
 
@@ -349,23 +304,7 @@ This argument is wrong on every level. Let's dismantle it completely.
 
 The advocate claims central planners can identify "beneficial ventures" and fund them through inflation. But this immediately runs into an insurmountable problem: **value is subjective.**
 
-```
-THE VALUE PROBLEM
-─────────────────────────────────────────────────────────────────
-
-Central planner says: "This watermill will benefit everyone!"
-
-But:
-- Alice doesn't need a watermill. She wanted to save for a boat.
-- Bob thinks the watermill is in the wrong location.
-- Carol would rather have a fishing pier.
-- Dave thinks watermills are inefficient.
-
-Who is RIGHT? There's no objective answer.
-
-Value exists only in individual minds.
-There is no "social utility" floating in the ether.
-```
+> **The value problem.** The central planner says: "This watermill will benefit everyone!" But Alice doesn't need a watermill — she wanted to save for a boat. Bob thinks it's in the wrong location. Carol would rather have a fishing pier. Dave thinks watermills are inefficient. Who is *right*? There's no objective answer. Value exists only in individual minds; there is no "social utility" floating in the ether.
 
 On what grounds does the central planner decide the watermill is "beneficial"? Whatever criteria they use — jobs created, estimated output, expert opinion — it's ultimately *their* value judgment imposed on everyone else.
 
@@ -373,37 +312,16 @@ On what grounds does the central planner decide the watermill is "beneficial"? W
 
 Here's a formal proof that central planners cannot determine "beneficial" ventures:
 
-```
-PROOF BY CONTRADICTION
-─────────────────────────────────────────────────────────────────
+**Proof by contradiction**
 
-1. ASSUME: Central planners CAN objectively determine
-   which ventures benefit society.
-
-2. This means there exists some objective measure of
-   "social benefit" that applies to all individuals.
-
-3. But if such objective value exists, there should be
-   NO disagreement about which ventures are beneficial.
-
-4. OBSERVATION: We ARE disagreeing right now about whether
-   inflation-funded ventures are beneficial.
-
-5. The inflation advocate believes they are beneficial.
-   The Austrian believes they are harmful.
-
-6. This disagreement PROVES value is subjective —
-   there is no objective measure we both access.
-
-7. CONTRADICTION: If value were objective, we couldn't
-   disagree. But we do disagree. Therefore value is subjective.
-
-8. CONCLUSION: Central planners CANNOT objectively determine
-   beneficial ventures. Any choice is arbitrary imposition
-   of their subjective preferences on others.
-
-QED.
-```
+1. Assume central planners *can* objectively determine which ventures benefit society.
+2. This means there exists some objective measure of "social benefit" applying to all individuals.
+3. If such objective value exists, there should be no disagreement about which ventures are beneficial.
+4. Observation: we *are* disagreeing right now about whether inflation-funded ventures are beneficial.
+5. The inflation advocate believes they are beneficial. The Austrian believes they are harmful.
+6. This disagreement proves value is subjective — there is no objective measure we both access.
+7. Contradiction: if value were objective, we couldn't disagree. But we do disagree. Therefore value is subjective.
+8. Conclusion: central planners cannot objectively determine beneficial ventures. Any choice is an arbitrary imposition of their subjective preferences on others. QED.
 
 The very existence of this debate is proof that the utilitarian premise fails. If "social benefit" were objective and measurable, we wouldn't be arguing.
 
@@ -411,32 +329,40 @@ The very existence of this debate is proof that the utilitarian premise fails. I
 
 Even if we *granted* that a venture would benefit society (which we can't determine), that doesn't transform theft into investment.
 
-```
-THE CONSENT PROBLEM
-─────────────────────────────────────────────────────────────────
-
-Scenario A: Voluntary Investment
-- 10 villagers each have 3 coins
-- Entrepreneur says: "I want to build a watermill. Invest?"
-- 5 villagers invest 1 coin each (5 coins total)
-- 5 villagers decline — they keep their 3 coins
-- Watermill is built with 5 coins from willing investors
-
-RESULT: Investors took a risk they chose.
-        Non-investors are unaffected.
-        Purchasing power of non-investors: UNCHANGED.
-
-Scenario B: Inflation-Funded Venture
-- 10 villagers each have 3 coins (30 coins total)
-- Chief prints 5 coins, gives to entrepreneur
-- Entrepreneur builds watermill
-- Now 35 coins exist, same goods
-- Each villager's 3 coins now worth less
-
-RESULT: Everyone was forced to "invest" via dilution.
-        Non-consenters lost purchasing power anyway.
-        Purchasing power of everyone: REDUCED.
-```
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="consent-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7a9ec2"/></marker>
+<marker id="consent-arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+</defs>
+<g transform="translate(50,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Scenario A: Voluntary Investment</text>
+<rect x="0" y="0" width="150" height="55" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="75" y="25" font-size="11.5" fill="#7a9ec2" text-anchor="middle">5 villagers</text>
+<text x="75" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">choose to invest</text>
+<line x1="150" y1="27" x2="220" y2="27" stroke="#7a9ec2" stroke-width="1.6" marker-end="url(#consent-arrow)"/>
+<rect x="230" y="0" width="150" height="55" rx="6" fill="#7a9ec2" fill-opacity="0.55" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="305" y="25" font-size="11.5" fill="#fff" text-anchor="middle">Watermill</text>
+<text x="305" y="42" font-size="11" fill="#fff" text-anchor="middle">built, 5 coins</text>
+<rect x="0" y="90" width="150" height="55" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.6"/>
+<text x="75" y="115" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">5 villagers</text>
+<text x="75" y="132" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">decline — unaffected</text>
+<text x="190" y="210" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Purchasing power of non-investors: unchanged.</text>
+</g>
+<g transform="translate(490,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Scenario B: Inflation-Funded Venture</text>
+<rect x="0" y="0" width="150" height="55" rx="6" fill="#e05a4f" fill-opacity="0.18" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="75" y="25" font-size="11.5" fill="#e05a4f" text-anchor="middle">Chief prints</text>
+<text x="75" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">5 new coins</text>
+<line x1="150" y1="27" x2="220" y2="27" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#consent-arrow-red)"/>
+<rect x="230" y="0" width="150" height="55" rx="6" fill="#e05a4f" fill-opacity="0.55" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="305" y="25" font-size="11.5" fill="#fff" text-anchor="middle">Watermill</text>
+<text x="305" y="42" font-size="11" fill="#fff" text-anchor="middle">built, 5 coins</text>
+<rect x="0" y="90" width="380" height="55" rx="6" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="190" y="115" font-size="11.5" fill="#e05a4f" text-anchor="middle">All 10 villagers — including non-consenters</text>
+<text x="190" y="132" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">now hold coins worth less</text>
+<text x="190" y="210" font-size="13" fill="#e05a4f" font-weight="600" text-anchor="middle">Everyone was forced to "invest" through dilution.</text>
+</g>
+</svg>
 
 In Scenario A, each person chose whether to participate. In Scenario B, everyone was forced to participate through the back door of currency debasement. The watermill might be identical in both cases — **but the ethics are opposite.**
 
@@ -448,24 +374,7 @@ Do you:
 - A) Thank them for their service?
 - B) Call the police?
 
-```
-THE INTRUDER'S LOGIC
-─────────────────────────────────────────────────────────────────
-
-Intruder: "I used YOUR resources to create something
-          that benefits YOU. Therefore it's not theft."
-
-You: "I didn't ask for this. I didn't consent.
-      I would have used those resources differently.
-      The fact that I might eat some of it to avoid
-      total waste doesn't mean I approved of your actions."
-
-The intruder's "benefit" is:
-1. Defined by HIM, not you
-2. Created from YOUR resources without consent
-3. Not what you would have chosen
-4. Imposed on you regardless of your preferences
-```
+> **The intruder's logic.** "I used *your* resources to create something that benefits *you*. Therefore it's not theft." Your answer: "I didn't ask for this. I didn't consent. I would have used those resources differently. The fact that I might eat some of it to avoid total waste doesn't mean I approved of your actions." The intruder's "benefit" is defined by him, not you; created from your resources without consent; not what you would have chosen; and imposed on you regardless of your preferences.
 
 Now suppose you eat some of the food rather than let it go to waste entirely. Does eating it mean you *retroactively consented* to the break-in? Obviously not. You're simply making the best of a bad situation — engaging in **restitution**, trying to recover some value from what was taken.
 
@@ -475,30 +384,7 @@ The same applies to inflation-funded ventures. If the government prints money to
 
 The inflation advocate acts as if counterfeiting is the *only* way to fund new ventures. This is absurdly false.
 
-```
-HOW VENTURES ARE FUNDED WITHOUT INFLATION
-─────────────────────────────────────────────────────────────────
-
-Fixed Money Supply (10 coins total, 30 chickens):
-
-Entrepreneur: "I have an idea for a fishing net factory.
-              I need 4 coins to start. Who will invest?"
-
-Investor A: "I believe in this. Here's 2 coins."
-Investor B: "Me too. Here's 2 coins."
-
-Factory is built with 4 coins.
-
-What happened to purchasing power?
-- Investors: Traded 4 coins for equity in factory
-- Non-investors: Still have their coins
-- Total coins: Still 10
-- Total goods: Still 30 (plus future nets)
-- Price level: UNCHANGED
-
-The investors PUT THEIR MONEY where their mouth is.
-They did NOT put OTHER PEOPLE'S MONEY where their mouth is.
-```
+> **How ventures get funded without inflation.** Fixed money supply (10 coins total, 30 chickens). Entrepreneur: "I have an idea for a fishing net factory. I need 4 coins to start. Who will invest?" Investor A: "I believe in this. Here's 2 coins." Investor B: "Me too. Here's 2 coins." The factory is built with 4 coins. Investors traded coins for equity; non-investors still have their coins; total coins are still 10; total goods are still 30 (plus future nets); the price level is unchanged. The investors put *their* money where their mouth is — not other people's.
 
 In a fixed money supply, the entrepreneur must **convince** others that the venture is worthwhile. They must do proof of work — business plans, demonstrations, track records. The investors must genuinely believe in the project enough to risk *their own* resources.
 
@@ -508,24 +394,13 @@ This is **selection pressure** for good ideas. Bad ideas don't get funded becaus
 
 With inflation-funded ventures, this selection pressure disappears:
 
-```
-WHY INFLATION FUNDS BAD VENTURES
-─────────────────────────────────────────────────────────────────
-
-Without inflation:
-- Entrepreneur must convince skeptical investors
-- Investors risk their OWN money
-- Bad ideas don't get funded
-- Failed ventures teach the market lessons
-- Investors bear the losses
-
-With inflation:
-- Entrepreneur must convince central planners
-- Central planners risk OTHER PEOPLE'S money
-- Bad ideas get funded if politically connected
-- Failed ventures get bailed out with more printing
-- Everyone bears the losses through dilution
-```
+| Without inflation | With inflation |
+|---|---|
+| Entrepreneur must convince skeptical investors | Entrepreneur must convince central planners |
+| Investors risk their *own* money | Central planners risk *other people's* money |
+| Bad ideas don't get funded | Bad ideas get funded if politically connected |
+| Failed ventures teach the market lessons | Failed ventures get bailed out with more printing |
+| Investors bear the losses | Everyone bears the losses through dilution |
 
 People spend their own money far more carefully than they spend other people's money. A venture capitalist putting up his own savings will scrutinize every detail. A central banker allocating printed money has no skin in the game — it cost him nothing to create those units.
 
@@ -533,35 +408,16 @@ People spend their own money far more carefully than they spend other people's m
 
 The 2008 financial crisis demonstrated exactly what happens when ventures are funded with "free" money:
 
-```
-THE 2008 CASE STUDY
-─────────────────────────────────────────────────────────────────
+**The 2008 case study.** Setup: banks made risky loans (mortgages to unqualified buyers) because they could sell the risk to others, enabled by easy money from the central bank. Then the bad loans defaulted and banks faced bankruptcy.
 
-SETUP:
-- Banks made risky loans (mortgages to unqualified buyers)
-- Why? Because they could sell risk to others
-- Enabled by easy money from central bank
-
-COLLAPSE:
-- Bad loans defaulted
-- Banks faced bankruptcy
-
-WITHOUT MONEY PRINTING:
-- Banks would fail
-- Shareholders and bondholders lose
-- Depositors lose (up to insurance limits)
-- Market learns: "Don't make stupid loans"
-- Other banks tighten lending standards
-- Economy restructures around reality
-
-WITH MONEY PRINTING (WHAT ACTUALLY HAPPENED):
-- Central bank prints money for bailouts
-- Banks survive despite catastrophic decisions
-- Shareholders protected, executives get bonuses
-- Everyone's purchasing power diluted to pay for it
-- Market learns: "Make risky bets — heads I win, tails you lose"
-- Moral hazard intensifies
-```
+| Without money printing | With money printing (what actually happened) |
+|---|---|
+| Banks would fail | Central bank prints money for bailouts |
+| Shareholders and bondholders lose | Banks survive despite catastrophic decisions |
+| Depositors lose (up to insurance limits) | Shareholders protected, executives get bonuses |
+| Market learns: "don't make stupid loans" | Everyone's purchasing power diluted to pay for it |
+| Other banks tighten lending standards | Market learns: "make risky bets — heads I win, tails you lose" |
+| Economy restructures around reality | Moral hazard intensifies |
 
 The bailouts were funded by inflation — by diluting everyone's purchasing power to cover the losses of those who made terrible decisions. This is **socializing losses while privatizing gains.**
 
@@ -582,26 +438,7 @@ Under inflation logic:
 - Your values are irrelevant
 - You bear consequences of HIS decision
 
-```
-THE GAMBLING NEIGHBOR
-─────────────────────────────────────────────────────────────────
-
-Neighbor: "I gambled and lost. I need 5 coins."
-
-Voluntary world:
-- You: "No." (You keep your coins)
-- He: Faces consequences, learns lesson
-- You: Unaffected
-
-Inflation world:
-- Chief prints 5 coins for neighbor
-- Your 3 coins now worth less
-- You: "Wait, why am I paying for his gambling?"
-- Chief: "It benefits society to keep him housed."
-- You: "According to whom? I didn't agree to this."
-- He: No consequences, no lesson learned
-- You: Poorer through no fault of your own
-```
+> **The gambling neighbor.** Neighbor: "I gambled and lost. I need 5 coins." In a voluntary world, you say "No," he faces the consequences and learns, and you're unaffected. In the inflation world, the chief prints 5 coins for him, your 3 coins are now worth less, and when you ask why you're paying for his gambling, the chief says "it benefits society to keep him housed." He faces no consequences and learns nothing. You end up poorer through no fault of your own.
 
 Why should you be forced to subsidize decisions you had no part in making? The inflation advocate has no answer except "because we decided it's good for society" — which circles back to the subjective value problem.
 
@@ -609,139 +446,42 @@ Why should you be forced to subsidize decisions you had no part in making? The i
 
 Under a fixed money supply, the incentive structure is clean:
 
-```
-FIXED MONEY SUPPLY INCENTIVES
-─────────────────────────────────────────────────────────────────
+Compare the incentive structures directly:
 
-For Entrepreneurs:
-- Must convince voluntary investors
-- Must demonstrate viability
-- Bears risk of failure
-- Reaps rewards of success
-
-For Investors:
-- Risk only what they choose to risk
-- Due diligence is rewarded
-- Bad judgment costs THEM, not others
-- Learn from failures
-
-For Non-Investors:
-- Completely unaffected by others' ventures
-- Purchasing power preserved
-- Can save safely
-- Not forced into risks they didn't choose
-
-For Failed Ventures:
-- Capital lost by those who chose to risk it
-- Market learns what doesn't work
-- Resources freed for better uses
-- No bailout, no moral hazard
-```
-
-Compare to the inflation-funded world:
-
-```
-INFLATION-FUNDED INCENTIVES
-─────────────────────────────────────────────────────────────────
-
-For Entrepreneurs:
-- Must convince central planners (political game)
-- Connections matter more than viability
-- Risk is diffused to everyone
-- Rewards remain concentrated
-
-For "Investors" (Central Planners):
-- Risk OTHER PEOPLE'S money
-- No personal downside to bad decisions
-- Political considerations dominate
-- Bad judgment costs everyone ELSE
-
-For Everyone Else:
-- Forced to "invest" via dilution
-- Purchasing power constantly eroded
-- Cannot save safely (money loses value)
-- Bears risk of ventures they never chose
-
-For Failed Ventures:
-- Print more money to bail out
-- Market learns nothing
-- Bad ventures persist as zombies
-- Moral hazard maximized
-```
+| | Fixed money supply | Inflation-funded |
+|---|---|---|
+| **Entrepreneurs** | Must convince voluntary investors, demonstrate viability, bear the risk of failure | Must convince central planners (a political game); connections matter more than viability |
+| **Investors / planners** | Risk only what they choose; due diligence is rewarded; bad judgment costs *them* | Risk *other people's* money; no personal downside; political considerations dominate |
+| **Everyone else** | Completely unaffected by others' ventures; purchasing power preserved; can save safely | Forced to "invest" via dilution; purchasing power constantly eroded; bears risk of ventures they never chose |
+| **Failed ventures** | Capital lost by those who chose to risk it; market learns; resources freed for better uses | Print more money to bail out; market learns nothing; bad ventures persist as zombies |
 
 ### The Utilitarian Calculation Is Impossible
 
 Even if we accepted utilitarian ethics (which has its own problems), the calculation the inflation advocate proposes is **impossible**:
 
-```
-WHY THE UTILITARIAN CALCULATION FAILS
-─────────────────────────────────────────────────────────────────
+To determine if a venture "benefits society," you'd need five things, and every one of them is impossible:
 
-To determine if a venture "benefits society," you'd need:
-
-1. A way to measure each person's utility gained
-   → Impossible: utility is subjective and non-comparable
-
-2. A way to measure each person's utility lost (from dilution)
-   → Impossible: same reason
-
-3. A way to aggregate these into "net social benefit"
-   → Impossible: no common unit exists
-
-4. A way to predict the venture's outcomes
-   → Impossible: entrepreneurship is uncertain by nature
-
-5. A way to compare to counterfactual (what would have happened)
-   → Impossible: we can't observe paths not taken
-
-The "beneficial venture" calculation requires FIVE impossible steps.
-```
+1. A way to measure each person's utility gained — impossible, utility is subjective and non-comparable.
+2. A way to measure each person's utility lost from dilution — impossible, same reason.
+3. A way to aggregate these into "net social benefit" — impossible, no common unit exists.
+4. A way to predict the venture's outcomes — impossible, entrepreneurship is uncertain by nature.
+5. A way to compare to the counterfactual — impossible, we can't observe paths not taken.
 
 The inflation advocate waves their hand at "economic study" determining which ventures to fund. But there is no study that can solve the [[Economic Calculation Problem]]. The information needed simply does not exist in accessible form.
 
 ### Summary: The Utilitarian Defense Fails
 
-```
-THE UTILITARIAN ARGUMENT: SUMMARY OF FAILURES
-─────────────────────────────────────────────────────────────────
+**Summary: the utilitarian defense fails.** The claim "inflation funds beneficial ventures, so it's okay" fails on seven independent grounds:
 
-Claim: "Inflation funds beneficial ventures, so it's okay."
+1. **Value is subjective** — no objective "social benefit" exists; our disagreement proves this.
+2. **Theft is still theft** — good intentions don't transform theft into investment; consent was never given.
+3. **Using the output ≠ consenting to the theft** — eating the intruder's food isn't endorsement, it's damage control.
+4. **Voluntary alternatives exist** — ventures can be funded through willing investors who put *their* money where their mouth is.
+5. **Inflation destroys selection pressure** — bad ideas get funded via political connections, failures get bailed out, the market learns nothing.
+6. **It socializes losses, privatizes gains** — 2008 proved this catastrophically.
+7. **The calculation is impossible** — can't measure subjective utility, predict outcomes, or compare counterfactuals.
 
-FAILS because:
-
-1. VALUE IS SUBJECTIVE
-   → No objective "social benefit" exists
-   → Our disagreement proves this
-
-2. THEFT IS STILL THEFT
-   → Good intentions don't transform theft into investment
-   → Consent was never given
-
-3. USING THE OUTPUT ≠ CONSENTING TO THE THEFT
-   → Eating the intruder's food isn't endorsement
-   → It's damage control / restitution
-
-4. VOLUNTARY ALTERNATIVES EXIST
-   → Ventures can be funded through willing investors
-   → Who put THEIR money where THEIR mouth is
-
-5. INFLATION DESTROYS SELECTION PRESSURE
-   → Bad ideas get funded (political connections)
-   → Failures get bailed out (moral hazard)
-   → Market learns nothing
-
-6. SOCIALIZES LOSSES, PRIVATIZES GAINS
-   → 2008 proved this catastrophically
-   → Everyone pays for the connected few's mistakes
-
-7. THE CALCULATION IS IMPOSSIBLE
-   → Can't measure subjective utility
-   → Can't predict outcomes
-   → Can't compare counterfactuals
-
-The utilitarian defense of inflation is not merely wrong —
-it's incoherent. It assumes away every problem it claims to solve.
-```
+The utilitarian defense of inflation is not merely wrong — it's incoherent. It assumes away every problem it claims to solve.
 
 ## The Hard Assets Contradiction
 
@@ -749,21 +489,14 @@ Here's a question for every inflation advocate:
 
 **If inflation is good for the economy, why do you invest in hard assets?**
 
-```
-THE INFLATION ADVOCATE'S PORTFOLIO
-─────────────────────────────────────────────────────────────────
+| What they say | What they do |
+|---|---|
+| "2–3% inflation is healthy and necessary" | Buy real estate (inflation hedge) |
+| | Buy gold (inflation hedge) |
+| | Buy stocks (inflation hedge) |
+| | Avoid holding cash |
 
-What they SAY:        "2-3% inflation is healthy and necessary"
-
-What they DO:         - Buy real estate (inflation hedge)
-                      - Buy gold (inflation hedge)
-                      - Buy stocks (inflation hedge)
-                      - Avoid holding cash
-
-CONTRADICTION:
-If inflation is GOOD, holding cash should be FINE.
-If you hedge against inflation, you admit it's BAD.
-```
+**The contradiction:** if inflation is good, holding cash should be fine. If you hedge against it, you admit it's bad.
 
 You cannot simultaneously believe:
 - "Inflation benefits society"
@@ -775,26 +508,14 @@ If you're protecting yourself, you're admitting inflation destroys wealth. And i
 
 For inflation to "work," someone must hold the depreciating currency. Who?
 
-```
-THE INFLATION GAME
-─────────────────────────────────────────────────────────────────
+| Winners (hedge against inflation) | Losers (hold depreciating currency) |
+|---|---|
+| The wealthy (real estate, stocks, gold) | The poor (can't afford hard assets) |
+| The connected (first receivers of new money) | The unsophisticated (don't understand inflation) |
+| The financially sophisticated | Fixed-income retirees (pensions in fiat) |
+| | Workers (wages lag behind prices) |
 
-Winners (hedge against inflation):
-- The wealthy (real estate, stocks, gold)
-- The connected (first receivers of new money)
-- The financially sophisticated
-
-Losers (hold depreciating currency):
-- The poor (can't afford hard assets)
-- The unsophisticated (don't understand inflation)
-- Fixed-income retirees (pensions in fiat)
-- Workers (wages lag behind prices)
-
-INFLATION IS REGRESSIVE.
-It transfers wealth from poor to rich,
-from unsophisticated to sophisticated,
-from workers to asset owners.
-```
+**Inflation is regressive.** It transfers wealth from poor to rich, from unsophisticated to sophisticated, from workers to asset owners.
 
 The inflation advocate who owns real estate is saying: "Let the poor hold the bag." Their inflation-hedged portfolio is funded by the purchasing power extracted from those who can't afford to hedge.
 
@@ -808,26 +529,22 @@ This position is untenable:
 
 If the "optimal" rate is 5% per year:
 
-```
-IMPACT BY WEALTH LEVEL
-─────────────────────────────────────────────────────────────────
-
-Person A: 100 coins saved     → loses 5 coins/year
-Person B: 1,000 coins saved   → loses 50 coins/year
-Person C: 10,000 coins saved  → loses 500 coins/year
-
-To merely PRESERVE wealth, each must earn >5% returns.
-
-Person A: Needs 5 coin return (easy)
-Person B: Needs 50 coin return (harder)
-Person C: Needs 500 coin return (requires sophisticated investing)
-
-After 20 years at 5% inflation:
-10,000 coins → purchasing power of ~3,600 coins (64% GONE)
-
-You're telling the productive class:
-"Find ways to beat inflation or watch your savings evaporate."
-```
+<svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Impact by Wealth Level (5% inflation)</text>
+<line x1="0" y1="200" x2="580" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="60" y="180" width="90" height="20" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="105" y="170" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Person A: 100</text>
+<text x="105" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">loses 5/yr</text>
+<rect x="255" y="120" width="90" height="80" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="300" y="110" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Person B: 1,000</text>
+<text x="300" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">loses 50/yr</text>
+<rect x="450" y="20" width="90" height="180" fill="#e05a4f" fill-opacity="0.75"/>
+<text x="495" y="10" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Person C: 10,000</text>
+<text x="495" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">loses 500/yr</text>
+<text x="290" y="260" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">After 20 years at 5% inflation, 10,000 coins buy what ~3,600 once did — 64% gone.</text>
+</g>
+</svg>
 
 There is no rate that affects everyone equally because people have different amounts of savings, different abilities to invest, and different time horizons. Any positive inflation rate systematically punishes those who save and rewards those who borrow.
 
@@ -847,27 +564,36 @@ This information exists only as dispersed knowledge in millions of minds, reveal
 
 As inflation continues, rational actors flee to hard assets. Eventually:
 
-```
-THE END GAME
-─────────────────────────────────────────────────────────────────
-
-Phase 1: "Optimal" 2% inflation. Most people hold cash.
-         Wealth transfer: slow but steady.
-
-Phase 2: Sophisticated flee to hard assets.
-         Remaining cash holders bear MORE of the burden.
-
-Phase 3: More flee. Burden concentrates further.
-
-Phase 4: Only the poor/unsophisticated hold cash.
-         Inflation's damage falls entirely on them.
-
-Phase 5: Even the poor realize. Currency collapse.
-         See: Argentina, Zimbabwe, Venezuela.
-
-There's no stable equilibrium.
-The game requires suckers, and suckers eventually learn.
-```
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="endgame-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+<g transform="translate(40,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The End Game</text>
+<line x1="20" y1="30" x2="800" y2="30" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#endgame-arrow)"/>
+<circle cx="30" cy="30" r="6" fill="#7a9ec2"/>
+<text x="30" y="55" font-size="11" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Phase 1</text>
+<text x="30" y="72" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">"optimal" 2%,</text>
+<text x="30" y="86" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">most hold cash</text>
+<circle cx="210" cy="30" r="6" fill="#7a9ec2"/>
+<text x="210" y="55" font-size="11" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Phase 2</text>
+<text x="210" y="72" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">sophisticated</text>
+<text x="210" y="86" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">flee to assets</text>
+<circle cx="390" cy="30" r="6" fill="var(--secondary, #e0932f)"/>
+<text x="390" y="55" font-size="11" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Phase 3</text>
+<text x="390" y="72" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">burden</text>
+<text x="390" y="86" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">concentrates</text>
+<circle cx="570" cy="30" r="6" fill="var(--secondary, #e0932f)"/>
+<text x="570" y="55" font-size="11" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Phase 4</text>
+<text x="570" y="72" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">only poor hold</text>
+<text x="570" y="86" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">cash, take it all</text>
+<circle cx="770" cy="30" r="7" fill="#e05a4f"/>
+<text x="770" y="55" font-size="11" font-weight="600" fill="#e05a4f" text-anchor="middle">Phase 5</text>
+<text x="770" y="72" font-size="10.5" fill="#e05a4f" text-anchor="middle">currency</text>
+<text x="770" y="86" font-size="10.5" fill="#e05a4f" text-anchor="middle">collapse</text>
+<text x="400" y="140" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">There's no stable equilibrium. The game requires suckers, and suckers eventually learn.</text>
+</g>
+</svg>
 
 Hyperinflation isn't a bug — it's the logical endpoint of any positive inflation rate continued long enough. The only question is how quickly people learn they're being robbed.
 
@@ -875,29 +601,23 @@ Hyperinflation isn't a bug — it's the logical endpoint of any positive inflati
 
 Consider what happens in an uninflated economy:
 
-```
-NATURAL DEFLATION (CAPITALISM WORKING)
-─────────────────────────────────────────────────────────────────
-
-Year 1:  10 coins exist, 30 chickens produced
-         Price: 1 coin = 3 chickens
-
-Year 5:  10 coins still (no inflation)
-         Farmer improved techniques: 60 chickens now
-         Competition: 1 coin = 6 chickens
-
-Year 10: 10 coins still
-         Even better techniques: 120 chickens
-         Price: 1 coin = 12 chickens
-
-YOUR SAVINGS:
-Year 1:  1 coin buys 3 chickens
-Year 5:  1 coin buys 6 chickens
-Year 10: 1 coin buys 12 chickens
-
-REWARD FOR SAVING: Your purchasing power GROWS.
-REWARD FOR PRODUCING: Profits from efficiency gains.
-```
+<svg viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Natural Deflation (Capitalism Working)</text>
+<line x1="0" y1="220" x2="580" y2="220" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<path d="M40,205 L290,150 L540,40" fill="none" stroke="#7a9ec2" stroke-width="2.4"/>
+<circle cx="40" cy="205" r="5" fill="#7a9ec2"/>
+<circle cx="290" cy="150" r="5" fill="#7a9ec2"/>
+<circle cx="540" cy="40" r="5" fill="#7a9ec2"/>
+<text x="40" y="240" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">Year 1</text>
+<text x="40" y="190" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">3 chickens/coin</text>
+<text x="290" y="240" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">Year 5</text>
+<text x="290" y="135" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">6 chickens/coin</text>
+<text x="540" y="240" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">Year 10</text>
+<text x="540" y="25" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">12 chickens/coin</text>
+<text x="290" y="285" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">A fixed 10 coins, rising output — your savings buy more every year.</text>
+</g>
+</svg>
 
 This is what we observe with technology. Computing power gets cheaper every year. That's not a problem — it's the market working correctly. If we had a fixed money supply, *everything* would get cheaper as productivity improved.
 
@@ -915,27 +635,21 @@ This is backwards. **Real progress means prices FALL while living standards RISE
 
 ### The Calculator Proof
 
-```
-THE CALCULATOR'S JOURNEY
-─────────────────────────────────────────────────────────────────
-
-1970s: Scientific calculator = $400 (a week's wages)
-       → Society was "rich" by fiat logic
-
-1990s: Scientific calculator = $20
-       → Did society get poorer? No.
-
-2010s: Calculator app = $0.99
-       → Did society get poorer? No.
-
-2020s: Calculator app = FREE
-       → Society "poorest" by fiat logic?
-
-REALITY: Society got RICHER.
-         The same function costs NOTHING.
-         Resources freed for other uses.
-         Everyone has access, not just the wealthy.
-```
+<svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Calculator's Journey</text>
+<line x1="0" y1="200" x2="580" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="30" y="20" width="80" height="180" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="70" y="10" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">1970s: $400</text>
+<rect x="180" y="150" width="80" height="50" fill="var(--secondary, #e0932f)" fill-opacity="0.6"/>
+<text x="220" y="140" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">1990s: $20</text>
+<rect x="330" y="195" width="80" height="5" fill="var(--secondary, #e0932f)" fill-opacity="0.5"/>
+<text x="370" y="140" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2010s: $0.99</text>
+<text x="370" y="222" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">(app)</text>
+<text x="510" y="190" font-size="12" font-weight="600" fill="#7a9ec2" text-anchor="middle">2020s: FREE</text>
+<text x="290" y="260" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Prices fell to zero. Society did not get poorer — it got richer.</text>
+</g>
+</svg>
 
 By fiat logic, we should see calculator prices rise forever. Instead, they fell to zero. Did this impoverish calculator manufacturers? No — they moved on to produce other things. Did it impoverish society? Absolutely not — it enriched everyone.
 
@@ -943,28 +657,15 @@ By fiat logic, we should see calculator prices rise forever. Instead, they fell 
 
 ### Why Technology Gets Cheaper But Necessities Don't
 
-```
-WHAT GETS CHEAPER              WHAT GETS MORE EXPENSIVE
-─────────────────────────────────────────────────────────────────
-
-Computers                      Housing
-Phones                         Healthcare
-TVs                            Education
-Calculators                    Childcare
-Entertainment                  Food
-Software                       Energy
-Appliances                     Insurance
-
-WHAT'S THE DIFFERENCE?
-
-Cheaper things:                Expensive things:
-- Mostly free market           - Heavy govt intervention
-- Global competition           - Local monopolies/cartels
-- Minimal regulation           - Massive regulation
-- No govt subsidies            - Subsidized demand
-- Far from central bank        - Close to central bank
-- Innovation rewarded          - Compliance rewarded
-```
+| What gets cheaper | What gets more expensive |
+|---|---|
+| Computers, phones, TVs, calculators, entertainment, software, appliances | Housing, healthcare, education, childcare, food, energy, insurance |
+| Mostly free market | Heavy government intervention |
+| Global competition | Local monopolies/cartels |
+| Minimal regulation | Massive regulation |
+| No government subsidies | Subsidized demand |
+| Far from the central bank | Close to the central bank |
+| Innovation rewarded | Compliance rewarded |
 
 The sectors closest to government — healthcare, education, housing — show the worst price inflation. The sectors furthest from government — technology, consumer electronics — show consistent deflation.
 
@@ -974,28 +675,27 @@ This isn't coincidence. **Proximity to the money printer determines whether prod
 
 The clearest proof that fiat has failed is housing:
 
-```
-HOUSING: THEN VS NOW
-─────────────────────────────────────────────────────────────────
+<svg viewBox="0 0 500 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Home/Income Ratio: Then vs. Now</text>
+<line x1="0" y1="160" x2="380" y2="160" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="60" y="128" width="90" height="32" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="105" y="118" font-size="13" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2.3x</text>
+<text x="105" y="182" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">1970</text>
+<rect x="230" y="82" width="90" height="78" fill="#e05a4f" fill-opacity="0.75"/>
+<text x="275" y="72" font-size="13" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">5.6x</text>
+<text x="275" y="182" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">2024</text>
+<text x="190" y="215" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">A single income once bought a house. Now two barely do.</text>
+</g>
+</svg>
 
-1970 (Before full fiat):
-- Median home: $23,000
-- Median income: $9,870
-- Home/Income ratio: 2.3x
-- Single income supported family
-- 15-year mortgages common
-- Mortgage paid off by 40
-
-2024 (Full fiat):
-- Median home: $420,000
-- Median income: $74,580
-- Home/Income ratio: 5.6x
-- Dual income required
-- 30-year mortgages standard
-- Mortgage paid off at 60+
-
-QUESTION: Is this progress?
-```
+| | 1970 (before full fiat) | 2024 (full fiat) |
+|---|---|---|
+| Median home | $23,000 | $420,000 |
+| Median income | $9,870 | $74,580 |
+| Home/income ratio | 2.3x | 5.6x |
+| Income structure | Single income supported family | Dual income required |
+| Mortgage | 15-year, common; paid off by 40 | 30-year, standard; paid off at 60+ |
 
 How can someone work harder than their parents, be more productive than their parents, have more technology than their parents — yet struggle to afford what their parents bought easily?
 
@@ -1003,29 +703,23 @@ How can someone work harder than their parents, be more productive than their pa
 
 ### The Productivity-Wage Gap
 
-```
-THE GREAT DIVERGENCE (1971-Present)
-─────────────────────────────────────────────────────────────────
-
-         Productivity    Real Wages
-         (Output/Hour)   (Purchasing Power)
-─────────────────────────────────────────────────────────────────
-1971:    100             100        (Indexed baseline)
-1980:    115             98
-1990:    140             95
-2000:    175             100
-2010:    210             98
-2020:    250             102
-
-Productivity up 150%
-Real wages flat
-
-WHERE DID THE GAINS GO?
-→ To those closest to the money printer
-→ [[Cantillon Effect]] in action
-→ Workers produce more, keep the same
-→ Asset owners capture the difference
-```
+<svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Great Divergence (1971&#8211;Present), indexed to 100</text>
+<line x1="0" y1="280" x2="700" y2="280" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<path d="M0,240 L140,207 L280,164 L420,116 L560,60 L700,17" fill="none" stroke="#7a9ec2" stroke-width="2.4"/>
+<path d="M0,240 L140,246 L280,252 L420,240 L560,246 L700,235" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2.4"/>
+<text x="700" y="8" font-size="12.5" font-weight="600" fill="#7a9ec2" text-anchor="end">Productivity: 100 &#8594; 250</text>
+<text x="560" y="260" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)">Real wages: 100 &#8594; 102</text>
+<text x="0" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)">1971</text>
+<text x="140" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">1980</text>
+<text x="280" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">1990</text>
+<text x="420" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">2000</text>
+<text x="560" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">2010</text>
+<text x="700" y="300" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="end">2020</text>
+<text x="350" y="340" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Productivity up 150%. Real wages flat. The gap went to whoever stood closest to the money printer.</text>
+</g>
+</svg>
 
 Before 1971 (Nixon Shock), productivity gains translated to wage gains. After 1971, the link broke. Workers became dramatically more productive, but their purchasing power stagnated.
 
@@ -1035,35 +729,21 @@ The difference was captured through inflation by those nearest the money printer
 
 The inflation advocate claims deflation is catastrophic. History says otherwise:
 
-```
-THE GREAT DEFLATION (1870-1913)
-─────────────────────────────────────────────────────────────────
-
-Monetary system: Gold standard
-Price trend: FALLING (mild deflation)
-Economic result: GREATEST GROWTH IN HISTORY
-
-What happened:
-- Prices fell ~1-2% per year
-- Wages rose in REAL terms
-- Living standards exploded
-- Innovation flourished
-- Middle class emerged
-- No central bank (until 1913)
-
-Specific examples:
-- Rail transport cost: DOWN 90%
-- Steel price: DOWN 80%
-- Lighting cost: DOWN 95%
-- Food prices: DOWN 50%
-
-Did people stop buying because prices fell?
-NO. They bought MORE because they could AFFORD more.
-
-Did businesses fail because prices fell?
-NO. Costs fell too. Margins maintained.
-Efficient producers thrived.
-```
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Great Deflation (1870&#8211;1913), gold standard, no central bank</text>
+<line x1="0" y1="200" x2="580" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="20" y="20" width="90" height="180" fill="#7a9ec2" fill-opacity="0.75"/>
+<text x="65" y="10" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Rail: -90%</text>
+<rect x="150" y="60" width="90" height="140" fill="#7a9ec2" fill-opacity="0.65"/>
+<text x="195" y="50" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Steel: -80%</text>
+<rect x="280" y="10" width="90" height="190" fill="#7a9ec2" fill-opacity="0.85"/>
+<text x="325" y="0" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Lighting: -95%</text>
+<rect x="410" y="100" width="90" height="100" fill="#7a9ec2" fill-opacity="0.55"/>
+<text x="455" y="90" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Food: -50%</text>
+<text x="245" y="245" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Prices fell for decades. It was the greatest growth period in history.</text>
+</g>
+</svg>
 
 The period of greatest American economic growth occurred during consistent deflation. The claim that "we need inflation for growth" is historically illiterate.
 
@@ -1071,45 +751,17 @@ The period of greatest American economic growth occurred during consistent defla
 
 The fiat system has perverted even the stock market:
 
-```
-STOCKS: THEN VS NOW
-─────────────────────────────────────────────────────────────────
+| | Pre-fiat era (before 1971) | Full fiat era (1971&#8211;present) |
+|---|---|---|
+| Purpose of stocks | Ownership stake in productive enterprise | Inflation hedge / speculation vehicle |
+| Primary return | Dividends (share of profits) | Capital gains (price increase) |
+| Average yield | 4&#8211;6% | 1&#8211;2% |
+| Price appreciation | Secondary, slow | Primary, volatile |
+| Investor mindset | "I own part of this business" | "Number go up, I sell" |
+| Holding period | Years to decades | Days to months |
+| Volatility | Low | Extreme |
 
-Pre-Fiat Era (Before 1971):
-
-Purpose of stocks: Ownership stake in productive enterprise
-Primary return: DIVIDENDS (share of profits)
-Average yield: 4-6%
-Price appreciation: Secondary, slow
-Investor mindset: "I own part of this business"
-Holding period: Years to decades
-Volatility: Low
-
-Full Fiat Era (1971-Present):
-
-Purpose of stocks: Inflation hedge / speculation vehicle
-Primary return: CAPITAL GAINS (price increase)
-Average yield: 1-2%
-Price appreciation: Primary, volatile
-Investor mindset: "Number go up, I sell"
-Holding period: Days to months
-Volatility: Extreme
-
-WHAT CHANGED?
-
-Under sound money:
-- Save in money (it holds value)
-- Invest in stocks for income (dividends)
-- Stocks priced on earnings/dividends
-
-Under fiat:
-- Can't save in money (it loses value)
-- MUST invest just to preserve wealth
-- Stocks become savings vehicle
-- Prices driven by money fleeing inflation
-- Speculation replaces investment
-- "Investing" becomes gambling
-```
+**What changed?** Under sound money, you save *in* money — it holds value — and invest in stocks for income. Stocks are priced on earnings and dividends. Under fiat, you can't save in money because it loses value, so you *must* invest just to preserve wealth. Stocks become the savings vehicle, prices are driven by money fleeing inflation, and speculation replaces investment — "investing" becomes gambling.
 
 People don't invest in stocks because it's a great opportunity — they invest because holding cash guarantees loss. This forces everyone into speculation, inflating asset bubbles and creating volatility.
 
@@ -1117,41 +769,39 @@ People don't invest in stocks because it's a great opportunity — they invest b
 
 The same perversion happened to housing:
 
-```
-HOUSING PURPOSE: THEN VS NOW
-─────────────────────────────────────────────────────────────────
+| Original purpose: consumer good | Fiat purpose: investment vehicle |
+|---|---|
+| Place to live, shelter for family | Inflation hedge, "building equity" |
+| Depreciating asset (requires maintenance) | "Your biggest investment," speculative asset |
+| Bought when needed, sold when not | Bought as early as possible, never sold if avoidable |
 
-Original purpose: CONSUMER GOOD
-- Place to live
-- Shelter for family
-- Depreciating asset (requires maintenance)
-- Bought when needed, sold when not
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="cycle-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--secondary, #e0932f)"/></marker>
+</defs>
+<g transform="translate(50,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Perverse Cycle</text>
+<rect x="0" y="0" width="160" height="60" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="80" y="27" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Fiat money</text>
+<text x="80" y="44" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">loses value</text>
+<line x1="160" y1="30" x2="215" y2="30" stroke="var(--secondary, #e0932f)" stroke-width="1.6" marker-end="url(#cycle-arrow)"/>
+<rect x="225" y="0" width="160" height="60" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="305" y="27" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">People flee to</text>
+<text x="305" y="44" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">"hard assets"</text>
+<line x1="385" y1="30" x2="440" y2="30" stroke="var(--secondary, #e0932f)" stroke-width="1.6" marker-end="url(#cycle-arrow)"/>
+<rect x="450" y="0" width="160" height="60" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="530" y="27" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">House prices</text>
+<text x="530" y="44" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">rise</text>
+<line x1="610" y1="30" x2="665" y2="30" stroke="var(--secondary, #e0932f)" stroke-width="1.6" marker-end="url(#cycle-arrow)"/>
+<rect x="675" y="0" width="160" height="60" rx="6" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="755" y="27" font-size="12" fill="#e05a4f" text-anchor="middle">Unaffordable</text>
+<text x="755" y="44" font-size="12" fill="#e05a4f" text-anchor="middle">to live in</text>
+<path d="M675,55 C400,140 160,140 0,55" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#cycle-arrow)"/>
+<text x="400" y="140" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">houses become the "good investment," more buy in, and the cycle repeats</text>
+</g>
+</svg>
 
-Fiat purpose: INVESTMENT VEHICLE
-- Inflation hedge
-- "Building equity"
-- "Your biggest investment"
-- Speculative asset
-- Bought as early as possible
-- Never sold if avoidable
-
-THE PERVERSE CYCLE:
-
-1. Fiat money loses value
-2. People flee to "hard assets" (houses)
-3. Demand for houses as investment rises
-4. House prices rise
-5. Houses become "good investment"
-6. More people buy houses as investment
-7. Prices rise further
-8. Houses unaffordable for actual living
-9. GOTO 1
-
-This is a SELF-FULFILLING PROPHECY created by fiat.
-Houses aren't naturally an investment.
-They're shelter that requires constant maintenance.
-Only inflation makes them "appreciate."
-```
+Houses aren't naturally an investment — they're shelter that requires constant maintenance. Only inflation makes them "appreciate," and the appreciation is a self-fulfilling prophecy created by fiat.
 
 Rich people aren't buying houses because they're greedy — they're buying because it's rational under fiat. Hold cash? Lose 5% per year. Buy houses? At least maintain purchasing power.
 
@@ -1159,37 +809,17 @@ The result: housing transforms from consumer good to investment vehicle, pricing
 
 ### The Generational Theft
 
-```
-GENERATIONAL COMPARISON
-─────────────────────────────────────────────────────────────────
+| 1960s family | 2020s family |
+|---|---|
+| Single income (father works) | Dual income (both parents work) |
+| Mother stays home with children | Children in daycare ($$$) |
+| Own home (15-year mortgage) | Rent or 30-year mortgage |
+| Own car (paid cash) | Car loans |
+| Annual vacation | "Staycations" |
+| Retire at 60 with pension | Retire at 67... maybe |
+| Leave inheritance to children | Leave debt to children |
 
-1960s FAMILY:
-- Single income (father works)
-- Mother stays home with children
-- Own home (15-year mortgage)
-- Own car (paid cash)
-- Annual vacation
-- Retire at 60 with pension
-- Leave inheritance to children
-
-2020s FAMILY:
-- Dual income (both parents work)
-- Children in daycare ($$$)
-- Rent or 30-year mortgage
-- Car loans
-- "Staycations"
-- Retire at 67... maybe
-- Leave debt to children
-
-MORE PRODUCTIVE:     Yes (2.5x)
-MORE EDUCATED:       Yes
-MORE HOURS WORKED:   Yes (2 incomes vs 1)
-BETTER OFF:          NO
-
-This is not progress. This is regression.
-Fiat has stolen the productivity gains
-of three generations.
-```
+More productive (2.5x)? Yes. More educated? Yes. More hours worked (two incomes vs. one)? Yes. Better off? **No.** This is not progress — it's regression. Fiat has stolen the productivity gains of three generations.
 
 The inflation advocate must explain: If inflation is good, why does each generation work harder for less? Why do two incomes struggle where one succeeded? Why do 30-year mortgages replace 15-year mortgages?
 
@@ -1203,19 +833,7 @@ Before examining the philosophical absurdity of debt-based economics, we must fi
 
 The official narrative:
 
-```
-THE "LEGITIMATE BORROWING" STORY
-─────────────────────────────────────────────────────────────────
-
-1. Government needs money
-2. Citizens voluntarily lend money (buy bonds)
-3. Government spends the money productively
-4. Government repays with interest
-5. Everyone wins!
-
-This sounds clean. Voluntary exchange. Mutual benefit.
-It's also a lie.
-```
+**The "legitimate borrowing" story:** government needs money, citizens voluntarily lend it (buy bonds), government spends the money productively, government repays with interest, and everyone wins. This sounds clean — voluntary exchange, mutual benefit. It's also a lie.
 
 The deception lies in step 4: *How does the government repay?* The government produces nothing. It has no revenue except what it extracts from citizens. Every repayment path leads back to theft.
 
@@ -1223,99 +841,37 @@ The deception lies in step 4: *How does the government repay?* The government pr
 
 Let's steelman the bond defender's case. Assume the central bank doesn't exist. Real citizens buy bonds with real savings. The government promises to repay from "future revenues."
 
-```
-"HONEST" GOVERNMENT BONDS — THE CLEANEST CASE
-─────────────────────────────────────────────────────────────────
+**"Honest" government bonds — the cleanest case.** Initial state: total money supply 100 coins — Alice (bondholder) 15, Bob (taxpayer) 20, Carol (taxpayer) 25, others 40.
 
-INITIAL STATE:
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  Total Money Supply: 100 coins                              │
-│                                                             │
-│  Alice (bondholder): 15 coins                               │
-│  Bob (taxpayer):     20 coins                               │
-│  Carol (taxpayer):   25 coins                               │
-│  Others:             40 coins                               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-STEP 1: Alice buys 15 coins of government bonds
-
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  Alice: 0 coins + bond worth "15 coins + interest"          │
-│  Government: 15 coins to spend                              │
-│                                                             │
-│  Alice GAVE UP real purchasing power.                       │
-│  Government GAINED real purchasing power.                   │
-│  So far, this IS a voluntary exchange.                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-STEP 2: Government spends the 15 coins
-
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  Government buys goods/services/votes                       │
-│  15 coins now in circulation                                │
-│  Government has: 0 coins + obligation to Alice              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-STEP 3: Repayment comes due — 15 coins + 2 coins interest
-
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  Government has: 0 coins                                    │
-│  Government owes: 17 coins                                  │
-│                                                             │
-│  HOW DOES IT PAY?                                           │
-│                                                             │
-│  It has no money. It produces nothing.                      │
-│  It must TAKE from someone.                                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-STEP 4: Government taxes Bob and Carol
-
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  Bob:   20 coins → 12 coins  (taxed 8)                      │
-│  Carol: 25 coins → 16 coins  (taxed 9)                      │
-│                                                             │
-│  Government: 17 coins → pays Alice                          │
-│  Alice: 0 coins → 17 coins                                  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+1. **Alice buys 15 coins of government bonds.** Alice: 0 coins + a bond worth "15 coins + interest." Government: 15 coins to spend. Alice gave up real purchasing power, government gained it — so far, this *is* a voluntary exchange.
+2. **Government spends the 15 coins.** It buys goods, services, votes. 15 coins now circulate. Government has 0 coins + an obligation to Alice.
+3. **Repayment comes due** — 15 coins plus 2 coins interest. Government has 0 coins and owes 17. It has no money and produces nothing, so it must *take* from someone.
+4. **Government taxes Bob and Carol.** Bob: 20 → 12 coins (taxed 8). Carol: 25 → 16 coins (taxed 9). Government pays Alice: 0 → 17 coins.
 
 What actually happened?
 
-```
-THE REAL TRANSFER
-─────────────────────────────────────────────────────────────────
-
-BEFORE BONDS:               AFTER BONDS:
-Alice:  15 coins            Alice:  17 coins  (+2)
-Bob:    20 coins            Bob:    12 coins  (-8)
-Carol:  25 coins            Carol:  16 coins  (-9)
-─────────────                ─────────────
-Total:  60 coins            Total:  45 coins
-
-WAIT — where did the 15 coins go?
-
-To the government's spending. The beneficiaries of that spending
-gained. Bob and Carol lost. Alice gained.
-
-THE BOND WAS A MECHANISM FOR TRANSFERRING WEALTH
-FROM BOB AND CAROL TO ALICE AND GOVERNMENT BENEFICIARIES.
-
-Alice loaned money to government.
-Government spent it.
-Government taxed Bob and Carol to repay Alice with interest.
-
-Alice's "investment return" = Bob and Carol's stolen wages.
-```
+<svg viewBox="0 0 700 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Real Transfer: Before vs. After Bonds</text>
+<line x1="0" y1="200" x2="580" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="30" y="140" width="50" height="60" fill="#7a9ec2" fill-opacity="0.6"/>
+<rect x="90" y="132" width="50" height="68" fill="#7a9ec2" fill-opacity="0.9"/>
+<text x="60" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Alice</text>
+<text x="60" y="126" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">15</text>
+<text x="115" y="118" font-size="10.5" fill="#7a9ec2" text-anchor="middle">17 (+2)</text>
+<rect x="200" y="120" width="50" height="80" fill="#7a9ec2" fill-opacity="0.6"/>
+<rect x="260" y="152" width="50" height="48" fill="#e05a4f" fill-opacity="0.85"/>
+<text x="230" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Bob</text>
+<text x="225" y="106" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">20</text>
+<text x="285" y="138" font-size="10.5" fill="#e05a4f" text-anchor="middle">12 (-8)</text>
+<rect x="370" y="100" width="50" height="100" fill="#7a9ec2" fill-opacity="0.6"/>
+<rect x="430" y="136" width="50" height="64" fill="#e05a4f" fill-opacity="0.85"/>
+<text x="400" y="222" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Carol</text>
+<text x="395" y="86" font-size="10.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">25</text>
+<text x="455" y="122" font-size="10.5" fill="#e05a4f" text-anchor="middle">16 (-9)</text>
+<text x="290" y="255" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Alice's "investment return" is Bob and Carol's taxed wages.</text>
+</g>
+</svg>
 
 Even in the *cleanest possible case* — no money printing, no central bank, real savers — government bonds are a wealth transfer scheme. The government acts as intermediary, taking from non-bondholders to pay bondholders.
 
@@ -1325,30 +881,33 @@ Even in the *cleanest possible case* — no money printing, no central bank, rea
 
 This is the scenario already covered extensively in this essay. The central bank "buys" bonds with newly created money, and the [[Cantillon Effect]] does the rest.
 
-```
-CENTRAL BANK BOND PURCHASE
-─────────────────────────────────────────────────────────────────
+<svg viewBox="0 0 500 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="cbbp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+<g transform="translate(50,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Central Bank Bond Purchase</text>
+<rect x="0" y="0" width="360" height="40" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="180" y="25" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Government issues $1T in bonds</text>
+<line x1="180" y1="40" x2="180" y2="70" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#cbbp-arrow)"/>
+<rect x="0" y="80" width="360" height="40" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="180" y="105" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Central bank creates $1T from nothing</text>
+<line x1="180" y1="120" x2="180" y2="150" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#cbbp-arrow)"/>
+<rect x="0" y="160" width="360" height="40" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="180" y="185" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Central bank "buys" the bonds</text>
+<line x1="180" y1="200" x2="180" y2="230" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#cbbp-arrow)"/>
+<rect x="0" y="240" width="360" height="40" rx="6" fill="var(--gray, #9a9a9a)" fill-opacity="0.12" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="180" y="265" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Government has $1T to spend</text>
+<line x1="180" y1="280" x2="180" y2="310" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#cbbp-arrow)"/>
+<rect x="0" y="320" width="360" height="40" rx="6" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<text x="180" y="345" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Money supply increases by $1T</text>
+<line x1="180" y1="360" x2="180" y2="390" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#cbbp-arrow)"/>
+<rect x="0" y="400" width="360" height="40" rx="6" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.4"/>
+<text x="180" y="425" font-size="12" fill="#e05a4f" text-anchor="middle">Everyone's existing money is worth less</text>
+</g>
+</svg>
 
-Government issues $1 trillion in bonds
-      │
-      ▼
-Central bank creates $1 trillion from nothing
-      │
-      ▼
-Central bank "buys" the bonds
-      │
-      ▼
-Government has $1 trillion to spend
-      │
-      ▼
-Money supply increased by $1 trillion
-      │
-      ▼
-Everyone's existing money worth less
-
-THIS IS MONEY PRINTING WITH EXTRA STEPS.
-The "bond" is theatrical legitimacy.
-```
+This is money printing with extra steps. The "bond" is theatrical legitimacy.
 
 This scenario is worse than Scenario A because it affects *everyone* holding the currency, not just the taxed. But the mechanism is the same: government obtains real purchasing power without producing anything.
 
@@ -1356,28 +915,7 @@ This scenario is worse than Scenario A because it affects *everyone* holding the
 
 Some might argue: "What if the government repays by selling assets instead of taxing?"
 
-```
-"ASSET SALE" REPAYMENT
-─────────────────────────────────────────────────────────────────
-
-Government sells land/buildings/equipment to repay bonds.
-
-QUESTION: Where did government get those assets?
-
-Option 1: Taxation
-         → Previously extracted from citizens
-
-Option 2: Conquest/Seizure
-         → Taken by force
-
-Option 3: "Public lands" that were never private
-         → Claimed by fiat, defended by force
-
-There is no Option 4.
-
-Every government asset traces back to prior extraction.
-"Selling assets" = returning stolen property to pay off debts.
-```
+Suppose the government sells land, buildings, or equipment to repay bonds instead. Where did it get those assets? Three options, and only three: **taxation** (previously extracted from citizens), **conquest or seizure** (taken by force), or **"public lands"** that were never private to begin with (claimed by fiat, defended by force). There is no Option 4. Every government asset traces back to prior extraction — "selling assets" just means returning stolen property to pay off debts.
 
 Even selling assets isn't clean. The government cannot acquire assets through voluntary exchange because *it produces nothing to exchange*. Every asset in government possession was either taxed, seized, or claimed by decree. Selling these assets to repay bonds is just redistributing previously stolen wealth.
 
@@ -1385,39 +923,15 @@ Even selling assets isn't clean. The government cannot acquire assets through vo
 
 Private debt and government debt are fundamentally different:
 
-```
-PRIVATE DEBT VS GOVERNMENT DEBT
-─────────────────────────────────────────────────────────────────
+| Private debt | Government debt |
+|---|---|
+| Borrower gets money | Government gets money |
+| Borrower uses it to produce value | Government consumes it (produces nothing) |
+| Borrower repays from *their own* production | Government repays from *others'* production |
+| Lender profits, borrower profits, no third party harmed | Lender profits, government benefits, taxpayers harmed |
+| The debtor sacrifices to repay | Third parties sacrifice to repay |
 
-PRIVATE DEBT:
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Borrower gets money                                       │
-│   Borrower uses money to produce value                      │
-│   Borrower repays from THEIR OWN production                 │
-│   Lender profits, borrower profits, no third party harmed   │
-│                                                             │
-│   The debtor sacrifices to repay.                           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-GOVERNMENT DEBT:
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Government gets money                                     │
-│   Government consumes (produces nothing)                    │
-│   Government repays from OTHERS' production                 │
-│   Lender profits, government benefits, TAXPAYERS harmed     │
-│                                                             │
-│   Third parties sacrifice to repay.                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-When a business borrows, it promises its own future production.
-When government borrows, it promises YOUR future production.
-
-GOVERNMENT BONDS ARE CLAIMS ON YOUR LABOR.
-```
+When a business borrows, it promises its own future production. When government borrows, it promises *your* future production. **Government bonds are claims on your labor.**
 
 There exists no scenario — none — where government debt doesn't involve extraction from unwilling third parties. The government *cannot* repay from its own resources because it *has* no resources except what it takes.
 
@@ -1425,34 +939,9 @@ There exists no scenario — none — where government debt doesn't involve extr
 
 What does buying a government bond actually mean?
 
-```
-WHAT YOU'RE REALLY BUYING
-─────────────────────────────────────────────────────────────────
+> **What you're really buying.** When you buy a government bond, you're buying a claim on future tax extraction: "the government promises to take money from other people and give it to you, plus interest." Your "yield" is your cut of the theft.
 
-When you buy a government bond, you're buying:
-
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   A CLAIM ON FUTURE TAX EXTRACTION                          │
-│                                                             │
-│   "The government promises to take money from               │
-│    other people and give it to you, plus interest."         │
-│                                                             │
-│   Your "yield" = your cut of the theft                      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-The bondholder may not realize this.
-Many genuinely believe they're making a "safe investment."
-
-But the mechanism doesn't change based on intent.
-The interest paid comes from:
-  • Taxes (direct extraction from workers)
-  • Inflation (indirect extraction from savers)
-  • More bonds (deferring extraction to future victims)
-
-There is no other source.
-```
+The bondholder may not realize this — many genuinely believe they're making a "safe investment." But the mechanism doesn't change based on intent. The interest paid comes from taxes (direct extraction from workers), inflation (indirect extraction from savers), or more bonds (deferring extraction to future victims). There is no other source.
 
 The "safety" of government bonds isn't safety of production or value creation. It's the "safety" of guaranteed extraction. The government will always be able to pay because it will always be able to take.
 
@@ -1460,39 +949,15 @@ The "safety" of government bonds isn't safety of production or value creation. I
 
 If the government can simply print money, why the elaborate theater of issuing bonds?
 
-```
-THE PURPOSE OF BOND THEATER
-─────────────────────────────────────────────────────────────────
+**The purpose of bond theater**, if the government can just print money, why the elaborate charade of issuing bonds at all:
 
-1. LEGITIMACY
-   "We're not printing money, we're borrowing!"
-   Sounds responsible. Sounds like a household budget.
-   Obscures the extraction mechanism.
+1. **Legitimacy** — "We're not printing money, we're borrowing!" Sounds responsible, like a household budget. Obscures the extraction mechanism.
+2. **Gradualism** — sudden printing causes immediate price spikes and outrage; slow bond issuance causes gradual price creep and confusion. Boil the frog slowly.
+3. **International trust** — other nations hold your bonds as reserves; direct printing would cause immediate rejection, while bonds maintain the illusion of fiscal discipline.
+4. **Interest rate manipulation** — bond yields affect all interest rates, so buying and selling bonds is another lever of central planning over the price of money.
+5. **Wealth concentration** — bonds are primarily held by the wealthy; interest payments flow upward while taxation flows from workers. A near-perfect wealth transfer mechanism.
 
-2. GRADUALISM
-   Sudden money printing → immediate price spikes → outrage
-   Slow bond issuance → gradual price creep → confusion
-   Boil the frog slowly.
-
-3. INTERNATIONAL TRUST
-   Other nations hold your bonds as reserves
-   Direct printing would cause immediate rejection
-   Bonds maintain the illusion of fiscal discipline
-
-4. INTEREST RATE MANIPULATION
-   Bond yields affect all interest rates
-   Buying/selling bonds = controlling the price of money
-   Another lever of central planning
-
-5. WEALTH CONCENTRATION
-   Bonds primarily held by wealthy individuals/institutions
-   Interest payments flow upward
-   Taxation flows from workers
-   Perfect wealth transfer mechanism
-
-THE BOND MARKET ISN'T A MARKET.
-It's a theater of legitimacy for organized extraction.
-```
+The bond market isn't a market. It's a theater of legitimacy for organized extraction.
 
 Every government bond ever issued — whether bought by real savers, foreign governments, or the central bank — represents a claim on future extraction. The mechanism varies (taxation, inflation, asset liquidation) but the result is identical: wealth transferred from those who produce to those who consume without producing.
 
@@ -1509,39 +974,35 @@ The [[Primacy of Consciousness]] inverts this — claiming that existence confor
 
 Denying this is denying logic itself. It's claiming 2+2=5 because you really, really want it to be so.
 
-```
-THE PRIMACY DISTINCTION
-─────────────────────────────────────────────────────────────────
-
-PRIMACY OF EXISTENCE (Reality-Based):
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   REALITY ───────► CONSCIOUSNESS ───────► KNOWLEDGE         │
-│                                                             │
-│   Reality exists first.                                     │
-│   We perceive it.                                           │
-│   We form concepts about it.                                │
-│   Our wishes cannot change it.                              │
-│                                                             │
-│   Example: Fire burns. No amount of wishing makes it not.   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-
-PRIMACY OF CONSCIOUSNESS (Fantasy-Based):
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   CONSCIOUSNESS ───────► REALITY ───────► ???               │
-│                                                             │
-│   Consciousness creates/shapes reality.                     │
-│   Wishing makes it so.                                      │
-│   Declaring something true makes it true.                   │
-│                                                             │
-│   Example: "If we just BELIEVE prices won't rise..."        │
-│                                                             │
-│   This is literally insanity.                               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="primacy-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7a9ec2"/></marker>
+<marker id="primacy-arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+</defs>
+<g transform="translate(50,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Primacy Distinction</text>
+<text x="0" y="15" font-size="12" font-weight="600" fill="#7a9ec2">Primacy of existence (reality-based)</text>
+<rect x="0" y="30" width="130" height="40" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.4"/>
+<text x="65" y="55" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Reality</text>
+<line x1="130" y1="50" x2="185" y2="50" stroke="#7a9ec2" stroke-width="1.6" marker-end="url(#primacy-arrow)"/>
+<rect x="195" y="30" width="150" height="40" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.4"/>
+<text x="270" y="55" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Consciousness</text>
+<line x1="345" y1="50" x2="400" y2="50" stroke="#7a9ec2" stroke-width="1.6" marker-end="url(#primacy-arrow)"/>
+<rect x="410" y="30" width="150" height="40" rx="6" fill="#7a9ec2" fill-opacity="0.18" stroke="#7a9ec2" stroke-width="1.4"/>
+<text x="485" y="55" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Knowledge</text>
+<text x="0" y="105" font-size="11.5" fill="var(--gray, #9a9a9a)">Fire burns. No amount of wishing makes it not.</text>
+<text x="0" y="155" font-size="12" font-weight="600" fill="#e05a4f">Primacy of consciousness (fantasy-based)</text>
+<rect x="0" y="170" width="150" height="40" rx="6" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.4"/>
+<text x="75" y="195" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Consciousness</text>
+<line x1="150" y1="190" x2="205" y2="190" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#primacy-arrow-red)"/>
+<rect x="215" y="170" width="130" height="40" rx="6" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.4"/>
+<text x="280" y="195" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Reality</text>
+<line x1="345" y1="190" x2="400" y2="190" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#primacy-arrow-red)"/>
+<rect x="410" y="170" width="100" height="40" rx="6" fill="#e05a4f" fill-opacity="0.3" stroke="#e05a4f" stroke-width="1.4"/>
+<text x="460" y="195" font-size="14" font-weight="700" fill="#e05a4f" text-anchor="middle">???</text>
+<text x="0" y="250" font-size="12.5" fill="var(--darkgray, #9a9a9a)">"If we just believe prices won't rise..." — this is not economics, it's wishing.</text>
+</g>
+</svg>
 
 Debt-based economics operates entirely on the primacy of consciousness. It declares: **"Owing things makes you richer."**
 
@@ -1551,46 +1012,20 @@ This is the economic equivalent of 2+2=5.
 
 Let's state the claim plainly: The modern economic consensus is that going into debt creates prosperity. That borrowing — which means *owing* — somehow generates wealth.
 
-```
-THE DEBT = WEALTH CLAIM
-─────────────────────────────────────────────────────────────────
-
-WHAT THEY SAY:
-"Deficit spending stimulates the economy"
-"National debt doesn't matter because we owe it to ourselves"
-"Debt-financed investment creates growth"
-
-TRANSLATED TO PLAIN ENGLISH:
-"Owing stuff makes you richer"
-"The more you owe, the more you have"
-"Negative = Positive"
-
-THIS IS LITERALLY:   2 + 2 = 5
-
-No amount of jargon changes the underlying absurdity.
-```
+> **The debt = wealth claim.** What they say: "deficit spending stimulates the economy," "national debt doesn't matter because we owe it to ourselves," "debt-financed investment creates growth." Translated to plain English: "owing stuff makes you richer," "the more you owe, the more you have," "negative = positive." This is literally 2 + 2 = 5. No amount of jargon changes the underlying absurdity.
 
 If this claim were true — if debt genuinely created wealth — then hyperinflation would be universally beneficial. The more money units printed, the more "debt-financed investment," the richer everyone becomes. Zimbabwe and Venezuela should be paradises.
 
 But they're not. They're catastrophes. **This is empirical proof that the claim is false.**
 
-```
-THE HYPERINFLATION TEST
-─────────────────────────────────────────────────────────────────
+| If debt = wealth, then more debt = more wealth | Result |
+|---|---|
+| Zimbabwe: printed trillions — everyone rich? | No. Collapse. |
+| Venezuela: printed trillions — everyone rich? | No. Collapse. |
+| Argentina: printed trillions — everyone rich? | No. Collapse. |
+| Weimar Germany: printed trillions — rich? | No. Collapse. |
 
-IF debt = wealth, THEN more debt = more wealth
-
-Zimbabwe: Printed trillions → Everyone rich?    NO. COLLAPSE.
-Venezuela: Printed trillions → Everyone rich?   NO. COLLAPSE.
-Argentina: Printed trillions → Everyone rich?   NO. COLLAPSE.
-Weimar Germany: Printed trillions → Rich?       NO. COLLAPSE.
-
-EVERY SINGLE TIME, the result is poverty.
-Not wealth. Poverty.
-
-The claim "debt = wealth" is EMPIRICALLY FALSE.
-We have run the experiment. Repeatedly. It fails. Always.
-```
+Every single time, the result is poverty, not wealth. The claim "debt = wealth" is empirically false — we have run the experiment, repeatedly, and it fails, always.
 
 The inflation advocate retreats: "But we don't mean *too much* debt. There's an optimal amount..."
 
@@ -1602,67 +1037,27 @@ There is no answer because there is no optimal amount of debt-creation. Zero is 
 
 Observe how government debt actually works. Walk through the logic carefully:
 
-```
-WHAT "GOVERNMENT BONDS" ACTUALLY MEAN
-─────────────────────────────────────────────────────────────────
+**What "government bonds" actually mean.** Step 1: government wants to spend money it doesn't have. Step 2: government issues "bonds" (IOUs). Step 3: people or institutions "buy" these bonds. Step 4: government gets the money. Step 5: government owes bondholders.
 
-Step 1: Government wants to spend money it doesn't have
-Step 2: Government issues "bonds" (IOUs)
-Step 3: People/institutions "buy" these bonds
-Step 4: Government gets the money
-Step 5: Government owes bondholders
-
-WAIT. If people BOUGHT the debt, didn't they just... PAY IT?
-
-"Buying government debt" = Giving government money for an IOU
-                         = Paying the government's bills
-                         = Covering their deficit
-
-So why is it called "debt" if someone paid it?
-
-BECAUSE THE GOVERNMENT NOW OWES THE BONDHOLDER.
-
-But the government will pay that debt... how?
-
-Option A: Tax citizens (take from people to pay people)
-Option B: Print more money (dilute everyone's purchasing power)
-Option C: Issue MORE bonds (borrow to pay debt)
-
-Option C is what actually happens. Over and over.
-```
+Wait — if people *bought* the debt, didn't they just pay it? "Buying government debt" = giving government money for an IOU = paying the government's bills = covering their deficit. So why is it called "debt" if someone paid it? Because the government now owes the bondholder. But the government will pay that debt *how*? Option A: tax citizens (take from people to pay people). Option B: print more money (dilute everyone's purchasing power). Option C: issue *more* bonds (borrow to pay debt). Option C is what actually happens, over and over.
 
 How can you borrow money to pay debt? This is circular nonsense. It's like paying your Visa bill with your Mastercard, then paying Mastercard with Visa, forever.
 
-```
-THE DEBT SPIRAL
-─────────────────────────────────────────────────────────────────
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Debt Spiral</text>
+<line x1="0" y1="200" x2="580" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="40" y="140" width="80" height="60" fill="#7a9ec2" fill-opacity="0.6"/>
+<text x="80" y="130" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Year 1: $1.5T</text>
+<rect x="250" y="90" width="80" height="110" fill="var(--secondary, #e0932f)" fill-opacity="0.75"/>
+<text x="290" y="80" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Year 2: $2T</text>
+<rect x="460" y="30" width="80" height="170" fill="#e05a4f" fill-opacity="0.8"/>
+<text x="500" y="20" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Year 3: $3T</text>
+<text x="290" y="240" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Each year's "solution" is issuing more bonds to pay the last ones. The number can only go up.</text>
+</g>
+</svg>
 
-Year 1:  $1 trillion debt
-         "Solution": Issue $1.5T in bonds
-         Result: Pay $1T, now owe $1.5T
-
-Year 2:  $1.5 trillion debt (plus interest)
-         "Solution": Issue $2T in bonds
-         Result: Pay $1.5T, now owe $2T
-
-Year 3:  $2 trillion debt (plus interest)
-         "Solution": Issue $3T in bonds
-         ...
-
-THE NUMBER CAN ONLY GO UP.
-
-This isn't a spiral toward prosperity.
-It's a one-way street downhill.
-
-Current US debt: $34 TRILLION
-Owed to whom? Mostly... itself.
-
-If you owe money to yourself, why not just "pay it off"?
-Because "paying it off" = printing = inflation = theft.
-
-The debt isn't a number to be paid.
-It's a MEASURE of how much has been EXTRACTED.
-```
+Current US debt: $34 trillion, owed mostly to itself. If you owe money to yourself, why not just "pay it off"? Because "paying it off" means printing, and printing means inflation, and inflation means theft. The debt isn't a number to be paid — it's a measure of how much has been extracted.
 
 The US national debt isn't a loan that will be repaid. It's a running tally of purchasing power extracted from dollar holders worldwide. The number can only grow because the mechanism only works in one direction: extraction.
 
@@ -1676,76 +1071,26 @@ Strip away the abstraction. What *is* money?
 
 Money represents stored productive capacity — the abstracted result of human labor and ingenuity. When you hold $100, you hold a claim on $100 worth of goods and services that someone, somewhere, produced.
 
-```
-WHAT MONEY REPRESENTS
-─────────────────────────────────────────────────────────────────
-
-MONEY = Claim on goods/services
-      = Stored productive capacity
-      = Abstracted human capital
-      = Result of labor, saved for later use
-
-When government PRINTS money:
-- No new goods appear
-- No new services created
-- No new productive capacity exists
-- ONLY new claims on EXISTING production
-
-This is EXTRACTION, not creation.
-```
+> **What money represents.** Money = a claim on goods and services = stored productive capacity = abstracted human capital = the result of labor, saved for later use. When government prints money, no new goods appear, no new services are created, no new productive capacity exists — only new claims on existing production. This is extraction, not creation.
 
 Debt-based money creation is a claim on *future* production that doesn't exist yet. The government spends today based on the promise that tomorrow's citizens will produce enough to cover it.
 
 But those citizens never consented. They weren't even born.
 
-```
-THE EXTRACTION MECHANISM
-─────────────────────────────────────────────────────────────────
+| Method 1: taxation (visible extraction) | Method 2: debt + inflation (hidden extraction) |
+|---|---|
+| Government takes $1T from citizens directly | Government issues $1T in bonds |
+| Citizens notice and complain | Central bank buys bonds with printed money |
+| Political cost is high | $1T enters circulation, all existing dollars lose purchasing power |
+| | Citizens' savings are silently drained — no one knows who to blame |
 
-Government wants to spend $1 trillion it doesn't have.
-
-METHOD 1: TAXATION (Visible Extraction)
-- Government takes $1T from citizens directly
-- Citizens notice and complain
-- Political cost is high
-
-METHOD 2: DEBT + INFLATION (Hidden Extraction)
-- Government issues $1T in bonds
-- Central bank buys bonds with printed money
-- $1T enters circulation
-- All existing dollars lose purchasing power
-- Citizens' savings silently drained
-- No one knows who to blame
-
-SAME RESULT: $1T extracted from citizens
-DIFFERENT VISIBILITY: Method 2 is hidden theft
-
-The "debt" isn't owed to bondholders.
-The "debt" is a MEASURE of extraction from citizens.
-```
+Same result: $1T extracted from citizens. Different visibility. The "debt" isn't owed to bondholders — the "debt" is a measure of extraction from citizens.
 
 The more debt accumulates, the more purchasing power has been extracted. The harder it becomes for citizens to save, to invest, to produce. You're not building prosperity by going into debt — you're *draining* the population that creates prosperity.
 
 This is attacking the root of your own sustenance. The parasite killing its host.
 
-```
-DEBT AS ENSLAVEMENT METRIC
-─────────────────────────────────────────────────────────────────
-
-$34 trillion in debt =
-  $34 trillion EXTRACTED from dollar holders worldwide
-
-This isn't "money owed to creditors."
-This is "productive capacity stolen from citizens."
-
-Every dollar of debt represents:
-- Someone's savings diluted
-- Someone's wages made worth less
-- Someone's future production claimed in advance
-
-The higher the debt, the more enslaved the population.
-Not through chains. Through the money they're forced to use.
-```
+> **Debt as an enslavement metric.** $34 trillion in debt is $34 trillion extracted from dollar holders worldwide. This isn't "money owed to creditors" — it's productive capacity stolen from citizens. Every dollar of debt represents someone's savings diluted, someone's wages made worth less, someone's future production claimed in advance. The higher the debt, the more enslaved the population — not through chains, but through the money they're forced to use.
 
 ### Why the US Hasn't Collapsed (Yet): Dollar Hegemony
 
@@ -1753,57 +1098,17 @@ If debt-based money is so destructive, why hasn't the US collapsed like Zimbabwe
 
 Simple: The US has something Zimbabwe doesn't — **the world reserve currency**.
 
-```
-DOLLAR HEGEMONY
-─────────────────────────────────────────────────────────────────
+| The US advantage | The Zimbabwe problem |
+|---|---|
+| Rest of world must hold dollars for trade, oil, reserves, dollar-denominated debt | Only Zimbabweans hold the currency |
+| When the US prints, dilution spreads across 330M Americans plus 7+ billion global dollar holders | Dilution concentrates on a small population |
+| The US isn't immune to extraction — it's just diffused globally | Collapse is immediate and visible |
 
-THE US ADVANTAGE:
-
-Rest of world MUST hold dollars for:
-- International trade
-- Oil purchases (petrodollar)
-- Reserve currency holdings
-- Dollar-denominated debt
-
-When US prints, dilution spreads across:
-- 330 million Americans
-- PLUS 7+ billion global dollar holders
-
-THE ZIMBABWE PROBLEM:
-
-Zimbabwe prints → Only Zimbabweans hold the currency
-Dilution concentrates on small population
-Collapse is immediate and visible
-
-Same mechanism. Different base.
-
-The US isn't immune to extraction.
-The extraction is just DIFFUSED GLOBALLY.
-```
+Same mechanism, different base.
 
 But here's the deeper insight: **Why did the Zimbabwe dollar collapse?** Because only Zimbabweans held it. Which means the money's value came entirely from *the productive people forced to use it* — not from the money itself.
 
-```
-THE REAL SOURCE OF MONETARY VALUE
-─────────────────────────────────────────────────────────────────
-
-MONEY IS ONLY AS GOOD AS ITS HOSTAGES.
-
-Zimbabwe dollar value = Zimbabwean productive capacity
-                      = Small population, limited output
-                      = Collapses quickly when debased
-
-US dollar value = Global productive capacity
-                = 7+ billion people's output
-                = Takes longer to collapse when debased
-
-THE MONEY ITSELF HAS NO VALUE.
-The value comes from the productive humans
-who are FORCED to denominate their labor in it.
-
-This isn't an exception to the rule.
-This IS the rule.
-```
+> **Money is only as good as its hostages.** Zimbabwe dollar value = Zimbabwean productive capacity = small population, limited output = collapses quickly when debased. US dollar value = global productive capacity = 7+ billion people's output = takes longer to collapse when debased. The money itself has no value. The value comes from the productive humans forced to denominate their labor in it. This isn't an exception to the rule — it *is* the rule.
 
 The US dollar hasn't survived because it's special or well-managed. It survives because the world's productive people have been corralled into using it. They choose dollars over even *worse* currencies — their own debased local fiat. The dollar wins by being the least rotten apple in a barrel of rotten apples.
 
@@ -1811,60 +1116,13 @@ This proves, rather than disproves, the Austrian case. If a *harder* currency ex
 
 **This is exactly what Bitcoin aims to do.**
 
-```
-THE BITCOIN THREAT TO DOLLAR HEGEMONY
-─────────────────────────────────────────────────────────────────
-
-Current situation:
-- Productive people MUST hold some currency
-- Local currencies are worse than dollar
-- Dollar wins by default (least bad option)
-- US extracts from global productive class
-
-Bitcoin changes this:
-- Productive people can hold Bitcoin instead
-- Bitcoin cannot be debased by ANY government
-- Bitcoin is a BETTER option, not just "less bad"
-- Each Bitcoin holder EXITS the extraction system
-
-Every productive person who moves wealth to Bitcoin:
-- Reduces the base across which dollar dilutes
-- Shrinks the US extraction pool
-- Accelerates dollar's Zimbabwe moment
-
-The US dollar isn't an exception to monetary reality.
-It's a confirmation that money = productive hostages.
-Remove the hostages, remove the value.
-```
+**The Bitcoin threat to dollar hegemony.** Currently, productive people must hold some currency, local currencies are worse than the dollar, and the dollar wins by default — the least bad option — letting the US extract from the global productive class. Bitcoin changes this: productive people can hold Bitcoin instead, it cannot be debased by any government, and it's a *better* option, not just a less-bad one. Every productive person who moves wealth to Bitcoin reduces the base across which the dollar dilutes, shrinks the US extraction pool, and accelerates the dollar's Zimbabwe moment. The US dollar isn't an exception to monetary reality — it's a confirmation that money equals productive hostages. Remove the hostages, remove the value.
 
 Countries without this privilege — Argentina, Venezuela, Zimbabwe, Weimar Germany — collapse immediately when they run the printing press. They have no escape route. No one else holds their currency. The extraction falls entirely on their own citizens, who quickly learn they're being robbed.
 
 The US exports its inflation to the world. This isn't proof the system works — it's proof the US can parasitize the global economy in ways smaller nations cannot. But it also reveals the vulnerability: **the system requires captive productive humans.** Give them an exit, and the whole edifice crumbles.
 
-```
-RUNWAY EXTENSION, NOT FLIGHT
-─────────────────────────────────────────────────────────────────
-
-The US debt/inflation model isn't flying.
-It's falling — just slower than others.
-
-WHY SLOWER:
-1. Reserve currency diffuses extraction globally
-2. Productivity gains mask the decline
-3. Military dominance enforces dollar usage
-4. Network effects create switching costs
-
-BUT:
-- Productivity gains aren't infinite
-- Reserve currency status isn't guaranteed
-- Bitcoin erodes demand for dollar holdings
-- De-dollarization is accelerating
-
-When dollar hegemony ends:
-US faces same fate as Argentina/Zimbabwe
-No more global extraction base
-Collapse becomes localized and rapid
-```
+**Runway extension, not flight.** The US debt/inflation model isn't flying — it's falling, just slower than others. Why slower: the reserve currency diffuses extraction globally, productivity gains mask the decline, military dominance enforces dollar usage, and network effects create switching costs. But productivity gains aren't infinite, reserve currency status isn't guaranteed, Bitcoin erodes demand for dollar holdings, and de-dollarization is accelerating. When dollar hegemony ends, the US faces the same fate as Argentina or Zimbabwe — no more global extraction base, and collapse becomes localized and rapid.
 
 This is a temporary reprieve, not proof of concept. The mechanism is identical — only the scale of the victim pool differs.
 
@@ -1884,34 +1142,14 @@ This fundamentally misunderstands both Bitcoin and what makes inflation harmful.
 
 ### Mining Is Not Inflation
 
-```
-FIAT "CREATION"                  BITCOIN MINING
-─────────────────────────────────────────────────────────────────
+| | Fiat "creation" | Bitcoin mining |
+|---|---|---|
+| How created | Keystroke on a computer, costs nothing, no work required | Expenditure of real energy, costs electricity and hardware, proof of work required |
+| Who decides amount | Central bankers, can change anytime, political process | The code (consensus rules), cannot change without consensus, mathematical process |
+| Who knows the rules | Insiders; rules change without notice; no consent required | Everyone (open source); rules known from day one; consent via participation |
+| Supply schedule | Unlimited, determined by politics, unpredictable | 21 million maximum, determined by code, perfectly predictable |
 
-How created:                     How created:
-- Keystroke on computer          - Expenditure of real energy
-- Costs nothing                  - Costs electricity, hardware
-- No work required               - Proof of Work required
-
-Who decides amount:              Who decides amount:
-- Central bankers                - The code (consensus rules)
-- Can change anytime             - Cannot change without consensus
-- Political process              - Mathematical process
-
-Who knows the rules:             Who knows the rules:
-- Insiders                       - Everyone (open source)
-- Rules change without notice    - Rules known from day one
-- No consent required            - Consent via participation
-
-Supply schedule:                 Supply schedule:
-- Unlimited                      - 21 million maximum
-- Determined by politics         - Determined by code
-- Unpredictable                  - Perfectly predictable
-
-CRITICAL DIFFERENCE:
-Fiat: Someone TAKES purchasing power from you
-Bitcoin: Known emission schedule, priced in from start
-```
+**Critical difference:** with fiat, someone *takes* purchasing power from you. With Bitcoin, the emission schedule is known and priced in from the start.
 
 ### Bitcoin Is Backed by Energy
 
@@ -1919,19 +1157,14 @@ Gold became money because acquiring it requires real work — prospecting, minin
 
 Bitcoin works the same way:
 
-```
-GOLD BACKING                     BITCOIN BACKING
-─────────────────────────────────────────────────────────────────
+| Gold backing | Bitcoin backing |
+|---|---|
+| Must find deposits | Must solve a cryptographic puzzle |
+| Must extract ore | Must expend electricity |
+| Must refine metal | Must run specialized hardware |
+| Energy + labor = gold | Energy + hardware = Bitcoin |
 
-Must find deposits               Must solve cryptographic puzzle
-Must extract ore                 Must expend electricity
-Must refine metal                Must run specialized hardware
-Energy + Labor = Gold            Energy + Hardware = Bitcoin
-
-Both are PROOF OF WORK.
-Neither can be created from nothing.
-Both represent stored energy.
-```
+Both are proof of work. Neither can be created from nothing. Both represent stored energy.
 
 When someone "mines" a Bitcoin, they haven't created value from nothing — they've transformed energy into a monetary unit. The energy expenditure IS the backing.
 
@@ -1941,30 +1174,12 @@ Fiat has no such backing. A keystroke creates a trillion dollars. No energy expe
 
 The key difference between Bitcoin's emission and fiat inflation:
 
-```
-FIAT RULE CHANGES                BITCOIN RULE CHANGES
-─────────────────────────────────────────────────────────────────
-
-Who decides:                     Who decides:
-- Central bank committee         - Network consensus
-- 12 people in a room            - Millions of participants
-- Behind closed doors            - Open, transparent process
-
-How changes happen:              How changes happen:
-- Announcement after decision    - Proposal, debate, testing
-- Implemented immediately        - Only if consensus reached
-- No opt-out                     - Can refuse (fork or leave)
-
-Your consent:                    Your consent:
-- Not required                   - Required (you run the code)
-- Not asked                      - You choose which rules
-- No exit possible               - Can exit anytime
-
-Historical changes:              Historical changes:
-- Constant (every Fed meeting)   - Minimal (by design)
-- Always toward more printing    - Resistant to any change
-- "Emergency" justifies all      - Security > features
-```
+| | Fiat rule changes | Bitcoin rule changes |
+|---|---|---|
+| Who decides | Central bank committee — 12 people in a room, behind closed doors | Network consensus — millions of participants, open and transparent |
+| How changes happen | Announced after the decision, implemented immediately, no opt-out | Proposed, debated, tested; only adopted if consensus is reached; can fork or leave |
+| Your consent | Not required, not asked, no exit possible | Required (you run the code); you choose which rules; can exit anytime |
+| Historical changes | Constant (every Fed meeting), always toward more printing, "emergency" justifies all | Minimal by design, resistant to change, security over features |
 
 Every Bitcoin participant knows:
 - Total supply: 21 million, forever
@@ -1978,25 +1193,25 @@ No surprises. No emergency meetings. No "temporary" measures that become permane
 
 Bitcoin's emission follows a predictable, declining schedule:
 
-```
-BITCOIN EMISSION SCHEDULE
-─────────────────────────────────────────────────────────────────
-
-2009-2012:  50 BTC per block     (10.5M total)
-2012-2016:  25 BTC per block     (15.75M total)
-2016-2020:  12.5 BTC per block   (18.375M total)
-2020-2024:  6.25 BTC per block   (19.6875M total)
-2024-2028:  3.125 BTC per block  (~20.34M total)
-...
-~2140:      0 BTC per block      (21M total, forever)
-
-Key properties:
-- Asymptotically approaches 21M
-- Never exceeds 21M
-- Rate of emission DECREASES over time
-- Opposite of fiat (which accelerates)
-- Everyone knew this from day one
-```
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Bitcoin Emission Schedule (BTC per block)</text>
+<line x1="0" y1="200" x2="620" y2="200" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="10" y="20" width="90" height="180" fill="#7a9ec2" fill-opacity="0.85"/>
+<text x="55" y="10" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2009: 50</text>
+<rect x="120" y="110" width="90" height="90" fill="#7a9ec2" fill-opacity="0.7"/>
+<text x="165" y="100" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2012: 25</text>
+<rect x="230" y="155" width="90" height="45" fill="#7a9ec2" fill-opacity="0.6"/>
+<text x="275" y="145" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2016: 12.5</text>
+<rect x="340" y="177" width="90" height="23" fill="#7a9ec2" fill-opacity="0.5"/>
+<text x="385" y="167" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2020: 6.25</text>
+<rect x="450" y="189" width="90" height="11" fill="#7a9ec2" fill-opacity="0.4"/>
+<text x="495" y="179" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">2024: 3.125</text>
+<rect x="560" y="199" width="60" height="1" fill="var(--gray, #9a9a9a)"/>
+<text x="590" y="189" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">~2140: 0</text>
+<text x="310" y="240" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Halving every ~4 years, asymptotically approaching 21 million — known from day one.</text>
+</g>
+</svg>
 
 This isn't inflation — it's a known, transparent, declining emission that approaches zero. There are no surprises, no "quantitative easing," no emergency rate cuts.
 
@@ -2006,31 +1221,7 @@ The advocate might say: "But what about when you need more units? Won't you have
 
 No. Bitcoin is divisible to 8 decimal places (satoshis), and further division is possible through protocol upgrade if ever needed.
 
-```
-DIVISION VS DUPLICATION
-─────────────────────────────────────────────────────────────────
-
-1 BTC = 100,000,000 satoshis
-
-This is like saying:
-1 dollar = 100 cents
-
-Does dividing a dollar into cents CREATE money?
-No. It represents smaller units of the same value.
-
-Does dividing Bitcoin into satoshis CREATE money?
-No. It represents smaller units of the same value.
-
-TOTAL SUPPLY IS UNCHANGED.
-Only the unit of account changes.
-
-If needed:
-- Protocol can enable millisatoshis
-- Or microsatoshis
-- Or any division required
-- WITHOUT creating new supply
-- WITHOUT diluting existing holders
-```
+> 1 BTC = 100,000,000 satoshis — the same as 1 dollar = 100 cents. Does dividing a dollar into cents *create* money? No, it represents smaller units of the same value. Does dividing Bitcoin into satoshis create money? No, same answer. Total supply is unchanged; only the unit of account changes. If ever needed, the protocol can enable millisatoshis or finer, without creating new supply and without diluting existing holders. Bitcoin can always subdivide. It can never duplicate.
 
 As we explained earlier: going from 1 coin to 10 coins at the START is just establishing divisions. Going from 10 coins to 15 coins AFTER prices form is theft.
 
@@ -2040,68 +1231,13 @@ Bitcoin can always subdivide. It can never duplicate.
 
 Bitcoin wasn't imposed by any government. It emerged from voluntary adoption:
 
-```
-BITCOIN'S VOLUNTARY ADOPTION
-─────────────────────────────────────────────────────────────────
-
-No legal tender laws forcing acceptance
-No government backing
-No military enforcement
-No taxation requiring its use
-No monopoly on issuance
-
-Yet:
-- $1+ trillion market cap
-- Millions of users worldwide
-- Adopted by nations (El Salvador)
-- Held by corporations (MicroStrategy, Tesla)
-- 15+ years of continuous operation
-- Never hacked, never debased
-
-WHY?
-
-Because it solves real problems:
-- Store of value across time
-- Transfer value across space
-- No permission needed
-- No counterparty risk
-- No debasement risk
-- Verifiable scarcity
-```
+**Bitcoin's voluntary adoption.** No legal tender laws forcing acceptance, no government backing, no military enforcement, no taxation requiring its use, no monopoly on issuance. And yet: $1+ trillion market cap, millions of users worldwide, adopted by nations (El Salvador), held by corporations (MicroStrategy, Tesla), 15+ years of continuous operation, never hacked, never debased. Why? Because it solves real problems — store of value across time, transfer of value across space, no permission needed, no counterparty risk, no debasement risk, verifiable scarcity.
 
 People chose Bitcoin because it offers something fiat cannot: certainty. Certainty about supply, about rules, about ownership.
 
 ### Bitcoin Optimizes for the Right Things
 
-```
-WHAT BITCOIN OPTIMIZES FOR
-─────────────────────────────────────────────────────────────────
-
-SECURITY:     Most secure network in human history
-              $700B+ securing the network
-              Never successfully attacked
-
-SCARCITY:     21 million, forever
-              Mathematically guaranteed
-              No exceptions, no emergencies
-
-DECENTRALIZATION: No single point of control
-                  No CEO, no board, no government
-                  Thousands of nodes worldwide
-
-WHAT BITCOIN DOES NOT OPTIMIZE FOR:
-
-Speed:        ~10 minute blocks (by design)
-              Security > speed
-
-Throughput:   ~7 transactions/second base layer
-              Layers can add speed (Lightning)
-              Security > throughput
-
-Flexibility:  Hard to change (by design)
-              Stability > features
-              Predictability > adaptability
-```
+**What Bitcoin optimizes for:** security (the most secure network in human history, $700B+ securing it, never successfully attacked), scarcity (21 million forever, mathematically guaranteed, no exceptions), and decentralization (no single point of control, no CEO or board or government, thousands of nodes worldwide). **What it does not optimize for:** speed (~10 minute blocks by design — security over speed), throughput (~7 transactions/second at the base layer, with layers like Lightning adding speed), and flexibility (hard to change by design — stability and predictability over features).
 
 The advocate might criticize Bitcoin for being "slow" or "inflexible." These are features, not bugs. Bitcoin prioritizes the properties that make money sound: scarcity, security, predictability.
 
@@ -2109,26 +1245,20 @@ Speed can be added in layers. Scarcity cannot be added after the fact.
 
 ### The Verdict on Bitcoin
 
-```
-BITCOIN VS FIAT: FINAL COMPARISON
-─────────────────────────────────────────────────────────────────
-
-                    FIAT                BITCOIN
-─────────────────────────────────────────────────────────────────
-Supply:             Unlimited           21 million
-Creation:           Keystroke           Energy expenditure
-Rules:              Change constantly   Fixed in code
-Consent:            Not required        Required (run code)
-Transparency:       Opaque              Open source
-Predictability:     None                Perfect
-Backing:            Government force    Proof of work
-Seizability:        Easy                Very difficult
-Censorship:         Easy                Very difficult
-Inflation:          Guaranteed          Impossible (post-2140)
-Trust required:     In institutions     In mathematics
-Historical record:  100% failure rate   15 years, no failure
-─────────────────────────────────────────────────────────────────
-```
+| | Fiat | Bitcoin |
+|---|---|---|
+| Supply | Unlimited | 21 million |
+| Creation | Keystroke | Energy expenditure |
+| Rules | Change constantly | Fixed in code |
+| Consent | Not required | Required (run the code) |
+| Transparency | Opaque | Open source |
+| Predictability | None | Perfect |
+| Backing | Government force | Proof of work |
+| Seizability | Easy | Very difficult |
+| Censorship | Easy | Very difficult |
+| Inflation | Guaranteed | Impossible (post-2140) |
+| Trust required | In institutions | In mathematics |
+| Historical record | 100% failure rate | 15 years, no failure |
 
 Bitcoin isn't perfect. But it solves the fundamental problem of money: **it cannot be arbitrarily debased by any authority.**
 

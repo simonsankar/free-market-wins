@@ -49,6 +49,23 @@ YES — Alice should specialise in cloth (her comparative advantage),
 Bob in food. Combined output exceeds what both could produce alone.
 ```
 
+<svg viewBox="0 0 620 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(70,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Combined output: without trade vs. with trade</text>
+<line x1="0" y1="260" x2="440" y2="260" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="60" y="50" width="90" height="210" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="105" y="36" font-size="14" fill="#7a9ec2" text-anchor="middle" font-weight="600">14 units</text>
+<text x="105" y="282" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">without trade</text>
+<text x="105" y="298" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">(each splits their own time)</text>
+<rect x="270" y="20" width="90" height="240" fill="var(--secondary, #e0932f)" fill-opacity="0.85"/>
+<text x="315" y="6" font-size="14" fill="var(--secondary, #e0932f)" text-anchor="middle" font-weight="600">16 units</text>
+<text x="315" y="282" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">with trade</text>
+<text x="315" y="298" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">(each specialises, then trades)</text>
+</g>
+</svg>
+
+*Alice makes 10 food OR 10 cloth a day — no comparative advantage either way. Bob makes 6 food OR 2 cloth — he gives up 3 cloth for every food he skips, so food is relatively cheap for him. Splitting time between both goods, Alice produces 5+5 (10 total) and Bob produces 3+1 (4 total): 14 units combined. Let Alice specialise fully in cloth and Bob fully in food, then trade, and the same two people, working the same hours, produce 16 units combined — more of everything exists to divide between them than either could have made alone.*
+
 This principle scales from individuals to nations. Trade barriers — tariffs, quotas, import restrictions — destroy this mutual gain. They make both sides poorer in exchange for concentrating political benefits in protected industries. Every tariff is a forced wealth transfer from consumers to the protected industry, dressed up as economic nationalism.
 
 ## Price as Information

@@ -53,6 +53,51 @@ The correlation isn't perfect, but it's reliable enough to be diagnostic.
 
 ---
 
+<svg viewBox="0 0 910 460" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(70,55)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The Literacy Spectrum: 12 Levels</text>
+<text x="0" y="17" font-size="12" fill="var(--darkgray, #9a9a9a)">L1 &#183; Rothbardian Ancaps</text>
+<rect x="200" y="4" width="3" height="18" rx="1.5" fill="#7a9ec2"/>
+<text x="211" y="17" font-size="11" fill="var(--gray, #9a9a9a)">&lt;0.1%</text>
+<text x="0" y="43" font-size="12" fill="var(--darkgray, #9a9a9a)">L2 &#183; Pragmatic Anarchists</text>
+<rect x="200" y="30" width="6" height="18" rx="1.5" fill="#7a9ec2"/>
+<text x="214" y="43" font-size="11" fill="var(--gray, #9a9a9a)">~0.5%</text>
+<line x1="0" y1="57" x2="780" y2="57" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="780" y="53" font-size="12" fill="#e05a4f" text-anchor="end">the NAP &#8212; the line in the sand</text>
+<text x="0" y="83" font-size="12" fill="var(--darkgray, #9a9a9a)">L3 &#183; Minarchists</text>
+<rect x="200" y="70" width="18" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="226" y="83" font-size="11" fill="var(--gray, #9a9a9a)">~1-2%</text>
+<text x="0" y="109" font-size="12" fill="var(--darkgray, #9a9a9a)">L4 &#183; Classical Liberals</text>
+<rect x="200" y="96" width="48" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="256" y="109" font-size="11" fill="var(--gray, #9a9a9a)">~3-5%</text>
+<text x="0" y="135" font-size="12" fill="var(--darkgray, #9a9a9a)">L5 &#183; Fiscal Conservatives</text>
+<rect x="200" y="122" width="144" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="352" y="135" font-size="11" fill="var(--gray, #9a9a9a)">~10-15%</text>
+<text x="0" y="161" font-size="12" fill="var(--darkgray, #9a9a9a)">L6 &#183; Neoconservatives</text>
+<rect x="200" y="148" width="144" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="352" y="161" font-size="11" fill="var(--gray, #9a9a9a)">~10-15%</text>
+<text x="0" y="187" font-size="12" fill="var(--darkgray, #9a9a9a)">L7 &#183; Centrists/Moderates</text>
+<rect x="200" y="174" width="300" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="508" y="187" font-size="11" fill="var(--gray, #9a9a9a)">~20-30%</text>
+<text x="0" y="213" font-size="12" fill="var(--darkgray, #9a9a9a)">L8 &#183; Social Democrats</text>
+<rect x="200" y="200" width="204" height="18" rx="1.5" fill="var(--secondary, #e0932f)"/>
+<text x="412" y="213" font-size="11" fill="var(--gray, #9a9a9a)">~15-20%</text>
+<text x="0" y="239" font-size="12" fill="var(--darkgray, #9a9a9a)">L9 &#183; Progressives</text>
+<rect x="200" y="226" width="144" height="18" rx="1.5" fill="var(--secondary, #e0932f)"/>
+<text x="352" y="239" font-size="11" fill="var(--gray, #9a9a9a)">~10-15%</text>
+<text x="0" y="265" font-size="12" fill="var(--darkgray, #9a9a9a)">L10 &#183; Full Socialists</text>
+<rect x="200" y="252" width="60" height="18" rx="1.5" fill="var(--secondary, #e0932f)"/>
+<text x="268" y="265" font-size="11" fill="var(--gray, #9a9a9a)">~3-8%</text>
+<text x="0" y="291" font-size="12" fill="var(--darkgray, #9a9a9a)">L11 &#183; Communists</text>
+<rect x="200" y="278" width="24" height="18" rx="1.5" fill="var(--secondary, #e0932f)"/>
+<text x="232" y="291" font-size="11" fill="var(--gray, #9a9a9a)">~1-3%</text>
+<text x="0" y="317" font-size="12" fill="var(--darkgray, #9a9a9a)">L12 &#183; The Unaware (NPCs)</text>
+<rect x="200" y="304" width="540" height="18" rx="1.5" fill="var(--gray, #9a9a9a)"/>
+<text x="748" y="317" font-size="11" fill="var(--gray, #9a9a9a)">~40-50%</text>
+<text x="390" y="357" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Only the top two rungs reject aggression outright. Everything below the line just haggles over how much of it to permit.</text>
+</g>
+</svg>
+
 ## TIER 1: NAP-COMPLIANT (Above the Line)
 
 These are the only positions that consistently reject institutionalized aggression. They recognize that any state, by definition, violates property rights through [[Taxation]] and monopolistic violence.

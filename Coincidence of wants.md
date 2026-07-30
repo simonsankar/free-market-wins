@@ -38,6 +38,40 @@ That good becomes the **medium of exchange**. The surgeon accepts it from the co
 
 That good is [[Money]].
 
+<svg viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(50,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Without money</text>
+<line x1="170" y1="40" x2="20" y2="230" stroke="#e05a4f" stroke-width="1.8" stroke-dasharray="5 5"/>
+<line x1="20" y1="230" x2="320" y2="230" stroke="#e05a4f" stroke-width="1.8" stroke-dasharray="5 5"/>
+<line x1="320" y1="230" x2="170" y2="40" stroke="#e05a4f" stroke-width="1.8" stroke-dasharray="5 5"/>
+<text x="170" y="152" font-size="12" fill="#e05a4f" text-anchor="middle">can't trade directly</text>
+<circle cx="170" cy="40" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<circle cx="20" cy="230" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<circle cx="320" cy="230" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<text x="170" y="10" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Surgeon</text>
+<text x="20" y="270" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Baker</text>
+<text x="320" y="270" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Cobbler</text>
+<text x="170" y="305" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Each wants a specific person's good —</text>
+<text x="170" y="324" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">but not in the direction that matches.</text>
+</g>
+<g transform="translate(490,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">With money</text>
+<line x1="170" y1="155" x2="170" y2="40" stroke="#7a9ec2" stroke-width="1.8"/>
+<line x1="170" y1="155" x2="20" y2="230" stroke="#7a9ec2" stroke-width="1.8"/>
+<line x1="170" y1="155" x2="320" y2="230" stroke="#7a9ec2" stroke-width="1.8"/>
+<circle cx="170" cy="155" r="26" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="170" y="159" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">Money</text>
+<circle cx="170" cy="40" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<circle cx="20" cy="230" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<circle cx="320" cy="230" r="20" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.8"/>
+<text x="170" y="10" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Surgeon</text>
+<text x="20" y="270" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Baker</text>
+<text x="320" y="270" font-size="12.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Cobbler</text>
+<text x="170" y="305" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Every trade only needs one common</text>
+<text x="170" y="324" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">point — no pairwise match required.</text>
+</g>
+</svg>
+
 ## Why This Matters for Economic Complexity
 
 The coincidence of wants problem isn't just an inconvenience — it's a *ceiling* on economic complexity. The more specialised a society becomes, the worse barter performs.
