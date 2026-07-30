@@ -12,12 +12,12 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
 
 <div
   id={`canvas-container-${id}`}
-  class="canvas-container relative w-full overflow-hidden rounded-[2px] border border-lightgray"
+  class="canvas-container relative w-full overflow-hidden rounded-xl border border-lightgray"
   style={`height: ${height}px`}
 >
   <div id={`canvas-root-${id}`} class="h-full w-full"></div>
   <button
-    class="canvas-fullscreen-toggle absolute top-2.5 right-2.5 z-10 cursor-pointer rounded-[2px] border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
+    class="canvas-fullscreen-toggle absolute top-2.5 right-2.5 z-10 cursor-pointer rounded-lg border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
     type="button"
     aria-label="Toggle fullscreen">⛶</button
   >
@@ -67,6 +67,29 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
       if (nodeId && fileUrls[nodeId]) {
         window.location.href = fileUrls[nodeId]
       }
+    })
+
+    // Entering/exiting fullscreen resizes the container, but the library's
+    // own resize handling only re-centers the existing pan/zoom — it never
+    // recomputes the fit-to-bounds scale, so fullscreen opened (and closed)
+    // at whatever zoom level the view happened to already be at, needing a
+    // manual scroll to fit. A fixed rAF delay after toggling isn't reliable
+    // in either direction — how long the resize actually takes to land
+    // varies. Instead: arm a flag on toggle, and do the actual refit inside
+    // the library's own onResize hook, which only fires once the container's
+    // clientWidth/clientHeight have genuinely changed — so we're always
+    // reading real post-resize dimensions, however long that took.
+    const dataManager = viewer.container.get(internal.DataManager)
+    const controller = viewer.container.get(internal.Controller)
+    let pendingRefit = false
+    dataManager.onToggleFullscreen.subscribe(() => {
+      pendingRefit = true
+    })
+    controller.onResize.subscribe(() => {
+      if (!pendingRefit) return
+      pendingRefit = false
+      dataManager.resetView()
+      controller.refresh()
     })
 
     const fullscreenBtn = container.querySelector(".canvas-fullscreen-toggle")
