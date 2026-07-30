@@ -55,6 +55,31 @@ Every ~4 years, Bitcoin's block reward — the new bitcoin issued to miners — 
 
 This creates a predictable, decelerating issuance schedule. The stock-to-flow ratio increases with each halving. By 2024, Bitcoin's stock-to-flow exceeds gold's. By 2028, it exceeds gold's by a significant margin.
 
+<svg viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(70,60)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The halving schedule: block reward over time</text>
+<path d="M0,280 L0,60 L90,60 L90,150 L220,150 L220,202 L340,202 L340,234 L460,234 L460,254 L580,254 L580,266 L580,280 Z" fill="#7a9ec2" fill-opacity="0.16" stroke="none"/>
+<path d="M0,60 L90,60 L90,150 L220,150 L220,202 L340,202 L340,234 L460,234 L460,254 L580,254 L580,266" fill="none" stroke="#7a9ec2" stroke-width="2.4"/>
+<path d="M580,266 L760,266 L760,278" fill="none" stroke="#7a9ec2" stroke-width="2" stroke-dasharray="5 5" opacity="0.8"/>
+<line x1="0" y1="280" x2="760" y2="280" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="4" y="52" font-size="12.5" font-weight="600" fill="#7a9ec2">50 BTC</text>
+<text x="94" y="142" font-size="12.5" font-weight="600" fill="#7a9ec2">25</text>
+<text x="224" y="194" font-size="12" fill="#7a9ec2">12.5</text>
+<text x="344" y="226" font-size="12" fill="#7a9ec2">6.25</text>
+<text x="464" y="246" font-size="11.5" fill="#7a9ec2">3.125</text>
+<text x="700" y="270" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="end">reward → 0</text>
+<text x="0" y="302" font-size="12" fill="var(--gray, #9a9a9a)">2009</text>
+<text x="90" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2012</text>
+<text x="220" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2016</text>
+<text x="340" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2020</text>
+<text x="460" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2024</text>
+<text x="580" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">2028</text>
+<text x="760" y="302" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="end">~2140</text>
+<text x="380" y="340" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Every step is scheduled in advance and enforced by code, not by a committee vote.</text>
+<text x="380" y="360" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">No fiat central bank has ever pre-committed to a shrinking issuance rate.</text>
+</g>
+</svg>
+
 No central bank has ever committed to a policy of *reducing* the money supply growth rate on a fixed schedule. Bitcoin just does it, automatically, every 210,000 blocks.
 
 ## Separation of Money and State

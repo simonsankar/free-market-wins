@@ -69,6 +69,40 @@ Money historically emerges as a commodity with intrinsic value. Governments then
 
 Each step removed constraints on government spending. The end state ([[Fiat Currency]]) is money that can be created infinitely, stores value poorly, and transfers wealth from savers to the political class through [[Inflation]].
 
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="money-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+<g transform="translate(60,60)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The corruption of money</text>
+<rect x="0" y="0" width="150" height="56" rx="8" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="75" y="24" font-size="13.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Commodity money</text>
+<text x="75" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">gold, silver</text>
+<rect x="200" y="0" width="150" height="56" rx="8" fill="#7a9ec2" fill-opacity="0.15" stroke="#7a9ec2" stroke-width="1.6"/>
+<text x="275" y="24" font-size="13.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Representative</text>
+<text x="275" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">paper, redeemable</text>
+<rect x="400" y="0" width="150" height="56" rx="8" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<text x="475" y="24" font-size="13.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Fractional reserve</text>
+<text x="475" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">more notes than gold</text>
+<rect x="600" y="0" width="150" height="56" rx="8" fill="#e05a4f" fill-opacity="0.15" stroke="#e05a4f" stroke-width="1.6"/>
+<text x="675" y="24" font-size="13.5" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Fiat</text>
+<text x="675" y="42" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">pure decree</text>
+<line x1="150" y1="28" x2="196" y2="28" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#money-arrow)"/>
+<line x1="350" y1="28" x2="396" y2="28" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#money-arrow)"/>
+<line x1="550" y1="28" x2="596" y2="28" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" marker-end="url(#money-arrow)"/>
+<rect x="50" y="80" width="50" height="150" fill="#7a9ec2" fill-opacity="0.55"/>
+<rect x="250" y="125" width="50" height="105" fill="#7a9ec2" fill-opacity="0.55"/>
+<rect x="450" y="175" width="50" height="55" fill="var(--secondary, #e0932f)" fill-opacity="0.55"/>
+<rect x="650" y="218" width="50" height="12" fill="#e05a4f" fill-opacity="0.55"/>
+<line x1="0" y1="230" x2="750" y2="230" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="75" y="250" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">100% backed</text>
+<text x="275" y="250" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">redeemable</text>
+<text x="475" y="250" font-size="12" fill="var(--secondary, #e0932f)" text-anchor="middle">partial reserve</text>
+<text x="675" y="250" font-size="12" fill="#e05a4f" text-anchor="middle">unconstrained</text>
+<text x="375" y="284" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Each step removes what actually restrains money creation — until nothing does.</text>
+</g>
+</svg>
+
 ## The Market Always Finds Honest Money
 
 Governments can suppress honest money through legal tender laws — forcing you to accept fiat — but they can't eliminate the demand for it. Black markets, gold holdings, foreign currencies, and now [[Bitcoin]] all represent the market's persistent attempt to escape monetary debasement.
