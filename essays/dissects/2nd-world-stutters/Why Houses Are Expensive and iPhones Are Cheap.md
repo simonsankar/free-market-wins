@@ -47,6 +47,24 @@ So why are houses 100x more expensive instead of 10x better for 1/10th the price
 
 **Because houses stopped being consumption goods and became stores of value.**
 
+<svg viewBox="0 0 820 470" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(70,60)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Where the productivity gains went</text>
+<path d="M0,110 C110,125 220,155 330,190 C440,215 560,250 680,278 L680,300 L0,300 Z" fill="#7a9ec2" fill-opacity="0.18" stroke="none"/>
+<path d="M0,110 C110,125 220,155 330,190 C440,215 560,250 680,278" fill="none" stroke="#7a9ec2" stroke-width="2.4"/>
+<path d="M0,290 C110,285 220,268 330,240 C440,195 560,120 680,55 L680,300 L0,300 Z" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="none"/>
+<path d="M0,290 C110,285 220,268 330,240 C440,195 560,120 680,55" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2.4"/>
+<text x="130" y="168" font-size="13" font-weight="600" fill="#7a9ec2" text-anchor="middle">productivity passed to the consumer</text>
+<text x="540" y="42" font-size="13" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">productivity captured by the monetary premium</text>
+<line x1="330" y1="10" x2="330" y2="300" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="4 4"/>
+<text x="330" y="0" font-size="12" fill="#e05a4f" text-anchor="middle">1971 — gold standard ends</text>
+<line x1="0" y1="300" x2="680" y2="300" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="0" y="322" font-size="12" fill="var(--gray, #9a9a9a)">1920</text>
+<text x="680" y="322" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="end">2025</text>
+<text x="340" y="356" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Same productivity, opposite fate: consumption goods get cheaper, store-of-value goods get bid up.</text>
+</g>
+</svg>
+
 ## What Should Have Happened
 
 Under sound money (no inflation), productivity gains would have delivered:

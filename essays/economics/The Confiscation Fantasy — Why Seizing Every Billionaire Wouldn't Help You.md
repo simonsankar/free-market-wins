@@ -19,6 +19,33 @@ The point that matters for what follows: net worth is not spendable revenue. Elo
 
 The rhetoric slides between two very different populations. There are about 989 billionaires in the US, worth a combined **$8.4 trillion**. Then there's the top 1% by net worth — roughly 1.3 million households, threshold around $11.2 million — worth a combined **$52 trillion**. That's a completely different group: small-business owners, doctors, retirees sitting on home equity and 401(k)s, not a cabal of moguls. When someone says "tax the billionaires" and means "seize the top 1%," they've quietly expanded the target by over a thousand-fold in headcount. Keep the two separate, because the arithmetic below is already generous and it still doesn't work.
 
+<svg viewBox="0 0 840 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,60)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Two very different multipliers</text>
+<g transform="translate(80,260)">
+<text x="135" y="-190" font-size="13" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Wealth: ×6.2</text>
+<line x1="-20" y1="0" x2="290" y2="0" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<circle cx="60" cy="-28" r="28" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="60" y="-62" font-size="12.5" font-weight="600" fill="#7a9ec2" text-anchor="middle">$8.4T</text>
+<text x="60" y="20" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">989 billionaires</text>
+<circle cx="210" cy="-70" r="70" fill="var(--secondary, #e0932f)" fill-opacity="0.55"/>
+<text x="210" y="-146" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">$52T</text>
+<text x="210" y="20" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">top 1% · 1.3M households</text>
+</g>
+<g transform="translate(460,260)">
+<text x="135" y="-190" font-size="13" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Headcount: ×1,314</text>
+<line x1="-20" y1="0" x2="290" y2="0" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<circle cx="60" cy="-4" r="4" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="60" y="-16" font-size="12.5" font-weight="600" fill="#7a9ec2" text-anchor="middle">989</text>
+<text x="60" y="20" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">billionaires</text>
+<circle cx="210" cy="-70" r="70" fill="var(--secondary, #e0932f)" fill-opacity="0.55"/>
+<text x="210" y="-146" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">1.3M</text>
+<text x="210" y="20" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">top 1% households</text>
+</g>
+<text x="290" y="310" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Wealth grows about 6x when the target expands to the top 1%. The headcount it touches grows over 1,300x.</text>
+</g>
+</svg>
+
 ## Let's go extreme: 100%, right now
 
 Grant the maximalist version of the demand. Not a wealth tax, not a marginal rate hike — full seizure, 100% of every billionaire's net worth, liquidated today.
@@ -28,6 +55,26 @@ Grant the maximalist version of the demand. Not a wealth tax, not a marginal rat
 | $8.4T (all US billionaires) | Total FY2025 federal spending ($7.04T) | Funds the government for **~14 months** — once |
 | $8.4T | Annual deficit alone ($1.8T) | Covers **~4.7 years** of new borrowing — existing debt untouched |
 | $8.4T | National debt (~$39.4T) | Pays off **~21%** — $31T still owed |
+
+<svg viewBox="0 0 780 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(20,90)">
+<text x="0" y="-38" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">100% seizure, measured against what it's up against</text>
+<line x1="0" y1="-10" x2="0" y2="192" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="0" y="-2" font-size="12.5" fill="var(--darkgray, #9a9a9a)">Seized: all US billionaires</text>
+<rect x="0" y="4" width="119" height="26" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="127" y="22" font-size="13" font-weight="600" fill="#7a9ec2">$8.4T</text>
+<text x="0" y="48" font-size="12.5" fill="var(--darkgray, #9a9a9a)">One year of federal spending</text>
+<rect x="0" y="54" width="100" height="26" fill="var(--secondary, #e0932f)" fill-opacity="0.8"/>
+<text x="108" y="72" font-size="13" font-weight="600" fill="var(--secondary, #e0932f)">$7.04T</text>
+<text x="0" y="98" font-size="12.5" fill="var(--darkgray, #9a9a9a)">Annual deficit alone</text>
+<rect x="0" y="104" width="26" height="26" fill="var(--gray, #9a9a9a)" fill-opacity="0.8"/>
+<text x="34" y="122" font-size="13" font-weight="600" fill="var(--gray, #9a9a9a)">$1.8T</text>
+<text x="0" y="148" font-size="12.5" fill="var(--darkgray, #9a9a9a)">National debt</text>
+<rect x="0" y="154" width="560" height="26" fill="#e05a4f" fill-opacity="0.75"/>
+<text x="568" y="172" font-size="13" font-weight="600" fill="#e05a4f">$39.4T</text>
+<text x="0" y="216" font-size="13" fill="var(--darkgray, #9a9a9a)">Full confiscation buys ~14 months of federal spending or ~21% of the debt — once, and never again.</text>
+</g>
+</svg>
 
 That's the entire result. Fourteen months of runway, or a fifth of the debt, in exchange for permanently deleting Amazon, Tesla, SpaceX, Meta, Microsoft's founding stake, Nvidia's, and every company built on that capital — along with every job downstream of it. And it only happens once. There is no billionaire class left to tax next year, because you just spent it.
 

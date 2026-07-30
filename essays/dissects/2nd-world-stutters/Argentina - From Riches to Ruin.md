@@ -30,6 +30,47 @@ Each problem created by these interventions was addressed with additional contro
 
 ## 80 Years of Repetition (1946-Present)
 
+<svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(65,120)">
+<text x="0" y="-88" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">A century, in two eras</text>
+<line x1="0" y1="0" x2="111.4" y2="0" stroke="#7a9ec2" stroke-width="3"/>
+<line x1="111.4" y1="0" x2="760" y2="0" stroke="var(--secondary, #e0932f)" stroke-width="3"/>
+<circle cx="0" cy="0" r="6" fill="#7a9ec2"/>
+<circle cx="111.4" cy="0" r="6" fill="var(--secondary, #e0932f)"/>
+<circle cx="222.9" cy="0" r="6" fill="var(--secondary, #e0932f)"/>
+<circle cx="334.3" cy="0" r="6" fill="#e05a4f"/>
+<circle cx="445.7" cy="0" r="6" fill="#e05a4f"/>
+<circle cx="557.1" cy="0" r="6" fill="var(--secondary, #e0932f)"/>
+<circle cx="668.6" cy="0" r="6" fill="var(--secondary, #e0932f)"/>
+<circle cx="780" cy="0" r="6" fill="var(--secondary, #e0932f)"/>
+<text x="0" y="-32" font-size="12.5" font-weight="600" fill="#7a9ec2" text-anchor="middle">1913</text>
+<text x="0" y="-16" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">10th wealthiest</text>
+<text x="0" y="-2" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">nation per capita</text>
+<text x="111.4" y="24" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">1946</text>
+<text x="111.4" y="40" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Perón: nationalization,</text>
+<text x="111.4" y="54" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">price controls begin</text>
+<text x="222.9" y="-32" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">1955</text>
+<text x="222.9" y="-16" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Military Juntas:</text>
+<text x="222.9" y="-2" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">militarized Peronism</text>
+<text x="334.3" y="24" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">1989</text>
+<text x="334.3" y="40" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Alfonsín: inflation</text>
+<text x="334.3" y="54" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">hits 3,079%</text>
+<text x="445.7" y="-32" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">2001</text>
+<text x="445.7" y="-16" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Banks frozen,</text>
+<text x="445.7" y="-2" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">currency collapses</text>
+<text x="557.1" y="24" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">2003</text>
+<text x="557.1" y="40" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Kirchners expand</text>
+<text x="557.1" y="54" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">state intervention</text>
+<text x="668.6" y="-32" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">2015</text>
+<text x="668.6" y="-16" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">Macri: incomplete</text>
+<text x="668.6" y="-2" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">reforms, more borrowing</text>
+<text x="780" y="24" font-size="12.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="end">Milei</text>
+<text x="780" y="40" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="end">Reform agenda:</text>
+<text x="780" y="54" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="end">reverse the framework</text>
+<text x="390" y="88" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Thirty-three free-market years, then eighty interventionist ones. Same country, opposite results.</text>
+</g>
+</svg>
+
 **Military Juntas** (1955-1983): Militarized Peronism, added violence
 
 **Alfonsín** (1983-1989): Inflation hit **3,079%**, fled office early
@@ -81,6 +122,46 @@ The cost is always borne by the productive economy through taxation or inflation
 6. Return to step 1, with a smaller productive base and larger dependent population
 
 This creates a feedback loop: the productive sector shrinks while demands on it increase, accelerating economic decline.
+
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="dc-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--secondary, #e0932f)"/></marker>
+<marker id="dc-arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+</defs>
+<g transform="translate(70,70)">
+<text x="0" y="-30" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">The decline cycle</text>
+<path d="M332.5,73 Q430,60.2 460.7,147" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2" marker-end="url(#dc-arrow)"/>
+<path d="M483.2,186 Q550,260 483.2,334" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2" marker-end="url(#dc-arrow)"/>
+<path d="M460.7,373 Q430,467.8 332.5,447" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2" marker-end="url(#dc-arrow)"/>
+<path d="M287.5,447 Q190,467.8 159.3,373" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2" marker-end="url(#dc-arrow)"/>
+<path d="M136.8,334 Q70,260 136.8,186" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2" marker-end="url(#dc-arrow)"/>
+<path d="M159.3,147 Q190,52.2 287.5,73" fill="none" stroke="#e05a4f" stroke-width="2.2" marker-end="url(#dc-arrow-red)"/>
+<circle cx="310" cy="60" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="310" y="66" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">1</text>
+<circle cx="483.2" cy="160" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="483.2" y="166" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">2</text>
+<circle cx="483.2" cy="360" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="483.2" y="366" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">3</text>
+<circle cx="310" cy="460" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="310" y="466" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">4</text>
+<circle cx="136.8" cy="360" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="136.8" y="366" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">5</text>
+<circle cx="136.8" cy="160" r="26" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="136.8" y="166" font-size="14" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">6</text>
+<text x="310" y="16" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Extract resources</text>
+<text x="310" y="30" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">via taxation</text>
+<text x="528.2" y="154" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="start">Production loses reward</text>
+<text x="528.2" y="168" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="start">vs. political allocation</text>
+<text x="528.2" y="366" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="start">Production declines</text>
+<text x="310" y="512" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Money printed to cover</text>
+<text x="310" y="526" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">the gap → inflation</text>
+<text x="91.8" y="366" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="end">Real incomes fall,</text>
+<text x="91.8" y="380" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="end">more promises made</text>
+<text x="91.8" y="154" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="end">Smaller base, larger</text>
+<text x="91.8" y="168" font-size="12" fill="var(--darkgray, #9a9a9a)" text-anchor="end">dependent population</text>
+<text x="310" y="600" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Step 6 doesn't end the cycle — it restarts it, from a smaller base.</text>
+</g>
+</svg>
 
 ### The Fatal Flaw: Political Decisions Cannot Override Economic Constraints
 
