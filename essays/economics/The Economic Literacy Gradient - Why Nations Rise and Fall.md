@@ -162,6 +162,43 @@ These aren't cautionary tales. These are **autopsies**.
 
 **What these nations share:** Population distributions overwhelmingly skewed toward economic illiteracy. The critical mass of people who understand that [[Socialism is impossible]] was never sufficient to prevent collapse. The parasites outnumbered the producers, voted themselves access to others' wealth, and destroyed the productive capacity that sustained them.
 
+<svg viewBox="0 0 830 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(190,70)">
+<text x="0" y="-40" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Who's carrying whom</text>
+<rect x="0" y="-24" width="12" height="12" fill="#7a9ec2"/>
+<text x="18" y="-14" font-size="11.5" fill="var(--darkgray, #9a9a9a)">producers (NAP-compliant)</text>
+<rect x="230" y="-24" width="12" height="12" fill="var(--gray, #9a9a9a)"/>
+<text x="248" y="-14" font-size="11.5" fill="var(--darkgray, #9a9a9a)">illiterate / NPC</text>
+<rect x="400" y="-24" width="12" height="12" fill="var(--secondary, #e0932f)"/>
+<text x="418" y="-14" font-size="11.5" fill="var(--darkgray, #9a9a9a)">parasites (redistribution-embracing)</text>
+<text x="-10" y="32" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="end">US / Poland</text>
+<rect x="0" y="10" width="180" height="36" fill="#7a9ec2"/>
+<text x="90" y="32" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">30%</text>
+<rect x="180" y="10" width="300" height="36" fill="var(--gray, #9a9a9a)"/>
+<text x="330" y="32" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">50%</text>
+<rect x="480" y="10" width="120" height="36" fill="var(--secondary, #e0932f)"/>
+<text x="540" y="32" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">20%</text>
+<text x="-10" y="96" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="end">Western Europe / England</text>
+<rect x="0" y="74" width="90" height="36" fill="#7a9ec2"/>
+<text x="45" y="96" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">15%</text>
+<rect x="90" y="74" width="270" height="36" fill="var(--gray, #9a9a9a)"/>
+<text x="225" y="96" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">45%</text>
+<rect x="360" y="74" width="240" height="36" fill="var(--secondary, #e0932f)"/>
+<text x="480" y="96" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">40%</text>
+<text x="-10" y="160" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="end">Venezuela / Bolivia / Cuba</text>
+<rect x="0" y="138" width="30" height="36" fill="#7a9ec2"/>
+<text x="15" y="132" font-size="11" font-weight="600" fill="#7a9ec2" text-anchor="middle">5%</text>
+<rect x="30" y="138" width="120" height="36" fill="var(--gray, #9a9a9a)"/>
+<text x="90" y="160" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">20%</text>
+<rect x="150" y="138" width="450" height="36" fill="var(--secondary, #e0932f)"/>
+<text x="375" y="160" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">75%</text>
+<line x1="0" y1="192" x2="600" y2="192" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<text x="0" y="212" font-size="12" fill="var(--gray, #9a9a9a)">0%</text>
+<text x="600" y="212" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="end">100% of population</text>
+<text x="300" y="246" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Same species, same incentives, different ratios — and the ratio is the whole outcome.</text>
+</g>
+</svg>
+
 ## The Ignorant Masses: The 70% Problem
 
 Here's the uncomfortable truth: **70%+ of any population is economically illiterate and politically unaware.**

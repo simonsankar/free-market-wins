@@ -33,6 +33,28 @@ Gold's stock-to-flow ratio is roughly **60-70** — meaning the existing above-g
 
 Compare to copper (stock-to-flow ~1), wheat, or oil — commodities that get consumed, can be farmed, or are produced in massive quantities relative to existing stocks. Their prices are volatile and susceptible to supply shocks. They cannot serve as reliable stores of value.
 
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<g transform="translate(60,50)">
+<text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">Stock-to-flow ratio by commodity</text>
+<text x="560" y="-18" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="end">log scale</text>
+<line x1="0" y1="280" x2="0" y2="0" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<line x1="0" y1="280" x2="590" y2="280" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
+<rect x="40" y="10" width="70" height="270" fill="#7a9ec2" fill-opacity="0.8"/>
+<text x="75" y="0" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">65</text>
+<text x="75" y="300" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Gold</text>
+<rect x="180" y="140" width="70" height="140" fill="var(--secondary, #e0932f)" fill-opacity="0.8"/>
+<text x="215" y="130" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">~22</text>
+<text x="215" y="300" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Silver</text>
+<rect x="320" y="266" width="70" height="14" fill="var(--gray, #9a9a9a)" fill-opacity="0.8"/>
+<text x="355" y="258" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">~1</text>
+<text x="355" y="300" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Copper</text>
+<rect x="460" y="277" width="70" height="3" fill="#e05a4f" fill-opacity="0.8"/>
+<text x="495" y="270" font-size="12.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">&lt;0.3</text>
+<text x="495" y="300" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="middle">Wheat</text>
+<text x="265" y="345" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Gold's existing stock so dwarfs annual mining that no one can inflate it away — the opposite of a crop.</text>
+</g>
+</svg>
+
 ## Silver's Role
 
 Silver functioned as the secondary monetary metal for most of history — gold for large transactions, silver for everyday commerce. Silver had all the same properties but was more abundant (lower stock-to-flow, higher supply relative to stock), making it suitable for smaller denominations.
