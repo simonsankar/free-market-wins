@@ -16,7 +16,7 @@ Let's start with the most spectacular self-own in the history of this particular
 
 Moe Boy worked at the Ministry of Education. And he didn't just work there quietly — he spent months giving everyone a front-row seat to the circus: the incompetence, the political appointments, the dysfunction, the complete absence of accountability. He reported, with increasing exasperation, what it was actually like to work inside a government ministry. Not as a theoretical exercise. As a lived, daily experience.
 
-Then he quit. Not to go to another Ministry — to the private sector. And when the time came to choose between two private sector offers (Fujitsu vs RBC), he explicitly said he would go with **whichever one paid more**. His words. His reasoning. His revealed preference, laid bare.
+Then he quit. Not to go to another Ministry — to the private sector. And when the time came to choose between two private sector offers (Fujitsu vs RBC), he explicitly said he would go with **whichever one paid more**. His words. His reasoning. His [[Revealed Preference|revealed preference]], laid bare.
 
 _"At the end of the day it's about money."_
 
@@ -38,7 +38,7 @@ And here's the detail that makes it even better: he didn't leave after year one.
 
 Because he knew. He'd seen it from the inside. He voted with his feet and his career — twice, once to renew and once to finally leave — and then turned around and voted with his words for the thing his feet had already rejected.
 
-_Revealed preference_ is one of the foundational concepts of Austrian economics: what people actually choose tells you more about their values than what they say. Moe Boy chose the private sector. He chose the higher salary. He chose profit-and-loss accountability over ministry dysfunction. His life is the rebuttal to his argument. 🎯
+_[[Revealed Preference|Revealed preference]]_ is one of the foundational concepts of Austrian economics: what people actually choose tells you more about their values than what they say. Moe Boy chose the private sector. He chose the higher salary. He chose profit-and-loss accountability over ministry dysfunction. His life is the rebuttal to his argument. 🎯
 
 ---
 
