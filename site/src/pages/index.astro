@@ -1,0 +1,86 @@
+---
+import { getCollection, render } from "astro:content"
+import Layout from "../layouts/Layout.astro"
+
+const homeEntries = await getCollection("home")
+const homeEntry = homeEntries[0]
+const { Content: HomeContent } = homeEntry ? await render(homeEntry) : { Content: null }
+
+const essayEntries = await getCollection(
+  "essays",
+  (e) => e.data.unlisted !== true && Boolean(e.data.date),
+)
+const sorted = essayEntries.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+
+const LIMIT = 9
+const featured = sorted.slice(0, LIMIT)
+const older = sorted.slice(LIMIT)
+
+function categoryOf(id) {
+  const segment = id.includes("/") ? id.split("/")[0] : ""
+  return segment.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
+function formatDate(date) {
+  return date
+    ? new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })
+    : null
+}
+---
+
+<Layout>
+  <div class="flex min-h-[calc(100vh-10rem)] flex-col">
+    <p class="mb-2.5 font-code text-xs tracking-wider text-secondary uppercase">
+      An arsenal for the stateless society
+    </p>
+    {homeEntry && <h1 class="article-title">{homeEntry.data.title}</h1>}
+    <div class="[&_p]:max-w-[60rem] [&_p]:text-[1.05rem] [&_p]:text-gray" data-pagefind-body>
+      {homeEntry && <HomeContent />}
+    </div>
+
+    <div class="mt-6 grid w-full auto-rows-fr grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-7">
+      {
+        featured.map((entry) => (
+          <a class="card" href={`/essays/${entry.id}/`}>
+            <div class="card-meta">
+              <span class="card-badge">{categoryOf(entry.id)}</span>
+              {formatDate(entry.data.date) && <time>{formatDate(entry.data.date)}</time>}
+            </div>
+            <h3 class="mb-3 font-header text-[1.4rem] leading-tight">{entry.data.title}</h3>
+            {entry.data.description && <p class="card-dek">{entry.data.description}</p>}
+          </a>
+        ))
+      }
+    </div>
+
+    {
+      older.length > 0 && (
+        <div class="mt-10">
+          <h4 class="mb-3 font-code text-xs tracking-wider text-gray uppercase">More essays</h4>
+          <ul class="m-0 list-none p-0">
+            {older.map((entry) => (
+              <li class="flex items-baseline gap-2.5 border-b border-lightgray py-2 text-[0.9rem]">
+                <a class="internal min-w-0 flex-1" href={`/essays/${entry.id}/`}>
+                  {entry.data.title}
+                </a>
+                <span class="font-code text-[0.68rem] whitespace-nowrap text-secondary uppercase">
+                  {categoryOf(entry.id)}
+                </span>
+                {formatDate(entry.data.date) && (
+                  <time class="font-code text-xs whitespace-nowrap text-gray">
+                    {formatDate(entry.data.date)}
+                  </time>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+
+    <div class="mt-auto flex flex-wrap gap-4 pt-10">
+      <a class="pill" href="/definitions/">Browse definitions →</a>
+      <a class="pill" href="/graph/">Explore the graph →</a>
+    </div>
+  </div>
+</Layout>

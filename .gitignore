@@ -7,6 +7,6 @@
 
 site/node_modules/
 site/public/
-site/.quartz/
-site/quartz/.quartz-cache/
+site/dist/
+site/.astro/
 site/tsconfig.tsbuildinfo

@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+
+const entries = (await getCollection("zingers")).sort(
+  (a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""),
+)
+---
+
+<Layout title="Zingers" description="Short, punchy arguments and one-liners.">
+  <h1 class="article-title">Zingers</h1>
+  <ul class="m-0 mt-6 grid max-w-[42rem] list-none gap-2.5 p-0">
+    {
+      entries.map((entry) => (
+        <li>
+          <a class="internal list-row" href={`/zingers/${entry.id}/`}>
+            {entry.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
