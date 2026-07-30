@@ -1,21 +1,20 @@
 FROM node:22 AS builder
-RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
-
 WORKDIR /app
 
-# Install deps and plugins first (better layer caching)
-COPY site/package.json site/package-lock.json* site/quartz.lock.json ./site/
-COPY site/quartz/ ./site/quartz/
-RUN cd site && npm ci && npx quartz plugin install
+# Install deps first (better layer caching)
+COPY site/package.json site/package-lock.json* ./site/
+RUN cd site && npm ci
 
-# Copy all vault content + site config
+# Copy all vault content + site source
 COPY . .
 
-# Build static site — --directory ../ points Quartz at the vault root
-RUN cd site && npx quartz build --directory ../
+# Build static site — copies vault images into public/, runs `astro build`
+# (which reads the vault root as content via the glob loader in
+# site/src/content/config.ts), then generates the Pagefind search index.
+RUN cd site && npm run build
 
 FROM nginx:alpine
-COPY --from=builder /app/site/public /usr/share/nginx/html
+COPY --from=builder /app/site/dist /usr/share/nginx/html
 COPY site/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

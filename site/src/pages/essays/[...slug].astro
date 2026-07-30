@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from "astro:content"
+import EssayLayout from "../../layouts/EssayLayout.astro"
+
+export async function getStaticPaths() {
+  const entries = await getCollection("essays", (e) => e.data.unlisted !== true)
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const category = entry.id.includes("/")
+  ? entry.id.split("/")[0].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+  : undefined
+---
+
+<EssayLayout
+  title={entry.data.title}
+  date={entry.data.date}
+  category={category}
+  url={`/essays/${entry.id}/`}
+  description={entry.data.description}
+>
+  <Content />
+</EssayLayout>

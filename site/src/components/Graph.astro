@@ -1,0 +1,315 @@
+---
+interface Props {
+  id: string
+  nodes: Array<{ id: string; title: string; self?: boolean; collection?: string; degree?: number }>
+  edges: Array<{ source: string; target: string }>
+  height?: number
+  legend?: boolean
+}
+
+const { id, nodes, edges, height = 260, legend = false } = Astro.props
+---
+
+<div
+  id={`graph-container-${id}`}
+  class="graph-container relative w-full overflow-hidden [&.is-fullscreen]:fixed [&.is-fullscreen]:inset-0 [&.is-fullscreen]:z-[300] [&.is-fullscreen]:!h-screen [&.is-fullscreen]:w-screen [&.is-fullscreen]:bg-light"
+  style={`height: ${height}px`}
+>
+  <svg id={`graph-svg-${id}`} class="h-full w-full cursor-grab active:cursor-grabbing"></svg>
+  {
+    legend && (
+      <div class="absolute top-2.5 left-2.5 flex gap-4 font-code text-[0.68rem] tracking-wide text-gray uppercase pointer-events-none">
+        <span class="inline-flex items-center gap-1.5">
+          <i class="inline-block h-2 w-2 rounded-full bg-secondary" />Essays
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <i class="inline-block h-2 w-2 rounded-full bg-gray" />Definitions
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <i class="inline-block h-2 w-2 rounded-full bg-tertiary" />Zingers
+        </span>
+      </div>
+    )
+  }
+  <button
+    class="graph-fullscreen-toggle absolute top-2.5 right-2.5 cursor-pointer rounded-[2px] border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
+    type="button"
+    aria-label="Toggle fullscreen">⛶</button
+  >
+  <div class="pointer-events-none absolute right-2.5 bottom-1.5 font-code text-[0.62rem] text-gray opacity-60">
+    scroll to zoom · drag to pan · drag a node to reposition
+  </div>
+</div>
+<script type="application/json" id={`graph-data-${id}`} set:html={JSON.stringify({ nodes, edges })} />
+
+<script>
+  import { forceSimulation, forceManyBody, forceLink, forceCenter, forceCollide } from "d3-force"
+  import { select } from "d3-selection"
+  import { drag } from "d3-drag"
+  import { zoom, zoomIdentity } from "d3-zoom"
+
+  // Labels always show below this many nodes (small local graphs have room);
+  // above it, labels only appear once zoomed past LABEL_ZOOM_THRESHOLD, or
+  // for whichever node/neighborhood is currently hovered — otherwise a dense
+  // global graph turns into unreadable overlapping text the moment you touch
+  // a well-connected hub node.
+  const DENSE_THRESHOLD = 16
+  const LABEL_ZOOM_K = 1.7
+
+  function mount(dataEl) {
+    const id = dataEl.id.replace("graph-data-", "")
+    const container = document.getElementById(`graph-container-${id}`)
+    const svgEl = document.getElementById(`graph-svg-${id}`)
+    if (!container || !svgEl || svgEl.dataset.mounted) return
+    svgEl.dataset.mounted = "true"
+
+    const { nodes, edges } = JSON.parse(dataEl.textContent || "{}")
+    if (!nodes?.length) {
+      container.innerHTML =
+        '<p class="p-4 font-code text-[0.8rem] text-gray">No linked notes yet.</p>'
+      return
+    }
+
+    let width = container.clientWidth || container.getBoundingClientRect().width
+    let height = container.clientHeight || container.getBoundingClientRect().height || 260
+    if (!width) {
+      svgEl.dataset.mounted = ""
+      requestAnimationFrame(() => mount(dataEl))
+      return
+    }
+
+    const alwaysShowLabels = nodes.length <= DENSE_THRESHOLD
+    const maxDegree = Math.max(1, ...nodes.map((n) => n.degree ?? 0))
+    const radiusFor = (d) => {
+      if (d.self) return 10
+      const t = (d.degree ?? 0) / maxDegree
+      return 4 + Math.sqrt(t) * 8
+    }
+
+    const svg = select(svgEl).attr("viewBox", `0 0 ${width} ${height}`)
+    const viewport = svg.append("g").attr("class", "viewport")
+    const linkLayer = viewport.append("g").attr("class", "links")
+    const nodeLayer = viewport.append("g").attr("class", "nodes")
+    // Labels live in their OWN layer, outside `viewport`, so the zoom
+    // transform never touches them directly — only their computed screen
+    // position does. Nodes/links are meant to grow as you zoom in (that's
+    // normal), but if label text scales right along with them, a few clicks
+    // of zoom turns 10px labels into 80px ones that overlap into an
+    // unreadable blurry mess (with the stroke halo scaling right along with
+    // it). Keeping a fixed on-screen font size — the way Obsidian/Quartz do
+    // it — is what actually makes zooming in reveal more detail instead of
+    // just magnifying the mess.
+    const labelLayer = svg.append("g").attr("class", "label-layer")
+
+    const linkSel = linkLayer
+      .selectAll("line")
+      .data(edges)
+      .join("line")
+      .attr("class", "graph-link")
+
+    const nodeGroup = nodeLayer
+      .selectAll("g")
+      .data(nodes)
+      .join("g")
+      .attr(
+        "class",
+        (d) => `graph-node graph-node--${d.collection ?? "other"}` + (d.self ? " graph-node--self" : ""),
+      )
+
+    nodeGroup.append("circle").attr("r", radiusFor)
+
+    const labelSel = labelLayer
+      .selectAll("text")
+      .data(nodes)
+      .join("text")
+      .text((d) => d.title)
+      .attr("class", "graph-label")
+      .style("opacity", alwaysShowLabels ? 1 : 0)
+
+    let currentTransform = zoomIdentity
+
+    function positionLabels() {
+      labelSel.attr("transform", (d) => {
+        const [sx, sy] = currentTransform.apply([d.x, d.y])
+        const offset = radiusFor(d) * currentTransform.k + 6
+        return `translate(${sx + offset},${sy + 4})`
+      })
+    }
+
+    const neighborsOf = new Map()
+    for (const n of nodes) neighborsOf.set(n.id, new Set([n.id]))
+    for (const e of edges) {
+      neighborsOf.get(e.source)?.add(e.target)
+      neighborsOf.get(e.target)?.add(e.source)
+    }
+
+    let hoveredId = null
+    let currentZoomK = 1
+
+    function baseLabelOpacity() {
+      return alwaysShowLabels || currentZoomK >= LABEL_ZOOM_K ? 1 : 0
+    }
+
+    function setHover(hoveredNodeId) {
+      hoveredId = hoveredNodeId
+      if (!hoveredNodeId) {
+        nodeGroup.classed("is-dimmed", false).classed("is-active", false)
+        linkSel.classed("is-dimmed", false).classed("is-active", false)
+        if (!alwaysShowLabels) labelSel.style("opacity", baseLabelOpacity())
+        return
+      }
+      const neighbors = neighborsOf.get(hoveredNodeId) ?? new Set([hoveredNodeId])
+      nodeGroup
+        .classed("is-dimmed", (d) => !neighbors.has(d.id))
+        .classed("is-active", (d) => neighbors.has(d.id))
+      linkSel
+        .classed("is-dimmed", (e) => e.source.id !== hoveredNodeId && e.target.id !== hoveredNodeId)
+        .classed("is-active", (e) => e.source.id === hoveredNodeId || e.target.id === hoveredNodeId)
+      if (!alwaysShowLabels) {
+        labelSel.style("opacity", (d) => (neighbors.has(d.id) ? 1 : baseLabelOpacity()))
+      }
+    }
+
+    nodeGroup.on("mouseenter", (_ev, d) => setHover(d.id))
+    nodeGroup.on("mouseleave", () => setHover(null))
+
+    let moved = false
+    nodeGroup.on("click", (_ev, d) => {
+      if (!moved) window.location.href = d.id
+    })
+
+    const simulation = forceSimulation(nodes)
+      .force(
+        "link",
+        forceLink(edges)
+          .id((d) => d.id)
+          .distance(alwaysShowLabels ? 80 : 64)
+          .strength(0.5),
+      )
+      .force("charge", forceManyBody().strength(alwaysShowLabels ? -220 : -170))
+      .force("center", forceCenter(width / 2, height / 2))
+      .force("collide", forceCollide((d) => radiusFor(d) + (alwaysShowLabels ? 22 : 10)))
+
+    const zoomBehavior = zoom()
+      .scaleExtent([0.15, 10])
+      .on("zoom", (event) => {
+        viewport.attr("transform", event.transform)
+        currentTransform = event.transform
+        currentZoomK = event.transform.k
+        positionLabels()
+        if (!hoveredId) labelSel.style("opacity", baseLabelOpacity())
+      })
+    svg.call(zoomBehavior)
+
+    // Track the layout's bounding box every tick and keep the camera fit to
+    // it (snapped, no transition) while the sim is still moving nodes apart —
+    // a one-shot fit-on-"end" fires too early here since the extra collide
+    // force can bring alpha below the threshold while nodes are still
+    // clustered near the center. Once the user touches zoom/pan/drag, stop
+    // auto-framing so we don't fight their input.
+    let userInteracted = false
+    svg.on("pointerdown.userfit", () => {
+      userInteracted = true
+    })
+
+    function currentFitTransform() {
+      const xs = nodes.map((n) => n.x)
+      const ys = nodes.map((n) => n.y)
+      const x0 = Math.min(...xs)
+      const x1 = Math.max(...xs)
+      const y0 = Math.min(...ys)
+      const y1 = Math.max(...ys)
+      const graphWidth = Math.max(1, x1 - x0)
+      const graphHeight = Math.max(1, y1 - y0)
+      const pad = 36
+      const scale = Math.min(
+        2,
+        Math.min((width - pad * 2) / graphWidth, (height - pad * 2) / graphHeight),
+      )
+      const cx = (x0 + x1) / 2
+      const cy = (y0 + y1) / 2
+      return zoomIdentity.translate(width / 2, height / 2).scale(scale).translate(-cx, -cy)
+    }
+
+    simulation.on("tick", () => {
+      linkSel
+        .attr("x1", (d) => d.source.x)
+        .attr("y1", (d) => d.source.y)
+        .attr("x2", (d) => d.target.x)
+        .attr("y2", (d) => d.target.y)
+      nodeGroup.attr("transform", (d) => `translate(${d.x},${d.y})`)
+      positionLabels()
+      if (!userInteracted) {
+        zoomBehavior.transform(svg, currentFitTransform())
+      }
+    })
+    simulation.on("end", () => {
+      if (!userInteracted) {
+        svg.transition().duration(300).call(zoomBehavior.transform, currentFitTransform())
+      }
+    })
+
+    nodeGroup.call(
+      drag()
+        .on("start", (event, d) => {
+          moved = false
+          if (!event.active) simulation.alphaTarget(0.25).restart()
+          d.fx = d.x
+          d.fy = d.y
+        })
+        .on("drag", (event, d) => {
+          moved = true
+          d.fx = event.x
+          d.fy = event.y
+        })
+        .on("end", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0)
+          d.fx = null
+          d.fy = null
+        }),
+    )
+
+    // Resizing (including entering/exiting fullscreen) needs the SVG's own
+    // coordinate space to change, not just its CSS box — otherwise the graph
+    // stays locked to whatever size it was first laid out at and fullscreen
+    // just stretches/blurs it instead of giving the layout real extra room.
+    function resize(newWidth, newHeight) {
+      if (!newWidth || !newHeight) return
+      width = newWidth
+      height = newHeight
+      svg.attr("viewBox", `0 0 ${width} ${height}`)
+      simulation.force("center", forceCenter(width / 2, height / 2))
+      if (!userInteracted) {
+        zoomBehavior.transform(svg, currentFitTransform())
+      }
+      simulation.alpha(0.15).restart()
+    }
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0]
+      if (!entry) return
+      resize(entry.contentRect.width, entry.contentRect.height)
+    })
+    resizeObserver.observe(container)
+
+    const fullscreenBtn = container.querySelector(".graph-fullscreen-toggle")
+    fullscreenBtn?.addEventListener("click", () => {
+      const goingFullscreen = !container.classList.contains("is-fullscreen")
+      container.classList.toggle("is-fullscreen")
+      document.documentElement.classList.toggle("graph-lock-scroll", goingFullscreen)
+      fullscreenBtn.textContent = goingFullscreen ? "✕" : "⛶"
+      fullscreenBtn.setAttribute("aria-label", goingFullscreen ? "Exit fullscreen" : "Toggle fullscreen")
+    })
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && container.classList.contains("is-fullscreen")) {
+        container.classList.remove("is-fullscreen")
+        document.documentElement.classList.remove("graph-lock-scroll")
+        fullscreenBtn.textContent = "⛶"
+      }
+    })
+  }
+
+  for (const dataEl of document.querySelectorAll('script[id^="graph-data-"]')) {
+    mount(dataEl)
+  }
+</script>
