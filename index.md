@@ -12,13 +12,3 @@ unlisted: true
    _bbut... muh healthcare! muh roads! muh social safety net!_ 🤡
 4. How the free market wins!\
    _The reigning, defending, undefeated, undisputed, heavyweight champion of the world, Capitalism!!_ 👑
-
-#### The coaching staff
-- [Ludwig von Mises](https://en.wikipedia.org/wiki/Ludwig_von_Mises)
-- [Murray N. Rothbard](https://en.wikipedia.org/wiki/Murray_Rothbard)
-- [Hans-Hermann Hoppe](https://en.wikipedia.org/wiki/Hans-Hermann_Hoppe)
-- [Thomas Sowell](https://en.wikipedia.org/wiki/Thomas_Sowell)
-- [Stephan Kinsella](https://en.wikipedia.org/wiki/Stephan_Kinsella)
-- [Saifedean Ammous](https://saifedean.com/)
--  [Ayn Rand](https://en.wikipedia.org/wiki/Ayn_Rand)
-- [LiquidZulu](https://www.youtube.com/@LiquidZulu)
