@@ -31,7 +31,7 @@ Anti-capitalists **voluntarily choose** to engage with markets they claim to des
 
 They buy iPhones while condemning corporate profits. Use Amazon while decrying worker exploitation. Invest in index funds while advocating wealth redistribution. Start businesses while claiming entrepreneurship is immoral.
 
-**Every transaction is voluntary.** Every purchase sends a market signal. Every dollar spent validates the system through revealed preference.
+**Every transaction is voluntary.** Every purchase sends a market signal. Every dollar spent validates the system through [[Revealed Preference|revealed preference]].
 
 Unlike ancaps using coercively-funded services, anti-capitalists have alternatives. They could abstain. They choose not to.
 
@@ -43,7 +43,7 @@ Consent is everything. Government services violate consent from inception throug
 
 When you're forced to pay for something, using it afterward is damage control, not endorsement. When you voluntarily pay for something while claiming it's immoral, you reveal either philosophical inconsistency, moral hypocrisy, or intellectual confusion.
 
-Anti-capitalist criticism carries no weight because their behavior contradicts their beliefs. They vote with their wallets for capitalism while condemning it with their voices. Their revealed preferences expose their stated beliefs as hollow.
+Anti-capitalist criticism carries no weight because their behavior contradicts their beliefs. They vote with their wallets for capitalism while condemning it with their voices. Their [[Revealed Preference|revealed preferences]] expose their stated beliefs as hollow.
 
 The ancap maintains consistency: oppose coercion, attempt restitution where coercion has already occurred.
 
