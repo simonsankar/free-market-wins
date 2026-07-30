@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+
+const entries = (await getCollection("definitions", (e) => e.data.unlisted !== true)).sort(
+  (a, b) => a.data.title.localeCompare(b.data.title),
+)
+
+const groups = new Map()
+for (const entry of entries) {
+  const letter = entry.data.title[0]?.toUpperCase() ?? "#"
+  if (!groups.has(letter)) groups.set(letter, [])
+  groups.get(letter).push(entry)
+}
+const letters = Array.from(groups.keys()).sort()
+---
+
+<Layout title="Definitions" description="A searchable glossary of Austrian economics and libertarian terms.">
+  <h1 class="article-title">Definitions</h1>
+  <p class="max-w-[42rem] text-gray">
+    A glossary of the concepts the essays build on — Austrian economics, natural rights theory,
+    and the arguments against central planning. Jump to a letter, or use search.
+  </p>
+
+  <nav class="my-6 flex flex-wrap gap-1.5 font-code">
+    {
+      letters.map((l) => (
+        <a
+          class="inline-block h-7 w-7 rounded-[2px] border border-lightgray text-center leading-7 text-darkgray no-underline hover:border-secondary hover:text-secondary"
+          href={`#${l}`}
+        >
+          {l}
+        </a>
+      ))
+    }
+  </nav>
+
+  {
+    letters.map((letter) => (
+      <section>
+        <h2 id={letter} class="mt-8 mb-3 font-code text-[0.9rem] tracking-wider text-secondary uppercase">
+          {letter}
+        </h2>
+        <ul class="grid list-none grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-2 p-0 m-0">
+          {groups.get(letter).map((entry) => (
+            <li>
+              <a class="internal list-row" href={`/definitions/${entry.id}/`}>
+                {entry.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>

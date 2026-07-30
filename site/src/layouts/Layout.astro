@@ -1,0 +1,89 @@
+---
+import "../styles/global.css"
+import SearchBox from "../components/SearchBox.astro"
+import LinkPreview from "../components/LinkPreview.astro"
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const { title, description = "Sound money, free markets, zero masters." } = Astro.props
+const pageTitle = title ? `${title} — Free Market Wins` : "Free Market Wins"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href="/vault-assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      const stored = localStorage.getItem("theme")
+      if (stored) document.documentElement.setAttribute("data-theme", stored)
+    </script>
+  </head>
+  <body class="font-body">
+    <header class="flex flex-wrap items-center justify-between gap-6 px-8 py-5 max-[800px]:px-4 max-[800px]:py-4">
+      <a class="wordmark" href="/">
+        Free Market Wins
+        <span class="wordmark-kicker">Sound Money · Free Markets · Zero Masters</span>
+      </a>
+      <!--
+        SearchBox and the theme toggle are siblings of <nav>, not children of
+        it — <nav> is the only thing that should render uppercase, and since
+        text-transform inherits, nesting the search modal inside it would
+        shout-case every search result (this bit us once already).
+      -->
+      <div class="flex items-center gap-5">
+        <nav class="flex items-center gap-5 font-code text-[0.85rem] tracking-wide uppercase">
+          <a class="text-darkgray no-underline hover:text-secondary" href="/">Essays</a>
+          <a class="text-darkgray no-underline hover:text-secondary" href="/definitions/">Definitions</a>
+          <a class="text-darkgray no-underline hover:text-secondary" href="/graph/">Graph</a>
+          <a class="text-darkgray no-underline hover:text-secondary" href="/canvas/anarchism/">Canvas</a>
+        </nav>
+        <SearchBox />
+        <button
+          id="theme-toggle"
+          class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-[0.6rem] py-1 text-base text-darkgray"
+          aria-label="Toggle dark mode"
+          type="button">◐</button
+        >
+      </div>
+    </header>
+    <main class="mx-auto max-w-[74rem] px-8 pb-16 max-[800px]:px-4 max-[800px]:pb-12">
+      <slot />
+    </main>
+    <footer class="p-8 text-center font-code text-xs text-gray">
+      <a class="text-gray" href="https://github.com/simonsankar/free-market-wins" target="_blank" rel="noopener"
+        >GitHub</a
+      >
+    </footer>
+    <script is:inline>
+      const btn = document.getElementById("theme-toggle")
+      btn?.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme")
+        const next =
+          current === "dark"
+            ? "light"
+            : current === "light"
+              ? "dark"
+              : matchMedia("(prefers-color-scheme: dark)").matches
+                ? "light"
+                : "dark"
+        document.documentElement.setAttribute("data-theme", next)
+        localStorage.setItem("theme", next)
+      })
+    </script>
+    <LinkPreview />
+  </body>
+</html>

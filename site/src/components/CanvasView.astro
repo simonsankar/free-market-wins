@@ -1,0 +1,79 @@
+---
+interface Props {
+  id: string
+  canvas: { nodes: unknown[]; edges: unknown[] }
+  attachments: Record<string, string>
+  fileUrls: Record<string, string>
+  height?: number
+}
+
+const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
+---
+
+<div
+  id={`canvas-container-${id}`}
+  class="canvas-container relative w-full overflow-hidden rounded-[2px] border border-lightgray"
+  style={`height: ${height}px`}
+>
+  <div id={`canvas-root-${id}`} class="h-full w-full"></div>
+  <button
+    class="canvas-fullscreen-toggle absolute top-2.5 right-2.5 z-10 cursor-pointer rounded-[2px] border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
+    type="button"
+    aria-label="Toggle fullscreen">⛶</button
+  >
+</div>
+<script type="application/json" id={`canvas-data-${id}`} set:html={JSON.stringify(canvas)} />
+<script type="application/json" id={`canvas-attachments-${id}`} set:html={JSON.stringify(attachments)} />
+<script type="application/json" id={`canvas-urls-${id}`} set:html={JSON.stringify(fileUrls)} />
+
+<script>
+  import { JSONCanvasViewer, parser, internal } from "json-canvas-viewer"
+
+  function mount(root) {
+    if (root.dataset.mounted) return
+    root.dataset.mounted = "true"
+    const id = root.id.replace("canvas-root-", "")
+    const container = document.getElementById(`canvas-container-${id}`)
+    const dataEl = document.getElementById(`canvas-data-${id}`)
+    const attachmentsEl = document.getElementById(`canvas-attachments-${id}`)
+    const urlsEl = document.getElementById(`canvas-urls-${id}`)
+    const canvas = JSON.parse(dataEl.textContent || "{}")
+    const attachments = JSON.parse(attachmentsEl.textContent || "{}")
+    const fileUrls = JSON.parse(urlsEl.textContent || "{}")
+
+    function currentSiteTheme() {
+      const explicit = document.documentElement.getAttribute("data-theme")
+      if (explicit === "dark" || explicit === "light") return explicit
+      return matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    }
+
+    const viewer = new JSONCanvasViewer({
+      container: root,
+      canvas,
+      attachments,
+      parser,
+      theme: currentSiteTheme(),
+    })
+
+    // The viewer has its own theme option — it doesn't read our site's
+    // data-theme toggle automatically, so keep them in sync explicitly.
+    new MutationObserver(() => viewer.changeTheme(currentSiteTheme())).observe(
+      document.documentElement,
+      { attributes: true, attributeFilter: ["data-theme"] },
+    )
+
+    const interactionHandler = viewer.container.get(internal.InteractionHandler)
+    interactionHandler.onClick.subscribe((nodeId) => {
+      if (nodeId && fileUrls[nodeId]) {
+        window.location.href = fileUrls[nodeId]
+      }
+    })
+
+    const fullscreenBtn = container.querySelector(".canvas-fullscreen-toggle")
+    fullscreenBtn?.addEventListener("click", () => viewer.toggleFullscreen())
+  }
+
+  for (const root of document.querySelectorAll('[id^="canvas-root-"]')) {
+    mount(root)
+  }
+</script>

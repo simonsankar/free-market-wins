@@ -1,0 +1,472 @@
+@import "tailwindcss";
+
+/* "Cyber-Agora" theme — colors/fonts carried over verbatim from the old
+   Quartz build. These stay plain CSS custom properties (not @theme
+   literals) specifically so light/dark switching (prefers-color-scheme +
+   the data-theme override written by the toggle button) keeps working by
+   just re-pointing the same variables — Tailwind's utilities below then
+   read through to whichever value is currently active. */
+:root {
+  --light: #f7f6f2;
+  --lightgray: #e5e1d6;
+  --gray: #96907f;
+  --darkgray: #26241f;
+  --dark: #0f0e0c;
+  --secondary: #b5790a;
+  --tertiary: #d9660a;
+  --highlight: rgba(181, 121, 10, 0.1);
+  --text-highlight: #f2a90055;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #0a0a0c;
+    --lightgray: #1c1c22;
+    --gray: #6f6f7a;
+    --darkgray: #d4d2ca;
+    --dark: #f5f4ef;
+    --secondary: #f2a900;
+    --tertiary: #ff7a1a;
+    --highlight: rgba(242, 169, 0, 0.08);
+  }
+}
+
+:root[data-theme="dark"] {
+  --light: #0a0a0c;
+  --lightgray: #1c1c22;
+  --gray: #6f6f7a;
+  --darkgray: #d4d2ca;
+  --dark: #f5f4ef;
+  --secondary: #f2a900;
+  --tertiary: #ff7a1a;
+  --highlight: rgba(242, 169, 0, 0.08);
+}
+
+:root[data-theme="light"] {
+  --light: #f7f6f2;
+  --lightgray: #e5e1d6;
+  --gray: #96907f;
+  --darkgray: #26241f;
+  --dark: #0f0e0c;
+  --secondary: #b5790a;
+  --tertiary: #d9660a;
+  --highlight: rgba(181, 121, 10, 0.1);
+}
+
+/* Feeds the tokens above into Tailwind's utility generator, so bg-secondary,
+   text-gray, border-lightgray, font-header, etc. become real utility
+   classes — instead of hand-writing var(--secondary) in a dozen places. */
+@theme {
+  --color-light: var(--light);
+  --color-lightgray: var(--lightgray);
+  --color-gray: var(--gray);
+  --color-darkgray: var(--darkgray);
+  --color-dark: var(--dark);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-highlight: var(--highlight);
+  --color-text-highlight: var(--text-highlight);
+
+  --font-header: "Outfit", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  /* Small-caps/label treatment (pills, nav, meta) uses the heading font, not
+     a third typeface — only two fonts load on this site: Outfit + Manrope. */
+  --font-code: "Outfit", sans-serif;
+
+  --radius-brand: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightgray) var(--light);
+}
+
+body {
+  background-color: var(--light);
+  color: var(--darkgray);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  background-image:
+    radial-gradient(
+      ellipse 70% 45% at 50% -8%,
+      color-mix(in srgb, var(--secondary) 9%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(var(--lightgray) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    26px 26px;
+  background-position:
+    center top,
+    0 0;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, fixed;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a {
+  color: var(--secondary);
+}
+
+img,
+pre,
+code,
+a.internal {
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray);
+  border: 2px solid var(--light);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* ── Reusable brand utilities ──────────────────────────────────────────────
+   Real Tailwind utility classes (via @utility, not Astro-scoped component
+   styles) for the handful of compound patterns reused across pages — global
+   by construction, so they apply correctly even to markup injected via
+   innerHTML (search results, graph SVG labels), which scoped <style> blocks
+   never could. One-off layout (flex/grid/spacing) stays as inline utilities
+   in each template instead of being duplicated here. */
+
+@utility wordmark {
+  font-family: var(--font-header);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.35rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  &:hover {
+    color: var(--secondary);
+  }
+}
+@utility wordmark-kicker {
+  display: block;
+  font-family: var(--font-code);
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-top: 0.3rem;
+}
+
+@utility article-title {
+  /* Tailwind's Preflight resets heading font-size to `inherit` — without an
+     explicit size here this rendered at plain body-text size (the "tiny
+     title" bug). */
+  font-size: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+  font-family: var(--font-header);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  position: relative;
+  padding-bottom: 0.9rem;
+  margin: 0 0 1rem;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3rem;
+    height: 3px;
+    background: var(--secondary);
+  }
+}
+@utility content-meta {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+
+@utility prose-body {
+  /* Tailwind's Preflight zeroes default margins on p/ul/ol/li — restore
+     normal paragraph/list rhythm for long-form essay content. */
+  & p,
+  & ul,
+  & ol {
+    margin: 1.25em 0;
+  }
+  & li {
+    margin: 0.35em 0;
+  }
+  & strong {
+    font-weight: 700;
+  }
+  & h2 {
+    font-family: var(--font-header);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-size: 1.55rem;
+    line-height: 1.3;
+    color: var(--darkgray);
+    margin: 1.8em 0 0.7em;
+    padding-left: 0.9rem;
+    border-left: 3px solid var(--secondary);
+  }
+  & hr {
+    border: none;
+    height: 1px;
+    width: 60%;
+    margin: 3rem auto;
+    position: relative;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--lightgray) 20%,
+      var(--lightgray) 80%,
+      transparent
+    );
+  }
+  & hr::after {
+    content: "◆";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light);
+    color: var(--secondary);
+    padding: 0 0.75rem;
+    font-size: 0.65rem;
+  }
+  & blockquote {
+    border-left: 3px solid var(--secondary);
+    background: var(--highlight);
+    padding: 1rem 1.25rem;
+    border-radius: 0 2px 2px 0;
+    margin: 1.5rem 0;
+  }
+  & blockquote p:first-of-type::before {
+    content: "\201C";
+    color: var(--secondary);
+    font-family: var(--font-header);
+    font-size: 1.5em;
+    line-height: 0;
+    margin-right: 0.15em;
+    vertical-align: -0.3em;
+    display: inline-block;
+  }
+  & img {
+    max-width: 100%;
+    border-radius: 2px;
+  }
+}
+
+@utility broken-link {
+  color: var(--tertiary);
+  text-decoration: underline wavy;
+  cursor: help;
+}
+
+@utility card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--lightgray);
+  border-top: 4px solid var(--lightgray);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--lightgray) 15%, transparent);
+  padding: 2rem 2rem 1.75rem;
+  text-decoration: none;
+  color: var(--darkgray);
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  &:hover {
+    border-top-color: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px -12px color-mix(in srgb, var(--secondary) 55%, transparent);
+  }
+}
+@utility card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray);
+  margin-bottom: 0.9rem;
+}
+@utility card-badge {
+  color: var(--secondary);
+  font-weight: 700;
+}
+@utility card-dek {
+  margin: 0;
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@utility pill {
+  display: inline-block;
+  background: var(--highlight);
+  border-radius: 2px;
+  padding: 0.15rem 0.5rem;
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--secondary);
+  border: 1px solid var(--lightgray);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  &:hover {
+    background: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+  }
+}
+
+@utility list-row {
+  display: block;
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+  &:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 4px 20px -8px color-mix(in srgb, var(--secondary) 60%, transparent);
+    transform: translateY(-2px);
+    color: var(--secondary);
+  }
+}
+
+/* ── Graph SVG (Graph.astro) ───────────────────────────────────────────────
+   Classes toggled dynamically by the d3-force simulation, not written in
+   any template — plain CSS is the right tool here regardless of styling
+   framework; a force-directed graph's node/link classes aren't a natural
+   fit for utility classes applied ahead of time. */
+
+html.graph-lock-scroll {
+  overflow: hidden;
+}
+
+.graph-link {
+  stroke: var(--lightgray);
+  stroke-width: 1;
+  transition: opacity 0.15s ease;
+}
+.graph-link.is-dimmed {
+  opacity: 0.12;
+}
+.graph-link.is-active {
+  stroke: var(--secondary);
+  opacity: 0.8;
+}
+.graph-node circle {
+  fill: var(--gray);
+  stroke: var(--light);
+  stroke-width: 1.5;
+  transition:
+    opacity 0.15s ease,
+    fill 0.15s ease,
+    r 0.15s ease;
+}
+.graph-node--essays circle {
+  fill: var(--secondary);
+}
+.graph-node--zingers circle {
+  fill: var(--tertiary);
+}
+.graph-node--definitions circle {
+  fill: var(--gray);
+}
+.graph-node--self circle {
+  fill: var(--secondary);
+  stroke: var(--secondary);
+  stroke-width: 3;
+  stroke-opacity: 0.25;
+}
+.graph-node.is-active circle {
+  stroke: var(--secondary);
+  stroke-width: 2;
+}
+.graph-node.is-dimmed {
+  opacity: 0.2;
+}
+.graph-node {
+  cursor: pointer;
+}
+.graph-label {
+  font-family: var(--font-code);
+  font-size: 10px;
+  fill: var(--darkgray);
+  paint-order: stroke;
+  stroke: var(--light);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── json-canvas-viewer (CanvasView.astro) ──────────────────────────────────
+   The library's own injected CSS puts `transition: all` + `will-change:
+   transform` on its overlay layer. That's fine for a single discrete jump
+   (resetView, zoomToScale) but actively wrong for continuous interaction —
+   a real scroll/pinch gesture fires many transform updates per second, and
+   with `transition: all` each one restarts a tween, so the GPU-composited
+   layer is perpetually chasing a moving target instead of matching the
+   pointer 1:1. That's the blurry, laggy "picture being scaled" look during
+   zoom — not missing image resolution, just a transition fighting rapid
+   input. Killing the transition makes every frame apply instantly, crisp,
+   matching the actual zoom level at all times (like Obsidian's own canvas). */
+.JCV-overlays {
+  transition: none !important;
+}
+
+/* The library's default markdown-preview theme colors strong/em/a with a
+   rainbow of semantic colors (coral bold, mint italic, bright-blue bold
+   italic links) unrelated to this site's palette — restyle to match the
+   amber "Cyber-Agora" theme used everywhere else. */
+.JSON-Canvas-Viewer .JCV-markdown-content strong {
+  color: inherit !important;
+  font-weight: 700;
+}
+.JSON-Canvas-Viewer .JCV-markdown-content em {
+  color: inherit !important;
+  font-style: italic;
+}
+.JCV-markdown-content a {
+  color: var(--secondary) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  text-decoration: underline !important;
+}
+.JCV-markdown-content a:hover {
+  color: var(--tertiary) !important;
+}
