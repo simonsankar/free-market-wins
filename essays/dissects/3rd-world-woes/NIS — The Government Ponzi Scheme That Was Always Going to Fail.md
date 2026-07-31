@@ -145,6 +145,14 @@ NIS is not capitalism. NIS is socialism applied to retirement savings. It is the
 
 The actual capitalist alternative to NIS is: you keep your own money, invest it as you see fit, and retire when your savings allow it. That system does not require the government to move your retirement age because your retirement age is determined by your own financial position, not a political decree.
 
+### 7. It's Not Just Pensions — Sickness Benefits Run the Same Racket
+
+The retirement fight gets the headlines, but the same structure governs NIS's sickness benefit — and it's worth naming because it hits people at their most vulnerable, not just their oldest.
+
+You surrender a fixed cut of your earnings every month, no choice offered. Get sick and actually unable to work, and instead of a payout you agreed to, you *petition* to get back a fraction of what was taken — the system, not you, decides how much of your own money you're allowed to have. Fall ill longer than your contribution history "covers," and your support becomes uncertain regardless of how many years you paid in; you can only claim against specific illness periods, never proportional to your total contribution.
+
+Strip the euphemism and this is a forced loan to the government, repayable — partially, and at NIS's discretion — only once you're too sick to negotiate. A voluntary insurer that treated claimants this way would lose every customer it has. NIS doesn't have to worry about that, because you were never a customer. You were a compulsory contributor.
+
 ---
 
 ## Market Proof

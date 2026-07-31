@@ -12,12 +12,16 @@ This is an Obsidian vault containing philosophical and economic writings focused
 
 ## Repository Structure
 
-- **Root directory**: Contains primary philosophical and economic concept files (e.g., `Anarchism.canvas`, `Austrian Economics.md`, `Markets.md`, `Taxation.md`)
-- **essays/**: Longer-form argumentative essays and detailed analyses on key topics
-- **zingers/**: Short, punchy arguments and one-liners on various topics
-- **3rd world govt woes/**: Critiques of government policies and interventions, particularly focused on local examples
+The vault is organized into four bins, each with a distinct test for what belongs there:
+
+- **Root directory ("Core Theory")**: The standard Austrian-libertarian doctrinal architecture — axioms, proofs, and named economic concepts (e.g., `Austrian Economics.md`, `The Non-aggression Principle.md`, `Markets.md`, `Taxation.md`, `Anarchism.canvas`). Defending a piece of doctrine against its standard objections belongs here — that's part of stating the doctrine correctly, not a separate essay. Test: is this how any serious Austrian-libertarian text would explain this concept, independent of who wrote it?
+- **essays/philosophy/** and **essays/economics/**: Longer-form pieces where the author picks a topic — unprompted — and builds their own case on top of Core Theory. Test: "given this body of work, here's why this specific thing is right/wrong," in the author's own voice, not itself a piece of standard doctrine.
+- **essays/dissects/**: Rebuttals of one specific, identifiable external claim, policy, or argument — a Reddit talking point, a named policy, a real event, a real person's argument. `3rd-world-woes/` groups dissects targeting Trinidad and comparable developing-world government failures; a **developed-world** category is reserved for rich-country statism (Europe's welfare states, etc.) once a piece exists for it. Dissects not tied to a specific place sit ungrouped at the top level.
+- **zingers/**: Single punchy lines — no developed argument, just the line.
 - **.obsidian/**: Obsidian vault configuration (do not modify)
 - **.smart-env/**: Smart environment configuration (do not modify)
+
+Note: there is no root-level `3rd world govt woes/` directory — that content lives at `essays/dissects/3rd-world-woes/`.
 
 ## Content Guidelines
 
@@ -47,9 +51,8 @@ When editing or creating content:
 
 ## File Organization
 
-- Concept files: Direct philosophical or economic topics
-- Critique files: Arguments against statist policies or interventions  
-- Supporting files: Canvas files for visual concept mapping
-- Directory organization reflects thematic groupings rather than strict hierarchies
+- New content goes in the bin matching the test in Repository Structure above — when in doubt, ask whether it's stating doctrine (Core Theory), applying doctrine to a topic unprompted (essay), or rebutting one specific external claim (dissect), rather than defaulting to the root directory.
+- Canvas files are for visual concept mapping and sit alongside their related Core Theory files.
+- Directory organization within essays/ and essays/dissects/ reflects thematic and geographic groupings rather than strict hierarchies.
 
 The repository serves as a comprehensive knowledge base for libertarian economic and philosophical arguments, structured for easy navigation and cross-referencing within Obsidian.
