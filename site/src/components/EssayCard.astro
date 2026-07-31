@@ -1,0 +1,48 @@
+---
+import { generateCover } from "../lib/coverArt.mjs"
+
+interface Props {
+  entry: any
+}
+
+const { entry } = Astro.props
+
+function categoryOf(id: string) {
+  const segment = id.includes("/") ? id.split("/")[0] : ""
+  return segment.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
+function formatDate(date?: string) {
+  return date
+    ? new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })
+    : null
+}
+
+const category = categoryOf(entry.id)
+const words = (entry.body ?? "").trim().split(/\s+/).filter(Boolean).length
+const readMins = Math.max(1, Math.round(words / 200))
+const cover = entry.data.cover
+const generatedCover = cover ? null : generateCover({ id: entry.id, category })
+---
+
+<a class="essay-row" href={`/essays/${entry.id}/`} data-category={category}>
+  <div class="essay-row-thumb">
+    {
+      cover ? (
+        <img src={cover} alt="" class="h-full w-full object-cover" loading="lazy" />
+      ) : (
+        <Fragment set:html={generatedCover} />
+      )
+    }
+  </div>
+  <div class="min-w-0 flex-1">
+    <p class="essay-row-meta">
+      <span>{category}</span>
+      <span aria-hidden="true">·</span>
+      <span>{readMins} min</span>
+    </p>
+    <h3 class="essay-row-title">{entry.data.title}</h3>
+    {entry.data.description && <p class="essay-row-dek">{entry.data.description}</p>}
+  </div>
+  {formatDate(entry.data.date) && <time class="essay-row-date">{formatDate(entry.data.date)}</time>}
+</a>

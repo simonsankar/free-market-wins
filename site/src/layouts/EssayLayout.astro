@@ -25,14 +25,18 @@ const formattedDate = date
     class="grid max-w-full justify-center gap-14 grid-cols-[minmax(0,48rem)_18rem] max-[1100px]:grid-cols-[minmax(0,48rem)]"
   >
     <article class="min-w-0">
-      <p class="content-meta mb-2 flex items-center gap-3">
-        {category && <span class="pill">{category}</span>}
-        {formattedDate && <time datetime={date}>{formattedDate}</time>}
-      </p>
+      <p class="content-meta mb-2 flex items-center gap-3">{category && <span class="pill">{category}</span>}</p>
       <h1 class="article-title" data-pagefind-meta="title">{title}</h1>
       <div class="prose-body" data-pagefind-body>
         <slot />
       </div>
+      {
+        formattedDate && (
+          <p class="mt-10 text-right font-code text-[0.7rem] text-gray/40">
+            <time datetime={date}>{formattedDate}</time>
+          </p>
+        )
+      }
     </article>
 
     <aside

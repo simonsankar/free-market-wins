@@ -16,15 +16,20 @@
   --tertiary: #d9660a;
   --highlight: rgba(181, 121, 10, 0.1);
   --text-highlight: #f2a90055;
+  /* Fixed vivid gold — does NOT flip with theme. The hero's gold wedge uses
+     this instead of --secondary because the light-mode --secondary is
+     deliberately muted for body text and reads as dull at hero scale; the
+     hero always wants the vivid dark-mode gold, in both themes. */
+  --hero-gold: #f2a900;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --light: #0a0a0c;
-    --lightgray: #1c1c22;
-    --gray: #6f6f7a;
+    --light: #0c0b09;
+    --lightgray: #1e1c19;
+    --gray: #79766e;
     --darkgray: #d4d2ca;
-    --dark: #f5f4ef;
+    --dark: #ede7da;
     --secondary: #f2a900;
     --tertiary: #ff7a1a;
     --highlight: rgba(242, 169, 0, 0.08);
@@ -32,11 +37,11 @@
 }
 
 :root[data-theme="dark"] {
-  --light: #0a0a0c;
-  --lightgray: #1c1c22;
-  --gray: #6f6f7a;
+  --light: #0c0b09;
+  --lightgray: #1e1c19;
+  --gray: #79766e;
   --darkgray: #d4d2ca;
-  --dark: #f5f4ef;
+  --dark: #ede7da;
   --secondary: #f2a900;
   --tertiary: #ff7a1a;
   --highlight: rgba(242, 169, 0, 0.08);
@@ -66,6 +71,7 @@
   --color-tertiary: var(--tertiary);
   --color-highlight: var(--highlight);
   --color-text-highlight: var(--text-highlight);
+  --color-hero-gold: var(--hero-gold);
 
   --font-header: "Outfit", sans-serif;
   --font-body: "Manrope", sans-serif;
@@ -76,71 +82,74 @@
   --radius-brand: 2px;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--lightgray) var(--light);
-}
+/* @layer base (not left unlayered) so these can actually be overridden by
+   @utility classes below — Tailwind v4 compiles every @utility into its
+   `utilities` layer, and per the CSS cascade-layers spec, UNLAYERED css
+   always wins over ANY layered css regardless of specificity. Plain `a {
+   color: var(--secondary) }` sitting unlayered was silently beating every
+   `.pill:hover`/`.hero-pill:hover`/`[aria-pressed]` color change on every
+   anchor-based button on the site — hover states looked "set" in the
+   utility source but the text color never actually moved, producing
+   gold-on-gold and gold-on-tan text in various theme/hover combinations. */
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--lightgray) var(--light);
+  }
 
-body {
-  background-color: var(--light);
-  color: var(--darkgray);
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+  body {
+    background-color: var(--light);
+    color: var(--darkgray);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
 
-  background-image:
-    radial-gradient(
-      ellipse 70% 45% at 50% -8%,
-      color-mix(in srgb, var(--secondary) 9%, transparent),
-      transparent 70%
-    ),
-    radial-gradient(var(--lightgray) 1px, transparent 1px);
-  background-size:
-    100% 100%,
-    26px 26px;
-  background-position:
-    center top,
-    0 0;
-  background-repeat: no-repeat, repeat;
-  background-attachment: fixed, fixed;
-}
+    /* Amber is reserved for accents (hero, badges, hover, underline) — no
+       ambient tint on every page anymore, just the dot grid. */
+    background-image: radial-gradient(var(--lightgray) 1px, transparent 1px);
+    background-size: 26px 26px;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.035;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
-a {
-  color: var(--secondary);
-}
+  a {
+    color: var(--secondary);
+  }
 
-img,
-pre,
-code,
-a.internal {
-  border-radius: 2px;
-}
+  img,
+  pre,
+  code,
+  a.internal {
+    border-radius: 2px;
+  }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--light);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--lightgray);
-  border: 2px solid var(--light);
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--light);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightgray);
+    border: 2px solid var(--light);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
 }
 
 /* ── Reusable brand utilities ──────────────────────────────────────────────
@@ -152,26 +161,20 @@ a.internal {
    in each template instead of being duplicated here. */
 
 @utility wordmark {
-  font-family: var(--font-header);
+  /* Same font as the nav links beside it (--font-code) — not --font-header,
+     which is what headings/titles use. */
+  font-family: var(--font-code);
+  font-style: italic;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   color: var(--dark);
   text-decoration: none;
   transition: color 0.2s ease;
   &:hover {
     color: var(--secondary);
   }
-}
-@utility wordmark-kicker {
-  display: block;
-  font-family: var(--font-code);
-  font-size: 0.6rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-top: 0.3rem;
 }
 
 @utility article-title {
@@ -315,6 +318,77 @@ a.internal {
   color: var(--gray);
   margin-bottom: 0.9rem;
 }
+@utility essay-row {
+  /* Thin list row (EssayCard.astro) — small thumbnail + title/dek, not a
+     tall card. Rows pack densely (list, not gallery), separated by a hairline
+     rather than individually boxed, so a two-column grid of these fits many
+     more essays on screen than a card grid ever could. */
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0.25rem;
+  border-bottom: 1px solid var(--lightgray);
+  text-decoration: none;
+  color: var(--darkgray);
+  transition: background-color 0.15s ease;
+  &:hover {
+    background: color-mix(in srgb, var(--lightgray) 35%, transparent);
+  }
+}
+@utility essay-row-thumb {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  background: var(--lightgray);
+}
+@utility essay-row-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0.2rem;
+  font-family: var(--font-code);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Neutral, not amber — the category text no longer competes with links
+     and badges for the same accent color; the thumbnail art (which does use
+     the brand palette) is what differentiates a section at a glance. */
+  color: var(--gray);
+}
+@utility essay-row-title {
+  margin: 0;
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: var(--darkgray);
+  /* Clamp so an unusually long title can't blow the row past the thumbnail's
+     height — rows stay thin and consistent regardless of title length. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@utility essay-row-dek {
+  margin: 0.2rem 0 0;
+  color: var(--gray);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@utility essay-row-date {
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-family: var(--font-code);
+  font-size: 0.65rem;
+  color: color-mix(in srgb, var(--gray) 55%, transparent);
+  white-space: nowrap;
+}
 @utility card-badge {
   color: var(--secondary);
   font-weight: 700;
@@ -346,6 +420,29 @@ a.internal {
   }
 }
 
+@utility filter-tab {
+  cursor: pointer;
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+  background: transparent;
+  transition: all 0.15s ease;
+  &:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+  &[aria-pressed="true"] {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--light);
+  }
+}
+
 @utility list-row {
   display: block;
   border: 1px solid var(--lightgray);
@@ -363,6 +460,162 @@ a.internal {
     transform: translateY(-2px);
     color: var(--secondary);
   }
+}
+
+/* ── Homepage hero (index.astro) ───────────────────────────────────────────
+   Gadsden-flag black/gold, side by side — left column is the README-sourced
+   intro, right column is the canvas panel. ONE background spans the whole
+   row (not a separate fill per column): a flat theme-reactive base (the
+   site's own --light/--darkgray — genuinely light in light mode, genuinely
+   dark in dark mode, no fixed "always black" panel) with a fixed vivid gold
+   diagonal wedge on top at desktop widths, positioned so the seam always
+   falls past the text column's width — text itself never sits on gold. On
+   narrow viewports the columns stack, so the diagonal is dropped in favor of
+   the flat base alone (a width-based diagonal has no sensible meaning once
+   everything is one column). Gold is fixed rather than --secondary/
+   --tertiary because the light-mode amber is deliberately muted for body
+   text and reads as dull at hero scale — the hero wants the vivid dark-mode
+   gold in both themes. A dot-texture layer (same visual language as the
+   sitewide background grid) stands in for what was a smooth gradient. */
+
+@utility hero {
+  /* Deliberately NOT a rounded, bordered card floating in the page — full
+     viewport-bleed rectangle (index.astro breaks it out of <main>'s centered
+     max-width), matching the edge-to-edge inspiration instead of reading as
+     another boxed content block. */
+  position: relative;
+  overflow: hidden;
+}
+
+@utility hero-bleed {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+}
+
+@utility hero-bg {
+  /* No fill at all here — the "ink" side isn't painted, it just lets the
+     page's own background (and its own dot-grid texture) show straight
+     through, instead of stacking a second same-colored layer on top of a
+     page that's already that color. At lg+, only the gold wedge actually
+     paints anything: a solid fill plus a rough green-tinted noise texture,
+     both clipped to the wedge via a mask using the identical gradient
+     stops (rather than painting the noise everywhere and hoping it reads
+     as invisible over "ink" — it's genuinely not there).
+
+     The textured fill lives on a ::before, not on this element directly —
+     `mask-image` masks an element's ENTIRE rendered output, real DOM
+     children included, not just its own background layers. Putting it here
+     directly was clipping the actual README text sitting in the "ink" 0-52%
+     region out of existence, not just hiding a background. The pseudo-
+     element only ever paints a background, so masking it can't touch real
+     content — it sits behind the actual column content via z-index. */
+  position: relative;
+
+  @media (min-width: 64rem) {
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      /* `white`, not `black` — mask-image defaults to luminance mode in some
+         engines and alpha mode in others; white reads as "fully visible"
+         under both interpretations, black would only work under one. */
+      --hero-split: linear-gradient(100deg, transparent 0% 52%, white 52% 100%);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.16  0 0 0 0 0.35  0 0 0 0 0.12  0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+        linear-gradient(100deg, transparent 0% 52%, var(--hero-gold) 52% 100%);
+      background-blend-mode: multiply, normal;
+      background-repeat: repeat, no-repeat;
+      -webkit-mask-image: var(--hero-split);
+      mask-image: var(--hero-split);
+    }
+  }
+}
+
+@utility hero-kicker {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.75rem;
+}
+
+@utility hero-title {
+  font-family: var(--font-header);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: var(--dark);
+  font-size: clamp(1.75rem, 1rem + 2.4vw, 2.75rem);
+  white-space: nowrap;
+  margin: 0 0 1.25rem;
+}
+
+@utility hero-intro {
+  max-width: 42rem;
+  color: var(--darkgray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  & h2,
+  & h3,
+  & h4 {
+    color: var(--dark);
+    font-family: var(--font-header);
+    font-weight: 700;
+    margin: 1em 0 0.4em;
+  }
+  & p,
+  & ol,
+  & ul {
+    margin: 0.9em 0;
+  }
+  & li {
+    margin: 0.35em 0;
+  }
+  & strong {
+    color: var(--dark);
+    font-weight: 700;
+  }
+  & em {
+    color: var(--gray);
+  }
+  & a {
+    color: var(--secondary);
+  }
+}
+
+@utility hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--lightgray);
+  padding: 0.5rem 1.1rem;
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--darkgray);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    background: var(--darkgray);
+    color: var(--light);
+    border-color: var(--darkgray);
+  }
+}
+
+@utility hero-canvas-frame {
+  border-radius: 1rem;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  padding: 0.65rem;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
 }
 
 /* ── Graph SVG (Graph.astro) ───────────────────────────────────────────────
