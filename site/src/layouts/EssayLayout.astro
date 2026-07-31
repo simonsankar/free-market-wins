@@ -3,18 +3,30 @@ import Layout from "./Layout.astro"
 import Graph from "../components/Graph.astro"
 import { getBacklinks, getLocalGraph } from "../lib/vault-index.mjs"
 
+interface Heading {
+  depth: number
+  slug: string
+  text: string
+}
+
 interface Props {
   title: string
   date?: string
   category?: string
   url: string
   description?: string
+  headings?: Heading[]
   cover?: string
 }
 
-const { title, date, category, url, description, cover } = Astro.props
+const { title, date, category, url, description, headings = [], cover } = Astro.props
 const backlinks = getBacklinks(url)
 const graph = getLocalGraph(url, title)
+
+// Only the top two levels used in article bodies (## and ###) make sense as
+// jump links — deeper levels would be too granular for an at-a-glance list.
+const sections = headings.filter((h) => h.depth <= 3)
+const minDepth = sections.length > 0 ? Math.min(...sections.map((h) => h.depth)) : 0
 
 const formattedDate = date
   ? new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
@@ -70,6 +82,26 @@ const formattedDate = date
     <aside
       class="grid content-start gap-8 pt-14 max-[1100px]:mt-4 max-[1100px]:border-t max-[1100px]:border-lightgray max-[1100px]:pt-8"
     >
+      {
+        sections.length > 0 && (
+          <section>
+            <h2 class="content-meta mb-3 tracking-wider">Contents</h2>
+            <ul class="grid list-none gap-0.5 p-0 m-0">
+              {sections.map((h) => (
+                <li>
+                  <a
+                    class="internal block truncate rounded-[2px] py-1 text-sm text-darkgray no-underline hover:text-secondary"
+                    style={{ paddingLeft: `${(h.depth - minDepth) * 0.9}rem` }}
+                    href={`#${h.slug}`}
+                  >
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
       <section>
         <h2 class="content-meta mb-3 tracking-wider">Local graph</h2>
         <Graph id={`local-${url}`} nodes={graph.nodes} edges={graph.edges} height={240} />
