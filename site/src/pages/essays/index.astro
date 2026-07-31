@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+import EssayCard from "../../components/EssayCard.astro"
+
+function categoryOf(id) {
+  const segment = id.includes("/") ? id.split("/")[0] : ""
+  return segment.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
+const entries = await getCollection("essays", (e) => e.data.unlisted !== true && Boolean(e.data.date))
+const sorted = entries.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+const categories = Array.from(new Set(sorted.map((e) => categoryOf(e.id)))).sort()
+---
+
+<Layout title="Essays" description="The full archive of essays, dissections, and fiction.">
+  <h1 class="article-title">Essays</h1>
+  <p class="max-w-[42rem] text-gray">
+    The full archive — Austrian economics, natural rights theory, and dissections of statist
+    policy, sorted newest first. Filter by section or browse everything.
+  </p>
+
+  <div class="my-6 flex flex-wrap gap-2" id="essay-filters">
+    <button class="filter-tab" data-filter="all" aria-pressed="true" type="button">All</button>
+    {
+      categories.map((c) => (
+        <button class="filter-tab" data-filter={c} aria-pressed="false" type="button">
+          {c}
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10" id="essay-grid">
+    {sorted.map((entry) => <EssayCard entry={entry} />)}
+  </div>
+</Layout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>("#essay-filters .filter-tab")
+  const cards = document.querySelectorAll<HTMLAnchorElement>("#essay-grid > a")
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.setAttribute("aria-pressed", "false"))
+      btn.setAttribute("aria-pressed", "true")
+      const filter = btn.dataset.filter
+      cards.forEach((card) => {
+        const match = filter === "all" || card.dataset.category === filter
+        card.style.display = match ? "" : "none"
+      })
+    })
+  })
+</script>
