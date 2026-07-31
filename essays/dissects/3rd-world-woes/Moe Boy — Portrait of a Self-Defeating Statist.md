@@ -1,6 +1,7 @@
 ---
 title: Moe Boy — Portrait of a Self-Defeating Statist
 date: 2026-07-05
+cover: /vault-assets/essays/dissects/3rd-world-woes/moe-boy-cover.png
 ---
 Every now and then, the universe produces a specimen so perfectly contradictory that they function less as a person and more as a walking proof-by-example. Moe Boy — a Trinidadian, Canadian-educated, government-employed, government-hating, government-defending ICT tech support professional — is one such specimen.
 
