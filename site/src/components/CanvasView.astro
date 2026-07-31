@@ -62,34 +62,86 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
       { attributes: true, attributeFilter: ["data-theme"] },
     )
 
-    const interactionHandler = viewer.container.get(internal.InteractionHandler)
-    interactionHandler.onClick.subscribe((nodeId) => {
-      if (nodeId && fileUrls[nodeId]) {
-        window.location.href = fileUrls[nodeId]
+    // Clicking a node activates it (the library's own behavior) so its real
+    // content becomes scrollable in place, just like in Obsidian. We don't
+    // hijack that click to navigate away — instead each note node gets a
+    // small hover-revealed link for opening it in a new tab. Elements with
+    // the `controls` class are ignored by the library's node-click/select
+    // logic (see InteractionHandler.isUIControl), so this link coexists with
+    // node activation instead of triggering it.
+    function addOpenLinks() {
+      for (const [nodeId, url] of Object.entries(fileUrls)) {
+        const overlay = document.getElementById(nodeId)
+        if (!overlay || !overlay.classList.contains("JCV-overlay-container")) continue
+        if (overlay.querySelector(".canvas-node-open-link")) continue
+        const link = document.createElement("a")
+        link.className =
+          "canvas-node-open-link controls absolute top-1.5 right-1.5 flex h-5 w-5 items-center justify-center rounded border border-lightgray bg-light/80 text-[0.7rem] leading-none text-gray opacity-0 transition-opacity hover:border-secondary hover:text-secondary group-hover:opacity-100"
+        link.href = url
+        link.target = "_blank"
+        link.rel = "noopener"
+        link.title = "Open in new tab"
+        link.setAttribute("aria-label", "Open note in new tab")
+        link.textContent = "↗"
+        overlay.classList.add("group")
+        overlay.appendChild(link)
       }
-    })
+    }
+
+    addOpenLinks()
+    new MutationObserver(addOpenLinks).observe(root, { childList: true, subtree: true })
 
     // Entering/exiting fullscreen resizes the container, but the library's
     // own resize handling only re-centers the existing pan/zoom — it never
     // recomputes the fit-to-bounds scale, so fullscreen opened (and closed)
     // at whatever zoom level the view happened to already be at, needing a
-    // manual scroll to fit. A fixed rAF delay after toggling isn't reliable
-    // in either direction — how long the resize actually takes to land
-    // varies. Instead: arm a flag on toggle, and do the actual refit inside
-    // the library's own onResize hook, which only fires once the container's
-    // clientWidth/clientHeight have genuinely changed — so we're always
-    // reading real post-resize dimensions, however long that took.
+    // manual scroll to fit. We used to arm a flag on the library's
+    // onToggleFullscreen hook and consume it on the next onResize, but that
+    // hook only fires after requestFullscreen()/exitFullscreen() already
+    // resolve — by then the container may have already resized and fired
+    // its one-and-only resize event, so the flag was set too late and the
+    // refit silently never happened (most noticeable on exit). Instead,
+    // watch the container's actual size directly: on every native
+    // fullscreenchange, poll until clientWidth/clientHeight stop moving for
+    // two consecutive frames (bounded, so a stuck transition can't loop
+    // forever), then refit. This has no dependency on hook ordering.
     const dataManager = viewer.container.get(internal.DataManager)
     const controller = viewer.container.get(internal.Controller)
-    let pendingRefit = false
-    dataManager.onToggleFullscreen.subscribe(() => {
-      pendingRefit = true
-    })
-    controller.onResize.subscribe(() => {
-      if (!pendingRefit) return
-      pendingRefit = false
-      dataManager.resetView()
-      controller.refresh()
+    function refitWhenStable(maxFrames = 30) {
+      let lastWidth = -1
+      let lastHeight = -1
+      let stableFrames = 0
+      let frame = 0
+      function tick() {
+        frame++
+        const { clientWidth: width, clientHeight: height } = dataManager.data.container
+        if (width === lastWidth && height === lastHeight) {
+          stableFrames++
+        } else {
+          stableFrames = 0
+          lastWidth = width
+          lastHeight = height
+        }
+        if (stableFrames >= 2 || frame >= maxFrames) {
+          dataManager.resetView()
+          controller.refresh()
+          return
+        }
+        requestAnimationFrame(tick)
+      }
+      requestAnimationFrame(tick)
+    }
+    // fullscreenchange is a document-level event, not scoped to this
+    // container — with more than one canvas on a page, another canvas
+    // toggling fullscreen would otherwise also trigger (and wrongly reset)
+    // this one. Only refit when this container is the one entering
+    // fullscreen, or was the one that just left it (native exits, e.g. Esc,
+    // never call our toggleFullscreen() at all, so this can't key off that).
+    let wasFullscreenHere = false
+    document.addEventListener("fullscreenchange", () => {
+      const isFullscreenHere = document.fullscreenElement === dataManager.data.container
+      if (isFullscreenHere || wasFullscreenHere) refitWhenStable()
+      wasFullscreenHere = isFullscreenHere
     })
 
     const fullscreenBtn = container.querySelector(".canvas-fullscreen-toggle")
@@ -100,3 +152,21 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
     mount(root)
   }
 </script>
+
+<style>
+  /* json-canvas-viewer marks each node overlay `content-visibility: auto` +
+     `contain: strict`, presumably as a perf optimization for large canvases.
+     Combined with the ancestor's `transform: scale()` pan/zoom, this makes
+     Chromium cache a lower-fidelity paint of the (real, DOM-based) node text
+     and not promptly repaint it at full fidelity — nodes look like blurry
+     static thumbnails until clicked (which forces a repaint via the
+     `overflow`/`pointer-events` change on activation), then blur again once
+     deselected. Our vault-sized canvases don't need that optimization, so
+     force full-fidelity rendering at all times instead.
+     :global() is required here — these elements come from `json-canvas-viewer`,
+     not this component's own template, so Astro's scoping wouldn't reach them. */
+  :global(.JSON-Canvas-Viewer .JCV-overlay-container) {
+    content-visibility: visible !important;
+    contain: layout style !important;
+  }
+</style>
