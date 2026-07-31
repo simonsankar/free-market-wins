@@ -23,6 +23,7 @@ const category = entry.id.includes("/")
   category={category}
   url={`/essays/${entry.id}/`}
   description={entry.data.description}
+  cover={entry.data.cover}
 >
   <Content />
 </EssayLayout>
