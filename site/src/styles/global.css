@@ -82,63 +82,74 @@
   --radius-brand: 2px;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--lightgray) var(--light);
-}
+/* @layer base (not left unlayered) so these can actually be overridden by
+   @utility classes below — Tailwind v4 compiles every @utility into its
+   `utilities` layer, and per the CSS cascade-layers spec, UNLAYERED css
+   always wins over ANY layered css regardless of specificity. Plain `a {
+   color: var(--secondary) }` sitting unlayered was silently beating every
+   `.pill:hover`/`.hero-pill:hover`/`[aria-pressed]` color change on every
+   anchor-based button on the site — hover states looked "set" in the
+   utility source but the text color never actually moved, producing
+   gold-on-gold and gold-on-tan text in various theme/hover combinations. */
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--lightgray) var(--light);
+  }
 
-body {
-  background-color: var(--light);
-  color: var(--darkgray);
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+  body {
+    background-color: var(--light);
+    color: var(--darkgray);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
 
-  /* Amber is reserved for accents (hero, badges, hover, underline) — no
-     ambient tint on every page anymore, just the dot grid. */
-  background-image: radial-gradient(var(--lightgray) 1px, transparent 1px);
-  background-size: 26px 26px;
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
+    /* Amber is reserved for accents (hero, badges, hover, underline) — no
+       ambient tint on every page anymore, just the dot grid. */
+    background-image: radial-gradient(var(--lightgray) 1px, transparent 1px);
+    background-size: 26px 26px;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
 
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.035;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
-a {
-  color: var(--secondary);
-}
+  a {
+    color: var(--secondary);
+  }
 
-img,
-pre,
-code,
-a.internal {
-  border-radius: 2px;
-}
+  img,
+  pre,
+  code,
+  a.internal {
+    border-radius: 2px;
+  }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--light);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--lightgray);
-  border: 2px solid var(--light);
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--light);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightgray);
+    border: 2px solid var(--light);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
 }
 
 /* ── Reusable brand utilities ──────────────────────────────────────────────
@@ -150,11 +161,14 @@ a.internal {
    in each template instead of being duplicated here. */
 
 @utility wordmark {
-  font-family: var(--font-header);
+  /* Same font as the nav links beside it (--font-code) — not --font-header,
+     which is what headings/titles use. */
+  font-family: var(--font-code);
+  font-style: italic;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   color: var(--dark);
   text-decoration: none;
   transition: color 0.2s ease;
@@ -481,19 +495,43 @@ a.internal {
 }
 
 @utility hero-bg {
-  background-color: var(--light);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1.5px, transparent 1.5px);
-  background-size: 22px 22px;
-  background-repeat: repeat;
+  /* No fill at all here — the "ink" side isn't painted, it just lets the
+     page's own background (and its own dot-grid texture) show straight
+     through, instead of stacking a second same-colored layer on top of a
+     page that's already that color. At lg+, only the gold wedge actually
+     paints anything: a solid fill plus a rough green-tinted noise texture,
+     both clipped to the wedge via a mask using the identical gradient
+     stops (rather than painting the noise everywhere and hoping it reads
+     as invisible over "ink" — it's genuinely not there).
+
+     The textured fill lives on a ::before, not on this element directly —
+     `mask-image` masks an element's ENTIRE rendered output, real DOM
+     children included, not just its own background layers. Putting it here
+     directly was clipping the actual README text sitting in the "ink" 0-52%
+     region out of existence, not just hiding a background. The pseudo-
+     element only ever paints a background, so masking it can't touch real
+     content — it sits behind the actual column content via z-index. */
+  position: relative;
 
   @media (min-width: 64rem) {
-    background-image:
-      radial-gradient(rgba(0, 0, 0, 0.08) 1.5px, transparent 1.5px),
-      linear-gradient(100deg, var(--light) 0% 52%, var(--hero-gold) 52% 100%);
-    background-size:
-      22px 22px,
-      100% 100%;
-    background-repeat: repeat, no-repeat;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      /* `white`, not `black` — mask-image defaults to luminance mode in some
+         engines and alpha mode in others; white reads as "fully visible"
+         under both interpretations, black would only work under one. */
+      --hero-split: linear-gradient(100deg, transparent 0% 52%, white 52% 100%);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.16  0 0 0 0 0.35  0 0 0 0 0.12  0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+        linear-gradient(100deg, transparent 0% 52%, var(--hero-gold) 52% 100%);
+      background-blend-mode: multiply, normal;
+      background-repeat: repeat, no-repeat;
+      -webkit-mask-image: var(--hero-split);
+      mask-image: var(--hero-split);
+    }
   }
 }
 
