@@ -30,7 +30,7 @@
           id="search-input"
           class="min-w-0 flex-1 border-none bg-transparent font-body text-[1.05rem] text-darkgray outline-none placeholder:text-gray"
           type="text"
-          placeholder="Search essays, definitions, zingers…"
+          placeholder="Search essays, core theory, zingers…"
           autocomplete="off"
           spellcheck="false"
         />
@@ -85,7 +85,7 @@
 
   function collectionLabel(url) {
     if (url.startsWith("/essays/")) return "Essay"
-    if (url.startsWith("/definitions/")) return "Definition"
+    if (url.startsWith("/core-theory/")) return "Core Theory"
     if (url.startsWith("/zingers/")) return "Zinger"
     return null
   }

@@ -6,7 +6,7 @@ import { getGlobalGraph } from "../lib/vault-index.mjs"
 const graph = getGlobalGraph()
 ---
 
-<Layout title="Graph" description="How every essay, definition, and zinger links together.">
+<Layout title="Graph" description="How every essay, core theory entry, and zinger links together.">
   <h1 class="article-title">Graph</h1>
   <p class="max-w-[42rem] text-gray">Every wikilink in the vault, in one view. Click a node to jump to it.</p>
   <Graph id="global" nodes={graph.nodes} edges={graph.edges} height={720} legend />

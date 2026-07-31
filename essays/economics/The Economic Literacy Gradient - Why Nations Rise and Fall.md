@@ -3,6 +3,8 @@ title: The Economic Literacy Gradient - Why Nations Rise and Fall
 date: 2025-10-17
 ---
 
+*This is the narrative case for why the distribution of economic literacy determines national outcomes. For the full 12-level breakdown of where people actually sit, see [[The Political-Economic Literacy Spectrum]].*
+
 ## The Crisis No One Talks About
 
 The vast majority of people are functionally economically illiterate. Not from an academic credential standpoint - plenty of PhD economists are parasitic morons - but from a baseline understanding of how the world actually works.
@@ -15,17 +17,9 @@ This isn't about being in some "tiny educated minority" - though economic litera
 
 ## The NAP: The Line in the Sand
 
-Following Hoppe's framework, there are only two archetypes in economic and political systems: pure capitalism and everything else.
+Following Hoppe: there are only two archetypes, pure capitalism (the institutionalized policy of non-aggression — [[Private Property]], free association, voluntary exchange, no exceptions) and everything else, which is some species of socialism. [[The Non-aggression Principle]] is the line between them — see [[The Political-Economic Literacy Spectrum]] for the full 12-level map of where people land relative to it.
 
-**Capitalism** is the institutionalized policy of non-aggression. Pure protection of [[Private Property]], free association, voluntary exchange - no exceptions. It recognizes and respects property and contract. This is what [[Argumentation Ethics]] proves is the only non-contradictory ethic.
-
-**Socialism** is everything else. All deviations from pure property protection are species of socialism - institutionalized policies of property title redistribution. Hoppe showed that socialism is fundamentally the system that aggresses against property and contract.
-
-[[The Non-aggression Principle]] is therefore the demarcation line. Everything above it represents voluntary cooperation and mutual benefit. Everything below it represents varying degrees of parasitism - the consume-before-produce ethic that can only exist by stealing from those who create value first.
-
-This is the critical insight: **The NAP isn't a preference or a nice ideal. It's the boundary between civilization and barbarism.**
-
-And here's the brutal reality: The overwhelming majority of humanity exists below this line. They don't understand why aggression is wrong. They don't grasp the [[Economic Calculation Problem]]. They can't see that [[Socialism is impossible]]. They're parasites by conviction or by thoughtless acceptance, and their numerical dominance in a population dictates that population's trajectory.
+**The NAP isn't a preference or a nice ideal. It's the boundary between civilization and barbarism.** And the overwhelming majority of humanity sits below that line — not grasping the [[Economic Calculation Problem]], not seeing that [[Socialism is impossible]]. Parasites by conviction or by thoughtless acceptance, and their numerical dominance in a population dictates that population's trajectory.
 
 ## The Bitcoin Litmus Test
 

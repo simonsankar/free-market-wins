@@ -50,7 +50,7 @@ const essays = defineCollection({
   schema: noteSchema,
 })
 
-const definitions = defineCollection({
+const coreTheory = defineCollection({
   loader: glob({
     pattern: ["*.md", "!index.md", "!README.md", "!CLAUDE.md", "!Untitled.md", "!site/**"],
     base: vaultRoot,
@@ -77,4 +77,4 @@ const home = defineCollection({
   schema: noteSchema,
 })
 
-export const collections = { essays, definitions, zingers, home }
+export const collections = { essays, "core-theory": coreTheory, zingers, home }
