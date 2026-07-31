@@ -618,6 +618,79 @@
   box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
 }
 
+/* ── Essay cover hero (EssayLayout.astro) ──────────────────────────────────
+   Manually-supplied `cover` frontmatter renders as a full-bleed banner atop
+   the essay, title/meta overlaid on it — the "typical blog post" top-cover
+   treatment. No generated fallback here (unlike EssayCard's thumbnails):
+   essays without a manual cover just keep the plain title block, so this is
+   opt-in per essay rather than every essay growing a banner. */
+
+@utility essay-hero {
+  position: relative;
+  height: clamp(16rem, 34vw, 26rem);
+  margin-bottom: 3rem;
+  overflow: hidden;
+  background: var(--darkgray);
+}
+
+@utility essay-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 0;
+}
+
+@utility essay-hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* A light overall blue wash (not the site's amber accent — the cover art
+     is a photo/illustration, so it wants a neutral cool tint, not brand
+     color) plus a darkening gradient toward the bottom purely for the
+     overlaid title's legibility. Kept subtle per spec: "obscure it a
+     little, not too much". */
+  background:
+    linear-gradient(180deg, rgba(10, 16, 28, 0.15) 0%, rgba(6, 10, 20, 0.8) 100%),
+    rgba(28, 52, 92, 0.22);
+}
+
+@utility essay-hero-content {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 0 2rem 1.75rem;
+}
+
+@utility essay-hero-pill {
+  margin-bottom: 0.75rem;
+  border-color: rgba(247, 246, 242, 0.35);
+  background: rgba(10, 16, 28, 0.35);
+  color: #f7f6f2;
+}
+
+@utility essay-hero-title {
+  font-family: var(--font-header);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem);
+  color: #f7f6f2;
+  margin: 0;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+@utility essay-hero-date {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: rgba(247, 246, 242, 0.7);
+}
+
 /* ── Graph SVG (Graph.astro) ───────────────────────────────────────────────
    Classes toggled dynamically by the d3-force simulation, not written in
    any template — plain CSS is the right tool here regardless of styling
