@@ -5,6 +5,8 @@ date: 2025-10-18
 
 ## Overview: Understanding the Spectrum
 
+*This is the reference taxonomy — 12 named positions, mapped and cross-examined. For the narrative case on why the distribution itself determines a nation's fate, see [[The Economic Literacy Gradient - Why Nations Rise and Fall|The Economic Literacy Gradient]].*
+
 This spectrum maps political and economic positions based on adherence to [[The Non-aggression Principle]] and economic literacy. It is **not** the traditional left-right spectrum, which Rothbard correctly identified as obsolete and misleading.
 
 ### The Core Framework
@@ -132,13 +134,6 @@ These are the only positions that consistently reject institutionalized aggressi
 - Principled agorists
 - Entrepreneurial ancaps who've built businesses and rejected statism entirely
 
-**Income Correlation:**
-Highest variance. Includes:
-- Successful entrepreneurs and tech founders ($200k+)
-- Austrian economists and libertarian theorists ($80k-$150k)
-- Young agorists building outside the system ($30k-$80k)
-- Bitcoin early adopters (wide range)
-
 **Contradictions:**
 None. This is the only logically consistent position. All criticisms of anarcho-capitalism ultimately rely on accepting aggression as legitimate in certain situations, which is precisely what [[Argumentation Ethics]] proves false.
 
@@ -170,13 +165,6 @@ None. This is the only logically consistent position. All criticisms of anarcho-
 - Former minarchists who were convinced by economic arguments
 - Tech entrepreneurs who see government as inefficient competitor
 - Seasteaders and charter city advocates
-
-**Income Correlation:**
-Generally high earners who've succeeded in markets:
-- Tech sector ($120k-$500k+)
-- Successful entrepreneurs ($150k+)
-- Rationalist community members ($80k-$200k)
-- Finance professionals who understand markets ($150k-$400k)
 
 **Contradictions:**
 Utilitarianism itself is contradictory ([[Utilitarianism]]) - it attempts to convert ordinal preferences to cardinal measurements and requires prior value creation to redistribute. On edge cases, they may accept aggression "if consequences are better," which contradicts NAP and opens door to [[Mixed Law]] reasoning.
@@ -217,13 +205,6 @@ These positions accept the necessity of institutionalized aggression but want to
 - Many Mises Institute readers who aren't full ancap
 - "Constitutional conservative" types who actually mean it
 - Small business owners who want government to leave them alone
-
-**Income Correlation:**
-Upper-middle to high earners who've seen government inefficiency:
-- Business owners ($100k-$300k)
-- Classical liberal academics ($70k-$120k)
-- Successful professionals in private sector ($90k-$200k)
-- Libertarian-leaning tech workers ($100k-$250k)
 
 **Contradictions:**
 Massive and fatal:
@@ -267,13 +248,6 @@ See: [[The Myth of Limited Government]]
 - "Center-right" economists
 - Business chamber of commerce leadership
 - "Fiscal conservative, social liberal" types who mean it
-
-**Income Correlation:**
-Solidly upper-middle class, often in business or academia:
-- Tenured economics professors ($90k-$180k)
-- Upper management in corporations ($120k-$300k)
-- Successful small business owners ($80k-$250k)
-- Finance professionals ($100k-$400k)
 
 **Contradictions:**
 - **Accept central banking** despite Austrian business cycle theory proving it causes boom-bust
@@ -323,13 +297,6 @@ These positions embrace free markets domestically but support massive state inte
 - Small business owners who blame immigrants, not taxes
 - Trade union members who want protectionism
 
-**Income Correlation:**
-Wide range, mostly middle class:
-- Small business owners ($60k-$150k)
-- Skilled tradesmen ($50k-$100k)
-- Middle management ($70k-$120k)
-- Self-employed contractors ($40k-$120k)
-
 **Contradictions:**
 Glaring and numerous:
 - **Against redistribution domestically, for redistribution to military** - taxation is theft unless it's for bombs?
@@ -371,13 +338,6 @@ Glaring and numerous:
 - Corporate executives who love subsidies
 - Suburban "law and order" conservatives
 - Boomer conservatives who watch Fox News
-
-**Income Correlation:**
-Upper-middle to wealthy, but income from state-adjacent sources:
-- Defense contractors ($150k-$500k+)
-- Corporate executives in subsidized industries ($200k-$1M+)
-- Lobbyists and beltway consultants ($150k-$400k)
-- Upper management in legacy corporations ($120k-$300k)
 
 **Contradictions:**
 The entire ideology is contradictory:
@@ -429,13 +389,6 @@ Literally any combination is possible because there's no underlying framework.
 - Suburban moderates who just want everyone to get along
 - Corporate middle managers avoiding controversial opinions
 - "I don't really follow politics" but votes anyway
-
-**Income Correlation:**
-Entire middle class spectrum:
-- Mid-level professionals ($60k-$150k)
-- Dual-income suburban households ($80k-$180k)
-- Small business owners ($50k-$120k)
-- Public sector workers ($50k-$90k)
 
 **Contradictions:**
 **EVERYTHING.** The entire position is contradictory because there is no position.
@@ -491,11 +444,6 @@ These positions explicitly embrace wealth redistribution and state control. They
 - NGO workers
 - Upper-middle class "allies" who virtue signal
 
-**Income Correlation:**
-Bimodal distribution:
-- **High earners who feel guilty:** Academia ($70k-$150k), tech workers ($120k-$250k), inherited wealth ($0k-$500k+)
-- **Low earners who want free stuff:** Service workers ($25k-$45k), part-time activists ($15k-$35k), students ($0k-$30k)
-
 **Contradictions:**
 - **Need capitalism to fund redistribution** - parasites need hosts
 - **"Free" services** - someone pays, you're just hiding the cost
@@ -541,11 +489,6 @@ Bimodal distribution:
 - Trust-fund socialists
 - Baristas with political science degrees
 
-**Income Correlation:**
-Heavily skewed to low earners + wealthy virtue signalers:
-- **Low income:** Service industry ($20k-$40k), gig workers ($15k-$35k), unemployed activists ($0k-$25k)
-- **High income:** Champagne socialists ($150k-$500k+), celebrity activists ($500k+), trust fund kids ($0k earned but wealthy)
-
 **Contradictions:**
 - **Hate capitalism, use iPhones** - everything they use was created by markets
 - **Want to abolish billionaires** - who do they think creates jobs and wealth?
@@ -588,13 +531,6 @@ Heavily skewed to low earners + wealthy virtue signalers:
 - Professional revolutionaries
 - Tankie subreddit users
 - People who unironically say "real socialism hasn't been tried"
-
-**Income Correlation:**
-Extreme bimodal:
-- **Very low income:** Perpetual students ($0k-$20k), career activists ($10k-$30k), unemployed ($0k-$15k)
-- **High income academics:** Tenured Marxist professors ($80k-$150k), think tank socialists ($70k-$120k)
-
-The pattern: people who've never created value in markets
 
 **Contradictions:**
 - **[[Socialism is impossible]]** - Economic Calculation Problem means they cannot efficiently allocate resources
@@ -639,14 +575,6 @@ The pattern: people who've never created value in markets
 - Some academic philosophers
 - Antifa larpers
 - Teenagers who think hammer-and-sickle is edgy
-
-**Income Correlation:**
-Overwhelmingly low income:
-- Students ($0k-$20k)
-- Baristas ($20k-$35k)
-- Unemployed ($0k)
-- Career protesters ($0k-$25k)
-- Very rare: Champagne communists ($100k+) - academics, trust fund radicals
 
 **Contradictions:**
 **Every. Single. Thing.**
@@ -710,27 +638,6 @@ None that are thought-through. They'll agree with:
 - People who accept whatever government does
 - Those who blame "corporations" or "the rich" without understanding markets
 - The masses who enable tyranny through passive acceptance
-
-**Income Correlation:**
-Primarily low-to-lower-middle income:
-- Minimum wage workers ($15k-$30k)
-- Unskilled labor ($25k-$45k)
-- Retail/service industry ($20k-$40k)
-- Some middle-class workers who just clock in/out ($40k-$70k)
-
-**Why They Matter:**
-This is the **largest** category. **40-50%** of any population falls here.
-
-They're not actively parasitic. They're not ideologically committed to statism. They're just... **not thinking**. And that makes them:
-- **Vulnerable to demagoguery:** Promise them free stuff, they'll vote for it
-- **Enablers of tyranny:** They won't resist because they don't understand what's happening
-- **Dead weight:** They don't contribute to political discourse or economic innovation
-
-In democracy, they're **cannon fodder**. Whoever can manipulate them controls policy. They'll vote to rob productive people because they don't understand that redistribution requires prior production. They'll support inflation because they don't grasp that printing money reduces purchasing power.
-
-They're not evil. They're just... **NPCs**. And their massive numbers mean they determine electoral outcomes in democracies, which is why [[Democracy is garbage]].
-
-**Population %:** ~40-50% in developed nations, potentially higher in developing nations (3-4 billion people globally)
 
 **Contradictions:**
 They don't hold positions long enough to contradict themselves. They just... exist. Consume. Work. Repeat. No political thought at all.
