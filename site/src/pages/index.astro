@@ -15,7 +15,7 @@ const essayEntries = await getCollection(
 )
 const recent = essayEntries
   .sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
-  .slice(0, 8)
+  .slice(0, 16)
 
 const [primaryCanvas] = listCanvases()
 const canvasData = primaryCanvas ? loadCanvas(primaryCanvas.rel) : null
