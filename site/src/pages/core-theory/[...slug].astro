@@ -3,7 +3,7 @@ import { getCollection, render } from "astro:content"
 import EssayLayout from "../../layouts/EssayLayout.astro"
 
 export async function getStaticPaths() {
-  const entries = await getCollection("definitions", (e) => e.data.unlisted !== true)
+  const entries = await getCollection("core-theory", (e) => e.data.unlisted !== true)
   return entries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
@@ -17,8 +17,8 @@ const { Content, headings } = await render(entry)
 <EssayLayout
   title={entry.data.title}
   date={entry.data.date}
-  category="Definition"
-  url={`/definitions/${entry.id}/`}
+  category="Core Theory"
+  url={`/core-theory/${entry.id}/`}
   description={entry.data.description}
   headings={headings}
 >
