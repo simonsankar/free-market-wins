@@ -135,10 +135,11 @@ And notice what that does to the standard demand. "Make the rich pay their fair 
 <g transform="translate(50,50)">
 <text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">What they picture</text>
 <g clip-path="url(#cdm-clipA)">
-<use href="#cdm-curve" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.7"/>
-<path d="M0,300 C150,300 214,299 242,196 C262,122 302,122 322,196 C346,299 350,300 360,300" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="var(--secondary, #e0932f)" stroke-width="2.4"/>
+<use href="#cdm-curve" fill="var(--gray, #9a9a9a)" fill-opacity="0.18" stroke="var(--gray, #9a9a9a)" stroke-width="1.8"/>
+<path d="M0,300 C150,300 214,299 242,196 C262,122 302,122 322,196 C346,299 350,300 360,300" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2.4" stroke-dasharray="5 5"/>
 </g>
-<text x="122" y="138" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">today</text>
+<text x="122" y="138" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">today's shape</text>
+<text x="282" y="106" font-size="11.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">imagined result</text>
 <line x1="0" y1="300" x2="360" y2="300" stroke="var(--gray, #9a9a9a)" stroke-width="1.4"/>
 <text x="0" y="322" font-size="12" fill="var(--gray, #9a9a9a)">unproductive</text>
 <text x="360" y="322" font-size="12" fill="var(--gray, #9a9a9a)" text-anchor="end">highly productive</text>
@@ -148,10 +149,11 @@ And notice what that does to the standard demand. "Make the rich pay their fair 
 <g transform="translate(490,50)">
 <text x="0" y="-18" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)">What happens</text>
 <g clip-path="url(#cdm-clipB)">
-<use href="#cdm-curve" fill="none" stroke="var(--gray, #9a9a9a)" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.7"/>
-<g transform="translate(-38,90) scale(1,0.7)"><use href="#cdm-curve" fill="var(--secondary, #e0932f)" fill-opacity="0.18" stroke="var(--secondary, #e0932f)" stroke-width="2.4"/></g>
+<use href="#cdm-curve" fill="var(--gray, #9a9a9a)" fill-opacity="0.18" stroke="var(--gray, #9a9a9a)" stroke-width="1.8"/>
+<g transform="translate(-38,90) scale(1,0.7)"><use href="#cdm-curve" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2.4" stroke-dasharray="5 5"/></g>
 </g>
-<text x="150" y="138" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">before</text>
+<text x="150" y="138" font-size="11.5" fill="var(--gray, #9a9a9a)" text-anchor="middle">today's shape</text>
+<text x="78" y="168" font-size="11.5" font-weight="600" fill="var(--secondary, #e0932f)" text-anchor="middle">actual result</text>
 <line x1="286" y1="132" x2="286" y2="300" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="4 4"/>
 <line x1="292" y1="152" x2="352" y2="152" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#cdm-arrow)"/>
 <text x="292" y="142" font-size="12" fill="#e05a4f">the tail leaves</text>
