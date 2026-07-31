@@ -16,9 +16,10 @@ interface Props {
   url: string
   description?: string
   headings?: Heading[]
+  cover?: string
 }
 
-const { title, date, category, url, description, headings = [] } = Astro.props
+const { title, date, category, url, description, headings = [], cover } = Astro.props
 const backlinks = getBacklinks(url)
 const graph = getLocalGraph(url, title)
 
@@ -33,13 +34,40 @@ const formattedDate = date
 ---
 
 <Layout title={title} description={description}>
+  {
+    cover && (
+      <div class="essay-hero hero-bleed">
+        <img src={cover} alt="" class="essay-hero-img" />
+        <div class="essay-hero-overlay" />
+        <div class="essay-hero-content">
+          {category && <span class="pill essay-hero-pill">{category}</span>}
+          <h1 class="essay-hero-title" data-pagefind-meta="title">
+            {title}
+          </h1>
+          {formattedDate && (
+            <p class="essay-hero-date">
+              <time datetime={date}>{formattedDate}</time>
+            </p>
+          )}
+        </div>
+      </div>
+    )
+  }
   <div
     class="grid max-w-full justify-center gap-14 grid-cols-[minmax(0,48rem)_18rem] max-[1100px]:grid-cols-[minmax(0,48rem)]"
   >
     <article class="min-w-0">
-      <p class="content-meta mb-2 flex items-center gap-3">{category && <span class="pill">{category}</span>}</p>
-      <h1 class="article-title" data-pagefind-meta="title">{title}</h1>
-      <div class="prose-body" data-pagefind-body>
+      {
+        !cover && (
+          <>
+            <p class="content-meta mb-2 flex items-center gap-3">{category && <span class="pill">{category}</span>}</p>
+            <h1 class="article-title" data-pagefind-meta="title">
+              {title}
+            </h1>
+          </>
+        )
+      }
+      <div class={`prose-body ${cover ? "mt-10" : ""}`} data-pagefind-body>
         <slot />
       </div>
       {
