@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content"
 import Layout from "../../layouts/Layout.astro"
 
-const entries = (await getCollection("definitions", (e) => e.data.unlisted !== true)).sort(
+const entries = (await getCollection("core-theory", (e) => e.data.unlisted !== true)).sort(
   (a, b) => a.data.title.localeCompare(b.data.title),
 )
 
@@ -15,11 +15,14 @@ for (const entry of entries) {
 const letters = Array.from(groups.keys()).sort()
 ---
 
-<Layout title="Definitions" description="A searchable glossary of Austrian economics and libertarian terms.">
-  <h1 class="article-title">Definitions</h1>
+<Layout
+  title="Core Theory"
+  description="The standard Austrian-libertarian doctrine — axioms, proofs, and core economic concepts."
+>
+  <h1 class="article-title">Core Theory</h1>
   <p class="max-w-[42rem] text-gray">
-    A glossary of the concepts the essays build on — Austrian economics, natural rights theory,
-    and the arguments against central planning.
+    The body of work the essays build on — Austrian economics, natural rights theory, and the
+    arguments against central planning.
   </p>
 
   <div class="relative my-5 max-w-md">
@@ -33,16 +36,16 @@ const letters = Array.from(groups.keys()).sort()
       <path d="M18 18L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
     </svg>
     <input
-      id="definitions-filter"
+      id="core-theory-filter"
       type="text"
-      placeholder="Filter definitions…"
+      placeholder="Filter core theory…"
       autocomplete="off"
       spellcheck="false"
       class="w-full rounded-[2px] border border-lightgray bg-transparent py-2 pr-3 pl-9 font-body text-sm text-darkgray outline-none placeholder:text-gray focus:border-secondary"
     />
   </div>
 
-  <nav id="definitions-jump" class="mb-6 flex flex-wrap gap-1.5 font-code">
+  <nav id="core-theory-jump" class="mb-6 flex flex-wrap gap-1.5 font-code">
     {
       letters.map((l) => (
         <a
@@ -55,7 +58,7 @@ const letters = Array.from(groups.keys()).sort()
     }
   </nav>
 
-  <div id="definitions-list">
+  <div id="core-theory-list">
     {
       letters.map((letter) => (
         <section data-letter-section class="mt-6">
@@ -64,8 +67,8 @@ const letters = Array.from(groups.keys()).sort()
           </h2>
           <ul class="grid list-none grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-1.5 p-0 m-0">
             {groups.get(letter).map((entry) => (
-              <li data-definition-item data-term={entry.data.title.toLowerCase()}>
-                <a class="internal list-row block px-3 py-1.5 text-sm" href={`/definitions/${entry.id}/`}>
+              <li data-entry-item data-term={entry.data.title.toLowerCase()}>
+                <a class="internal list-row block px-3 py-1.5 text-sm" href={`/core-theory/${entry.id}/`}>
                   {entry.data.title}
                 </a>
               </li>
@@ -75,14 +78,14 @@ const letters = Array.from(groups.keys()).sort()
       ))
     }
   </div>
-  <p id="definitions-empty" class="mt-6 hidden font-code text-xs text-gray">No definitions match your filter.</p>
+  <p id="core-theory-empty" class="mt-6 hidden font-code text-xs text-gray">No entries match your filter.</p>
 </Layout>
 
 <script>
-  const input = document.getElementById("definitions-filter") as HTMLInputElement | null
-  const sections = document.querySelectorAll<HTMLElement>("#definitions-list [data-letter-section]")
-  const empty = document.getElementById("definitions-empty")
-  const jump = document.getElementById("definitions-jump")
+  const input = document.getElementById("core-theory-filter") as HTMLInputElement | null
+  const sections = document.querySelectorAll<HTMLElement>("#core-theory-list [data-letter-section]")
+  const empty = document.getElementById("core-theory-empty")
+  const jump = document.getElementById("core-theory-jump")
 
   input?.addEventListener("input", () => {
     const term = input.value.trim().toLowerCase()
@@ -90,7 +93,7 @@ const letters = Array.from(groups.keys()).sort()
 
     sections.forEach((section) => {
       let sectionHasMatch = false
-      section.querySelectorAll<HTMLElement>("[data-definition-item]").forEach((item) => {
+      section.querySelectorAll<HTMLElement>("[data-entry-item]").forEach((item) => {
         const match = !term || (item.dataset.term ?? "").includes(term)
         item.style.display = match ? "" : "none"
         if (match) sectionHasMatch = true

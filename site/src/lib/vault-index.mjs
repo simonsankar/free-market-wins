@@ -50,15 +50,15 @@ function collectionForRel(rel) {
   const segments = rel.split(path.sep)
   if (segments[0] === "essays") return "essays"
   if (segments[0] === "zingers") return "zingers"
-  if (segments.length === 1) return "definitions"
+  if (segments.length === 1) return "core-theory"
   return null
 }
 
 function urlForRel(rel, collection) {
   const segments = rel.split(path.sep)
   const base = path.basename(rel, ".md")
-  if (collection === "definitions") {
-    return `/definitions/${slugify(base)}/`
+  if (collection === "core-theory") {
+    return `/core-theory/${slugify(base)}/`
   }
   if (collection === "zingers") {
     return `/zingers/${slugify(base)}/`

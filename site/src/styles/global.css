@@ -728,7 +728,7 @@ html.graph-lock-scroll {
 .graph-node--zingers circle {
   fill: var(--tertiary);
 }
-.graph-node--definitions circle {
+.graph-node--core-theory circle {
   fill: var(--gray);
 }
 .graph-node--self circle {
