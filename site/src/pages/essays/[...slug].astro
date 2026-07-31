@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props
-const { Content } = await render(entry)
+const { Content, headings } = await render(entry)
 const category = entry.id.includes("/")
   ? entry.id.split("/")[0].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
   : undefined
@@ -23,6 +23,7 @@ const category = entry.id.includes("/")
   category={category}
   url={`/essays/${entry.id}/`}
   description={entry.data.description}
+  headings={headings}
 >
   <Content />
 </EssayLayout>
