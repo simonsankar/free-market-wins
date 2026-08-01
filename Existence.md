@@ -8,7 +8,7 @@ date: 2025-09-14
 
 ## The Axiom
 
-Existence is the first and widest of all [[Axioms]]. It is the fact that there IS something rather than nothing. This axiom subsumes everything:
+Existence is the first and widest of all [[Axioms as Invulnerable|axioms]]. It is the fact that there IS something rather than nothing. This axiom subsumes everything:
 - Every entity that exists
 - Every action that occurs  
 - Every attribute of every entity
