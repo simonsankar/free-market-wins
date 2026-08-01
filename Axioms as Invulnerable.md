@@ -3,7 +3,7 @@ title: Axioms as Invulnerable
 date: 2024-03-14
 ---
 
-There are three fundamental [[Axioms]] in metaphysics
+There are three fundamental axioms in metaphysics
 - [[Existence]]
 - [[Identity]]
 - [[Consciousness]]

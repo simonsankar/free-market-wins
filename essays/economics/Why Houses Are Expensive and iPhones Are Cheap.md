@@ -3,47 +3,13 @@ title: Why Houses Are Expensive and iPhones Are Cheap
 date: 2025-11-15
 ---
 
-## Inflation Isn't Just Prices Rising—It's Prices Not Falling
+## The iPhone vs. The House
 
-When people talk about inflation, they think: "Prices go up."
+[[The Praxeological Case Against All Inflation|Inflation isn't just prices rising — it's the prevention of prices falling]] the way productivity gains say they should. The clearest illustration is two goods that started from the same place and ended up nowhere near each other.
 
-That's only half the picture. **Inflation also means prices don't fall when they should.**
+In 2007, the first iPhone cost $499 for 4GB of storage. In 2025, an iPhone costs ~$800 for 128GB, plus a 1000x faster processor, a professional camera, an OLED display, and 5G. **You're paying 1.6x more for something 100x better** — in real terms, dramatically cheaper. Nobody buys an iPhone to preserve wealth; it's used, consumed, replaced, and competition drives the price down over time.
 
-Under capitalism, productivity increases and technology improves. This should make prices *fall* while quality rises. But inflation prevents this natural price deflation.
-
-## The iPhone: Capitalism Working Correctly
-
-In 2007, the first iPhone cost $499 for 4GB of storage.
-
-In 2025, an iPhone costs ~$800 for 128GB of storage, plus 1000x faster processor, professional camera, OLED display, face recognition, and 5G.
-
-**You're paying 1.6x more for something that's 100x better.** In real terms, dramatically cheaper.
-
-Why? Because iPhones are **consumption goods**, not stores of value:
-- Nobody buys iPhones to preserve wealth
-- Nobody hoards them as inflation hedges
-- They're used, consumed, replaced
-- Competition drives innovation
-- Productivity gains lower prices
-
-**Result: Better and cheaper over time.**
-
-## The Housing Anomaly
-
-In 1920, a Sears mail-order home cost $1,500-$2,000.
-
-In 2025, a basic starter home costs $150,000-$250,000. **100x increase.**
-
-Since 1920, construction productivity has exploded:
-- Power tools vs hand tools
-- Prefabrication and modular construction
-- Advanced materials and heavy machinery
-- Computer-aided design
-- Assembly-line techniques
-
-We can build houses **faster, better, and with less labor** than in 1920.
-
-So why are houses 100x more expensive instead of 10x better for 1/10th the price?
+In 1920, a Sears mail-order home cost $1,500–$2,000. In 2025, a basic starter home costs $150,000–$250,000 — a 100x increase, despite construction productivity (power tools, prefabrication, CAD, assembly-line techniques) exploding over the same period. We can build houses faster, better, and with less labor than in 1920. So why didn't the price fall the way the iPhone's did?
 
 **Because houses stopped being consumption goods and became stores of value.**
 
@@ -65,49 +31,7 @@ So why are houses 100x more expensive instead of 10x better for 1/10th the price
 </g>
 </svg>
 
-## What Should Have Happened
-
-Under sound money (no inflation), productivity gains would have delivered:
-
-**1920**: $2,000 for basic house
-
-**2025 (sound money)**:
-- Same quality → $200-$500 (productivity/automation)
-- Modern house (electricity, plumbing, HVAC, insulation) → $2,000-$10,000
-
-Like iPhones: way better product for the same or lower nominal price.
-
-**2025 (actual fiat reality)**:
-- Modern house → $250,000
-
-The productivity gains are real—but they're absorbed by the monetary premium on land, not passed to consumers.
-
-## Why Land Became "Special" (It's Not Inherent)
-
-**The Chain:**
-
-1. **Fiat money destroys savings** → Holding cash loses purchasing power annually (especially post-1971)
-
-2. **People need to store wealth** → Can't use currency, must use assets:
-   - Stocks (volatile, requires expertise)
-   - Gold (hard to store, government can confiscate)
-   - Bonds (denominated in inflating currency)
-   - **Land/Real Estate** (fixed supply, tangible, necessary)
-
-3. **Land becomes default wealth storage** → People buy houses not primarily to live in them, but as the least-bad option for preserving wealth
-
-4. **Self-fulfilling cycle**:
-   - Land prices rise (wealth preservation demand)
-   - Rising prices "prove" land is a good investment
-   - More people buy to preserve wealth
-   - Prices rise further
-   - Repeat
-
-5. **Productivity gains captured by land premium**:
-   - Builder: "I can build this for $50k instead of $100k!"
-   - Market: "Great, but the land underneath is now $200k instead of $100k"
-
-**This is monetary, not real scarcity.**
+Fiat money destroys savings, so people need somewhere to park wealth that isn't cash — stocks, gold, bonds, or land. Land wins by default: fixed supply, tangible, and something people need anyway. Once enough people buy houses to store wealth rather than to live in them, rising prices "prove" land is a good investment, which pulls in more buyers, which pushes prices further — a self-fulfilling cycle with nothing to do with how cheap it's become to actually build a house. This is monetary, not real, scarcity.
 
 ## The Substitution Test: Land Isn't Inherently Special
 
@@ -141,68 +65,9 @@ People would say: "Picassos are special! They're not making any more!"
 - Yes, but suburban homes aren't expensive because of oil reserves
 - Residential land is expensive because people need to store wealth and housing is necessary
 
-## Measuring in Labor Hours, Not Inflated Dollars
+Measured in labor hours instead of inflated dollars, the gap is starker: an 800-hour house in 1920 would cost 100–200 hours today under sound money, given the productivity gains — instead it costs roughly 6,250 hours. You're working *more* for housing than your great-grandparents did, despite construction being an order of magnitude more productive. That gap didn't vanish. It went into the monetary premium on land.
 
-The common mistake is comparing nominal dollars adjusted for "inflation." This accepts the frame that inflation is natural.
-
-**The right comparison:**
-
-- **1920**: 800 hours of labor = basic house
-- **2025 with sound money**: 100-200 hours of labor = vastly better house (due to productivity)
-- **2025 with fiat**: 6,250 hours of labor = better house (productivity gains eaten by monetary premium)
-
-**You're working MORE hours for housing in 2025 than 1920, despite construction being 10x more productive.**
-
-Where did the gains go? **Into the monetary premium on land.**
-
-## The Cycle
-
-1. Government prints money → Currency loses value
-2. People need to save → Can't use currency, must use assets
-3. Land is fixed + necessary → Becomes preferred savings vehicle
-4. Artificial demand → Prices rise beyond utility value
-5. Rising prices → "Land is a great investment!"
-6. More buyers → Prices rise further
-7. Productivity gains → Absorbed by land prices, not passed to consumers
-8. Housing unaffordable → People blame capitalism, landlords, foreigners
-9. Government intervenes → Rent control, subsidies, public housing (all fail)
-10. Repeat
-
-Root cause is #1 (money printing), but everyone focuses on #8 (symptoms).
-
-## Why Housing Is Uniquely Distorted
-
-**Consumption goods** (iPhones): Monetary inflation balanced by productivity gains → roughly stable prices
-
-**Store-of-value goods** (land, stocks, art): Monetary inflation + artificial demand → skyrocketing prices
-
-Housing suffers the worst distortion because it's **both**:
-- Consumption good (you need shelter)
-- Store of value (people hoard to preserve wealth)
-
-Inelastic demand (shelter) + artificial demand (wealth preservation) + fixed supply (land) = prices to the moon.
-
-## What Bitcoin Changes
-
-Bitcoin provides what fiat destroyed: **reliable store of value**.
-
-- **Scarce**: 21 million cap, can't print more
-- **Portable**: Carry wealth in your head (12-word seed)
-- **Divisible**: Infinitely divisible (satoshis)
-- **Unforgeable**: Cryptographically secured
-- **Unseizable**: Self-custody (if done right)
-- **Borderless**: Global, no government control
-
-For the first time since 1971, people can save in an asset that isn't inflated away, doesn't require maintenance, isn't confiscatable, and has no counterparty risk.
-
-**As people move wealth from real estate to Bitcoin:**
-
-1. Demand for land as store-of-value decreases → Monetary premium fades
-2. Land returns to utility pricing → Priced for shelter value, not wealth storage
-3. Productivity gains flow to consumers → Houses get better AND cheaper
-4. Housing becomes affordable → Priced like iPhones, not gold
-
-In a Bitcoin-denominated world, houses cost 0.5-2 BTC for a starter home, and that BTC-price **falls** over time as construction improves.
+Bitcoin fixes the underlying problem by giving people something to save in that fiat can't touch — scarce, portable, self-custodied, borderless. As wealth moves from real estate to Bitcoin, demand for land as a store of value fades, land returns to being priced for shelter rather than wealth storage, and productivity gains start flowing to consumers again instead of being captured by the monetary premium.
 
 ## The $100M Question: Bitcoin vs Real Estate for Wealth Storage
 
@@ -333,63 +198,10 @@ The only reason to choose real estate is if you **don't understand Bitcoin** or 
 
 But "always been safe" just means "was the best option when we had broken money." Now we have sound money. The game changed.
 
-## The Broader Principle
-
-Inflation is **prevention of natural price deflation.**
-
-Throughout the 1800s-early 1900s, prices generally fell as productivity increased. A day's wages bought more every year.
-
-Post-1971, this stopped. Prices rise even as productivity increases because new money floods the economy.
-
-Every industry should follow the iPhone path under capitalism:
-- Competition → innovation
-- Productivity → lower costs
-- Prices fall, quality rises
-- Consumers win
-
-This only fails when monetary policy interferes.
-
 ## Conclusion
 
-Land isn't inherently special. It became special because fiat money is broken.
+Land isn't inherently special. It became special because fiat money is broken — if Picassos were necessary for shelter, Picassos would be expensive too. Land is expensive because it's the best available wealth storage in a fiat world. Remove that function and it returns to utility pricing.
 
-- If Picassos were necessary and fixed, they'd be expensive
-- If iPhones were fixed and used for wealth storage, they'd be expensive
-- **Land is expensive because it's the best available wealth storage in a fiat world**
+**The 1920 Sears catalog wasn't a scam — it was capitalism working.** Houses were commodities, like furniture. The scam is convincing people it's normal for housing to consume 30% of income and require 30-year debt. That's not capitalism. That's monetary distortion, and Bitcoin is the fix.
 
-Remove that function (via Bitcoin), and land returns to utility pricing:
-- Houses cost 0.5-2 BTC (falling over time)
-- Quality improves (competition for consumers, not investors)
-- Ownership becomes achievable
-- Productivity gains flow to buyers
-
-**The 1920 Sears catalog wasn't a scam—it was capitalism working.** Houses were commodities, like furniture.
-
-The scam is convincing people it's normal for housing to consume 30% of income and require 30-year debt.
-
-That's not capitalism. That's monetary distortion.
-
-Bitcoin fixes this.
-## Key Insights
-
-1. **Inflation = prices not falling when they should**
-2. **iPhones get better and cheaper** (consumption goods under capitalism)
-3. **Houses get better but far more expensive** (forced into store-of-value role by fiat)
-4. **Productivity gains are absorbed by monetary premium**, not passed to consumers
-5. **Land isn't inherently special**—any fixed-supply necessary good would be expensive under fiat
-6. **Self-fulfilling cycle**: buy land to save → prices rise → buy more → repeat
-7. **Measure in labor hours, not inflated dollars**: You work MORE hours for housing now despite 10x productivity
-8. **Bitcoin outperforms real estate by 10x** (+56% vs +6% annualized since 2020)
-9. **State "protection" of land is permission, not ownership**—can be revoked via taxes, seizure, regulation
-10. **Bitcoin has superior security** (multisig, timelocks, geographic distribution, pseudonymity)
-11. **Societal acceptance follows performance**—Bitcoin's dominance ensures growing recognition
-12. **Bitcoin breaks the cycle** by providing superior store of value
-13. **Future**: Houses priced in BTC, falling in real terms, following iPhone trajectory
-
-**When Bitcoin succeeds:** The question won't be "can you afford a house?" It'll be "which of these amazing cheap houses do you want?"
-
-Just like you don't ask "can I afford a computer?" You ask "which features do I want?"
-
-That's sound money. That's capitalism without monetary interference.
-
-The Sears catalog was a glimpse of what's possible when money works.
+*See also: [[The Praxeological Case Against All Inflation]], [[Bitcoin]], [[Sound Money]]*

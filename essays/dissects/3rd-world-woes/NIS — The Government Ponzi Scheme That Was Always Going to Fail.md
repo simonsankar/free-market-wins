@@ -179,7 +179,7 @@ NIS was never going to work. Not because of demographic shifts. Not because of b
 
 The government cannot know the right retirement age. It cannot know the right contribution rate. It cannot know the right benefit level. It is groping in the dark — with your money — and when it gropes into a wall, it reaches into your pocket again and announces a new groping direction.
 
-The [[Axioms]] are unambiguous: you own yourself, you own the product of your labor, and no third party has the right to redirect it — regardless of how good their actuarial projections look or how many other countries are making the same error. Forced participation in a government pension scheme is aggression against peaceful people. The fact that it also fails economically is almost a secondary point. The primary point is that it was wrong from the first paycheck deduction.
+[[Self-ownership]] is unambiguous: you own yourself, you own the product of your labor, and no third party has the right to redirect it — regardless of how good their actuarial projections look or how many other countries are making the same error. Forced participation in a government pension scheme is aggression against peaceful people. The fact that it also fails economically is almost a secondary point. The primary point is that it was wrong from the first paycheck deduction.
 
 The market alternative is not complicated: let people keep their money, let private pension providers compete for their business, let price signals determine optimal retirement savings vehicles, and let individuals — who actually bear the cost of their own retirement — make the decisions about how to fund it.
 
