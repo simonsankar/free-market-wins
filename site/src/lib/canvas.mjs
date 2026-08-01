@@ -1,6 +1,6 @@
 import fs from "node:fs"
 import path from "node:path"
-import { VAULT_ROOT, slugify, resolveNote } from "./vault-index.mjs"
+import { VAULT_ROOT, slugify, resolveNote, imagesByBasename } from "./vault-index.mjs"
 
 const IGNORE_DIRS = new Set([
   "site",
@@ -46,6 +46,13 @@ export function listCanvases() {
 //    embedded straight into the card as "content").
 //  - `fileUrls`: node id -> site URL, so clicking a file card navigates to
 //    the real note page instead of just previewing it inline.
+//  - `images`: image basename (lowercase) -> a real fetchable `/vault-assets/`
+//    URL. The library's built-in `parser` is plain `marked`, which has no
+//    idea what Obsidian's `![[image.png]]` embed syntax means and renders it
+//    as literal text — this map lets the client-side parser wrapper rewrite
+//    those embeds into real `![alt](url)` markdown before handing off to
+//    `marked`, the same resolution `remark-vault-links.mjs` does for regular
+//    note pages.
 export function loadCanvas(rel) {
   const raw = fs.readFileSync(path.join(VAULT_ROOT, rel), "utf8")
   const canvas = JSON.parse(raw)
@@ -61,5 +68,10 @@ export function loadCanvas(rel) {
     attachments[n.file] = `/vault-notes/${entry.rel.split(path.sep).map(encodeURIComponent).join("/")}`
   }
 
-  return { canvas, attachments, fileUrls }
+  const images = {}
+  for (const [basename, imgRel] of imagesByBasename) {
+    images[basename] = `/vault-assets/${imgRel.split(path.sep).map(encodeURIComponent).join("/")}`
+  }
+
+  return { canvas, attachments, fileUrls, images }
 }

@@ -4,10 +4,11 @@ interface Props {
   canvas: { nodes: unknown[]; edges: unknown[] }
   attachments: Record<string, string>
   fileUrls: Record<string, string>
+  images?: Record<string, string>
   height?: number
 }
 
-const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
+const { id, canvas, attachments, fileUrls, images = {}, height = 640 } = Astro.props
 ---
 
 <div
@@ -25,6 +26,7 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
 <script type="application/json" id={`canvas-data-${id}`} set:html={JSON.stringify(canvas)} />
 <script type="application/json" id={`canvas-attachments-${id}`} set:html={JSON.stringify(attachments)} />
 <script type="application/json" id={`canvas-urls-${id}`} set:html={JSON.stringify(fileUrls)} />
+<script type="application/json" id={`canvas-images-${id}`} set:html={JSON.stringify(images)} />
 
 <script>
   import { JSONCanvasViewer, parser, internal } from "json-canvas-viewer"
@@ -37,9 +39,26 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
     const dataEl = document.getElementById(`canvas-data-${id}`)
     const attachmentsEl = document.getElementById(`canvas-attachments-${id}`)
     const urlsEl = document.getElementById(`canvas-urls-${id}`)
+    const imagesEl = document.getElementById(`canvas-images-${id}`)
     const canvas = JSON.parse(dataEl.textContent || "{}")
     const attachments = JSON.parse(attachmentsEl.textContent || "{}")
     const fileUrls = JSON.parse(urlsEl.textContent || "{}")
+    const images = JSON.parse(imagesEl?.textContent || "{}")
+
+    // The library's file-preview cards fetch a note's raw markdown and hand
+    // it to `parser` (plain `marked`) as-is, so Obsidian's `![[image.png]]`
+    // embed syntax comes through as literal text instead of an <img> — marked
+    // has no notion of wikilinks. Rewrite embeds of known vault images into
+    // real `![alt](url)` markdown before handing off to the library's parser.
+    const EMBED_RE = /!\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g
+    function resolveImageEmbeds(markdown) {
+      return markdown.replace(EMBED_RE, (match, target, alias) => {
+        const url = images[target.trim().toLowerCase()]
+        if (!url) return match
+        return `![${alias?.trim() ?? target.trim()}](${url})`
+      })
+    }
+    const canvasParser = (markdown) => parser(resolveImageEmbeds(markdown))
 
     function currentSiteTheme() {
       const explicit = document.documentElement.getAttribute("data-theme")
@@ -51,7 +70,7 @@ const { id, canvas, attachments, fileUrls, height = 640 } = Astro.props
       container: root,
       canvas,
       attachments,
-      parser,
+      parser: canvasParser,
       theme: currentSiteTheme(),
     })
 
