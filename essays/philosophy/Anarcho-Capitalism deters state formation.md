@@ -22,3 +22,5 @@ A business, however, _is funded by its customers_, so if business A wants to war
 
 Though theoretically possible, the realistic odds are far too low to be considered a real _threat_ or serious critique of [[Anarcho-Capitalism]] since a state **is** the status quo we live in.
 
+*See also: [[To Think Like an Anarcho-Capitalist]] for the complementary legitimacy-withdrawal argument against state re-formation.*
+
