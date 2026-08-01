@@ -3,7 +3,9 @@ title: Axioms as Invulnerable
 date: 2024-03-14
 ---
 
-There are three fundamental [[Axioms]] in metaphysics
+An **axiom** is a self-evident truth that requires no proof — you cannot argue against one without presupposing it, which is what makes denying it self-refuting.
+
+There are three fundamental axioms in metaphysics
 - [[Existence]]
 - [[Identity]]
 - [[Consciousness]]

@@ -87,16 +87,7 @@ Price reflects relative scarcity and facilitates trade - it does not measure val
 
 ### The Economic Calculation Problem
 
-This is why socialism is **impossible**, not merely undesirable.
-
-Mises' argument:
-1. Socialism abolishes private property in capital goods and resources
-2. Without private property, resources cannot be exchanged
-3. Without exchange, there can be no market prices
-4. Without market prices, the state cannot calculate costs of production
-5. Without economic calculation, socialist planners cannot know the most valuable uses of scarce resources
-
-Central planners are groping in the dark. Without price signals, they cannot economize properly - they cannot assess the performance and efficiency of their proposed solutions. Socialism doesn't just fail in practice; it's logically impossible.
+This is why [[Socialism is impossible|socialism is impossible]], not merely undesirable: abolish private property in capital goods and you abolish exchange, abolish exchange and you abolish prices, abolish prices and central planners are groping in the dark, unable to compare alternative uses of scarce resources. Socialism doesn't just fail in practice; it's logically impossible.
 
 ### The Knowledge Problem
 
@@ -114,13 +105,7 @@ Every individual's taxes are a misallocation of resources. Taxation affects all 
 
 ### Democracy is Mob Rule
 
-Democracy isn't enlightened governance - it's mob rule with better PR. The core mechanism is unchanged: the majority gets to impose its will on the minority through institutionalized force.
-
-The supposed "guardrails" (constitutions, bills of rights) are enforced by the democratic government itself. If the majority votes to change the rules, what stops them? The courts are appointed by the democratic government. The constitution can be amended democratically. Democracy contains no mechanism to prevent mob rule because democracy **is** mob rule.
-
-Examples: Venezuela elected Maduro. Germany elected Hitler. Bolivia elected communist wealth confiscators. Zimbabwe elected Mugabe. In each case, the "guardrails" either didn't exist, were circumvented, or were democratically modified.
-
-Democracy gives you exactly what you voted against. If 51% vote for Policy X and 49% vote against it, everyone gets Policy X - including the 49% who opposed it. No optionality. No recourse. Just forced compliance.
+Democracy isn't enlightened governance - it's mob rule with better PR. The majority imposes its will on the minority through institutionalized force, and the supposed "guardrails" are enforced by the democratic government itself, so they bend whenever the majority does. See [[Democracy is garbage]] for the full case.
 
 ### Inverse Incentive Structures
 
@@ -187,7 +172,7 @@ The common objection: "Won't a state form in anarcho-capitalism?"
 
 First, this is an appeal to futility. "Murder happens, so why have laws against it?" The fact that people might violate the NAP doesn't make the NAP less valid.
 
-Second, anarcho-capitalism deters state formation. States form when people grant them legitimacy. Once you understand that the state operates through aggression, that taxation is theft, and that democracy is mob rule - you stop granting them that legitimacy. The ideological foundation for the state collapses.
+Second, [[Anarcho-Capitalism deters state formation|anarcho-capitalism deters state formation]]. States form when people grant them legitimacy. Once you understand that the state operates through aggression, that taxation is theft, and that democracy is mob rule - you stop granting them that legitimacy. The ideological foundation for the state collapses. There's also a purely economic reason it doesn't re-form: a would-be aggressor has no money-printer or standing army to seize, and buying out competition at real cost funds its rivals' self-defense in the process.
 
 Third, even if a state did form, we'd be no worse off than we are now. The entire argument presupposes that we need the current state to prevent a future state. That's like saying we need the mafia to prevent organized crime.
 
