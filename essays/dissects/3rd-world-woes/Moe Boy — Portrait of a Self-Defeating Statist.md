@@ -234,7 +234,7 @@ _The 21M cap stands. The prediction is dead. Ironic who was right about dead thi
 
 ## IX. The Academic Achievement Trap: Witnessed in Real Time
 
-This section is structural, not personal. The critique isn't about one man — it's about what the system produces, and Moe Boy is a clean, close-up example of a pattern described in full in [[The Academic Achievement Trap - Trinidad Scholarship Edition]].
+This section is structural, not personal. The critique isn't about one man — it's about what the system produces, and Moe Boy is a clean, close-up example of the scholarship-bond pattern described in [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]].
 
 The pattern: academically capable person plays the institutional game correctly, earns the credentials, gets the degree. The school system promises this pays off. Then — typically through some combination of government scholarship bonds, bureaucratic inertia, and the absence of independent judgment — the person ends up squandering their prime career-building years in government dysfunction, exits late with degraded human capital, and lands somewhere adjacent to where they started. The market laps them. They end up working for companies that serve the same government they should have left years earlier.
 
@@ -246,7 +246,7 @@ Thomas Sowell's _Intellectuals and Society_ identifies the exact failure mode: a
 
 It doesn't. It never did. Noam Chomsky is a world-class linguist and an economic illiterate who has defended some of the most empirically discredited positions in modern political thought. The mechanism is identical: genuine narrow expertise, unwarranted expansion into domains where the track record is zero. 🎓
 
-The [[The Academic Achievement Trap - Trinidad Scholarship Edition]] also identifies the guardrails dependency problem: academic training teaches you to succeed by following step-by-step institutional instructions. _"Take these courses. Get this GPA. Complete this degree. Join this ministry."_ At every stage, the next move is prescribed. The skill being developed is not independent judgment — it's compliance with external direction. Then the guardrails end, and the person is suddenly required to do something the entire system failed to train them for: make an independent judgment call with no prescribed answer.
+That same essay also identifies the guardrails dependency problem: academic training teaches you to succeed by following step-by-step institutional instructions. _"Take these courses. Get this GPA. Complete this degree. Join this ministry."_ At every stage, the next move is prescribed. The skill being developed is not independent judgment — it's compliance with external direction. Then the guardrails end, and the person is suddenly required to do something the entire system failed to train them for: make an independent judgment call with no prescribed answer.
 
 He renewed for a second government year. That's the guardrails dependency problem made visible. Someone with independent judgment would have done the cost-benefit calculation after year one, recognised the human capital decay in real time, and exited immediately. Instead: another year of institutional direction, another year of waiting for the prescribed next step to appear.
 
