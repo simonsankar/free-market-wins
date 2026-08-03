@@ -296,4 +296,4 @@ You don't get to move the curve. You only get to decide where it sits.
 - **Frédéric Bastiat** — the state as the fiction by which everyone tries to live at everyone else's expense.
 - **Stratino Lampino**, *The Anarchist Solution* (2024), Part One — the Crusoe framework, produce-or-perish, and the demonstration that parasitism is purely interpersonal and cannot exist without a productive host.
 
-Related: [[The Anarcho-Capitalist Checkmate]] · [[Absurdity in paying it forward]] · [[The Economic Literacy Gradient - Why Nations Rise and Fall]] · [[The Confiscation Fantasy — Why Seizing Every Billionaire Wouldn't Help You]] · [[Parasitism]] · [[Socialism is impossible]]
+Related: [[The Anarcho-Capitalist Checkmate]] · [[The Absurdity of Taxation]] · [[The Economic Literacy Gradient - Why Nations Rise and Fall]] · [[The Confiscation Fantasy — Why Seizing Every Billionaire Wouldn't Help You]] · [[Parasitism]] · [[Socialism is impossible]]

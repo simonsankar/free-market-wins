@@ -5,6 +5,12 @@ date: 2026-01-17
 
 The claim that inflation can be beneficial — if only we find the "optimal rate" — is one of the most pervasive economic fallacies of our time. This essay demonstrates, through praxeological reasoning, why inflation is *always* harmful, regardless of the rate, and why no central planner can ever determine an "optimal" amount of monetary debasement.
 
+## Keynesianism Is This, With a Name
+
+Keynesian economics is the mainstream doctrine that takes the "beneficial ventures" and "optimal rate" fallacies dismantled below and turns them into official policy: government should spend money it doesn't have, funded by fiat issuance and deficit financing, because the spending itself is claimed to create growth. Strip away the jargon about aggregate demand and multipliers, and it's the identical mechanism this whole essay describes — the state creates new claims on wealth, spends them at old prices before the market catches up, and calls the resulting transfer "stimulus."
+
+**The desert island test.** Imagine you're alone on an island, trading seashells for coconuts and fish. Can you "stimulate" the economy by minting more seashells? Obviously not — you still have the same number of coconuts and fish. Add other islanders and the trick doesn't change: printing new seashells doesn't create a single additional coconut. It just lets whoever prints them eat coconuts they didn't gather, at the expense of whoever did. Every Keynesian spending program is this island, scaled up and dressed in econometrics.
+
 ## The Two Pie Charts: Money and Goods
 
 To understand inflation, we must first understand what money actually *is*. Money is not wealth — it is a *claim* on wealth. The total money supply represents the totality of claims, and the total goods and services represent the totality of wealth those claims can purchase.
@@ -1283,4 +1289,4 @@ Inflation isn't a tool for growth. It's a mechanism for theft dressed up in econ
 
 ---
 
-*See also: [[Austrian Economics]], [[Economic Calculation Problem]], [[Fiat Currency]], [[The Failure of Keynesian Economics]], [[Taxation]], [[Cantillon Effect]]*
+*See also: [[Austrian Economics]], [[Economic Calculation Problem]], [[Fiat Currency]], [[Taxation]], [[Cantillon Effect]]*
