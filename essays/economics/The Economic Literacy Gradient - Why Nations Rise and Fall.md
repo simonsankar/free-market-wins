@@ -3,8 +3,6 @@ title: The Economic Literacy Gradient - Why Nations Rise and Fall
 date: 2025-10-17
 ---
 
-*This is the narrative case for why the distribution of economic literacy determines national outcomes. For the full 12-level breakdown of where people actually sit, see [[The Political-Economic Literacy Spectrum]].*
-
 ## The Crisis No One Talks About
 
 The vast majority of people are functionally economically illiterate. Not from an academic credential standpoint - plenty of PhD economists are parasitic morons - but from a baseline understanding of how the world actually works.
@@ -17,9 +15,36 @@ This isn't about being in some "tiny educated minority" - though economic litera
 
 ## The NAP: The Line in the Sand
 
-Following Hoppe: there are only two archetypes, pure capitalism (the institutionalized policy of non-aggression — [[Private Property]], free association, voluntary exchange, no exceptions) and everything else, which is some species of socialism. [[The Non-aggression Principle]] is the line between them — see [[The Political-Economic Literacy Spectrum]] for the full 12-level map of where people land relative to it.
+Following Hoppe: there are only two archetypes, pure capitalism (the institutionalized policy of non-aggression — [[Private Property]], free association, voluntary exchange, no exceptions) and everything else, which is some species of socialism. [[The Non-aggression Principle]] is the line between them. Above it: positions that reject institutionalized aggression outright. Below it: everything else — minarchism, democracy, conservatism, progressivism, socialism, communism — is just varying degrees of the same violation, arguing over how much aggression to permit and against whom, not whether to permit it at all.
 
 **The NAP isn't a preference or a nice ideal. It's the boundary between civilization and barbarism.** And the overwhelming majority of humanity sits below that line — not grasping the [[Economic Calculation Problem]], not seeing that [[Socialism is impossible]]. Parasites by conviction or by thoughtless acceptance, and their numerical dominance in a population dictates that population's trajectory.
+
+<svg viewBox="0 0 780 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<linearGradient id="degrees-gradient" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="var(--gray, #9a9a9a)" stop-opacity="0.55"/>
+<stop offset="50%" stop-color="var(--secondary, #e0932f)" stop-opacity="0.75"/>
+<stop offset="100%" stop-color="#e05a4f" stop-opacity="0.85"/>
+</linearGradient>
+</defs>
+<g transform="translate(60,55)">
+<text x="330" y="-25" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The Line in the Sand</text>
+<rect x="0" y="30" width="50" height="60" fill="#7a9ec2" fill-opacity="0.8"/>
+<rect x="50" y="30" width="610" height="60" fill="url(#degrees-gradient)"/>
+<line x1="50" y1="10" x2="50" y2="105" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="50" y="0" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">the NAP</text>
+<text x="25" y="118" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">ancaps</text>
+<text x="25" y="132" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">(&lt;1%)</text>
+<text x="145" y="118" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">occasional</text>
+<text x="145" y="132" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">exceptions</text>
+<text x="360" y="118" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">systemic</text>
+<text x="360" y="132" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">redistribution</text>
+<text x="580" y="118" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">total central</text>
+<text x="580" y="132" font-size="11" fill="var(--gray, #9a9a9a)" text-anchor="middle">planning</text>
+<text x="330" y="175" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Above the line: reject aggression outright. Below it: no bright lines,</text>
+<text x="330" y="194" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">just how much aggression gets permitted, and against whom.</text>
+</g>
+</svg>
 
 ## The Bitcoin Litmus Test
 
