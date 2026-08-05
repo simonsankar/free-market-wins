@@ -232,6 +232,15 @@
     padding-left: 0.9rem;
     border-left: 3px solid var(--secondary);
   }
+  & h3 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 1.7em 0 0.4em;
+  }
   & hr {
     border: none;
     height: 1px;
