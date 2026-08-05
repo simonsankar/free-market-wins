@@ -196,23 +196,127 @@ Let's talk about the one position he held where the universe didn't just prove h
 
 Moe Boy dislikes Bitcoin. He is in favour of central banks. 🤡
 
+This is the one topic in the entire portrait where he actually tried to argue, instead of just reacting — which makes it the clearest window into how little he understands the subject he was most confident about. A Discord exchange, preserved verbatim, long before any of it had a deadline attached. Seven distinct failures, all from the same person, in the same conversation.
+
+### Exhibit One: Value Only Counts If It's Fiat
+
+> "In order for your BTC to exist, there needs to be people to trade in your BTC for real world money, and when the regulations start cracking, how are you getting value from your BTC when no one wants to touch it."
+
+Two claims stacked into one breath, both wrong the same way. First: "real world money" quietly assumes fiat is the only legitimate reference point, so any asset's value gets redefined as its exchange rate *into fiat specifically* rather than what it actually is — willingness of other people to accept it in trade. Gold isn't "real" money by that standard either unless someone converts it to dollars. He's describing what a medium of exchange *is* and mistaking it for a gotcha. Second: the claim that regulation will sever that willingness to trade. It hasn't, in over a decade of scattered regional bans, and it structurally can't — Bitcoin doesn't route through any single jurisdiction that could choke it off. The prediction embedded in this line has already been running for years. It's already been falsified.
+
+### Exhibit Two: He Links the Whitepaper, Then Argues Against It
+
+He linked the actual Bitcoin whitepaper — Satoshi Nakamoto's *Bitcoin: A Peer-to-Peer Electronic Cash System* — with the instruction:
+
+> "take some time and read the paper, you'll realize BTC isn't the miracle you want it to be."
+
+Same conversation, minutes later:
+
+> "it was not proposed as a substitution for physical currency... I guess Satoshi Nakamoto['s] words isn't good enough."
+
+The document he personally linked opens by describing commerce forced to rely on trusted financial intermediaries, and proposes an electronic payment system that lets parties transact directly, ***"without the need for a trusted third party"*** — a direct substitute for the trust-based, intermediary-dependent rails that fiat runs on. He handed over the source that refutes him and used it as a threat in the same breath. This isn't a case of not reading the room — he provided the evidence against his own claim, unprompted, free of charge.
+
+### Exhibit Three: Citing Adoption as Proof of Failure
+
+Next: a [Reuters piece](https://www.reuters.com/world/africa/central-african-bank-regulator-reminds-states-crypto-ban-2022-05-13/) about a regional African banking regulator issuing a *reminder* about its crypto ban — a reminder made necessary, per the article's own second sentence, because a member state (the Central African Republic) had just made **Bitcoin legal tender weeks earlier**. He cited a government scrambling to reassert control after a sovereign nation adopted the asset, and read it as proof the asset was failing. Then said the quiet part out loud, unprompted:
+
+> "Keep your eyes on Africa. They are adopting your 'unregulated' crypto."
+
+Adopting. His word. Offered as a threat.
+
+Notice the word he reaches for there — **crypto**, not BTC. Nobody in this exchange ever brought up Ethereum, Dogecoin, or any inflationary, VC-issued, centrally-administered token — the opening message of the whole exchange explicitly scoped it to "crypto particular to bitcoin." He collapses the distinction anyway, and does it again, earlier in the same conversation, in the starkest way possible:
+
+> "Imagine losing 99% of your money because you invested in LUNA. Why would anyone ever trust crypto again?"
+
+LUNA was an algorithmic stablecoin — a centrally-designed peg with no fixed supply, nothing like Bitcoin's cryptographically enforced cap, and exactly the kind of shitcoin elyptica had already, explicitly, pre-emptively disclaimed. Its collapse got filed as evidence against Bitcoin anyway. This is the same move as calling Flow-and-Digicel a "monopoly" in Section III: precision abandoned the moment it's inconvenient.
+
+El Salvador got the same treatment:
+
+> "It failed once in El Salvador. I'm guessing it will fail again."
+
+"I'm guessing" doing a lot of work in a sentence presented as a prediction. The fuller exchange eventually produces an actual source for "failed" — [an article](https://restofworld.org/2022/el-salvador-chivo-bitcoin-wallet/) about Salvadorans abandoning the government's mandatory Chivo wallet app. Read past the headline and the article's own framing undercuts the point: people weren't rejecting Bitcoin, they were rejecting a clunky state-built app — and many who stayed on it were, per the article, using it to hold *dollars*, not BTC. That's a government's UX failure and a state-mandated adoption program failing, not a market failure of the asset. This is a man who spends the rest of this document defending T&TEC and WASA's coercive utility monopolies, treating a government program's failure as proof the free alternative "failed." The standard flips depending on which conclusion he needs.
+
+### Exhibit Four: The Insinuation With No Mechanism
+
+> "Learn who actually 'controls' your 'unregulated' system."
+
+No name, no mechanism, no claim that could be checked or refuted — an insinuation left hanging, structurally identical to "your god will judge you" from Section VII. When he's out of arguments, he reaches for a vague authority-gesture instead of building one.
+
+The fuller exchange fills in what he meant, and it's a category error rather than a conspiracy: Bitcoin is used, among a million other things, for crime — same as cash, real estate, art, and the internet he name-checks approvingly elsewhere. "This gets used for illegal things, therefore government will crack down on it" is an argument for prosecuting the crime, not an indictment of the neutral technology. He never makes the distinction. Every regulatory headline gets read as a step toward Bitcoin's death rather than as separate from it — the network he's discussing has taken exactly zero of these predicted deaths in the years since.
+
+### Exhibit Five: Credentials Over Argument
+
+Deep in a side-thread about what money even *is*, elyptica cited two different people — Saifedean Ammous and Robert Breedlove — for competing framings of money's function (medium of exchange vs. store of value; not mutually exclusive, but he treated them as a fight to referee). His response wasn't to engage either framing. It was to check IDs:
+
+> "Omg and Robert Breedlove is not even an economist. Are you actually taking the definition of money from some random schmuck, and not Saifedean Ammous, a literal economist? ... You're going against educated people on the basic definition of words."
+
+> "All economists would say money is a medium of exchange. All definitions of money involves exchange."
+
+Both claims are checkable, and both are wrong. Store of value is not some fringe position — it's one of the three classical functions of money taught in any introductory economics course, alongside medium of exchange and unit of account. "All economists agree" is a claim he could have falsified himself by opening any textbook, the same "cite, don't check" failure from Exhibit Two and Section V. And the credentialing move underneath it — dismissing an argument by the letters after the arguer's name rather than its content — is the same rhetorical reflex as "you're not a real economist" leveled at anyone who disagrees with him, a move that would disqualify most of the Austrian school he's never read either.
+
+### Exhibit Six: The Scarcity He Never Understood
+
+Here, at least, he made the argument explicitly instead of implying it:
+
+> "This doesn't answer how 7 billion people are going to use 21mil BTC to store their money."
+
+> "It doesn't because there's 7 billion people in the world... divide 21M by 7B and let me know how much that is. I think mathematically your BTC doesn't work. Not think. I know."
+
+Austrian monetary theory settled this before Bitcoin existed: **the number of units in a monetary system is irrelevant to whether it can function as money.** Money doesn't need a whole unit per transaction or per person — it needs to be *divisible* enough to represent whatever amount is being exchanged. Value is expressed in the unit, not bound to a headcount. Bitcoin's 21 million coins split into 100 million satoshis each — over two quadrillion discrete accounting units, far more than there will ever be transactions to record. He was handed this exact answer and rejected it as counterfeiting:
+
+> "You are printing money at that point. You are splitting 1BTC into an arbitrary amount... that's magically generating money... You could split 1BTC into a trillion fractions and run your whole economy off of that."
+
+This confuses dividing a unit with duplicating one. If a coin is worth a car and you split it into ten pieces, each piece is worth a tenth of a car — nothing new was created, the same total value just got sliced into smaller denominations. Printing money means duplicating claims on existing value without producing anything; splitting a satoshi into smaller satoshis doesn't touch the total supply of BTC at all, which is exactly why the operation has a hard ceiling he never engages with — you can subdivide as finely as needed, but the 21 million never moves. "Not enough coins to go around" isn't a Bitcoin problem — see [[The Praxeological Case Against All Inflation|why the initial number of units is irrelevant]] for the full praxeological case. It's the same conceptual gap as demanding "logic stems from evidence" in Section V — a confident claim about a subject whose basic terms were never defined.
+
+### Exhibit Seven: The Slogan With No Mechanism
+
+Finally, the thesis statement, twice:
+
+> "The house always wins."
+>
+> "When the incentives become equal to fiat, people will stick to fiat."
+
+Neither is an argument. Both are appeals to inertia — "the current arrangement will persist because it is the current arrangement" — dressed up as insight. Structurally missing: a mechanism. Not one word about supply schedules, [[Economic Calculation Problem|monetary calculation]], legal tender coercion, or anything resembling economics. Just a slogan and a shrug, aimed at someone he'd just accused of being unable to "define money properly." 🎯
+
+He didn't even win the slogan. He was handed the correct rebuttal in real time and didn't recognise it:
+
+> "Depreciation is the house winning."
+
+Exactly right, aimed at the wrong side. The house — the currency monopolist — wins by quietly depreciating the savings of everyone forced to hold its money, under legal tender laws that manufacture the very "incentive floor" he's citing as evidence [[Fiat Currency|fiat]] is winning on the merits. It isn't winning a competition. It's rigging one and calling the rigging a victory.
+
+Cornered, with nothing left to say to that, he didn't defend the mechanism. He reached forward instead:
+
+> "Nope. That's not what I meant. You'll see. When BTC crashes."
+
+No rebuttal — just a promise to be right eventually. This is the exact moment the belief hardened into a commitment. Every other position in this document he's free to reframe, walk back, or quietly abandon. This one, he attached a future to.
+
+### The Silence While It Kept Climbing
+
+That vague "you'll see" eventually hardened into something specific and checkable — see below. But roughly a year before that deadline arrived, the two crossed paths again on a mutual server. Bitcoin was pushing toward what were, at the time, still-unreached all-time highs — north of $87,000 and climbing, the opposite direction of the crash he'd forecast. He had nothing. No data, no argument, no acknowledgment that the trajectory he'd predicted and the trajectory that was actually happening had diverged completely. What he had was reaction GIFs. No caption, no claim, nothing that could be quoted or refuted — just images standing in for the argument that no longer existed. Silence wearing a costume. The same man who once demanded someone "take some time and read the paper" had, years later, staring at the exact opposite of his own prediction, nothing left to post but memes. 🎭
+
 Let's be precise about what these two positions actually mean, because they're not symmetrical preferences. Bitcoin is a **decentralised monetary system with a hard cap of 21 million coins**, enforced by cryptographic code, with no central issuer, no printable supply, and no government authority able to alter it. The cap is not a policy — it's mathematics. No government, no bank, no meeting of officials can override it. This is by design.
 
 Central banks are the **government monopoly on currency issuance**. They hold their position by legal tender laws — laws that compel you to accept their money in settlement of debts under threat of legal sanction. They can expand the money supply at will, which devalues every unit already held by every person who saved in that currency, without their knowledge or consent. This is not a feature — it's the mechanism. The Central Bank of Trinidad and Tobago has presided over a currency that has lost significant value against the USD for decades. The US Federal Reserve has devalued the dollar by over 96% since 1913. The Bank of England has done similar. These are not accidents. They are the structurally guaranteed, predictable output of a system with no hard constraint on money creation — exactly as Mises predicted in 1912, forty years before Bretton Woods collapsed. 📉
 
 He said this was fine. He said Bitcoin was the problem.
 
-He also attempted to use Bitcoin against ancaps: _"What your BTC worth again? Oh right. Your net worth is in FIAT."_ The implication: if you hold fiat currency, you implicitly validate fiat currency, therefore Bitcoin advocacy is hypocrisy.
+He also attempted to use Bitcoin against ancaps:
+
+> "What your BTC worth again? Oh right. Your net worth is in FIAT."
+
+The implication: if you hold fiat currency, you implicitly validate fiat currency, therefore Bitcoin advocacy is hypocrisy.
 
 This is the **Consent Fiction Test** applied to money, and it fails immediately. Using government currency does not constitute endorsement of government currency when government currency is the only legal option. Legal tender laws mandate that you accept it. The government prosecutes competing currencies. Being forced to use the monopolist's product under threat of law is not the same as choosing it freely. It is precisely the same fallacy as "you use government roads so you consent to taxation" — a consent fiction, not a genuine endorsement.
 
 The Austrian response to his taunt is simple: Hayek called for the denationalisation of money in 1976. He wrote an entire book about it. The market demand for sound money was always there. Bitcoin is what happened the moment the technology existed to satisfy it — a spontaneous market solution to the problem of government money monopoly. The ancap isn't a hypocrite for using fiat while advocating Bitcoin. He's a prisoner arguing for the abolition of prisons. 🔓
 
+### Then the Deadline Arrived
+
 **But here's where it gets genuinely historic.**
 
-Moe Boy made a specific, concrete, falsifiable prediction about Bitcoin. He claimed it would be dead, useless, or its 21 million coin supply cap would be broken — **by 2026, with August 2026 as his window**.
+The "you'll see, when BTC crashes" from Exhibit Seven didn't stay vague forever. Moe Boy eventually made a specific, concrete, falsifiable prediction about Bitcoin. He claimed it would be dead, useless, or its 21 million coin supply cap would be broken — **by 2026, with August 2026 as his window**.
 
-It is July 2026. 📅
+It is August 2026. Not "close to" his window — inside it. This is the month. 📅
 
 Bitcoin's supply cap is 21 million. It has not been changed. It cannot be changed without network consensus that is structurally, mathematically, and economically impossible to achieve — because any miner, node, or user who disagreed would simply continue running the original protocol, and the fork would be worthless. This isn't a governance decision. It's an enforcement mechanism with no off switch. Satoshi understood this. Moe Boy did not.
 
