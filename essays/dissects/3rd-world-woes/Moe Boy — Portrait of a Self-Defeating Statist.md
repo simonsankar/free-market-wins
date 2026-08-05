@@ -15,27 +15,27 @@ This is his portrait. Every position he held was wrong. Every contradiction he c
 
 Let's start with the most spectacular self-own in the history of this particular Discord server.
 
-Moe Boy worked at the Ministry of Education. And he didn't just work there quietly — he spent months giving everyone a front-row seat to the circus: the incompetence, the political appointments, the dysfunction, the complete absence of accountability. He reported, with increasing exasperation, what it was actually like to work inside a government ministry. Not as a theoretical exercise. As a lived, daily experience.
+Moe Boy worked at the Ministry of Education, and didn't work there quietly — he spent months giving everyone a front-row seat to the incompetence, the political appointments, the dysfunction, the complete absence of accountability. Not a theoretical exercise. A lived, daily experience.
 
-Then he quit. Not to go to another Ministry — to the private sector. And when the time came to choose between two private sector offers (Fujitsu vs RBC), he explicitly said he would go with **whichever one paid more**. His words. His reasoning. His [[Revealed Preference|revealed preference]], laid bare.
+Then he quit. Not to go to another Ministry — to the private sector. And when the time came to choose between two private sector offers (Fujitsu vs RBC), he explicitly said he would go with **whichever one paid more**. His words. His reasoning. His [[Revealed Preference|revealed preference]], laid bare:
 
-_"At the end of the day it's about money."_
+> "At the end of the day it's about money."
 
 Screenshot on record. 📸
 
 Then — and this is where it gets truly special — the same man sat down and argued that central planning is good, that government ministries should run essential services, and that the private sector produces exploitation and inequality. He defended the very institutional structure he personally fled. He used the market to escape the plan, then argued against the market. 🤡
 
-When confronted with the obvious — "If bureaucratic garbage is so good for us common folk, remind me why you left MOE?" — his response was a masterpiece of motivated reasoning: _"I left MoE not because of politics but because of people and overwork."_
+When confronted with the obvious — "If bureaucratic garbage is so good for us common folk, remind me why you left MOE?" — his response was a masterpiece of motivated reasoning:
 
-Let's take a slow, careful look at this response, because it's genuinely instructive.
+> "I left MoE not because of politics but because of people and overwork."
 
-**"Because of people."** And where do those people come from? What shapes their behaviour? In a private company, performance is tied to profit and loss — you produce or you're replaced. In a government ministry, there are no profits, no losses, and no mechanism to remove non-performers. Public servants are, as Moe Boy himself memorably put it, entitled to "buy bread" regardless of whether they do their jobs. This isn't a people problem. This is an **[[Inverse incentive structure]]** problem. The Ministry of Education produced exactly the kind of people you'd expect a system with no accountability mechanism to produce. He didn't leave because of people — he left because of the system those people operated in. The system he claims to defend. 🤣
+**"Because of people."** Where do those people come from? In a private company, performance is tied to profit and loss — you produce or you're replaced. In a government ministry there's no profit, no loss, and no mechanism to remove non-performers; public servants are, as Moe Boy himself put it, entitled to "buy bread" regardless of whether they do their jobs. Not a people problem — an **[[Inverse incentive structure]]** problem. The Ministry produced exactly the people a zero-accountability system produces. The system he claims to defend. 🤣
 
-**"Because of overwork."** In the private sector, overwork produces results that show up in your portfolio, your salary, your promotion, or your equity. In a government ministry, overwork produces... more overwork, administered by people who don't perform and can't be removed. The asymmetry isn't personal — it's structural. The [[Economic Calculation Problem]] means the ministry has no way to allocate resources efficiently, including human resources. Work piles up in unpredictable ways with no price signal to guide its distribution. He didn't leave because he was overworked. He left because the system had no mechanism for recognising or rewarding his work relative to those who did nothing. The system he claims to defend. 🤣
+**"Because of overwork."** In the private sector, overwork shows up in your salary, promotion, or equity. In a government ministry it produces... more overwork, administered by people who don't perform and can't be removed. The asymmetry is structural, not personal: the [[Economic Calculation Problem]] means the ministry has no price signal to allocate work or reward it. The system he claims to defend. 🤣
 
 **"Instead of finding another Ministry to work at."** This is the question he never answered. If central planning is good and government ministries are where essential services should live, why didn't he transfer? Why did the man who believes in the government go directly to Fujitsu? Why, when ranking his options by salary, was no Ministry on the shortlist?
 
-And here's the detail that makes it even better: he didn't leave after year one. He renewed for a **second year**. He saw the dysfunction up close, experienced it personally, complained about it loudly — and then signed on for another round. He couldn't exercise independent judgment. He waited for institutional direction, followed the path laid out for him, collected his cheque, and renewed. Then, eventually, the guardrails ran out and he was forced to make a market decision. He made the right one. Then he went online and explained why it was wrong for everyone else.
+And here's the detail that makes it even better: he didn't leave after year one — he renewed for a **second year**, having seen the dysfunction up close and complained about it loudly. Waited for institutional direction rather than exercising independent judgment, collected his cheque, and signed on again. Then the guardrails ran out, he was forced into an actual market decision, made the right one — and went online to explain why it was wrong for everyone else.
 
 Because he knew. He'd seen it from the inside. He voted with his feet and his career — twice, once to renew and once to finally leave — and then turned around and voted with his words for the thing his feet had already rejected.
 
@@ -45,25 +45,43 @@ _[[Revealed Preference|Revealed preference]]_ is one of the foundational concept
 
 ## II. Taxation: The Theft He's Fine With (When It's Not His Money)
 
-Here's a fun scenario that played out in real life: The government owed teachers back pay — money they had earned, from salaries that had been set during negotiations, which hadn't been paid at the correct rate. The teachers were owed this money. Time had passed. The money lost value to inflation. No interest was paid on the delay, despite the fact that any private entity which owed you money for that long would be expected to compensate you for the time-value of what they'd held. And then, when the government finally paid — they taxed it. They took a cut of the money they owed, after it had already depreciated, without paying interest on the delay.
+Here's a fun scenario that played out in real life: the government owed teachers back pay — salaries set during negotiations but never paid at the correct rate. Years passed. Inflation ate the value. No interest was ever paid on the delay, though any private debtor holding your money that long would owe you for the time value of it. Then, when the government finally paid — it taxed the payout. A cut of money it already owed, already depreciated, with zero compensation for the delay.
 
 Moe Boy's response: this is a step in the right direction. TTUTA negotiated it. The parties signed off. 👏
 
-Let's set aside the staggering brass it takes to defend the theft of already-depreciated owed money and engage with the actual underlying economics — because [[Taxation]] is not a technicality, it's a claim about ownership. Either the government has a legitimate claim to a portion of the money it owed to teachers (which would mean it's allowed to short-change its own debts), or it doesn't. There is no framing in which "we owe you $X but we'll take back $Y of it" is a reasonable position from a debtor.
+Set aside the brass it takes to defend that and look at the economics: [[Taxation]] isn't a technicality, it's a claim about ownership. Either the government has a legitimate claim on money it already owes teachers — meaning it can short-change its own debts — or it doesn't. There's no framing where "we owe you $X but we're taking back $Y" is a reasonable position from a debtor.
 
-Now zoom out to the general claim: that taxation produces value for society by funding essential goods and services. Moe Boy made this argument explicitly — that without taxes, we couldn't have the healthcare, education, and services the government provides. Let's do the math he never did. 🧮
+Zoom out to his general claim — that taxation funds essential goods and services we'd otherwise go without. Let's do the math he never did. 🧮
 
-Suppose everyone pays $100 in tax and receives $150 in goods and services. Where does the extra $50 come from? There are only two possible answers:
+Suppose everyone pays $100 in tax and receives $150 in goods and services. Where does the extra $50 come from? Two possible answers:
 
-**Answer 1: Progressive redistribution.** Some people pay more. Moe Boy pays $100 in tax and receives $150. Larry pays $200 in tax and receives $150. Larry has lost $50 to Moe Boy. Larry is being punished for being more productive than Moe Boy. The government isn't providing for Moe Boy — Larry is, at gunpoint. The government is just the middleman taking a cut and calling it compassion. This makes Moe Boy a grown adult relying on the state to coerce more successful people into subsidising his existence. That's parasitism, dressed up in the language of public services. 🤡
+**Answer 1: Progressive redistribution.** Some people pay more. Moe Boy pays $100 in tax and receives $150. Larry pays $200 in tax and receives $150. Larry has lost $50 to Moe Boy — punished for being more productive. The government isn't providing for Moe Boy — Larry is, at gunpoint. The government is just the middleman taking a cut and calling it compassion. That's parasitism, dressed up in the language of public services. 🤡
 
-**Answer 2: Money printing.** The government inflates the money supply to fund the gap. This devalues every unit of currency held by every person in the economy — including the poorest, including teachers waiting for their back pay, including the very people the policy claims to protect. It is a tax on savings, imposed without consent, invisible to most people, and disproportionately damaging to those who can least afford it. The government that is supposedly _for the people_ silently reduces the value of their savings to fund its operations. Moe Boy, what a defender of the people you are. 👏
+**Answer 2: Money printing.** The government inflates the money supply to fund the gap. This devalues every unit of currency held by every person in the economy — including the poorest, including teachers waiting for their back pay, including the very people the policy claims to protect. A tax on savings, imposed without consent, invisible to most people, and heaviest on those who can least afford it. Moe Boy, what a defender of the people you are. 👏
 
-There is no third answer. Every government expenditure is financed by one of these two mechanisms (or a combination). Every time Moe Boy argued for more government spending, he was arguing for either forced redistribution from productive people or theft-by-inflation from savers. Neither requires a label to be identified as what it is: aggression.
+There's no third mechanism. Every dollar of new government spending is either forced redistribution or theft-by-inflation — and neither needs a label to be recognised as aggression.
 
-And what does "costs don't matter" look like in practice? He referenced it himself — the government spending **35–50k USD on Azure for 3 PHP sites with 5 users**. 🤯 That's what happens when there's no profit-and-loss signal. No one loses money when the government wastes it. The budget gets renewed regardless. The incompetent contract gets extended. The Azure bill gets paid. The taxpayer — whose money it is — has no say and no recourse.
+What does "costs don't matter" look like in practice? He referenced it himself — the government spending **35–50k USD on Azure for 3 PHP sites with 5 users**. 🤯 That's what no profit-and-loss signal looks like. No one loses money when the government wastes it. The budget renews regardless. The taxpayer whose money it is has no say and no recourse. A private startup that spent $50k hosting 3 PHP sites for 5 users would be dead within a quarter. The [[Economic Calculation Problem]] guarantees the difference.
 
-Contrast: any private startup that spent $50k USD hosting 3 PHP sites for 5 users would be dead within a quarter. The market executes wasteful deployments. Government rewards them with a larger budget next year. This is not a management failure — it's the predictable, structural, inevitable outcome of operating without economic calculation. The [[Economic Calculation Problem]] guarantees it.
+He doesn't just defend existing taxation — he wants more of it:
+
+> "I want more taxes on upper class brackets especially."
+
+Every "tax the rich" scheme runs the same trajectory: sold as hitting only the top bracket, then quietly widened once the state's appetite outgrows what the rich alone can supply. The US federal income tax launched in 1913 at a top rate of 7% and touched almost nobody; it now reaches nearly every wage earner in the country. [[Democracy]] explains why: politicians facing unlimited spending appetites and a finite number of billionaires run out of billionaires first. "Tax the rich" isn't a stable policy — it's the opening pitch of a base built to expand, the same structural con a Ponzi scheme runs: today's promise is funded by tomorrow's forced entrants.
+
+The "golden age" he's citing didn't work the way he thinks, either:
+
+> "Capitalism during the era of 90% taxation on billionaires... is the capitalism that should exist... The 'golden age' people tend to talk about was during the high taxation era."
+
+That 90% was a statutory top bracket on income far beyond anything a normal earner touched, wrapped in deductions and shelters generous enough that almost no one's actual bill came near it. A rate nobody paid isn't evidence of anything — it's a number cited instead of a fact checked.
+
+Asked to justify handing over money to fund things he'll personally never use, he reached for a word with no business near a tax code:
+
+> "You don't need to benefit for it to be a good thing... It's called being giving."
+>
+> "It's a Christian principle."
+
+It isn't. Christians follow the Ten Commandments — one of them is *thou shalt not steal*. Giving means the giver chooses. Taxation means a badge and a jail cell choose for him. He doesn't just get the economics wrong here — he gets the religion he's invoking wrong too. 🙏
 
 ---
 
@@ -87,61 +105,151 @@ The position requires him to hold, simultaneously:
 
 The [[The Non-aggression Principle]] test makes this incoherent in about four seconds. If monopoly is bad because it concentrates power and removes consumer choice, then government monopoly is worse — because it's the same concentration of power, except backed by legal violence from which you cannot opt out. You can switch from one private provider to another. You cannot opt out of WASA. You cannot opt out of T&TEC. You cannot, legally, collect rainwater in a tropical country. This is the system he defended. 🤦
 
-The Monopoly Protection Test delivers the same verdict: the absence of competition in essential services guarantees degradation over time. There is no feedback mechanism, no customer optionality, no profit signal. T&TEC doesn't improve because it doesn't have to. WASA doesn't innovate because no one is competing with it. And the moment private actors try to enter the market by installing solar panels or collecting rainwater, the state criminalises them to protect its monopoly. This is the textbook definition of monopoly protection — and he was arguing for it while simultaneously complaining about monopolies. The irony is dense enough to have its own gravitational field. 🌐
+The Monopoly Protection Test delivers the same verdict: no competition in essential services guarantees degradation over time — no feedback mechanism, no customer optionality, no profit signal. T&TEC doesn't improve because it doesn't have to. WASA doesn't innovate because nothing competes with it. And the moment private actors try to enter — solar panels, rainwater — the state criminalises them to protect its monopoly. The irony is dense enough to have its own gravitational field. 🌐
 
 ---
 
-## IV. The "Smile" Metric: Utilitarianism for People Who Don't Know What Utility Is
+## IV. Democracy: Sacred When His Side Wins, "Fascism" When It Doesn't
 
-At some point in the exchange, while defending wasteful government spending, Moe Boy produced what may be the most intellectually dishonest defence of a government purchase ever committed to text: a **$1 million neck pillow** for travellers passing through City Gate was justifiable because _"at least one person will smile on their way there."_ 😂
+Track his position on state coercion across this single conversation and it never holds still for more than a few exchanges.
 
-Let's follow this logic wherever it goes, because it goes somewhere very funny.
+> "And the issues socialism would cause is greater than it would solve... But it would solve issues... So it must be better."
 
-First: the "smile" metric. What is a smile, as a unit of policy evaluation? How do we measure it? How do we compare smiles across people — is a big smile worth more than a small one? What's the exchange rate between smiles and dollars? Does a smile that lasts five seconds count the same as one that lasts an hour? Moe Boy did not specify, because **there is no specification**. The "smile" is a completely subjective, unmeasurable, non-aggregable unit that cannot serve as any basis for policy evaluation. It's not economics. It's not utilitarianism. It's a feeling dressed up as a principle. 🤡
+Asked point blank whether he was for or against socialist government, he answered:
 
-Second: his own logic refutes him immediately. He claims we should prioritise smiles. Fine. **Efficiency is the ratio of useful output to total input**. If we want to maximise smiles per dollar, we need to minimise the cost of each smile produced. A $1 million neck pillow that produces one smile is the single least efficient smile-producing mechanism imaginable. A Ferrari produces many more smiles per dollar. A Rolex produces thousands of smiles over its lifetime per dollar spent. If we're in the business of maximising smiles, the rich guy buying a Mercedes AMG is a more efficient smile-producer than the government buying a $1 million neck pillow — by orders of magnitude. 😂
+> "I'm against socialism."
 
-If Moe Boy truly wanted to maximise smiles — or utils, or welfare, or whatever subjective unit he's imagining — he should be arguing for the free market, which actually does produce more goods of higher quality at lower prices over time through competition, innovation, and price signals. He should not be arguing for a state with no profit-and-loss feedback that spends $1 million on a neck pillow and calls it public service.
+One reply later, unprompted, uncorrected:
 
-Third: the [[Economic Calculation Problem]] makes "costs don't matter" literally incoherent as a government policy. Without prices, no planner can know whether $1 million on a neck pillow produces more value than $1 million on a medical scanner, or school textbooks, or literally anything else. The only way to know which allocation produces more value is through market prices — which arise from voluntary exchange, which the government monopoly precludes. So the government spends $1 million on a neck pillow not because it calculated that this was the best use of $1 million, but because no calculation was possible. It was guessing in the dark and spending other people's money with no consequence for being wrong.
+> "Not really... I'm against rampant capitalism."
 
-And of course, the seen vs. the unseen: the smile at City Gate is visible. The medical equipment that wasn't bought, the school supplies that weren't funded, the infrastructure that wasn't maintained — all of that is invisible. The [[Economic Calculation Problem]] and the Knowledge Problem combine to make it structurally impossible for a central planner to know the value of any of these alternatives. The government doesn't know what it's sacrificing when it buys the neck pillow. It can't. But the person who earned that money and had it taken from them does know what they'd have done with it. Their choice has been removed. Their money has been redirected. And at least one person smiled. 🫠
+🤡 Two opposite positions, sixty seconds apart, with no acknowledgment that they contradict each other — and "rampant capitalism" doesn't mean what he thinks it means. Pressed on why billionaires get favourable rules, he landed on the right word:
+
+> "Billionaires lobby to get rules beneficial to them all the time..."
+
+That's cronyism — rent extracted through political access, not market competition. It's also not capitalism. A market has no favours to sell; only a state does. Billionaires can only buy rules from an institution powerful enough to grant them, which is exactly why he never asks the next question — *so why do we have lobbying?* — his own answer collapsed into:
+
+> "Because the people who established democracy didn't account for bad actors and a stupid population."
+
+🤦 This is the identical analytical failure from his Ministry of Education resignation in Section I, replayed on a bigger stage. Lobbying isn't a "bad actors" problem any more than ministry dysfunction was a "people" problem. It's *rational* — it's what happens when an institution holds the power to grant favours large enough to be worth buying. Strip the state of the power to set tax brackets, hand out tariffs, and write copyright law, and there's nothing left worth lobbying *for*. [[Democracy]] predicts this outright: politicians have no profit-and-loss mechanism to guide them, so they respond to concentrated interests who show up with cheques, not diffuse interests who never notice the cost.
+
+So "rampant capitalism" is a byproduct of the very government power he defends everywhere else in this document — he named the symptom, blamed the wrong disease, and kept prescribing more of the thing causing it. He isn't critiquing capitalism. He doesn't know what the word means.
+
+**Then the standard flips entirely the moment the identical machinery produces a result he dislikes:**
+
+> "Well you say that but you support republicans who are actively undermining USA"
+>
+> "The Christian led supreme court that implementing their unjustifiable opinions"
+>
+> "The Jan 6 protest was about stealing an election that was proven to be legitimate and the recounts showed red states faking counts... You support literal fascism."
+
+Notice what's missing from that last line: a citation. He's the same man who, in Section VI, demands sources for everything and dismisses an argument as "imaginary points with no evidence" — yet a specific, checkable claim about faked vote recounts gets asserted with nothing behind it but conviction. The Supreme Court, a branch of the very government he wants funded with more of other people's taxes, becomes an "unjustifiable" institution the moment its ruling goes the wrong way. Elected Republican legislators become "fascists," full stop, no distinction drawn between winning an election and stealing one. The state is a trustworthy, sacred mechanism when it's redistributing wealth the way he prefers — and an illegitimate one the instant voters or judges use that same mechanism against him. 🏛️
+
+**The same double standard has a matching pair in how he treats regulation.** Regulating Bitcoin: overdue, self-evidently correct:
+
+> "I am all for regulation."
+
+Texas regulating how Facebook and Twitter moderate content: an outrage:
+
+> "And the regulations begin. Telling private companies how they should run their private business."
+
+Same tool. Same government. Same category of action — the state telling a private company what to do with its own platform — legitimate or illegitimate purely as a function of whether he likes the target that week. 🎯
+
+None of this adds up to a political philosophy. It's a preference ranking with legitimacy vocabulary bolted on after the fact: taxation is good because it funds what he wants, lobbying is corrupt only because the money went somewhere he doesn't like, democracy is sacred when his side holds the gavel and "fascism" the moment the other side does, and regulation is statesmanship or tyranny depending entirely on whose business is being regulated. [[The Non-aggression Principle]] doesn't grade on a curve for who's currently winning — but a curve graded exactly that way is the only standard he's actually applying. ⚖️
 
 ---
 
-## V. "Evidence, Citations, Logic" — From the Man Who Couldn't Answer A=A
+## V. The "Smile" Metric: Utilitarianism for People Who Don't Know What Utility Is
 
-This section requires special attention, because the epistemological failure on display here is so comprehensive it deserves its own exhibit.
+At some point in the exchange, while defending wasteful government spending, Moe Boy produced what may be the most intellectually dishonest defence of a government purchase ever committed to text: a **$1 million neck pillow** for travellers passing through City Gate was justifiable because:
 
-Throughout the exchange, Moe Boy positioned himself as the only person in the room who cared about evidence. He demanded citations. He demanded studies. He declared — repeatedly — that claims without evidence were worthless. He announced: _"Logic stems from evidence."_
+> "at least one person will smile on their way there."
 
-Let's start with that last one, because it's wrong in a way that's both specific and revealing.
+😂
+
+First: what is a smile, as a unit of policy evaluation? How do you compare smiles across people, or price them against dollars? Moe Boy never specified, because **there is no specification** — smiles are a subjective, unmeasurable, non-aggregable unit dressed up as economics. 🤡
+
+Second: his own logic refutes him. **Efficiency is the ratio of useful output to total input** — so if we're maximising smiles per dollar, a $1 million neck pillow producing one smile is the least efficient smile-machine imaginable. A Ferrari produces more smiles per dollar. So does a Rolex, over its lifetime. The rich guy's Mercedes AMG out-produces the government's neck pillow by orders of magnitude. 😂
+
+If he actually wanted to maximise smiles, he'd be arguing for the free market — which produces more goods of higher quality at lower prices through competition and price signals — not for a state with no profit-and-loss feedback that spends $1 million on a neck pillow and calls it public service.
+
+Third: the [[Economic Calculation Problem]] makes "costs don't matter" incoherent as policy. Without prices, no planner can know whether $1 million produces more value as a neck pillow or a medical scanner — that comparison only exists through market prices, which the government monopoly precludes. It didn't calculate this was the best use of the money. It guessed in the dark, spending other people's money with no consequence for being wrong.
+
+The seen vs. the unseen: the smile at City Gate is visible. The medical equipment, school supplies, and infrastructure that weren't funded are invisible. The [[Economic Calculation Problem]] and Knowledge Problem make it structurally impossible for a planner to know the value of any alternative. The government doesn't know what it's sacrificing — it can't. The person who earned that money and had it taken does know what they'd have done with it. Their choice, redirected. And at least one person smiled. 🫠
+
+---
+
+## VI. "Evidence, Citations, Logic" — From the Man Who Couldn't Answer A=A
+
+Throughout the exchange, Moe Boy positioned himself as the only person in the room who cared about evidence. He demanded citations. He demanded studies. He declared — repeatedly — that claims without evidence were worthless. He announced:
+
+> "Logic stems from evidence."
+
+It's wrong in a specific, revealing way.
 
 **Logic does not stem from evidence. Evidence is evaluated using logic.**
 
-Before you can look at a piece of evidence and determine what it means, you need a logical framework for evaluation — rules of inference, the law of non-contradiction, the law of identity. These precede empirical investigation. Without them, you cannot interpret a single data point. The sentence "logic stems from evidence" is self-refuting, because the very act of evaluating that sentence as true or false requires using logic. You're using logic to assert that logic comes after evidence. That's a performative contradiction — the same structure as the argumentation ethics proof, applied to his own epistemology. 🤓
+Before you can evaluate evidence you need a logical framework — rules of inference, the law of non-contradiction, the law of identity — which precede empirical investigation. "Logic stems from evidence" is self-refuting: judging that sentence true or false already requires logic. A performative contradiction, the same structure as the argumentation ethics proof, aimed at his own epistemology. 🤓
 
-Then there's the demand for evidence for ethical claims. Someone asked him to prove that taxation is theft. He demanded citations. Someone pointed out that A=A (the law of identity). He refused to answer — _"I don't answer low IQ dribble."_ 😂
+Then there's the demand for evidence for ethical claims. Someone asked him to prove that taxation is theft. He demanded citations. Someone pointed out that A=A (the law of identity). He refused to answer:
 
-Here's why this is catastrophic: you cannot demand empirical evidence for a logical axiom. "A=A is true" is not a scientific claim — it is a foundational axiom of logic itself. Asking for physical evidence that A=A is true is asking for physical evidence that the rules of reasoning are valid, which is itself a reasoning process that presupposes the rules. It's not a category error — it's the category error, the foundational confusion between empirical and analytic claims.
+> "I don't answer low IQ dribble."
 
-The same applies to ethical axioms. "Theft is wrong" is not falsifiable by experiment. You cannot design a study that would prove or disprove it. It is grounded in axioms about [[Self-ownership]] and the nature of voluntary exchange — which, as demonstrated by [[Argumentation Ethics]], are themselves established through the structure of argumentation, not through empirical measurement. Asking for a citation that theft is wrong is like asking for a citation that you exist. You're presupposing your own existence to make the demand. 🤡
+😂
 
-Now for the rich part. Having declared himself the champion of evidence-based reasoning, when faced with an actual historical example — Acadia 1755, a documented stateless society — he:
+You cannot demand empirical evidence for a logical axiom. "A=A is true" isn't a scientific claim, it's a foundational axiom of logic — asking for physical evidence of it is asking for evidence that the rules of reasoning are valid, using a reasoning process that presupposes them. Not a category error. The category error.
 
-1. Dismissed it as irrelevant because the Mises Institute, which referenced it, is "biased."
-2. Moved the goalposts from _"name one country that exists currently without a government"_ to _"name one that EXISTS CURRENTLY"_ after the historical example was provided.
-3. Did not address the actual historical evidence at any point.
+Same for ethical axioms: "theft is wrong" isn't falsifiable by experiment, no study could prove or disprove it. It's grounded in [[Self-ownership]] and voluntary exchange, established through the structure of argumentation itself (see [[Argumentation Ethics]]), not empirical measurement. Asking for a citation that theft is wrong is like asking for a citation that you exist — you're presupposing your own existence to make the demand. 🤡
 
-Demanding evidence, dismissing a source as biased without addressing its content, and then moving goalposts when evidence is provided is not the behaviour of someone who cares about evidence. It's the behaviour of someone who uses "evidence" as a rhetorical weapon when it's aimed at others and discards it when it points in an inconvenient direction.
+Having declared himself the champion of evidence-based reasoning, when challenged to prove a stateless society could work, he set the terms before anyone had answered:
+
+> "You'll never be able to get rid of the government... Name one country that exists currently without a government. I'll wait."
+
+"Currently" was in the demand from message one — a standard that excludes every historical example by definition, well before Acadia 1755 (a documented stateless society) was ever raised. So when it was raised anyway:
+
+1. He dismissed it as irrelevant because the Mises Institute, which referenced it, is "biased."
+2. He fell back on the same framing he'd set before any answer existed: _"Acadia 1755 does not exist currently."_
+3. He never addressed what the historical example actually demonstrated — that statelessness is possible — at any point.
+
+This is an appeal to the status quo, not an argument: government exists now, therefore it must be necessary. Structurally identical to "we shouldn't ban murder, because murder still happens today" — the fact that something persists says nothing about whether it should. Demanding a currently-existing country as proof a stateless society can work isn't evidence-based reasoning. It's rigging the standard so nothing offered could ever count, then calling the rigged standard "evidence."
 
 He also cited **Wikipedia** as his definition of government — an appeal to a crowd-sourced reference — while dismissing the Mises Institute as too biased to cite. The appeal to authority is only valid, apparently, when the authority agrees with him. 🤦
 
-And finally, the most illuminating moment: when confronted with the argumentation ethics proof — a logical demonstration, not an empirical claim — he called it "imaginary points with no evidence." He then used argumentation to dismiss an argument about argumentation, which presupposes the very norm his dismissal was denying. He refuted himself in the act of trying to escape the argument. This is not a small logical mistake. This is a total philosophical collapse. 💀
+The same double standard shows up whenever the topic turns political. He asserted, with no citation at all, that Facebook's algorithm was rigged in 2016:
+
+> "The 'algorithm' was pushing right focused messages/ads to people"
+>
+> "Russia used bots on Facebook to push right wing rhetoric."
+
+Fine — except the moment a counter-example arrived (Twitter suppressing the Hunter Biden laptop story), the evidentiary bar changed instantly:
+
+> "It's not both sides... It's a false equivalence."
+
+Pushed to explain what made it inequivalent, the confidence evaporated on the spot:
+
+> "No it's probably a false equivalence."
+
+🤷 One claim gets asserted as settled fact with zero sourcing. The other gets waved off as "probably" not counting. Same standard, applied in whichever direction keeps his side clean.
+
+The abortion debate runs the identical play. Told a fetus is alive, he demanded:
+
+> "You have no sciencific support for your words... Find the scientific support... Right now it's feelings from you."
+
+A fair challenge, if he'd met it with science of his own. He never did — no study, no citation, just the flat assertion that it isn't killing, before reaching for:
+
+> "Facts don't care about your feelings"
+
+— a line lifted wholesale from the Ben Shapiro playbook, deployed by a man who spends the rest of this document dismissing anything right-of-centre as "fox news propaganda." He'll borrow the aesthetics of the side he claims to despise the moment its rhetoric happens to be convenient. 🎭
+
+And finally, the most illuminating moment: when confronted with the argumentation ethics proof — a logical demonstration, not an empirical claim — his response was:
+
+> "imaginary points with no evidence."
+
+He then used argumentation to dismiss an argument about argumentation, which presupposes the very norm his dismissal was denying. He refuted himself in the act of trying to escape the argument. This is not a small logical mistake. This is a total philosophical collapse. 💀
 
 ---
 
-## VI. The Socialist Who Used Capitalism to Choose His Salary (And Won)
+## VII. The Socialist Who Used Capitalism to Choose His Salary (And Won)
 
 Moe Boy argued that capitalism leads to slavery through wage labour. The claim: workers are exploited by capitalists, who extract surplus value from their labour, leaving workers permanently disadvantaged.
 
@@ -158,39 +266,39 @@ This is the polar opposite of slavery. A slave cannot leave. A slave cannot nego
 
 [[Wage Labour Is Righteous, Socialism Is Evil|Wage labour is righteous]] precisely because it is consensual — both parties enter the agreement voluntarily and benefit from it. The employer gets labour they value enough to pay for. The employee gets compensation they value enough to trade their time for. Neither party is forced. Either can exit. This is trade, not coercion.
 
-Socialism, the system Moe Boy defended, requires coercion by definition. The redistribution of privately earned resources to others — via taxation, regulation, or state-mandated transfer — cannot occur without the threat of force against those who don't comply. You cannot opt out of a tax. You cannot refuse a regulation without facing legal consequences. The productive class (private sector) is forced, under threat of imprisonment, to transfer a percentage of their output to fund the state and its programs. That's percentage-based slavery, built into the system structurally — as Robert Breedlove put it, _"A slave is someone with an effective tax rate of 100%."_ At 30%, you're 30% of a slave, held not by chains but by the threat of state violence.
+Socialism, the system Moe Boy defended, requires coercion by definition: redistributing privately earned resources can't happen without threatening force against anyone who doesn't comply. You can't opt out of a tax or ignore a regulation without facing legal consequences. That's percentage-based slavery, built into the system — as Robert Breedlove put it, _"A slave is someone with an effective tax rate of 100%."_ By that math, the 90% top rate Moe Boy called the "capitalism that should exist" in Section II makes its payer 90% a slave, held not by chains but by the threat of state violence. He isn't defending coercion in the abstract — he's on record wanting more of it.
 
 So the system Moe Boy defended — socialism and government control — has coercion baked in. The system he called slavery — capitalism and wage labour — is the one he used to advance his own career, choose his own employer, and maximise his own compensation. His life is a lived rebuttal of his own ideology. 🖕
 
-One more wrinkle that makes the irony complete: what did he actually escape to? Fujitsu ICT — a company whose primary client base is government-adjacent. Government-owned banks. State-linked enterprises. The government itself. Fujitsu resells turnkey Oracle solutions back to the same institutions Moe Boy claims to believe in, and he provides tech support for those deployments. He didn't exit the government orbit — he became a vendor to it. He moved from direct government employment to government supply chain. The work is the same in character: predictable, non-creative, bureaucracy-adjacent. And he's not a software developer. He's in tech support — managing deployments of packaged solutions for the institutions he spent years arguing were essential and well-run.
+One more wrinkle: what did he actually escape to? Fujitsu ICT — a company whose client base is government-adjacent (government-owned banks, state-linked enterprises, the government itself), reselling turnkey Oracle solutions back to the institutions he claims to believe in. He didn't exit the government orbit, he became a vendor to it — moving from direct employment to government supply chain, the work equally predictable and bureaucracy-adjacent. And he's not even a software developer. He's in tech support, managing deployments of packaged solutions for the institutions he spent years arguing were essential and well-run.
 
-The productive irony: he personally exercised free-market freedom to escape the government system, then used that freedom to argue that everyone else should be kept in the system he escaped — while remaining tethered to that system himself via his employer's clientele. He achieved his individual liberation through the market and then advocated against the market for everyone else. This is not hypocrisy in the casual sense — it's a philosophical position that rests entirely on the assumption that the rules shouldn't apply to him. Rules for thee, not for me. 🧐
+The productive irony: he personally used free-market freedom to escape the government system, then argued everyone else should stay in it — while remaining tethered to that same system through his employer's clientele. This isn't casual hypocrisy. It's a position that only works if the rules don't apply to him. Rules for thee, not for me. 🧐
 
 ---
 
-## VII. The Atheist's God Gambit (The Fastest Self-Own in the Record)
+## VIII. The Atheist's God Gambit (The Fastest Self-Own in the Record)
 
 This one is brief, because the self-own is brief.
 
-Moe Boy is an atheist. He does not believe in God. He has made this clear.
+Moe Boy is an atheist — he's made that clear. He told someone in the exchange:
 
-He told someone in the exchange: _"Your god will judge you for your words."_
+> "Your god will judge you for your words."
 
-There are exactly two logical possibilities:
+There are exactly two logical possibilities.
 
-**If God doesn't exist** (which is what Moe Boy believes): the threat is vacuous. An entity that doesn't exist cannot judge anyone. You cannot be threatened with consequences from a being you hold to be fictional. The statement is the equivalent of saying "the Easter Bunny is disappointed in you." Empty. 🐰
+**If God doesn't exist** (his stated belief): the threat is vacuous — an entity that doesn't exist can't judge anyone, any more than "the Easter Bunny is disappointed in you" could. Empty. 🐰
 
-**If God does exist** (which would contradict his stated position): then he has considerably larger problems than winning a Discord argument. An atheist who suddenly deploys God as a rhetorical weapon is not engaging with God seriously — he's reached for whatever is at hand, including a belief system he denies, because he ran out of actual arguments.
+**If God does exist** (contradicting his stated position): he has bigger problems than winning a Discord argument. An atheist deploying God as a rhetorical weapon isn't engaging with God seriously — he's grabbing whatever's at hand, including a belief system he denies, because he ran out of actual arguments.
 
 Either way: zero points scored. The gambit fails regardless of which epistemic position is correct.
 
-This is not just a funny moment. It's a signal. When someone resorts to invoking a deity they don't believe in as a threat, they've exhausted their substantive arguments. The philosophical backbone of his positions had given way, and he grabbed at anything left on the shelf. What was left was an empty religious threat from a self-described atheist. 
+It's a signal, not just a funny moment: invoking a deity you don't believe in as a threat means you've exhausted your substantive arguments. The philosophical backbone gave way, and what was left on the shelf was an empty religious threat from a self-described atheist.
 
 This is the quality of ethical reasoning deployed in defence of central planning, taxation, and government monopolies. Tread accordingly. 🤡
 
 ---
 
-## VIII. The Sound Money Skeptic Who Trusts Central Bank Counterfeiters
+## IX. The Sound Money Skeptic Who Trusts Central Bank Counterfeiters
 
 Let's talk about the one position he held where the universe didn't just prove him wrong in principle — it proved him wrong on a deadline, in public, with timestamps.
 
@@ -240,7 +348,7 @@ El Salvador got the same treatment:
 
 > "Learn who actually 'controls' your 'unregulated' system."
 
-No name, no mechanism, no claim that could be checked or refuted — an insinuation left hanging, structurally identical to "your god will judge you" from Section VII. When he's out of arguments, he reaches for a vague authority-gesture instead of building one.
+No name, no mechanism, no claim that could be checked or refuted — an insinuation left hanging, structurally identical to "your god will judge you" from Section VIII. When he's out of arguments, he reaches for a vague authority-gesture instead of building one.
 
 The fuller exchange fills in what he meant, and it's a category error rather than a conspiracy: Bitcoin is used, among a million other things, for crime — same as cash, real estate, art, and the internet he name-checks approvingly elsewhere. "This gets used for illegal things, therefore government will crack down on it" is an argument for prosecuting the crime, not an indictment of the neutral technology. He never makes the distinction. Every regulatory headline gets read as a step toward Bitcoin's death rather than as separate from it — the network he's discussing has taken exactly zero of these predicted deaths in the years since.
 
@@ -252,7 +360,7 @@ Deep in a side-thread about what money even *is*, elyptica cited two different p
 
 > "All economists would say money is a medium of exchange. All definitions of money involves exchange."
 
-Both claims are checkable, and both are wrong. Store of value is not some fringe position — it's one of the three classical functions of money taught in any introductory economics course, alongside medium of exchange and unit of account. "All economists agree" is a claim he could have falsified himself by opening any textbook, the same "cite, don't check" failure from Exhibit Two and Section V. And the credentialing move underneath it — dismissing an argument by the letters after the arguer's name rather than its content — is the same rhetorical reflex as "you're not a real economist" leveled at anyone who disagrees with him, a move that would disqualify most of the Austrian school he's never read either.
+Both claims are checkable, and both are wrong. Store of value is not some fringe position — it's one of the three classical functions of money taught in any introductory economics course, alongside medium of exchange and unit of account. "All economists agree" is a claim he could have falsified himself by opening any textbook, the same "cite, don't check" failure from Exhibit Two and Section VI. And the credentialing move underneath it — dismissing an argument by the letters after the arguer's name rather than its content — is the same rhetorical reflex as "you're not a real economist" leveled at anyone who disagrees with him, a move that would disqualify most of the Austrian school he's never read either.
 
 ### Exhibit Six: The Scarcity He Never Understood
 
@@ -266,7 +374,7 @@ Austrian monetary theory settled this before Bitcoin existed: **the number of un
 
 > "You are printing money at that point. You are splitting 1BTC into an arbitrary amount... that's magically generating money... You could split 1BTC into a trillion fractions and run your whole economy off of that."
 
-This confuses dividing a unit with duplicating one. If a coin is worth a car and you split it into ten pieces, each piece is worth a tenth of a car — nothing new was created, the same total value just got sliced into smaller denominations. Printing money means duplicating claims on existing value without producing anything; splitting a satoshi into smaller satoshis doesn't touch the total supply of BTC at all, which is exactly why the operation has a hard ceiling he never engages with — you can subdivide as finely as needed, but the 21 million never moves. "Not enough coins to go around" isn't a Bitcoin problem — see [[The Praxeological Case Against All Inflation|why the initial number of units is irrelevant]] for the full praxeological case. It's the same conceptual gap as demanding "logic stems from evidence" in Section V — a confident claim about a subject whose basic terms were never defined.
+This confuses dividing a unit with duplicating one. If a coin is worth a car and you split it into ten pieces, each piece is worth a tenth of a car — nothing new was created, the same total value just got sliced into smaller denominations. Printing money means duplicating claims on existing value without producing anything; splitting a satoshi into smaller satoshis doesn't touch the total supply of BTC at all, which is exactly why the operation has a hard ceiling he never engages with — you can subdivide as finely as needed, but the 21 million never moves. "Not enough coins to go around" isn't a Bitcoin problem — see [[The Praxeological Case Against All Inflation|why the initial number of units is irrelevant]] for the full praxeological case. It's the same conceptual gap as demanding "logic stems from evidence" in Section VI — a confident claim about a subject whose basic terms were never defined.
 
 ### Exhibit Seven: The Slogan With No Mechanism
 
@@ -322,7 +430,7 @@ Bitcoin's supply cap is 21 million. It has not been changed. It cannot be change
 
 Bitcoin is not dead. It is not useless. The network has processed transactions continuously, the protocol has operated as designed, and the cap remains intact. Every one of his specific predictions failed.
 
-This is not a small error. Making confident predictions about protocol rules you don't understand is a specific form of intellectual overreach — the same overreach identified in Section IX, the Sowell "intellectuals" problem: expertise assumed to generalise where it doesn't. He has no cryptographic knowledge, no monetary theory grounding, no familiarity with the Austrian case for sound money. He picked a position, attached a deadline to it, and the deadline passed.
+This is not a small error. Making confident predictions about protocol rules you don't understand is a specific form of intellectual overreach — the same overreach identified in Section X, the Sowell "intellectuals" problem: expertise assumed to generalise where it doesn't. He has no cryptographic knowledge, no monetary theory grounding, no familiarity with the Austrian case for sound money. He picked a position, attached a deadline to it, and the deadline passed.
 
 The [[Economic Calculation Problem]] predicts that central planning of money — just like central planning of goods — cannot work over time. It produces systematic distortions: boom-bust cycles, malinvestment, inflation, and the gradual destruction of purchasing power for those who hold savings in the inflated currency. This is not a critique of bad monetary policy — it's a critique of the entire concept of a central monetary authority. The ECP doesn't exempt central banks. It applies to them with particular force, because money is the unit of calculation for the entire economy. Corrupt the money and you corrupt every economic signal simultaneously. 🏚️
 
@@ -336,9 +444,9 @@ _The 21M cap stands. The prediction is dead. Ironic who was right about dead thi
 
 ---
 
-## IX. The Academic Achievement Trap: Witnessed in Real Time
+## X. The Academic Achievement Trap: Witnessed in Real Time
 
-This section is structural, not personal. The critique isn't about one man — it's about what the system produces, and Moe Boy is a clean, close-up example of the scholarship-bond pattern described in [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]].
+This section is structural, not personal — the critique isn't about one man but what the system produces, and Moe Boy is a clean, close-up example of the scholarship-bond pattern described in [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]].
 
 The pattern: academically capable person plays the institutional game correctly, earns the credentials, gets the degree. The school system promises this pays off. Then — typically through some combination of government scholarship bonds, bureaucratic inertia, and the absence of independent judgment — the person ends up squandering their prime career-building years in government dysfunction, exits late with degraded human capital, and lands somewhere adjacent to where they started. The market laps them. They end up working for companies that serve the same government they should have left years earlier.
 
@@ -346,27 +454,27 @@ This is what happened. Step by step.
 
 He was academically capable. He got the degree, likely abroad, which puts him in a cohort that Trinidad's education system sorts to the top. On paper, at the start, the trajectory looks promising. Then the guardrails ran out — and the problem revealed itself.
 
-Thomas Sowell's _Intellectuals and Society_ identifies the exact failure mode: a person who demonstrates competence in one narrow domain (academic performance, technical tasks) assumes that competence generalises to all other domains — economics, politics, philosophy, social organisation. It doesn't. The academic achievement track selects for institutional compliance, not independent judgment. You learn to follow instructions well. You learn to pass tests designed by gatekeepers. You develop depth in a narrow specialty. And then you assume — wrongly, confidently, and loudly — that this expertise extends to understanding how societies should be organised.
+Thomas Sowell's _Intellectuals and Society_ identifies the exact failure mode: competence in one narrow domain gets assumed to generalise to all others — economics, politics, philosophy, social organisation. It doesn't. The academic track selects for institutional compliance, not independent judgment: follow instructions, pass tests designed by gatekeepers, develop depth in a narrow specialty — then assume, wrongly and loudly, that the expertise extends to how societies should be organised.
 
 It doesn't. It never did. Noam Chomsky is a world-class linguist and an economic illiterate who has defended some of the most empirically discredited positions in modern political thought. The mechanism is identical: genuine narrow expertise, unwarranted expansion into domains where the track record is zero. 🎓
 
-That same essay also identifies the guardrails dependency problem: academic training teaches you to succeed by following step-by-step institutional instructions. _"Take these courses. Get this GPA. Complete this degree. Join this ministry."_ At every stage, the next move is prescribed. The skill being developed is not independent judgment — it's compliance with external direction. Then the guardrails end, and the person is suddenly required to do something the entire system failed to train them for: make an independent judgment call with no prescribed answer.
+That same essay identifies the guardrails dependency problem: academic training teaches success by following step-by-step institutional instructions — _"Take these courses. Get this GPA. Complete this degree. Join this ministry."_ Every stage prescribed; the skill developed is compliance, not independent judgment. Then the guardrails end, and the system that never trained him for it suddenly requires an independent judgment call.
 
-He renewed for a second government year. That's the guardrails dependency problem made visible. Someone with independent judgment would have done the cost-benefit calculation after year one, recognised the human capital decay in real time, and exited immediately. Instead: another year of institutional direction, another year of waiting for the prescribed next step to appear.
+He renewed for a second government year — the guardrails dependency problem made visible. Independent judgment would have done the cost-benefit calculation after year one and exited. Instead: another year of institutional direction, waiting for the next prescribed step.
 
-When he finally left, he went to Fujitsu. Not to a company competing in the open market producing novel software — to a company reselling Oracle solutions to government clients. One step removed from the Ministry. The trajectory that looked like an escape was more of a lateral shuffle, staying close to the familiar institutional orbit rather than stepping into the genuinely competitive market where skills compound and the gap between performers widens fast.
+When he finally left, he went to Fujitsu — not a company competing in the open market building novel software, but one reselling Oracle solutions to government clients. One step removed from the Ministry. The escape was a lateral shuffle: staying inside the familiar institutional orbit instead of the genuinely competitive market where skills compound fast.
 
-The result, years later: tech support. Not software architecture. Not engineering leadership. Not a startup. Tech support for turnkey deployments — a role that demands institutional compliance and technical competence within a predefined system, but not independent creativity or market-facing skill-building. Exactly what the academic track prepared him for. Exactly not what he needed to do to keep pace with the market.
+The result, years later: tech support. Not software architecture, not engineering leadership, not a startup — tech support for turnkey deployments, demanding institutional compliance within a predefined system, not independent creativity. Exactly what the academic track prepared him for. Exactly not what he needed to keep pace with the market.
 
-And here is where it closes: he is ideologically captured. The leftist economic framework he defends is the exact framework that the institutions he passed through — Canadian universities, the T&T government education system — consistently instill. The school shapes the politics, and the politics rationalise the life choices, and the life choices confirm the politics. The loop is closed and self-reinforcing.
+Here's where it closes: he's ideologically captured. The leftist economic framework he defends is exactly what the institutions he passed through — Canadian universities, the T&T government education system — instill. School shapes politics, politics rationalises the life choices, the life choices confirm the politics. Closed loop, self-reinforcing.
 
-He defended the system because the system is all he knows. He can't see the trap because he's inside it — and critically, because the academic track he succeeded in never trained him to think about systems at the level of incentive structures, second-order consequences, or Austrian economics. It trained him to follow instructions and argue confidently. He does both. The instructions were wrong. The arguments are false. And the life trajectory reflects it — not as punishment, but as the predictable outcome of the choices the system steered him toward.
+He defended the system because it's all he knows. He can't see the trap because he's inside it — the academic track that shaped him never taught him to think in incentive structures or second-order consequences, only to follow instructions and argue confidently. He does both. The instructions were wrong, the arguments are false, and the life trajectory reflects it — not as punishment, but as the predictable outcome of the choices the system steered him toward.
 
 _The market doesn't grade on a curve, and it doesn't care what your transcript says._ 📉
 
 ---
 
-## X. QED — Every Position He Holds Is Logically False
+## XI. QED — Every Position He Holds Is Logically False
 
 We've covered the specific contradictions. Now let's close with the structural proof — the one he called "imaginary points with no evidence," which is itself evidence that he has no counter-argument.
 
@@ -395,9 +503,7 @@ These are exhaustive. Every method of conflict resolution either initiates force
 
 Every single one requires aggression as its enforcement mechanism. Every single one is therefore, under the logical proof above, **false**. Not suboptimal. Not misguided. **False**, in the same way that "I ought not speak (by speaking)" is false. The NAP test applied uniformly demolishes every plank of his platform.
 
-**His response** to this proof — when it was laid out clearly in the exchange — was to call it "imaginary points with no evidence."
-
-Note carefully what that response is. It is an argument. He is using argumentation — a conflict-free interaction — to dismiss the proof that conflict-free interaction presupposes non-aggression. He presupposes the very norm he's trying to deny, in the act of denying it. He refuted himself not despite his response but through it. 💀
+**His response** to this proof, laid out clearly in the exchange, was to call it "imaginary points with no evidence." Note what that response is: an argument. He's using argumentation — a conflict-free interaction — to dismiss the proof that conflict-free interaction presupposes non-aggression, presupposing the very norm he's trying to deny in the act of denying it. He refuted himself not despite his response but through it. 💀
 
 This is [[Argumentation Ethics]] working exactly as Hoppe described. You cannot escape the proof. Attempting to escape it confirms it. Silence confirms it — refusing to engage with an argument is not a refutation. Every available move is either a confirmation or a concession.
 
@@ -413,7 +519,7 @@ A man who argued that redlining was a racist policy that was bad — then immedi
 
 A man who correctly argued for consent in a rape discussion — that non-consent is the defining feature of the wrong — then turned around and could not see that taxation is structurally identical: extracted without consent, under threat of imprisonment. He understood the principle when it was convenient. He abandoned it when it was inconvenient. That's not ethics — it's selective outrage with a side of cognitive dissonance.
 
-A man who demanded evidence for logical axioms, moved goalposts when evidence was provided, dismissed sources as biased without engaging their content, and refused to answer A=A.
+A man who demanded evidence for logical axioms, rigged the standard so no evidence could ever count, dismissed sources as biased without engaging their content, and refused to answer A=A.
 
 A man who, as an atheist, deployed God as a rhetorical threat.
 
