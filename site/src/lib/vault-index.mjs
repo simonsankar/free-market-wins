@@ -13,6 +13,7 @@ const IGNORE_DIRS = new Set([
   ".claude",
   "private",
   "templates",
+  "videos",
   "node_modules",
 ])
 
