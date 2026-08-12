@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { IGNORE_MD_BASENAMES } from "./vault-ignore.mjs"
 
 // site/src/lib/vault-index.mjs -> site/src -> site -> vault root
 export const VAULT_ROOT = fileURLToPath(new URL("../../../", import.meta.url))
@@ -16,8 +17,6 @@ const IGNORE_DIRS = new Set([
   "videos",
   "node_modules",
 ])
-
-const IGNORE_MD_BASENAMES = new Set(["README.md", "CLAUDE.md", "Untitled.md"])
 
 // Folder-blurb files (essays/index.md, essays/dissects/index.md, ...) plus the
 // vault's homepage (index.md) — none of these are individually linkable notes.
