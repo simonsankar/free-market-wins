@@ -3,6 +3,7 @@
 .smart-env/
 .claude/
 .claudian/
+videos/
 site/node_modules/
 site/public/
 site/dist/
