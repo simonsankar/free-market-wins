@@ -12,12 +12,13 @@ This is an Obsidian vault containing philosophical and economic writings focused
 
 ## Repository Structure
 
-The vault is organized into four bins, each with a distinct test for what belongs there:
+The vault is organized into five bins, each with a distinct test for what belongs there:
 
 - **Root directory ("Core Theory")**: The standard Austrian-libertarian doctrinal architecture — axioms, proofs, and named economic concepts (e.g., `Austrian Economics.md`, `The Non-aggression Principle.md`, `Markets.md`, `Taxation.md`, `Anarchism.canvas`). Defending a piece of doctrine against its standard objections belongs here — that's part of stating the doctrine correctly, not a separate essay. Test: is this how any serious Austrian-libertarian text would explain this concept, independent of who wrote it?
 - **essays/philosophy/** and **essays/economics/**: Longer-form pieces where the author picks a topic — unprompted — and builds their own case on top of Core Theory. Test: "given this body of work, here's why this specific thing is right/wrong," in the author's own voice, not itself a piece of standard doctrine.
 - **essays/dissects/**: Rebuttals of one specific, identifiable external claim, policy, or argument — a Reddit talking point, a named policy, a real event, a real person's argument. `3rd-world-woes/` groups dissects targeting Trinidad and comparable developing-world government failures; a **developed-world** category is reserved for rich-country statism (Europe's welfare states, etc.) once a piece exists for it. Dissects not tied to a specific place sit ungrouped at the top level.
 - **zingers/**: Single punchy lines — no developed argument, just the line.
+- **videos/**: Pre-production for video — one folder per video, each holding a brief, an outline, a chaptered script with inline visual cues, per-asset briefs, and generated DaVinci Resolve import files. Test: is this a blueprint for something to be *watched*, rather than writing meant to be read? **Deliberately unpublished** — `videos` is in the `IGNORE_DIRS` set in `site/scripts/copy-assets.mjs`, `site/src/lib/vault-index.mjs`, and `site/src/lib/canvas.mjs`, and in `.dockerignore`. The first of those is load-bearing: without it every `.md` in the vault is copied to a publicly-fetchable `/vault-notes/` URL whether or not a page route exists. Videos link *out* to essays and Core Theory; nothing published links *in*. Created with the `/make-video` skill — see `videos/README.md` for the layout and `.claude/skills/make-video/` for the workflow.
 - **.obsidian/**: Obsidian vault configuration (do not modify)
 - **.smart-env/**: Smart environment configuration (do not modify)
 

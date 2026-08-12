@@ -5,6 +5,18 @@
 # Ignore Smart Environment folder
 .smart-env
 
+# Machine-local permissions. The rest of .claude/ (the make-video skill) is
+# meant to be committed and travel with the vault.
+.claude/settings.local.json
+
+# Derived from videos/<slug>/02-script.md — rebuilt by videos/_tools/build.mjs.
+# timings.csv is hand-written after recording, and 03-shot-list.md is meant to
+# be readable in Obsidian, so both stay tracked.
+videos/*/build/script.vo.txt
+videos/*/build/shots.csv
+videos/*/build/markers.edl
+videos/*/build/chapters.txt
+
 site/node_modules/
 site/public/
 site/dist/

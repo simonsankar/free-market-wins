@@ -12,6 +12,12 @@ const VAULT_ROOT = path.resolve(SITE_ROOT, "..")
 const ASSETS_DEST = path.join(SITE_ROOT, "public", "vault-assets")
 const NOTES_DEST = path.join(SITE_ROOT, "public", "vault-notes")
 
+// Keep in sync with the identical sets in src/lib/vault-index.mjs and
+// src/lib/canvas.mjs. This one is the load-bearing copy for privacy: every
+// .md under the vault root that isn't excluded here gets copied to
+// public/vault-notes/ and is publicly fetchable, whether or not a page route
+// exists for it. `videos/` is pre-production scratch — drafts, unsourced
+// claims, scripts mid-argument — and must never reach the site.
 const IGNORE_DIRS = new Set([
   "site",
   ".obsidian",
@@ -20,6 +26,7 @@ const IGNORE_DIRS = new Set([
   ".claude",
   "private",
   "templates",
+  "videos",
   "node_modules",
 ])
 const IMAGE_EXTS = new Set(["png", "jpg", "jpeg", "gif", "svg", "webp"])
