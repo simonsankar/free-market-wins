@@ -6,6 +6,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { IGNORE_MD_BASENAMES } from "../src/lib/vault-ignore.mjs"
 
 const SITE_ROOT = fileURLToPath(new URL("..", import.meta.url))
 const VAULT_ROOT = path.resolve(SITE_ROOT, "..")
@@ -49,6 +50,9 @@ function walk(dir) {
         fs.mkdirSync(path.dirname(destPath), { recursive: true })
         fs.copyFileSync(full, destPath)
       } else if (ext === "md") {
+        // Non-note markdown (README, CLAUDE, ...) has no page route either
+        // (src/content/config.ts excludes it) — don't publish the raw file.
+        if (IGNORE_MD_BASENAMES.has(entry.name)) continue
         const destPath = path.join(NOTES_DEST, rel)
         fs.mkdirSync(path.dirname(destPath), { recursive: true })
         fs.copyFileSync(full, destPath)
