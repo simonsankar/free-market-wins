@@ -452,8 +452,8 @@ This isn't a small error. Confident predictions about protocol rules you don't u
 Numbers, since he demanded them for everything else in this document and supplied none for his own forecast. Baseline is August 13, 2023, the day of the prediction; comparison is August 2026, after his own deadline had already passed.
 
 **Price and security:**
-- **Price:** ~$29,400 (8/13/23) → ~$79,000 (8/24/26) — up roughly **170%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
-- **Hash rate:** ~400 EH/s → ~900 EH/s — **more than doubled**. A dying network doesn't get harder to attack every year.
+- **Price:** ~$29,400 (8/13/23) → ~$63,000 (8/15/26, his own deadline) — up roughly **114%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
+- **Hash rate:** ~400 EH/s (8/13/23) → ~920 EH/s (8/15/26) — **more than doubled**. A dying network doesn't get harder to attack every year.
 
 **Adoption, before vs. after:**
 - **Spot ETFs:** zero in the US, over a decade of SEC denials → **11 approved** (Jan 2024), now holding **$100B+** in assets.
