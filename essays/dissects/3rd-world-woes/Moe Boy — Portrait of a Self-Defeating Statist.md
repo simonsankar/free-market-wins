@@ -424,15 +424,13 @@ The Austrian response to his taunt is simple: Hayek called for the denationalisa
 
 The "you'll see, when BTC crashes" from [Exhibit Seven](#exhibit-seven-the-slogan-with-no-mechanism) didn't stay vague forever. Moe Boy went on record with a specific, concrete, falsifiable prediction, verbatim, timestamped:
 
-```
-Moe Boy — 8/13/23, 2:47 AM
-In three years Bitcoin will exist in one of two states:
-   1. Dead and useless
-   2. Uncapped Bitcoin limit
-
-Moe Boy — 8/13/23, 4:31 AM
-15th August 2026
-```
+> **Moe Boy — 8/13/23, 2:47 AM**
+> In three years Bitcoin will exist in one of two states:
+>    1. Dead and useless
+>    2. Uncapped Bitcoin limit
+>
+> **Moe Boy — 8/13/23, 4:31 AM**
+> 15th August 2026
 
 A binary prediction, a start date, and a self-imposed deadline — August 15, 2026. No hedging, no range, no "probably." He picked the date himself.
 
