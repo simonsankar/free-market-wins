@@ -422,41 +422,46 @@ The Austrian response to his taunt is simple: Hayek called for the denationalisa
 
 **But here's where it gets genuinely historic.**
 
-The "you'll see, when BTC crashes" from [Exhibit Seven](#exhibit-seven-the-slogan-with-no-mechanism) didn't stay vague forever. Moe Boy eventually made a specific, concrete, falsifiable prediction about Bitcoin. He claimed it would be dead, useless, or its 21 million coin supply cap would be broken — **by 2026, with August 2026 as his window**.
+The "you'll see, when BTC crashes" from [Exhibit Seven](#exhibit-seven-the-slogan-with-no-mechanism) didn't stay vague forever. Moe Boy went on record with a specific, concrete, falsifiable prediction, verbatim, timestamped:
 
-It is August 2026. Not "close to" his window — inside it. This is the month. 📅
+```
+cyberNorp — 8/13/23, 2:47 AM
+In three years Bitcoin will exist in one of two states:
+   1. Dead and useless
+   2. Uncapped Bitcoin limit
 
-Bitcoin's supply cap is 21 million. It has not been changed. It cannot be changed without network consensus that is structurally, mathematically, and economically impossible to achieve — because any miner, node, or user who disagreed would simply continue running the original protocol, and the fork would be worthless. This isn't a governance decision. It's an enforcement mechanism with no off switch. Satoshi understood this. Moe Boy did not.
+cyberNorp — 8/13/23, 4:31 AM
+15th August 2026
+```
 
-Bitcoin is not dead. It is not useless. The network has processed transactions continuously, the protocol has operated as designed, and the cap remains intact. Every one of his specific predictions failed.
+A binary prediction, a start date, and a self-imposed deadline — August 15, 2026. No hedging, no range, no "probably." He picked the date himself.
 
-This is not a small error. Making confident predictions about protocol rules you don't understand is a specific form of intellectual overreach — the same overreach identified in [Section X](#x-the-academic-achievement-trap-witnessed-in-real-time), the Sowell "intellectuals" problem: expertise assumed to generalise where it doesn't. He has no cryptographic knowledge, no monetary theory grounding, no familiarity with the Austrian case for sound money. He picked a position, attached a deadline to it, and the deadline passed.
+- **Made:** August 13, 2023
+- **Deadline:** August 15, 2026 — his number, not ours
+- **Status:** the deadline has passed. It's now over a week later, and neither branch of his own "one of two states" occurred.
 
-The [[Economic Calculation Problem]] predicts that central planning of money — just like central planning of goods — cannot work over time. It produces systematic distortions: boom-bust cycles, malinvestment, inflation, and the gradual destruction of purchasing power for those who hold savings in the inflated currency. This is not a critique of bad monetary policy — it's a critique of the entire concept of a central monetary authority. The ECP doesn't exempt central banks. It applies to them with particular force, because money is the unit of calculation for the entire economy. Corrupt the money and you corrupt every economic signal simultaneously. 🏚️
+Bitcoin's supply cap is 21 million. It has not moved and cannot move without network consensus that is structurally impossible to achieve — any miner, node, or user who disagreed would just keep running the original protocol, and the fork would be worthless. It's an enforcement mechanism with no off switch. Satoshi understood this. Moe Boy did not.
 
-Bitcoin fixes this. Not because "number go up" — but because the supply is fixed, the rules are transparent, the enforcement is mathematical, and no political authority can print more of it the night before an election or to finance a war. It is the most Austrian monetary instrument ever created.
+Bitcoin is not dead. It is not useless. The network has run continuously, the protocol has behaved exactly as designed, and the cap remains intact. Both branches of his prediction failed simultaneously — the cleanest possible miss.
 
-He argued against it while defending the institution designed to steal purchasing power from every saver who holds its currency.
-
-That position is wrong in theory, wrong in practice, wrong on deadline, and demonstrably reversed by the actual 2026 record.
+This isn't a small error. Confident predictions about protocol rules you don't understand are the same intellectual overreach as [Section X](#x-the-academic-achievement-trap-witnessed-in-real-time)'s Sowell "intellectuals" problem: expertise assumed to generalise where it doesn't. He had no cryptographic knowledge, no monetary theory grounding, no familiarity with the Austrian case for sound money — and he attached a hard date to it anyway. 🏚️
 
 ### The Scoreboard
 
-Numbers, since he demanded them for everything else in this document and supplied none for his own forecast.
+Numbers, since he demanded them for everything else in this document and supplied none for his own forecast. Baseline is August 13, 2023, the day of the prediction; comparison is August 2026, after his own deadline had already passed.
 
-On August 23, 2023 — the day the "dead, useless, or uncapped by 2026" prediction was made — Bitcoin traded around $26,000. Its hash rate, the raw computing power securing the network against exactly the kind of takeover he warned about, sat around 400 EH/s, itself an all-time high at the time.
+**Price and security:**
+- **Price:** ~$29,400 (8/13/23) → ~$79,000 (8/24/26) — up roughly **170%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
+- **Hash rate:** ~400 EH/s → ~900 EH/s — **more than doubled**. A dying network doesn't get harder to attack every year.
 
-On August 24, 2026 — the day the window closed — Bitcoin traded around $79,000, up roughly 200% over the three years he bet against it. It had already gone further: an all-time high just above $126,000 on October 14, 2025, nearly 5x the price the day he made the call. The hash rate more than doubled, to roughly 900 EH/s. A network that's dying doesn't get harder to attack every single year.
+**Adoption, before vs. after:**
+- **Spot ETFs:** zero in the US, over a decade of SEC denials → **11 approved** (Jan 2024), now holding **$100B+** in assets.
+- **MicroStrategy:** ~158,000 BTC (~$4.7B), already the largest corporate holder → **800,000+ BTC** (~$33B) as "Strategy" — a 5x jump, now the single largest known Bitcoin holder on Earth, ahead of BlackRock's entire ETF.
+- **US government:** held BTC only as seized criminal contraband, no policy at all → formal **Strategic Bitcoin Reserve** (2025), ~**325,000 BTC** held on purpose.
+- **El Salvador** (his own "it failed" example, [Exhibit Three](#exhibit-three-citing-adoption-as-proof-of-failure)): ~2,400 BTC, the *only* nation with any position → **7,700+ BTC**, still buying daily, still legal tender.
+- **Sovereign reserves generally:** 1 nation → **7 nations** (El Salvador, US, Pakistan, Bhutan, UAE, Czech Republic, Brazil).
 
-Nothing about the adoption picture went the way he insisted it would, either. Here's the landscape he was actually standing in on August 23, 2023, next to what it became:
-
-- **ETFs.** In August 2023, there was no spot Bitcoin ETF anywhere in the US — over a decade of SEC denials, with applications sitting in limbo pending a court fight Grayscale had just won weeks earlier. By January 2024, the SEC approved eleven of them — the exact "regulation" he said was overdue. It didn't strangle Bitcoin, it opened a pipe for institutional capital; those ETFs now hold well over $100 billion in assets, from a standing start of zero.
-- **MicroStrategy.** In August 2023 it held about 158,000 BTC, worth roughly $4.7 billion — already the largest corporate holder, but a fraction of what came next. By 2026, as "Strategy," it holds over 800,000 BTC, more than $33 billion invested — a 5x jump in coin count alone, and now ahead of BlackRock's entire spot ETF as the single largest known Bitcoin holder on the planet.
-- **The US government.** In August 2023 it held Bitcoin only as leftover contraband from criminal seizures, with no policy framework around it at all — not a strategy, just an evidence locker. In 2025 it stood up a formal Strategic Bitcoin Reserve — the very state he trusted over "some random schmuck" — and now holds roughly 325,000 BTC as deliberate national policy. The state didn't regulate Bitcoin into the ground. It started buying it on purpose.
-- **El Salvador**, the "it failed" example from [Exhibit Three](#exhibit-three-citing-adoption-as-proof-of-failure), held roughly 2,400 BTC in August 2023 and was, at the time, the *only* nation on Earth with any Bitcoin position. It kept publicly buying — one BTC a day, on schedule — and now holds north of 7,700 BTC in its national reserve, more than 3x its 2023 stack, still legal tender, five years after he called it dead.
-- **Sovereign adoption generally.** In August 2023, El Salvador stood alone. By 2026, seven nations — El Salvador, the US, Pakistan, Bhutan, the UAE, the Czech Republic, and Brazil — hold Bitcoin as a sovereign strategic reserve. One country became seven. Not the uncapped, abandoned, regulated-to-death asset he forecast.
-
-Price, security, and adoption all moved the opposite direction from every prediction he made, and not narrowly. A 200%+ gain against a call for zero. A hash rate that doubled against a call for collapse. Governments becoming buyers against a call for regulatory execution. This isn't "a little bit wrong" — it's the maximum possible distance a three-year forecast can travel from reality: not missing the trend, but calling its exact inverse, on the record, with a deadline that has now come and gone.
+Every axis — price, security, adoption — moved the opposite direction from what he predicted, and not narrowly. This isn't "a little bit wrong." It's the maximum distance a three-year, self-dated forecast can travel from reality: not missing the trend, but calling its exact inverse, on the record, with a deadline he set himself that's now over a week gone.
 
 _The 21M cap stands. The prediction is dead. Ironic who was right about dead things. 🪦_
 
