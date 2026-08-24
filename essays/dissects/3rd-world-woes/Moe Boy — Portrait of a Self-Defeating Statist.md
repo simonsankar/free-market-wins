@@ -425,12 +425,15 @@ The Austrian response to his taunt is simple: Hayek called for the denationalisa
 The "you'll see, when BTC crashes" from [Exhibit Seven](#exhibit-seven-the-slogan-with-no-mechanism) didn't stay vague forever. Moe Boy went on record with a specific, concrete, falsifiable prediction, verbatim, timestamped:
 
 > **Moe Boy — 8/13/23, 2:47 AM**
-> In three years Bitcoin will exist in one of two states:
->    1. Dead and useless
->    2. Uncapped Bitcoin limit
+>
+> &nbsp;&nbsp;In three years Bitcoin will exist in one of two states:
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;1. Dead and useless
+> &nbsp;&nbsp;&nbsp;&nbsp;2. Uncapped Bitcoin limit
 >
 > **Moe Boy — 8/13/23, 4:31 AM**
-> 15th August 2026
+>
+> &nbsp;&nbsp;15th August 2026
 
 A binary prediction, a start date, and a self-imposed deadline — August 15, 2026. No hedging, no range, no "probably." He picked the date himself.
 
@@ -449,8 +452,8 @@ This isn't a small error. Confident predictions about protocol rules you don't u
 Numbers, since he demanded them for everything else in this document and supplied none for his own forecast. Baseline is August 13, 2023, the day of the prediction; comparison is August 2026, after his own deadline had already passed.
 
 **Price and security:**
-- **Price:** ~$29,400 (8/13/23) → ~$79,000 (8/24/26) — up roughly **170%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
-- **Hash rate:** ~400 EH/s → ~900 EH/s — **more than doubled**. A dying network doesn't get harder to attack every year.
+- **Price:** ~$29,400 (8/13/23) → ~$63,000 (8/15/26, his own deadline) — up roughly **114%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
+- **Hash rate:** ~400 EH/s (8/13/23) → ~920 EH/s (8/15/26) — **more than doubled**. A dying network doesn't get harder to attack every year.
 
 **Adoption, before vs. after:**
 - **Spot ETFs:** zero in the US, over a decade of SEC denials → **11 approved** (Jan 2024), now holding **$100B+** in assets.
