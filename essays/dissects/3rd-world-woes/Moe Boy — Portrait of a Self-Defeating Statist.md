@@ -449,20 +449,17 @@ This isn't a small error. Confident predictions about protocol rules you don't u
 
 ### The Scoreboard
 
-Numbers, since he demanded them for everything else in this document and supplied none for his own forecast. Baseline is August 13, 2023, the day of the prediction; comparison is August 2026, after his own deadline had already passed.
+He demanded numbers for everything else in this document and supplied none for his own forecast. **Then** (8/13/23, prediction made) vs. **now** (8/15/26, his own deadline):
 
-**Price and security:**
-- **Price:** ~$29,400 (8/13/23) → ~$63,000 (8/15/26, his own deadline) — up roughly **114%**, having already peaked near **$126,000** in October 2025, over 4x the price the day he made the call.
-- **Hash rate:** ~400 EH/s (8/13/23) → ~920 EH/s (8/15/26) — **more than doubled**. A dying network doesn't get harder to attack every year.
+- **BTC price:** ~$29,400 → ~$63,000 — **+114%** (peaked ~$126,000 in Oct 2025, 4x)
+- **Network hash rate:** ~400 EH/s → ~920 EH/s — **more than doubled**; a dying network doesn't get harder to attack
+- **Spot Bitcoin ETFs (US):** 0, over a decade of SEC denials → **11 approved**, **$100B+** in assets
+- **MicroStrategy / Strategy holdings:** ~158,000 BTC (~$4.7B) → **800,000+ BTC** (~$33B) — 5x, now the largest known BTC holder on Earth
+- **US government BTC:** seized criminal contraband, no policy → formal **Strategic Bitcoin Reserve**, **~325,000 BTC** held on purpose
+- **El Salvador reserve:** ~2,400 BTC, the only nation with any position → **7,700+ BTC**, still buying daily
+- **Nations holding BTC as a reserve:** 1 (El Salvador) → **7** (+ US, Pakistan, Bhutan, UAE, Czech Republic, Brazil)
 
-**Adoption, before vs. after:**
-- **Spot ETFs:** zero in the US, over a decade of SEC denials → **11 approved** (Jan 2024), now holding **$100B+** in assets.
-- **MicroStrategy:** ~158,000 BTC (~$4.7B), already the largest corporate holder → **800,000+ BTC** (~$33B) as "Strategy" — a 5x jump, now the single largest known Bitcoin holder on Earth, ahead of BlackRock's entire ETF.
-- **US government:** held BTC only as seized criminal contraband, no policy at all → formal **Strategic Bitcoin Reserve** (2025), ~**325,000 BTC** held on purpose.
-- **El Salvador** (his own "it failed" example, [Exhibit Three](#exhibit-three-citing-adoption-as-proof-of-failure)): ~2,400 BTC, the *only* nation with any position → **7,700+ BTC**, still buying daily, still legal tender.
-- **Sovereign reserves generally:** 1 nation → **7 nations** (El Salvador, US, Pakistan, Bhutan, UAE, Czech Republic, Brazil).
-
-Every axis — price, security, adoption — moved the opposite direction from what he predicted, and not narrowly. This isn't "a little bit wrong." It's the maximum distance a three-year, self-dated forecast can travel from reality: not missing the trend, but calling its exact inverse, on the record, with a deadline he set himself that's now over a week gone.
+Every line moved the opposite direction from what he predicted, and not narrowly — the maximum distance a self-dated forecast can travel from reality: not missing the trend, but calling its exact inverse, on the record.
 
 _The 21M cap stands. The prediction is dead. Ironic who was right about dead things. 🪦_
 
