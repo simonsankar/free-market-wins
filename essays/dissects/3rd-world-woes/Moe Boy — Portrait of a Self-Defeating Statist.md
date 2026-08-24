@@ -440,6 +440,24 @@ He argued against it while defending the institution designed to steal purchasin
 
 That position is wrong in theory, wrong in practice, wrong on deadline, and demonstrably reversed by the actual 2026 record.
 
+### The Scoreboard
+
+Numbers, since he demanded them for everything else in this document and supplied none for his own forecast.
+
+On August 23, 2023 — the day the "dead, useless, or uncapped by 2026" prediction was made — Bitcoin traded around $26,000. Its hash rate, the raw computing power securing the network against exactly the kind of takeover he warned about, sat around 400 EH/s, itself an all-time high at the time.
+
+On August 24, 2026 — the day the window closed — Bitcoin traded around $79,000, up roughly 200% over the three years he bet against it. It had already gone further: an all-time high just above $126,000 on October 14, 2025, nearly 5x the price the day he made the call. The hash rate more than doubled, to roughly 900 EH/s. A network that's dying doesn't get harder to attack every single year.
+
+Nothing about the adoption picture went the way he insisted it would, either. Here's the landscape he was actually standing in on August 23, 2023, next to what it became:
+
+- **ETFs.** In August 2023, there was no spot Bitcoin ETF anywhere in the US — over a decade of SEC denials, with applications sitting in limbo pending a court fight Grayscale had just won weeks earlier. By January 2024, the SEC approved eleven of them — the exact "regulation" he said was overdue. It didn't strangle Bitcoin, it opened a pipe for institutional capital; those ETFs now hold well over $100 billion in assets, from a standing start of zero.
+- **MicroStrategy.** In August 2023 it held about 158,000 BTC, worth roughly $4.7 billion — already the largest corporate holder, but a fraction of what came next. By 2026, as "Strategy," it holds over 800,000 BTC, more than $33 billion invested — a 5x jump in coin count alone, and now ahead of BlackRock's entire spot ETF as the single largest known Bitcoin holder on the planet.
+- **The US government.** In August 2023 it held Bitcoin only as leftover contraband from criminal seizures, with no policy framework around it at all — not a strategy, just an evidence locker. In 2025 it stood up a formal Strategic Bitcoin Reserve — the very state he trusted over "some random schmuck" — and now holds roughly 325,000 BTC as deliberate national policy. The state didn't regulate Bitcoin into the ground. It started buying it on purpose.
+- **El Salvador**, the "it failed" example from [Exhibit Three](#exhibit-three-citing-adoption-as-proof-of-failure), held roughly 2,400 BTC in August 2023 and was, at the time, the *only* nation on Earth with any Bitcoin position. It kept publicly buying — one BTC a day, on schedule — and now holds north of 7,700 BTC in its national reserve, more than 3x its 2023 stack, still legal tender, five years after he called it dead.
+- **Sovereign adoption generally.** In August 2023, El Salvador stood alone. By 2026, seven nations — El Salvador, the US, Pakistan, Bhutan, the UAE, the Czech Republic, and Brazil — hold Bitcoin as a sovereign strategic reserve. One country became seven. Not the uncapped, abandoned, regulated-to-death asset he forecast.
+
+Price, security, and adoption all moved the opposite direction from every prediction he made, and not narrowly. A 200%+ gain against a call for zero. A hash rate that doubled against a call for collapse. Governments becoming buyers against a call for regulatory execution. This isn't "a little bit wrong" — it's the maximum possible distance a three-year forecast can travel from reality: not missing the trend, but calling its exact inverse, on the record, with a deadline that has now come and gone.
+
 _The 21M cap stands. The prediction is dead. Ironic who was right about dead things. 🪦_
 
 ---
