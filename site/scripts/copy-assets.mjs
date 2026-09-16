@@ -12,6 +12,11 @@ const SITE_ROOT = fileURLToPath(new URL("..", import.meta.url))
 const VAULT_ROOT = path.resolve(SITE_ROOT, "..")
 const ASSETS_DEST = path.join(SITE_ROOT, "public", "vault-assets")
 const NOTES_DEST = path.join(SITE_ROOT, "public", "vault-notes")
+// Card art for the /tier-list/ page — tracked source images live outside
+// public/ (which is entirely gitignored, since it's otherwise pure build
+// output) and get copied in here so they survive a fresh clone or deploy.
+const TIER_LIST_ART_SRC = path.join(SITE_ROOT, "tier-list-art-src")
+const TIER_LIST_ART_DEST = path.join(SITE_ROOT, "public", "tier-list-art")
 
 // Keep in sync with the identical sets in src/lib/vault-index.mjs and
 // src/lib/canvas.mjs. This one is the load-bearing copy for privacy: every
@@ -64,3 +69,14 @@ function walk(dir) {
 walk(VAULT_ROOT)
 console.log(`[copy-assets] copied vault images into ${path.relative(SITE_ROOT, ASSETS_DEST)}/`)
 console.log(`[copy-assets] copied vault notes into ${path.relative(SITE_ROOT, NOTES_DEST)}/`)
+
+if (fs.existsSync(TIER_LIST_ART_SRC)) {
+  fs.rmSync(TIER_LIST_ART_DEST, { recursive: true, force: true })
+  fs.mkdirSync(TIER_LIST_ART_DEST, { recursive: true })
+  for (const entry of fs.readdirSync(TIER_LIST_ART_SRC, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      fs.copyFileSync(path.join(TIER_LIST_ART_SRC, entry.name), path.join(TIER_LIST_ART_DEST, entry.name))
+    }
+  }
+  console.log(`[copy-assets] copied tier-list art into ${path.relative(SITE_ROOT, TIER_LIST_ART_DEST)}/`)
+}
