@@ -1,0 +1,330 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+// Card content lives here rather than as vault markdown/content-collection
+// entries — these are throwaway debate one-liners for a ranking toy, not
+// doctrine/essays/dissects, so none of the five vault bins in CLAUDE.md fit.
+const ARGUMENTS = [
+  { id: "might-makes-right", title: "Might Makes Right", blurb: "Without a state's monopoly on force, whoever's strongest just rules." },
+  { id: "warlords-problem", title: "Warlords", blurb: "No central state, so the power vacuum fills with competing warlords and mega-corps." },
+  { id: "voluntary-slavery", title: "Voluntary Slavery", blurb: "People could sell themselves into permanent bondage via contract." },
+  { id: "profits-over-people", title: "Profits Over People", blurb: "Markets replace human concern with cold profit-seeking." },
+  { id: "moral-degeneracy", title: "Moral Degeneracy", blurb: "Capitalism makes people greedy, atomized, culturally hollow." },
+  { id: "never-been-tried", title: "Never Been Tried", blurb: "No stateless-market society has ever existed (Iceland etc. don't count, apparently)." },
+  { id: "free-rider-problem", title: "Free Rider Problem", blurb: "Non-excludable, non-rivalrous goods get under-produced because no one has to pay to benefit." },
+  { id: "roads", title: "Muh Roads", blurb: "Who builds and maintains roads without a taxing authority?" },
+  { id: "public-utilities", title: "Public Goods", blurb: "Water, power, the internet, etc. are “too essential” or “too foundational” to be run for profit." },
+  { id: "poor-people", title: "Poor People", blurb: "Without welfare, poor people starve or go without care." },
+  { id: "environment", title: "The Environment", blurb: "No regulator, so pollution and resource destruction go unchecked." },
+  { id: "national-parks", title: "National Parks / Reserves", blurb: "Who preserves wilderness and reserves without government?" },
+  { id: "natural-monopoly", title: "Natural Monopoly", blurb: "Courts, roads, and protection inherently consolidate into one provider anyway." },
+  { id: "rights-enforcement-surplus", title: "Rights-Enforcement Surplus", blurb: "Private protection becomes a captive local monopoly that overcharges." },
+  { id: "surplus-value", title: "Surplus Value", blurb: "Profit is just unpaid labor capitalists extract from workers — the core Marxist exploitation claim, built on the labor theory of value." },
+  { id: "discrimination", title: "Discrimination", blurb: "Without civil rights law, businesses freely refuse service to groups.", titleSize: 15, tierTitleSize: 13 },
+  { id: "lockean-proviso", title: "The Donut Proviso", blurb: "First-comers homestead everything; latecomers get no just claim to any resource." },
+  { id: "humes-guillotine", title: "Hume's Guillotine", blurb: "You can't derive an “ought” (rights) from an “is” (self-ownership)." },
+  { id: "subjectivism", title: "Subjectivism", blurb: "Property and value are subjective, so any homesteading rule is arbitrary." },
+  { id: "intellectual-property", title: "Intellectual Property", blurb: "No patents or copyright without a state, so innovation is under-incentivized." },
+  { id: "mercenaries", title: "Mercenaries", blurb: "Private defense firms are PMCs, and PMCs historically become armed factions." },
+  { id: "positive-rights", title: "Positive Rights", blurb: "Rights to healthcare and education are as real as non-interference rights." },
+  { id: "cap-to-state-drift", title: "Anarchist to State Drift", blurb: "Competing defense agencies coalesce into a dominant one, functionally recreating a state." },
+  { id: "hobbesian-state-of-nature", title: "Hobbesian State of Nature", blurb: "Man is brutish; without a sovereign, life is a war of all against all." },
+  { id: "survivalism", title: "Survivalism / Reification of the Zero", blurb: "NAP ethics is built around not dying, not a positive vision of flourishing." },
+  { id: "borderarianism", title: "The Bordertarians", blurb: "Open borders plus a welfare state equals subsidized free-riding.", titleSize: 15, tierTitleSize: 13 },
+  { id: "child-rights", title: "Child Rights", blurb: "Self-ownership and contract theory don't cleanly apply to children." },
+  { id: "oligarchy", title: "Rich People Rule", blurb: "No elections or regulation, so capital owners run everything unaccountably." },
+  { id: "epstein-scenario", title: "The Epstein Scenario", blurb: "Unregulated wealth could build private infrastructure for trafficking and blackmail with no oversight to stop it." },
+  { id: "ancap-vs-state", title: "Crushed By The State", blurb: "A stateless ancap society just gets invaded and conquered by an organized collectivist state next door." },
+]
+
+const TIERS = [
+  { key: "made-me-think", label: "Actually Made Me Think" },
+  { key: "two-seconds", label: "Interesting For 2 Seconds" },
+  { key: "mildly-interesting", label: "Mildly Interesting" },
+  { key: "stupidity-on-steroids", label: "Stupidity On Steroids" },
+  { key: "couldnt-give-a-fuck", label: "Couldn't Give A Fuck" },
+]
+
+// Written out as full literal class strings (not built from a template
+// literal) so Tailwind's static scanner can actually see and generate them —
+// `bg-${color}-500` in source text isn't a match, `bg-teal-500` is. Plain
+// `-500` shades with no dark: variant on purpose: the site's theme toggle
+// flips a `data-theme` attribute, not Tailwind's `dark` class, so the
+// media-query-based `dark:` variant wouldn't track it anyway — `-500` reads
+// fine against both the light and dark page backgrounds.
+const TIER_STYLES = {
+  "made-me-think": { chip: "border-teal-500/50 bg-teal-500/15 text-teal-500", zone: "border-teal-500/40" },
+  "two-seconds": { chip: "border-lime-500/50 bg-lime-500/15 text-lime-500", zone: "border-lime-500/40" },
+  "mildly-interesting": { chip: "border-yellow-500/50 bg-yellow-500/15 text-yellow-500", zone: "border-yellow-500/40" },
+  "stupidity-on-steroids": { chip: "border-orange-500/50 bg-orange-500/15 text-orange-500", zone: "border-orange-500/40" },
+  "couldnt-give-a-fuck": { chip: "border-red-500/50 bg-red-500/15 text-red-500", zone: "border-red-500/40" },
+}
+---
+
+<Layout
+  title="Arguments Against AnCap: Tier List"
+  description="Rank the usual arguments against anarcho-capitalism from Hume's Guillotine down to Couldn't Give A Fuck."
+>
+  <h1 class="article-title">Arguments Against AnCap</h1>
+
+  <div class="mb-6 flex flex-wrap items-center gap-3">
+    <button id="tl-save" type="button" class="filter-tab">Save preset</button>
+    <select id="tl-load" class="filter-tab cursor-pointer bg-transparent">
+      <option value="">Load preset…</option>
+    </select>
+    <button id="tl-delete" type="button" class="filter-tab">Delete preset</button>
+    <button id="tl-reset" type="button" class="filter-tab">Reset</button>
+    <span id="tl-status" class="content-meta"></span>
+  </div>
+
+  <section
+    id="tl-pool"
+    class="tl-dropzone mb-8 grid min-h-[5rem] grid-cols-[repeat(auto-fill,minmax(7.25rem,1fr))] gap-2 rounded-[2px] border border-dashed border-lightgray p-3"
+    data-tier="pool"
+  >
+  </section>
+
+  <div id="tl-tiers" class="flex flex-col gap-3">
+    {
+      TIERS.map((tier) => (
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-stretch">
+          <div
+            class={`flex w-full items-center rounded-[2px] border px-4 py-2 font-header text-sm font-bold tracking-wide sm:w-56 sm:flex-shrink-0 ${TIER_STYLES[tier.key].chip}`}
+          >
+            {tier.label}
+          </div>
+          <div
+            class={`tl-dropzone grid min-h-[5rem] flex-1 grid-cols-[repeat(auto-fill,minmax(7.25rem,1fr))] gap-2 rounded-[2px] border p-3 ${TIER_STYLES[tier.key].zone}`}
+            data-tier={tier.key}
+          />
+        </div>
+      ))
+    }
+  </div>
+
+  <template id="tl-card-template">
+    <div
+      class="tl-card group relative flex aspect-square cursor-grab items-center justify-center rounded-[2px] border border-lightgray bg-light p-2 text-center active:cursor-grabbing"
+      draggable="true"
+    >
+      <img class="tl-card-art absolute inset-0 hidden h-full w-full rounded-[1px] object-cover" loading="lazy" alt="" />
+      <div class="tl-card-overlay absolute inset-0 hidden rounded-[1px] bg-gradient-to-t from-black/85 via-black/35 to-black/10"></div>
+      <div
+        class="relative z-10 w-full leading-tight font-bold break-words text-balance text-darkgray [-webkit-hyphens:auto] [hyphens:auto] tl-card-title"
+        lang="en"
+      ></div>
+      <div
+        class="tl-tooltip pointer-events-none absolute bottom-[calc(100%+0.5rem)] left-1/2 z-30 min-h-[7rem] w-64 -translate-x-1/2 overflow-hidden rounded-[4px] border border-secondary/40 bg-dark opacity-0 shadow-2xl transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+      >
+        <img class="tl-tooltip-art absolute inset-0 hidden h-full w-full object-cover brightness-50" alt="" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-slate-950/30"></div>
+        <div class="tl-tooltip-text relative z-10 flex min-h-[7rem] items-end p-4 text-left text-base leading-snug font-medium text-white"></div>
+      </div>
+    </div>
+  </template>
+</Layout>
+
+<style>
+  /* Tier rows share width with the tier-name label, so they're narrower per
+     card than the pool — same 7.25rem minimum column, less room per card.
+     Per-card overrides (Discrimination, Bordertarians) are set as CSS custom
+     properties rather than a plain inline font-size, specifically so these
+     two context rules can each pick their own value — a literal inline
+     font-size would always beat both, so a card couldn't be sized
+     differently in the pool vs. a tier the way it needs to be here. */
+  #tl-pool .tl-card-title {
+    font-size: var(--title-size-pool, 1rem);
+  }
+  .tl-dropzone:not(#tl-pool) .tl-card-title {
+    font-size: var(--title-size-tier, 0.875rem);
+  }
+</style>
+
+<script define:vars={{ ARGUMENTS, TIERS }}>
+  const STORAGE_KEY = "ancap-tierlist-state"
+  const PRESETS_KEY = "ancap-tierlist-presets"
+
+  const pool = document.getElementById("tl-pool")
+  const tiersRoot = document.getElementById("tl-tiers")
+  const template = document.getElementById("tl-card-template")
+  const statusEl = document.getElementById("tl-status")
+  const loadSelect = document.getElementById("tl-load")
+
+  const dropzones = () => Array.from(document.querySelectorAll(".tl-dropzone"))
+
+  function makeCard(arg) {
+    const node = template.content.firstElementChild.cloneNode(true)
+    node.dataset.id = arg.id
+    node.tabIndex = 0
+    node.setAttribute("aria-label", `${arg.title}: ${arg.blurb}`)
+    const titleEl = node.querySelector(".tl-card-title")
+    titleEl.textContent = arg.title
+    if (arg.titleSize) titleEl.style.setProperty("--title-size-pool", `${arg.titleSize}px`)
+    if (arg.tierTitleSize) titleEl.style.setProperty("--title-size-tier", `${arg.tierTitleSize}px`)
+    node.querySelector(".tl-tooltip-text").textContent = arg.blurb
+
+    const artImg = node.querySelector(".tl-card-art")
+    const overlay = node.querySelector(".tl-card-overlay")
+    const tooltipArt = node.querySelector(".tl-tooltip-art")
+    const artExts = ["jpg", "jpeg", "png", "webp"]
+    ;(function tryExt(i) {
+      if (i >= artExts.length) return
+      const probe = new Image()
+      probe.onload = () => {
+        artImg.src = probe.src
+        artImg.classList.remove("hidden")
+        overlay.classList.remove("hidden")
+        tooltipArt.src = probe.src
+        tooltipArt.classList.remove("hidden")
+        titleEl.classList.remove("text-darkgray")
+        titleEl.classList.add("text-white", "drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]")
+      }
+      probe.onerror = () => tryExt(i + 1)
+      probe.src = `/tier-list-art/${arg.id}.${artExts[i]}`
+    })(0)
+
+    node.addEventListener("dragstart", (e) => {
+      e.dataTransfer.setData("text/plain", arg.id)
+      e.dataTransfer.effectAllowed = "move"
+      node.classList.add("opacity-40")
+    })
+    node.addEventListener("dragend", () => node.classList.remove("opacity-40"))
+    return node
+  }
+
+  const sortedByTitle = (ids, byId) =>
+    [...ids].sort((a, b) => byId[a].title.localeCompare(byId[b].title))
+
+  function defaultState() {
+    const byId = Object.fromEntries(ARGUMENTS.map((a) => [a.id, a]))
+    return {
+      pool: sortedByTitle(ARGUMENTS.map((a) => a.id), byId),
+      tiers: Object.fromEntries(TIERS.map((t) => [t.key, []])),
+    }
+  }
+
+  function currentState() {
+    const state = { pool: [], tiers: Object.fromEntries(TIERS.map((t) => [t.key, []])) }
+    dropzones().forEach((zone) => {
+      const tier = zone.dataset.tier
+      const ids = Array.from(zone.children).map((c) => c.dataset.id)
+      if (tier === "pool") state.pool = ids
+      else state.tiers[tier] = ids
+    })
+    return state
+  }
+
+  function renderState(state) {
+    const byId = Object.fromEntries(ARGUMENTS.map((a) => [a.id, a]))
+    dropzones().forEach((zone) => (zone.innerHTML = ""))
+    sortedByTitle((state.pool || []).filter((id) => byId[id]), byId).forEach((id) =>
+      pool.appendChild(makeCard(byId[id])),
+    )
+    TIERS.forEach((tier) => {
+      const zone = document.querySelector(`.tl-dropzone[data-tier="${tier.key}"]`)
+      ;(state.tiers?.[tier.key] || []).forEach((id) => byId[id] && zone.appendChild(makeCard(byId[id])))
+    })
+  }
+
+  function saveCurrent() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(currentState()))
+  }
+
+  function flashStatus(msg) {
+    statusEl.textContent = msg
+    setTimeout(() => {
+      if (statusEl.textContent === msg) statusEl.textContent = ""
+    }, 2500)
+  }
+
+  function loadPresetNames() {
+    try {
+      return JSON.parse(localStorage.getItem(PRESETS_KEY) || "{}")
+    } catch {
+      return {}
+    }
+  }
+
+  function refreshPresetOptions() {
+    const presets = loadPresetNames()
+    loadSelect.innerHTML = '<option value="">Load preset…</option>'
+    Object.keys(presets).forEach((name) => {
+      const opt = document.createElement("option")
+      opt.value = name
+      opt.textContent = name
+      loadSelect.appendChild(opt)
+    })
+  }
+
+  dropzones().forEach((zone) => {
+    zone.addEventListener("dragover", (e) => {
+      e.preventDefault()
+      e.dataTransfer.dropEffect = "move"
+    })
+    zone.addEventListener("drop", (e) => {
+      e.preventDefault()
+      const id = e.dataTransfer.getData("text/plain")
+      const card = document.querySelector(`.tl-card[data-id="${id}"]`)
+      if (card) zone.appendChild(card)
+      saveCurrent()
+    })
+  })
+
+  document.getElementById("tl-reset").addEventListener("click", () => {
+    renderState(defaultState())
+    saveCurrent()
+    flashStatus("Reset.")
+  })
+
+  document.getElementById("tl-save").addEventListener("click", () => {
+    const name = prompt("Preset name?")
+    if (!name) return
+    const presets = loadPresetNames()
+    presets[name] = currentState()
+    localStorage.setItem(PRESETS_KEY, JSON.stringify(presets))
+    refreshPresetOptions()
+    loadSelect.value = name
+    flashStatus(`Saved "${name}".`)
+  })
+
+  loadSelect.addEventListener("change", () => {
+    const name = loadSelect.value
+    if (!name) return
+    const presets = loadPresetNames()
+    if (presets[name]) {
+      renderState(withMissingIdsBackfilled(presets[name]))
+      saveCurrent()
+      flashStatus(`Loaded "${name}".`)
+    }
+  })
+
+  document.getElementById("tl-delete").addEventListener("click", () => {
+    const name = loadSelect.value
+    if (!name) {
+      flashStatus("Pick a preset to delete first.")
+      return
+    }
+    const presets = loadPresetNames()
+    delete presets[name]
+    localStorage.setItem(PRESETS_KEY, JSON.stringify(presets))
+    refreshPresetOptions()
+    flashStatus(`Deleted "${name}".`)
+  })
+
+  // New cards added after a preset/state was saved won't be in it yet —
+  // anything in ARGUMENTS not already placed somewhere lands back in the pool
+  // instead of silently vanishing from the board.
+  function withMissingIdsBackfilled(state) {
+    const placedIds = new Set([...(state.pool || []), ...Object.values(state.tiers || {}).flat()])
+    const newIds = ARGUMENTS.map((a) => a.id).filter((id) => !placedIds.has(id))
+    return newIds.length ? { ...state, pool: [...(state.pool || []), ...newIds] } : state
+  }
+
+  let initial = defaultState()
+  try {
+    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null")
+    if (stored) initial = stored
+  } catch {}
+  renderState(withMissingIdsBackfilled(initial))
+  refreshPresetOptions()
+</script>
