@@ -135,11 +135,10 @@ const TIER_STYLES = {
 >
   <h1 class="article-title">Arguments Against AnCap</h1>
 
-  <div class="flex flex-col items-start gap-6 lg:flex-row">
-    <div class="min-w-0 flex-1">
-      <div class="hero-bleed">
-        <div class="mx-auto max-w-[100rem] px-8 max-[800px]:px-4">
-          <div id="tier-grid" class="flex flex-col gap-3">
+  <div id="tier-page-content" class="tier-page-content">
+    <div class="hero-bleed">
+      <div class="mx-auto max-w-[100rem] px-8 max-[800px]:px-4">
+        <div id="tier-grid" class="flex flex-col gap-3">
     {
       TIERS.map((tier) => (
         <div class="flex flex-col gap-2 sm:flex-row sm:items-stretch">
@@ -157,13 +156,13 @@ const TIER_STYLES = {
                 const ext = artExtById[id]
                 return (
                   <div
-                    class="group relative flex aspect-square cursor-pointer items-center justify-center rounded-[2px] border border-lightgray p-2 text-center transition-[transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:shadow-[0_0_0_2px_var(--secondary)] focus-visible:-translate-y-0.5 focus-visible:shadow-[0_0_0_2px_var(--secondary)] focus-visible:outline-none"
+                    class="group relative flex aspect-square cursor-pointer items-center justify-center rounded-[2px] border border-lightgray p-2 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-2"
                     role="button"
                     tabindex="0"
                     data-arg-id={id}
                     aria-expanded="false"
                     aria-controls="tier-panel"
-                    aria-label={`${arg.title}: ${arg.blurb} Click to read the argument and the rebuttal.`}
+                    aria-label={`${arg.title}: ${arg.blurb}`}
                   >
                     {ext && (
                       <img
@@ -181,7 +180,19 @@ const TIER_STYLES = {
                     >
                       {arg.title}
                     </div>
-                    <span class="tier-card-hint" aria-hidden="true">i</span>
+                    <div class="pointer-events-none absolute bottom-[calc(100%+0.5rem)] left-1/2 z-30 min-h-[7rem] w-64 -translate-x-1/2 overflow-hidden rounded-[4px] border border-secondary/40 bg-dark opacity-0 shadow-2xl transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100">
+                      {ext && (
+                        <img
+                          class="absolute inset-0 h-full w-full object-cover brightness-50"
+                          alt=""
+                          src={`/tier-list-art/${id}${ext}`}
+                        />
+                      )}
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-slate-950/30" />
+                      <div class="relative z-10 flex min-h-[7rem] items-end p-4 text-left text-base leading-snug font-medium text-white">
+                        {arg.blurb}
+                      </div>
+                    </div>
                   </div>
                 )
               })
@@ -190,51 +201,63 @@ const TIER_STYLES = {
         </div>
       ))
     }
-          </div>
         </div>
       </div>
     </div>
-
-    <aside id="tier-panel" class="tier-panel" data-open="false" aria-hidden="true" aria-label="Argument write-up">
-      <div class="tier-panel-inner">
-        <div class="mb-4 flex items-center justify-between gap-3 border-b border-lightgray pb-3">
-          <span class="content-meta">The Rebuttal</span>
-          <button
-            id="tier-panel-close"
-            type="button"
-            class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-1 text-sm leading-none text-darkgray transition-colors hover:border-secondary hover:text-secondary"
-            aria-label="Close panel"
-          >
-            ✕
-          </button>
-        </div>
-        {
-          ARGUMENTS.map((arg) => {
-            const Content = renderedById[arg.id]
-            return (
-              <div class="tier-panel-entry" data-panel-id={arg.id} hidden>
-                <h2 class="mb-3 font-header text-xl font-bold text-darkgray">{arg.title}</h2>
-                {Content ? (
-                  <div class="prose-body text-[0.95rem] leading-relaxed">
-                    <Content />
-                  </div>
-                ) : (
-                  <p class="text-sm text-gray">No write-up yet for this one.</p>
-                )}
-              </div>
-            )
-          })
-        }
-      </div>
-    </aside>
   </div>
 
+  <aside id="tier-panel" class="tier-panel" data-open="false" aria-hidden="true" aria-label="Argument write-up">
+    <div class="tier-panel-inner">
+      <div class="mb-4 flex items-center justify-between gap-3 border-b border-lightgray pb-3">
+        <span class="content-meta">The Rebuttal</span>
+        <button
+          id="tier-panel-close"
+          type="button"
+          class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-1 text-sm leading-none text-darkgray transition-colors hover:border-secondary hover:text-secondary"
+          aria-label="Close panel"
+        >
+          ✕
+        </button>
+      </div>
+      {
+        ARGUMENTS.map((arg) => {
+          const Content = renderedById[arg.id]
+          return (
+            <div class="tier-panel-entry" data-panel-id={arg.id} hidden>
+              <h2 class="mb-3 font-header text-xl font-bold text-darkgray">{arg.title}</h2>
+              {Content ? (
+                <div class="prose-body text-[0.95rem] leading-relaxed">
+                  <Content />
+                </div>
+              ) : (
+                <p class="text-sm text-gray">No write-up yet for this one.</p>
+              )}
+            </div>
+          )
+        })
+      }
+    </div>
+  </aside>
+
   <script>
+    // The sidebar is `position: fixed`, so it needs the header's real
+    // rendered height (not a guessed rem value) to sit below it rather than
+    // covering it — the header isn't itself fixed/sticky, so its height is
+    // measured, not assumed.
+    const header = document.querySelector("body > header")
+    const setHeaderHeightVar = () => {
+      if (!(header instanceof HTMLElement)) return
+      document.documentElement.style.setProperty("--header-h", `${header.getBoundingClientRect().height}px`)
+    }
+    setHeaderHeightVar()
+    window.addEventListener("resize", setHeaderHeightVar)
+
     const grid = document.getElementById("tier-grid")
     const panel = document.getElementById("tier-panel")
     const closeBtn = document.getElementById("tier-panel-close")
+    const content = document.getElementById("tier-page-content")
 
-    if (grid && panel && closeBtn) {
+    if (grid && panel && closeBtn && content) {
       const cards = Array.from(grid.querySelectorAll<HTMLElement>("[data-arg-id]"))
       const entries = Array.from(panel.querySelectorAll<HTMLElement>("[data-panel-id]"))
       let lastCard: HTMLElement | null = null
@@ -248,6 +271,8 @@ const TIER_STYLES = {
         })
         panel.dataset.open = "true"
         panel.setAttribute("aria-hidden", "false")
+        content.dataset.panelOpen = "true"
+        document.body.dataset.tierPanelOpen = "true"
         cards.forEach((c) => c.setAttribute("aria-expanded", String(c === card)))
       }
 
@@ -262,6 +287,8 @@ const TIER_STYLES = {
         }
         panel.dataset.open = "false"
         panel.setAttribute("aria-hidden", "true")
+        content.dataset.panelOpen = "false"
+        document.body.dataset.tierPanelOpen = "false"
         cards.forEach((c) => c.setAttribute("aria-expanded", "false"))
       }
 

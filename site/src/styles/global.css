@@ -295,30 +295,48 @@
   cursor: help;
 }
 
-/* Tier-list rebuttal side panel (site/src/pages/tier-list/index.astro).
-   Width itself is the open/close animation — 0 when closed, a fixed
-   reader-column width when open — so the grid beside it genuinely reflows
-   ("pushes left") instead of the panel floating over it. Below the
-   breakpoint where a fixed-width column would crush the card grid, it
-   switches to animating height instead and stacks under the grid full-width
-   — same non-overlay, non-modal contract, just in the block direction. */
+/* Tier-list rebuttal side panel (site/src/pages/tier-list/index.astro) — a
+   true fixed sidebar docked to the right edge of the *viewport* (not a
+   column inside the centered `<main>`), spanning from the bottom of the
+   header (measured at runtime into --header-h, since the header isn't
+   itself fixed/sticky and its height isn't a safe constant) down to the
+   bottom of the screen. It has its own internal scroll, so a write-up
+   longer than the page's own scroll range still reads in full instead of
+   running off the bottom with no way to reach it.
+   Width is the open/close animation — 0 when closed, a fixed reader-column
+   width when open. `tier-page-content` mirrors that via a `data-panel-open`
+   attribute the script sets alongside the panel's own `data-open` (rather
+   than a `:has(+ #tier-panel[data-open])` selector, which is equivalent but
+   makes the dependency implicit) so the grid genuinely reflows left to make
+   room, rather than the panel floating over it as an overlay. Below the
+   breakpoint where a fixed-width column would crush the card grid, the
+   panel drops out of fixed positioning and stacks under the grid full-width
+   instead. */
 @utility tier-panel {
-  align-self: flex-start;
-  position: sticky;
-  top: 5rem;
-  overflow: hidden;
+  --tier-panel-w: min(28rem, 100vw);
+  position: fixed;
+  top: var(--header-h, 4.5rem);
+  right: 0;
+  bottom: 0;
+  z-index: 40;
   width: 0;
-  flex-shrink: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-left: 1px solid var(--lightgray);
+  background: var(--light);
   transition: width 0.3s ease;
 
   &[data-open="true"] {
-    width: min(26rem, 100%);
+    width: var(--tier-panel-w);
   }
 
   @media (max-width: 1023px) {
     position: static;
     width: 100%;
     max-height: 0;
+    overflow-y: hidden;
+    border-left: none;
+    border-top: 1px solid var(--lightgray);
     transition: max-height 0.3s ease;
 
     &[data-open="true"] {
@@ -326,47 +344,42 @@
          above — without restating `width` here, that higher-specificity
          (attribute-selector) rule wins over this media query's plain
          `width: 100%` regardless of viewport, leaving the panel stuck at
-         26rem instead of going full-width on mobile. */
+         28rem instead of going full-width on mobile. */
       width: 100%;
       max-height: 200rem;
+      overflow-y: visible;
     }
   }
 }
 
 @utility tier-panel-inner {
-  width: 100%;
   padding: 1.5rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 2px;
-  background: color-mix(in srgb, var(--lightgray) 12%, transparent);
 }
 
-@utility tier-card-hint {
-  position: absolute;
-  right: 0.4rem;
-  bottom: 0.4rem;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 999px;
-  background: var(--secondary);
-  color: var(--dark);
-  font-size: 0.7rem;
-  line-height: 1;
-  opacity: 0;
-  transform: translateY(2px);
-  transition:
-    opacity 0.15s ease,
-    transform 0.15s ease;
+/* Wraps the tier-list page's own content (everything but the sidebar) so it
+   can be pushed left purely in CSS, driven off the sidebar's own open state
+   — no JS-managed margin to keep in sync with the panel's width. */
+@utility tier-page-content {
+  transition: margin-right 0.3s ease;
 
-  .group:hover &,
-  .group:focus-visible & {
-    opacity: 1;
-    transform: translateY(0);
+  &[data-panel-open="true"] {
+    margin-right: min(28rem, 100vw);
   }
+
+  @media (max-width: 1023px) {
+    &[data-panel-open="true"] {
+      margin-right: 0;
+    }
+  }
+}
+
+/* Pushing tier-page-content left via margin-right breaks the symmetric
+   viewport-centering assumption that hero-bleed's full-width trick depends
+   on (see hero-bleed's own comment) — harmless here since this page's
+   hero-bleed paints no background, but the resulting few-hundred-px
+   leftward drift can register as horizontal scroll room. Clip it. */
+body[data-tier-panel-open="true"] {
+  overflow-x: hidden;
 }
 
 @utility card {
