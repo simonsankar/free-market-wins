@@ -91,7 +91,11 @@ const byId = Object.fromEntries(ARGUMENTS.map((a) => [a.id, a]))
 // Art extension is resolved at build time (not probed in the browser) since
 // this page is now a fixed, non-interactive final ranking — every id in
 // RANKING is expected to have a file here.
-const ART_SRC_DIR = path.resolve(new URL(".", import.meta.url).pathname, "../../../tier-list-art-src")
+// Resolved against process.cwd() (always `site/`, since every npm script
+// here runs from that directory) rather than import.meta.url — Astro
+// bundles this frontmatter into a build chunk elsewhere, so "this file's
+// own location" isn't a stable thing to resolve a relative path against.
+const ART_SRC_DIR = path.resolve(process.cwd(), "tier-list-art-src")
 const artExtById = Object.fromEntries(
   fs.readdirSync(ART_SRC_DIR).map((filename) => [path.parse(filename).name, path.parse(filename).ext]),
 )
