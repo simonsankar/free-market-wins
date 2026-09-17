@@ -77,4 +77,16 @@ const home = defineCollection({
   schema: noteSchema,
 })
 
-export const collections = { essays, "core-theory": coreTheory, zingers, home }
+// Tier-list rebuttal write-ups — not vault doctrine/essays/dissects (see the
+// comment in tier-list/index.astro), so these live in this Astro project
+// itself rather than the vault root. Plain body markdown, no frontmatter:
+// the default glob-loader id (filename minus extension) is made to match
+// the tier-list page's own ARGUMENTS[].id values by construction.
+const tierListContent = defineCollection({
+  loader: glob({
+    pattern: "*.md",
+    base: fileURLToPath(new URL("../../tier-list-content", import.meta.url)),
+  }),
+})
+
+export const collections = { essays, "core-theory": coreTheory, zingers, home, tierListContent }
