@@ -1,6 +1,7 @@
 ---
 import fs from "node:fs"
 import path from "node:path"
+import { getCollection, render } from "astro:content"
 import Layout from "../../layouts/Layout.astro"
 
 // Card content lives here rather than as vault markdown/content-collection
@@ -88,6 +89,18 @@ const RANKING = {
 
 const byId = Object.fromEntries(ARGUMENTS.map((a) => [a.id, a]))
 
+// Side-panel write-ups (site/tier-list-content/<id>.md) — pre-rendered here
+// at build time and swapped in/out client-side by id, rather than fetched +
+// parsed in the browser. Reuses the same content-collection/render()
+// pipeline as essays, so [[Wikilink]] resolution (remarkVaultLinks) works
+// identically inside these write-ups.
+const tierListContentEntries = await getCollection("tierListContent")
+const renderedById: Record<string, Awaited<ReturnType<typeof render>>["Content"]> = {}
+for (const entry of tierListContentEntries) {
+  const { Content } = await render(entry)
+  renderedById[entry.id] = Content
+}
+
 // Art extension is resolved at build time (not probed in the browser) since
 // this page is now a fixed, non-interactive final ranking — every id in
 // RANKING is expected to have a file here.
@@ -122,9 +135,11 @@ const TIER_STYLES = {
 >
   <h1 class="article-title">Arguments Against AnCap</h1>
 
-  <div class="hero-bleed">
-    <div class="mx-auto max-w-[100rem] px-8 max-[800px]:px-4">
-      <div class="flex flex-col gap-3">
+  <div class="flex flex-col items-start gap-6 lg:flex-row">
+    <div class="min-w-0 flex-1">
+      <div class="hero-bleed">
+        <div class="mx-auto max-w-[100rem] px-8 max-[800px]:px-4">
+          <div id="tier-grid" class="flex flex-col gap-3">
     {
       TIERS.map((tier) => (
         <div class="flex flex-col gap-2 sm:flex-row sm:items-stretch">
@@ -142,9 +157,13 @@ const TIER_STYLES = {
                 const ext = artExtById[id]
                 return (
                   <div
-                    class="group relative flex aspect-square items-center justify-center rounded-[2px] border border-lightgray p-2 text-center"
-                    aria-label={`${arg.title}: ${arg.blurb}`}
+                    class="group relative flex aspect-square cursor-pointer items-center justify-center rounded-[2px] border border-lightgray p-2 text-center transition-[transform,box-shadow] duration-150 hover:-translate-y-0.5 hover:shadow-[0_0_0_2px_var(--secondary)] focus-visible:-translate-y-0.5 focus-visible:shadow-[0_0_0_2px_var(--secondary)] focus-visible:outline-none"
+                    role="button"
                     tabindex="0"
+                    data-arg-id={id}
+                    aria-expanded="false"
+                    aria-controls="tier-panel"
+                    aria-label={`${arg.title}: ${arg.blurb} Click to read the argument and the rebuttal.`}
                   >
                     {ext && (
                       <img
@@ -162,19 +181,7 @@ const TIER_STYLES = {
                     >
                       {arg.title}
                     </div>
-                    <div class="pointer-events-none absolute bottom-[calc(100%+0.5rem)] left-1/2 z-30 min-h-[7rem] w-64 -translate-x-1/2 overflow-hidden rounded-[4px] border border-secondary/40 bg-dark opacity-0 shadow-2xl transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100">
-                      {ext && (
-                        <img
-                          class="absolute inset-0 h-full w-full object-cover brightness-50"
-                          alt=""
-                          src={`/tier-list-art/${id}${ext}`}
-                        />
-                      )}
-                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-slate-950/30" />
-                      <div class="relative z-10 flex min-h-[7rem] items-end p-4 text-left text-base leading-snug font-medium text-white">
-                        {arg.blurb}
-                      </div>
-                    </div>
+                    <span class="tier-card-hint" aria-hidden="true">i</span>
                   </div>
                 )
               })
@@ -183,7 +190,101 @@ const TIER_STYLES = {
         </div>
       ))
     }
+          </div>
+        </div>
       </div>
     </div>
+
+    <aside id="tier-panel" class="tier-panel" data-open="false" aria-hidden="true" aria-label="Argument write-up">
+      <div class="tier-panel-inner">
+        <div class="mb-4 flex items-center justify-between gap-3 border-b border-lightgray pb-3">
+          <span class="content-meta">The Rebuttal</span>
+          <button
+            id="tier-panel-close"
+            type="button"
+            class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-1 text-sm leading-none text-darkgray transition-colors hover:border-secondary hover:text-secondary"
+            aria-label="Close panel"
+          >
+            ✕
+          </button>
+        </div>
+        {
+          ARGUMENTS.map((arg) => {
+            const Content = renderedById[arg.id]
+            return (
+              <div class="tier-panel-entry" data-panel-id={arg.id} hidden>
+                <h2 class="mb-3 font-header text-xl font-bold text-darkgray">{arg.title}</h2>
+                {Content ? (
+                  <div class="prose-body text-[0.95rem] leading-relaxed">
+                    <Content />
+                  </div>
+                ) : (
+                  <p class="text-sm text-gray">No write-up yet for this one.</p>
+                )}
+              </div>
+            )
+          })
+        }
+      </div>
+    </aside>
   </div>
+
+  <script>
+    const grid = document.getElementById("tier-grid")
+    const panel = document.getElementById("tier-panel")
+    const closeBtn = document.getElementById("tier-panel-close")
+
+    if (grid && panel && closeBtn) {
+      const cards = Array.from(grid.querySelectorAll<HTMLElement>("[data-arg-id]"))
+      const entries = Array.from(panel.querySelectorAll<HTMLElement>("[data-panel-id]"))
+      let lastCard: HTMLElement | null = null
+
+      const openPanel = (id: string) => {
+        const card = cards.find((c) => c.dataset.argId === id)
+        if (!card) return
+        lastCard = card
+        entries.forEach((entry) => {
+          entry.hidden = entry.dataset.panelId !== id
+        })
+        panel.dataset.open = "true"
+        panel.setAttribute("aria-hidden", "false")
+        cards.forEach((c) => c.setAttribute("aria-expanded", String(c === card)))
+      }
+
+      const closePanel = () => {
+        // aria-hidden can't sit on an element that still contains focus (the
+        // close button, if that's what triggered the close) — move focus
+        // back to the card that opened the panel first.
+        const active = document.activeElement
+        if (active instanceof HTMLElement && panel.contains(active)) {
+          if (lastCard) lastCard.focus()
+          else active.blur()
+        }
+        panel.dataset.open = "false"
+        panel.setAttribute("aria-hidden", "true")
+        cards.forEach((c) => c.setAttribute("aria-expanded", "false"))
+      }
+
+      grid.addEventListener("click", (event) => {
+        const target = event.target
+        const card = target instanceof Element ? target.closest("[data-arg-id]") : null
+        if (card instanceof HTMLElement && card.dataset.argId) openPanel(card.dataset.argId)
+      })
+
+      grid.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return
+        const target = event.target
+        const card = target instanceof Element ? target.closest("[data-arg-id]") : null
+        if (!(card instanceof HTMLElement) || !card.dataset.argId) return
+        event.preventDefault()
+        openPanel(card.dataset.argId)
+      })
+
+      closeBtn.addEventListener("click", closePanel)
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && panel.dataset.open === "true") closePanel()
+      })
+    }
+  </script>
 </Layout>
