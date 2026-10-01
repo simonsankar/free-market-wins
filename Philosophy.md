@@ -38,56 +38,44 @@ Worth being precise about which *layer* of economics this independence applies t
 <svg viewBox="0 0 900 740" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
 <g transform="translate(20,50)">
 <text x="390" y="-25" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The corrected chain</text>
-
 <rect x="140" y="0" width="220" height="55" fill="#7a9ec2" fill-opacity="0.85"/>
 <text x="250" y="33" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Metaphysics</text>
-
 <rect x="420" y="0" width="220" height="55" fill="#7a9ec2" fill-opacity="0.85"/>
 <text x="530" y="33" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Epistemology</text>
-
 <line x1="250" y1="55" x2="330" y2="150" stroke="var(--gray, #9a9a9a)" stroke-width="1.8"/>
 <polygon points="324,144 336,144 330,153" fill="var(--gray, #9a9a9a)"/>
 <line x1="530" y1="55" x2="450" y2="150" stroke="var(--gray, #9a9a9a)" stroke-width="1.8"/>
 <polygon points="444,144 456,144 450,153" fill="var(--gray, #9a9a9a)"/>
-
 <rect x="250" y="150" width="280" height="120" fill="#7a9ec2" fill-opacity="0.85"/>
 <text x="390" y="180" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Ethics</text>
-
 <rect x="275" y="205" width="230" height="55" fill="#3f6485" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.2"/>
 <text x="390" y="228" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Law</text>
 <text x="390" y="245" font-size="9.5" fill="#fff" fill-opacity="0.85" text-anchor="middle">force/conflict subset — the NAP</text>
-
 <line x1="310" y1="270" x2="175" y2="360" stroke="#9b8fc4" stroke-width="1.8"/>
 <polygon points="169,354 181,354 175,363" fill="#9b8fc4"/>
 <line x1="470" y1="270" x2="645" y2="360" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 5"/>
 <polygon points="639,354 651,358 642,366" fill="#e05a4f"/>
-
 <rect x="70" y="360" width="210" height="60" fill="#9b8fc4" fill-opacity="0.85"/>
 <text x="175" y="388" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Aesthetics</text>
 <text x="175" y="406" font-size="9.5" fill="#fff" fill-opacity="0.85" text-anchor="middle">concretizes value-judgments in art</text>
 <text x="175" y="438" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">a legitimate branch —</text>
 <text x="175" y="453" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">concretizes Ethics into art</text>
-
 <rect x="540" y="360" width="210" height="60" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
 <text x="645" y="383" font-size="13" font-weight="600" fill="#e05a4f" text-anchor="middle">Politics</text>
 <line x1="610" y1="379" x2="680" y2="379" stroke="#e05a4f" stroke-width="1.4"/>
 <text x="645" y="402" font-size="10" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">(Objectivism's 4th branch)</text>
 <text x="645" y="438" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">= Law, plus an unproven leap:</text>
 <text x="645" y="453" font-size="11" fill="#e05a4f" text-anchor="middle">"therefore, a government."</text>
-
 <rect x="70" y="490" width="250" height="60" fill="var(--secondary, #e0932f)" fill-opacity="0.85"/>
 <text x="195" y="517" font-size="14" font-weight="600" fill="#fff" text-anchor="middle">Economics</text>
 <text x="195" y="535" font-size="11" fill="#fff" fill-opacity="0.9" text-anchor="middle">(Praxeology)</text>
 <text x="195" y="568" font-size="10.5" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">positive · value-free · own axiom</text>
-
 <path d="M150,490 L30,490 L30,300 L385,262" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="1.6" stroke-dasharray="5 5"/>
 <polygon points="379,254 391,257 383,266" fill="var(--secondary, #e0932f)"/>
 <text x="50" y="288" font-size="10.5" fill="var(--darkgray, #9a9a9a)">same verdict on coercion —</text>
 <text x="50" y="302" font-size="10.5" fill="var(--darkgray, #9a9a9a)">independent proof, not derivation</text>
-
 <text x="390" y="600" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Politics was never a fourth branch — it was Law, plus an institutional</text>
 <text x="390" y="616" font-size="13" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">claim Objectivism never actually earned.</text>
-
 <line x1="60" y1="660" x2="100" y2="660" stroke="var(--gray, #9a9a9a)" stroke-width="1.8"/>
 <text x="112" y="664" font-size="10.5" fill="var(--darkgray, #9a9a9a)">derives</text>
 <line x1="280" y1="660" x2="320" y2="660" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 5"/>
