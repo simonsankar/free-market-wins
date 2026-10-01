@@ -20,14 +20,11 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <marker id="sg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
 <marker id="sg-arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
 </defs>
-
 <text x="80" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">The libertarian's case: each level answered by the next</text>
 <text x="680" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">What their ought stands on</text>
-
 <line x1="40" y1="70" x2="40" y2="775" stroke="var(--gray, #9a9a9a)" stroke-width="1.4" marker-end="url(#sg-arrow-gray)"/>
 <text x="40" y="62" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="middle">surface</text>
 <text x="52" y="430" font-size="10" fill="var(--gray, #9a9a9a)" transform="rotate(90 52 430)" text-anchor="middle" letter-spacing="1.5">DIGGING DEEPER</text>
-
 <rect x="80" y="70" width="420" height="70" rx="6" fill="#8fb0cf" fill-opacity="0.9"/>
 <text x="96" y="91" font-size="12" font-weight="600" fill="#fff">0 · Policy</text>
 <text x="96" y="111" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Tax the rich to fund the safety net.”</text>
@@ -37,7 +34,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,105 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="142" x2="290" y2="159" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="154" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="162" width="420" height="70" rx="6" fill="#7a9ec2" fill-opacity="0.9"/>
 <text x="96" y="183" font-size="12" font-weight="600" fill="#fff">1 · Economics</text>
 <text x="96" y="203" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The government will spend it better.”</text>
@@ -47,7 +43,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,197 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="234" x2="290" y2="251" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="246" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="254" width="420" height="70" rx="6" fill="#6a8fb5" fill-opacity="0.9"/>
 <text x="96" y="275" font-size="12" font-weight="600" fill="#fff">2 · Democracy</text>
 <text x="96" y="295" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The majority voted for it.”</text>
@@ -57,7 +52,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,289 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="326" x2="290" y2="343" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="338" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="346" width="420" height="70" rx="6" fill="#5a80a7" fill-opacity="0.9"/>
 <text x="96" y="367" font-size="12" font-weight="600" fill="#fff">3 · Law</text>
 <text x="96" y="387" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Taking is fine when the state does it.”</text>
@@ -67,7 +61,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,381 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="418" x2="290" y2="435" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="430" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="438" width="420" height="86" rx="6" fill="#4b7197" fill-opacity="0.9"/>
 <text x="96" y="459" font-size="12" font-weight="600" fill="#fff">4 · Equality of man</text>
 <text x="96" y="479" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Rulers and ruled are different classes.”</text>
@@ -78,7 +71,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,481 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="526" x2="290" y2="543" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="538" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="546" width="420" height="70" rx="6" fill="#3f6485" fill-opacity="0.92"/>
 <text x="96" y="567" font-size="12" font-weight="600" fill="#fff">5 · Polylogism</text>
 <text x="96" y="587" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Different logic applies to different men.”</text>
@@ -88,7 +80,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <path d="M530,581 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 <line x1="290" y1="618" x2="290" y2="635" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
 <text x="298" y="630" font-size="9.5" fill="#e05a4f">reject</text>
-
 <rect x="80" y="638" width="420" height="70" rx="6" fill="#2f4d69" fill-opacity="0.95"/>
 <text x="96" y="659" font-size="12" font-weight="600" fill="#fff">6 · Identity &amp; non-contradiction</text>
 <text x="96" y="679" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“A can be non-A when I need it to be.”</text>
@@ -96,16 +87,13 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <line x1="500" y1="673" x2="525" y2="673" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
 <circle cx="534" cy="673" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
 <path d="M530,673 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-
 <line x1="20" y1="724" x2="880" y2="724" stroke="var(--gray, #9a9a9a)" stroke-width="3"/>
 <text x="880" y="716" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="end" letter-spacing="1.5">BEDROCK</text>
 <line x1="290" y1="710" x2="290" y2="738" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#sg-arrow)"/>
-
 <rect x="20" y="732" width="860" height="86" rx="6" fill="#e05a4f" fill-opacity="0.1" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="6 5"/>
 <text x="450" y="759" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">“Contradictions don't bind me.”  ·  “You can't derive an ought from an is.”</text>
 <text x="450" y="781" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Not a deeper level. It's an exit from argument: no position is being defended, so nothing is left to answer.</text>
 <text x="450" y="801" font-size="10.5" font-style="italic" fill="var(--gray, #9a9a9a)" text-anchor="middle">(And it still leans on an ought of its own: “don't believe what isn't validly derived.”)</text>
-
 <rect x="680" y="70" width="200" height="70" rx="6" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
 <text x="780" y="92" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">Their ought</text>
 <text x="780" y="111" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">“Earn over $500k?</text>
@@ -122,7 +110,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <circle cx="700" cy="672" r="14" fill="none" stroke="#e05a4f" stroke-width="1.8"/>
 <text x="700" y="677" font-size="14" fill="#e05a4f" text-anchor="middle">∅</text>
 <text x="722" y="677" font-size="11" fill="#e05a4f">derived from nothing</text>
-
 <text x="80" y="861" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">For comparison: an ordinary policy fight</text>
 <rect x="80" y="876" width="380" height="52" rx="6" fill="#7a9ec2" fill-opacity="0.9"/>
 <text x="96" y="897" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Ban crack. It wrecks people's lives.”</text>
@@ -134,7 +121,6 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <text x="530" y="902" font-size="11.5" fill="var(--darkgray, #9a9a9a)">both sides already hold, one step down.</text>
 <text x="530" y="920" font-size="11.5" fill="var(--darkgray, #9a9a9a)">This one only reaches bedrock because</text>
 <text x="530" y="938" font-size="11.5" fill="var(--darkgray, #9a9a9a)">one side turns down every exit on the way.</text>
-
 <circle cx="92" cy="978" r="8" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
 <path d="M88.5,978 l2.5,2.5 l4.5,-5.5" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="1.8"/>
 <text x="108" y="982" font-size="10.5" fill="var(--darkgray, #9a9a9a)">accept: a reasonable place to stop</text>
