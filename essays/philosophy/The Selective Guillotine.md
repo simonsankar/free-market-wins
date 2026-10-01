@@ -28,84 +28,84 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <text x="40" y="62" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="middle">surface</text>
 <text x="52" y="430" font-size="10" fill="var(--gray, #9a9a9a)" transform="rotate(90 52 430)" text-anchor="middle" letter-spacing="1.5">DIGGING DEEPER</text>
 
-<rect x="80" y="70" width="420" height="70" fill="#8fb0cf" fill-opacity="0.9"/>
+<rect x="80" y="70" width="420" height="70" rx="6" fill="#8fb0cf" fill-opacity="0.9"/>
 <text x="96" y="91" font-size="12" font-weight="600" fill="#fff">0 · Policy</text>
 <text x="96" y="111" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Tax the rich to fund the safety net.”</text>
 <text x="96" y="129" font-size="11" fill="#fff">→ Taxation is taking without consent. Call it what it is.</text>
 <line x1="500" y1="105" x2="525" y2="105" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
 <circle cx="534" cy="105" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
 <path d="M530,105 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="110" y1="142" x2="110" y2="159" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="118" y="154" font-size="9.5" fill="#e05a4f">reject</text>
+<line x1="290" y1="142" x2="290" y2="159" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="154" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="90" y="162" width="420" height="70" fill="#7a9ec2" fill-opacity="0.9"/>
-<text x="106" y="183" font-size="12" font-weight="600" fill="#fff">1 · Economics</text>
-<text x="106" y="203" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The government will spend it better.”</text>
-<text x="106" y="221" font-size="11" fill="#fff">→ It can't: no prices, no calculation, no profit-and-loss test.</text>
-<line x1="510" y1="197" x2="535" y2="197" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="544" cy="197" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M540,197 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="120" y1="234" x2="120" y2="251" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="128" y="246" font-size="9.5" fill="#e05a4f">reject</text>
+<rect x="80" y="162" width="420" height="70" rx="6" fill="#7a9ec2" fill-opacity="0.9"/>
+<text x="96" y="183" font-size="12" font-weight="600" fill="#fff">1 · Economics</text>
+<text x="96" y="203" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The government will spend it better.”</text>
+<text x="96" y="221" font-size="11" fill="#fff">→ It can't: no prices, no calculation, no profit-and-loss test.</text>
+<line x1="500" y1="197" x2="525" y2="197" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="197" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,197 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="290" y1="234" x2="290" y2="251" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="246" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="100" y="254" width="420" height="70" fill="#6a8fb5" fill-opacity="0.9"/>
-<text x="116" y="275" font-size="12" font-weight="600" fill="#fff">2 · Democracy</text>
-<text x="116" y="295" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The majority voted for it.”</text>
-<text x="116" y="313" font-size="11" fill="#fff">→ A majority can't hand over a right none of its voters have.</text>
-<line x1="520" y1="289" x2="545" y2="289" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="554" cy="289" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M550,289 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="130" y1="326" x2="130" y2="343" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="138" y="338" font-size="9.5" fill="#e05a4f">reject</text>
+<rect x="80" y="254" width="420" height="70" rx="6" fill="#6a8fb5" fill-opacity="0.9"/>
+<text x="96" y="275" font-size="12" font-weight="600" fill="#fff">2 · Democracy</text>
+<text x="96" y="295" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The majority voted for it.”</text>
+<text x="96" y="313" font-size="11" fill="#fff">→ A majority can't hand over a right none of its voters have.</text>
+<line x1="500" y1="289" x2="525" y2="289" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="289" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,289 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="290" y1="326" x2="290" y2="343" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="338" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="110" y="346" width="420" height="70" fill="#5a80a7" fill-opacity="0.9"/>
-<text x="126" y="367" font-size="12" font-weight="600" fill="#fff">3 · Law</text>
-<text x="126" y="387" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Taking is fine when the state does it.”</text>
-<text x="126" y="405" font-size="11" fill="#fff">→ One rule for rulers, another for you. That's mixed law.</text>
-<line x1="530" y1="381" x2="555" y2="381" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="564" cy="381" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M560,381 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="140" y1="418" x2="140" y2="435" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="148" y="430" font-size="9.5" fill="#e05a4f">reject</text>
+<rect x="80" y="346" width="420" height="70" rx="6" fill="#5a80a7" fill-opacity="0.9"/>
+<text x="96" y="367" font-size="12" font-weight="600" fill="#fff">3 · Law</text>
+<text x="96" y="387" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Taking is fine when the state does it.”</text>
+<text x="96" y="405" font-size="11" fill="#fff">→ One rule for rulers, another for you. That's mixed law.</text>
+<line x1="500" y1="381" x2="525" y2="381" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="381" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,381 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="290" y1="418" x2="290" y2="435" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="430" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="120" y="438" width="420" height="70" fill="#4b7197" fill-opacity="0.9"/>
-<text x="136" y="459" font-size="12" font-weight="600" fill="#fff">4 · Equality of man</text>
-<text x="136" y="479" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Rulers and ruled are different classes.”</text>
-<text x="136" y="497" font-size="11" fill="#fff">→ Men equal? Class law can't follow. Not? Who's sub-human?</text>
-<line x1="540" y1="473" x2="565" y2="473" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="574" cy="473" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M570,473 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="150" y1="510" x2="150" y2="527" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="158" y="522" font-size="9.5" fill="#e05a4f">reject</text>
+<rect x="80" y="438" width="420" height="70" rx="6" fill="#4b7197" fill-opacity="0.9"/>
+<text x="96" y="459" font-size="12" font-weight="600" fill="#fff">4 · Equality of man</text>
+<text x="96" y="479" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Rulers and ruled are different classes.”</text>
+<text x="96" y="497" font-size="11" fill="#fff">→ Men equal? Class law can't follow. Not? Who's sub-human?</text>
+<line x1="500" y1="473" x2="525" y2="473" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="473" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,473 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="290" y1="510" x2="290" y2="527" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="522" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="130" y="530" width="420" height="70" fill="#3f6485" fill-opacity="0.92"/>
-<text x="146" y="551" font-size="12" font-weight="600" fill="#fff">5 · Polylogism</text>
-<text x="146" y="571" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Different logic applies to different men.”</text>
-<text x="146" y="589" font-size="11" fill="#fff">→ Arguing for many logics uses exactly one.</text>
-<line x1="550" y1="565" x2="575" y2="565" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="584" cy="565" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M580,565 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
-<line x1="160" y1="602" x2="160" y2="619" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
-<text x="168" y="614" font-size="9.5" fill="#e05a4f">reject</text>
+<rect x="80" y="530" width="420" height="70" rx="6" fill="#3f6485" fill-opacity="0.92"/>
+<text x="96" y="551" font-size="12" font-weight="600" fill="#fff">5 · Polylogism</text>
+<text x="96" y="571" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Different logic applies to different men.”</text>
+<text x="96" y="589" font-size="11" fill="#fff">→ Arguing for many logics uses exactly one.</text>
+<line x1="500" y1="565" x2="525" y2="565" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="565" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,565 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="290" y1="602" x2="290" y2="619" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="298" y="614" font-size="9.5" fill="#e05a4f">reject</text>
 
-<rect x="140" y="622" width="420" height="70" fill="#2f4d69" fill-opacity="0.95"/>
-<text x="156" y="643" font-size="12" font-weight="600" fill="#fff">6 · Identity &amp; non-contradiction</text>
-<text x="156" y="663" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“A can be non-A when I need it to be.”</text>
-<text x="156" y="681" font-size="11" fill="#fff">→ Bedrock. There is nothing further down to dig.</text>
-<line x1="560" y1="657" x2="585" y2="657" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
-<circle cx="594" cy="657" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
-<path d="M590,657 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<rect x="80" y="622" width="420" height="70" rx="6" fill="#2f4d69" fill-opacity="0.95"/>
+<text x="96" y="643" font-size="12" font-weight="600" fill="#fff">6 · Identity &amp; non-contradiction</text>
+<text x="96" y="663" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“A can be non-A when I need it to be.”</text>
+<text x="96" y="681" font-size="11" fill="#fff">→ Bedrock. There is nothing further down to dig.</text>
+<line x1="500" y1="657" x2="525" y2="657" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="657" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,657 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
 
 <line x1="20" y1="708" x2="880" y2="708" stroke="var(--gray, #9a9a9a)" stroke-width="3"/>
 <text x="880" y="700" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="end" letter-spacing="1.5">BEDROCK</text>
-<line x1="170" y1="694" x2="170" y2="722" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#sg-arrow)"/>
+<line x1="290" y1="694" x2="290" y2="722" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#sg-arrow)"/>
 
-<rect x="20" y="716" width="860" height="86" fill="#e05a4f" fill-opacity="0.1" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="6 5"/>
+<rect x="20" y="716" width="860" height="86" rx="6" fill="#e05a4f" fill-opacity="0.1" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="6 5"/>
 <text x="450" y="743" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">“Contradictions don't bind me.”  ·  “You can't derive an ought from an is.”</text>
 <text x="450" y="765" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Not a deeper level. It's an exit from argument: no position is being defended, so nothing is left to answer.</text>
 <text x="450" y="785" font-size="10.5" font-style="italic" fill="var(--gray, #9a9a9a)" text-anchor="middle">(And it still leans on an ought of its own: “don't believe what isn't validly derived.”)</text>
 
-<rect x="680" y="70" width="200" height="70" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
+<rect x="680" y="70" width="200" height="70" rx="6" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
 <text x="780" y="92" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">Their ought</text>
 <text x="780" y="111" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">“Earn over $100k?</text>
 <text x="780" y="128" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Owe the state 30%.”</text>
@@ -123,7 +123,7 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <text x="722" y="661" font-size="11" fill="#e05a4f">derived from nothing</text>
 
 <text x="80" y="845" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">For comparison: an ordinary policy fight</text>
-<rect x="80" y="860" width="380" height="52" fill="#7a9ec2" fill-opacity="0.9"/>
+<rect x="80" y="860" width="380" height="52" rx="6" fill="#7a9ec2" fill-opacity="0.9"/>
 <text x="96" y="881" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Ban crack. It wrecks people's lives.”</text>
 <text x="96" y="900" font-size="11" fill="#fff">→ Shared value: nobody wants their life wrecked.</text>
 <line x1="460" y1="886" x2="485" y2="886" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
