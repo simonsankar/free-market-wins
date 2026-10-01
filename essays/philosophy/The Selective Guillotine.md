@@ -9,7 +9,139 @@ date: 2026-09-30
 
 Every one of these conversations runs the same course. It opens at the top, with something that sounds like pure compassion: *nobody should go without food, so we need a safety net.* Fine. Who pays for it? *Everyone, through taxes.* And if someone declines? *Then they're made to.* By whom, on whose say-so? *By the government, because the majority voted for it.* Why does a majority's vote license force against a person who never agreed? And here the floor starts giving way. [[Democracy is garbage|Democracy]] turns out to be headcount [[Jungle Law]]. [[Taxation]] turns out to be taking at gunpoint with paperwork attached. The safety net turns out to need exactly the kind of aggression its defender would never tolerate from a private individual.
 
-At this point there are two exits. One is to concede. The other is to go all the way down to the basement, past economics and past ethics, and announce that none of it matters because *you can't derive an ought from an is.* Your ethics is just your preference in a lab coat. Nothing obliges anyone to anything.
+Each step down is an exit. Any one of them is a perfectly reasonable place to stop and say *fine, you're right*. Refuse it, and the next level has to be dug out: law, then the [[Mixed Law|metaphysical equality of man]] (if all men are equal, class-based law can't be derived; if they aren't, who exactly is sub-human?), then [[Polylogism]], then the [[Law of Non-Contradiction]] itself. At the bottom there are two exits left. One is to concede. The other is to go below bedrock, into the basement, and announce that none of it matters because *you can't derive an ought from an is.* Your ethics is just your preference in a lab coat. Nothing obliges anyone to anything.
+
+Compare that with an ordinary policy fight. *Ban crack, it wrecks people's lives.* Whatever you think of the policy, that conversation bottoms out in one step, at a value both sides already hold: nobody wants their life wrecked. Nobody has to go down to the molecular chemistry of the brain, let alone to the law of identity. Most disagreements end there because people already share the values involved. This one only reaches bedrock because one side turns down every exit on the way down.
+
+And notice what the statist's own "ought" is standing on the whole time. *Earn over $100k, owe the state 30%.* Derived from what? Not from economics, not from equality, not from logic. It has nothing underneath it at all. It's a bare assertion with a tax collector attached. Yet the guillotine only ever gets pointed at the side of the table that has foundations.
+
+<svg viewBox="0 0 900 990" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="sg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+<marker id="sg-arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--gray, #9a9a9a)"/></marker>
+</defs>
+
+<text x="80" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">The libertarian's case: each level answered by the next</text>
+<text x="680" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">What their ought stands on</text>
+
+<line x1="40" y1="70" x2="40" y2="796" stroke="var(--gray, #9a9a9a)" stroke-width="1.4" marker-end="url(#sg-arrow-gray)"/>
+<text x="40" y="62" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="middle">surface</text>
+<text x="52" y="430" font-size="10" fill="var(--gray, #9a9a9a)" transform="rotate(90 52 430)" text-anchor="middle" letter-spacing="1.5">DIGGING DEEPER</text>
+
+<rect x="80" y="70" width="420" height="70" fill="#8fb0cf" fill-opacity="0.9"/>
+<text x="96" y="91" font-size="12" font-weight="600" fill="#fff">0 · Policy</text>
+<text x="96" y="111" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Tax the rich to fund the safety net.”</text>
+<text x="96" y="129" font-size="11" fill="#fff">→ Taxation is taking without consent. Call it what it is.</text>
+<line x1="500" y1="105" x2="525" y2="105" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="534" cy="105" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M530,105 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="110" y1="142" x2="110" y2="159" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="118" y="154" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="90" y="162" width="420" height="70" fill="#7a9ec2" fill-opacity="0.9"/>
+<text x="106" y="183" font-size="12" font-weight="600" fill="#fff">1 · Economics</text>
+<text x="106" y="203" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The government will spend it better.”</text>
+<text x="106" y="221" font-size="11" fill="#fff">→ It can't: no prices, no calculation, no profit-and-loss test.</text>
+<line x1="510" y1="197" x2="535" y2="197" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="544" cy="197" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M540,197 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="120" y1="234" x2="120" y2="251" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="128" y="246" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="100" y="254" width="420" height="70" fill="#6a8fb5" fill-opacity="0.9"/>
+<text x="116" y="275" font-size="12" font-weight="600" fill="#fff">2 · Democracy</text>
+<text x="116" y="295" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“The majority voted for it.”</text>
+<text x="116" y="313" font-size="11" fill="#fff">→ A majority can't hand over a right none of its voters have.</text>
+<line x1="520" y1="289" x2="545" y2="289" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="554" cy="289" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M550,289 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="130" y1="326" x2="130" y2="343" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="138" y="338" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="110" y="346" width="420" height="70" fill="#5a80a7" fill-opacity="0.9"/>
+<text x="126" y="367" font-size="12" font-weight="600" fill="#fff">3 · Law</text>
+<text x="126" y="387" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Taking is fine when the state does it.”</text>
+<text x="126" y="405" font-size="11" fill="#fff">→ One rule for rulers, another for you. That's mixed law.</text>
+<line x1="530" y1="381" x2="555" y2="381" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="564" cy="381" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M560,381 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="140" y1="418" x2="140" y2="435" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="148" y="430" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="120" y="438" width="420" height="70" fill="#4b7197" fill-opacity="0.9"/>
+<text x="136" y="459" font-size="12" font-weight="600" fill="#fff">4 · Equality of man</text>
+<text x="136" y="479" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Rulers and ruled are different classes.”</text>
+<text x="136" y="497" font-size="11" fill="#fff">→ Men equal? Class law can't follow. Not? Who's sub-human?</text>
+<line x1="540" y1="473" x2="565" y2="473" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="574" cy="473" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M570,473 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="150" y1="510" x2="150" y2="527" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="158" y="522" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="130" y="530" width="420" height="70" fill="#3f6485" fill-opacity="0.92"/>
+<text x="146" y="551" font-size="12" font-weight="600" fill="#fff">5 · Polylogism</text>
+<text x="146" y="571" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Different logic applies to different men.”</text>
+<text x="146" y="589" font-size="11" fill="#fff">→ Arguing for many logics uses exactly one.</text>
+<line x1="550" y1="565" x2="575" y2="565" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="584" cy="565" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M580,565 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<line x1="160" y1="602" x2="160" y2="619" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="168" y="614" font-size="9.5" fill="#e05a4f">reject</text>
+
+<rect x="140" y="622" width="420" height="70" fill="#2f4d69" fill-opacity="0.95"/>
+<text x="156" y="643" font-size="12" font-weight="600" fill="#fff">6 · Identity &amp; non-contradiction</text>
+<text x="156" y="663" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“A can be non-A when I need it to be.”</text>
+<text x="156" y="681" font-size="11" fill="#fff">→ Bedrock. There is nothing further down to dig.</text>
+<line x1="560" y1="657" x2="585" y2="657" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="594" cy="657" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M590,657 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+
+<line x1="20" y1="708" x2="880" y2="708" stroke="var(--gray, #9a9a9a)" stroke-width="3"/>
+<text x="880" y="700" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="end" letter-spacing="1.5">BEDROCK</text>
+<line x1="170" y1="694" x2="170" y2="722" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#sg-arrow)"/>
+
+<rect x="20" y="716" width="860" height="86" fill="#e05a4f" fill-opacity="0.1" stroke="#e05a4f" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="450" y="743" font-size="12.5" font-weight="600" fill="#e05a4f" text-anchor="middle">“Contradictions don't bind me.”  ·  “You can't derive an ought from an is.”</text>
+<text x="450" y="765" font-size="11" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Not a deeper level. It's an exit from argument: no position is being defended, so nothing is left to answer.</text>
+<text x="450" y="785" font-size="10.5" font-style="italic" fill="var(--gray, #9a9a9a)" text-anchor="middle">(And it still leans on an ought of its own: “don't believe what isn't validly derived.”)</text>
+
+<rect x="680" y="70" width="200" height="70" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
+<text x="780" y="92" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">Their ought</text>
+<text x="780" y="111" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">“Earn over $100k?</text>
+<text x="780" y="128" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Owe the state 30%.”</text>
+<line x1="700" y1="142" x2="700" y2="640" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 6"/>
+<text x="712" y="240" font-size="14" fill="#e05a4f" fill-opacity="0.7">?</text>
+<text x="714" y="300" font-size="11" fill="var(--darkgray, #9a9a9a)">No supporting levels.</text>
+<text x="714" y="318" font-size="11" fill="var(--darkgray, #9a9a9a)">The guillotine never</text>
+<text x="714" y="336" font-size="11" fill="var(--darkgray, #9a9a9a)">drops on this column,</text>
+<text x="714" y="354" font-size="11" fill="var(--darkgray, #9a9a9a)">only on the one to</text>
+<text x="714" y="372" font-size="11" fill="var(--darkgray, #9a9a9a)">the left.</text>
+<text x="712" y="450" font-size="14" fill="#e05a4f" fill-opacity="0.7">?</text>
+<text x="712" y="560" font-size="14" fill="#e05a4f" fill-opacity="0.7">?</text>
+<circle cx="700" cy="656" r="14" fill="none" stroke="#e05a4f" stroke-width="1.8"/>
+<text x="700" y="661" font-size="14" fill="#e05a4f" text-anchor="middle">∅</text>
+<text x="722" y="661" font-size="11" fill="#e05a4f">derived from nothing</text>
+
+<text x="80" y="845" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">For comparison: an ordinary policy fight</text>
+<rect x="80" y="860" width="380" height="52" fill="#7a9ec2" fill-opacity="0.9"/>
+<text x="96" y="881" font-size="11" font-style="italic" fill="#fff" fill-opacity="0.85">“Ban crack. It wrecks people's lives.”</text>
+<text x="96" y="900" font-size="11" fill="#fff">→ Shared value: nobody wants their life wrecked.</text>
+<line x1="460" y1="886" x2="485" y2="886" stroke="var(--secondary, #e0932f)" stroke-width="1.4"/>
+<circle cx="494" cy="886" r="9" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M490,886 l3,3 l5,-6" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="530" y="868" font-size="11.5" fill="var(--darkgray, #9a9a9a)">Most disagreements bottom out in a value</text>
+<text x="530" y="886" font-size="11.5" fill="var(--darkgray, #9a9a9a)">both sides already hold, one step down.</text>
+<text x="530" y="904" font-size="11.5" fill="var(--darkgray, #9a9a9a)">This one only reaches bedrock because</text>
+<text x="530" y="922" font-size="11.5" fill="var(--darkgray, #9a9a9a)">one side turns down every exit on the way.</text>
+
+<circle cx="92" cy="962" r="8" fill="var(--secondary, #e0932f)" fill-opacity="0.15" stroke="var(--secondary, #e0932f)" stroke-width="1.6"/>
+<path d="M88.5,962 l2.5,2.5 l4.5,-5.5" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="1.8"/>
+<text x="108" y="966" font-size="10.5" fill="var(--darkgray, #9a9a9a)">accept: a reasonable place to stop</text>
+<line x1="380" y1="962" x2="412" y2="962" stroke="#e05a4f" stroke-width="1.6" marker-end="url(#sg-arrow)"/>
+<text x="424" y="966" font-size="10.5" fill="var(--darkgray, #9a9a9a)">reject: dig a level deeper</text>
+<line x1="640" y1="962" x2="680" y2="962" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 6"/>
+<text x="692" y="966" font-size="10.5" fill="var(--darkgray, #9a9a9a)">no foundation</text>
+</svg>
 
 It's a strange place to end up after starting from "people shouldn't starve." But it is where the argument ends up, so it's worth knowing exactly why the basement floor doesn't hold either.
 
@@ -68,7 +200,7 @@ Suppose you do meet the rare consistent one: the man who follows P8 all the way 
 
 You can't argue him out of that, and you shouldn't try. Every argument assumes the listener already cares about the [[Law of Non-Contradiction]], so it can't be what makes someone start caring. Aristotle made this point about the man who denies non-contradiction. If he says anything meaningful, he's using the law. If he says nothing, he is, in Aristotle's phrase, "no better than a plant." The consistent nihilist hasn't lost the argument. He's **left it**. What's left to him isn't discourse but the only other way humans settle conflicts: [[Jungle Law|force]]. That's the [[Primacy of Consciousness]] in its purest form: *reality, logic, and your property answer to what I want.*
 
-It helps to be precise about who's actually on the other side of that line, because it isn't everyone who has ever contradicted themselves. A man who lied for his own benefit, noticed the contradiction, and changed his conduct is *inside* the line. That's what having the norm looks like. Correction is the norm working. The man outside the line isn't the one who commits contradictions. He's the one who adopts them as a standing policy and says "so what?" when they're pointed out. One is a fallible reasoner. The other has resigned from reasoning and would like to keep the benefits of membership, starting with other people's stuff.
+It helps to be precise about who's actually on the other side of that line, because it isn't everyone who has ever contradicted themselves. A man who lied for his own benefit, noticed the contradiction, and changed his conduct is *inside* the line. That's what having the norm looks like. Correction is the norm working. The man outside the line isn't the one who commits contradictions. He's the one who adopts them as a standing policy and says "so what?" when they're pointed out. *Sure, that's true. I don't care.* Nothing in the universe physically stops a man from saying that. But notice it isn't a counter-argument. It's a refusal to make one, and the honest thing for someone who has made that refusal is to stop talking, because he has nothing left to say. One is a fallible reasoner. The other has resigned from reasoning and would like to keep the benefits of membership, starting with other people's stuff.
 
 That's the fundamental divide, stated plainly. It isn't left versus right, or compassion versus greed. It's between people who accept that consistency binds them, even when it's inconvenient and even when the conclusion costs them something they want, and people who only accept it when it pays. With the first group, every disagreement is resolvable in principle, because both sides answer to the same standard. With the second, there's nothing to resolve. There's only a decision about how to live alongside them.
 
