@@ -13,7 +13,7 @@ Each step down is an exit. Any one of them is a perfectly reasonable place to st
 
 Compare that with an ordinary policy fight. *Ban crack, it wrecks people's lives.* Whatever you think of the policy, that conversation bottoms out in one step, at a value both sides already hold: nobody wants their life wrecked. Nobody has to go down to the molecular chemistry of the brain, let alone to the law of identity. Most disagreements end there because people already share the values involved. This one only reaches bedrock because one side turns down every exit on the way down.
 
-And notice what the statist's own "ought" is standing on the whole time. *Earn over $100k, owe the state 30%.* Derived from what? Not from economics, not from equality, not from logic. It has nothing underneath it at all. It's a bare assertion with a tax collector attached. Yet the guillotine only ever gets pointed at the side of the table that has foundations.
+And notice what the statist's own "ought" is standing on the whole time. *Earn over $500k, owe the state 35%.* Derived from what? Not from economics, not from equality, not from logic. It has nothing underneath it at all. It's a bare assertion with a tax collector attached. Yet the guillotine only ever gets pointed at the side of the table that has foundations.
 
 <svg viewBox="0 0 900 1006" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:1.75rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
 <defs>
@@ -108,8 +108,8 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 
 <rect x="680" y="70" width="200" height="70" rx="6" fill="#e05a4f" fill-opacity="0.12" stroke="#e05a4f" stroke-width="1.8"/>
 <text x="780" y="92" font-size="12" font-weight="600" fill="#e05a4f" text-anchor="middle">Their ought</text>
-<text x="780" y="111" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">“Earn over $100k?</text>
-<text x="780" y="128" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Owe the state 30%.”</text>
+<text x="780" y="111" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">“Earn over $500k?</text>
+<text x="780" y="128" font-size="11" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Owe the state 35%.”</text>
 <line x1="700" y1="142" x2="700" y2="656" stroke="#e05a4f" stroke-width="1.6" stroke-dasharray="6 6"/>
 <text x="712" y="240" font-size="14" fill="#e05a4f" fill-opacity="0.7">?</text>
 <text x="714" y="300" font-size="11" fill="var(--darkgray, #9a9a9a)">No supporting levels.</text>
