@@ -24,7 +24,7 @@ And notice what the statist's own "ought" is standing on the whole time. *Earn o
 <text x="80" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">The libertarian's case: each level answered by the next</text>
 <text x="680" y="40" font-size="14" font-weight="600" fill="var(--darkgray, #9a9a9a)">What their ought stands on</text>
 
-<line x1="40" y1="70" x2="40" y2="812" stroke="var(--gray, #9a9a9a)" stroke-width="1.4" marker-end="url(#sg-arrow-gray)"/>
+<line x1="40" y1="70" x2="40" y2="775" stroke="var(--gray, #9a9a9a)" stroke-width="1.4" marker-end="url(#sg-arrow-gray)"/>
 <text x="40" y="62" font-size="10" fill="var(--gray, #9a9a9a)" text-anchor="middle">surface</text>
 <text x="52" y="430" font-size="10" fill="var(--gray, #9a9a9a)" transform="rotate(90 52 430)" text-anchor="middle" letter-spacing="1.5">DIGGING DEEPER</text>
 
