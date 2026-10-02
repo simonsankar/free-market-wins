@@ -42,8 +42,8 @@ const ARGUMENTS = [
 
 const TIERS = [
   { key: "made-me-think", label: "Actually Made Me Think" },
-  { key: "two-seconds", label: "Interesting For 2 Seconds" },
-  { key: "mildly-interesting", label: "Mildly Interesting" },
+  { key: "edge-cases", label: "Fringe But Fun" },
+  { key: "needs-explaining", label: "Quick Rebuttal" },
   { key: "stupidity-on-steroids", label: "Stupidity On Steroids" },
   { key: "couldnt-give-a-fuck", label: "Couldn't Give A Fuck" },
 ]
@@ -53,12 +53,11 @@ const TIERS = [
 // re-deriving it from ARGUMENTS' own (alphabetical-friendly) order.
 const RANKING = {
   "made-me-think": ["child-rights"],
-  "two-seconds": ["lockean-proviso", "voluntary-slavery", "borderarianism", "subjectivism"],
-  "mildly-interesting": [
+  "edge-cases": ["lockean-proviso", "voluntary-slavery", "borderarianism", "rights-enforcement-surplus", "subjectivism"],
+  "needs-explaining": [
     "warlords-problem",
     "oligarchy",
     "profits-over-people",
-    "rights-enforcement-surplus",
     "mercenaries",
     "survivalism",
     "free-rider-problem",
@@ -122,8 +121,8 @@ const artExtById = Object.fromEntries(
 // fine against both the light and dark page backgrounds.
 const TIER_STYLES = {
   "made-me-think": { chip: "border-teal-500/50 bg-teal-500/15 text-teal-500", zone: "border-teal-500/40" },
-  "two-seconds": { chip: "border-lime-500/50 bg-lime-500/15 text-lime-500", zone: "border-lime-500/40" },
-  "mildly-interesting": { chip: "border-yellow-500/50 bg-yellow-500/15 text-yellow-500", zone: "border-yellow-500/40" },
+  "edge-cases": { chip: "border-lime-500/50 bg-lime-500/15 text-lime-500", zone: "border-lime-500/40" },
+  "needs-explaining": { chip: "border-yellow-500/50 bg-yellow-500/15 text-yellow-500", zone: "border-yellow-500/40" },
   "stupidity-on-steroids": { chip: "border-orange-500/50 bg-orange-500/15 text-orange-500", zone: "border-orange-500/40" },
   "couldnt-give-a-fuck": { chip: "border-red-500/50 bg-red-500/15 text-red-500", zone: "border-red-500/40" },
 }
