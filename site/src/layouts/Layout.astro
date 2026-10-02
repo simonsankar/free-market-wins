@@ -21,9 +21,10 @@ const pageTitle = title ? `${title} — Free Market Wins` : "Free Market Wins"
     <meta name="description" content={description} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/vault-assets/favicon.svg" />
-    <link rel="icon" type="image/png" href="/vault-assets/icon.png" />
-    <link rel="apple-touch-icon" href="/vault-assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/ancap.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,7 +38,10 @@ const pageTitle = title ? `${title} — Free Market Wins` : "Free Market Wins"
   </head>
   <body class="font-body">
     <header class="flex flex-wrap items-center justify-between gap-6 px-8 py-3 max-[800px]:px-4 max-[800px]:py-3">
-      <a class="wordmark" href="/">Free Market Wins</a>
+      <a class="wordmark flex items-center gap-2.5" href="/">
+        <img src="/ancap.svg" alt="" width="28" height="28" class="h-7 w-7" />
+        Free Market Wins
+      </a>
       <!--
         SearchBox and the theme toggle are siblings of <nav>, not children of
         it — <nav> is the only thing that should render uppercase, and since

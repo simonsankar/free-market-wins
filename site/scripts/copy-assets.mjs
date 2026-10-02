@@ -80,3 +80,15 @@ if (fs.existsSync(TIER_LIST_ART_SRC)) {
   }
   console.log(`[copy-assets] copied tier-list art into ${path.relative(SITE_ROOT, TIER_LIST_ART_DEST)}/`)
 }
+
+// Site logo + favicons — tracked in site/brand/ (public/ is gitignored) and
+// copied to the public root so /favicon.ico etc. resolve.
+const BRAND_SRC = path.join(SITE_ROOT, "brand")
+if (fs.existsSync(BRAND_SRC)) {
+  for (const entry of fs.readdirSync(BRAND_SRC, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      fs.copyFileSync(path.join(BRAND_SRC, entry.name), path.join(SITE_ROOT, "public", entry.name))
+    }
+  }
+  console.log("[copy-assets] copied brand icons into public/")
+}
