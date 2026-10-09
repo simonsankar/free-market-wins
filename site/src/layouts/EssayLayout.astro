@@ -1,7 +1,8 @@
 ---
+import { getCollection } from "astro:content"
 import Layout from "./Layout.astro"
 import Graph from "../components/Graph.astro"
-import { getBacklinks, getLocalGraph } from "../lib/vault-index.mjs"
+import { getBacklinks, getLocalGraph, getOutgoing } from "../lib/vault-index.mjs"
 
 interface Heading {
   depth: number
@@ -22,108 +23,405 @@ interface Props {
 const { title, date, category, url, description, headings = [], cover } = Astro.props
 const backlinks = getBacklinks(url)
 const graph = getLocalGraph(url, title)
+const builtOn = getOutgoing(url)
+  .filter((n) => n.collection === "core-theory")
+  .slice(0, 8)
 
 // Only the top two levels used in article bodies (## and ###) make sense as
 // jump links — deeper levels would be too granular for an at-a-glance list.
 const sections = headings.filter((h) => h.depth <= 3)
 const minDepth = sections.length > 0 ? Math.min(...sections.map((h) => h.depth)) : 0
 
-const formattedDate = date
-  ? new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+// ── Collection siblings: reading time + "Read next" ─────────────────────────
+// The URL tells us which collection this page belongs to; entry ids mirror the
+// URL path (see content/config.ts), so the current entry is found by id.
+const collectionName = url.startsWith("/essays/") ? "essays" : url.startsWith("/zingers/") ? "zingers" : "core-theory"
+const base = collectionName === "essays" ? "/essays/" : collectionName === "zingers" ? "/zingers/" : "/core-theory/"
+const selfId = url.slice(base.length).replace(/\/$/, "")
+
+const rawEntries = await getCollection(collectionName as "essays" | "zingers" | "core-theory", (e: any) => e.data.unlisted !== true)
+const wordCount = (e: any) => (e.body ?? "").trim().split(/\s+/).filter(Boolean).length
+const readMins = (e: any) => Math.max(1, Math.round(wordCount(e) / 200))
+const categoryOf = (e: any) => {
+  if (collectionName === "zingers") return "Zinger"
+  if (collectionName === "core-theory") return "Core Theory"
+  return e.id.includes("/") ? e.id.split("/")[0].replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : "Essay"
+}
+// Essays and zingers read newest-first; core-theory notes mostly have no date,
+// so they go alphabetically.
+const ordered = rawEntries
+  .filter((e: any) => collectionName === "core-theory" || e.data.date)
+  .sort((a: any, b: any) =>
+    collectionName === "core-theory"
+      ? a.data.title.localeCompare(b.data.title)
+      : (b.data.date ?? "").localeCompare(a.data.date ?? ""),
+  )
+const self = rawEntries.find((e: any) => e.id === selfId)
+const minutes = self ? readMins(self) : null
+const selfIdx = ordered.findIndex((e: any) => e.id === selfId)
+// "Next" = the following (older) item in the same collection; wraps at the end.
+const nextEntry = selfIdx >= 0 && ordered.length > 1 ? ordered[(selfIdx + 1) % ordered.length] : null
+const next = nextEntry
+  ? {
+      url: `${base}${nextEntry.id}/`,
+      title: nextEntry.data.title,
+      meta: [categoryOf(nextEntry), `${readMins(nextEntry)} min`].join(" · "),
+    }
   : null
+
+// Dates are YYYY-MM-DD; format in UTC so builds don't drift by timezone.
+const formattedDate = date
+  ? new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", {
+      timeZone: "UTC",
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    })
+  : null
+
+// "Main — subtitle" titles read better as a display title plus a dek line.
+const parts = title.split(/\s+[—–-]\s+/)
+const mainTitle = parts[0]
+const subtitle = parts.length > 1 ? parts.slice(1).join(" — ") : null
+const titleLen = mainTitle.length
+// Scale the display title by length so long names still fit the tile.
+const titleSize =
+  titleLen <= 22
+    ? "clamp(2rem, 0.5rem + 7.4vw, 6rem)"
+    : titleLen <= 44
+      ? "clamp(1.875rem, 0.7rem + 5.4vw, 4.5rem)"
+      : "clamp(1.625rem, 0.8rem + 3.6vw, 3.25rem)"
+
+const hasToc = sections.length > 0
+const shareIcon = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>`
+const arrow = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`
 ---
 
 <Layout title={title} description={description}>
-  {
-    cover && (
-      <div class="essay-hero hero-bleed">
-        <img src={cover} alt="" class="essay-hero-img" />
-        <div class="essay-hero-overlay" />
-        <div class="essay-hero-content">
-          {category && <span class="pill essay-hero-pill">{category}</span>}
-          <h1 class="essay-hero-title" data-pagefind-meta="title">
-            {title}
+  <!-- Hero -->
+  <section class="tile tile-gold mt-4 !p-6 sm:!p-8 md:!p-12 xl:mt-6">
+    <div
+      class="pointer-events-none absolute -top-[9rem] -right-[10rem] h-[32rem] w-[32rem] rounded-full border-[3.5rem] border-white/15 md:-right-[8rem] md:h-[40rem] md:w-[40rem] md:border-[4.5rem]"
+      aria-hidden="true"
+    >
+    </div>
+    <div
+      class={`relative grid gap-8 md:gap-10 ${cover ? "lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_27rem]" : ""}`}
+    >
+      <div class="flex min-w-0 flex-col gap-6 md:gap-10">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          {
+            category && (
+              <span class="chip chip-ink mono-label !h-10 !px-5 !text-[0.75rem] !text-gold">{category}</span>
+            )
+          }
+          <p class="m-0 text-[0.9375rem] font-semibold text-on-gold">
+            {minutes !== null && <span>{minutes} min read</span>}
+            {minutes !== null && formattedDate && <span aria-hidden="true"> · </span>}
+            {formattedDate && <time datetime={date}>{formattedDate}</time>}
+          </p>
+        </div>
+
+        <div>
+          <h1
+            class="display-xl m-0 !text-on-gold"
+            style={`font-size:${titleSize};overflow-wrap:break-word;hyphens:manual`}
+            data-pagefind-meta={`title:${title}`}
+          >
+            {mainTitle}
           </h1>
-          {formattedDate && (
-            <p class="essay-hero-date">
-              <time datetime={date}>{formattedDate}</time>
-            </p>
-          )}
+          {
+            subtitle && (
+              <p class="m-0 mt-5 max-w-[44rem] text-[1.125rem] font-bold leading-snug text-on-gold md:mt-7 md:text-[1.5rem]">
+                {subtitle}
+              </p>
+            )
+          }
+          {
+            description && (
+              <p class="m-0 mt-4 max-w-[40rem] text-[1.0625rem] leading-relaxed text-on-gold md:text-[1.25rem]">
+                {description}
+              </p>
+            )
+          }
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            id="share-btn"
+            type="button"
+            class="btn-circle !border-white !bg-white !text-[#0f0e0c] hover:!bg-white hover:opacity-85"
+            aria-label="Share this page"
+            hidden
+            set:html={shareIcon}
+          >
+          </button>
+          <button
+            id="copy-link"
+            type="button"
+            class="btn-ink !bg-tile-ink !text-on-tile-ink"
+            data-label="Copy link"
+          >
+            <span data-copy-label aria-live="polite">Copy link</span>
+          </button>
         </div>
       </div>
-    )
-  }
-  <div
-    class="grid max-w-full justify-center gap-14 grid-cols-[minmax(0,48rem)_18rem] max-[1100px]:grid-cols-[minmax(0,48rem)]"
-  >
-    <article class="min-w-0">
+
       {
-        !cover && (
-          <>
-            <p class="content-meta mb-2 flex items-center gap-3">{category && <span class="pill">{category}</span>}</p>
-            <h1 class="article-title" data-pagefind-meta="title">
-              {title}
-            </h1>
-          </>
+        cover && (
+          <img
+            src={cover}
+            alt=""
+            class="aspect-[4/3] w-full rounded-[24px] object-cover lg:self-end"
+            style="border-radius:24px"
+            loading="eager"
+          />
         )
       }
-      <div class={`prose-body ${cover ? "mt-10" : ""}`} data-pagefind-body>
+    </div>
+  </section>
+
+  <!-- Body -->
+  <div
+    class={`mt-8 grid items-start gap-6 md:mt-12 min-[1200px]:gap-10 min-[1440px]:gap-14 min-[1200px]:justify-between ${
+      hasToc
+        ? "min-[1200px]:grid-cols-[14rem_minmax(0,42.5rem)_16rem] min-[1440px]:grid-cols-[15.5rem_minmax(0,42.5rem)_17rem]"
+        : "min-[1200px]:grid-cols-[minmax(0,42.5rem)_16rem] min-[1440px]:grid-cols-[minmax(0,42.5rem)_17rem] min-[1200px]:justify-center"
+    }`}
+  >
+    {
+      hasToc && (
+        <aside class="min-w-0 min-[1200px]:sticky min-[1200px]:top-6">
+          <details id="toc" class="tile tile-bone !p-0 group/toc" open>
+            <summary
+              class="mono-label flex cursor-pointer list-none items-center justify-between !px-6 !py-5 !text-stone min-[1200px]:pointer-events-none min-[1200px]:cursor-default [&::-webkit-details-marker]:hidden"
+            >
+              <span>In this piece</span>
+              <svg
+                class="min-[1200px]:hidden transition-transform group-open/toc:rotate-180"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </summary>
+            <script is:inline>
+              // Collapsed by default below the 3-column breakpoint; runs before paint so there's no flash.
+              if (!matchMedia("(min-width: 1200px)").matches) document.getElementById("toc").open = false
+            </script>
+            <nav aria-label="In this piece" class="px-6 pb-2">
+              <ul class="m-0 grid max-h-[min(24rem,calc(100vh-14rem))] list-none gap-0.5 overflow-y-auto p-0 pb-2">
+                {sections.map((h) => (
+                  <li style={`padding-left:${(h.depth - minDepth) * 0.9}rem`}>
+                    <a
+                      data-toc-link
+                      data-slug={h.slug}
+                      href={`#${h.slug}`}
+                      class="group/link flex items-start gap-3 py-1.5 text-[0.875rem] leading-snug font-medium text-char no-underline hover:text-ink aria-[current=true]:font-bold aria-[current=true]:text-ink"
+                    >
+                      <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-parchment group-aria-[current=true]/link:bg-ink" />
+                      <span class="min-w-0 [overflow-wrap:anywhere]">{h.text}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div class="px-6 pb-6 pt-3">
+              <div class="h-1 w-full overflow-hidden rounded-full bg-parchment" aria-hidden="true">
+                <div id="read-progress" class="h-full w-full origin-left rounded-full bg-gold" style="transform:scaleX(0)" />
+              </div>
+            </div>
+          </details>
+        </aside>
+      )
+    }
+
+    <article id="article" class="min-w-0">
+      <div class="prose-body" data-lead data-pagefind-body>
         <slot />
       </div>
-      {
-        formattedDate && (
-          <p class="mt-10 text-right font-code text-[0.7rem] text-gray/40">
-            <time datetime={date}>{formattedDate}</time>
-          </p>
-        )
-      }
     </article>
 
-    <aside
-      class="grid content-start gap-8 pt-14 max-[1100px]:mt-4 max-[1100px]:border-t max-[1100px]:border-lightgray max-[1100px]:pt-8"
-    >
+    <aside class="grid min-w-0 content-start gap-3">
       {
-        sections.length > 0 && (
-          <section>
-            <h2 class="content-meta mb-3 tracking-wider">Contents</h2>
-            <ul class="grid list-none gap-0.5 p-0 m-0">
-              {sections.map((h) => (
-                <li>
-                  <a
-                    class="internal block truncate rounded-[2px] py-1 text-sm text-darkgray no-underline hover:text-secondary"
-                    style={{ paddingLeft: `${(h.depth - minDepth) * 0.9}rem` }}
-                    href={`#${h.slug}`}
-                  >
-                    {h.text}
-                  </a>
-                </li>
+        builtOn.length > 0 && (
+          <section class="tile tile-butter !p-5 md:!p-6 !rounded-[24px]">
+            <h2 class="mono-label m-0 mb-4 !text-ink">Built on</h2>
+            <div class="flex flex-wrap gap-2">
+              {builtOn.map((n) => (
+                <a class="chip hover:opacity-80" href={n.url}>
+                  {n.title}
+                </a>
               ))}
-            </ul>
+            </div>
           </section>
         )
       }
-      <section>
-        <h2 class="content-meta mb-3 tracking-wider">Local graph</h2>
-        <Graph id={`local-${url}`} nodes={graph.nodes} edges={graph.edges} height={240} />
+      {
+        next && (
+          <a
+            href={next.url}
+            class="tile tile-ink group/next block !rounded-[24px] !p-5 no-underline md:!p-6 !text-on-tile-ink hover:opacity-90"
+          >
+            <h2 class="mono-label m-0 mb-4 !text-gold">Read next</h2>
+            <p class="display-title m-0 !text-[1.25rem] !leading-[1.1] !text-on-tile-ink [overflow-wrap:anywhere]">
+              {next.title}
+            </p>
+            <p class="m-0 mt-3 flex items-center justify-between gap-3 text-[0.8125rem] text-on-tile-ink-soft">
+              <span>{next.meta}</span>
+              <span class="text-gold" set:html={arrow} />
+            </p>
+          </a>
+        )
+      }
+      <section class="tile tile-bone !rounded-[24px] !p-5 md:!p-6">
+        <h2 class="mono-label m-0 mb-3 !text-stone">Local graph · {graph.nodes.length} {graph.nodes.length === 1 ? "note" : "notes"}</h2>
+        <div class="overflow-hidden rounded-[16px] bg-ground">
+          <Graph id={`local-${url}`} nodes={graph.nodes} edges={graph.edges} height={240} />
+        </div>
       </section>
-      <section>
-        <h2 class="content-meta mb-3 tracking-wider">Backlinks</h2>
+      <section class="px-1 pt-3">
+        <h2 class="mono-label m-0 mb-2 !text-stone">Backlinks{backlinks.length > 0 ? ` · ${backlinks.length}` : ""}</h2>
         {
           backlinks.length > 0 ? (
-            <ul class="grid list-none gap-2 p-0 m-0">
-              {backlinks.map((b) => (
+            <ul class="m-0 list-none p-0">
+              {backlinks.slice(0, 6).map((b) => (
                 <li>
-                  <a class="internal list-row" href={b.url}>
-                    {b.title}
+                  <a class="index-row !gap-3 !py-3 !text-[0.9375rem] font-semibold [&>span]:min-w-0 [&>span]:[overflow-wrap:anywhere]" href={b.url}>
+                    <span class="flex-1">{b.title}</span>
+                    <span class="shrink-0 text-gold-deep" set:html={arrow} />
                   </a>
                 </li>
               ))}
+              {backlinks.length > 6 && (
+                <li class="border-t-[1.5px] border-ink">
+                  <details>
+                    <summary class="mono-label cursor-pointer py-3 !text-stone">
+                      {backlinks.length - 6} more
+                    </summary>
+                    <ul class="m-0 list-none p-0">
+                      {backlinks.slice(6).map((b) => (
+                        <li>
+                          <a
+                            class="index-row !gap-3 !py-3 !text-[0.9375rem] font-semibold [&>span]:min-w-0 [&>span]:[overflow-wrap:anywhere]"
+                            href={b.url}
+                          >
+                            <span class="flex-1">{b.title}</span>
+                            <span class="shrink-0 text-gold-deep" set:html={arrow} />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              )}
             </ul>
           ) : (
-            <p class="font-code text-xs text-gray">Nothing links here yet.</p>
+            <p class="m-0 border-t-[1.5px] border-ink pt-3 text-[0.875rem] text-stone">Nothing links here yet.</p>
           )
         }
       </section>
     </aside>
   </div>
+
+  <script>
+    // Copy link / share
+    const copyBtn = document.getElementById("copy-link")
+    const shareBtn = document.getElementById("share-btn")
+    const url = () => location.href.split("#")[0]
+
+    copyBtn?.addEventListener("click", async () => {
+      const label = copyBtn.querySelector("[data-copy-label]")
+      let ok = false
+      try {
+        await navigator.clipboard.writeText(url())
+        ok = true
+      } catch {
+        const ta = document.createElement("textarea")
+        ta.value = url()
+        ta.style.position = "fixed"
+        ta.style.opacity = "0"
+        document.body.appendChild(ta)
+        ta.select()
+        try {
+          ok = document.execCommand("copy")
+        } catch {}
+        ta.remove()
+      }
+      if (label) {
+        label.textContent = ok ? "Copied" : "Copy failed"
+        setTimeout(() => (label.textContent = "Copy link"), 2000)
+      }
+    })
+
+    // Only offer the circle share button where the Web Share API exists.
+    if (shareBtn && typeof navigator.share === "function") {
+      shareBtn.hidden = false
+      shareBtn.addEventListener("click", () => {
+        navigator.share({ title: document.title, url: url() }).catch(() => {})
+      })
+    }
+
+    // Contents is always open (and not collapsible) in the 3-column layout.
+    const tocDetails = document.getElementById("toc") as HTMLDetailsElement | null
+    const wide = matchMedia("(min-width: 1200px)")
+    wide.addEventListener("change", () => {
+      if (tocDetails) tocDetails.open = wide.matches
+    })
+
+    // Contents: active section (IntersectionObserver) + reading progress.
+    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]"))
+    const article = document.getElementById("article")
+    if (links.length && article) {
+      const headings = links
+        .map((a) => document.getElementById(a.dataset.slug ?? ""))
+        .filter((el): el is HTMLElement => !!el)
+      const setActive = () => {
+        // Last heading whose top has crossed the upper part of the viewport.
+        let current: HTMLElement | null = null
+        for (const h of headings) {
+          if (h.getBoundingClientRect().top <= window.innerHeight * 0.25) current = h
+          else break
+        }
+        for (const a of links) {
+          if (current && a.dataset.slug === current.id) a.setAttribute("aria-current", "true")
+          else a.removeAttribute("aria-current")
+        }
+      }
+      const io = new IntersectionObserver(setActive, { rootMargin: "0px 0px -75% 0px", threshold: [0, 1] })
+      headings.forEach((h) => io.observe(h))
+      setActive()
+    }
+
+    const bar = document.getElementById("read-progress")
+    if (bar && article) {
+      let ticking = false
+      const update = () => {
+        ticking = false
+        const rect = article.getBoundingClientRect()
+        const total = rect.height - window.innerHeight * 0.6
+        const done = Math.min(1, Math.max(0, (window.innerHeight * 0.4 - rect.top) / Math.max(total, 1)))
+        bar.style.transform = `scaleX(${done})`
+      }
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            ticking = true
+            requestAnimationFrame(update)
+          }
+        },
+        { passive: true },
+      )
+      window.addEventListener("resize", update)
+      update()
+    }
+  </script>
 </Layout>

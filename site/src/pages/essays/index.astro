@@ -1,54 +1,269 @@
 ---
 import { getCollection } from "astro:content"
 import Layout from "../../layouts/Layout.astro"
-import EssayCard from "../../components/EssayCard.astro"
+import { generateCover } from "../../lib/coverArt.mjs"
 
-function categoryOf(id) {
+function categoryOf(id: string) {
   const segment = id.includes("/") ? id.split("/")[0] : ""
   return segment.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+}
+const slugOf = (category: string) => category.toLowerCase().replace(/\s+/g, "-")
+const wordCount = (entry: any) => (entry.body ?? "").trim().split(/\s+/).filter(Boolean).length
+const readMins = (entry: any) => Math.max(1, Math.round(wordCount(entry) / 200))
+// Dates are YYYY-MM-DD strings; format in UTC so builds don't drift by timezone.
+function fmt(date: string | undefined, opts: Intl.DateTimeFormatOptions) {
+  return date ? new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", ...opts }) : ""
+}
+
+// Excerpt for the featured tile: frontmatter `description` if present, else the
+// first sentence of the first prose paragraph (headings, images, HTML/SVG,
+// quotes, lists, tables and code fences are skipped). Never invented copy.
+function excerptOf(entry: any): string {
+  if (entry.data.description) return entry.data.description
+  const paragraph = (entry.body ?? "")
+    .split(/\n\s*\n/)
+    .map((p: string) => p.trim())
+    .find((p: string) => p && !/^(#|!|<|>|\||```|---|[-*+]\s|\d+\.\s)/.test(p))
+  if (!paragraph) return ""
+  const plain = paragraph
+    .replace(/\[\[([^\]|]*)\|([^\]]*)\]\]/g, "$2")
+    .replace(/\[\[([^\]]*)\]\]/g, "$1")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`~]/g, "")
+    .replace(/\p{Extended_Pictographic}/gu, "")
+    .replace(/\s+/g, " ")
+    .trim()
+  const sentence = plain.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? plain
+  if (sentence.length <= 220) return sentence
+  return sentence.slice(0, 220).replace(/\s+\S*$/, "") + "…"
 }
 
 const entries = await getCollection("essays", (e) => e.data.unlisted !== true && Boolean(e.data.date))
 const sorted = entries.sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
 const categories = Array.from(new Set(sorted.map((e) => categoryOf(e.id)))).sort()
+const counts = Object.fromEntries(categories.map((c) => [c, sorted.filter((e) => categoryOf(e.id) === c).length]))
+
+// Featured row: newest essay + the longest (by body word count) of the rest.
+const featured = sorted[0]
+const longest = sorted
+  .slice(1)
+  .reduce<any>((best, e) => (!best || wordCount(e) > wordCount(best) ? e : best), null)
+const featuredCategory = categoryOf(featured.id)
+const featuredCover = featured.data.cover
+const featuredArt = featuredCover ? null : generateCover({ id: featured.id, category: featuredCategory })
+const featuredExcerpt = excerptOf(featured)
+
+// Tile treatment per section; unknown sections fall back to bone.
+const tileFor: Record<string, { tile: string; label: string; circle: string; meta: string; title: string }> = {
+  dissects: {
+    tile: "tile-ink",
+    label: "!text-gold",
+    circle: "!border-gold !bg-gold !text-[#0f0e0c]",
+    meta: "text-on-tile-ink-soft",
+    title: "!text-on-tile-ink",
+  },
+  economics: {
+    tile: "tile-butter",
+    label: "!text-ink",
+    circle: "!border-white !bg-white !text-ink",
+    meta: "text-char",
+    title: "",
+  },
+  philosophy: {
+    tile: "tile-bone",
+    label: "",
+    circle: "!border-ground !bg-ground !text-ink",
+    meta: "text-stone",
+    title: "",
+  },
+}
+const styleFor = (category: string) => tileFor[slugOf(category)] ?? tileFor.philosophy
+
+const arrowDiag = `<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="2"/></svg>`
 ---
 
 <Layout title="Essays" description="The full archive of essays, dissections, and fiction.">
-  <h1 class="article-title">Essays</h1>
-  <p class="max-w-[42rem] text-gray">
-    The full archive — Austrian economics, natural rights theory, and dissections of statist
-    policy, sorted newest first. Filter by section or browse everything.
-  </p>
-
-  <div class="my-6 flex flex-wrap gap-2" id="essay-filters">
-    <button class="filter-tab" data-filter="all" aria-pressed="true" type="button">All</button>
-    {
-      categories.map((c) => (
-        <button class="filter-tab" data-filter={c} aria-pressed="false" type="button">
-          {c}
+  <div id="essays-root" data-active="all">
+    <!-- Header -->
+    <section class="flex flex-col gap-6 pt-10 pb-6 sm:pt-14 lg:flex-row lg:items-end lg:justify-between lg:gap-8 xl:pt-20 xl:pb-8">
+      <div class="flex items-start gap-3 sm:gap-4">
+        <h1 class="display-xl m-0 max-sm:!text-[clamp(2.75rem,15vw,4rem)] xl:!text-[7.5rem] xl:!leading-[0.85]">Essays</h1>
+        <span
+          class="inline-flex h-8 items-center rounded-full bg-gold px-3 font-mono text-[0.8125rem] font-bold text-on-gold sm:h-10 sm:px-3.5"
+          aria-label={`${sorted.length} essays`}
+        >
+          {sorted.length}
+        </span>
+      </div>
+      <div class="flex flex-wrap gap-2 lg:pb-1.5" id="essay-filters" role="group" aria-label="Filter essays by section">
+        <button class="chip chip-outline !h-11 !px-5 !text-[0.9375rem] sm:!h-[3.25rem]" data-filter="all" aria-pressed="true" type="button">
+          All
         </button>
-      ))
-    }
-  </div>
+        {
+          categories.map((c) => (
+            <button
+              class="chip chip-outline !h-11 !px-5 !text-[0.9375rem] sm:!h-[3.25rem]"
+              data-filter={slugOf(c)}
+              aria-pressed="false"
+              type="button"
+            >
+              {c} · {counts[c]}
+            </button>
+          ))
+        }
+      </div>
+    </section>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10" id="essay-grid">
-    {sorted.map((entry) => <EssayCard entry={entry} />)}
+    <!-- Featured row: shown only on the unfiltered view -->
+    <section id="essay-featured" aria-label="Featured" class="mb-3 flex flex-col gap-3 lg:flex-row">
+      <a
+        href={`/essays/${featured.id}/`}
+        class="tile tile-ink group relative flex min-h-[30rem] flex-col justify-between no-underline lg:min-h-[26.25rem] lg:flex-[2]"
+      >
+        <div class="absolute inset-y-0 right-0 w-full lg:w-[58%]" aria-hidden="true">
+          {
+            featuredCover ? (
+              <img src={featuredCover} alt="" class="h-full w-full object-cover object-top" />
+            ) : (
+              <div class="h-full w-full [&>svg]:h-full [&>svg]:w-full [&>svg>rect:first-child]:fill-transparent" set:html={featuredArt} />
+            )
+          }
+          <div class="absolute inset-0 bg-linear-to-t from-tile-ink from-35% to-tile-ink/25 lg:bg-linear-to-r lg:from-tile-ink lg:from-0% lg:to-transparent lg:to-65%"></div>
+        </div>
+        <div class="relative flex flex-wrap items-center gap-x-3 gap-y-2">
+          <span class="inline-flex h-8 items-center rounded-full bg-gold px-3 font-mono text-xs font-bold text-on-gold">LATEST</span>
+          <span class="text-sm text-on-tile-ink-soft">{featuredCategory} · {readMins(featured)} min</span>
+        </div>
+        <div class="relative flex flex-col gap-4 lg:max-w-[58%]">
+          <h2 class="display-title m-0 break-words !text-on-tile-ink sm:!text-[2rem] lg:!text-[2.25rem] lg:!leading-[1.05]">
+            {featured.data.title}
+          </h2>
+          {
+            featuredExcerpt && (
+              <p class="m-0 line-clamp-4 max-w-[34rem] text-base leading-[1.55] text-on-tile-ink-soft">{featuredExcerpt}</p>
+            )
+          }
+        </div>
+      </a>
+
+      {
+        longest && (
+          <a
+            href={`/essays/${longest.id}/`}
+            class="tile tile-gold group flex min-h-[18rem] flex-col justify-between no-underline lg:min-h-[26.25rem] lg:flex-1"
+          >
+            <div class="tile-label"><span>{categoryOf(longest.id)}</span><span>· {readMins(longest)} min</span></div>
+            <div class="flex flex-col gap-3.5">
+              <h2 class="display-title m-0 break-words !text-on-gold lg:!text-[2rem] lg:!leading-[1.05]">{longest.data.title}</h2>
+              <p class="m-0 text-sm text-on-gold">The longest piece in the vault.</p>
+            </div>
+          </a>
+        )
+      }
+    </section>
+
+    <!-- Grid: every essay; the two featured ones are hidden here while unfiltered
+         (they're in the row above) and shown again when a filter is active. -->
+    <section id="essay-grid" aria-label="All essays" class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+      {
+        sorted.map((entry) => {
+          const category = categoryOf(entry.id)
+          // Essays with a real `cover` image get the featured tile's treatment:
+          // the photo fills the tile and fades into ink behind the text. They
+          // always render as ink tiles, whatever their section, since text
+          // over a photo needs the dark fade to stay legible. Generated-art
+          // essays keep their plain section tile.
+          const cover = entry.data.cover
+          const s = cover ? tileFor.dissects : styleFor(category)
+          const isFeatured = entry === featured || entry === longest
+          return (
+            <a
+              href={`/essays/${entry.id}/`}
+              data-category={slugOf(category)}
+              class:list={[
+                "tile group relative flex min-h-[15rem] flex-col justify-between gap-8 overflow-hidden no-underline md:min-h-[18.75rem]",
+                s.tile,
+                isFeatured && "essay-dup",
+              ]}
+            >
+              {
+                cover && (
+                  <div class="absolute inset-0" aria-hidden="true">
+                    <img src={cover} alt="" loading="lazy" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]" />
+                    <div class="absolute inset-0 bg-linear-to-t from-tile-ink from-15% via-tile-ink/60 via-50% to-tile-ink/0"></div>
+                  </div>
+                )
+              }
+              <div class="relative flex items-center justify-between gap-4">
+                <span class:list={["mono-label", s.label]}>{category}</span>
+                <span class:list={["btn-circle !h-11 !w-11 sm:!h-12 sm:!w-12", s.circle]}>
+                  <Fragment set:html={arrowDiag} />
+                </span>
+              </div>
+              <div class="relative flex flex-col gap-3">
+                <h3 class:list={["display-title m-0 break-words !text-[1.375rem] sm:!text-[1.625rem] sm:!leading-[1.08]", s.title]}>
+                  {entry.data.title}
+                </h3>
+                <p class:list={["m-0 text-sm", s.meta]}>
+                  {readMins(entry)} min · {fmt(entry.data.date, { day: "numeric", month: "short", year: "numeric" })}
+                </p>
+              </div>
+            </a>
+          )
+        })
+      }
+    </section>
+    <p id="essay-empty" class="mt-6 hidden text-stone">No essays in this section yet.</p>
   </div>
 </Layout>
 
-<script>
-  const buttons = document.querySelectorAll<HTMLButtonElement>("#essay-filters .filter-tab")
-  const cards = document.querySelectorAll<HTMLAnchorElement>("#essay-grid > a")
+<style is:global>
+  /* Unfiltered: the featured/longest essays live in the row, not the grid.
+     Filtered: hide the row and show every match in the grid. */
+  #essays-root[data-active="all"] .essay-dup {
+    display: none;
+  }
+  #essays-root:not([data-active="all"]) #essay-featured {
+    display: none;
+  }
+</style>
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      buttons.forEach((b) => b.setAttribute("aria-pressed", "false"))
-      btn.setAttribute("aria-pressed", "true")
-      const filter = btn.dataset.filter
-      cards.forEach((card) => {
-        const match = filter === "all" || card.dataset.category === filter
+<script is:inline>
+  ;(function () {
+    var root = document.getElementById("essays-root")
+    var buttons = Array.prototype.slice.call(document.querySelectorAll("#essay-filters [data-filter]"))
+    var cards = Array.prototype.slice.call(document.querySelectorAll("#essay-grid > a"))
+    var empty = document.getElementById("essay-empty")
+    var valid = buttons.map(function (b) {
+      return b.dataset.filter
+    })
+
+    function apply(filter) {
+      root.dataset.active = filter
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.filter === filter))
+      })
+      var shown = 0
+      cards.forEach(function (card) {
+        var match = filter === "all" || card.dataset.category === filter
         card.style.display = match ? "" : "none"
+        if (match && !(filter === "all" && card.classList.contains("essay-dup"))) shown++
+      })
+      empty.classList.toggle("hidden", shown > 0)
+    }
+
+    var initial = new URLSearchParams(location.search).get("filter")
+    apply(initial && valid.indexOf(initial) > -1 ? initial : "all")
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var filter = btn.dataset.filter
+        apply(filter)
+        var url = new URL(location.href)
+        if (filter === "all") url.searchParams.delete("filter")
+        else url.searchParams.set("filter", filter)
+        history.replaceState(null, "", url)
       })
     })
-  })
+  })()
 </script>
