@@ -6,29 +6,29 @@
 ---
 
 <div>
-  <button
-    id="search-toggle"
-    class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-3 py-1 font-code text-[0.8rem] tracking-wide text-darkgray uppercase hover:border-secondary hover:text-secondary"
-    aria-label="Open search"
-    type="button">Search</button
-  >
+  <button id="search-toggle" class="btn-circle" aria-label="Open search" type="button">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></circle>
+      <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+    </svg>
+  </button>
   <div id="search-modal" class="fixed inset-0 z-[100]" hidden>
-    <div id="search-modal-backdrop" class="absolute inset-0 bg-black/28 backdrop-blur-[10px]"></div>
+    <div id="search-modal-backdrop" class="absolute inset-0 bg-ink/40 backdrop-blur-[10px]"></div>
     <div
       id="search-modal-panel"
-      class="relative mx-auto mt-[8vh] flex max-h-[78vh] w-[min(46rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-md border border-lightgray bg-light normal-case shadow-[0_24px_60px_-12px_rgba(0,0,0,0.35)] max-[640px]:mt-[3vh] max-[640px]:max-h-[88vh]"
+      class="relative mx-auto mt-[8vh] flex max-h-[78vh] w-[min(46rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-[1.5rem] border border-parchment bg-ground normal-case sm:rounded-[2rem] max-[640px]:mt-[3vh] max-[640px]:max-h-[88vh]"
       role="dialog"
       aria-modal="true"
       aria-label="Search"
     >
-      <div class="flex items-center gap-3 border-b border-lightgray px-5 py-[1.1rem]">
-        <svg class="h-[1.1rem] w-[1.1rem] shrink-0 text-gray" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <div class="flex items-center gap-3 border-b-[1.5px] border-ink px-5 py-[1.1rem] sm:px-7">
+        <svg class="h-[1.1rem] w-[1.1rem] shrink-0 text-stone" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5" />
           <path d="M18 18L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
         <input
           id="search-input"
-          class="min-w-0 flex-1 border-none bg-transparent font-body text-[1.05rem] text-darkgray outline-none placeholder:text-gray"
+          class="min-w-0 flex-1 border-none bg-transparent font-body text-[1.05rem] text-ink outline-none placeholder:text-stone"
           type="text"
           placeholder="Search essays, core theory, zingers…"
           autocomplete="off"
@@ -36,12 +36,12 @@
         />
         <button
           id="search-close"
-          class="shrink-0 cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-[0.2rem] font-code text-[0.7rem] text-gray hover:border-secondary hover:text-secondary"
+          class="shrink-0 cursor-pointer rounded-full border border-parchment bg-transparent px-3 py-1 font-mono text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-stone hover:border-ink hover:text-ink"
           aria-label="Close search"
           type="button">Esc</button
         >
       </div>
-      <div id="search-results" class="overflow-y-auto px-5 pt-2 pb-5"></div>
+      <div id="search-results" class="overflow-y-auto px-5 pt-2 pb-5 sm:px-7"></div>
     </div>
   </div>
 </div>
@@ -54,10 +54,10 @@
   const input = document.getElementById("search-input")
   const resultsEl = document.getElementById("search-results")
 
-  const LABEL_CLASSES = "font-code text-[0.72rem] uppercase tracking-wide text-gray mb-4"
+  const LABEL_CLASSES = "font-mono font-semibold text-[0.72rem] uppercase tracking-[0.12em] text-stone mb-4"
   const RESULT_TITLE_CLASSES =
-    "flex items-center gap-2.5 no-underline text-darkgray font-header font-bold text-[1.05rem] hover:text-secondary"
-  const EXCERPT_CLASSES = "mt-2 font-body text-[0.88rem] leading-[1.55] text-gray [&_mark]:rounded-[2px] [&_mark]:bg-text-highlight [&_mark]:px-[0.15em] [&_mark]:text-darkgray"
+    "flex items-center gap-2.5 no-underline text-ink font-display font-extrabold uppercase tracking-[-0.01em] [font-stretch:112%] text-[0.95rem] hover:text-gold-deep"
+  const EXCERPT_CLASSES = "mt-2 font-body text-[0.88rem] leading-[1.55] text-char [&_mark]:rounded-[2px] [&_mark]:bg-gold/40 [&_mark]:px-[0.15em] [&_mark]:text-ink"
 
   let pagefind = null
   let loading = null
@@ -96,11 +96,11 @@
       .filter((s) => s.title !== data.meta?.title && s.excerpt !== data.excerpt)
       .slice(0, 2)
     const subHtml = subs.length
-      ? `<div class="mt-3 grid gap-2.5 border-l-2 border-lightgray pl-4">${subs
+      ? `<div class="mt-3 grid gap-2.5 border-l-2 border-gold pl-4">${subs
           .map(
             (s) => `
               <div>
-                <a class="block no-underline font-code text-[0.74rem] uppercase tracking-wide text-secondary hover:text-tertiary" href="${s.url}">${s.title}</a>
+                <a class="block no-underline font-mono font-semibold text-[0.74rem] uppercase tracking-[0.1em] text-gold-deep hover:text-ink" href="${s.url}">${s.title}</a>
                 <p class="${EXCERPT_CLASSES} text-[0.84rem]">${s.excerpt}</p>
               </div>`,
           )
@@ -108,9 +108,9 @@
       : ""
 
     return `
-      <div class="border-b border-lightgray py-[1.1rem] last:border-none">
+      <div class="border-b border-parchment py-[1.1rem] last:border-none">
         <a class="${RESULT_TITLE_CLASSES}" href="${data.url}">
-          ${label ? `<span class="pill shrink-0">${label}</span>` : ""}
+          ${label ? `<span class="shrink-0 rounded-full bg-butter uppercase px-2.5 py-0.5 font-mono text-[0.65rem] font-semibold tracking-[0.1em] text-[#0f0e0c]">${label}</span>` : ""}
           <span>${data.meta?.title ?? data.url}</span>
         </a>
         <p class="${EXCERPT_CLASSES}">${data.excerpt}</p>

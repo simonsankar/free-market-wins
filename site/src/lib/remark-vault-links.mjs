@@ -67,6 +67,7 @@ export function remarkVaultLinks() {
               hProperties: {
                 class: "internal",
                 "data-preview-title": targetEntry.title,
+                "data-preview-kind": { "core-theory": "Core Theory", essays: "Essay", zingers: "Zinger" }[targetEntry.collection] ?? "",
                 "data-preview-excerpt": targetEntry.excerpt,
               },
             },

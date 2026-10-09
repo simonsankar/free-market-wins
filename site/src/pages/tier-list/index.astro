@@ -40,12 +40,59 @@ const ARGUMENTS = [
   { id: "ancap-vs-state", title: "Crushed By The State", blurb: "A stateless ancap society just gets invaded and conquered by an organized collectivist state next door." },
 ]
 
+// `label`/`grade` colours: top to bottom gold, butter, cream, bone, ink. `row`
+// is the label tile, `zone` the (lighter) tile holding the cards, `card` the
+// selected-card frame, `grade`/`name` the label text colours. Written out as
+// full literal class strings so Tailwind's scanner sees them.
 const TIERS = [
-  { key: "made-me-think", label: "Actually Made Me Think" },
-  { key: "edge-cases", label: "Fringe But Fun" },
-  { key: "needs-explaining", label: "Quick Rebuttal" },
-  { key: "stupidity-on-steroids", label: "Stupidity On Steroids" },
-  { key: "couldnt-give-a-fuck", label: "Couldn't Give A Fuck" },
+  {
+    key: "made-me-think",
+    grade: "S",
+    label: "Actually Made Me Think",
+    row: "tile-gold",
+    zone: "tile-cream",
+    gradeText: "text-ink",
+    nameText: "text-ink",
+  },
+  {
+    key: "edge-cases",
+    grade: "A",
+    label: "Fringe But Fun",
+    row: "tile-butter",
+    zone: "tile-bone",
+    gradeText: "text-ink",
+    nameText: "text-ink",
+  },
+  {
+    key: "needs-explaining",
+    grade: "B",
+    label: "Quick Rebuttal",
+    row: "tile-cream",
+    zone: "tile-bone",
+    gradeText: "text-ink",
+    nameText: "text-ink",
+  },
+  {
+    key: "stupidity-on-steroids",
+    grade: "C",
+    label: "Stupidity On Steroids",
+    row: "tile-bone",
+    zone: "tile-bone",
+    gradeText: "text-ink",
+    nameText: "text-ink",
+  },
+  {
+    key: "couldnt-give-a-fuck",
+    grade: "F",
+    label: "Couldn't Give A Fuck",
+    // Rendered with a censored asterisk, like the mockup; the owner's tier
+    // name stays as-is in `label` (used for aria + the panel chip data).
+    shown: "Couldn't Give A F*ck",
+    row: "tile-ink",
+    zone: "tile-ink",
+    gradeText: "text-gold",
+    nameText: "text-on-tile-ink",
+  },
 ]
 
 // Simon's final ranking — fixed, not user-editable. Order within each tier
@@ -112,125 +159,135 @@ const artExtById = Object.fromEntries(
   fs.readdirSync(ART_SRC_DIR).map((filename) => [path.parse(filename).name, path.parse(filename).ext]),
 )
 
-// Written out as full literal class strings (not built from a template
-// literal) so Tailwind's static scanner can actually see and generate them —
-// `bg-${color}-500` in source text isn't a match, `bg-teal-500` is. Plain
-// `-500` shades with no dark: variant on purpose: the site's theme toggle
-// flips a `data-theme` attribute, not Tailwind's `dark` class, so the
-// media-query-based `dark:` variant wouldn't track it anyway — `-500` reads
-// fine against both the light and dark page backgrounds.
-const TIER_STYLES = {
-  "made-me-think": { chip: "border-teal-500/50 bg-teal-500/15 text-teal-500", zone: "border-teal-500/40" },
-  "edge-cases": { chip: "border-lime-500/50 bg-lime-500/15 text-lime-500", zone: "border-lime-500/40" },
-  "needs-explaining": { chip: "border-yellow-500/50 bg-yellow-500/15 text-yellow-500", zone: "border-yellow-500/40" },
-  "stupidity-on-steroids": { chip: "border-orange-500/50 bg-orange-500/15 text-orange-500", zone: "border-orange-500/40" },
-  "couldnt-give-a-fuck": { chip: "border-red-500/50 bg-red-500/15 text-red-500", zone: "border-red-500/40" },
-}
+const tierByArg = Object.fromEntries(
+  TIERS.flatMap((tier) => RANKING[tier.key].map((id) => [id, tier])),
+)
+const totalArguments = Object.values(RANKING).reduce((n, ids) => n + ids.length, 0)
+
 ---
 
 <Layout
   title="Arguments Against AnCap: Tier List"
   description="The definitive ranking of arguments against anarcho-capitalism, from Hume's Guillotine down to Couldn't Give A Fuck."
 >
-  <h1 class="article-title">Arguments Against AnCap</h1>
+  <div id="tier-page-content" class="tier-page-content @container">
+    <section class="flex flex-col gap-6 pt-10 pb-6 sm:pt-14 @4xl:flex-row @4xl:items-end @4xl:justify-between @4xl:gap-8 xl:pt-20 xl:pb-8">
+      <div class="flex flex-col gap-4">
+        <p class="mono-label m-0 !text-[0.75rem] sm:!text-[0.8125rem] !tracking-[0.14em]">
+          {totalArguments} Arguments · Ranked by how much they actually land
+        </p>
+        <h1 class="display-xl m-0 max-sm:!text-[clamp(1.75rem,10vw,3.5rem)] xl:!text-[5.5rem] xl:!leading-[0.95]">
+          Arguments<br />against ancap.
+        </h1>
+      </div>
+      <p class="m-0 max-w-[22.5rem] text-base leading-[1.7] text-char @4xl:shrink-0 @4xl:text-right">
+        Tap any card for the claim and the rebuttal. The ranking is fixed; argue with it in the essays.
+      </p>
+    </section>
 
-  <div id="tier-page-content" class="tier-page-content">
-    <div class="hero-bleed">
-      <div class="mx-auto max-w-[100rem] px-8 max-[800px]:px-4">
-        <div id="tier-grid" class="flex flex-col gap-3">
-    {
-      TIERS.map((tier) => (
-        <div class="flex flex-col gap-2 sm:flex-row sm:items-stretch">
-          <div
-            class={`flex w-full items-center rounded-[2px] border px-4 py-2 font-header text-sm font-bold tracking-wide sm:w-56 sm:flex-shrink-0 ${TIER_STYLES[tier.key].chip}`}
-          >
-            {tier.label}
-          </div>
-          <div
-            class={`grid min-h-[5rem] flex-1 grid-cols-[repeat(auto-fill,minmax(7.25rem,1fr))] gap-2 rounded-[2px] border p-3 ${TIER_STYLES[tier.key].zone}`}
-          >
-            {
-              RANKING[tier.key].map((id) => {
-                const arg = byId[id]
-                const ext = artExtById[id]
-                return (
-                  <div
-                    class="group relative flex aspect-square cursor-pointer items-center justify-center rounded-[2px] border border-lightgray p-2 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-2"
-                    role="button"
-                    tabindex="0"
-                    data-arg-id={id}
-                    aria-expanded="false"
-                    aria-controls="tier-panel"
-                    aria-label={`${arg.title}: ${arg.blurb}`}
-                  >
-                    {ext && (
-                      <img
-                        class="absolute inset-0 h-full w-full rounded-[1px] object-cover"
-                        loading="lazy"
-                        alt=""
-                        src={`/tier-list-art/${id}${ext}`}
-                      />
-                    )}
-                    <div class="absolute inset-0 rounded-[1px] bg-gradient-to-t from-black/85 via-black/35 to-black/10" />
+    <div id="tier-grid" class="@container flex flex-col gap-2.5">
+      {
+        TIERS.map((tier) => (
+          <div class="flex flex-col gap-2.5 @2xl:flex-row">
+            <div
+              class={`${tier.row} flex flex-row items-center gap-4 rounded-[24px] px-5 py-4 @2xl:w-[200px] @2xl:shrink-0 @2xl:flex-col @2xl:items-stretch @2xl:justify-between @2xl:gap-4 @2xl:p-5`}
+            >
+              <div class={`display-xl !text-[2.75rem] !leading-[1] ${tier.gradeText}`} aria-hidden="true">
+                {tier.grade}
+              </div>
+              <h2
+                class={`m-0 font-display text-[0.9375rem] leading-[1.15] font-black uppercase [font-stretch:112%] [font-variation-settings:'wdth'_112] ${tier.nameText}`}
+                aria-label={`${tier.grade} tier: ${tier.label}`}
+              >
+                {tier.shown ?? tier.label}
+              </h2>
+            </div>
+            <div
+              class={`${tier.zone} flex min-h-[8rem] flex-1 flex-wrap content-start gap-2 rounded-[24px] p-3 @2xl:p-3.5`}
+            >
+              {
+                RANKING[tier.key].map((id) => {
+                  const arg = byId[id]
+                  const ext = artExtById[id]
+                  return (
                     <div
-                      class="relative z-10 w-full leading-tight font-bold break-words text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] [-webkit-hyphens:none] [hyphens:none]"
-                      style={`font-size: ${arg.tierTitleSize ?? 16}px`}
-                      lang="en"
+                      class={`group flex w-[calc((100%-1rem)/3)] shrink-0 @md:w-28 cursor-pointer flex-col gap-2 rounded-[22px] p-1 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${tier.key === "couldnt-give-a-fuck" ? "text-on-tile-ink hover:bg-white/10 focus-visible:outline-gold aria-expanded:!bg-gold aria-expanded:!text-[#0f0e0c]" : "text-ink hover:bg-ink/10 focus-visible:outline-ink aria-expanded:!bg-tile-ink aria-expanded:!text-gold"}`}
+                      role="button"
+                      tabindex="0"
+                      data-arg-id={id}
+                      aria-expanded="false"
+                      aria-controls="tier-panel"
+                      aria-label={`${arg.title}: ${arg.blurb}`}
                     >
-                      {arg.title}
-                    </div>
-                    <div class="pointer-events-none absolute bottom-[calc(100%+0.5rem)] left-1/2 z-30 min-h-[7rem] w-64 -translate-x-1/2 overflow-hidden rounded-[4px] border border-secondary/40 bg-dark opacity-0 shadow-2xl transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100">
-                      {ext && (
-                        <img
-                          class="absolute inset-0 h-full w-full object-cover brightness-50"
-                          alt=""
-                          src={`/tier-list-art/${id}${ext}`}
-                        />
-                      )}
-                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-slate-950/30" />
-                      <div class="relative z-10 flex min-h-[7rem] items-end p-4 text-left text-base leading-snug font-medium text-white">
-                        {arg.blurb}
+                      <div class="aspect-square w-full overflow-hidden rounded-[18px] bg-parchment">
+                        {ext && (
+                          <img class="h-full w-full object-cover" loading="lazy" alt="" src={`/tier-list-art/${id}${ext}`} />
+                        )}
+                      </div>
+                      <div
+                        class="px-1 pb-1 text-[0.8125rem] leading-[1.2] font-bold break-words text-inherit [-webkit-hyphens:none] [hyphens:none]"
+                        lang="en"
+                      >
+                        {arg.title}
                       </div>
                     </div>
-                  </div>
-                )
-              })
-            }
+                  )
+                })
+              }
+            </div>
           </div>
-        </div>
-      ))
-    }
-        </div>
-      </div>
+        ))
+      }
     </div>
   </div>
 
   <aside id="tier-panel" class="tier-panel" data-open="false" aria-hidden="true" aria-label="Argument write-up">
     <div class="tier-panel-inner">
-      <div class="mb-4 flex items-center justify-between gap-3 border-b border-lightgray pb-3">
-        <span class="content-meta">The Rebuttal</span>
+      <div class="sticky top-0 z-10 h-0">
         <button
           id="tier-panel-close"
           type="button"
-          class="cursor-pointer rounded-[2px] border border-lightgray bg-transparent px-2 py-1 text-sm leading-none text-darkgray transition-colors hover:border-secondary hover:text-secondary"
+          class="btn-circle absolute top-4 right-4 !h-11 !w-11 !border-0 !bg-white !text-[#0f0e0c] hover:!bg-white hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f0e0c]"
           aria-label="Close panel"
         >
-          ✕
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2.4" />
+          </svg>
         </button>
       </div>
       {
         ARGUMENTS.map((arg) => {
           const Content = renderedById[arg.id]
+          const ext = artExtById[arg.id]
+          const tier = tierByArg[arg.id]
           return (
             <div class="tier-panel-entry" data-panel-id={arg.id} hidden>
-              <h2 class="mb-3 font-header text-xl font-bold text-darkgray">{arg.title}</h2>
-              {Content ? (
-                <div class="prose-body text-[0.95rem] leading-relaxed">
-                  <Content />
+              <div class="relative aspect-[18/13] w-full bg-[#fff4cc]">
+                {ext && (
+                  <img
+                    class="h-full w-full object-cover mix-blend-multiply"
+                    alt=""
+                    src={`/tier-list-art/${arg.id}${ext}`}
+                  />
+                )}
+              </div>
+              <div class="flex flex-col gap-4 p-6 sm:p-7">
+                <div>
+                  <span class="inline-flex h-[1.875rem] items-center rounded-full bg-[#0f0e0c] px-3 font-mono text-[0.6875rem] font-bold tracking-[0.08em] text-gold uppercase">
+                    {tier.grade} · {tier.shown ?? tier.label}
+                  </span>
                 </div>
-              ) : (
-                <p class="text-sm text-gray">No write-up yet for this one.</p>
-              )}
+                <h2 class="display-xl m-0 !text-[clamp(1.75rem,1.2rem+1.6vw,2.25rem)] !leading-[1.02] !tracking-[-0.025em] break-words">
+                  {arg.title}
+                </h2>
+                {Content ? (
+                  <div class="prose-body">
+                    <Content />
+                  </div>
+                ) : (
+                  <p class="m-0 text-sm text-ink">No write-up yet for this one.</p>
+                )}
+              </div>
             </div>
           )
         })
