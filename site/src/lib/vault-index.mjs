@@ -230,6 +230,21 @@ export function getBacklinks(url) {
   return m ? Array.from(m.values()) : []
 }
 
+// Distinct notes this note links OUT to (wikilink targets that resolved),
+// with their collection — used for the "Built on" rail tile.
+export function getOutgoing(url) {
+  const seen = new Map()
+  for (const edge of linkGraphEdges) {
+    if (edge.from.url !== url || seen.has(edge.to.url)) continue
+    seen.set(edge.to.url, {
+      url: edge.to.url,
+      title: edge.to.title,
+      collection: notesByUrl.get(edge.to.url)?.collection,
+    })
+  }
+  return Array.from(seen.values())
+}
+
 export function entryForFilePath(absPath) {
   const rel = path.relative(VAULT_ROOT, absPath)
   return notesByRel.get(rel)
