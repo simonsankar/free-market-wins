@@ -1,77 +1,89 @@
-# Brief template
+# Dissect template
 
-Same sections, same order, every time. If a section genuinely has nothing in
-it, keep the heading and write one line saying why — a missing section reads
-like an oversight.
+Same sections, same order, every time. The model is
+`essays/dissects/The Veto Nobody Holds — What the Anti-AI Movement Is Actually Asking For.md`
+— read it before writing; it's what this template describes.
 
-No `#` heading (Obsidian shows the filename). Rebuttals under 150 words each.
-The whole brief should read in about five minutes.
+Read `style.md` too: the writing and diagram rules live there.
+
+No `#` heading (Obsidian shows the filename).
 
 ````markdown
 ---
-title: <Title — Subtitle>
+title: <Claim — Subtitle>
 date: <YYYY-MM-DD>
 ---
+## TL;DR
 
-**<Two or three sentences: what the position really says, the one premise it
-all stands on, and why that premise fails. This is the TL;DR — if a reader
-stops here, they have the answer.>**
+**<Two or three sentences: what the position really demands, the one premise
+it all stands on, and why that premise fails. A reader who stops here has the
+answer.>**
 
-## The position at full strength
+- **<Failure 1, as a sentence.>** <One line.>
+- **<Failure 2 …>** <One bullet per numbered section below, same order.>
 
-<Who holds it and how widely. Then the position, written the way its most
-thoughtful holder would write it — no strawman. Quote real sources.>
+## Who's against X, and why
 
-## Shared ground
+<What the position is made of: its camps (or, for a single source, its
+distinct claims). One short paragraph each, in this shape:>
 
-<Definitions of the key terms that a holder would accept. Argue from here.
-E.g. "Engineering is deciding what to build and how to build it.">
+**<Camp.>** <What they believe and their rough reasoning, in their terms,
+at full strength.> *They want:* <the demand — ban, tax, licence, vote.>
 
-## What they get right
+## The one premise under all <n>
 
-<The true parts, conceded plainly. A reader who sees this trusts the rest.>
+<Quote the shared premise as its holders would put it, in a blockquote. Then
+a few lines: each camp reports a consequence; the premise is what turns the
+report into a demand. Name any second premise riding alongside (e.g. "the
+state is the neutral remedy").>
 
-## The claims
+<Diagram: the camps resting on the root.>
 
-| # | Claim | Hidden premise | Pattern | Bottoms out at |
-|---|---|---|---|---|
-| 1 | <distilled, one sentence> | <what must be true> | <from patterns.md> | [[The Descent#Scarcity\|Economics: Scarcity]] |
+<One line: the premise fails in N places; the rest takes them in turn.>
 
-## The root
+## 1. <Failure, five words or fewer>
 
-<The one premise the claims share, in one sentence, then a short paragraph on
-why it fails and which rung of [[The Descent]] it bottoms out at. This is the answer to every
-pivot at once.>
+<The principle, built from one concrete case (the café across the street).
+Short paragraphs. A diagram if it carries the point.>
 
-## Rebuttals
+### <Camp>: "<their claim in their words>"
 
-### 1. <Claim, short>
+<The answer to that camp's claim, under the failure it belongs to.
+Objections answered where the reader would raise them, in bold:
+**"But …"** followed by the answer.>
 
-<Why it fails, grounded in something checkable (history, revealed preference,
-a real case), not a forecast. End with the bedrock line:>
+*Bottoms out at:* [[The Descent#Rights|Rights]], with … — one line per
+numbered section, at its end.
 
-*Bottoms out at:* [[The Descent#Scarcity|Economics: Scarcity]] → [[The Descent#Rights|Rights]] — [[Scarcity]], [[Physical Integrity vs Value]]
+## 2. <Failure, five words or fewer>
 
-## Where they'll go next
+…
 
-<The two or three moves a holder makes when the above is closed, each with a
-one- or two-sentence answer, and whether it traces back to the root.>
+## Where they go next
 
-## Where this sits
+**"<Pivot>."** <One short paragraph: why it's the root premise again, and the
+answer.>
 
-<Placement on the line from [[The Economic Literacy Gradient - Why Nations Rise
-and Fall]]: occasional exception, systemic redistribution, or total central
-planning. Which exit on the descent the typical holder refuses. Whether the
-position is worth meeting where it is, or is past the line in the sand.
-About positions, never persons.>
-
-## Patterns in play
-
-- **<Pattern>** — one-line definition, as it showed up here.
+<Close with one line that states the whole dispute.>
 
 ## Sources
 
-- <source> — <what it was used for>. Every figure in the brief is sourced
-  here; anything that couldn't be verified was cut before writing.
-
+- <source> — <what it illustrates>. Only for examples that appear in the
+  piece; nothing here is load-bearing.
 ````
+
+## Shape rules
+
+- **Camps first, claims under failures.** The numbered sections are the ways
+  the root fails; each camp's claim sits under the failure that answers it.
+  A camp can appear under more than one failure when its claim mixes a sound
+  grievance with an unsound one (the neighbours' noise is real harm; their
+  veto isn't).
+- **Main section headings: five words or fewer**, a phrase, not a sentence
+  ("Lost value isn't theft", "No vote creates a veto"). Subheadings carry the
+  detail and can run longer.
+- **The TL;DR bullets mirror the numbered sections**, one each, same order.
+- **For a single text or a single claim**, the "Who's against X" section
+  becomes "What it claims", listing the distinct claims instead of camps; the
+  rest is unchanged. For two or three claims, there may be only one or two
+  failure sections — don't invent more.

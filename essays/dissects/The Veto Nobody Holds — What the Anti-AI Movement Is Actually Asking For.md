@@ -2,177 +2,289 @@
 title: The Veto Nobody Holds — What the Anti-AI Movement Is Actually Asking For
 date: 2026-10-10
 ---
+## TL;DR
 
-**Strip out the nine separate fears and the anti-AI movement makes one claim: people who bear the consequences of a technology are entitled, through a vote, to a say over whether others may use it, whether or not anything of theirs was touched. Nobody holds that right individually, so no majority can hold it collectively. The grievances that do survive (higher power bills, tax breaks, noise, pirated copies) are almost all caused by state privilege, and the movement's remedy is more of it.**
+**The anti-AI movement is several camps with different fears, but they all make the same demand: if something affects me, I get a say over whether others may do it, by vote if need be, even when nothing of mine was touched. Nobody holds that right, so no vote can create it, and every fear built on it falls.**
 
-## The position at full strength
+- **Lost value isn't a stolen thing.** You own your body, your property and your work. You don't own what other people will pay for them.
+- **Where something of yours really is invaded, sue the invader.** Fumes, fraud and harm to a child each have a victim and a culprit. None needs a permit regime over everyone else.
+- **No voter holds a veto over his neighbour's peaceful use of his own property, so no majority can either.**
+- **Most grievances that survive were caused by the state,** and the movement's remedy is more state.
+- **No case is special enough.** Self-defence answers an aggressor, never a technology.
 
-This is not a fringe mood. Pew found in 2025 that 50% of Americans are more concerned than excited about AI, against 10% the other way. In March 2026, Gallup found 71% would oppose a data centre being built near them, more than have ever opposed a nearby nuclear plant. The opposition is bipartisan. It runs from Bernie Sanders and AOC's AI Data Center Moratorium Act to Steve Bannon signing the Future of Life Institute's call to prohibit superintelligence.
+## Who's against AI, and why
 
-Its most serious advocates are not saying "robots take jobs, therefore ban robots." The strong version runs like this. AI is the first technology to substitute for general cognition, which is the rung workers have always climbed to when lower rungs were automated. The change is fast, it lands on identifiable people, and it starts with the entry-level hires who are the bottom of every career ladder. Meanwhile a handful of firms with enormous capital requirements are gaining both market power and political influence. Their data centres push grid costs onto households. Their models were built partly on pirated books, and they sell products to children. Some of the people building these systems say it could end in catastrophe. And since the people bearing these consequences never agreed to them, they should get a say, through their governments, over whether and how it proceeds.
+The movement isn't one argument. It's six camps, each with its own fear and its own demand.
 
-## Shared ground
+**Workers.** AI will take our jobs. Past machines replaced muscle, and people moved up to work that needed thinking. This machine replaces the thinking, so there's no higher rung left. *They want:* slowdowns, robot taxes, guaranteed incomes.
 
-Arguing about this needs definitions both sides will accept:
+**Artists and writers.** The models were trained on our work without asking, which is theft, and what they produce isn't real art anyway. *They want:* licensing fees, opt-in consent, or a ban on training.
 
-- **Jobs** can be measured three ways: gross displacement, net employment, and the income of the displaced. Both sides can agree that transition costs land on identifiable people even when total output rises.
-- **Oligarchy** means economic power converted into the power to set rules for others. It is not the same as a large market share.
-- **Theft** means taking, without consent, something the owner had a right to control. "Theft" claims about AI split into three different things: piracy of copies, breach of contract or terms of service, and copying protected by IP law.
-- **Safety** covers four separate domains, and each needs naming: protecting children, data security, criminal misuse, and catastrophic risk.
-- **Local control** covers two different things. One is a neighbour's enforceable claim against measurable harm crossing their boundary, such as noise, emissions, or water drawdown. The other is a political veto over someone else's non-invasive use of their own land.
+**Neighbours of data centres.** The buildings raise our power bills, use our water, make noise, and get tax breaks the rest of us pay for. *They want:* moratoriums and local vetoes.
 
-## What they get right
+**Parents.** Chatbots befriend children, manipulate them, and sometimes harm them. *They want:* bans for minors and age checks for everyone.
 
-- Entry-level hiring in AI-exposed jobs is measurably down. Stanford's Digital Economy Lab found employment for 22–25-year-olds in the most exposed occupations running about 19% below less-exposed peers by August 2026, and the gap is widening. The authors call this descriptive, not causal.
-- Households in the PJM grid (the mid-Atlantic and parts of the Midwest) are paying billions in capacity charges driven by data-centre load. The market monitor attributes $9.3B of the $14.7B increase in the 2025/26 auction to data centres.
-- Virginia's data-centre sales-tax exemption cost $1.6B in FY2025, against an original estimate of about $1.5M a year.
-- Anthropic and Meta trained on pirated libraries. Anthropic paid a $1.5B settlement.
-- The industry lobbied for a decade-long federal pre-emption of state AI laws. The Senate struck it 99–1.
-- Real nuisance exists. xAI ran more gas turbines at its Memphis site than its permit allowed, and the Southern Environmental Law Center (SELC) says the site is likely the city's largest industrial source of NOx (nitrogen oxide pollution).
-- Teen use of AI companions is widespread, and wrongful-death suits have been filed and settled.
-- Frontier AI has real economies of scale. Size earned by serving customers isn't a grievance; it's the market working.
+**Big Tech critics.** A handful of companies are turning control of AI into control of politics. *They want:* antitrust action, public ownership, licensing.
 
-## The claims
+**The safety camp.** AI makes fraud, deepfakes and bioweapons easy, and a superintelligence could end humanity. *They want:* licences for powerful models, and a global ban on superintelligence until it's proven safe.
 
-| # | Claim | Hidden premise | Pattern | Bottoms out at |
-|---|---|---|---|---|
-| 1 | AI substitutes for cognition itself, so there is no higher rung, and it will hit people faster than they can adjust | A falling market wage for your labour is a wrong someone can be stopped from causing | Freeze-and-extrapolate | [[The Descent#Scarcity\|Economics: Scarcity]] → [[The Descent#Action\|Economics: Action]] |
-| 2 | A few firms are turning control of compute into political control | The state is the remedy for capture, not the prize being captured | Arsonist as fire brigade | [[The Descent#Incentives\|Economics: Incentives]] → [[The Descent#Equality\|Equality]] |
-| 3 | Households are paying for the grid AI needs | Cost-shifting comes from the market, not from rate regulation | Arsonist as fire brigade | [[The Descent#Incentives\|Economics: Incentives]] → [[The Descent#Equality\|Equality]] |
-| 4 | Data centres drain community water | The scarcity can't be priced | Collective actor | [[The Descent#Knowledge\|Economics: Knowledge]] → [[The Descent#Scarcity\|Economics: Scarcity]] |
-| 5 | Communities bear noise, land use and lost tax revenue for few jobs | Neighbours own a veto over others' non-invasive land use | Majority sanction | [[The Descent#Authority\|Authority]] → [[The Descent#Rights\|Rights]] |
-| 6 | Training on creative work without permission is theft | A fall in your work's market value is an invasion of property | Definitional smuggling | [[The Descent#Rights\|Rights]] → [[The Descent#Equality\|Equality]] |
-| 7 | Chatbots harm children, and only law will stop it | After-the-fact liability can't work, so permission must come first | Permission before action | [[The Descent#Incentives\|Economics: Incentives]] → [[The Descent#Rights\|Rights]] |
-| 8 | AI makes fraud, deepfakes and bioweapons cheap | Attackers get the tool and defenders don't, and the state is the safe pair of hands | Freeze-and-extrapolate, Tool blame | [[The Descent#Action\|Economics: Action]] → [[The Descent#Authority\|Authority]] |
-| 9 | Superintelligence could end humanity, so prohibit it | A ban is enforceable, and only by whoever is most dangerous | Unfalsifiable gate | [[The Descent#Authority\|Authority]] → [[The Descent#Logic\|Logic]] |
+## The one premise under all six
 
-## The root
+Look at what each camp actually asks for, and the same demand sits under every one:
 
-**"Those who bear the consequences of a technology are entitled, through collective decision, to a say over whether and how it is used, whether or not anything of theirs was physically invaded."**
+> **If something affects me, I'm entitled to a say over whether others may do it — through a vote if need be — even when nothing of mine was touched.**
 
-This premise drives the jobs, siting, training, child-safety and catastrophic-risk claims alike. Its weak point is the last clause. [[Conflicts]] arise over scarce means: two people can't both use the same thing in incompatible ways. You own the physical integrity of your body, house and land. You do not own their market value ([[Physical Integrity vs Value]]), because that value is made of other people's choices. A competitor who opens across the street lowers the value of your shop without touching it. A cheaper writer lowers what your writing earns. A data centre nearby may lower your house price. If consequences alone gave you a veto, every act of production would need the permission of everyone who might lose by it, and production would stop.
+The worker whose wage falls, the illustrator whose rates drop, the neighbour who hears the fans, the parent, the critic and the doomsayer are each reporting a consequence. Many of those reports are true. What turns a report into a ban is the premise.
 
-The "collective decision" clause can't rescue the premise. No individual holds a veto over his neighbour's non-invasive use of his own land. So a majority made of such individuals can't hold one either: it would be handing over a right none of its voters have. That's [[Democracy]] as headcount [[Jungle Law]] ([[The Descent#Authority|Authority]]). The real invasions are a short list: noise and emissions crossing a boundary, breaches of contract, fraud, and deepfakes that defame or impersonate. Concede all of them, prosecute or sue over them, and refuse the rest.
+A second premise rides alongside the first: that the state is the neutral party that should do the stopping. That one carries the complaints about power bills, water, tax breaks and political capture — where, it turns out, the state caused the grievance in the first place.
 
-A second premise runs alongside: that the state is the neutral remedy. In claims 2, 3, 5 and 7, the grievance is itself a state privilege, whether rate regulation, tax exemptions, permits that license pollution, or a lobbied-for pre-emption. The remedy on offer is more state.
+<svg viewBox="0 0 720 410" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:2rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="vb2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--secondary, #e0932f)"/></marker>
+</defs>
+<text x="360" y="26" font-size="17" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Six camps, one demand</text>
+<rect x="12" y="46" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="122" y="74" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Workers</text>
+<text x="122" y="98" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"It'll take our jobs"</text>
+<rect x="250" y="46" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="360" y="74" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Artists</text>
+<text x="360" y="98" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"It stole our work"</text>
+<rect x="488" y="46" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="598" y="74" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Neighbours</text>
+<text x="598" y="98" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"Not near me"</text>
+<rect x="12" y="128" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="122" y="156" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Parents</text>
+<text x="122" y="180" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"It harms our kids"</text>
+<rect x="250" y="128" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="360" y="156" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Big Tech critics</text>
+<text x="360" y="180" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"Too much power"</text>
+<rect x="488" y="128" width="220" height="68" rx="8" fill="#5a80a7"/>
+<text x="598" y="156" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">Safety camp</text>
+<text x="598" y="180" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"It could kill us all"</text>
+<line x1="360" y1="208" x2="360" y2="252" stroke="var(--secondary, #e0932f)" stroke-width="2.5" marker-end="url(#vb2-arrow)"/>
+<text x="374" y="236" font-size="14" font-style="italic" fill="var(--darkgray, #9a9a9a)">all six rest on</text>
+<rect x="30" y="260" width="660" height="104" rx="8" fill="var(--secondary, #e0932f)"/>
+<text x="360" y="288" font-size="13" font-weight="600" fill="#fff" fill-opacity="0.9" text-anchor="middle" letter-spacing="2">THE ROOT</text>
+<text x="360" y="316" font-size="18" font-weight="600" fill="#fff" text-anchor="middle">"If it affects me, I get a say over it —</text>
+<text x="360" y="342" font-size="18" font-weight="600" fill="#fff" text-anchor="middle">even when nothing of mine was touched."</text>
+<text x="360" y="396" font-size="14" font-style="italic" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Each fear reports a consequence. The root is what turns it into a ban.</text>
+</svg>
 
-## Rebuttals
+The premise fails in five places. The rest of this piece takes them in turn, and answers each camp's claim under the failure it belongs to.
 
-### 1. No cognitive refuge
+## 1. Lost value isn't theft
 
-The real challenge is the horse. Horses had a comparative advantage too: there were about 26 million in America in 1915 and about 3 million by 1960. Comparative advantage guarantees humans a trade, not a good wage.
+The premise treats being affected as being injured. Those are different things.
 
-The difference is that horses were capital owned by others, serving other beings' ends. Humans *are* the ends. This isn't a forecast about what AI can or can't do. It follows from [[Human action]]: valuing is something only acting beings do, so [[Subjective Value Theory|value]] is always value *to someone*, and production only ever serves human wants. A machine that does every task still does them for someone. When machines make goods cheap, humans gain as buyers, and they can own the machines, which no horse could.
+Say you run a café, and someone opens a better one across the street. Your takings fall by a third. Nothing of yours was touched: your tables, your machine and your lease are exactly as they were. What fell was what customers will pay you, and that was never yours. It was always made of their choices.
 
-"But land and housing won't get cheaper." True, and it isn't because of AI. Housing and land are where savings go when money can't hold value. Under [[Fiat Currency]], holding cash loses value, so people store their wealth in hard assets and bid them up, while new money reaches asset owners first ([[Cantillon Effect]]). That's also what concentrates ownership. A robot tax or a ban destroys the abundance and leaves this mechanism untouched. The fix is [[Sound Money]], and removing the tax code's tilt toward capital: payroll taxes on labour on one side, accelerated depreciation on the other. Abolish the payroll tax; don't tax the robot.
+That's the line between [[Physical Integrity vs Value|physical integrity and value]]. You own your body, your house and your work. You don't own their market value, because no one can own other people's decisions.
 
-*Bottoms out at:* [[The Descent#Scarcity|Economics: Scarcity]] → [[The Descent#Action|Economics: Action]] — [[Lump of Labour]], [[Scarcity]], [[Human action]], [[Production]]
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:2rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<text x="360" y="26" font-size="17" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Two kinds of loss</text>
+<text x="180" y="62" font-size="16" font-weight="700" fill="#7a9ec2" text-anchor="middle">Physical integrity: yours</text>
+<text x="540" y="62" font-size="16" font-weight="700" fill="var(--secondary, #e0932f)" text-anchor="middle">Market value: their choices</text>
+<rect x="20" y="78" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="110" font-size="15" fill="#fff" text-anchor="middle">Fumes cross your boundary</text>
+<rect x="20" y="140" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="172" font-size="15" fill="#fff" text-anchor="middle">Someone breaks into your server</text>
+<rect x="20" y="202" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="234" font-size="15" fill="#fff" text-anchor="middle">A con takes your money by lying</text>
+<rect x="380" y="78" width="320" height="52" rx="8" fill="var(--secondary, #e0932f)"/>
+<text x="540" y="110" font-size="15" fill="#fff" text-anchor="middle">A better café opens across the street</text>
+<rect x="380" y="140" width="320" height="52" rx="8" fill="var(--secondary, #e0932f)"/>
+<text x="540" y="172" font-size="15" fill="#fff" text-anchor="middle">A machine does your job for less</text>
+<rect x="380" y="202" width="320" height="52" rx="8" fill="var(--secondary, #e0932f)"/>
+<text x="540" y="234" font-size="15" fill="#fff" text-anchor="middle">A model learns your style</text>
+<rect x="20" y="276" width="320" height="84" rx="8" fill="none" stroke="#7a9ec2" stroke-width="2"/>
+<text x="180" y="310" font-size="16" font-weight="700" fill="#7a9ec2" text-anchor="middle">Something of yours was invaded</text>
+<text x="180" y="338" font-size="14" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Sue whoever did it</text>
+<rect x="380" y="276" width="320" height="84" rx="8" fill="none" stroke="var(--secondary, #e0932f)" stroke-width="2"/>
+<text x="540" y="310" font-size="16" font-weight="700" fill="var(--secondary, #e0932f)" text-anchor="middle">Nothing of yours was touched</text>
+<text x="540" y="338" font-size="14" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">No claim, for you or any majority</text>
+</svg>
 
-### 2. Oligarchy
+The line isn't arbitrary. [[Conflicts]] only arise over scarce things — two people trying to use the same thing in ways that can't both happen. Property rights exist to settle those. A drop in what others will pay you isn't a conflict over any thing, so there's nothing for a right to settle.
 
-Separate two kinds of power. Market power is the power to refuse to sell to you on your terms. Political power is the power to make you pay regardless. The industry's biggest attempted grab was political: a decade-long federal pre-emption of every state's AI law, meaning one rulebook for 330 million people, written in the one room the industry lobbies hardest. Fifty separate state regimes are better than one federal one. Each is a smaller prize to capture, and firms and people can leave the bad ones. The same logic runs through the other privileges: CHIPS Act subsidies, a federal equity stake in Intel, export-control regimes written with incumbents, and requests for federal loan guarantees. Antitrust suits, public compute and licensing regimes all build a bigger rule-making apparatus. The firms with the largest compliance departments then capture it, as utilities, taxis and banks each captured theirs. Remove the prize.
+And it can't be otherwise. Every new shop, product and method lowers the value of something someone already has. If that gave a veto, every act of production would need the permission of everyone who might lose by it, and production would stop.
 
-*Bottoms out at:* [[The Descent#Incentives|Economics: Incentives]] → [[The Descent#Equality|Equality]] — [[Regulatory Capture]], [[Inverse incentive structure]], [[Mixed Law]]
+### Workers: "AI will take our jobs"
 
-### 3. Electricity bills
+A falling wage is the café again. Your wage is what employers and customers will pay for your work. When a machine does the work for less, that price falls, and nothing of yours has been taken.
 
-Concede it first: the households are paying. The mechanism, though, is regulation. Even in states with retail choice, nobody can opt out of capacity charges passed through a franchised monopoly's wires. Those charges come from an administratively designed auction, and the rate design spreads the cost of large loads across everyone. "Whoever causes a cost pays it" is a property principle, and in a free market for power it would be automatic: the buyer pays the supplier's price. The fix is ending the franchise monopoly, not getting a commission to rearrange its tariffs. A moratorium keeps the monopoly and adds a construction ban on top.
+This fear has been raised about every machine. Most people once farmed. Machinery took most of those jobs, and the people didn't sit idle — they moved to work nobody back then could have named, because their wants never stopped at food. Making one thing cheap doesn't end [[Scarcity]]. It moves scarcity to the next want, and work follows ([[Lump of Labour]]).
 
-*Bottoms out at:* [[The Descent#Incentives|Economics: Incentives]] → [[The Descent#Equality|Equality]] — [[Regulatory Capture]], [[Central planning]], [[price system]]
+**"But this time there's no higher rung."** The serious version points at the horse. Tractors replaced horses, and horses didn't move up to better jobs. Their numbers collapsed.
 
-### 4. Water
+The difference is that horses were owned by others and served other beings' ends. Humans *are* the ends. That isn't a guess about what AI can or can't do. It follows from [[Human action]]: only acting beings value anything, so production only ever serves human wants. A machine that does every task still does them *for* someone. When goods get cheap, humans gain as buyers, and they can own the machines, which no horse could.
 
-Nationally the claim is overstated. Direct use was about 17.4B gallons in 2023, a small fraction of US consumption. Indirect use through power generation is roughly twelve times that, and holders will raise it. Locally, in dry regions, the scarcity is real. The question is who owns the water and what it costs. Where water rights are tradeable, as with western prior appropriation, which is [[Homesteading (First-comer Ethic)|homesteading]], a data centre has to outbid farms and towns at the real price. Shortages appear where municipal water is under-priced and handed out politically, often at negotiated rates for large users. That's the [[Tragedy of the commons]]. The fix is a price, not a ban.
+**"But housing and land keep getting more expensive."** True, and AI isn't why. When money can't hold its value, savings pour into hard assets like land and bid them up, and new money reaches asset owners first ([[Fiat Currency]], [[Cantillon Effect]]). That's also what concentrates ownership. A robot tax leaves all of it in place and destroys the abundance instead.
 
-*Bottoms out at:* [[The Descent#Knowledge|Economics: Knowledge]] → [[The Descent#Scarcity|Economics: Scarcity]] — [[Tragedy of the commons]], [[price system]]
+### Artists: "It stole our work"
 
-### 5. Siting
+Theft is taking something the owner had a right to control. Training takes nothing. If I copy your book, you still have your book. Ideas aren't scarce, so there's no conflict over them, and "intellectual property" isn't property at all. It's a state-granted monopoly on *copying*, enforced against people who never touched anything of yours ([[Mixed Law]]).
 
-This claim has three parts, two right and one wrong.
+What's left is the café across the street. A cheaper substitute lowers what your work earns. Every human artist also learned from work they never licensed.
 
-- **Right: the tax breaks.** Selective exemptions are a transfer from every other taxpayer. Abolish them, or better, cut everyone's taxes to the same level.
-- **Right: the invasions.** Noise and emissions that physically cross a boundary are trespass. Transmission lines and pipelines built through eminent domain are takings. xAI's Memphis turbines are an identifiable source, and the permit system is what let them run. Polluters can be traced. Until the 19th century, Anglo-American courts enforced nuisance law against them directly. Then courts began weighing pollution against "progress" and the public good, and later permits replaced the lawsuit (Rothbard, "Law, Property Rights, and Air Pollution," 1982). The remedy was a property right enforced in court. Regulation is what took it away.
-- **Wrong: the veto.** A county vote banning a non-invasive use of someone else's land because the neighbours dislike it is a majority claiming a right none of them holds individually. Anyone who wants that control can buy it, through covenants and easements.
+The one real claim here is about *how* some copies were obtained. Where a firm broke a contract or got into someone's servers without leave, that's an invasion, and it belongs in the next section.
 
-*Bottoms out at:* tax breaks, [[The Descent#Equality|Equality]]; invasions, [[The Descent#Rights|Rights]] (concede and sue); the veto, [[The Descent#Authority|Authority]] — [[Liability and Restitution]], [[Physical Integrity vs Value]], [[Democracy]]
+**"And it isn't real art anyway."** Then nobody has to buy it. That's a judgement about value, and value is each buyer's to decide. It isn't a right to stop others making or buying what you don't rate.
 
-### 6. Training as theft
+*Bottoms out at:* [[The Descent#Rights|Rights]], with the economics at [[The Descent#Scarcity|Economics: Scarcity]] and [[The Descent#Action|Economics: Action]].
 
-Start where it bottoms out: ideas aren't [[Scarcity|scarce]]. If I copy your book, you still have your book. Nothing was taken, so there's no [[Conflicts|conflict]] for property rights to settle. "Intellectual property" isn't property at all. It's a state-granted monopoly on an *action*, copying, enforced against people who never touched anything of yours. That's [[Mixed Law]]. With that settled, the three charges fall separately:
+## 2. Real harm? Sue the invader
 
-- **Piracy.** The firms broke a law in force and paid under it. That's a fact about the law, not a moral wrong. Claims that don't depend on IP still stand: breach of contract, breach of terms of service, unauthorised access to someone's servers.
-- **Copying for analysis.** Nothing was taken from anyone. Even current law agrees: a federal judge found training on lawfully bought books "exceedingly transformative" fair use.
-- **Market dilution.** A cheaper substitute lowers the value of your work. That's a loss of market value, not an invasion of property, and every human artist learned from work they never licensed.
+The premise says "even when nothing of mine was touched." That clause hides the cases where something *was* touched — and those already have a remedy.
 
-The same logic applies to the labs: a competitor distilling a lab's model isn't theft either.
+There are two ways to deal with harm. **Liability**: whoever harmed you answers to you, after the fact, and pays to restore what he damaged ([[Liability and Restitution]]). **Licensing**: everyone needs permission before acting, whether or not they'd ever harm anyone. Liability restrains the person who did it. Licensing restrains everyone else.
 
-*Bottoms out at:* [[The Descent#Rights|Rights]] → [[The Descent#Equality|Equality]] — [[Physical Integrity vs Value]], [[Conflicts]], [[Mixed Law]]
+Liability also puts the cost of a mistake where it belongs. A firm facing a lawsuit has [[Skin in the game]]. A regulator who approves something harmful loses nothing.
 
-### 7. Children
+### Neighbours: the noise and the fumes
 
-Concede the liability case. Deceptive "companion" marketing to minors, design defects, and contracts with children who can't consent are all actionable. A seller who contracts with a child behind the parents' backs answers to the parents, who are the child's trustees ([[Self-ownership]]). The GUARD Act goes further, with a blanket ban plus mandatory age verification. Age verification means every adult handing ID to every chatbot, which creates the data-security risk the same polls say people fear. A firm facing a wrongful-death suit has [[Skin in the game]]. A regulator who approves a product that later harms children faces nothing.
+This part is right. Noise and fumes that physically cross a boundary are trespass, and land taken for power lines by eminent domain is a seizure. A site running gas turbines that pour pollution onto its neighbours is an identifiable source harming identifiable people.
 
-*Bottoms out at:* [[The Descent#Incentives|Economics: Incentives]] → [[The Descent#Rights|Rights]] — [[Liability and Restitution]], [[Skin in the game]], [[Self-ownership]]
+What protected that kind of polluter is the permit. Courts used to treat pollution as trespass and make polluters pay. Then they started weighing the damage against "progress," and permits replaced the lawsuit — a polluter within his permit is shielded from the people he harms (Rothbard, "Law, Property Rights, and Air Pollution"). The remedy was a property right enforced in court. Regulation took it away.
 
-### 8. Misuse
+### Parents: "It harms our kids"
 
-Fraud, impersonation and non-consensual intimate deepfakes have an identifiable victim and an identifiable aggressor, so prosecute them. The bioweapon fear is wrong twice over.
+Deceiving a child, selling a defective product, contracting with a minor behind his parents' backs — all of these are actionable today. The parents are the child's trustees ([[Self-ownership]]), and a seller who goes around them answers to them.
 
-**It freezes the defenders.** It's the same freeze-and-extrapolate as "AI will kill security": the attacker gets the new tool and everyone else stands still. But the tool that designs a pathogen also designs the countermeasure, and defenders vastly outnumber attackers. Once China published the coronavirus genome on 11 January 2020, it took Moderna and the NIH two days to design the vaccine sequence, and that was before AI. Faster sequencing, detection and vaccine design are what more capable models deliver to the side that wants people alive.
+A blanket ban with age checks goes further. Age checks mean every adult handing ID to every chatbot, which binds millions of people who never harmed a child and creates the very data risk people say they fear.
 
-**It's gun control for knowledge.** Ban guns to stop school shootings, and the only people disarmed are the ones who weren't going to shoot anyone, while the shooter, already planning murder, isn't deterred by a weapons charge. Restricting models works the same way. The would-be bioterrorist has already decided to commit mass murder, so a licensing rule won't stop him; it only cuts off the researchers, doctors and labs who would have spotted and answered him. Information doesn't aggress; people do. More of it, in more hands, favours the side with more people on it, and that's always the defenders.
+### Safety camp: fraud and deepfakes
 
-**It hands the weapon to the proven killer.** Governments, not garage hobbyists, are the mass murderers of history. R. J. Rummel's count of people killed by their own governments in the 20th century, outside of war, runs from 169 million to over 260 million depending on the edition. The record on bioweapons is the same. The USSR signed the Biological Weapons Convention in 1972, then founded Biopreparat in 1974, the largest offensive bioweapons programme ever run. A licensing regime binds compliant labs. It doesn't bind states, which exempt themselves, and it makes the state the gatekeeper over the one technology that would let everyone else defend against it.
+Fraud, impersonation and fake intimate images each have a victim and an aggressor. Prosecute the aggressor. The tool he used is beside the point, just as a forger's pen is.
 
-*Bottoms out at:* [[The Descent#Action|Economics: Action]] → [[The Descent#Authority|Authority]] — [[Threats and Risk]], [[Human action]], [[State]]
+*Bottoms out at:* [[The Descent#Rights|Rights]], with [[The Descent#Incentives|Economics: Incentives]] showing why the court beats the permit.
 
-### 9. Superintelligence
+## 3. No vote creates a veto
 
-Whether the risk is real or not, the remedy fails, so the forecast doesn't need settling. The FLI statement prohibits development until "broad scientific consensus" and "strong public buy-in". That gives no defined test and nobody empowered to declare it met. A global ban needs a global enforcer over every data centre. States exempt themselves for national security: the non-proliferation treaty recognises five nuclear powers, India, Pakistan and Israel never joined, and North Korea left. A ban doesn't stop development. It moves development to the parties with the worst record. And a ban isn't defence. Self-defence answers an aggressor, a specific person threatening a specific victim. A technology threatens no one. A ban restrains everyone who has threatened nobody, on the say-so of whoever thinks they know what's best for society. It's the Alien Ultimatum with the stakes inflated: no catastrophe, however large, turns a penny of aggression into a right ([[The Alien Ultimatum - Why Parasitic Ethics Cannot Answer Their Own Hypotheticals]]).
+The premise's fallback is the vote: if one person's say isn't enough, a majority's will be. But a vote can only hand over rights its voters already have.
 
-*Bottoms out at:* [[The Descent#Authority|Authority]] → [[The Descent#Logic|Logic]] — [[Threats and Risk]], [[Democracy]], [[State]]
+Take one neighbour. You build a quiet warehouse on your own land. It emits nothing; he just dislikes it. He has no right to stop you, and he knows it.
 
-## Where they'll go next
+Now ask a hundred neighbours. Each holds the same zero right. A hundred times zero is zero. A majority that claims the veto anyway is handing over a right none of its voters has. That's [[Democracy]] as headcount, which is [[Jungle Law]]: the bigger group wins because it's bigger.
 
-- **"Then UBI, a sovereign wealth fund, or a public stake in AI."** This follows from the horse argument and traces back to the root: a collective claim on output. Answer: broaden ownership by removing the privileges that concentrate it. A transfer funded by taxation is the same veto, collected afterwards.
-- **"Your property baseline is itself made by the state."** This is the deepest pivot (Murphy and Nagel, *The Myth of Ownership*), and it attacks [[Conflicts]] directly. Answer at [[The Descent#Equality|Equality]] and [[The Descent#Logic|Logic]]: arguing presupposes self-ownership. See [[Argumentation Ethics]] and [[Homesteading (First-comer Ethic)]].
-- **"In the real world, deregulation just hands power to incumbents."** This is partly the root (the state as neutral). Answer it only with a named privilege each time. Every concession above names one.
-- **"You accept defence against imminent threats, and AI is one."** This is the special-case pivot, and it traces straight back to the root. Defence answers an aggressor, not a technology, and "this case is too dangerous for principles" is the claim every intervention makes. No situation is unique enough to need one. Answer with [[The Alien Ultimatum - Why Parasitic Ethics Cannot Answer Their Own Hypotheticals|the Alien Ultimatum]]: name the threshold, and derive it.
+### Neighbours: "Not near me"
 
-## Where this sits
+"Local control" means two things. One is a neighbour's claim against real harm crossing his boundary — granted above. The other is a vote to forbid someone else's quiet use of his own land. That second one is a right nobody has.
 
-The movement's centre is systemic redistribution on the line in [[The Economic Literacy Gradient - Why Nations Rise and Fall]]. It accepts aggression wherever it lowers a consequence someone dislikes. The typical holder refuses the exit at [[The Descent#Authority|Authority]]: "we voted for it." The serious holders (Acemoglu, the cost-causation regulators, the IP scholars) are worth meeting where they are. They concede a lot, and with them the dispute narrows honestly to property theory. The local "not near me" holder usually has a real nuisance claim buried under the veto claim, so give him the first and refuse the second.
+Anyone who wants that control can buy it. Neighbours can pay an owner to give up a use they object to, through covenants and easements. That's control by consent instead of by headcount.
 
-## Patterns in play
+The same goes for every camp that ends with "the public should decide." Jobs, art and the future of a technology aren't the public's to vote away from the people who own them.
 
-- **Freeze-and-extrapolate:** extending one input's trend line while holding everything else still.
-- **Arsonist as fire brigade:** a grievance caused by state privilege, with more state power offered as the remedy.
-- **Majority sanction:** treating a vote as conferring a right no individual voter holds.
-- **Definitional smuggling:** "theft" stretched to cover piracy, copying for analysis, and lost market value.
-- **Permission before action:** licensing in advance where liability after the fact already exists.
-- **Tool blame:** restricting everyone who holds a means instead of the person who aggresses with it. Gun control for knowledge: the law-abiding comply, the aggressor doesn't.
-- **Freeze-and-extrapolate (defence variant):** the attacker gets the new capability while the defenders are assumed to stand still.
-- **Unfalsifiable gate:** a ban lifted on a condition with no defined test and no one empowered to declare it met.
+*Bottoms out at:* [[The Descent#Authority|Authority]] → [[The Descent#Rights|Rights]]
+
+## 4. The state caused it
+
+The second premise says the state is the neutral party that fixes the harm. Look at the complaints that survive, though, and the state caused each one. The remedy offered is more state.
+
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:2rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<defs>
+<marker id="vb2-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#e05a4f"/></marker>
+</defs>
+<text x="360" y="26" font-size="17" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The arsonist runs the fire brigade</text>
+<rect x="20" y="48" width="290" height="92" rx="8" fill="#5a80a7"/>
+<text x="165" y="84" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">1 · A state privilege</text>
+<text x="165" y="112" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">monopoly, tax break, cheap water</text>
+<rect x="410" y="48" width="290" height="92" rx="8" fill="#5a80a7"/>
+<text x="555" y="84" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">2 · A real grievance</text>
+<text x="555" y="112" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">higher bills, lost tax revenue</text>
+<rect x="410" y="236" width="290" height="92" rx="8" fill="#5a80a7"/>
+<text x="555" y="272" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">3 · Blamed on the market</text>
+<text x="555" y="300" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">"greed", "Big Tech"</text>
+<rect x="20" y="236" width="290" height="92" rx="8" fill="#5a80a7"/>
+<text x="165" y="272" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">4 · More state power</text>
+<text x="165" y="300" font-size="14" fill="#fff" fill-opacity="0.9" text-anchor="middle">captured by the same firms</text>
+<line x1="314" y1="94" x2="404" y2="94" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#vb2-loop)"/>
+<line x1="555" y1="144" x2="555" y2="230" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#vb2-loop)"/>
+<line x1="406" y1="282" x2="316" y2="282" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#vb2-loop)"/>
+<line x1="165" y1="232" x2="165" y2="146" stroke="#e05a4f" stroke-width="2.5" marker-end="url(#vb2-loop)"/>
+<text x="360" y="372" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">The fix is at step 1: remove the privilege.</text>
+</svg>
+
+### Neighbours: "It raises our power bills"
+
+It can. But nobody can shop around for the wires into their house. Power is delivered by a state-licensed monopoly, its prices are set by a commission, and the commission spreads the cost of big new customers across everyone's bill.
+
+"Whoever causes a cost pays it" is a property principle, and in a free market for power it would happen on its own: a buyer pays the supplier's price. The fix is ending the monopoly. A moratorium keeps the monopoly and adds a building ban on top.
+
+### Neighbours: "It drains our water"
+
+Where water is scarce, the question is who owns it and what it costs. Where water rights can be bought and sold, a data centre has to outbid farms and towns at the real price. Shortages show up where public water is under-priced and handed out by politics, often at special rates for big users. That's the [[Tragedy of the commons]]. The fix is a price, not a ban.
+
+### Neighbours: "They get tax breaks we pay for"
+
+Right, and the state gave them. A tax exemption for one industry is a transfer from everyone who doesn't get it. One tax rule for data centres and another for the corner shop is [[Mixed Law]]. Abolish it — better, cut everyone's taxes to the same level.
+
+### Big Tech critics: "Too much power"
+
+Separate two kinds of power. **Market power** is the power to refuse to sell to you on your terms; you can still go elsewhere. **Political power** is the power to make you pay regardless. Only the second is a grievance, and it only exists because there's a state to capture.
+
+Antitrust, public ownership and licensing all build a bigger rule-making machine — a bigger prize. The firms with the biggest compliance departments capture it, as utilities, taxis and banks each captured theirs ([[Regulatory Capture]]). Fifty competing state rulebooks beat one federal one: each is a smaller prize, and people can leave the bad ones. Remove the prize.
+
+*Bottoms out at:* [[The Descent#Incentives|Economics: Incentives]] → [[The Descent#Equality|Equality]]
+
+## 5. No case is special enough
+
+The last refuge is the special case: this technology is too dangerous for principles. It fails for the reason every special case fails. Self-defence answers an aggressor — a specific person threatening a specific victim. A technology threatens no one. A ban restrains everyone who has threatened nobody, on the word of whoever claims to know what's best for society.
+
+No danger, however large, turns a penny of aggression into a right ([[The Alien Ultimatum - Why Parasitic Ethics Cannot Answer Their Own Hypotheticals|the Alien Ultimatum]]).
+
+### Safety camp: "It makes bioweapons easy"
+
+**It freezes the defenders.** The fear hands the attacker the new tool and assumes everyone else stands still. But the tool that helps design a pathogen also helps design the cure, and defenders vastly outnumber attackers. Within days of a new virus's genome being published in 2020, a vaccine had been designed — before AI.
+
+**It's gun control for knowledge.** Ban guns to stop school shootings, and the only people disarmed are those who were never going to shoot anyone. Someone who has decided on mass murder isn't stopped by a licensing rule. The rule only cuts off the researchers and doctors who would have caught him.
+
+**It hands the gate to the proven killer.** Governments, not hobbyists, are history's mass murderers — over a hundred million of their own people in the 20th century alone ([[Threats and Risk]]). The Soviet Union signed the treaty banning bioweapons, then built the largest bioweapons programme ever. A licensing regime binds honest labs. It doesn't bind states.
+
+<svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:2rem 0" font-family="var(--bodyFont, ui-sans-serif, system-ui, sans-serif)">
+<text x="360" y="26" font-size="17" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">Who a ban actually stops</text>
+<text x="180" y="62" font-size="16" font-weight="700" fill="#7a9ec2" text-anchor="middle">Bound by the ban</text>
+<text x="540" y="62" font-size="16" font-weight="700" fill="#e05a4f" text-anchor="middle">Not bound by it</text>
+<rect x="20" y="78" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="110" font-size="15" fill="#fff" text-anchor="middle">Honest labs and companies</text>
+<rect x="20" y="140" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="172" font-size="15" fill="#fff" text-anchor="middle">Researchers and doctors</text>
+<rect x="20" y="202" width="320" height="52" rx="8" fill="#5a80a7"/>
+<text x="180" y="234" font-size="15" fill="#fff" text-anchor="middle">Ordinary users</text>
+<rect x="380" y="78" width="320" height="52" rx="8" fill="#e05a4f"/>
+<text x="540" y="110" font-size="15" fill="#fff" text-anchor="middle">States, which exempt themselves</text>
+<rect x="380" y="140" width="320" height="52" rx="8" fill="#e05a4f"/>
+<text x="540" y="172" font-size="15" fill="#fff" text-anchor="middle">Black markets</text>
+<rect x="380" y="202" width="320" height="52" rx="8" fill="#e05a4f"/>
+<text x="540" y="234" font-size="15" fill="#fff" text-anchor="middle">The would-be killer</text>
+<text x="360" y="296" font-size="15" font-weight="600" fill="var(--darkgray, #9a9a9a)" text-anchor="middle">It disarms the defenders and leaves the attackers armed.</text>
+</svg>
+
+### Safety camp: "Superintelligence could end us all"
+
+Whether the risk is real or not, the remedy fails, so the forecast doesn't need settling.
+
+The proposed ban lasts until there's "broad scientific consensus" that it's safe and "strong public buy-in." There's no test for that and nobody empowered to say it's been met, so it never has to lift. And a global ban needs a global enforcer over every data centre — while states exempt themselves for "national security," as they did with nuclear weapons. A ban doesn't stop development. It hands it to the parties with the worst record.
+
+*Bottoms out at:* [[The Descent#Authority|Authority]] → [[The Descent#Logic|Logic]]
+
+## Where they go next
+
+Pressed on all five, holders pivot. Each pivot is the premise again.
+
+**"Then tax AI and pay everyone a share."** That's the same veto, collected after the fact: those affected take a cut of what others produced. Spread ownership by removing the privileges that concentrate it.
+
+**"Deregulation just hands power to the incumbents."** That's the state-as-neutral premise again. Answer it with a named privilege each time — the monopoly, the tax break, the underpriced water.
+
+**"You accept self-defence, and AI is a threat."** Self-defence answers an aggressor, not a technology. Ask for the threshold at which aggression becomes a right, and how it was derived. There isn't one.
+
+**"Property itself is just whatever the state says it is."** The person saying so is using a body he controls and expects you not to seize. Arguing at all presupposes [[Self-ownership]] ([[Argumentation Ethics]]).
+
+That's the whole dispute in one line: a consequence is not an invasion, and a vote can't turn one into the other.
 
 ## Sources
 
-- [Senate HELP minority report, Oct 2025](https://www.help.senate.gov/dem/newsroom/press/news-sanders-releases-report-on-big-tech-oligarchs-war-against-workers-warns-ai-could-eliminate-nearly-100-million-us-jobs) — the 97M-jobs projection, which used ChatGPT to score tasks
-- [Stanford "Canaries in the Coal Mine," Aug 2026 update](https://www.brianheger.com/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-ai-august-2026-update-stanford-digital-economy-lab/) — the ~19% entry-level gap
-- [Yale Budget Lab via The Register](https://www.theregister.com/2025/10/01/ai_isnt_taking_people_jobs/) — no broad disruption 33 months in
-- [Axios on Amodei](https://axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic) and [Quartz on Hinton](https://qz.com/the-godfather-of-ai-says-the-job-wipeout-is-just-beginning) — the strong jobs claim
-- [Noah Smith, "Plentiful, high-paying jobs in the age of AI"](https://www.noahpinion.blog/p/plentiful-high-paying-jobs-in-the) — comparative advantage, which he says depends on limits to total compute
-- [USDA ERS](https://ers.usda.gov/sites/default/files/_laserfiche/publications/44197/13566_eib3_1_.pdf?v=14854) — about 40% of the workforce in farming in 1900
-- [Senate Commerce, 99–1 vote](https://www.commerce.senate.gov/2025/7/senate-strikes-ai-moratorium-from-budget-reconciliation-bill-in-overwhelming-99-1-vote/)
-- [RTO Insider on the PJM market monitor](https://www.rtoinsider.com/?p=111002) — $9.3B of $14.7B
-- [LBNL data-centre energy report](https://eta-publications.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report) — electricity and water figures
-- [The Register on Virginia's exemption](https://www.theregister.com/2026/01/07/datacenter_tax_breaks_virginia/) — $1.6B in FY2025
-- [SELC on xAI Memphis](https://www.selc.org/news/inside-memphis-fight-against-xai/) — turbines beyond permit, NOx
-- [Authors Guild on Bartz final approval](https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/) and [Authors Alliance on Kadrey](https://www.authorsalliance.org/2025/06/26/meta-wins-on-fair-use-for-now-but-court-leaves-door-open-for-market-dilution/)
-- [Axios on Common Sense Media](https://www.axios.com/2025/07/16/ai-bot-companions-teens-common-sense-media) — 72% of teens have used an AI companion
-- [FLI superintelligence statement](https://futureoflife.org/press-release/prominent-scientists-faith-leaders-policymakers-and-artists-call-for-a-prohibition-on-superintelligence/)
-- [Gallup, Mar 2026](https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx) — 71% oppose a data centre nearby
-- [FAS on the Soviet bioweapons programme](https://nuke.fas.org/guide/russia/cbw/bw.htm)
-- [R. J. Rummel, democide estimates](https://en.wikipedia.org/wiki/R._J._Rummel) and [FFF review of *Death by Government*](https://www.fff.org/explore-freedom/article/book-review-death-government/) — 169M (1994) to 262M+ (later editions)
-- [Gigafact on Moderna's two-day design](https://gigafact.org/fact-briefs/did-moderna-design-its-covid-19-vaccine-two-days) — sequence finalised 13 January 2020
-- [Pew Research, Sept 2025](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/09/PS_2025.9.15_AI-and-its-impact_report.pdf) — 50% more concerned than excited (survey June 2025)
-- [UC Cooperative Extension, historical horse population](https://ucanr.edu/sites/default/files/2018-01/277583.pdf) — 26.5M horses in 1915, about 3M in 1960 (from Ensminger)
+- Murray Rothbard, ["Law, Property Rights, and Air Pollution"](https://mises.org/library/law-property-rights-and-air-pollution-0) (*Cato Journal*, 1982) — how courts and permits replaced nuisance suits
+- [Future of Life Institute, superintelligence statement](https://futureoflife.org/press-release/prominent-scientists-faith-leaders-policymakers-and-artists-call-for-a-prohibition-on-superintelligence/) — the "consensus" and "buy-in" conditions
+- [Gigafact on Moderna's vaccine design](https://gigafact.org/fact-briefs/did-moderna-design-its-covid-19-vaccine-two-days) — designed two days after the genome was published
+- [R. J. Rummel, democide estimates](https://en.wikipedia.org/wiki/R._J._Rummel) — governments' killing of their own people in the 20th century
+- [FAS on the Soviet bioweapons programme](https://nuke.fas.org/guide/russia/cbw/bw.htm) — Biopreparat, founded after the USSR signed the Biological Weapons Convention

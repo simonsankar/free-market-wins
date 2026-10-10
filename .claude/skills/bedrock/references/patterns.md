@@ -1,6 +1,6 @@
 # Reasoning patterns
 
-The recurring shapes that bad arguments take. Each brief names the patterns its
+The recurring shapes that bad arguments take. Each dissect names the patterns its
 claims run on, so this file doubles as a fallacy textbook built from real
 cases. Add to it when a new shape recurs; give every entry a real example.
 
@@ -195,7 +195,7 @@ Format: **shape** (the structure), **tell** (how to spot it), **answer**,
 ## Our own side's weak patterns
 
 The red team checks for these, and each one gets resolved (fixed, verified,
-or cut) before a brief is written. Never rest a rebuttal on them. They're about
+or cut) before a dissect is written. Never rest a rebuttal on them. They're about
 being *wrong*, not about being unpopular: an argument the general public won't
 like is not on this list.
 
