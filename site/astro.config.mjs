@@ -1,11 +1,13 @@
 import { defineConfig } from "astro/config"
 import tailwindcss from "@tailwindcss/vite"
 import { remarkVaultLinks } from "./src/lib/remark-vault-links.mjs"
+import { rehypeReadingStructure } from "./src/lib/rehype-reading-structure.mjs"
 
 export default defineConfig({
   site: "https://free-market-wins.up.railway.app",
   markdown: {
     remarkPlugins: [remarkVaultLinks],
+    rehypePlugins: [rehypeReadingStructure],
   },
   vite: {
     plugins: [tailwindcss()],

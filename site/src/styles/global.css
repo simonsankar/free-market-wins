@@ -16,6 +16,10 @@
      4.5:1 on white. */
   --stone: #6e6a5e;
   --char: #26241f; /* body text */
+  /* Long-form reading text (prose-body). A step softer than --char in light
+     mode; in dark mode well below --char so paragraphs don't halate on the
+     near-black ground (~9.5:1 instead of ~13.5:1) while headings stay bright. */
+  --prose-text: #3a372f;
   --ink: #0f0e0c; /* headlines, ink surfaces */
   --gold: #f2a900; /* surface colour — never text on white */
   --gold-deep: #b5790a; /* gold TEXT on light grounds */
@@ -57,6 +61,7 @@
     --parchment: #2a2723;
     --stone: #8f897b;
     --char: #d4d2ca;
+    --prose-text: #bdb7aa;
     --ink: #ede7da;
     --gold-deep: #f2a900;
     --ember: #ff7a1a;
@@ -74,6 +79,7 @@
   --parchment: #2a2723;
   --stone: #8f897b;
   --char: #d4d2ca;
+  --prose-text: #bdb7aa;
   --ink: #ede7da;
   --gold-deep: #f2a900;
   --ember: #ff7a1a;
@@ -90,6 +96,7 @@
   --parchment: #e5e1d6;
   --stone: #6e6a5e;
   --char: #26241f;
+  --prose-text: #3a372f;
   --ink: #0f0e0c;
   --gold-deep: #b5790a;
   --butter: #ffe27a;
@@ -619,19 +626,23 @@
 }
 
 /* Reading prose (EssayLayout + tier-list write-ups), Signage style: Manrope
-   18/30 in char, Archivo expanded h2s, mono gold-deep h3 labels, bone-tile
-   blockquotes with a big gold quote mark, gold-dot rules. Preflight strips
-   list markers and margins, so those are restored explicitly. Add the
-   `data-lead` attribute to enlarge the first paragraph. */
+   18/31 in --prose-text, Archivo expanded h2s with a gold chapter number,
+   "Rail" subsections (bold h3 title under a mono gold kicker, a left rule
+   tying the subsection's paragraphs to it), a bone "Bottoms out at" closer
+   strip, bone-tile blockquotes with a big gold quote mark, gold-dot rules.
+   The .h2-num / .h3-kicker / .sub / .closer hooks come from
+   src/lib/rehype-reading-structure.mjs. Preflight strips list markers and
+   margins, so those are restored explicitly. Add the `data-lead` attribute
+   to enlarge the first paragraph. */
 @utility prose-body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: var(--char);
+  color: var(--prose-text);
   overflow-wrap: break-word;
   @media (min-width: 48rem) {
     font-size: 1.125rem;
-    line-height: 1.667;
+    line-height: 1.72;
   }
   &[data-lead] > p:first-child {
     font-size: 1.1875rem;
@@ -693,20 +704,101 @@
     line-height: 1.1;
     font-size: clamp(1.375rem, 1rem + 1.6vw, 1.875rem);
     color: var(--ink);
-    margin: 2.4em 0 0.7em;
+    margin: 4rem 0 1.25rem;
     scroll-margin-top: 1.5rem;
     overflow-wrap: break-word;
+    @media (min-width: 48rem) {
+      margin: 5.5rem 0 1.5rem;
+    }
+  }
+  & .h2-num {
+    color: var(--gold-deep);
+    margin-right: 0.4em;
+  }
+  /* Separators kept in the DOM for TOC text / slugs / screen readers. */
+  & .h-sep {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
   & h3 {
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 2.75rem 0 0.875rem;
+    scroll-margin-top: 1.5rem;
+    @media (min-width: 48rem) {
+      font-size: 1.375rem;
+    }
+  }
+  & .h3-kicker {
+    display: block;
     font-family: var(--font-mono);
     font-weight: 600;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     line-height: 1.4;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--gold-deep);
-    margin: 2em 0 0.5em;
-    scroll-margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  & .h3-title {
+    display: block;
+  }
+  & .h3-title::first-letter {
+    text-transform: uppercase;
+  }
+  /* Rail: one h3 subsection — the rule runs from the kicker to its last
+     paragraph, so it's obvious where "Neighbours" ends and "Parents" starts. */
+  & .sub {
+    margin-top: 2.75rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--parchment);
+    @media (min-width: 48rem) {
+      margin-top: 3.25rem;
+      padding-left: 1.625rem;
+    }
+  }
+  & .sub > h3 {
+    margin-top: 0;
+  }
+  & .sub > h3 + * {
+    margin-top: 0;
+  }
+  & .sub > :last-child {
+    margin-bottom: 0;
+  }
+  /* Chapter closer ("Bottoms out at: …"). Sits outside the rail and ends the
+     chapter; the next h2's large top margin does the rest. */
+  & p.closer {
+    width: fit-content;
+    max-width: 100%;
+    margin: 2.25rem 0 0;
+    padding: 0.75rem 1.25rem;
+    border-radius: 14px;
+    background: var(--bone);
+    box-shadow: inset 0 0 0 1px var(--tile-bone-ring);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  & p.closer > em:first-child {
+    font-style: normal;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-right: 0.5rem;
+  }
+  & p.closer a {
+    font-weight: 700;
   }
   & h4 {
     font-weight: 700;
@@ -855,6 +947,7 @@
      and table rules into translucent cream/ink. */
   --ink: #0f0e0c;
   --char: #26241f;
+  --prose-text: #26241f;
   --stone: #4a463c;
   --gold-deep: #0f0e0c;
   --bone: rgba(255, 244, 204, 0.55);
