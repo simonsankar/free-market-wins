@@ -1,0 +1,94 @@
+// Copies every non-markdown vault asset (images) into public/vault-assets/
+// so <img> tags emitted by the wikilink remark plugin resolve at build time.
+// Also copies raw .md files into public/vault-notes/ — the json-canvas-viewer
+// library fetches a note's raw markdown itself (to render an inline preview
+// card) rather than accepting content directly, so it needs a real URL.
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
+import { IGNORE_MD_BASENAMES } from "../src/lib/vault-ignore.mjs"
+
+const SITE_ROOT = fileURLToPath(new URL("..", import.meta.url))
+const VAULT_ROOT = path.resolve(SITE_ROOT, "..")
+const ASSETS_DEST = path.join(SITE_ROOT, "public", "vault-assets")
+const NOTES_DEST = path.join(SITE_ROOT, "public", "vault-notes")
+// Card art for the /tier-list/ page — tracked source images live outside
+// public/ (which is entirely gitignored, since it's otherwise pure build
+// output) and get copied in here so they survive a fresh clone or deploy.
+const TIER_LIST_ART_SRC = path.join(SITE_ROOT, "tier-list-art-src")
+const TIER_LIST_ART_DEST = path.join(SITE_ROOT, "public", "tier-list-art")
+
+// Keep in sync with the identical sets in src/lib/vault-index.mjs and
+// src/lib/canvas.mjs. This one is the load-bearing copy for privacy: every
+// .md under the vault root that isn't excluded here gets copied to
+// public/vault-notes/ and is publicly fetchable, whether or not a page route
+// exists for it. `videos/` is pre-production scratch — drafts, unsourced
+// claims, scripts mid-argument — and must never reach the site.
+const IGNORE_DIRS = new Set([
+  "site",
+  ".obsidian",
+  ".smart-env",
+  ".git",
+  ".claude",
+  "private",
+  "templates",
+  "videos",
+  "node_modules",
+])
+const IMAGE_EXTS = new Set(["png", "jpg", "jpeg", "gif", "svg", "webp"])
+
+fs.rmSync(ASSETS_DEST, { recursive: true, force: true })
+fs.rmSync(NOTES_DEST, { recursive: true, force: true })
+
+function walk(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith(".")) continue
+    const full = path.join(dir, entry.name)
+    if (entry.isDirectory()) {
+      if (IGNORE_DIRS.has(entry.name)) continue
+      walk(full)
+    } else {
+      const ext = path.extname(entry.name).slice(1).toLowerCase()
+      const rel = path.relative(VAULT_ROOT, full)
+      if (IMAGE_EXTS.has(ext)) {
+        const destPath = path.join(ASSETS_DEST, rel)
+        fs.mkdirSync(path.dirname(destPath), { recursive: true })
+        fs.copyFileSync(full, destPath)
+      } else if (ext === "md") {
+        // Non-note markdown (README, CLAUDE, ...) has no page route either
+        // (src/content/config.ts excludes it) — don't publish the raw file.
+        if (IGNORE_MD_BASENAMES.has(entry.name)) continue
+        const destPath = path.join(NOTES_DEST, rel)
+        fs.mkdirSync(path.dirname(destPath), { recursive: true })
+        fs.copyFileSync(full, destPath)
+      }
+    }
+  }
+}
+
+walk(VAULT_ROOT)
+console.log(`[copy-assets] copied vault images into ${path.relative(SITE_ROOT, ASSETS_DEST)}/`)
+console.log(`[copy-assets] copied vault notes into ${path.relative(SITE_ROOT, NOTES_DEST)}/`)
+
+if (fs.existsSync(TIER_LIST_ART_SRC)) {
+  fs.rmSync(TIER_LIST_ART_DEST, { recursive: true, force: true })
+  fs.mkdirSync(TIER_LIST_ART_DEST, { recursive: true })
+  for (const entry of fs.readdirSync(TIER_LIST_ART_SRC, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      fs.copyFileSync(path.join(TIER_LIST_ART_SRC, entry.name), path.join(TIER_LIST_ART_DEST, entry.name))
+    }
+  }
+  console.log(`[copy-assets] copied tier-list art into ${path.relative(SITE_ROOT, TIER_LIST_ART_DEST)}/`)
+}
+
+// Site logo + favicons — tracked in site/brand/ (public/ is gitignored) and
+// copied to the public root so /favicon.ico etc. resolve.
+const BRAND_SRC = path.join(SITE_ROOT, "brand")
+if (fs.existsSync(BRAND_SRC)) {
+  for (const entry of fs.readdirSync(BRAND_SRC, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      fs.copyFileSync(path.join(BRAND_SRC, entry.name), path.join(SITE_ROOT, "public", entry.name))
+    }
+  }
+  console.log("[copy-assets] copied brand icons into public/")
+}

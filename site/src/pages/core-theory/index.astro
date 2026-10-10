@@ -1,0 +1,276 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+import { LAYERS, FALLBACK, placeNote } from "../../lib/coreTheoryLayers.mjs"
+
+const entries = await getCollection("core-theory", (e) => e.data.unlisted !== true)
+
+// Display name: drop a trailing "(…)" gloss and capitalise the first letter
+// (a few vault titles are lower-case). Search still matches the full title.
+const toNote = (entry: any) => {
+  const full: string = entry.data.title
+  const name = full.replace(/\s*\([^)]*\)\s*$/, "")
+  const place = placeNote(entry.id)
+  return {
+    id: entry.id,
+    href: `/core-theory/${entry.id}/`,
+    name: name.charAt(0).toUpperCase() + name.slice(1),
+    term: full.toLowerCase(),
+    layer: place.index as number,
+    key: place.key as boolean,
+  }
+}
+const notes = entries.map(toNote)
+
+// Layers in data order (05 -> 01); within a layer, the order they're listed
+// in coreTheoryLayers.mjs is not preserved by the collection, so sort key notes
+// first, then A–Z.
+const byName = (a: any, b: any) => a.name.localeCompare(b.name)
+const layered = LAYERS.map((layer: any, i: number) => ({
+  ...layer,
+  notes: notes
+    .filter((n) => n.layer === i)
+    .sort((a, b) => Number(b.key) - Number(a.key) || byName(a, b)),
+}))
+const unfiled = notes.filter((n) => n.layer === -1).sort(byName)
+
+const groups = new Map<string, typeof notes>()
+for (const n of [...notes].sort(byName)) {
+  const letter = n.name[0].toUpperCase()
+  if (!groups.has(letter)) groups.set(letter, [])
+  groups.get(letter)!.push(n)
+}
+const letters = Array.from(groups.keys()).sort()
+
+// Label-tile treatment per tone. butter/gold tiles pin ink text locally.
+const tones: Record<string, { tile: string; num: string; title: string; blurb: string }> = {
+  ink: { tile: "tile-ink", num: "!text-gold", title: "!text-on-tile-ink", blurb: "text-on-tile-ink-soft" },
+  butter: { tile: "tile-butter", num: "!text-ink", title: "", blurb: "text-char" },
+  bone: { tile: "tile-bone", num: "!text-gold-deep", title: "", blurb: "text-char" },
+  gold: { tile: "tile-gold", num: "!text-on-gold", title: "!text-on-gold", blurb: "text-on-gold" },
+}
+
+const chipBase =
+  "chip !h-auto !min-h-11 max-w-full !whitespace-normal !bg-ground !py-2 !text-[0.9375rem] !leading-[1.15] text-ink no-underline sm:!px-5 hover:!bg-ink hover:!text-ground"
+const chipKey = "chip-ink !bg-tile-ink !text-gold hover:!bg-gold hover:!text-[#0f0e0c]"
+---
+
+<Layout
+  title="Core Theory"
+  description="The standard Austrian-libertarian doctrine — axioms, proofs, and core economic concepts."
+>
+  <div id="ct-root" data-view="layers">
+    <!-- Header -->
+    <section class="flex flex-col gap-8 pt-10 pb-6 sm:pt-14 lg:flex-row lg:items-end lg:justify-between xl:pt-20 xl:pb-8">
+      <div class="flex flex-col gap-5">
+        <h1 class="display-xl m-0 max-sm:!text-[clamp(2.75rem,15vw,4rem)] xl:!text-[7.5rem] xl:!leading-[0.85]">
+          Core<br />Theory
+        </h1>
+        <p class="m-0 max-w-[38.75rem] text-[1.0625rem] leading-7 text-char sm:text-lg">
+          {notes.length} notes, stacked the way the argument actually stacks: each layer only stands because the one beneath it does.
+        </p>
+      </div>
+      <div class="flex w-full flex-col items-stretch gap-4 lg:w-[22.5rem] lg:shrink-0">
+        <label
+          class="flex h-[3.75rem] items-center gap-3 rounded-full border-[1.5px] border-ink px-5 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-gold-deep"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" class="shrink-0 text-ink">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></circle>
+            <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          </svg>
+          <span class="sr-only">Find a concept</span>
+          <input
+            id="ct-filter"
+            type="search"
+            placeholder="Find a concept…"
+            autocomplete="off"
+            spellcheck="false"
+            class="min-w-0 flex-1 appearance-none border-0 bg-transparent font-body text-[0.9375rem] text-ink outline-none placeholder:text-stone"
+          />
+          <kbd class="rounded-md bg-bone px-2 py-1 font-mono text-xs text-stone max-sm:hidden">⌘K</kbd>
+        </label>
+        <div class="flex items-center gap-2 lg:justify-end" role="group" aria-label="View">
+          <span class="mono-label mr-1">View</span>
+          <button type="button" class="chip chip-outline !h-10" data-view-btn="layers" aria-pressed="true">Layers</button>
+          <button type="button" class="chip chip-outline !h-10" data-view-btn="az" aria-pressed="false">A–Z</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layers view: 05 at the top, 01 foundation at the bottom -->
+    <div id="ct-layers" class="flex flex-col gap-3" aria-label="Core theory by layer">
+      {
+        layered.map((layer: any) => {
+          const t = tones[layer.tone]
+          // Gold chip tile sits under 01 Axioms: the gold bedrock everything rests on.
+          const tileCls = layer.n === "01" ? "tile-gold" : "tile-bone"
+          return (
+            <section data-layer class="flex flex-col gap-3 lg:flex-row" aria-label={`${layer.n} ${layer.title}`}>
+              <div class:list={["tile flex flex-col justify-between gap-6 !p-5 sm:!p-7 lg:w-[22.5rem] lg:shrink-0", t.tile]}>
+                <div class:list={["display-num !text-[2.5rem] sm:!text-[3rem] !leading-none", t.num]}>{layer.n}</div>
+                <div class="flex flex-col gap-1.5">
+                  <h2 class:list={["display-title m-0 !text-[1.375rem] !leading-[1.08] sm:!text-[1.625rem]", t.title]}>
+                    {layer.title}
+                  </h2>
+                  <p class:list={["m-0 text-sm leading-[1.3]", t.blurb]}>{layer.blurb}</p>
+                </div>
+              </div>
+              <ul
+                class:list={["tile m-0 flex min-w-0 flex-1 list-none flex-wrap content-center gap-2 !p-5 sm:!p-7", tileCls]}
+              >
+                {layer.notes.map((n: any) => (
+                  <li data-entry-item data-term={n.term} class="max-w-full">
+                    <a class:list={[chipBase, n.key && chipKey]} href={n.href}>
+                      {n.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        })
+      }
+      {
+        unfiled.length > 0 && (
+          <section data-layer class="flex flex-col gap-3 lg:flex-row" aria-label={FALLBACK.title}>
+            <div class="tile tile-bone flex flex-col justify-between gap-6 !p-5 sm:!p-7 lg:w-[22.5rem] lg:shrink-0">
+              <div class="display-num !text-[2.5rem] !leading-none !text-gold-deep sm:!text-[3rem]">{FALLBACK.n}</div>
+              <div class="flex flex-col gap-1.5">
+                <h2 class="display-title m-0 !text-[1.375rem] !leading-[1.08] sm:!text-[1.625rem]">{FALLBACK.title}</h2>
+                <p class="m-0 text-sm leading-[1.3] text-char">{FALLBACK.blurb}</p>
+              </div>
+            </div>
+            <ul class="tile tile-bone m-0 flex min-w-0 flex-1 list-none flex-wrap content-center gap-2 !p-5 sm:!p-7">
+              {unfiled.map((n: any) => (
+                <li data-entry-item data-term={n.term} class="max-w-full">
+                  <a class={chipBase} href={n.href}>
+                    {n.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </div>
+
+    <!-- A–Z view -->
+    <div id="ct-az" aria-label="Core theory A to Z">
+      <nav id="ct-jump" class="mb-4 flex flex-wrap gap-2" aria-label="Jump to letter">
+        {
+          letters.map((l) => (
+            <a
+              class="chip chip-outline !h-10 !w-10 justify-center !px-0 no-underline"
+              href={`#ct-${l}`}
+              data-jump={l}
+            >
+              {l}
+            </a>
+          ))
+        }
+      </nav>
+      <div class="flex flex-col gap-3">
+        {
+          letters.map((letter) => (
+            <section data-letter-section class="tile tile-bone !p-5 sm:!p-7" style="scroll-margin-top: 6rem">
+              <h2 id={`ct-${letter}`} class="display-num m-0 mb-4 !text-[2.5rem] !leading-none sm:!text-[3rem]" style="scroll-margin-top: 6rem">
+                {letter}
+              </h2>
+              <ul class="m-0 flex list-none flex-wrap gap-2 p-0">
+                {groups.get(letter)!.map((n) => (
+                  <li data-entry-item data-term={n.term} class="max-w-full">
+                    <a class:list={[chipBase, n.key && chipKey]} href={n.href}>
+                      {n.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+
+    <p id="ct-empty" class="mt-6 hidden text-stone" role="status">No notes match your search.</p>
+  </div>
+</Layout>
+
+<style is:global>
+  /* One view visible at a time; both are server-rendered so nothing is missing
+     without JS and the filter can work across the whole page. */
+  #ct-root[data-view="layers"] #ct-az,
+  #ct-root[data-view="az"] #ct-layers {
+    display: none;
+  }
+  #ct-root input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+  }
+</style>
+
+<script is:inline>
+  ;(function () {
+    var root = document.getElementById("ct-root")
+    var input = document.getElementById("ct-filter")
+    var empty = document.getElementById("ct-empty")
+    var jump = document.getElementById("ct-jump")
+    var btns = Array.prototype.slice.call(document.querySelectorAll("[data-view-btn]"))
+
+    function setView(view, push) {
+      root.dataset.view = view
+      btns.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.viewBtn === view))
+      })
+      if (push) {
+        var url = new URL(location.href)
+        if (view === "layers") url.searchParams.delete("view")
+        else url.searchParams.set("view", view)
+        history.replaceState(null, "", url)
+      }
+      applyFilter()
+    }
+
+    function applyFilter() {
+      var term = input.value.trim().toLowerCase()
+      var visibleRoot = document.getElementById(root.dataset.view === "az" ? "ct-az" : "ct-layers")
+      var any = false
+      // Both views are filtered so switching keeps the search.
+      document.querySelectorAll("[data-layer], [data-letter-section]").forEach(function (block) {
+        var has = false
+        block.querySelectorAll("[data-entry-item]").forEach(function (item) {
+          var match = !term || (item.dataset.term || "").indexOf(term) > -1
+          item.style.display = match ? "" : "none"
+          if (match) has = true
+        })
+        block.style.display = has ? "" : "none"
+        if (has && visibleRoot.contains(block)) any = true
+      })
+      if (jump) jump.style.display = term ? "none" : ""
+      empty.classList.toggle("hidden", any)
+    }
+
+    input.addEventListener("input", applyFilter)
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        setView(b.dataset.viewBtn, true)
+      })
+    })
+
+    // On this page ⌘K focuses the filter instead of opening the global search
+    // modal (capture phase beats the document-level handler in SearchBox).
+    window.addEventListener(
+      "keydown",
+      function (e) {
+        if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+          e.preventDefault()
+          e.stopPropagation()
+          input.focus()
+          input.select()
+        }
+      },
+      true,
+    )
+
+    var v = new URLSearchParams(location.search).get("view")
+    setView(v === "az" ? "az" : "layers", false)
+  })()
+</script>

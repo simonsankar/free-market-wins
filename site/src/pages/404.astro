@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/essays/", label: "Essays" },
+  { href: "/core-theory/", label: "Core Theory" },
+]
+const arrowLong = `<svg width="36" height="12" viewBox="0 0 36 12" aria-hidden="true"><path d="M0 6h34M29 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+---
+
+<Layout title="Not found">
+  <section class="flex flex-col gap-5 pt-10 pb-8 sm:pt-14 xl:pt-20 xl:pb-9">
+    <p class="mono-label m-0">Error · Page not found</p>
+    <h1 class="display-xl m-0 max-sm:!text-[clamp(4.5rem,32vw,9rem)] xl:!text-[11rem] xl:!leading-[0.85]">404.</h1>
+    <p class="display-h1 m-0 max-w-[48rem] !text-[clamp(1.5rem,1rem+2.6vw,3rem)]">This page was never produced.</p>
+  </section>
+
+  <section aria-label="Where to go" class="tile tile-gold flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+    <div class="flex flex-col gap-3">
+      <div class="tile-label"><span>Try instead</span></div>
+      <p class="m-0 max-w-[26rem] text-[1.0625rem] leading-[1.55] text-on-gold">
+        The link may be mistyped, or the page may have been moved. Everything that does exist is a click away.
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {
+        links.map((l) => (
+          <a class="btn-ink" href={l.href}>
+            {l.label}
+            <Fragment set:html={arrowLong} />
+          </a>
+        ))
+      }
+      <button type="button" class="btn-ink" id="not-found-search">
+        Search
+        <Fragment set:html={arrowLong} />
+      </button>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.getElementById("not-found-search")?.addEventListener("click", () => {
+    document.getElementById("search-toggle")?.click()
+  })
+</script>

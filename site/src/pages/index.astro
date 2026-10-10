@@ -1,0 +1,374 @@
+---
+import fs from "node:fs"
+import path from "node:path"
+import { getCollection, render } from "astro:content"
+import Layout from "../layouts/Layout.astro"
+import CanvasView from "../components/CanvasView.astro"
+import { generateCover } from "../lib/coverArt.mjs"
+import { listCanvases, loadCanvas } from "../lib/canvas.mjs"
+
+// ── Data ────────────────────────────────────────────────────────────────────
+const homeEntry = (await getCollection("home"))[0]
+const { Content: HomeContent } = homeEntry ? await render(homeEntry) : { Content: null }
+
+const essays = (
+  await getCollection("essays", (e) => e.data.unlisted !== true && Boolean(e.data.date))
+).sort((a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""))
+const coreTheory = await getCollection("core-theory")
+const zingers = (await getCollection("zingers")).sort((a, b) =>
+  (a.data.date ?? "").localeCompare(b.data.date ?? ""),
+)
+
+// Same helpers EssayCard uses.
+function categoryOf(id: string) {
+  const segment = id.includes("/") ? id.split("/")[0] : ""
+  return segment.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+}
+const readMins = (entry: any) =>
+  Math.max(1, Math.round((entry.body ?? "").trim().split(/\s+/).filter(Boolean).length / 200))
+// Dates are YYYY-MM-DD strings; format in UTC so builds don't drift by timezone.
+function fmt(date: string | undefined, opts: Intl.DateTimeFormatOptions) {
+  return date ? new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", ...opts }) : ""
+}
+
+// Masthead: issue number = published essays, date = newest essay.
+const issueNo = essays.length
+const issueDate = fmt(essays[0]?.data.date, { month: "long", year: "numeric" }).toUpperCase()
+
+// Featured: newest essay, unless it has no cover and one of the next few does
+// (a real cover reads better in the big tile than generated art).
+const featured = essays.find((e, i) => i < 6 && e.data.cover) ?? essays[0]
+const featuredCategory = categoryOf(featured.id)
+const featuredCover = featured.data.cover
+const featuredArt = featuredCover ? null : generateCover({ id: featured.id, category: featuredCategory })
+const isNew = (Date.now() - new Date(`${featured.data.date}T00:00:00Z`).getTime()) / 864e5 <= 60
+
+// Core Theory notes — only link ones that really exist.
+const coreIds = new Set(coreTheory.map((c) => c.id))
+const coreLink = (id: string, label: string) => (coreIds.has(id) ? { href: `/core-theory/${id}/`, label } : null)
+const startRows = [
+  coreLink("argumentation-ethics", "Argumentation Ethics, in one page"),
+  coreLink("the-non-aggression-principle", "The Non-aggression Principle"),
+].filter(Boolean) as { href: string; label: string }[]
+const topicChips = [
+  coreLink("argumentation-ethics", "Argumentation Ethics"),
+  coreLink("sound-money", "Sound Money"),
+  coreLink("cantillon-effect", "Cantillon Effect"),
+  coreLink("self-ownership", "Self-Ownership"),
+  coreLink("economic-calculation-problem", "Calculation Problem"),
+].filter(Boolean) as { href: string; label: string }[]
+
+// Tier list: count the art files; the card is one fixed, real rebuttal.
+const tierArt = path.resolve(process.cwd(), "public/tier-list-art")
+const tierCount = fs.existsSync(tierArt) ? fs.readdirSync(tierArt).length : 0
+
+// Zinger: stable pick (seeded by the essay count, so it only changes when the
+// issue does) among the one-liners short enough to set big.
+const plain = (s: string) => s.replace(/[_*`]/g, "").trim()
+const zingerLine = (z: any) => plain((z.body ?? "").trim().split(/\n\s*\n/)[0] ?? "")
+const zingerPool = zingers.filter((z) => zingerLine(z) && zingerLine(z).length <= 130)
+const zinger = zingerPool.length ? zingerPool[issueNo % zingerPool.length] : null
+const zingerIndex = zinger ? zingers.indexOf(zinger) + 1 : 0
+
+const fresh = essays.slice(0, 6)
+
+const [primaryCanvas] = listCanvases()
+const canvasData = primaryCanvas ? loadCanvas(primaryCanvas.rel) : null
+
+const arrowLong = `<svg width="36" height="12" viewBox="0 0 36 12" aria-hidden="true"><path d="M0 6h34M29 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+const arrowDiag = `<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+---
+
+<Layout>
+  <!-- Masthead -->
+  <section class="pt-10 pb-8 sm:pt-14 xl:pt-20 xl:pb-9">
+    <!-- @container: the headline is sized from this box (cqi), and the right-hand
+         block sits in normal flow BELOW it, so the two can never collide. -->
+    <div class="@container flex flex-col gap-8">
+      <div class="flex flex-col gap-4 sm:gap-5">
+        <p class="mono-label m-0 !text-[0.75rem] sm:!text-[0.8125rem]">
+          Issue No. {issueNo} · {issueDate} <span class="max-sm:hidden">· An arsenal for the stateless society</span>
+        </p>
+        <h1 class="display-xl m-0 max-sm:!text-[clamp(2.75rem,15vw,4rem)] sm:!text-[clamp(3rem,10.2cqi,9.5rem)] sm:whitespace-nowrap">
+          Free <br class="sm:hidden" />Market<br />Wins.
+        </h1>
+        <p class="mono-label m-0 !text-stone sm:hidden">An arsenal for the stateless society</p>
+      </div>
+      <div class="flex flex-col items-start gap-5 @2xl:flex-row @2xl:items-center @2xl:justify-between @2xl:gap-10">
+        <p class="m-0 max-w-[32rem] text-[1.0625rem] leading-[1.6] text-char @2xl:text-lg">
+          Every claim for aggression, followed to its conclusion. Every central plan, priced out.
+        </p>
+        <a class="btn-bone shrink-0" href="/essays/">
+          Read the essays
+          <Fragment set:html={arrowLong} />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento -->
+  <section aria-label="This issue" class="grid grid-cols-1 gap-3 md:grid-cols-6 lg:grid-cols-12">
+    <!-- Featured essay -->
+    <a
+      href={`/essays/${featured.id}/`}
+      class="tile tile-bone group relative block min-h-[30rem] !p-0 no-underline md:col-span-6 md:min-h-[34rem] lg:col-span-4 lg:row-span-2 lg:min-h-0"
+    >
+      {
+        featuredCover ? (
+          <img src={featuredCover} alt="" class="absolute inset-0 h-full w-full object-cover" />
+        ) : (
+          <div class="absolute inset-0 [&>svg]:h-full [&>svg]:w-full" set:html={featuredArt} />
+        )
+      }
+      {
+        isNew && (
+          <div class="sticker absolute top-5 left-5 sm:top-6 sm:left-6">
+            NEW
+            <small>{readMins(featured)} MIN</small>
+          </div>
+        )
+      }
+      <div class="tile-notch-label absolute bottom-0 left-0 flex max-w-[92%] flex-col gap-3 rounded-tr-[1.5rem] bg-ground p-5 pr-6 sm:max-w-[88%] sm:gap-3.5 sm:rounded-tr-[2rem] sm:p-7 sm:pr-8">
+        <div class="tile-label items-center !gap-x-2.5 text-ink">
+          <span>{featuredCategory}</span>
+          <span class="font-normal text-stone">{readMins(featured)} min</span>
+          <span class="h-3.5 w-px bg-parchment" aria-hidden="true"></span>
+          <span class="font-normal text-stone">{fmt(featured.data.date, { day: "numeric", month: "short" })}</span>
+        </div>
+        <h2 class="display-title m-0 break-words max-sm:!text-[1.375rem] sm:!text-[1.75rem]">
+          {featured.data.title}
+        </h2>
+      </div>
+    </a>
+
+    <!-- Core Theory / start here -->
+    <div class="tile tile-gold flex min-h-[26rem] flex-col !p-0 md:col-span-6 lg:col-span-5 lg:min-h-[32.5rem]">
+      <div
+        class="pointer-events-none absolute top-[2.5rem] -right-[8.75rem] h-[32.5rem] w-[32.5rem] rounded-full border-[3.5rem] border-white/15"
+        aria-hidden="true"
+      >
+      </div>
+      <div class="tile-notch">
+        <a class="btn-circle btn-circle-gold !h-[3.75rem] !w-[3.75rem] max-sm:!h-[3.25rem] max-sm:!w-[3.25rem]" href="/core-theory/" aria-label="Open Core Theory">
+          <Fragment set:html={arrowDiag} />
+        </a>
+      </div>
+      <div class="relative flex flex-1 flex-col gap-5 p-6 pb-6 sm:p-8 sm:pb-7">
+        <div class="tile-label pr-16"><span>Core Theory</span><span>· Start here</span></div>
+        <h2 class="display-title m-0 max-w-[32rem] pr-12 sm:pr-14 !text-on-gold sm:!text-[2.25rem] lg:!text-[2.5rem]">
+          The NAP, proven by elimination.
+        </h2>
+        <p class="m-0 max-w-[36rem] text-[0.9375rem] leading-[1.55] text-on-gold">
+          Scarce means, unlimited wants: conflict is guaranteed. There are only three ways to handle it, and two of
+          them collapse into one group's whims overriding reality. What's left standing is non-aggression.
+        </p>
+      </div>
+      <div class="relative flex flex-col">
+        {
+          startRows.map((r) => (
+            <a
+              class="index-row !gap-3 !border-t-on-gold !px-6 !py-5 !text-on-gold sm:!px-8"
+              href={r.href}
+            >
+              <span class="display-sm min-w-0 flex-1 !text-[0.9375rem] !text-on-gold sm:!text-[1rem]">{r.label}</span>
+              <Fragment set:html={arrowLong} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Tier list -->
+    <a
+      href="/tier-list/"
+      class="tile tile-cream group relative flex min-h-[26rem] flex-col !p-0 no-underline md:col-span-3 lg:col-span-3 lg:min-h-0"
+    >
+      <div class="relative z-10 flex flex-col gap-3 p-6 sm:p-7">
+        <div class="tile-label text-ink"><span>Tier List</span>{tierCount > 0 && <span class="font-normal">· {tierCount} ranked</span>}</div>
+        <h2 class="display-title m-0 !text-[1.5rem] sm:!text-[1.5625rem]">Every argument against ancap, ranked.</h2>
+      </div>
+      <img
+        src="/tier-list-art/warlords-problem.png"
+        alt=""
+        loading="lazy"
+        class="home-tier-art absolute inset-x-0 bottom-0 h-[60%] w-full object-cover object-top"
+      />
+      <div class="absolute bottom-5 left-5 flex h-9 items-center gap-2 rounded-full bg-tile-ink px-3.5">
+        <span class="font-mono text-xs font-semibold tracking-[0.06em] text-gold uppercase">Quick rebuttal</span>
+        <span class="text-[0.8125rem] text-on-tile-ink">Warlords</span>
+      </div>
+    </a>
+
+    <!-- Zinger -->
+    {
+      zinger && (
+        <a
+          href="/zingers/"
+          class="tile tile-ink flex min-h-[18rem] flex-col justify-between gap-10 no-underline md:col-span-3 lg:col-span-4 lg:min-h-[21.5rem]"
+        >
+          <div class="tile-label"><span class="!text-gold">Zinger</span><span class="font-normal text-on-tile-ink-soft">· {String(zingerIndex).padStart(2, "0")} of {String(zingers.length).padStart(2, "0")}</span></div>
+          <p class="display-title m-0 !text-on-tile-ink sm:!text-[1.75rem] lg:!text-[1.875rem] lg:!leading-[1.1]">
+            {zingerLine(zinger)}
+          </p>
+        </a>
+      )
+    }
+
+    <!-- Topics -->
+    <div class="tile tile-butter flex min-h-[18rem] flex-col justify-between gap-8 md:col-span-6 lg:col-span-4 lg:min-h-[21.5rem]">
+      <div class="flex flex-wrap justify-center gap-1.5">
+        {
+          topicChips.map((c, i) => (
+            <a class:list={["chip !h-10", i === 1 && "chip-ink"]} href={c.href}>
+              {c.label}
+            </a>
+          ))
+        }
+      </div>
+      <a class="flex items-center justify-between gap-4 pl-2 no-underline" href="/core-theory/">
+        <span class="text-lg leading-[1.2] font-bold text-ink">All {coreTheory.length} Core Theory notes</span>
+        <span class="btn-circle !h-16 !w-16 !border-ground !bg-ground !text-ink">
+          <Fragment set:html={arrowLong} />
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- The whole case -->
+  <section class="pt-20 sm:pt-28 xl:pt-32" aria-labelledby="whole-case">
+    <div class="flex flex-col gap-5 pb-8 sm:pb-12 lg:flex-row lg:items-end lg:justify-between">
+      <h2 id="whole-case" class="display-h1 m-0">The whole case,<br />in three moves.</h2>
+      <p class="m-0 max-w-[22.5rem] text-base leading-[1.6] text-char lg:text-right">
+        The vault's spine. Everything else on the site is this argument applied to something specific.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+      <div class="tile tile-bone flex flex-col gap-5 md:min-h-[21rem]">
+        <span class="display-num">01</span>
+        <h3 class="display-title m-0 !text-[1.375rem] sm:!text-[1.625rem]">Conflict is unavoidable.</h3>
+        <p class="m-0 text-[0.9375rem] leading-[1.6]">
+          Scarce means, infinite wants. Crusoe wants the stick for fishing; Friday wants it for the fire. Even Eden
+          has conflict: two people can't stand in the same spot.
+        </p>
+      </div>
+      <div class="tile tile-bone flex flex-col gap-5 md:min-h-[21rem]">
+        <span class="display-num">02</span>
+        <h3 class="display-title m-0 !text-[1.375rem] sm:!text-[1.625rem]">There are only three laws.</h3>
+        <p class="m-0 text-[0.9375rem] leading-[1.6]">
+          Never avoid conflict (Jungle Law). Avoid it sometimes (Mixed Law). Avoid it, full stop (the NAP). The first
+          two reduce to the Primacy of Consciousness: someone's whim overriding reality.
+        </p>
+      </div>
+      <div class="tile tile-ink flex flex-col gap-5 md:min-h-[21rem]">
+        <span class="display-num !text-gold">03</span>
+        <h3 class="display-title m-0 !text-[1.375rem] !text-on-tile-ink sm:!text-[1.625rem]">
+          Arguing against it proves it.
+        </h3>
+        <p class="m-0 text-[0.9375rem] leading-[1.6] text-on-tile-ink-soft">
+          Argument is conflict-free by nature. To argue for aggression is to presuppose non-aggression: a
+          performative contradiction. ~A stands.
+        </p>
+        <a
+          class="mt-auto inline-flex items-center gap-2.5 pt-2 text-[0.9375rem] font-bold !text-gold no-underline hover:underline"
+          href="/core-theory/argumentation-ethics/"
+        >
+          Read Argumentation Ethics
+          <Fragment set:html={arrowLong} />
+        </a>
+      </div>
+    </div>
+
+    {
+      canvasData && (
+        <div class="tile tile-bone mt-3 flex flex-col gap-5 !p-3 sm:!p-4">
+          <div class="flex flex-col gap-2 px-3 pt-3 sm:flex-row sm:items-end sm:justify-between sm:px-4 sm:pt-4">
+            <h3 class="display-title m-0">The full map</h3>
+            <p class="mono-label m-0 !text-stone">Interactive · drag, zoom, open any note</p>
+          </div>
+          <div class="home-canvas">
+            <CanvasView
+              id="home"
+              canvas={canvasData.canvas}
+              attachments={canvasData.attachments}
+              fileUrls={canvasData.fileUrls}
+              images={canvasData.images}
+              height={600}
+            />
+          </div>
+        </div>
+      )
+    }
+  </section>
+
+  <!-- In this issue (vault index.md) -->
+  <section class="pt-20 sm:pt-28 xl:pt-32" aria-labelledby="in-issue" data-pagefind-body>
+    <div class="grid gap-8 lg:grid-cols-[18.75rem_1fr] lg:gap-16">
+      <div class="flex flex-col gap-4">
+        <p class="mono-label m-0">What this vault does</p>
+        <h2 id="in-issue" class="display-h1 m-0">In this issue.</h2>
+      </div>
+      <div class="issue-list min-w-0 border-b-[1.5px] border-ink">
+        {HomeContent && <HomeContent />}
+      </div>
+    </div>
+  </section>
+
+  <!-- Fresh off the press -->
+  <section class="pt-20 sm:pt-28 xl:pt-32" aria-labelledby="fresh">
+    <div class="grid gap-8 lg:grid-cols-[18.75rem_1fr] lg:gap-16">
+      <div class="flex flex-col gap-5">
+        <h2 id="fresh" class="display-h1 m-0 lg:!text-[2.75rem] lg:!leading-[1]">Fresh<br class="max-lg:hidden" /> off the<br class="max-lg:hidden" /> press.</h2>
+        <div class="flex flex-wrap gap-1.5">
+          <a class="chip chip-outline" href="/essays/" aria-current="true">All</a>
+          <a class="chip chip-outline" href="/essays/?filter=dissects">Dissects</a>
+          <a class="chip chip-outline" href="/essays/?filter=economics">Economics</a>
+          <a class="chip chip-outline" href="/essays/?filter=philosophy">Philosophy</a>
+        </div>
+      </div>
+      <div class="min-w-0 border-b-[1.5px] border-ink">
+        {
+          fresh.map((e) => {
+            const cat = categoryOf(e.id)
+            const meta = `${readMins(e)} min · ${fmt(e.data.date, { day: "numeric", month: "short" })}`
+            return (
+              <a class="index-row" href={`/essays/${e.id}/`}>
+                <span class="mono-label hidden w-[7.5rem] shrink-0 md:block">{cat}</span>
+                <span class="min-w-0 flex-1">
+                  <span class="mono-label mb-1.5 block md:hidden">
+                    {cat} · {meta}
+                  </span>
+                  <span class="display-sm block break-words">{e.data.title}</span>
+                </span>
+                <span class="hidden w-[7rem] shrink-0 text-right text-sm text-stone md:block">{meta}</span>
+                <span class="btn-circle !h-11 !w-11 md:!h-[3.25rem] md:!w-[3.25rem]">
+                  <Fragment set:html={arrowDiag} />
+                </span>
+              </a>
+            )
+          })
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  /* Cream tile art is a white-background drawing: multiply it into the tile in
+     light mode; (cream is a light surface in both themes). */
+  .home-tier-art {
+    mix-blend-mode: multiply;
+  }
+
+  /* Canvas frame restyled for Signage: no heavy border, tile-sized radius. */
+  .home-canvas .canvas-container {
+    border-radius: 1.25rem;
+    border: 0;
+    background: var(--ground);
+  }
+  @media (max-width: 639px) {
+    .home-canvas .canvas-container {
+      height: 26rem !important;
+      border-radius: 1rem;
+    }
+  }
+</style>

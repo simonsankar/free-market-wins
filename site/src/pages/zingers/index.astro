@@ -1,0 +1,99 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+
+const entries = (await getCollection("zingers")).sort(
+  (a, b) => (b.data.date ?? "").localeCompare(a.data.date ?? ""),
+)
+
+// Same extraction the homepage zinger tile uses: first paragraph, markdown
+// emphasis stripped.
+const plain = (s: string) => s.replace(/[_*`]/g, "").trim()
+// A zinger is one line: if the first paragraph runs long (an essay-ish body
+// with hard line breaks), set only its first line.
+const lineOf = (z: any) => {
+  const para = plain((z.body ?? "").trim().split(/\n\s*\n/)[0] ?? "")
+  return para.length > 220 ? para.split("\n")[0].trim() : para
+}
+function fmt(date: string | undefined) {
+  return date
+    ? new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" })
+    : ""
+}
+
+// Deterministic by index: surface, and column span on the 12-col grid
+// (7/5, 4/4/4, 5/7 ... repeating) so rows always sum to 12.
+type Look = { tile: string; text: string; label: string; meta: string; circle: string }
+const looks: Record<string, Look> = {
+  ink: { tile: "tile-ink", text: "!text-on-tile-ink", label: "!text-gold", meta: "text-on-tile-ink-soft", circle: "!border-on-tile-ink-soft !text-on-tile-ink" },
+  gold: { tile: "tile-gold", text: "text-on-gold", label: "text-on-gold", meta: "text-on-gold", circle: "!border-on-gold !text-on-gold" },
+  butter: { tile: "tile-butter", text: "text-ink", label: "text-ink", meta: "text-char", circle: "!border-ink !text-ink" },
+  bone: { tile: "tile-bone", text: "text-ink", label: "text-gold-deep", meta: "text-stone", circle: "" },
+  cream: { tile: "tile-cream", text: "text-ink", label: "text-ink", meta: "text-char", circle: "!border-ink !text-ink" },
+}
+const surfaces = ["ink", "gold", "bone", "butter", "bone", "ink", "cream"]
+const spans = [
+  "lg:col-span-7", "lg:col-span-5",
+  "lg:col-span-4", "lg:col-span-4", "lg:col-span-4",
+  "lg:col-span-5", "lg:col-span-7",
+]
+
+// Type scale by length: short lines are set huge.
+function sizeClass(n: number) {
+  if (n <= 50) return "text-[clamp(2rem,1rem+5vw,3.75rem)] leading-[0.98]"
+  if (n <= 100) return "text-[clamp(1.5rem,1rem+2.6vw,2.5rem)] leading-[1.02]"
+  if (n <= 170) return "text-[clamp(1.25rem,1rem+1.4vw,1.75rem)] leading-[1.1]"
+  return "text-[1.0625rem] leading-[1.3] sm:text-[1.1875rem]"
+}
+
+const items = entries.map((e, i) => {
+  const line = lineOf(e)
+  const look = looks[surfaces[i % surfaces.length]]
+  return { e, line, look, span: spans[i % spans.length], size: sizeClass(line.length), n: i + 1 }
+})
+
+const arrowDiag = `<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>`
+---
+
+<Layout title="Zingers" description="Single lines. No argument attached — the argument's elsewhere.">
+  <section class="flex flex-col gap-5 pt-10 pb-8 sm:pt-14 xl:pt-20 xl:pb-9">
+    <div class="flex items-start gap-3 sm:gap-4">
+      <h1 class="display-xl m-0 max-sm:!text-[clamp(2.25rem,12vw,4rem)] xl:!text-[7.5rem] xl:!leading-[0.85]">Zingers.</h1>
+      <span
+        class="inline-flex h-8 items-center rounded-full bg-gold px-3 font-mono text-[0.8125rem] font-bold text-on-gold sm:h-10 sm:px-3.5"
+        aria-label={`${entries.length} zingers`}
+      >
+        {entries.length}
+      </span>
+    </div>
+    <p class="m-0 max-w-[32rem] text-[1.0625rem] leading-[1.6] text-char sm:text-lg">
+      Single lines. No argument attached — the argument's elsewhere.
+    </p>
+  </section>
+
+  <section aria-label="All zingers" class="grid grid-cols-[minmax(0,1fr)] gap-3 md:grid-cols-2 lg:grid-cols-12">
+    {
+      items.map(({ e, line, look, span, size, n }) => (
+        <a
+          href={`/zingers/${e.id}/`}
+          class:list={["tile group flex min-h-[15rem] flex-col justify-between gap-10 no-underline md:min-h-[17rem] lg:min-h-[19rem]", look.tile, span]}
+        >
+          <p class:list={["m-0 font-display font-black uppercase tracking-[-0.025em] [font-stretch:115%] [font-variation-settings:'wdth'_115] [overflow-wrap:anywhere]", size, look.text]}>
+            {line}
+          </p>
+          <div class="flex items-end justify-between gap-4">
+            <div class="tile-label min-w-0 !gap-x-3 !text-[0.75rem]">
+              <span class:list={["font-mono tracking-[0.1em] uppercase", look.label]}>
+                {String(n).padStart(2, "0")} · {e.data.title}
+              </span>
+              <span class:list={["font-mono tracking-[0.1em] uppercase font-normal", look.meta]}>{fmt(e.data.date)}</span>
+            </div>
+            <span class:list={["btn-circle !h-11 !w-11 shrink-0", look.circle]}>
+              <Fragment set:html={arrowDiag} />
+            </span>
+          </div>
+        </a>
+      ))
+    }
+  </section>
+</Layout>

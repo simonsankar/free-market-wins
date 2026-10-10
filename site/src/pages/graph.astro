@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Graph from "../components/Graph.astro"
+import { getGlobalGraph } from "../lib/vault-index.mjs"
+
+const graph = getGlobalGraph()
+---
+
+<Layout title="Graph" description="How every essay, core theory entry, and zinger links together.">
+  <section class="flex flex-col gap-5 pt-10 pb-8 sm:pt-14 xl:pt-20 xl:pb-9">
+    <div class="flex items-start gap-3 sm:gap-4">
+      <h1 class="display-xl m-0 max-sm:!text-[clamp(2.75rem,15vw,4rem)] xl:!text-[7.5rem] xl:!leading-[0.85]">The Graph.</h1>
+    </div>
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+      <p class="m-0 max-w-[32rem] text-[1.0625rem] leading-[1.6] text-char sm:text-lg">
+        Every wikilink in the vault, in one view. Click a node to jump to it.
+      </p>
+      <p class="mono-label m-0 !text-stone">
+        {graph.nodes.length} notes · {graph.edges.length} links
+      </p>
+    </div>
+  </section>
+
+  <section aria-label="Link graph" class="tile tile-bone !p-2 sm:!p-3">
+    <div class="graph-frame overflow-hidden rounded-[1.25rem] sm:rounded-[1.5rem]">
+      <Graph id="global" nodes={graph.nodes} edges={graph.edges} height={720} legend />
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  /* Legacy graph colours were tuned for the ground; on the bone tile the
+     parchment links nearly vanish in light mode, so use stone at low alpha and
+     match the halos to the tile. */
+  .graph-frame .graph-link {
+    stroke: var(--stone);
+    stroke-opacity: 0.4;
+  }
+  .graph-frame .graph-link.is-active {
+    stroke: var(--gold-deep);
+    stroke-opacity: 1;
+  }
+  .graph-frame .graph-node circle {
+    stroke: var(--bone);
+  }
+  .graph-frame .graph-label {
+    fill: var(--ink);
+    stroke: var(--bone);
+  }
+  .graph-frame .graph-node.is-active circle {
+    stroke: var(--gold-deep);
+  }
+  /* The graph sits directly on the bone tile; on small screens give it a
+     shorter canvas so the page isn't a wall of graph. */
+  @media (max-width: 639px) {
+    .graph-frame .graph-container:not(.is-fullscreen) {
+      height: 28rem !important;
+    }
+  }
+</style>

@@ -1,0 +1,201 @@
+---
+import "../styles/global.css"
+import SearchBox from "../components/SearchBox.astro"
+import LinkPreview from "../components/LinkPreview.astro"
+
+interface Props {
+  title?: string
+  description?: string
+  showNav?: boolean
+}
+
+const { title, description = "Sound money, free markets, zero masters.", showNav: _showNav = true } = Astro.props
+const path = Astro.url.pathname
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/essays/", label: "Essays" },
+  { href: "/core-theory/", label: "Core Theory" },
+  { href: "/tier-list/", label: "Tier List" },
+  { href: "/zingers/", label: "Zingers" },
+  { href: "/graph/", label: "Graph" },
+]
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href.replace(/\/$/, "")))
+// Footer "money rain": 14 columns of $ glyphs, staggered heights, three sizes,
+// ink at 6-9% opacity. Deterministic (no Math.random) so builds are stable.
+const rain: { x: number; y: number; size: number; o: number }[] = []
+for (let c = 0; c < 14; c++) {
+  const x = 24 + c * 72 + (c % 3) * 6
+  const step = 96 + (c % 4) * 22
+  for (let y = ((c * 53) % step) - 20; y < 620; y += step) {
+    const k = (c * 7 + Math.round(y / 10)) % 5
+    rain.push({ x, y, size: [22, 30, 44, 26, 36][k], o: [0.06, 0.08, 0.09, 0.07, 0.06][k] })
+  }
+}
+const pageTitle = title ? `${title} — Free Market Wins` : "Free Market Wins"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/ancap.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;600&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      const stored = localStorage.getItem("theme")
+      if (stored) document.documentElement.setAttribute("data-theme", stored)
+    </script>
+  </head>
+  <body class="font-body">
+    <header class="mx-auto flex max-w-[90rem] flex-wrap items-center gap-x-4 gap-y-3 min-[1440px]:flex-nowrap min-[1440px]:gap-6 px-4 pt-4 pb-2 md:px-8 xl:px-16 xl:pt-10">
+      <a class="flex min-w-0 shrink items-center gap-2 no-underline sm:shrink-0 sm:gap-2.5" href="/" aria-label="Free Market Wins — home">
+        <img src="/ancap.svg" alt="" width="40" height="40" class="h-7 w-7 shrink-0 sm:h-8 sm:w-8 xl:h-10 xl:w-10" />
+        <span class="wordmark max-[479px]:!text-[0.8125rem] max-[479px]:!tracking-[-0.03em]">Free Market Wins</span>
+      </a>
+      <!--
+        SearchBox and the theme toggle are siblings of <nav>, not children of
+        it, so the search modal never inherits nav text styles.
+        Layout: container is max 90rem incl. padding (1312px content at xl).
+        Below 1440px the link bar sits on its own full-width row under the
+        wordmark/buttons and scrolls inside itself on narrow screens (never the
+        page); from 1440px it goes inline between wordmark and buttons.
+      -->
+      <nav
+        aria-label="Primary"
+        class="order-last min-w-0 basis-full overflow-x-auto rounded-full border border-parchment min-[1440px]:order-none min-[1440px]:basis-0 min-[1440px]:flex-1 min-[1440px]:overflow-visible"
+      >
+        <ul class="m-0 flex list-none items-center justify-between gap-5 px-6 py-3 whitespace-nowrap md:h-[3.75rem] md:px-8 md:py-0 min-[1440px]:gap-4 min-[1440px]:px-6">
+          {
+            links.map((l, i) => (
+              <>
+                {i > 0 && <li aria-hidden="true" class="h-1 w-1 shrink-0 rounded-full bg-ink" />}
+                <li>
+                  <a
+                    class:list={[
+                      "text-base no-underline hover:text-ink",
+                      isActive(l.href) ? "font-semibold text-ink" : "text-stone",
+                    ]}
+                    href={l.href}
+                    aria-current={isActive(l.href) ? "page" : undefined}
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              </>
+            ))
+          }
+        </ul>
+      </nav>
+      <div class="ml-auto flex shrink-0 min-[1440px]:ml-0 items-center gap-1.5 sm:gap-2 max-[639px]:[&_.btn-circle]:!h-10 max-[639px]:[&_.btn-circle]:!w-10">
+        <SearchBox />
+        <button id="theme-toggle" class="btn-circle" aria-label="Toggle dark mode" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a9 9 0 1 0 9 9A7 7 0 0 1 12 3z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <a class="btn-ink max-[640px]:hidden" href="/core-theory/">
+          Start here
+          <span class="h-2 w-2 rounded-full bg-gold" aria-hidden="true"></span>
+        </a>
+      </div>
+    </header>
+    <main class="mx-auto max-w-[90rem] px-4 pb-16 md:px-8 xl:px-16 max-[800px]:pb-12">
+      <slot />
+    </main>
+    <footer class="mx-auto max-w-[90rem] px-4 pb-6 md:px-8 xl:px-16">
+      <div class="tile tile-gold flex flex-col gap-10 md:gap-14 md:!p-12">
+        <!-- Decorative: columns of "$" drifting down + two faint rings. Glyphs are
+             defined once in <defs> and <use>d twice to loop seamlessly. -->
+        <svg class="footer-rain pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <circle cx="930" cy="90" r="190" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="56"></circle>
+          <circle cx="40" cy="520" r="120" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="40"></circle>
+          <defs>
+            <g id="rain-set" fill="#0f0e0c" font-family="Archivo, Arial Black, sans-serif" font-weight="900">
+              {rain.map((g) => <text x={g.x} y={g.y} font-size={g.size} opacity={g.o}>$</text>)}
+            </g>
+          </defs>
+          <g class="footer-rain-drift">
+            <use href="#rain-set"></use>
+            <use href="#rain-set" y="-600"></use>
+          </g>
+        </svg>
+        <div class="relative flex flex-col justify-between gap-8 md:flex-row md:items-start">
+          <div class="flex max-w-[30rem] flex-col gap-3">
+            <p class="display-title m-0 !text-on-gold sm:!text-[1.75rem] md:!text-[2.5rem] md:!leading-[1.02]">
+              Proudly capitalist.
+            </p>
+            <p class="m-0 text-[1.0625rem] leading-[1.5] font-semibold text-on-gold">
+              Pro-market. Pro-trade. Pro-profit. Every voluntary exchange leaves both sides richer.
+            </p>
+          </div>
+          <div class="relative flex gap-14">
+            <div class="flex flex-col gap-2.5">
+              <span class="mono-label !text-on-gold">Read</span>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/essays/">Essays</a>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/essays/">Dissects</a>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/zingers/">Zingers</a>
+            </div>
+            <div class="flex flex-col gap-2.5">
+              <span class="mono-label !text-on-gold">Learn</span>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/core-theory/">Core Theory</a>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/tier-list/">Tier List</a>
+              <a class="text-[0.9375rem] !text-on-gold no-underline hover:underline" href="/graph/">Graph</a>
+              <a
+                class="text-[0.9375rem] !text-on-gold no-underline hover:underline"
+                href="https://github.com/simonsankar/free-market-wins"
+                target="_blank"
+                rel="noopener">GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--
+          Giant wordmark as SVG text with textLength: the glyphs are stretched
+          to exactly fill the viewBox, so the line always spans its container
+          and can never overflow, at any width.
+        -->
+        <svg viewBox="0 0 1000 100" class="relative block h-auto w-full text-on-gold" role="img" aria-label="Free Market Wins">
+          <text
+            x="0"
+            y="82"
+            textLength="1000"
+            lengthAdjust="spacingAndGlyphs"
+            fill="currentColor"
+            font-family="Archivo, Arial Black, sans-serif"
+            font-weight="900"
+            font-size="96"
+            style="font-stretch:125%;font-variation-settings:'wdth' 125;letter-spacing:-0.04em;">FREE MARKET WINS</text
+          >
+        </svg>
+      </div>
+    </footer>
+    <script is:inline>
+      const btn = document.getElementById("theme-toggle")
+      btn?.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme")
+        const next =
+          current === "dark"
+            ? "light"
+            : current === "light"
+              ? "dark"
+              : matchMedia("(prefers-color-scheme: dark)").matches
+                ? "light"
+                : "dark"
+        document.documentElement.setAttribute("data-theme", next)
+        localStorage.setItem("theme", next)
+      })
+    </script>
+    <LinkPreview />
+  </body>
+</html>

@@ -1,0 +1,14 @@
+---
+title: Free Market Wins
+unlisted: true
+---
+
+#### This vault entails the following:
+1. A complete dismantlement of **any** pro-[[aggression]] law ethic _(democratism/Marxism/consequentialism/etc)_\
+   _the logical justification of the NAP_ 🌟
+2. Showing that even if we take these failed ethics seriously they **all** objectively fail economically\
+   _* laughs in ECP (economic calculation problem) *_ 🤣
+3. Berate all centrally planned, 'moral outrage', altruistic, bullshit economic policies that are promoted by these failed ethics\
+   _bbut... muh healthcare! muh roads! muh social safety net!_ 🤡
+4. How the free market wins!\
+   _The reigning, defending, undefeated, undisputed, heavyweight champion of the world, Capitalism!!_ 👑
