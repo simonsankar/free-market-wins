@@ -65,7 +65,7 @@ This is savings, in its most fundamental form. And it is the origin of all inves
 **Low time preference** = willing to sacrifice more now for greater future return → more capital formation, more growth  
 **High time preference** = want consumption now, won't delay → less capital, slower growth
 
-[[Fiat Currency]] and artificially low interest rates distort time preference signals by making credit appear cheaper than real savings warrant. This produces the [[boom-bust cycle]]: investment pours into capital projects that wouldn't have been funded without artificially cheap credit, then collapses when the manipulation is exposed.
+[[Fiat Currency]] and artificially low interest rates distort time preference signals by making credit appear cheaper than real savings warrant. This produces the boom-bust cycle: investment pours into capital projects that wouldn't have been funded without artificially cheap credit, then collapses when the manipulation is exposed.
 
 ## The Production Structure
 

@@ -32,7 +32,7 @@ Value emerges through distinctly human cognitive processes:
 
 1. **Perception**: Man becomes aware of entities in reality
 2. **Conceptualization**: He identifies what these entities are and their potential uses
-3. **Evaluation**: He judges their relevance to his life and goals through [[Reason]]
+3. **Evaluation**: He judges their relevance to his life and goals through Reason
 4. **Prioritization**: He ranks them in order of importance given [[Scarcity]]
 5. **Action**: He acts to gain and/or keep what he values most highly
 
@@ -103,7 +103,7 @@ This challenges both:
 ### Ultimate Standard
 
 Man's ultimate value is alleviating uneasiness through rational action:
-- **Ultimate means**: [[Reason]] - the faculty that identifies reality
+- **Ultimate means**: Reason - the faculty that identifies reality
 - **Ultimate end**: Removing felt uneasiness (achieving flourishing)
 - **Method**: Voluntary [[Trade]] and production in free [[Markets]]
 

@@ -3,7 +3,7 @@ title: Primacy of Consciousness
 date: 2023-10-28
 ---
 
-This is an inversion of the [[Primscacy of Existence]]. 
+This is an inversion of the [[Primacy of Existence]]. 
 That existence that conforms to your consciousness, rather than the other way around.
 
 The concept of “consciousness” however, requires a prior concept of _existence_. 
