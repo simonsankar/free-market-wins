@@ -22,3 +22,8 @@ site/public/
 site/dist/
 site/.astro/
 site/tsconfig.tsbuildinfo
+
+# Raw source material (chat logs, transcripts) about real people. Never commit:
+# it was purged from history once because the repo is public.
+private/
+WhatsApp Chat - *.zip
