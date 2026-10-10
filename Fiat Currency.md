@@ -130,12 +130,12 @@ Fiat currency violates core economic principles:
 - Artificial interest rates cause malinvestment
 - Business cycles created by credit expansion
 
-### [[Property Rights]] Violation
+### [[private property|Property Rights]] Violation
 - Inflating currency steals from existing holders
 - No consent required to debase savings
 - Forced acceptance violates voluntary exchange
 
-### [[Knowledge Problem]]
+### [[Knowledge Problem (Information Throughput Problem)|Knowledge Problem]]
 - Central planners cannot know optimal money supply
 - Market-determined money supply would reflect real preferences
 - Government monopoly prevents monetary innovation

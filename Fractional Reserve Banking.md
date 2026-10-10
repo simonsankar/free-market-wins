@@ -142,8 +142,8 @@ Fractional reserve banking survives because:
 ## The Austrian Critique
 
 From an Austrian economics perspective, fractional reserve banking:
-- Violates [[Property Rights]] (lending what you don't own)
-- Creates the [[boom-bust cycle]] through credit expansion
+- Violates [[private property|Property Rights]] (lending what you don't own)
+- Creates the boom-bust cycle through credit expansion
 - Causes [[Inflation]] (hidden tax on savings)
 - Enables government growth through money printing
 - Destroys economic calculation through false price signals

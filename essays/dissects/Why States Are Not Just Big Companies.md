@@ -122,7 +122,7 @@ The latter isn't "more successful Amazon." It's Amazon turning itself into a cal
 
 ## The Minority Ruling Through Propaganda
 
-Rothbard identified the core weakness in [[Anatomy of the State]]:
+Rothbard identified the core weakness in *Anatomy of the State*:
 
 > "The State must have the support of the majority of its subjects... This support need not be active enthusiasm; it may well be passive resignation as if to an inevitable law of nature."
 

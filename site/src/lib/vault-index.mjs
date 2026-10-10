@@ -155,8 +155,16 @@ function buildIndexes() {
     imagesByBasename.set(path.basename(rel).toLowerCase(), rel)
   }
 
+  function resolveByName(name) {
+    return notesByKey.get(name.toLowerCase()) ?? notesByFuzzyKey.get(normalizeForFuzzyMatch(name))
+  }
+
+  // Obsidian also allows path-style targets ("[[essays/philosophy/Foo]]").
+  // Prefer the exact vault path, then fall back to the basename.
   function resolve(target) {
-    return notesByKey.get(target.toLowerCase()) ?? notesByFuzzyKey.get(normalizeForFuzzyMatch(target))
+    if (!target.includes("/")) return resolveByName(target)
+    const rel = path.join(...target.replace(/\.md$/i, "").split("/")) + ".md"
+    return notesByRel.get(rel) ?? resolveByName(target.split("/").pop())
   }
 
   // Read every note's raw text once here (independent of the remark

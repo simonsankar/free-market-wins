@@ -134,7 +134,7 @@ The pattern revealed: when cornered logically, statists retreat through predicta
 **Statist Claim**: "Important programs people don't understand would be underfunded without forced contributions."
 
 **Logical Failures**:
-- **[[Knowledge Problem]]**: Bureaucrats can't know individual preferences
+- **[[Knowledge Problem (Information Throughput Problem)|Knowledge Problem]]**: Bureaucrats can't know individual preferences
 - **Paternalism**: Assumes people are too stupid for freedom
 - **Democratic contradiction**: If people don't understand programs, why vote?
 - **Reveals true motive**: Admits it's about forcing unpopular programs

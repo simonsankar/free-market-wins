@@ -128,7 +128,7 @@ Because human consciousness is volitional and fallible, humans need freedom to t
 Consciousness is central to economics:
 - **Value**: Only conscious beings can value
 - **Choice**: Economics studies chosen human action
-- **Knowledge**: The [[Knowledge Problem]] exists because consciousness is individual
+- **Knowledge**: The [[Knowledge Problem (Information Throughput Problem)|Knowledge Problem]] exists because consciousness is individual
 - **Calculation**: The [[Economic Calculation Problem]] exists because values are held by individual consciousnesses
 
 ## The Axiom's Invulnerability
