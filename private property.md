@@ -51,8 +51,10 @@ Secure property rights create the only conditions under which long-term producti
 
 - **Investment**: Why build a factory if it can be nationalised?
 - **Savings**: Why save if the currency will be inflated away or assets seized?
-- **Innovation**: Why develop new techniques if competitors can copy without licensing?
+- **Innovation**: Why develop a better technique if the workshop, tools, and output you'd apply it to can be seized?
 - **Trade**: Why specialise if the value you produce can be redistributed by force?
+
+Note what innovation actually needs protected: the *scarce* things the idea is put to work in, not the idea itself. An idea isn't [[Scarcity|scarce]] — you copying my design doesn't take it away from me, so there's no [[Conflicts|conflict]] for a property rule to resolve. "Intellectual property" isn't property at all; it's a state-granted monopoly on *copying*, enforced by stopping other people from arranging their own ink, steel, and silicon as they choose — an aggression against their real property. The innovator gets paid the same way everyone else does: by being first to market, keeping trade secrets, binding the people they share them with by [[Contracts|contract]], building a brand customers trust, and selling the scarce goods that embody the idea. That's the actual reward structure — and it's why fashion, cuisine, and open-source software churn out new work with little or no IP protection at all.
 
 Every measure of prosperity across countries and time periods correlates with the security of property rights. This is not an accident. Property rights are not one policy variable among many — they are the precondition for all the others.
 
