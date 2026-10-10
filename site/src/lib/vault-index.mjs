@@ -82,7 +82,9 @@ function normalizeForFuzzyMatch(s) {
     .trim()
 }
 
-const WIKILINK_TARGET_RE = /(!?)\[\[([^\]|#]+)(?:\|[^\]]+)?\]\]/g
+// [[Target]], [[Target|Alias]], [[Target#Heading]]; [[#Heading]] has an empty
+// target (a section of the same note) and is skipped below.
+const WIKILINK_TARGET_RE = /(!?)\[\[([^\]|#]*)(?:#[^\]|]*)?(?:\|[^\]]+)?\]\]/g
 
 function frontmatterField(raw, field) {
   const fm = raw.match(/^---\n([\s\S]*?)\n---/)?.[1]
@@ -96,7 +98,7 @@ function makeExcerpt(body) {
   const text = body
     .replace(/!\[\[[^\]]*\]\]/g, "")
     .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g, (_m, target, alias) => alias ?? target)
+    .replace(/\[\[([^\]|#]*)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]/g, (_m, target, heading, alias) => alias ?? heading ?? target)
     .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
     .replace(/^#+\s+/gm, "")
     .replace(/[*_`>]/g, "")
@@ -111,7 +113,8 @@ function extractLinkTargets(content) {
   let match
   while ((match = WIKILINK_TARGET_RE.exec(content))) {
     if (match[1] === "!") continue // embed (image), not a note-to-note link
-    targets.push(match[2].trim())
+    const target = match[2].trim()
+    if (target) targets.push(target)
   }
   return targets
 }
