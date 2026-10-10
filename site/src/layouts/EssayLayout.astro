@@ -217,14 +217,14 @@ const arrow = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" strok
               if (!matchMedia("(min-width: 1200px)").matches) document.getElementById("toc").open = false
             </script>
             <nav aria-label="In this piece" class="px-6 pb-2">
-              <ul class="m-0 grid max-h-[min(24rem,calc(100vh-14rem))] list-none gap-0.5 overflow-y-auto p-0 pb-2">
+              <ul class="m-0 grid max-h-[min(24rem,calc(100vh-14rem))] min-[1200px]:max-h-[calc(100vh-11rem)] list-none gap-0.5 overflow-y-auto p-0 pb-2">
                 {sections.map((h) => (
                   <li style={`padding-left:${(h.depth - minDepth) * 0.9}rem`}>
                     <a
                       data-toc-link
                       data-slug={h.slug}
                       href={`#${h.slug}`}
-                      class="group/link flex items-start gap-3 py-1.5 text-[0.875rem] leading-snug font-medium text-char no-underline hover:text-ink aria-[current=true]:font-bold aria-[current=true]:text-ink"
+                      class="group/link flex items-start gap-3 py-1.5 text-[0.8125rem] leading-snug font-normal text-stone no-underline hover:text-ink aria-[current=true]:font-bold aria-[current=true]:text-ink"
                     >
                       <span class="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-parchment group-aria-[current=true]/link:bg-ink" />
                       <span class="min-w-0 [overflow-wrap:anywhere]">{h.text}</span>

@@ -1,17 +1,17 @@
 ---
 name: bedrock
 description: Takes a position — a sentiment ("people are anti-AI"), an article or video, a named person's stance, or a conversation with someone — researches what its holders actually argue, distils each argument to its basic form, and traces every rebuttal down to bedrock. Produces a fixed-format dissect under essays/dissects/, plus a plain reply (chat only) when answering a specific person. Invoke with `/bedrock` and the target.
-version: 1.0.0
+version: 2.0.0
 allowed-tools: Read, Glob, Grep, Bash, Write, Edit, WebFetch, WebSearch, Agent, AskUserQuestion
 ---
 
 # Bedrock
 
-The output is a brief: a dissect in a fixed format, published with the rest
-of `essays/dissects/`. Its job is that after five minutes of reading, the
-reader fully understands the position,
-knows which parts of it are true, knows exactly where each part fails and what
-it fails *on*, and can answer the next three things its holder will say.
+The output is a dissect in a fixed format, published with the rest of
+`essays/dissects/`. Its job is that the reader fully understands what the
+position is made of, sees the one premise under it, knows exactly where each
+claim fails and what it fails *on*, and can answer the next things its holder
+will say — without ever feeling lost along the way.
 
 Two rules outrank everything else in this file:
 
@@ -27,7 +27,7 @@ Two rules outrank everything else in this file:
    unique that state intervention, a halt on a technology, or a ban on a company
    is the necessary answer. Every such proposal rests on the same premise: a
    group may introduce conflict because it thinks it knows what's best for
-   society. The brief rejects that premise every time, however large the
+   society. The dissect rejects that premise every time, however large the
    claimed stakes (see `essays/dissects/The Alien Ultimatum - Why Parasitic
    Ethics Cannot Answer Their Own Hypotheticals.md`: not even a penny to save
    humanity). Concede facts that are true. Never concede that a fact justifies
@@ -47,7 +47,9 @@ structure with every claim traced to bedrock. Both land in `essays/dissects/`.
 
 - `references/descent.md` — the ladder every rebuttal is tagged against
 - `references/patterns.md` — the catalogue of reasoning patterns and fallacies
-- `references/template.md` — the brief's fixed section order
+- `references/template.md` — the dissect's fixed section order and shape rules
+- `references/style.md` — how it reads: logic establishes, examples
+  illustrate; prose rules; diagram sizing and SVG rules
 - `references/reply.md` — rules for the plain reply in Mode D
 
 Read `descent.md` and `patterns.md` before Step 2; the subagents need them too,
@@ -61,8 +63,9 @@ Say which mode in one line, then proceed.
 
 **Mode A — a sentiment or topic.** "The anti-AI crowd." "Rent control." There
 is no single text; the position *is* what its holders commonly argue. Research
-has to find the common arguments and the strongest ones, which are rarely the
-same thing.
+maps its camps — the distinct groups and what each believes — and each camp's
+strongest argument. A fringe or hypothetical position is just as answerable as
+a popular one; nothing has to prove it's widely held.
 
 **Mode B — a specific text, URL, or video.** Fetch it. For video, try the
 transcript (WebFetch on the page; search for a transcript if that fails). If no
@@ -73,11 +76,12 @@ context and for the facts it cites.
 **Mode C — a named person's stance.** "Tucker Carlson on protectionism." Find
 the person's own words — interviews, monologues, essays — not reporting about
 them. Quote them. If their stated position is vaguer than their reputation,
-brief the stated one and note the gap.
+answer the stated one and note the gap.
 
 **Mode D — a conversation with a specific person.** A pasted chat, message, or
 post someone sent. Everything in Mode B, plus: the checkpoint in Step 3 is
-mandatory, and the brief ends with a reply written under `references/reply.md`.
+mandatory, and you finish with a reply (chat only) written under
+`references/reply.md`.
 
 ---
 
@@ -96,7 +100,7 @@ The vault root is the repository root. The arsenal, in the order to search it:
   is the source of several patterns.
 
 Link notes by their exact filename with `[[wikilinks]]`. Never link a note
-that doesn't exist — if the brief needs a concept the vault lacks, flag it in
+that doesn't exist — if the dissect needs a concept the vault lacks, flag it in
 your final message (Step 7) as a candidate Core Theory note.
 
 ---
@@ -109,17 +113,21 @@ full, or the URL/name), and these instructions:
 
 > Find what holders of this position actually argue, from their own sources
 > (their posts, videos, op-eds, advocacy groups, the person's own words) — not
-> from critics describing them. For Mode A, cover both the most common
-> arguments and the strongest ones; say which is which.
+> from critics describing them. For Mode A, first map the camps: the distinct
+> groups that hold the position (e.g. workers, artists, neighbours), what each
+> believes, its rough reasoning, and what it wants done. Don't catalogue which
+> politicians or polls back it — the claims are what matter, not who holds
+> them.
 >
-> Return a claims ledger. One entry per distinct claim — split bundles; a scary
-> take usually packs three or four claims with different answers. For each:
+> Return a claims ledger grouped by camp. One entry per distinct claim — split
+> bundles; a scary take usually packs three or four claims with different
+> answers. For each:
 > - **as stated**: their wording, quoted, with source
 > - **distilled**: one plain sentence, the way a holder would sign off on it
 > - **hidden premise**: what must be true for the claim to follow
+> - **demand**: what they want done (ban, tax, licence, vote)
 > - **empirical content**: any factual assertion it rests on, and whether that
 >   fact checks out (cite; write UNVERIFIED if you can't confirm)
-> - **prevalence**: common / occasional / fringe
 >
 > Then: the key terms the position depends on ("engineering", "capitalism",
 > "security") and how holders use them.
@@ -147,10 +155,13 @@ Send both the ledger. Run them in the same message.
 > it runs on (from patterns.md, or propose a new one), find the vault notes and
 > tier-list rebuttals that answer it (exact filenames), assign the descent
 > rung the rebuttal bottoms out at (by name, e.g. "Economics: Scarcity →
-> Rights"), and draft the rebuttal in under 150 words.
-> Ground it in something checkable — history, revealed preference, a real case
-> — not a prediction. Then: do several claims share one hidden premise? If so,
-> state that root premise in one sentence.
+> Rights"), and draft the rebuttal in under 150 words. The rebuttal stands on
+> logic and principle; use an example only to illustrate it (a café, the
+> tractor and the horse), never a statistic as the foundation. No forecasts.
+> Then: what single premise do the claims share? State it in one sentence, the
+> way its holders would put it. Finally, list the distinct ways that premise
+> fails, and assign each claim to the failure that answers it — these become
+> the dissect's numbered sections.
 
 Merge: the honesty agent's wording wins on what the claim *is*; the arsenal
 agent's drafts get re-checked against any claim the honesty agent rewrote.
@@ -191,7 +202,7 @@ Spawn one `general-purpose` agent with the merged ledger and draft rebuttals:
 
 Discard any red-team point that amounts to "soften it" — that's the agent
 failing to follow the argument, not a weakness in it. Then resolve every point
-that survives. The published brief never carries a list of weak spots:
+that survives. The published dissect never carries a list of weak spots:
 
 - **Unverified fact** → verify it (WebSearch). If it can't be confirmed, cut
   it, and rewrite the rebuttal so it doesn't need it.
@@ -203,18 +214,19 @@ that survives. The published brief never carries a list of weak spots:
   author with AskUserQuestion, with the options and a recommendation, then
   write it his way. List these in one batch, not one at a time.
 
-## Step 5 — Write the brief
+## Step 5 — Write the dissect
 
 Follow `references/template.md` exactly — same sections, same order, every
-time. Write it to `essays/dissects/<Title>.md`, titled the way the existing
+time — and `references/style.md` for how it reads and how diagrams are
+drawn. Read the model dissect the template names before writing. Write it to `essays/dissects/<Title>.md`, titled the way the existing
 dissects are (a claim, an em dash, the subtitle), or under
 `essays/dissects/3rd-world-woes/` if it targets a developing-world state.
 Follow the vault's CLAUDE.md: frontmatter `title` and `date`, no `#` heading.
 
 It's published, so it's about arguments, never about a private person: no
 names or identifying details of anyone from a Mode D conversation. Public
-figures in Mode C are fair game, quoted accurately. Structure is welcome here.
-Keep it tight: readable in five minutes, no paragraph that restates another.
+figures in Mode C are fair game, quoted accurately. Keep it tight: no
+paragraph that restates another, no figure that the argument doesn't need.
 
 ## Step 6 — Reply (Mode D, or when asked)
 
@@ -225,12 +237,12 @@ published file. This is the one place where structure is *not* welcome.
 
 - A pattern that recurred and isn't in `patterns.md`: add it, with this case as
   its example.
-- A concept the brief needed that the vault lacks: name it in your final
+- A concept the dissect needed that the vault lacks: name it in your final
   message as a candidate Core Theory note. Never in the published file — gaps
   are a to-do list for the author, not content for the reader.
 
-Final message: the brief's path, the root premise in one sentence, and any
-gaps. Don't paste the brief back into chat.
+Final message: the dissect's path, the root premise in one sentence, and any
+gaps. Don't paste the dissect back into chat.
 
 ---
 
@@ -247,6 +259,12 @@ gaps. Don't paste the brief back into chat.
 - Over-reaching into a side debate that doesn't bear on the claim, or that
   rests on facts that couldn't be verified (Bitcoin specifics, in a security
   argument).
+- Building the case on data: polls, studies and precise figures that invite
+  whataboutism and date the piece. Logic establishes; examples illustrate.
+- Establishing who holds the position (politicians, surveys, bills) instead of
+  stating what it claims.
+- Long sentence-headings for the main sections, and diagrams too small to
+  read.
 - Softening a rebuttal to appease a general audience. Briefs aren't balanced;
   they're correct. A concession is for what's factually true, never for what's
   unpopular to say.
