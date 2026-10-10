@@ -2,8 +2,20 @@ import { visit } from "unist-util-visit"
 import path from "node:path"
 import { VAULT_ROOT, resolveNote, imagesByBasename } from "./vault-index.mjs"
 
-// Matches [[Target]], [[Target|Alias]], and the embed form ![[Target]]
-const WIKILINK_RE = /(!?)\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g
+// Matches [[Target]], [[Target|Alias]], [[Target#Heading]], [[#Heading]]
+// (a section of the same note), and the embed form ![[Target]]
+const WIKILINK_RE = /(!?)\[\[([^\]|#]*)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]/g
+
+// Same rule Astro uses to give headings their ids (github-slugger): lowercase,
+// strip punctuation, spaces to hyphens. Repeated headings get "-1" suffixes
+// there that this doesn't reproduce, so link to unique headings.
+function headingSlug(heading) {
+  return heading
+    .trim()
+    .toLowerCase()
+    .replace(/[^\p{L}\p{M}\p{N}\p{Pc}\- ]/gu, "")
+    .replace(/ /g, "-")
+}
 
 function splitTextNode(node) {
   const value = node.value
@@ -18,8 +30,8 @@ function splitTextNode(node) {
     if (match.index > lastIndex) {
       parts.push({ type: "text", value: value.slice(lastIndex, match.index) })
     }
-    const [, bang, target, alias] = match
-    parts.push({ bang: bang === "!", target: target.trim(), alias: alias?.trim() })
+    const [, bang, target, heading, alias] = match
+    parts.push({ bang: bang === "!", target: target.trim(), heading: heading?.trim(), alias: alias?.trim() })
     lastIndex = match.index + match[0].length
   }
   if (lastIndex < value.length) {
@@ -46,6 +58,19 @@ export function remarkVaultLinks() {
       const newNodes = parts.map((part) => {
         if (part.type === "text") return { type: "text", value: part.value }
 
+        const anchor = part.heading ? `#${headingSlug(part.heading)}` : ""
+        const label = part.alias ?? (part.heading ? (part.target ? `${part.target} › ${part.heading}` : part.heading) : part.target)
+
+        // [[#Heading]] — a section of the note being rendered.
+        if (!part.target && part.heading) {
+          return {
+            type: "link",
+            url: anchor,
+            data: { hProperties: { class: "internal" } },
+            children: [{ type: "text", value: label }],
+          }
+        }
+
         if (part.bang) {
           const rel = imagesByBasename.get(part.target.toLowerCase())
           if (rel) {
@@ -62,7 +87,7 @@ export function remarkVaultLinks() {
         if (targetEntry) {
           return {
             type: "link",
-            url: targetEntry.url,
+            url: targetEntry.url + anchor,
             data: {
               hProperties: {
                 class: "internal",
@@ -71,7 +96,7 @@ export function remarkVaultLinks() {
                 "data-preview-excerpt": targetEntry.excerpt,
               },
             },
-            children: [{ type: "text", value: part.alias ?? part.target }],
+            children: [{ type: "text", value: label }],
           }
         }
 
@@ -79,7 +104,7 @@ export function remarkVaultLinks() {
         return {
           type: "html",
           value: `<span class="broken-link" title="No note found for &quot;${part.target}&quot;">${
-            part.alias ?? part.target
+            label
           }</span>`,
         }
       })

@@ -33,6 +33,7 @@ const RAW_LAYERS = [
       "Utilitarianism",
       "Polylogism",
       "Tragedy of the commons",
+      "Regulatory Capture",
       "Anarcho-Capitalism",
     ],
   },
@@ -71,6 +72,8 @@ const RAW_LAYERS = [
       "Trade",
       "Production",
       "Skin in the game",
+      "Seen and Unseen",
+      "Lump of Labour",
     ],
   },
   {
@@ -94,6 +97,9 @@ const RAW_LAYERS = [
       "Jungle Law",
       "Mixed Law",
       "Contracts",
+      "Physical Integrity vs Value",
+      "Liability and Restitution",
+      "Threats and Risk",
     ],
   },
   {
