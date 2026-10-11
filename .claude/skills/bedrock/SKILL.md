@@ -94,9 +94,9 @@ The vault root is the repository root. The arsenal, in the order to search it:
   `ls` it every run; grep it for the topic.
 - Core Theory — the `.md` files at the root (`Scarcity.md`,
   `Human action.md`, `Revealed Preference.md`, `Mixed Law.md`,
-  `economic calculation problem.md`, `Skin in the game.md`, …).
-- `essays/` — applied cases. `essays/philosophy/The Selective Guillotine.md`
-  is the source of the descent; the Moe Boy portrait's "The Machinery" section
+  `economic calculation problem.md`, `Skin in the game.md`,
+  `The Selective Guillotine.md` — the source of the descent, …).
+- `essays/` — applied cases. The Moe Boy portrait's "The Machinery" section
   is the source of several patterns.
 
 Link notes by their exact filename with `[[wikilinks]]`. Never link a note
