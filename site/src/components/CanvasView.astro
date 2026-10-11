@@ -18,6 +18,12 @@ const { id, canvas, attachments, fileUrls, images = {}, height = 640 } = Astro.p
 >
   <div id={`canvas-root-${id}`} class="h-full w-full"></div>
   <button
+    class="canvas-reset-view absolute top-2.5 right-12 z-10 cursor-pointer rounded-lg border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
+    type="button"
+    aria-label="Reset view to fit"
+    title="Reset view">⟲</button
+  >
+  <button
     class="canvas-fullscreen-toggle absolute top-2.5 right-2.5 z-10 cursor-pointer rounded-lg border border-lightgray bg-light/80 px-2 py-[0.35rem] text-[0.9rem] leading-none text-gray hover:border-secondary hover:text-secondary"
     type="button"
     aria-label="Toggle fullscreen">⛶</button
@@ -162,6 +168,61 @@ const { id, canvas, attachments, fileUrls, images = {}, height = 640 } = Astro.p
       if (isFullscreenHere || wasFullscreenHere) refitWhenStable()
       wasFullscreenHere = isFullscreenHere
     })
+
+    // The library only clamps zoom to a hard 0.05x..20x of *canvas units*,
+    // and doesn't limit panning at all — so the map could be zoomed out to a
+    // speck or dragged entirely out of view. Constrain both relative to the
+    // fit-to-container scale instead (so it behaves the same in the inline
+    // box and fullscreen): never zoom out past "fit", zoom in up to
+    // MAX_ZOOM_IN x fit, and never let the content leave the viewport by
+    // more than PAN_MARGIN px. Wrapping trueZoom/truePan covers wheel,
+    // drag, and pinch, since they all funnel through those two methods.
+    const MAX_ZOOM_IN = 10
+    const PAN_MARGIN = 80
+    const interaction = viewer.container.get(internal.InteractionHandler)
+    function fitScale() {
+      const { nodeBounds, container: el } = dataManager.data
+      if (!el.clientWidth || !el.clientHeight) return null
+      const scale = Math.min(
+        el.clientWidth / (nodeBounds.width + 200),
+        el.clientHeight / (nodeBounds.height + 200),
+      )
+      return scale > 0 && Number.isFinite(scale) ? scale : null
+    }
+    function clampPan() {
+      const d = dataManager.data
+      const { minX, maxX, minY, maxY } = d.nodeBounds
+      const axis = (offset, min, max, view) => {
+        const lo = view - PAN_MARGIN - max * d.scale // content's far edge stays this far in
+        const hi = PAN_MARGIN - min * d.scale // content's near edge stays this far in
+        if (lo > hi) return (lo + hi) / 2 // content smaller than viewport: center it
+        return Math.min(hi, Math.max(lo, offset))
+      }
+      d.offsetX = axis(d.offsetX, minX, maxX, d.container.clientWidth)
+      d.offsetY = axis(d.offsetY, minY, maxY, d.container.clientHeight)
+    }
+    const rawZoom = interaction.trueZoom
+    interaction.trueZoom = (factor, origin) => {
+      const fit = fitScale()
+      if (fit !== null) {
+        const current = dataManager.data.scale
+        const target = Math.min(fit * MAX_ZOOM_IN, Math.max(fit, current * factor))
+        factor = target / current
+      }
+      rawZoom(factor, origin)
+      clampPan()
+    }
+    const rawPan = interaction.truePan
+    interaction.truePan = (delta) => {
+      rawPan(delta)
+      clampPan()
+    }
+
+    function resetView() {
+      dataManager.resetView()
+      controller.refresh()
+    }
+    container.querySelector(".canvas-reset-view")?.addEventListener("click", resetView)
 
     const fullscreenBtn = container.querySelector(".canvas-fullscreen-toggle")
     fullscreenBtn?.addEventListener("click", () => viewer.toggleFullscreen())

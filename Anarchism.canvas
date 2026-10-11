@@ -37,7 +37,7 @@
 		{"id":"f9dc0afa6f418cc2","type":"file","file":"Mixed Law.md","x":120,"y":-239,"width":400,"height":394},
 		{"id":"1ade909a2b9bfeab","type":"text","text":"FALSE","x":1955,"y":-196,"width":250,"height":60,"color":"1"},
 		{"id":"97913cf87176ee35","type":"file","file":"Primacy of Consciousness.md","x":1720,"y":-644,"width":720,"height":340},
-		{"id":"765520d0479e0007","x":505,"y":1110,"width":615,"height":400,"type":"file","file":"essays/economics/The Failure of Keynesian Economics.md"}
+		{"id":"765520d0479e0007","x":505,"y":1110,"width":615,"height":400,"type":"file","file":"essays/economics/The Praxeological Case Against All Inflation.md"}
 	],
 	"edges":[
 		{"id":"9ddd40d9d46c955f","fromNode":"2a2626149b9abbe4","fromSide":"bottom","toNode":"18a06533f0fc3e49","toSide":"top"},
