@@ -235,7 +235,9 @@ The "golden age" he's citing didn't work the way he thinks, either:
 
 > "Capitalism during the era of 90% taxation on billionaires... is the capitalism that should exist... The 'golden age' people tend to talk about was during the high taxation era."
 
-That 90% was a statutory top bracket on income far beyond anything a normal earner touched, wrapped in deductions and shelters generous enough that almost no one's actual bill came near it. A rate nobody paid isn't evidence of anything — it's a number cited instead of a fact checked.
+**Which golden age?** He never says. The only period with 90% brackets runs from 1944 into the early 1960s, and he names no year, no growth figure and no source: a rate and a mood. And almost nobody paid it. The 91% bracket applied only to income above $200,000 (roughly $2 million today), fewer than 10,000 households could reach it, and deductions and shelters were generous enough that the richest 0.1% averaged around 21% in income tax. A rate nobody paid can't be the reason for anything. It's a number cited instead of a fact checked.
+
+**And the golden age that actually fits his description?** If he wants the decade the record points at, it's the opposite end of the century. From 1869 to 1879, Friedman and Schwartz measured real output growing about 6.8% a year and real output per person about 4.5% a year, while prices *fell* by about 3.8% a year. That was on a gold standard, with no central bank and, after 1872, no federal income tax. So he's wrong twice: the era he cites didn't run on the rate he cites, and the best decade on record ran on the opposite policies.
 
 ### Giving at gunpoint
 
