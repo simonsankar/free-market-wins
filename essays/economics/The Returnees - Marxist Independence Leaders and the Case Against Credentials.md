@@ -7,6 +7,8 @@ date: 2026-10-14
 
 A striking number of 20th-century independence movements were led by one man who left the colony, studied in the metropole (or Moscow), absorbed Marxism or a close cousin of it, came home, won independence, and then ran the new state on the doctrine he had been taught. The independence was real. The economics that followed was a transplant.
 
+Not all of them were strict Marxists, and the argument doesn't need them to be. What they share is the **collectivist frame**: the nation as one body for the state to direct, instead of millions of individuals who own things and trade. That frame descends from Marx whether or not the man carried a party card.
+
 The claim of this essay: **a degree is not economic understanding.** What the returnees got abroad was a worldview, delivered by a curriculum and a social circle that had already decided the answer. They never learned how prices, property and calculation work, so they never saw the problem with replacing them. That is [[Central planning apologists]] at national scale, with a flag attached.
 
 ## The roll call
@@ -37,14 +39,14 @@ Pinto da Costa is the cleanest case. His *economics* training was itself East Ge
 
 ### Tier 3 - Same schools, same mistake, not technically Marxist
 
-These show the cause was the milieu, not the label.
+These show the cause was the milieu, not the label. None avowed Marxism. All of them took the collectivist frame home with them.
 
 | Leader | Country | Studied | Doctrine |
 |---|---|---|---|
 | Jawaharlal Nehru | India (1947) | Harrow, Cambridge, Inner Temple | Soviet-admiring planner; license raj; growth of about 3.5% a year until 1991 |
 | Julius Nyerere | Tanzania (1961) | Edinburgh | Ujamaa; by Nyerere's own figures, over 7 million people moved in 1973-75 and about 4 million more by 1976 |
 | Léopold Senghor | Senegal (1960) | Paris (Sorbonne) | "African socialism" |
-| Eric Williams | Trinidad and Tobago (1962) | Oxford DPhil | Historian, not a Marxist, but the "capitalism did it" worldview of *Capitalism and Slavery* and the PNM's state-first nationalism. See [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]] |
+| Eric Williams | Trinidad and Tobago (1962) | Oxford DPhil (1938), then Howard University; moved in the C.L.R. James and Padmore circle | Not an avowed Marxist; Britannica calls his governing approach "pragmatic socialism". PM from 1962 until his death in 1981. See the section below and [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]] |
 | Hatta and Sjahrir | Indonesia (1945-49) | Netherlands | Cooperative and democratic socialism |
 
 ### The recruiters
@@ -71,6 +73,25 @@ If foreign study alone caused this, it would be universal. It isn't, and the exc
 - **Hastings Banda (Malawi):** studied in the US and Edinburgh, was fiercely anti-communist, and still ran a poor dictatorship. Not everything is Marx. Banda is the honest limit of the thesis.
 
 So the **specific curriculum and company** mattered, not "education" in the abstract. And the ones who escaped did so through **contact with reality**, not through more schooling.
+
+## Case study: Eric Williams and the book that explains the man
+
+Williams is the Trinidad case, and his doctoral thesis, published as *Capitalism and Slavery* (1944), shows the collectivist frame in its purest form. It makes two claims. First, that profits from the slave trade and the Caribbean plantations financed the British Industrial Revolution. Second, the "decline thesis": that the slave economy was already in economic decline, so abolition followed economics rather than morals.
+
+**The libertarian objection is to the title itself.** Capitalism is the institutionalized respect for self-ownership and voluntary exchange. Slavery is the abolition of both, with the owner of the person defined as property. They are opposites, so a book that fuses them has misdefined its central term before it starts. It treats everything that happened in the economy of the period as one block labeled "capitalism" and then convicts the block.
+
+What actually sustained Caribbean slavery was the state:
+
+- **Mercantilist monopoly:** the Navigation Acts and the sugar preferences protected West Indian planters from competition. That is state privilege, not the market.
+- **The bailout:** when Britain abolished slavery in 1833 it paid about £20 million **to the slave owners**, not the enslaved. The Treasury itself has described this as about 40% of the national budget, and the debt was only finished off in 2015, paid by ordinary taxpayers. (Figures for the modern equivalent vary widely by source.) A system that needs the state to underwrite it, and then to pay it off when it ends, was never a free market.
+- **Plunder isn't production.** Even if slave profits were large, taking what others made by force transfers wealth and misallocates capital. It doesn't create it. The [[Seen and Unseen]] applies: the planters' profit is seen, the lost output of the people they owned is not.
+
+Two corrections to keep this honest:
+
+- Williams did not ignore the Industrial Revolution. He wrote about it at length. His error was in crediting plunder as its financier, over savings, invention and entrepreneurship. That claim has been contested since it was published. Drescher's *Econocide* and the Engerman school of economists (including Roger Anstey's 1968 critique) attack both halves of the thesis, and the decline thesis has taken the heaviest damage. The thesis still has academic defenders, so I'm not claiming the debate is closed. I'm claiming it is contested and, on the main point, the critics have the better case.
+- Williams opposed slavery. The "leaning toward the other direction" argument is the libertarian one: a worldview that sees the economy as one extractive block ends up wanting the state to take the block. That is Hayek's road to serfdom. It is not literal chattel slavery. Williams ran Trinidad as head of government for 25 years, 1956 until his death in 1981, under a "pragmatic socialism" that tied development to state direction and foreign capital. For what the Trinidadian state looks like today, see [[Trinidad — Mentality, Monopoly, and the Machinery of a Third-World State]].
+
+Notice also what the book does for its author. If capitalism built the West on stolen labor, then the colony is owed, and the one who collects on its behalf is the man who holds the state. The theory of grievance doubles as a claim to power.
 
 ## The mechanism: primacy of consciousness at national scale
 
@@ -124,4 +145,4 @@ The defensible version: **credentials certify exposure, not understanding, and a
 
 Education and ideology claims were checked against biographical sources for Nkrumah ([LSE alumni page](https://www.lse.ac.uk/alumni-friends-and-partners/LSE-alumni-shaping-the-world/World-leaders-and-politicians/Kwame-Nkrumah), [Wikipedia](https://en.wikipedia.org/wiki/Kwame_Nkrumah)), [Neto](https://en.wikipedia.org/wiki/Agostinho_Neto), [Pinto da Costa](https://en.wikipedia.org/wiki/Manuel_Pinto_da_Costa), [Mugabe](https://en.wikipedia.org/wiki/Robert_Mugabe), [Burnham](https://en.wikipedia.org/wiki/Forbes_Burnham), [Mondlane](https://en.wikipedia.org/wiki/Eduardo_Mondlane), [Modibo Keïta](https://en.wikipedia.org/wiki/Modibo_Ke%C3%AFta), [Souphanouvong](https://en.wikipedia.org/wiki/Souphanouvong), [Ho Chi Minh and KUTV](https://en.wikipedia.org/wiki/Communist_University_of_the_Toilers_of_the_East), [Ujamaa](https://en.wikipedia.org/wiki/Ujamaa) and the [Casa dos Estudantes do Império](https://thefunambulist.net/magazine/pan-africanism/house-of-students-of-the-empire-in-lisbon-ana-naomi-de-sousa-sonia-vaz-borges).
 
-Where sources conflict, I say so. Mugabe's exact degrees, Kenyatta's Moscow institution, Nkrumah's degrees and Mondlane's PhD institution all vary by source. The Ghana-Korea 1957 figures come from popular secondary sources and should be checked against Maddison or World Bank historical series before being quoted. Claims about Houphouët-Boigny, Seretse Khama, Banda, Nyerere's Edinburgh degree, Eric Williams's *Capitalism and Slavery*, Hatta, the Hindu rate of growth, Angola's dropping Marxism-Leninism, and the marketing-board literature (Bates, Bauer) come from general knowledge and were not re-verified in this session.
+Where sources conflict, I say so. Mugabe's exact degrees, Kenyatta's Moscow institution, Nkrumah's degrees and Mondlane's PhD institution all vary by source. The Ghana-Korea 1957 figures come from popular secondary sources and should be checked against Maddison or World Bank historical series before being quoted. The Eric Williams section draws on [Britannica and other biographies](https://en.wikipedia.org/wiki/Eric_Williams), a [summary of the Williams thesis and its critics](https://en.wikipedia.org/wiki/Capitalism_and_Slavery), and reporting on the [1833 compensation and its 2015 repayment](https://www.aaihs.org/british-culpability-in-the-trading-and-enslavement-of-africans/). The compensation figure is the Treasury's own "40% of the national budget" claim, and sources disagree on the denominator and the modern equivalent. The Navigation Acts and sugar-preference point is from general knowledge. Claims about Houphouët-Boigny, Seretse Khama, Banda, Nyerere's Edinburgh degree, Hatta, the Hindu rate of growth, Angola's dropping Marxism-Leninism, and the marketing-board literature (Bates, Bauer) come from general knowledge and were not re-verified in this session.
