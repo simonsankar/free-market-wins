@@ -133,6 +133,33 @@ Be honest about the limits. The founders were not free-market purists. Hamilton'
 
 The relevant difference isn't that one group went to school and the other didn't. One group's economic understanding came from **skin in the game** ([[Skin in the game]]): they held property, they traded, they bore losses. The other's came from a syllabus. A syllabus can't be falsified by a lost harvest, so it never needs to update until the whole country pays for it.
 
+## How big is the pattern?
+
+The roll call shows the pattern exists. It doesn't show how common it is. Counting honestly:
+
+- **Statism was close to universal, socialism was not.** One tally says 35 of 53 African regimes called themselves socialist at some point between 1960 and 1980. That is a loose measure, because it counts declarations rather than sustained policy. The Marxist-Leninist wave was much smaller and later, peaking from the mid-1970s to the mid-1980s.
+- **Among foreign-educated first leaders, it's roughly an even split.** A rough hand-count from memory, not a dataset. On the state-led side: Nkrumah, Nyerere, Neto, Mugabe, Pinto da Costa, Cabral, Nehru, Burnham. On the market-leaning side: Kenyatta, Banda, Khama, Lee Kuan Yew, Ramgoolam (Mauritius), Olympio (Togo). That is not a vast majority.
+- **Foreign study was not required.** Touré, Machel, Kaunda and Aristides Pereira (Cape Verde) ran socialist states without a foreign university.
+- **What does line up is militancy.** The most confrontational anti-colonial movements, the ones that organized mass parties or fought wars, skew heavily toward the left. Several of the leaders who inherited power through negotiation with the colonial power, such as Houphouët-Boigny and Kenyatta, went the other way. A proper test needs a leader-education dataset, and I haven't found one that codes economic policy.
+- **The research on foreign education points the other direction on politics.** [Spilimbergo](https://www.imf.org/en/publications/wp/issues/2016/12/31/democracy-and-foreign-education-20082) finds that foreign-educated people promote democracy at home, but only if they studied in democracies. [Gift and Krcmaric](https://metatoc.com/papers/61526-who-democratizes-western-educated-leaders-and-regime-transitions) find Western-educated leaders improve democratization prospects. I found nothing on economic liberalization specifically.
+- **Foreign education transmits whatever school dominates.** The mirror image is the Chicago-trained economists who liberalized Chile, and Manmohan Singh, Cambridge and Oxford educated, who opened India in 1991. The 1930s-50s metropole had a left-leaning intellectual scene. That is what the returnees carried home.
+
+## The easy pass
+
+"Everyone believed in planning back then" doesn't excuse them, because the alternative was available, in the same decade, to the same kind of man:
+
+- **Singapore** took the advice of the Dutch economist Albert Winsemius, who led a UN mission in 1960 and then served as chief economic adviser until the 1980s. His advice was to attract foreign investment for export industries, which was against conventional thinking at the time. [Lee wrote that he learned much from him](https://en.wikipedia.org/wiki/Albert_Winsemius). This is the "hire the people who know" option.
+- **Hong Kong**, a colony, ran on John Cowperthwaite's ["positive non-interventionism"](https://fee.org/articles/the-man-behind-the-hong-kong-miracle/) from 1961 to 1971. He refused to collect detailed economic statistics because they invite meddling.
+- **The ideas existed.** Mises published the calculation argument in 1920. Hayek's *Road to Serfdom* came out in 1944. Erhard liberalized West Germany in 1948.
+
+The returnees were not ignorant of the alternative. They were in the same libraries and in the same cities as the people who built it.
+
+## What happened afterward, honestly
+
+The claim that life was worse than under the colonial powers needs care. Sub-Saharan life expectancy [rose from about 40 in 1960 to about 51 in 1993](https://www.aph.gov.au/~/media/wopapub/house/committee/jfadt/africa/Aftbl8_1_pdf.ashx), though it lagged other regions. Income is the problem. [Per-capita growth averaged about 1.5% in the 1960s, 0.8% in the 1970s and -1.2% in the 1980s](https://www.brookings.edu/wp-content/uploads/1998/06/1998b_bpea_bloom_sachs_collier_udry.pdf). That is a fade and then a collapse, and it tracks the years the state's grip tightened. Oil shocks, debt and wars contributed, so this is consistent with the thesis, not proof of it. Some cases do match "worse than before": Ghana in the 1980s, Angola and Mozambique in their wars, and Zimbabwe in 2008.
+
+The new states also kept the extractive machinery of the colonial state and pointed it at their own people. Colonialism ended and the colonial apparatus didn't.
+
 ## Where the thesis is too strong
 
 - **Selection.** The roll call counts the cases that fit. The fair test is the whole denominator of independence leaders, and the control group above shows it isn't uniform.
